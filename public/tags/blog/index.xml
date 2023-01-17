@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Abdul Rafay Blogs</title>
+    <link>http://example.org/tags/blog/</link>
+    <description>Recent content in blog on Abdul Rafay Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jan 2023 00:34:56 +0500</lastBuildDate><atom:link href="http://example.org/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine learning Requires Blink Skills</title>
+      <link>http://example.org/post/skills-for-ml/</link>
+      <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
+      
+      <guid>http://example.org/post/skills-for-ml/</guid>
+      <description>Introducation: So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development.
+Understanding: Those things are: 1. understanding the type of data; and 2. once you know what kind of data this is, you need to check what kind of model you are going to use.</description>
+    </item>
+    
+    <item>
+      <title>Python vs JavaScript ML</title>
+      <link>http://example.org/post/python-vs-javascript-ml/</link>
+      <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
+      
+      <guid>http://example.org/post/python-vs-javascript-ml/</guid>
+      <description>Introduction: Hi!, Over the years I have developed multiple websites using multiple technologies such as HTML, CSS, JavaScript, and a couple of frameworks, but now I am expanding my skill set in the world of machine learning. I used JavaScript for everything and loved it; things were very easy and simple for me. I needed to create a static website, so I just used NodeJS with an EJS template to create a simple website.</description>
+    </item>
+    
+  </channel>
+</rss>
