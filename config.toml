@@ -1,0 +1,64 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Abdul Rafay Blogs'
+theme = 'gokarna'
+
+defaultContentLanguage = "en"
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[params]
+    avatarURL = "/images/avatar.jpg"
+    description = "Don't Comments bad code- rewrite it."
+    showPostsOnHomePage = "popular"
+#   footer = "Abdul Rafay"
+    togglePreviousAndNextButtons = "true"
+    customHeadHTML = "<script>console.log('Any HTML')</script>"
+     socialIcons = [
+      {name = "twitter", url = "https://twitter.com/abdul_rafay99"},
+      {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
+    #   {name = "stackoverflow", url = "https://example.com"},
+      {name = "github", url = "https://github.com/rafay99-epic"},
+    ]
+    pygmentsStyle = "monokai"
+    metaKeywords = ["blog", "gokarna", "hugo"]
+  
+  [[menu.main]]
+    # Unique identifier for a menu item
+    identifier = "post"
+    url = "/post/"
+    # Display name
+    name = "Posts"
+    # Weights are used to determine the ordering
+    weight = 1
+
+    [[menu.main]]
+    # Unique identifier for a menu item
+    identifier = "home"
+    url = "/"
+    # Display name
+    name = "Home"
+    # Weights are used to determine the ordering
+    weight = 1
+
+
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/rafay99-epic"
+    weight = 3
+    
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
