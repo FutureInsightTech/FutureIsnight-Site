@@ -25,7 +25,7 @@ enableRobotsTXT = true
     search= true
     favicon = "/images/favicon.jpg"
     summaryLength = "10"
-    gtm = "GTM-DW2R0SE37P"
+    googleAnalytics = "G-HSKPE7HLQL"
   
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
