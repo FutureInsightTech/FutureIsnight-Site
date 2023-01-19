@@ -1,18 +1,19 @@
+#----------------------------------------------------------
+#     This is the them config File                        #  
+#     Author and Theme setting                            #
+#     Author Name: Abdul Rafay                            #
+#-----------------------------------------------------------
+
+
 name = "Gokarna"
 description = "Gokarna is an opinionated theme with a focus on minimalism and simplicity"
 
 license = "MIT License"
-licenselink = "https://github.com/526avijitgupta/gokarna/blob/main/LICENSE"
-
-# homepage = "https://github.com/526avijitgupta/gokarna"
-# demosite = "https://gokarna-hugo.netlify.app"
+licenselink = "https://github.com/rafay99-epic/Blog-website/blob/main/LICENSE"
 
 tags = ["blog", "minimal", "dark", "light", "responsive", "personal", "portfolio"]
-
 features = ["Blog", "Responsive", "Minimal", "Clean", "Simple", "SEO", "Bootstrap", "Fast", "Dark", "Light"]
-
 authors = [
   {name = "Abdul Rafay", homepage = "https://raafay99.info"},
 ]
-
 min_version = "0.81.0"

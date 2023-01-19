@@ -14,6 +14,7 @@
     {{ $siteKeywords := .Site.Params.MetaKeywords | default (slice) }}
     {{ $postKeywords := .Params.tags | default (slice) }}
     {{ $keywords := union $siteKeywords $postKeywords }}
+    {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
 
     <!-- SEO titles & descriptions -->
     <title>{{ $title }}</title>
