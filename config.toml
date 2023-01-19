@@ -25,7 +25,7 @@ enableRobotsTXT = true
     search= true
     favicon = "/images/favicon.jpg"
     summaryLength = "10"
-    gtm_id = "GTM-DW2R0SE37P"
+    gtm = "GTM-DW2R0SE37P"
   
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
