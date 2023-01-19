@@ -14,7 +14,7 @@
     {{ $siteKeywords := .Site.Params.MetaKeywords | default (slice) }}
     {{ $postKeywords := .Params.tags | default (slice) }}
     {{ $keywords := union $siteKeywords $postKeywords }}
-    {{ template "/google_analytics.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
 
     <!-- SEO titles & descriptions -->
     <title>{{ $title }}</title>
