@@ -3,7 +3,7 @@ title: "Python vs JavaScript ML"
 date: 2023-01-18T00:34:56+05:00
 draft: false
 type: "post"
-tags: ["blog"]
+tags: ["blog", "Machine Learning"]
 description: "Python vs JavaScript for Machine Learning"
 showTableOfContents: true
 ---
