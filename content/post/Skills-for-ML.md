@@ -1,9 +1,9 @@
 ---
-title: "Machine learning Requires Blink Skills"
+title: "Machine learning Requires Amazing Skills"
 date: 2023-01-18T00:34:56+05:00
 draft: false
 type: "post"
-tags: ["blog"]
+tags: ["blog" ,"Machine Learning"]
 description: "Important Skills for Machine Learning"
 showTableOfContents: true
 ---
