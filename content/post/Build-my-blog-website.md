@@ -7,9 +7,7 @@ tags: ["blog", "Web Development"]
 description: "Build My Blog Website using HUGO"
 showTableOfContents: true
 ---
-
-# Rafay blog Website:
----
+# Website for My Blog:
 ## Introduction:
 I'm a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 
