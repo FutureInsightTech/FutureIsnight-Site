@@ -51,8 +51,7 @@ Do you want to merge this branch code into the main Branch? (y/n)
 --------------------------------------------------------");
         git pull origin main
         git checkout main
-        # git merge Bloging-Branch
-        git merge $OutputVariable
+        git merge Bloging-Branch
         git push -u origin main
         } else {
             Write-Host("
