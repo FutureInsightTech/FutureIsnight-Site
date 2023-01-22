@@ -62,7 +62,6 @@ Do you want to merge this branch code into the main Branch? (y/n)
         }
 }
 
-
 # This is the stating point of the script
 $OutputVariable = (git branch --show-current) | Out-String
 if( $OutputVariable -eq "main" ) {
