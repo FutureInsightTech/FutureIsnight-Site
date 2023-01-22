@@ -141,7 +141,7 @@ if Home Brew is not installed on your system then install it by using the follwo
 	```
 5.  The you can see the website running on your local Machine. 
 
-![image](/images/readme/webiste.png)
+![image](/static/images/readme/webiste.png)
 
 # Deployed Website:
 The website is deployed on [render](https://render.com/) and the domain is from [Hostring](https://www.hostinger.com/).

@@ -38,7 +38,32 @@ Do you want to push to the remote repo? (y/n)
         }
 }
 
-# This 
+function git_merge()
+{
+    $merge= Read-Host "
+----------------------------------------------------------------
+Do you want to merge this branch code into the main Branch? (y/n)
+----------------------------------------------------------------"
+        if ($merge -eq "y") {
+            Write-Host("
+---------------------------------------------------------      
+    Merging code into main Brach
+--------------------------------------------------------");
+        git pull origin main
+        git checkout main
+        # git merge Bloging-Branch
+        git merge $OutputVariable
+        git push -u origin main
+        } else {
+            Write-Host("
+--------------------------------------------------------------------
+    Coding won't be merge to main branch called: $OutputVariable
+--------------------------------------------------------------------");
+        }
+}
+
+
+# This is the stating point of the script
 $OutputVariable = (git branch --show-current) | Out-String
 if( $OutputVariable -eq "main" ) {
     Write-Host("
@@ -61,4 +86,6 @@ if( $OutputVariable -eq "main" ) {
     git_Message
     # Ask to Push
     git_push
+    # Ask to Merge
+    git_merge
 }
