@@ -85,5 +85,5 @@ if( $OutputVariable -eq "main" ) {
     # Ask to Push
     git_push
     # Ask to Merge
-    git_merge
+    # git_merge
 }
