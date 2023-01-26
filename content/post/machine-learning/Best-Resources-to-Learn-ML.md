@@ -4,7 +4,7 @@ date: 2023-01-27T01:07:03+05:00
 draft: false
 type: "post"
 tags: ["blog" ,"Machine Learning"]
-description: "Important Skills for Machine Learning"
+description: "best resources to learn machine learning & Deep Learning"
 showTableOfContents: true
 ---
 
