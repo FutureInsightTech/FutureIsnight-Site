@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on Abdul Rafay Blogs</title>
+    <link>https://rafayblogs.tech/tags/web-development/</link>
+    <description>Recent content in Web Development on Abdul Rafay Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Jan 2023 00:35:16 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build My Blog Website</title>
+      <link>https://rafayblogs.tech/post/web-development/build-my-blog-website/</link>
+      <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
+      
+      <guid>https://rafayblogs.tech/post/web-development/build-my-blog-website/</guid>
+      <description>Website for My Blog: Introduction: I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
+I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
+    </item>
+    
+  </channel>
+</rss>
