@@ -152,7 +152,7 @@ To see how to deploy website on render plase follow this webpage from [freecodin
 For more features or face any issue free will to post on the issue section. Free will to fork this project and add more thing to this project.
 
 ***Note***:
-All of the develoopment will be done in the [Develelopment-Branch](https://github.com/rafay99-epic/Blog-website/tree/Development-Branch), Once testing and approved then it will merged into the main branch, No code will be commmited into the main branch until is bug free and approved by the admin of the project.
+All of the develoopment will be done in the [Development-Branch](https://github.com/rafay99-epic/Blog-website/tree/Development-Branch), Once testing and approved then it will merged into the main branch, No code will be commmited into the main branch until is bug free and approved by the admin of the project.
 
 Happy Coding…👋
 
