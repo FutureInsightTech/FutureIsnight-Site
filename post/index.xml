@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Abdul Rafay Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2023 01:07:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scrapper</title>
+      <link>https://rafayblogs.tech/post/web-development/web-scrapper/</link>
+      <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
+      
+      <guid>https://rafayblogs.tech/post/web-development/web-scrapper/</guid>
+      <description>Introducation Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
+Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
+    </item>
+    
     <item>
       <title>Best Resources to Learn ML</title>
       <link>https://rafayblogs.tech/post/machine-learning/best-resources-to-learn-ml/</link>

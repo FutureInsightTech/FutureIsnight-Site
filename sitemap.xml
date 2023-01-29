@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rafayblogs.tech/</loc>
-    <lastmod>2023-01-27T01:07:03+05:00</lastmod>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
+  </url><url>
+    <loc>https://rafayblogs.tech/tags/blog/</loc>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
+  </url><url>
+    <loc>https://rafayblogs.tech/post/</loc>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
+  </url><url>
+    <loc>https://rafayblogs.tech/tags/</loc>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
+  </url><url>
+    <loc>https://rafayblogs.tech/tags/web-development/</loc>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
+  </url><url>
+    <loc>https://rafayblogs.tech/post/web-development/web-scrapper/</loc>
+    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
   </url><url>
     <loc>https://rafayblogs.tech/post/machine-learning/best-resources-to-learn-ml/</loc>
     <lastmod>2023-01-27T01:07:03+05:00</lastmod>
   </url><url>
-    <loc>https://rafayblogs.tech/tags/blog/</loc>
-    <lastmod>2023-01-27T01:07:03+05:00</lastmod>
-  </url><url>
     <loc>https://rafayblogs.tech/tags/machine-learning/</loc>
-    <lastmod>2023-01-27T01:07:03+05:00</lastmod>
-  </url><url>
-    <loc>https://rafayblogs.tech/post/</loc>
-    <lastmod>2023-01-27T01:07:03+05:00</lastmod>
-  </url><url>
-    <loc>https://rafayblogs.tech/tags/</loc>
     <lastmod>2023-01-27T01:07:03+05:00</lastmod>
   </url><url>
     <loc>https://rafayblogs.tech/post/machine-learning/tools-for-ml/</loc>
@@ -39,9 +45,6 @@
     <lastmod>2023-01-24T17:13:24+05:00</lastmod>
   </url><url>
     <loc>https://rafayblogs.tech/post/web-development/build-my-blog-website/</loc>
-    <lastmod>2023-01-22T00:35:16+05:00</lastmod>
-  </url><url>
-    <loc>https://rafayblogs.tech/tags/web-development/</loc>
     <lastmod>2023-01-22T00:35:16+05:00</lastmod>
   </url><url>
     <loc>https://rafayblogs.tech/post/machine-learning/road-map-for-ml/</loc>
