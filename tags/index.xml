@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Abdul Rafay Blogs</title>
+    <title>Tags on Abdul Rafay</title>
     <link>https://rafayblogs.tech/tags/</link>
-    <description>Recent content in Tags on Abdul Rafay Blogs</description>
+    <description>Recent content in Tags on Abdul Rafay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 11:36:38 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://rafayblogs.tech/tags/blog/</link>
-      <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
+      <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
       
       <guid>https://rafayblogs.tech/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://rafayblogs.tech/tags/machine-learning/</link>
+      <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
+      
+      <guid>https://rafayblogs.tech/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -22,15 +31,6 @@
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
       <guid>https://rafayblogs.tech/tags/web-development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>https://rafayblogs.tech/tags/machine-learning/</link>
-      <pubDate>Fri, 27 Jan 2023 01:07:03 +0500</pubDate>
-      
-      <guid>https://rafayblogs.tech/tags/machine-learning/</guid>
       <description></description>
     </item>
     

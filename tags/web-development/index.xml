@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web Development on Abdul Rafay Blogs</title>
+    <title>Web Development on Abdul Rafay</title>
     <link>https://rafayblogs.tech/tags/web-development/</link>
-    <description>Recent content in Web Development on Abdul Rafay Blogs</description>
+    <description>Recent content in Web Development on Abdul Rafay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/web-development/index.xml" rel="self" type="application/rss+xml" />

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abdul Rafay Blogs</title>
+    <title>Abdul Rafay</title>
     <link>https://rafayblogs.tech/</link>
-    <description>Recent content on Abdul Rafay Blogs</description>
+    <description>Recent content on Abdul Rafay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 11:36:38 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Your Own Model</title>
+      <link>https://rafayblogs.tech/post/machine-learning/designing-a-machine-learning-model-a-guide-for-beginners/</link>
+      <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
+      
+      <guid>https://rafayblogs.tech/post/machine-learning/designing-a-machine-learning-model-a-guide-for-beginners/</guid>
+      <description>Introduction: Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we&amp;rsquo;ll walk through the basics of designing a machine learning model from scratch.
+Steps: Follow these steps to get a better understanding of how machine learning models are created.</description>
+    </item>
+    
     <item>
       <title>Web Scrapper</title>
       <link>https://rafayblogs.tech/post/web-development/web-scrapper/</link>
