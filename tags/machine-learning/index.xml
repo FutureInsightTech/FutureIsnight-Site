@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning on Abdul Rafay</title>
+    <title>Machine Learning on AR Blogs</title>
     <link>https://rafayblogs.tech/tags/machine-learning/</link>
-    <description>Recent content in Machine Learning on Abdul Rafay</description>
+    <description>Recent content in Machine Learning on AR Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Feb 2023 11:36:38 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
