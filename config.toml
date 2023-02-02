@@ -1,6 +1,6 @@
 baseURL = 'https://rafayblogs.tech'
 languageCode = 'en-us'
-title = 'Abdul Rafay Blogs'
+title = 'Abdul Rafay'
 theme = 'gokarna'
 defaultContentLanguage = "en"
 enableRobotsTXT = true
