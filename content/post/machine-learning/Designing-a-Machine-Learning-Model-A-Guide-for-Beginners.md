@@ -1,5 +1,5 @@
 ---
-title: "Creating Your Own Model"
+title: "Design your own Machine Learning Model: Beginner Guide"
 date: 2023-02-02T11:36:38+05:00
 draft: false
 type: "post"
