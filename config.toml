@@ -25,6 +25,7 @@ enableRobotsTXT = true
     search= true
     favicon = "/images/favicon.jpg"
     summaryLength = "10"
+    code_copy_button = true 
   
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
@@ -67,6 +68,10 @@ enableRobotsTXT = true
     endLevel = 3
     ordered = true
 
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+[markup.goldmark.renderer]
+    unsafe = true
 [markup.highlight]
       codeFences = true
       guessSyntax = true
@@ -76,5 +81,4 @@ enableRobotsTXT = true
       lineNumbersInTable = false
       tabWidth = 4
       noClasses = false
-
 
