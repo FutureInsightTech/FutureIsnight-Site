@@ -6,6 +6,7 @@ type: "post"
 tags: ["blog", "essential-skills"]
 description: "Learn how to use git and GitHub."
 showTableOfContents: true
+url: /learn-git-&-github/
 ---
 ## Introduction:
 As a developer, managing your code can be difficult, and you're always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don't miss any of the changes. So for that, you need to learn Git and GitHub.
