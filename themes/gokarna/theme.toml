@@ -14,6 +14,6 @@ licenselink = "https://github.com/rafay99-epic/Blog-website/blob/main/LICENSE"
 tags = ["blog", "minimal", "dark", "light", "responsive", "personal", "portfolio"]
 features = ["Blog", "Responsive", "Minimal", "Clean", "Simple", "SEO", "Bootstrap", "Fast", "Dark", "Light"]
 authors = [
-  {name = "Abdul Rafay", homepage = "https://raafay99.info"},
+  {name = "Abdul Rafay", homepage = "https://rafay99.info"},
 ]
 min_version = "0.81.0"
