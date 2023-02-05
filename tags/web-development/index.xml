@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web Development on AR Blogs</title>
+    <title>Web Development on Abdul Rafay Blogs</title>
     <link>https://rafayblogs.tech/tags/web-development/</link>
-    <description>Recent content in Web Development on AR Blogs</description>
+    <description>Recent content in Web Development on Abdul Rafay Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Scrapper</title>
-      <link>https://rafayblogs.tech/post/2023/web-development/web-scrapper/</link>
+      <link>https://rafayblogs.tech/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/post/2023/web-development/web-scrapper/</guid>
+      <guid>https://rafayblogs.tech/web-scrapper/</guid>
       <description>Introducation Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://rafayblogs.tech/post/2023/web-development/build-my-blog-website/</link>
+      <link>https://rafayblogs.tech/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/post/2023/web-development/build-my-blog-website/</guid>
+      <guid>https://rafayblogs.tech/build-hugo-website/</guid>
       <description>Website for My Blog: Introduction: I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>
