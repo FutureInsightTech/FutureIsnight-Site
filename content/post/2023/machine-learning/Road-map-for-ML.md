@@ -6,6 +6,7 @@ type: "post"
 tags: ["blog", "Machine Learning", "roadmap"]
 description: "solid road map for machine learning and deep learning"
 showTableOfContents: true
+url: /road-map-for-ml/
 ---
 # Introduction:
 

@@ -6,6 +6,7 @@ type: "post"
 tags: ["blog", "Web Development"]
 description: "Build My Blog Website using HUGO"
 showTableOfContents: true
+url: /build-hugo-website/
 ---
 # Website for My Blog:
 ## Introduction:

@@ -6,6 +6,7 @@ type: "post"
 tags: ["blog" ,"Machine Learning"]
 description: "Important Skills for Machine Learning"
 showTableOfContents: true
+url: /skills-for-ml/
 ---
 
 ## Introducation: 
