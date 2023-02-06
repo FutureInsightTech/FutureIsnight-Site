@@ -1,10 +1,11 @@
 ---
 title: "Design your own Machine Learning Model: Beginner Guide"
+image: "/images/Create-your-Own-Machine-Learning-Model.png"
 date: 2023-02-02T11:36:38+05:00
 draft: false
 type: "post"
 tags: ["blog" ,"Machine learning"]
-description: ""
+description: "Learn the basic to create your own ML Model"
 showTableOfContents: true
 url: /create-your-own-ml-model/
 ---

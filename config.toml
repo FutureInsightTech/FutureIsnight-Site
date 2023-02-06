@@ -20,7 +20,7 @@ enableRobotsTXT = true
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
     ]
-    pygmentsStyle = "monokai"
+    # pygmentsStyle = "monokai"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
     favicon = "images/favicon.jpg"
@@ -28,7 +28,7 @@ enableRobotsTXT = true
     code_copy_button = true 
     author = "Abdul Rafay"
     mainSections = ["posts"]
-    
+    pygmentsStyle = "catppuccin-frappe"
   #-----------------------------------------
   #               cookies
   #-----------------------------------------
