@@ -64,4 +64,4 @@ So here are some of the things that I use to read data and make the correct sele
 
 I will see you next time.❤️
 
-![image](/images/Machine-learning-Requires-Blink-Skills.jpg)
+![image](/images/2023/skills-required/Machine-learning-Requires-Blink-Skills.jpg)

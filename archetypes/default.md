@@ -9,16 +9,19 @@ showTableOfContents: true
 url: //
 ---
 
-# Overview Section:
-
 # Introduction:
 
 # Implementation: 
 
-# Contact:
+# Conclusion:
 
 # Contact Me:
-If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
+If you have any questions, please contact me 
+- [Email](mailto:99marafay@gmail.com)
+- [My website](https://rafay99.info)
+- [Github](github.com/rafay99-epic) 
+
+I will see you next time❤️.
 
 # References:
 ## Articles references:
@@ -29,5 +32,5 @@ If you have any questions, please contact me [Email](mailto:99marafay@gmail.com)
 
 
 # Thumbnail:
-![image](/images/)
+![image](/images/2023/)
 

@@ -13,7 +13,7 @@ As a developer, managing your code can be difficult, and you're always changing 
 
 ## Before Git:
 But before I was using Git, My code folder structure was something like this:  
-![image](/images/learn-git/code-folder.png)
+![image](/images/2023/learn-git/code-folder.png)
 
 Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.
 
@@ -119,16 +119,16 @@ if Home Brew is not installed on your system then install it by using the follwo
 ### Create a Repo:
 1. Open [GitHub](https://github.com/) and create an account. If you don't have an account then follow this [Guide](https://www.wikihow.com/Create-an-Account-on-GitHub).
 2. Then Press the new Button to create a new Repo:
-	![image](/images/learn-git/create-a-repo.png)
+	![image](/images/2023/learn-git/create-a-repo.png)
 
 3. Fill the form to create your Repo.
 	1. Enter The name of the repo
 	2. Enter the description of the repo
 	3. Select the Lience for the repo 
-	![image](/images/learn-git/Fill-form.png)
+	![image](/images/2023/learn-git/Fill-form.png)
 4. Once You have filled the form then click on the create Repo button. 
 5. After click that button your repo will be created and you will be redirected toword your repo.
-	![image](/images/learn-git/Repo-Page.png)
+	![image](/images/2023/learn-git/Repo-Page.png)
 
 Congratulation You have created your own repo. 
 
@@ -145,12 +145,12 @@ So command will be
 git clone https://github.com/rafay99-epic/Laptop-Shopping-API.git
 ```
 **Note:** You can find the URL of the repo by clicking the **code** Button on your repo.
-![image](/images/learn-git/url.png)
+![image](/images/2023/learn-git/url.png)
 
 Once command is in the terminal then press enter on your keyboard to clone the repo on your device. 
 
 When you clone the repo it will look like this:
-![image](/images/learn-git/repo-folder.png)
+![image](/images/2023/learn-git/repo-folder.png)
 
 ### Create a Branch:
 Now we want to upload files to this repo so we need to create a branch so do that we need open this folder using the terminal.
@@ -174,7 +174,7 @@ git checkout -b <branch Name>
 ```
 
 Once the above commad is entered into the termial then a brach will be created.
-![image](/images/learn-git/git-branch.png)
+![image](/images/2023/learn-git/git-branch.png)
 
 Using the above command you can create different branch. 
 
@@ -185,7 +185,7 @@ What if branches already exist and you want to checkout a different branch? Ther
 git branch
 ```
 Using the above command, you will see all of the git branches.
-![image](/images/learn-git/switch-branch.png)
+![image](/images/2023/learn-git/switch-branch.png)
 
 Now to switch between different branch, to that enter the following command:
 ```shell
@@ -197,7 +197,7 @@ In place of "branch name," enter the branch name. In this example, I will be ent
 ```shell
 git checkout main
 ```
-![image](/images/learn-git/switch-branch-2.png)
+![image](/images/2023/learn-git/switch-branch-2.png)
 
 As you can see, I have switched to the main branch, but I will be switching to the adding-file branch.
 
@@ -208,7 +208,7 @@ To check the status and see how many changes are made to that, enter the followi
 ```shell
 git status
 ```
-![image](/images/learn-git/git-status.png)
+![image](/images/2023/learn-git/git-status.png)
 
 As you can see, I have added two files, and using the command `git status` , I can view all of the changes that have been made.
 
@@ -218,7 +218,7 @@ Now add these files to the branch; to do that, you need to enter the following c
 git add *
 ```
 The above command will add all the files to the branch.
-![image](/images/learn-git/git-add.png)
+![image](/images/2023/learn-git/git-add.png)
 
 Now that all the files are added to the branch, when files are added, the colour will change from red to green. The green colour can change depending on the colours of your terminal.
 
@@ -229,7 +229,7 @@ git commit -m "adding Files"
 ```
 The above command will commit your code with a message; the message is important, and it won't commit without a message, so enter your message.
 
-![image](/images/learn-git/git-comit.png)
+![image](/images/2023/learn-git/git-comit.png)
 
 ### Push:
 Now it's time to deploy your local branch and push your code to the repo.
@@ -247,7 +247,7 @@ git push --set-upstream origin Adding-Files
 ```
 The above command will deploy your branch to GitHub.
 
-![image](/images/learn-git/git-deploy-branch.png)
+![image](/images/2023/learn-git/git-deploy-branch.png)
 
 #### Push Command: 
 To push your code enter your code into the teminal:
@@ -257,7 +257,7 @@ git push
 
 ### Final Result:
 As you can see, the branch is deployed, and all the files are in the Adding-file branch.
-![image](/images/learn-git/branch-deploy.png)
+![image](/images/2023/learn-git/branch-deploy.png)
 
 ### Merge Both Branch:
 Now all the files are in the Adding-File branch, but we need them to be added to the main branch. For that, we will be merging both branches.
@@ -270,27 +270,27 @@ To merge these branches, we need to create a pull request and merge them. To do 
 ```shell
 git pull origin main
 ```
-![image](/images/learn-git/git-pull-orgin-main.png)
+![image](/images/2023/learn-git/git-pull-orgin-main.png)
 
 **Step 2:** Switch to the base branch of the pull request.
 ```shell
 git checkout main
 ```
-![image](/images/learn-git/checkout-main.png)
+![image](/images/2023/learn-git/checkout-main.png)
 **Step 3:** Merge the head branch into the base branch.
 ```shell
 git merge Adding-Files
 ```
-![image](/images/learn-git/git-merge-Adding-Files.png)
+![image](/images/2023/learn-git/git-merge-Adding-Files.png)
 **Step 4:** Push the changes.
 ```shell
 git push -u origin main
 ```
-![image](/images/learn-git/git-push-u-origin-main.png)
+![image](/images/2023/learn-git/git-push-u-origin-main.png)
 
 ## Final:
 Now that you can view GitHub, all the files are added to the main branch. You can make changes to one branch, and once you are sure that the application is working well, you can merge the working branch with the main branch.
-![image](/images/learn-git/Final-Files-added.png)
+![image](/images/2023/learn-git/Final-Files-added.png)
 
 
 ## Version of Applications:
@@ -299,27 +299,24 @@ This is how versions are made: each branch represents a single version. When tha
 
 ## Release Pages:
 This is the release page; you can document each version here, and each version will be assigned a number.
-![image](/images/learn-git/release-page.png)
+![image](/images/2023/learn-git/release-page.png)
 
 Fill out all of the changes and then press the "Publish" button to publish your work on GitHub.
-![image](/images/learn-git/release-page-info.png)
+![image](/images/2023/learn-git/release-page-info.png)
 
 **Example Release Pages:**
 This is an example of developing a project.
-![image](/images/learn-git/Ghome-Setup-release-page.png)
+![image](/images/2023/learn-git/Ghome-Setup-release-page.png)
 
 
 ## Conclusion:
 Learn Git, use GitHub to host your code, applications, and much more, Git and GitHub are two of the most important tools for developers, and without them, we might not be able to learn, read, or contribute code. You must learn Git and GitHub regardless of your field.  
 So please do not hesitate to contact or email me. I would love to know your thoughts.
 
-[Email](mailto:99marafay@gmail.com)
-
-[GitHub](https://github.com/rafay99-epic)
-
-[My Portfolio website](https://rafay99.info/)
-
-[My Blog](https://rafayblogs.tech/)
+- [Email](mailto:99marafay@gmail.com)
+- [GitHub](https://github.com/rafay99-epic)
+- [My Portfolio website](https://rafay99.info/)
+- [My Blog](https://rafayblogs.tech/)
 
 
 

@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /tools-for-ml/
 ---
 
-![image](/images/Tools-for-ML/Tools-for-Machine-Learning.png)
+![image](/images/2023/Tools-for-ML/Tools-for-Machine-Learning.png)
 
 # Introduction:
 

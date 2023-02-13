@@ -36,4 +36,4 @@ So let me know your thoughts, and if there are some awesome resources, then shar
 If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
     
 
-![Best Resources Places to Learn machine Learning](/images/resources-machine-learning/best-resources-for-ml.png)
+![Best Resources Places to Learn machine Learning](/images/2023/resources-machine-learning/best-resources-for-ml.png)
