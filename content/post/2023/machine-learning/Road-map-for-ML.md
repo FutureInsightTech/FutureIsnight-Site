@@ -125,4 +125,4 @@ Here is the roadmap that I used to learn machine learning, and I hope you will l
 
 Please feel free to contact me if you have any questions.
 
-![](/images/Road-to-ML.png)
+![](/images/2023/Road-Map/Road-to-ML.png)

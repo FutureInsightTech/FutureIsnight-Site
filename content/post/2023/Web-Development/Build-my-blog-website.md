@@ -80,11 +80,11 @@ Example:
 hugo new site rafay-blogs
 ```
 
-![image](/images/build-hugo-website/hugo-new-site.png)
+![image](/images/2023/build-hugo-website/hugo-new-site.png)
 Hugo websites are handled using a config file that is generated when you create them.  Every single instruction will be written in the config file. The config file can have different extensions, such as toml or yaml. The default extension for this configuration file is.toml.
 
 Now Enter into the folder, Once your are in the folder, Open the folder using your terminal and open the folder in any of the code editior of your choice for me I am using visual studio code
-![image](/images/build-hugo-website/opeing-file-in-code.png)
+![image](/images//build-hugo-website/opeing-file-in-code.png)
 
 In Hugo everything is done in the config file and by default you   config file will contain this sample code.
 ```
@@ -111,7 +111,7 @@ The server will compile and build your website, and you can view the changes at 
 localhost:131
 ```
 Without any theme your website will look like this:
-![image](/images/build-hugo-website/first-run.png)
+![image](/images/2023/build-hugo-website/first-run.png)
 
 ### Theme Hunt:
 Now it's time to find a theme, and you can find a good one on the Hugo [website](https://themes.gohugo.io/).
@@ -119,12 +119,12 @@ Now it's time to find a theme, and you can find a good one on the Hugo [website]
 Once you have selected your theme, download it, and place all the theme files into the theme file folder in your website folder.
 
 **Theme Folder**
-![image](/images/build-hugo-website/theme-folder.png)
+![image](/images/2023/build-hugo-website/theme-folder.png)
 
 For this purpose I will be going with [gokarna](https://themes.gohugo.io/themes/gokarna/) theme. 
 
 Download all the files for this theme and place them in the website theme folder.
-![image](/images/build-hugo-website/theme-in-them.png)
+![image](/images/2023/build-hugo-website/theme-in-them.png)
 
 Now add theme name into the config file: 
 ```
@@ -138,7 +138,7 @@ theme = 'gokarna'
 ```
 
 When you add a theme, it will begin to work and will look like this:
-![image](/images/build-hugo-website/website-theme.png)
+![image](/images/2023/build-hugo-website/website-theme.png)
 
 ### Playing with Config File:
 Mainly, there are two config files.  

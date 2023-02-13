@@ -126,7 +126,7 @@ This code selects a div element with a data-class class and retrieves its inner 
 
 Web scraping with JavaScript is a powerful tool for extracting data from websites. With Puppeteer, you can automate the Chrome browser and extract data from websites with ease. Whether you're using the data for market research, competitor analysis, or lead generation, web scraping can provide you with valuable insights into your business or industry.
 
-![image](/images/web-scrapper/web-scrapper.png)
+![image](/images/2023/web-scrapper/web-scrapper.png)
 
 
 
