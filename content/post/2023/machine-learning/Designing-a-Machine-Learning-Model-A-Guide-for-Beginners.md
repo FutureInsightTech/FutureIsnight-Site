@@ -42,4 +42,4 @@ If you have question then free will to [email me](mailto:99marafay@gmail.com) or
 
 see you next time❤️.
 
-![image](/images/create-own-model/Create-your-Own-Machine-Learning-Model.png)
+![image](/images/2023/create-own-model/Create-your-Own-Machine-Learning-Model.png)

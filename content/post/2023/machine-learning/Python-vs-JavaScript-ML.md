@@ -84,5 +84,5 @@ From a business standpoint, Python is used for machine learning projects for sev
 
 For me, Python is the key, because of its industry and flexibility. Python is my preferred programming language because of its large package library.
 
-<!-- ![image](Python-JavaScript.png) -->
+![image](/static/images/2023/Python-vs-JavaScript/Python-JavaScript.png)
 
