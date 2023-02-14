@@ -14,7 +14,7 @@ False data injection is a type of cyber attack that occurs when an attacker alte
 
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records. These attacks can be carried out by insiders or outsiders with various motives, ranging from theft and sabotage to espionage and cyber warfare.
 
-# Typr of False Data Injection Attacks:
+# Type of False Data Injection Attacks:
 ## Type 01:
 One common type of false data injection attack is the manipulation of sensor readings. This type of attack can be carried out by altering the readings of sensors used in control systems to measure physical parameters, such as temperature, pressure, and flow rate. By introducing false readings into the control system, the attacker can cause the system to make incorrect decisions, leading to improper operation and potentially dangerous conditions.
 
