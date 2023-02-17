@@ -24,11 +24,7 @@ function git_commit()
   Enter your Commit Message:
   ----------------------------------------
   "
-
   read message
-  echo "This is the message :$message"
-
-  #git commit -m 
   git commit -m "$message"
 }
 # This is the Push function
