@@ -8,7 +8,7 @@ description: "Machine learning is the feeding of data, but not just data, but al
 showTableOfContents: true
 url: /Is-Maths-required-for-ML/
 ---
-![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png.jpg)
+![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png)
 
 
 # Introduction:

@@ -160,6 +160,6 @@ Here are some of the references and research papers that I used to understand th
 If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
 
 # Thumbnail:
-![image](/images/Ml-algo/SVM/Machine%20Learning%20Algo%20SVM.png)
+![image](/images/2023/Ml-algo/SVM/Machine-Learning-Algo-SVM.png)
 
 
