@@ -6,7 +6,17 @@
     <description>Recent content in Machine Learning on Abdul Rafay Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2023 20:00:44 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression</title>
+      <link>https://rafayblogs.tech/linear-regression/</link>
+      <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
+      
+      <guid>https://rafayblogs.tech/linear-regression/</guid>
+      <description>Introduction: Here is a series, where I am going to learn different machine learn models and algorithm and see how there different from each other and what make them so unique. So for today I will be going through Linear Regression.
+In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun.</description>
+    </item>
+    
     <item>
       <title>False Data Injection Attack</title>
       <link>https://rafayblogs.tech/FDIA/</link>

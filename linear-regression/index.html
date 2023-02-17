@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Linear Regression</title>
+    <meta name="description" content="Don&#39;t Comments bad code- rewrite it.">
+    <meta name="keywords" content='blog, gokarna, hugo, Machine Learning'>
+
+    <meta property="og:url" content="https://rafayblogs.tech/linear-regression/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Linear Regression">
+    <meta property="og:description" content="Don&#39;t Comments bad code- rewrite it.">
+    <meta property="og:image" content="/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Linear Regression">
+    <meta name="twitter:description" content="Don&#39;t Comments bad code- rewrite it.">
+    <meta property="twitter:domain" content="https://rafayblogs.tech/linear-regression/">
+    <meta property="twitter:url" content="https://rafayblogs.tech/linear-regression/">
+    <meta name="twitter:image" content="/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="https://rafayblogs.tech/linear-regression/" />
+
+    <link rel="stylesheet" type="text/css" href="https://rafayblogs.tech/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://rafayblogs.tech/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://rafayblogs.tech/css/dark.css">
+
+    <script src="https://rafayblogs.tech/js/svg-injector.min.js"></script>
+    <script src="https://rafayblogs.tech/js/feather-icons.min.js"></script>
+    <script src="https://rafayblogs.tech/js/main.js"></script>
+
+    
+    
+    <script>console.log('Any HTML')</script>
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+   <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://rafayblogs.tech">
+                <img src="https://rafayblogs.tech/images/avatar.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://rafayblogs.tech">Abdul Rafay Blogs</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://rafayblogs.tech/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://rafayblogs.tech/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://rafayblogs.tech/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://rafayblogs.tech/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://rafayblogs.tech/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://rafayblogs.tech/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Linear Regression</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 16, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://rafayblogs.tech/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://rafayblogs.tech/tags/machine-learning">Machine Learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="introduction">Introduction:</h1>
+<p>Here is a series, where I am going to learn different machine learn models and algorithm and see how there different from each other and what make them so unique. So for today I will be going through Linear Regression.</p>
+<p>In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun.</p>
+<h1 id="linear-regression">Linear Regression</h1>
+<p>So there are multiple ways you can define linear regression, but the simplest way to define it is that it is a supervised learning model in which this model will find the best linear line between two independent or dependent variables. This model will find the perfect relation between two or more than two variables. This entire work is known as a linear regression model.</p>
+<h2 id="type">Type:</h2>
+<p>Linear Regression is two type <strong>Simple and Multiple Linear Regression Model</strong></p>
+<p><strong>Simple Linear Regression</strong> is where only on independent variable is present and the model will find the relation between independent variables.</p>
+<p>Whereas in <strong>Multiple Linear Regression</strong> there will be more than one independent variable and the model have to find relation between them.</p>
+<h2 id="mathematical-equation">Mathematical Equation:</h2>
+<h3 id="simple-linear-regression">Simple Linear Regression</h3>
+<p>Equation of Simple Linear Regression, where bo is the intercept, b1 is coefficient or slope, x is the independent variable and y is the dependent variable.</p>
+<p><img src="/images/2023/Ml-algo/Linear-Regression/simple.png" alt="eq1"></p>
+<h3 id="multiple-linear-regression">Multiple Linear Regression</h3>
+<p>Equation of Multiple Linear Regression, where bo is the intercept, b1,b2,b3,b4…,bn are coefficients or slopes of the independent variables x1,x2,x3,x4…,xn and y is the dependent variable.
+<img src="/images/2023/Ml-algo/Linear-Regression/multiple.png" alt="eq2"></p>
+<p><strong>A Linear Regression model’s main aim is to find the best fit linear line and the optimal values of intercept and coefficients such that the error is minimized.
+Error is the difference between the actual value and Predicted value and the goal is to reduce this difference.</strong></p>
+<p>#Important Things to Train a Model:
+There are some important thing that are required to be done when you need to train any machine learning model and all of them are stated bellow;</p>
+<ol>
+<li>Load dataset.</li>
+<li>Clean Dataset.</li>
+<li>Visualize Dataset.</li>
+<li>Split the dataset into <strong>Training Set</strong> and <strong>Testing Set</strong>.</li>
+<li>Train the model using training Dataset.</li>
+<li>Use some king of learning rate and Fix the Mean Square Error</li>
+<li>Check the accuracy of the model.</li>
+<li>Test or Predict the model using testing Dataset.</li>
+<li>Visualize the new predication.</li>
+</ol>
+<h1 id="implementation">Implementation:</h1>
+<p>Here is a simple example of Linear regression that will help you to understand with code.</p>
+<h2 id="linear-regression-with-boston-data-set">Linear Regression with Boston Data Set:</h2>
+<ol>
+<li>Importing different libraries and the dataset called <strong>Boston</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_boston</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div><ol start="2">
+<li>Loading the Dataset &amp; Printing the dataset:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span><span class="o">=</span> <span class="n">load_boston</span><span class="p">()</span>
+</code></pre></div><p>In the above code we are using the data-frame library and CSV library using the csv library we are reading the excel sheet that will contain all of the data, using data frame we are loading the data into a Visualize form.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">data</span>
+</code></pre></div><ol start="3">
+<li>Getting the Data &amp; feature name:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># The explanatory variables.</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+<span class="n">header</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;feature_names&#39;</span><span class="p">]</span>
+</code></pre></div><ol start="4">
+<li>Reshaping:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">Y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">Y</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div><ol start="5">
+<li>Data into Data Frame:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">header</span><span class="p">)</span><span class="o">+</span><span class="p">[</span><span class="s1">&#39;PRICE&#39;</span><span class="p">]</span>
+</code></pre></div><ol start="6">
+<li>Rounding the Data Set:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div><ol start="7">
+<li>Apply Linear Regression Model:
+So when you want to use linear regression, there are two ways: <strong>1</strong> You can use the built-in model and library; this method is fast and does not require much logic. <strong>2.</strong> You can code linear regression from scratch; by doing this, you can control the logic of the application and push the model to its limits.</li>
+</ol>
+<p>In this Blog I will be using built in functions and libraries to compute Linear Regression.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">lm</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">(</span><span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+</code></pre></div><ol start="8">
+<li>Fitting the Data into Model:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">lm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;parent&#39;</span><span class="p">]],</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;child&#39;</span><span class="p">]])</span>
+</code></pre></div><ol start="9">
+<li>Display the results in the form of Data frame:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Display the parameters as a DataFrame.</span>
+<span class="n">parametersDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Parameter Value&#39;</span><span class="p">],</span><span class="n">columns</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>
+<span class="n">parametersDF</span><span class="p">[</span><span class="s1">&#39;Intercept&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">intercept_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">parametersDF</span>
+
+</code></pre></div><p>In the above patch of code, we are reading the training data set into a data frame, and then that data frame will be displayed.</p>
+<ol start="10">
+<li>Predicting the Values:
+Now our data is fit and model is trained, we will start with the predication.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">predicty</span><span class="o">=</span><span class="n">lm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;parent&#39;</span><span class="p">]])</span>
+</code></pre></div><ol start="11">
+<li>Result:
+Now we will start with the displaying the result.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Display real Y vs predicted Y.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">predicty</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;REAL PRICE&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PREDICTED PRICE&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div><p>Once the code is compiled then your output should like this:
+<img src="/images/2023/Ml-algo/Linear-Regression/result.jpg" alt="result"></p>
+<h1 id="more-examples">More Examples:</h1>
+<p>You can find more examples and problems by <a href="https://github.com/1-Power/Machine-Learning">clicking here</a>.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>Linear regression is great. It has its ups and downs, but over all, it can be used for a lot of things. So learn it and use it. I am still learning and making sure that my work is good and flawless.</p>
+<h1 id="contact-me">Contact Me:</h1>
+<p>If you have any questions, please contact me</p>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">My website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<p>I will see you next time❤️.</p>
+<h1 id="references">References:</h1>
+<p>So this Blog I did some research and tried my best to learn so if you any issue you can contact me or references the links bellow.</p>
+<h2 id="articles-references">Articles references:</h2>
+<ul>
+<li><a href="https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/what-is-linear-regression/">Article 1</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2021/05/all-you-need-to-know-about-your-first-machine-learning-model-linear-regression/#:~:text=In%20the%20most%20simple%20words,the%20dependent%20and%20independent%20variable.">Article 2</a></li>
+</ul>
+<h2 id="github-repository">GitHub Repository:</h2>
+<ul>
+<li><a href="https://github.com/1-Power/Machine-Learning/blob/main/Linear-Regression/LinearRegession.ipynb">Repository 1</a></li>
+</ul>
+<h2 id="video-references">Video References:</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=kHwlB_j7Hkc">Video Reference 1</a></li>
+</ul>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/Ml-algo/Linear-Regression/linear-regression.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/FDIA/">
+            &#8592;
+            Previous:
+            False Data Injection Attack
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 13, 2023
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction:</a></li>
+    <li><a href="#linear-regression">Linear Regression</a>
+      <ol>
+        <li><a href="#type">Type:</a></li>
+        <li><a href="#mathematical-equation">Mathematical Equation:</a>
+          <ol>
+            <li><a href="#simple-linear-regression">Simple Linear Regression</a></li>
+            <li><a href="#multiple-linear-regression">Multiple Linear Regression</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#implementation">Implementation:</a>
+      <ol>
+        <li><a href="#linear-regression-with-boston-data-set">Linear Regression with Boston Data Set:</a></li>
+      </ol>
+    </li>
+    <li><a href="#more-examples">More Examples:</a></li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#contact-me">Contact Me:</a></li>
+    <li><a href="#references">References:</a>
+      <ol>
+        <li><a href="#articles-references">Articles references:</a></li>
+        <li><a href="#github-repository">GitHub Repository:</a></li>
+        <li><a href="#video-references">Video References:</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 </span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://rafay99.info/">Abdul Rafay</a>
+    </span>
+</footer>
+</body>
+</html>
