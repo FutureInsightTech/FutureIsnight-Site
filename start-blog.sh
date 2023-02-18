@@ -30,7 +30,7 @@ Please Enter the year:
   read  year
 
   echo -ne "
-==========================
+==================================
 Please Enter the Tag Name:
 
 Choose:
@@ -38,10 +38,15 @@ Choose:
 2. essential-skills
 3. Web-Development
 
-Note: Do not add spaces
-==========================
+Note: Do not add spaces 
+and enter the correct spelling
+====================================
 "
 read  tag
+
+#if [[]];then
+
+#if
 
   echo -ne "
 ======================================
@@ -116,8 +121,20 @@ Enter your choice (y/n):
   if [[ $choice_git == 'y' ]]; then
     run_git
   fi
+
+  bye
 }
 
+function bye()
+{
+  echo -ne "
+===============================================
+All Operation are completed. 
+Have a Nice Day. 
+Bye !!
+===============================================
+"
+}
 function main()
 {
   logic
