@@ -23,14 +23,18 @@ enableRobotsTXT = true
     # pygmentsStyle = "monokai"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
-    favicon = "images/favicon.jpg"
+    favicon = "/images/favicon.png"
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
     mainSections = ["posts"]
-    pygmentsStyle = "catppuccin-frappe"
+    pygmentsStyle = "catppuccin-frappe" 
     
+  #---------------------------
+  #     Google Analytics
+  #---------------------------
     googleAnalytics="G-HSKPE7HLQL"
+
   #-----------------------------------------
   #               cookies
   #-----------------------------------------
@@ -93,3 +97,9 @@ home = ["HTML", "AMP", "RSS", "JSON"]
       tabWidth = 4
       noClasses = false
 
+#-------------------------
+#  Pre-Load images
+#-------------------------
+[params.preloader]
+enable = true
+preloader = "png" # use png, jpg, svg or gif format
