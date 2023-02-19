@@ -29,6 +29,8 @@ enableRobotsTXT = true
     author = "Abdul Rafay"
     mainSections = ["posts"]
     pygmentsStyle = "catppuccin-frappe"
+    
+    googleAnalytics="G-HSKPE7HLQL"
   #-----------------------------------------
   #               cookies
   #-----------------------------------------

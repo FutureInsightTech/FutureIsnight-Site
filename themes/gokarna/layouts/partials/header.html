@@ -1,7 +1,20 @@
 <header class="header">
-   <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script> 
+  <!---analytics for umami Software--> 
+  <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script> 
+  <!--- Google Ads -->
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script> 
-   <nav class="header-nav">      
+   <!-- Google tag (gtag.js) ---->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HSKPE7HLQL');
+  </script>
+ 
+  <!---The Base of the website-->
+  <nav class="header-nav">      
         {{ if isset .Site.Params "avatarurl" }}
         <div class="avatar">
             <a href="{{ .Site.BaseURL }}">
