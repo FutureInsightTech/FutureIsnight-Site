@@ -1,4 +1,4 @@
-baseURL = 'https://future-insight.blog/'
+baseURL = 'https://future-insight.blog'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
