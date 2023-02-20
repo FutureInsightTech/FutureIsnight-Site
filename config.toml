@@ -1,6 +1,6 @@
-baseURL = 'https://rafayblogs.tech'
+baseURL = 'https://future-insight.blog/'
 languageCode = 'en-us'
-title = 'Abdul Rafay Blogs'
+title = 'Future Insight'
 theme = 'gokarna'
 defaultContentLanguage = "en"
 enableRobotsTXT = true
@@ -9,12 +9,13 @@ enableRobotsTXT = true
   #                 Default Parameters
   # -----------------------------------------------------------
 [params]
-    avatarURL = "/images/avatar.jpg"
-    description = "Don't Comments bad code- rewrite it."
+    avatarURL = "/images/16.png"
+    description = "Programming is not about typing, it's about thinking. - Rich Hickey"
     showPostsOnHomePage = "popular"
     togglePreviousAndNextButtons = "true"
     customHeadHTML = "<script>console.log('Any HTML')</script>"
-     socialIcons = [
+    avatarSize = "size-l"
+    socialIcons = [
       {name = "twitter", url = "https://twitter.com/abdul_rafay99"},
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
@@ -27,7 +28,7 @@ enableRobotsTXT = true
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
-    mainSections = ["posts"]
+    mainSections = ["posts", "projects","Authors"]
     pygmentsStyle = "catppuccin-frappe" 
     
   #---------------------------
@@ -39,37 +40,57 @@ enableRobotsTXT = true
   #               cookies
   #-----------------------------------------
   [params.cookies]
-  enable = false
+  enable = true
   expire_days = 2
 
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
   # -----------------------------------------------------------
-  [[menu.main]]
-    identifier = "post"
-    url = "/post/"
-    name = "Posts"
-    weight = 1
-    pre = "<span data-feather='book'></span>"
-
+  
+  # Home
   [[menu.main]]
     identifier = "home"
     url = "/"
     name = "Home"
     weight = 1
     pre = "<span data-feather='home'></span>"
+  
+  # Author
+    [[menu.main]]
+    identifier = "author"
+    url = "https://rafay99.info"
+    name = "Author"
+    weight = 2
+    pre = "<span data-feather='user'></span>"
 
+  # Posts or Blogs
+  [[menu.main]]
+    identifier = "post"
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+    pre = "<span data-feather='book'></span>"
+    
+    # #Projects 
+    # [[menu.main]]
+    # identifier = "page"
+    # url = "/projects/"
+    # name = "Projects"
+    # weight = 4
+    # pre = "<span data-feather='code'></span>"
+  
+  # Tage or Categories
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 2
+    weight = 5
     pre = "<span data-feather='tag'></span>"
     
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 3
+    weight = 6
     pre = "<span data-feather='github'></span>"
 
 
