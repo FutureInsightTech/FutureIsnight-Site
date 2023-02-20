@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Abdul Rafay Blogs</title>
-    <link>https://rafayblogs.tech/tags/</link>
-    <description>Recent content in Tags on Abdul Rafay Blogs</description>
+    <title>Tags on Future Insight</title>
+    <link>https://future-insight.blog/tags/</link>
+    <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
-      <link>https://rafayblogs.tech/tags/blog/</link>
+      <link>https://future-insight.blog/tags/blog/</link>
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tags/blog/</guid>
+      <guid>https://future-insight.blog/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://rafayblogs.tech/tags/machine-learning/</link>
+      <link>https://future-insight.blog/tags/machine-learning/</link>
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tags/machine-learning/</guid>
+      <guid>https://future-insight.blog/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web Development</title>
-      <link>https://rafayblogs.tech/tags/web-development/</link>
+      <link>https://future-insight.blog/tags/web-development/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tags/web-development/</guid>
+      <guid>https://future-insight.blog/tags/web-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>roadmap</title>
-      <link>https://rafayblogs.tech/tags/roadmap/</link>
+      <link>https://future-insight.blog/tags/roadmap/</link>
       <pubDate>Thu, 26 Jan 2023 03:34:34 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tags/roadmap/</guid>
+      <guid>https://future-insight.blog/tags/roadmap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>essential-skills</title>
-      <link>https://rafayblogs.tech/tags/essential-skills/</link>
+      <link>https://future-insight.blog/tags/essential-skills/</link>
       <pubDate>Thu, 26 Jan 2023 02:56:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tags/essential-skills/</guid>
+      <guid>https://future-insight.blog/tags/essential-skills/</guid>
       <description></description>
     </item>
     

@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Abdul Rafay Blogs</title>
-    <link>https://rafayblogs.tech/tags/blog/</link>
-    <description>Recent content in blog on Abdul Rafay Blogs</description>
+    <title>blog on Future Insight</title>
+    <link>https://future-insight.blog/tags/blog/</link>
+    <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://rafayblogs.tech/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Regression</title>
-      <link>https://rafayblogs.tech/linear-regression/</link>
+      <link>https://future-insight.blog/linear-regression/</link>
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/linear-regression/</guid>
+      <guid>https://future-insight.blog/linear-regression/</guid>
       <description>Introduction: Here is a series, where I am going to learn different machine learn models and algorithm and see how there different from each other and what make them so unique. So for today I will be going through Linear Regression.
 In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun.</description>
     </item>
     
     <item>
       <title>False Data Injection Attack</title>
-      <link>https://rafayblogs.tech/FDIA/</link>
+      <link>https://future-insight.blog/FDIA/</link>
       <pubDate>Mon, 13 Feb 2023 20:00:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/FDIA/</guid>
+      <guid>https://future-insight.blog/FDIA/</guid>
       <description>Introduction: False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records.</description>
     </item>
     
     <item>
       <title>Support Vector Machine</title>
-      <link>https://rafayblogs.tech/Support-Vector-Machine/</link>
+      <link>https://future-insight.blog/Support-Vector-Machine/</link>
       <pubDate>Tue, 07 Feb 2023 20:13:50 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/Support-Vector-Machine/</guid>
+      <guid>https://future-insight.blog/Support-Vector-Machine/</guid>
       <description>Introduction: So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.
 I am doing a project where I need to use SVM for detecting cyber attacks, but in order to identify them, I need to learn what makes this algorithm so good. For this project, I will be learning the basics of SVM with real-world examples, and once we are done with the examples, we will try the real project.</description>
     </item>
     
     <item>
       <title>Design your own Machine Learning Model: Beginner Guide</title>
-      <link>https://rafayblogs.tech/create-your-own-ml-model/</link>
+      <link>https://future-insight.blog/create-your-own-ml-model/</link>
       <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/create-your-own-ml-model/</guid>
+      <guid>https://future-insight.blog/create-your-own-ml-model/</guid>
       <description>Introduction: Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we&amp;rsquo;ll walk through the basics of designing a machine learning model from scratch.
 Steps: Follow these steps to get a better understanding of how machine learning models are created.</description>
     </item>
     
     <item>
       <title>Web Scrapper</title>
-      <link>https://rafayblogs.tech/web-scrapper/</link>
+      <link>https://future-insight.blog/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/web-scrapper/</guid>
+      <guid>https://future-insight.blog/web-scrapper/</guid>
       <description>Introducation Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Best Resources to Learn ML</title>
-      <link>https://rafayblogs.tech/best-resources-for-ML/</link>
+      <link>https://future-insight.blog/best-resources-for-ML/</link>
       <pubDate>Fri, 27 Jan 2023 01:07:03 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/best-resources-for-ML/</guid>
+      <guid>https://future-insight.blog/best-resources-for-ML/</guid>
       <description>Introduction Machine Learning and Deep Learning are rapidly growing fields that are changing the way we interact with technology. These fields have the power to create intelligent systems that can learn from data and make predictions, decisions, and even create new knowledge. If you&amp;rsquo;re interested in learning about Machine Learning and Deep Learning, there are many resources available to help you get started.
 Best Resources As I was learning Machine Learning and Deep Learning, I got to the point where I did not understand the basic knowledge of Machine Learning Models and Deep Learning Models.</description>
     </item>
     
     <item>
       <title>Tools for ML</title>
-      <link>https://rafayblogs.tech/tools-for-ml/</link>
+      <link>https://future-insight.blog/tools-for-ml/</link>
       <pubDate>Fri, 27 Jan 2023 00:50:32 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/tools-for-ml/</guid>
+      <guid>https://future-insight.blog/tools-for-ml/</guid>
       <description>Introduction: Hi! My name is Abdul Rafay, and I work as a Web Development and Machine Learning Engineer. I recently finished my studies, and I’ve been working in the web development industry for a while, but machine learning is a new field for me. I’m learning, and my passion grows as my experience in this field grows. So as a developer, I’ll show you some of the tools that are awesome to work with when you are in the field of machine learning and web development.</description>
     </item>
     
     <item>
       <title>IS Maths Needed for ML</title>
-      <link>https://rafayblogs.tech/Is-Maths-required-for-ML/</link>
+      <link>https://future-insight.blog/Is-Maths-required-for-ML/</link>
       <pubDate>Thu, 26 Jan 2023 03:34:34 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/Is-Maths-required-for-ML/</guid>
+      <guid>https://future-insight.blog/Is-Maths-required-for-ML/</guid>
       <description>Introduction: Hi! My name is Abdul Rafay, and I work on training different models from provided data, as well as deploying the model on any of the cloud services.
 When I started this journey, my teacher and mentor told me to learn math and probability in order to understand the major concepts needed to become an expert in machine learning. But most students hate math and probability because some of the concepts can be tricky to learn and might not be interesting to them.</description>
     </item>
     
     <item>
       <title>Time Management</title>
-      <link>https://rafayblogs.tech/time-management/</link>
+      <link>https://future-insight.blog/time-management/</link>
       <pubDate>Thu, 26 Jan 2023 02:56:44 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/time-management/</guid>
+      <guid>https://future-insight.blog/time-management/</guid>
       <description>Introduction: Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 Strategies:  One strategy that can be effective is to create a daily schedule.</description>
     </item>
     
     <item>
       <title>Learn Git</title>
-      <link>https://rafayblogs.tech/learn-git-&amp;-github/</link>
+      <link>https://future-insight.blog/learn-git-&amp;-github/</link>
       <pubDate>Tue, 24 Jan 2023 17:13:24 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/learn-git-&amp;-github/</guid>
+      <guid>https://future-insight.blog/learn-git-&amp;-github/</guid>
       <description>Introduction: As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.
 Before Git: But before I was using Git, My code folder structure was something like this:
 Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.</description>
@@ -109,40 +109,40 @@ Every time I was working on a project, I made a copy of that folder and then mad
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://rafayblogs.tech/build-hugo-website/</link>
+      <link>https://future-insight.blog/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/build-hugo-website/</guid>
+      <guid>https://future-insight.blog/build-hugo-website/</guid>
       <description>Website for My Blog: Introduction: I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>
     
     <item>
       <title>Road Map for ML</title>
-      <link>https://rafayblogs.tech/road-map-for-ml/</link>
+      <link>https://future-insight.blog/road-map-for-ml/</link>
       <pubDate>Thu, 19 Jan 2023 14:11:15 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/road-map-for-ml/</guid>
+      <guid>https://future-insight.blog/road-map-for-ml/</guid>
       <description>Introduction: Learning is something that we have to do every day. As a developer, you need to learn the latest and hottest technologies because if you don&amp;rsquo;t, you might not be able to succeed in this field.
 I am a web developer and machine learning engineer. I am working on both and trying to improve my skills with time, but sometimes you need guidance to see where you are right now and where you see yourself in the future.</description>
     </item>
     
     <item>
       <title>Machine learning Requires Amazing Skills</title>
-      <link>https://rafayblogs.tech/skills-for-ml/</link>
+      <link>https://future-insight.blog/skills-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/skills-for-ml/</guid>
+      <guid>https://future-insight.blog/skills-for-ml/</guid>
       <description>Introducation: So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development.
 Understanding: Those things are: 1. understanding the type of data; and 2. once you know what kind of data this is, you need to check what kind of model you are going to use.</description>
     </item>
     
     <item>
       <title>Python vs JavaScript ML</title>
-      <link>https://rafayblogs.tech/JavaScript-vs-Python-for-ml/</link>
+      <link>https://future-insight.blog/JavaScript-vs-Python-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://rafayblogs.tech/JavaScript-vs-Python-for-ml/</guid>
+      <guid>https://future-insight.blog/JavaScript-vs-Python-for-ml/</guid>
       <description>Introduction: Hi!, Over the years I have developed multiple websites using multiple technologies such as HTML, CSS, JavaScript, and a couple of frameworks, but now I am expanding my skill set in the world of machine learning. I used JavaScript for everything and loved it; things were very easy and simple for me. I needed to create a static website, so I just used NodeJS with an EJS template to create a simple website.</description>
     </item>
     
