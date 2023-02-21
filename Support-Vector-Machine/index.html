@@ -47,8 +47,6 @@
 
     
     
-    <script>console.log('Any HTML')</script>
-    
 </head>
 <body>
         <script type="text/javascript">
@@ -98,7 +96,15 @@
             </div>
             
             <div class="nav-link">
+                <a href="https://future-insight.blog/project/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
                 <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/policy/"><span data-feather='edit-3'></span> Policy </a>
             </div>
             
             <div class="nav-link">
@@ -137,7 +143,15 @@
                 </li>
                 
                 <li class="nav-item">
+                    <a href="https://future-insight.blog/project/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
                     <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/policy/"><span data-feather='edit-3'></span> Policy </a>
                 </li>
                 
                 <li class="nav-item">
@@ -187,24 +201,24 @@
 <p>The operation is straightforward, but there are ways to use SVM to optimise and get the most out of the SVM Machine Learning Model.</p>
 <h2 id="working-with-linear-data">Working with Linear Data:</h2>
 <p>The basics of the support vector machine and how it will work can be easily explained with an example. Consider a data set that contains two features, x and y, each represented by a different colour (red or blue) and each with its own shape (circle or triangle, respectively). Now we will plot the dataset, and we will get this graph.
-<img src="/images/Ml-algo/SVM/image-01.png" alt="image"></p>
+<img src="/images/2023/Ml-algo/SVM/image-01.png" alt="image"></p>
 <p>A Support Vector Machine tasks those data points and then uses a function called hyperplane to create a best sperate boundary with tags. This line is the <strong>decision boundary</strong>. Everything on the right side is considered blue, and everything on the left side is considered red.
-<img src="/images/Ml-algo/SVM/image-02.png" alt="image-02"></p>
+<img src="/images/2023/Ml-algo/SVM/image-02.png" alt="image-02"></p>
 <p>But, what exactly is the best hyperplane? For SVM, it’s the one that maximizes the margins from both tags. In other words: the hyperplane (remember it&rsquo;s a line in this case) whose distance to the nearest element of each tag is the largest.
-<img src="/images/Ml-algo/SVM/image-03.png" alt="image-03"></p>
+<img src="/images/2023/Ml-algo/SVM/image-03.png" alt="image-03"></p>
 <h2 id="working-with-non-linear-data">Working with Non-Linear Data:</h2>
 <p>The above example is very simple, and in the real world, data will not be much more linear; it is always going to spread in multiple directions, and there can be more than two variables. So what will you do when there are more than two interacting variables?</p>
 <p>Let&rsquo;s understand this with an example, and your use case might look like this:
-<img src="/images/Ml-algo/SVM/image-04.png" alt="image-04"></p>
+<img src="/images/2023/Ml-algo/SVM/image-04.png" alt="image-04"></p>
 <p>It’s pretty clear that there’s not a linear decision boundary (a single straight line that separates both tags). However, the vectors are very clearly segregated and it looks as though it should be easy to separate them.</p>
 <p>So to solve it, we will be adding a third dimension. Uptill now we have only two dimension x and y but Now we will be creating <strong>Z</strong> as a third dimension, and we rule that it be calculated a certain way that is convenient for us: <em>z = x² + y²</em> (you’ll notice that’s the equation for a circle).</p>
 <p>This will give us a three-dimensional space. Taking a slice of that space, it looks like this:
-!(image-05)[/images/Ml-algo/SVM/image-05.png]</p>
+!(image-05)[/images/2023/Ml-algo/SVM/image-05.png]</p>
 <p>Now you can see there are two groups, and Now we can use SVM and use a hyperplan.
-<img src="/images/Ml-algo/SVM/image-06.png" alt="image-06"></p>
+<img src="/images/2023/Ml-algo/SVM/image-06.png" alt="image-06"></p>
 <p>That’s great! Note that since we are in three dimensions now, the hyperplane is a plane parallel to the <em>x</em> axis at a certain <em>z</em> (let’s say <em>z = 1</em>).</p>
 <p>What’s left is mapping it back to two dimensions:
-<img src="/images/Ml-algo/SVM/image-07.png" alt="image-07"></p>
+<img src="/images/2023/Ml-algo/SVM/image-07.png" alt="image-07"></p>
 <p>In above plot, points to consider are:</p>
 <ul>
 <li>All values for z would be positive always because z is the squared sum of both x and y</li>
@@ -228,40 +242,40 @@
 <ol>
 <li>Import Python Libraries:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span><span class="p">,</span> <span class="n">datasets</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> numpy <span style="color:#fff;font-weight:bold">as</span> np
+<span style="color:#fff;font-weight:bold">import</span> matplotlib.pyplot <span style="color:#fff;font-weight:bold">as</span> plt
+<span style="color:#fff;font-weight:bold">from</span> sklearn <span style="color:#fff;font-weight:bold">import</span> svm, datasets
 </code></pre></div><ol start="2">
 <li>Import Data Set:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># we only take the first two features. We could</span>
- <span class="c1"># avoid this ugly slicing by using a two-dim dataset</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">iris = datasets.load_iris()
+X = iris.data[:, :<span style="color:#ff0;font-weight:bold">2</span>] <span style="color:#007f7f"># we only take the first two features. We could</span>
+ <span style="color:#007f7f"># avoid this ugly slicing by using a two-dim dataset</span>
+y = iris.target
 </code></pre></div><ol start="3">
 <li>Loading SVM Model</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># SVM regularization parameter</span>
-<span class="n">C</span> <span class="o">=</span> <span class="mf">1.0</span> 
-<span class="c1"># When gama is not initialized then the value will be default value which is 0  but don&#39;t define 0 value because it will through an error </span>
-<span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># SVM regularization parameter</span>
+C = <span style="color:#ff0;font-weight:bold">1.0</span> 
+<span style="color:#007f7f"># When gama is not initialized then the value will be default value which is 0  but don&#39;t define 0 value because it will through an error </span>
+svc = svm.SVC(kernel=<span style="color:#0ff;font-weight:bold">&#39;linear&#39;</span>, C=<span style="color:#ff0;font-weight:bold">1</span>).fit(X, y)
 </code></pre></div><ol start="4">
 <li>Create a mesh to plot</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">x_max</span> <span class="o">/</span> <span class="n">x_min</span><span class="p">)</span><span class="o">/</span><span class="mi">100</span>
-<span class="n">xx</span><span class="p">,</span> <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="n">h</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">Z</span> <span class="o">=</span> <span class="n">svc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">xx</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">yy</span><span class="o">.</span><span class="n">ravel</span><span class="p">()])</span>
-<span class="n">Z</span> <span class="o">=</span> <span class="n">Z</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Paired</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Sepal length&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Sepal width&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="n">xx</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xx</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;SVC with linear kernel&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_min, x_max = X[:, <span style="color:#ff0;font-weight:bold">0</span>].min() - <span style="color:#ff0;font-weight:bold">1</span>, X[:, <span style="color:#ff0;font-weight:bold">0</span>].max() + <span style="color:#ff0;font-weight:bold">1</span>
+y_min, y_max = X[:, <span style="color:#ff0;font-weight:bold">1</span>].min() - <span style="color:#ff0;font-weight:bold">1</span>, X[:, <span style="color:#ff0;font-weight:bold">1</span>].max() + <span style="color:#ff0;font-weight:bold">1</span>
+h = (x_max / x_min)/<span style="color:#ff0;font-weight:bold">100</span>
+xx, yy = np.meshgrid(np.arange(x_min, x_max, h),np.arange(y_min, y_max, h))
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plt.subplot(<span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">1</span>, <span style="color:#ff0;font-weight:bold">1</span>)
+Z = svc.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+plt.contourf(xx, yy, Z, cmap=plt.cm.Paired, alpha=<span style="color:#ff0;font-weight:bold">0.8</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plt.scatter(X[:, <span style="color:#ff0;font-weight:bold">0</span>], X[:, <span style="color:#ff0;font-weight:bold">1</span>], c=y, cmap=plt.cm.Paired)
+plt.xlabel(<span style="color:#0ff;font-weight:bold">&#39;Sepal length&#39;</span>)
+plt.ylabel(<span style="color:#0ff;font-weight:bold">&#39;Sepal width&#39;</span>)
+plt.xlim(xx.min(), xx.max())
+plt.title(<span style="color:#0ff;font-weight:bold">&#39;SVC with linear kernel&#39;</span>)
+plt.show()
 </code></pre></div><h1 id="pros-and-cons-associated-with-svm">Pros and Cons associated with SVM</h1>
 <ul>
 <li><strong>Pros:</strong>
@@ -384,9 +398,9 @@
     
 
         </main><footer class="footer">
-    <span>&copy; 2023 </span>
+    <span>&copy; 2023  by Future Insight</span>
     <span>
-        Made with &#10084;&#65039; using <a target="_blank" href="https://rafay99.info/">Abdul Rafay</a>
+        Made with &#10084;&#65039; by <a target="_blank" href="https://rafay99.info/">Abdul Rafay</a>
     </span>
 </footer>
 </body>

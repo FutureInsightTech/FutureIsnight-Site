@@ -6,7 +6,17 @@
     <description>Recent content in Machine Learning on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Feb 2023 01:07:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Feb 2023 13:58:50 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logistical Regression</title>
+      <link>https://future-insight.blog/logistic-regression/</link>
+      <pubDate>Sat, 18 Feb 2023 13:58:50 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/logistic-regression/</guid>
+      <description>Introduction Logistical regression is a type of algorithm that uses information from one set of data to predict another set. In this article, we&amp;rsquo;ll take a look at what logistical regression is and how it works as well as some popular examples where it&amp;rsquo;s been used successfully.
+What is Logistical Regression Logistic regression is a type of regression analysis that is used to predict the probability of an event occurring. It&amp;rsquo;s also known as multinomial logistic regression, and it&amp;rsquo;s used in marketing, fraud detection, and risk assessment.</description>
+    </item>
+    
     <item>
       <title>Linear Regression</title>
       <link>https://future-insight.blog/linear-regression/</link>
