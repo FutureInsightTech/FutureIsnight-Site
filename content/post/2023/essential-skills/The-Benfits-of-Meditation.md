@@ -7,6 +7,7 @@ tags: ["blog" ,"essential-skills"]
 description: ""
 showTableOfContents: true
 url: /Benefits-of-Mindfulness-Meditation/
+image: "/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
 ---
 
 # Introduction:

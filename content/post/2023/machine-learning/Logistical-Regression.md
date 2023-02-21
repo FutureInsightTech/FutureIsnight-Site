@@ -1,12 +1,13 @@
 ---
 title: "Logistical Regression"
 date: 2023-02-18T13:58:50+05:00
-draft: true
+draft: false
 type: "post"
 tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
 url: /logistic-regression/
+image: "/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png"
 ---
 
 # Introduction
