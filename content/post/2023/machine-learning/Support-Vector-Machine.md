@@ -28,35 +28,35 @@ The operation is straightforward, but there are ways to use SVM to optimise and 
 
 ## Working with Linear Data:
 The basics of the support vector machine and how it will work can be easily explained with an example. Consider a data set that contains two features, x and y, each represented by a different colour (red or blue) and each with its own shape (circle or triangle, respectively). Now we will plot the dataset, and we will get this graph.
-![image](/images/Ml-algo/SVM/image-01.png)
+![image](/images/2023/Ml-algo/SVM/image-01.png)
 
 A Support Vector Machine tasks those data points and then uses a function called hyperplane to create a best sperate boundary with tags. This line is the **decision boundary**. Everything on the right side is considered blue, and everything on the left side is considered red. 
-![image-02](/images/Ml-algo/SVM/image-02.png)
+![image-02](/images/2023/Ml-algo/SVM/image-02.png)
 
 
 But, what exactly is the best hyperplane? For SVM, it’s the one that maximizes the margins from both tags. In other words: the hyperplane (remember it's a line in this case) whose distance to the nearest element of each tag is the largest.
-![image-03](/images/Ml-algo/SVM/image-03.png)
+![image-03](/images/2023/Ml-algo/SVM/image-03.png)
 
 ## Working with Non-Linear Data:
 The above example is very simple, and in the real world, data will not be much more linear; it is always going to spread in multiple directions, and there can be more than two variables. So what will you do when there are more than two interacting variables?
 
 Let's understand this with an example, and your use case might look like this:
-![image-04](/images/Ml-algo/SVM/image-04.png)
+![image-04](/images/2023/Ml-algo/SVM/image-04.png)
 
 It’s pretty clear that there’s not a linear decision boundary (a single straight line that separates both tags). However, the vectors are very clearly segregated and it looks as though it should be easy to separate them.
 
 So to solve it, we will be adding a third dimension. Uptill now we have only two dimension x and y but Now we will be creating **Z** as a third dimension, and we rule that it be calculated a certain way that is convenient for us: _z = x² + y²_ (you’ll notice that’s the equation for a circle).
 
 This will give us a three-dimensional space. Taking a slice of that space, it looks like this:
-!(image-05)[/images/Ml-algo/SVM/image-05.png]
+!(image-05)[/images/2023/Ml-algo/SVM/image-05.png]
 
 Now you can see there are two groups, and Now we can use SVM and use a hyperplan. 
-![image-06](/images/Ml-algo/SVM/image-06.png)
+![image-06](/images/2023/Ml-algo/SVM/image-06.png)
 
 That’s great! Note that since we are in three dimensions now, the hyperplane is a plane parallel to the _x_ axis at a certain _z_ (let’s say _z = 1_).
 
 What’s left is mapping it back to two dimensions:
-![image-07](/images/Ml-algo/SVM/image-07.png)
+![image-07](/images/2023/Ml-algo/SVM/image-07.png)
 
 
 In above plot, points to consider are:

@@ -7,6 +7,7 @@ tags: ["blog" ,""]
 description: ""
 showTableOfContents: true
 url: //
+image: "/images/2023/"
 ---
 
 # Introduction:
@@ -14,30 +15,31 @@ url: //
 # Implementation: 
 
 # Conclusion:
+With that, we will see you next time.❤️❤️
 
-# Contact Me:
-If you have any questions, please contact me 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
 - [Email](mailto:99marafay@gmail.com)
-- [My website](https://rafay99.info)
+- [Personal-Website](https://rafay99.info)
 - [GitHub](github.com/rafay99-epic) 
-
-I will see you next time❤️.
 
 # References:
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## Articles references:
 - [Article 1]()
-- [Article 2]()
-- [Article 3]()
+
 ## GitHub Repository:
 - [GitHub Repository 1]()
-- [GitHub Repository 2]()
-- [GitHub Repository 3]()
+
 ## Video References:
 - [Video Reference 1]()
-- [Video Reference 2]()
-- [Video Reference 3]()
-
 # Thumbnail:
 ![image](/images/2023/)
 

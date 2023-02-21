@@ -127,7 +127,7 @@ Download all the files for this theme and place them in the website theme folder
 ![image](/images/2023/build-hugo-website/theme-in-them.png)
 
 Now add theme name into the config file: 
-```
+```toml
 baseURL = 'http://example.org/'
 
 languageCode = 'en-us'

@@ -2,8 +2,8 @@
 
 echo "
 =============================================================================
---- Project Name: Blog Website
---- GitHub Repo:  https://github.com/rafay99-epic/Blog-website
+--- Project Name: Future Insight
+--- GitHub Repo:  https://github.com/rafay99-epic/Future-Insight
 --- Author Name:  Abdul Rafay
 --- Script Description: This Script will create a new Blog Post and
                         will ask to run the local server.
@@ -19,6 +19,24 @@ Running Hugo Server
 "
   hugo server
 }
+
+function create_project()
+{
+
+  echo -ne "
+======================================
+Enter the name of the Project:
+
+Please enter the extension as well.
+For this Project the extension is .md
+======================================
+  "
+  read  project_name
+
+  hugo new project/$project_name
+
+}
+
 
 function create_post()
 {
@@ -74,16 +92,23 @@ function reduce_image_size()
 
 function logic()
 {
+
   echo -ne "
-====================================
-Do you want to create new Blog Post:
-Enter yout choice (y/n):
-====================================
+========================================
+1. Do you want to create new Blog Post?
+
+              OR
+2. Do you want to create a New Project?
+
+Enter yout choice (1/2):
+========================================
 "
 read choice_post
 
-  if [[ $choice_post == 'y' ]];then
+  if [[ $choice_post == 1 ]];then
     create_post
+  else
+    create_project
   fi
 
   echo -ne "
