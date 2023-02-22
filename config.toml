@@ -36,6 +36,12 @@ enableRobotsTXT = true
   #---------------------------
     googleAnalytics="G-HSKPE7HLQL"
 
+  #---------------------------
+  # Website Output Format
+  #---------------------------
+  [outputs]
+  home = ["HTML"]
+ 
   #-----------------------------------------
   #               cookies
   #-----------------------------------------
@@ -58,7 +64,7 @@ enableRobotsTXT = true
   # Author
     [[menu.main]]
     identifier = "author"
-    url = "https://rafay99.info"
+    url = "/author/"
     name = "Author"
     weight = 2
     pre = "<span data-feather='user'></span>"
@@ -111,8 +117,6 @@ enableRobotsTXT = true
     endLevel = 3
     ordered = true
 
-# [outputs]
-# home = ["HTML", "AMP", "RSS", "JSON"]
 [markup.goldmark.renderer]
     unsafe = true
 [markup.highlight]
@@ -130,9 +134,9 @@ enableRobotsTXT = true
       noHl = false
       style = 'catppuccin-frappe'
       
-#-------------------------
-#  Pre-Load images
-#-------------------------
-[params.preloader]
-enable = true
-preloader = "png" # use png, jpg, svg or gif format
+  #-------------------------
+  #  Pre-Load images
+  #-------------------------
+  [params.preloader]
+  enable = true
+  preloader = "png" # use png, jpg, svg or gif format

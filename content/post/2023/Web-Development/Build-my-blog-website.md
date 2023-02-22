@@ -71,12 +71,12 @@ Once your have selected your theme now it's time to create your website.  To do 
 
 **Creating your static website:**
 The command bellow will create basic layout for your website.
-```
+```bash
 hugo new site <site name>
 ``` 
 
 Example:
-```
+```bash
 hugo new site rafay-blogs
 ```
 
@@ -87,7 +87,7 @@ Now Enter into the folder, Once your are in the folder, Open the folder using yo
 ![image](/images//build-hugo-website/opeing-file-in-code.png)
 
 In Hugo everything is done in the config file and by default you   config file will contain this sample code.
-```
+```toml
 baseURL = 'http://example.org/'
 
 languageCode = 'en-us'
@@ -102,12 +102,12 @@ title = 'My New Hugo Site'
 
 ### Running the Website:
 To run your website local device then enter the following command.
-```
+```bash
 hugo server
 ```
 
 The server will compile and build your website, and you can view the changes at port 1313, so the url will be 
-```
+```bash
 localhost:131
 ```
 Without any theme your website will look like this:
@@ -148,7 +148,7 @@ Mainly, there are two config files.
 Depending on the theme, there might not be any theme configuration files, so please check the official documentation of that theme. There will be a lot of features in that theme.
 
 #### Rafay-Blog config file:
-```
+```toml
 baseURL = 'https://rafay-blog.onrender.com'
 languageCode = 'en-us'
 title = 'Abdul Rafay Blogs'
@@ -231,7 +231,7 @@ enableRobotsTXT = true
 ```
 
 #### Theme Config File:
-```
+```toml
 #----------------------------------------------------------
 #     This is the theme config File                        #
 #     Author and Theme setting                            #
@@ -257,12 +257,12 @@ So you can now experiment with different themes and the config file to see what 
 Now you have conpleted your website now it's time to build and deploy your website. 
 
 To build your website you need to enter the following command into the terminal:
-```
+```bash
 hugo -t <theme name>
 ```
 
 **example** 
-```
+```bash
 hugo -t gokarna
 ```
 
@@ -296,18 +296,18 @@ If you’re wondering why we didn’t mention JavaScript or CSS files, it’s be
 ### Adding Content: 
 Now the only thing that is left is to add new posts and content to the website. To add content to the website, you must enter the following command into the terminal:
 
-```
+```bash
 hugo new posts/<post name>.md
 ```
 
 **Example:**
-```
+```bash
 hugo new posts/2021/2021-08-30-a-sample-post.md
 ```
 The above command will create a new post with the mardown extension. This chapter also includes some templates.
 
 **Example:**
-```
+```toml
 ---
 
 title: "2021 08 30 a Sample Post"
@@ -328,17 +328,19 @@ In this tutorial, you learned how to configure Hugo, create a new project, add c
 
 I'm using hugo base website on daily bases and belive me it works like a champ. I have no compain regarding this framwork. So Try it and then let me your thoughts. 
 
-## Contact Information:
-Email: [99marafay@gmail.com](mailto:99marafay@gmail.com)
-
-My website:  [rafay99.info](https://rafay99.info)
-
-Github: [rafay99-epic](github.com/rafay99-epic)
-
-Medium: [99marafay](https://medium.com/@99marafay)
-
-Blog Website: [rafayblogs.tech](https://rafayblogs.tech/)
-
 I will see you next time.❤️
+
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
 
 

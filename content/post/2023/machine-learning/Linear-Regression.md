@@ -155,6 +155,19 @@ If you have any questions, please contact me
 
 I will see you next time❤️.
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
 # References:
 So this Blog I did some research and tried my best to learn so if you any issue you can contact me or references the links bellow.
 ## Articles references:

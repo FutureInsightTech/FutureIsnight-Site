@@ -313,10 +313,21 @@ This is an example of developing a project.
 Learn Git, use GitHub to host your code, applications, and much more, Git and GitHub are two of the most important tools for developers, and without them, we might not be able to learn, read, or contribute code. You must learn Git and GitHub regardless of your field.  
 So please do not hesitate to contact or email me. I would love to know your thoughts.
 
+With that, we will see you next time.❤️❤️
+
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
 - [Email](mailto:99marafay@gmail.com)
-- [GitHub](https://github.com/rafay99-epic)
-- [My Portfolio website](https://rafay99.info/)
-- [My Blog](https://rafayblogs.tech/)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+)
 
 
 
