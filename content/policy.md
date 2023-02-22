@@ -1,8 +1,8 @@
 ---
-title: "Policy"
+title: "Future Insight Policy"
 date: 2023-02-22T13:00:26+05:00
 draft: false
-type: "post"
+type: "page"
 description: "Future Insight Privacy Policy"
 showTableOfContents: true
 url: /policy/
