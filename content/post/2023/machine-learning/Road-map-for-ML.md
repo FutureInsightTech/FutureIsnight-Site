@@ -111,18 +111,20 @@ The current market is tough, and without skills, you can't survive, so learn the
 
 Here is the roadmap that I used to learn machine learning, and I hope you will like the blog. I will see you next time.
 
-# Contact Info:
-
-**Name:**  Abdul Rafay 
-
-**Email:** [99marafay@gmail.com](mailto:99marafay@gmail.com) 
-
-**Portfolio Website: **   [rafay99.info](https://rafay99.info/)
-
-**Blog Website:***
-1.  [Medium](https://medium.com/@99marafay)
-2.  [Personal Website](https://rafayblogs.tech/)
-
 Please feel free to contact me if you have any questions.
 
-![](/images/2023/Road-Map/Road-to-ML.png)
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+# Thumbnail:
+![image](/images/2023/Road-Map/Road-to-ML.png)

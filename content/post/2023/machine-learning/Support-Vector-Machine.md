@@ -28,35 +28,35 @@ The operation is straightforward, but there are ways to use SVM to optimise and 
 
 ## Working with Linear Data:
 The basics of the support vector machine and how it will work can be easily explained with an example. Consider a data set that contains two features, x and y, each represented by a different colour (red or blue) and each with its own shape (circle or triangle, respectively). Now we will plot the dataset, and we will get this graph.
-![image](/images/Ml-algo/SVM/image-01.png)
+![image](/images/2023/Ml-algo/SVM/image-01.png)
 
 A Support Vector Machine tasks those data points and then uses a function called hyperplane to create a best sperate boundary with tags. This line is the **decision boundary**. Everything on the right side is considered blue, and everything on the left side is considered red. 
-![image-02](/images/Ml-algo/SVM/image-02.png)
+![image-02](/images/2023/Ml-algo/SVM/image-02.png)
 
 
 But, what exactly is the best hyperplane? For SVM, it’s the one that maximizes the margins from both tags. In other words: the hyperplane (remember it's a line in this case) whose distance to the nearest element of each tag is the largest.
-![image-03](/images/Ml-algo/SVM/image-03.png)
+![image-03](/images/2023/Ml-algo/SVM/image-03.png)
 
 ## Working with Non-Linear Data:
 The above example is very simple, and in the real world, data will not be much more linear; it is always going to spread in multiple directions, and there can be more than two variables. So what will you do when there are more than two interacting variables?
 
 Let's understand this with an example, and your use case might look like this:
-![image-04](/images/Ml-algo/SVM/image-04.png)
+![image-04](/images/2023/Ml-algo/SVM/image-04.png)
 
 It’s pretty clear that there’s not a linear decision boundary (a single straight line that separates both tags). However, the vectors are very clearly segregated and it looks as though it should be easy to separate them.
 
 So to solve it, we will be adding a third dimension. Uptill now we have only two dimension x and y but Now we will be creating **Z** as a third dimension, and we rule that it be calculated a certain way that is convenient for us: _z = x² + y²_ (you’ll notice that’s the equation for a circle).
 
 This will give us a three-dimensional space. Taking a slice of that space, it looks like this:
-!(image-05)[/images/Ml-algo/SVM/image-05.png]
+!(image-05)[/images/2023/Ml-algo/SVM/image-05.png]
 
 Now you can see there are two groups, and Now we can use SVM and use a hyperplan. 
-![image-06](/images/Ml-algo/SVM/image-06.png)
+![image-06](/images/2023/Ml-algo/SVM/image-06.png)
 
 That’s great! Note that since we are in three dimensions now, the hyperplane is a plane parallel to the _x_ axis at a certain _z_ (let’s say _z = 1_).
 
 What’s left is mapping it back to two dimensions:
-![image-07](/images/Ml-algo/SVM/image-07.png)
+![image-07](/images/2023/Ml-algo/SVM/image-07.png)
 
 
 In above plot, points to consider are:
@@ -145,6 +145,8 @@ plt.show()
     -   It doesn’t perform well when we have large data set because the required training time is higher
     -   It also doesn’t perform very well, when the data set has more noise i.e. target classes are overlapping
     -   SVM doesn’t directly provide probability estimates, these are calculated using an expensive five-fold cross-validation. It is included in the related SVC method of Python scikit-learn library.
+
+
 # Reference 
 Here are some of the references and research papers that I used to understand the support vector machine model. If you are facing any problems, here are some links.
 ## Articles References:
@@ -154,12 +156,23 @@ Here are some of the references and research papers that I used to understand th
 ## Video References:
 1. [Simple Learn](https://www.youtube.com/watch?v=TtKF996oEl8)
 
-<!-- ## GitHub Repo:
-1. [Rafay](https://github.com/rafay99-epic) -->
-# Contact Me:
-If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+
+I will see you next time❤️.
 
 # Thumbnail:
-![image](/images/Ml-algo/SVM/Machine%20Learning%20Algo%20SVM.png)
+![image](/images/2023/Ml-algo/SVM/Machine-Learning-Algo-SVM.png)
 
 

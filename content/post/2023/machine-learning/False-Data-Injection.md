@@ -29,15 +29,23 @@ To protect against false data injection attacks, it is important to implement a 
 # Conclusion:
 In conclusion, false data injection is a serious type of cyber attack that can have significant consequences for control systems and the safety and security of critical infrastructure. It is important for organizations to implement comprehensive cyber security measures to prevent and detect false data injection attacks, and to respond quickly and effectively in the event of an attack.
 
-
-# Contact Me:
-If you have any questions, please contact me  through
-
-- [Email](mailto:99marafay@gmail.com) 
-- [My website](https://rafay99.info) 
-- [Github](github.com/rafay99-epic)
-
 I will see you next time❤️.
+
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+
+
 
 # References:
 ## Articles references:

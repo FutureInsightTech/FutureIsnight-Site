@@ -8,7 +8,7 @@ description: "Machine learning is the feeding of data, but not just data, but al
 showTableOfContents: true
 url: /Is-Maths-required-for-ML/
 ---
-![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png.jpg)
+![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png)
 
 
 # Introduction:
@@ -55,7 +55,15 @@ I learned math and probability from multiple sources, and the resources are stat
 
 These are the two resources that I used to get my math and probability strings large enough.
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
 
-
-
-
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 

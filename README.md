@@ -18,7 +18,7 @@ So before that, I need to decide whether I need a dynamic website or a static we
 
 Not just a any static website, I need a way to post blogs without creating an admin dashboard and this was super important, I am trying to avoid an entire full system. 
 
-So after searching like alot I came across something called **HUGO**. 
+So after searching like a lot I came across something called **HUGO**. 
 
 # Desired characteristics:
 So before we look at what I choose, here are the features that I am looking for in a blogging website.
@@ -43,36 +43,33 @@ Since I am learning every single day, I want to save my progress, so I decided t
 
 # Site Link:
 
-The website is active on the following Link: [rafayblog.tech](https://rafayblogs.tech)
+The website is active on the following Link: [Future-Insight](https://future-insight.blog)
 
 # Licence
 This repository is licensed under the MIT License. You can find the license in the [LICENSE](/LICENSE) file.
 
-# Reunning website Locally:
-To run the website locally then follow this guide by [clicking here](/INSTALL.md):
+# Running website Locally:
+To run the website locally then follow this guide by [clicking here](/Instruction/INSTALL.md):
 
 # Deployed Website:
 The website is deployed on [render](https://render.com/) and the domain is from [Hostring](https://www.hostinger.com/).
-All of the code is available on [Github](https://github.com/rafay99-epic/Blog-website)
-To see how to deploy website on render plase follow this webpage from [freecodingCamp](https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/)
+All of the code is available on [GitHub](https://github.com/rafay99-epic/Future-Insight)
+To see how to deploy website on render please follow this webpage from [freecodingCamp](https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/)
 
 # Coding Contribution:
-For more features or face any issue free will to post on the issue section. Free will to fork this project and add more thing to this project.
+So there are two ways you can make a contribution. 1. creating a website; 2. writing blogs; and you can follow these guidelines for each type of contribution.
+1. [Creating a Website](/Instruction/Development.md)
+2. [Writing a blog](/Instruction/Write-blog.md)
 
-***Note***:
-All of the develoopment will be done in the [Development-Branch](https://github.com/rafay99-epic/Blog-website/tree/Development-Branch), Once testing and approved then it will merged into the main branch, No code will be commmited into the main branch until is bug free and approved by the admin of the project.
+For more features or face any issue free will to post on the issue section. Free will to fork this project and add more thing to this project.
 
 Happy Coding…👋
 
 # Contact Information:
-
-**Author:** Abdul Rafay
-
-**Email:** [99marafay@gmail.com](mailto:99marafay@gmail.com)
-
-**Medium:** [99marafay](https://medium.com/@99marafay)
-
-**Blog Website:** [rafayblogs.tech](https://rafayblogs.tech/)
-
-**Portfolio Website:**  [rafay99.info](https://rafay99.info/)
+Free will contact me, If you are facing any issue. 
+- **Author:** Abdul Rafay
+- **Email:** [99marafay@gmail.com](mailto:99marafay@gmail.com)
+- **Medium:** [99marafay](https://medium.com/@99marafay)
+- **Blog Website:** [future-insight.blog](https://future-insight.blog)
+- **Portfolio Website:**  [rafay99.info](https://rafay99.info/)
 

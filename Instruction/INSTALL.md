@@ -76,7 +76,7 @@ if Home Brew is not installed on your system then install it by using the follwo
 ## Running Application:
 1. Clone the Project by using the following command:
 	``` git
-	git clone https://github.com/rafay99-epic/Blog-website.git
+	git clone https://github.com/rafay99-epic/Futute-Insight.git
 	```
 2. Enter the Folder using terminal:
 	``` bash
@@ -91,5 +91,3 @@ if Home Brew is not installed on your system then install it by using the follwo
 	http://localhost:1313/
 	```
 5.  The you can see the website running on your local Machine. 
-
-![image](/static/images/readme/webiste.png)
