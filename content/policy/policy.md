@@ -1,10 +1,9 @@
 ---
 title: "Policy"
-date: 2023-02-21T14:46:36+05:00
-draft: true
+date: 2023-02-22T13:00:26+05:00
+draft: false
 type: "post"
-tags: ["policy"]
-description: "Policy for Future Insight"
+description: "Future Insight Privacy Policy"
 showTableOfContents: true
 url: /policy/
 ---
@@ -48,9 +47,8 @@ Google is one of a third-party vendor on our site. It also uses cookies, known a
 # Our Advertising Partners
 Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.
 
-Google
-
-https://policies.google.com/technologies/ads
+## Google
+- https://policies.google.com/technologies/ads
 
 # Privacy Policies
 You may consult this list to find the Privacy Policy for each of the advertising partners of Future Insight.
