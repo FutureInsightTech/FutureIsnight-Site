@@ -145,6 +145,8 @@ plt.show()
     -   It doesn’t perform well when we have large data set because the required training time is higher
     -   It also doesn’t perform very well, when the data set has more noise i.e. target classes are overlapping
     -   SVM doesn’t directly provide probability estimates, these are calculated using an expensive five-fold cross-validation. It is included in the related SVC method of Python scikit-learn library.
+
+
 # Reference 
 Here are some of the references and research papers that I used to understand the support vector machine model. If you are facing any problems, here are some links.
 ## Articles References:
@@ -154,10 +156,21 @@ Here are some of the references and research papers that I used to understand th
 ## Video References:
 1. [Simple Learn](https://www.youtube.com/watch?v=TtKF996oEl8)
 
-<!-- ## GitHub Repo:
-1. [Rafay](https://github.com/rafay99-epic) -->
-# Contact Me:
-If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+
+I will see you next time❤️.
 
 # Thumbnail:
 ![image](/images/2023/Ml-algo/SVM/Machine-Learning-Algo-SVM.png)

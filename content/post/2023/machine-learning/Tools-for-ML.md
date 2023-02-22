@@ -74,9 +74,16 @@ So here are the tools that I used in my daily life to get my job done.
 
 Tools can help you to move fast but your skills can make you or break you in our field, so here are the tools that I use on daily bases, what tools do you use let me know.
 
-# Contact:
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
 
-Email: [99marafay@gmail.com](mailto:99marafay@gmail.com)
-
-GitHub: [rafay99-epic](https://github.com/rafay99-epic/)
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
 

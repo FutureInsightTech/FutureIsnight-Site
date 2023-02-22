@@ -40,6 +40,20 @@ In conclusion, designing a machine learning model requires careful consideration
 
 If you have question then free will to [email me](mailto:99marafay@gmail.com) or Contact me throught my [website](https:rafay99.info).
 
-see you next time❤️.
+See you next time❤️.
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+# Thumbnail:
 ![image](/images/2023/create-own-model/Create-your-Own-Machine-Learning-Model.png)
