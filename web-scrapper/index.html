@@ -88,7 +88,7 @@
             </div>
             
             <div class="nav-link">
-                <a href="https://rafay99.info"><span data-feather='user'></span> Author </a>
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
             </div>
             
             <div class="nav-link">
@@ -135,7 +135,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://rafay99.info"><span data-feather='user'></span> Author </a>
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
                 </li>
                 
                 <li class="nav-item">
@@ -220,14 +220,14 @@
 <p>To download NodeJs download the exe file from <a href="https://nodejs.org/en/download/current/">here</a>.</p>
 <h4 id="macos">MacOS;</h4>
 <p>To download Node Js on Mac OS then open the terminal and enter the following command</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install node
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install node
 </code></pre></div><h4 id="linux">Linux:</h4>
 <h5 id="debianubuntu">Debian/Ubuntu:</h5>
 <p>To install on ubuntu or Debian then open a terminala nd then enter the following commands.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install nodejs npm
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install nodejs npm
 </code></pre></div><h5 id="arch-linux">Arch Linux:</h5>
 <p>If you are using arch Linux then open a terminal and then enter the following command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo pacman -S nodejs npm
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nodejs npm
 </code></pre></div><h3 id="python-1">Python</h3>
 <h4 id="windows-1">Windows</h4>
 <p>To downloads and Install Python downloads the exe file from Python website and you can download the exe file by clicking <a href="https://www.python.org/downloads/">here</a></p>
@@ -244,16 +244,16 @@
 <p>Puppeteer is a popular library for web scraping with JavaScript. It allows you to automate the Chrome browser and interact with websites as if you were a real user. This makes it an ideal tool for web scraping because it can handle the complexities of websites and provide you with the data you need.</p>
 <h1 id="getting-started-with-puppeteer">Getting Started with Puppeteer</h1>
 <p>To get started with Puppeteer, you will need to install the library using npm:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">npm install puppeteer
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install puppeteer
 </code></pre></div><p>Once you have installed Puppeteer, you can create a new file with the following code to launch a headless Chrome browser:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">
-const puppeteer = require(&#34;puppeteer&#34;);
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#fff;font-weight:bold">const</span> puppeteer = require(<span style="color:#0ff;font-weight:bold">&#34;puppeteer&#34;</span>);
 
-async function run() {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto(&#34;https://example.com&#34;);
-  await browser.close();
+<span style="color:#fff;font-weight:bold">async</span> <span style="color:#fff;font-weight:bold">function</span> run() {
+  <span style="color:#fff;font-weight:bold">const</span> browser = <span style="color:#fff;font-weight:bold">await</span> puppeteer.launch();
+  <span style="color:#fff;font-weight:bold">const</span> page = <span style="color:#fff;font-weight:bold">await</span> browser.newPage();
+  <span style="color:#fff;font-weight:bold">await</span> page.<span style="color:#fff;font-weight:bold">goto</span>(<span style="color:#0ff;font-weight:bold">&#34;https://example.com&#34;</span>);
+  <span style="color:#fff;font-weight:bold">await</span> browser.close();
 }
 
 run();
@@ -261,11 +261,28 @@ run();
 <p>This code launches a headless Chrome browser and navigates to the specified URL. You can then use the page object to interact with the website and extract the data you need.</p>
 <h1 id="extracting-data-from-a-website">Extracting Data from a Website</h1>
 <p>Puppeteer provides a number of methods for extracting data from a website, including $eval and evaluate. The $eval method allows you to select an element on the page and retrieve its properties, such as the text content or the value of an attribute. Here&rsquo;s an example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">const data = await page.$eval(&#34;div.data-class&#34;, (el) =&gt; el.innerText);
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#fff;font-weight:bold">const</span> data = <span style="color:#fff;font-weight:bold">await</span> page.$eval(<span style="color:#0ff;font-weight:bold">&#34;div.data-class&#34;</span>, (el) =&gt; el.innerText);
 console.log(data);
 </code></pre></div><p>This code selects a div element with a data-class class and retrieves its inner text. You can use this method to extract any data from the website that you need.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>Web scraping with JavaScript is a powerful tool for extracting data from websites. With Puppeteer, you can automate the Chrome browser and extract data from websites with ease. Whether you&rsquo;re using the data for market research, competitor analysis, or lead generation, web scraping can provide you with valuable insights into your business or industry.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<h1 id="thumbnail">Thumbnail:</h1>
 <p><img src="/images/2023/web-scrapper/web-scrapper.png" alt="image"></p>
 <!-- # Introducation:
 So, I have been working in the field of machine learning and web development for a while, and I am still looking for great options. To get more options, I need to see what is out there.
@@ -479,6 +496,18 @@ app.listen(port,()=>{
     <li><a href="#code-explain">Code Explain</a></li>
     <li><a href="#extracting-data-from-a-website">Extracting Data from a Website</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
   </ol>
 </nav>
     </nav>

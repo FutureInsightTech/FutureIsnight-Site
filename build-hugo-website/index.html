@@ -88,7 +88,7 @@
             </div>
             
             <div class="nav-link">
-                <a href="https://rafay99.info"><span data-feather='user'></span> Author </a>
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
             </div>
             
             <div class="nav-link">
@@ -135,7 +135,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://rafay99.info"><span data-feather='user'></span> Author </a>
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
                 </li>
                 
                 <li class="nav-item">
@@ -244,19 +244,19 @@
 <p>Once your have selected your theme now it&rsquo;s time to create your website.  To do that you need to enter the following the command into your terminal.</p>
 <p><strong>Creating your static website:</strong>
 The command bellow will create basic layout for your website.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo new site &lt;site name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site &lt;site name&gt;
 </code></pre></div><p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo new site rafay-blogs
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site rafay-blogs
 </code></pre></div><p><img src="/images/2023/build-hugo-website/hugo-new-site.png" alt="image">
 Hugo websites are handled using a config file that is generated when you create them.  Every single instruction will be written in the config file. The config file can have different extensions, such as toml or yaml. The default extension for this configuration file is.toml.</p>
 <p>Now Enter into the folder, Once your are in the folder, Open the folder using your terminal and open the folder in any of the code editior of your choice for me I am using visual studio code
 <img src="/images//build-hugo-website/opeing-file-in-code.png" alt="image"></p>
 <p>In Hugo everything is done in the config file and by default you   config file will contain this sample code.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">baseURL = &#39;http://example.org/&#39;
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">baseURL = <span style="color:#0ff;font-weight:bold">&#39;http://example.org/&#39;</span>
 
-languageCode = &#39;en-us&#39;
+languageCode = <span style="color:#0ff;font-weight:bold">&#39;en-us&#39;</span>
 
-title = &#39;My New Hugo Site&#39;
+title = <span style="color:#0ff;font-weight:bold">&#39;My New Hugo Site&#39;</span>
 
 </code></pre></div><ul>
 <li>The <strong>baseURL</strong> is important and will aid you in the development and deployment of your website.</li>
@@ -265,9 +265,9 @@ title = &#39;My New Hugo Site&#39;
 </ul>
 <h3 id="running-the-website">Running the Website:</h3>
 <p>To run your website local device then enter the following command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo server
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
 </code></pre></div><p>The server will compile and build your website, and you can view the changes at port 1313, so the url will be</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">localhost:131
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">localhost:131
 </code></pre></div><p>Without any theme your website will look like this:
 <img src="/images/2023/build-hugo-website/first-run.png" alt="image"></p>
 <h3 id="theme-hunt">Theme Hunt:</h3>
@@ -296,110 +296,110 @@ theme = <span style="color:#0ff;font-weight:bold">&#39;gokarna&#39;</span>
 </ol>
 <p>Depending on the theme, there might not be any theme configuration files, so please check the official documentation of that theme. There will be a lot of features in that theme.</p>
 <h4 id="rafay-blog-config-file">Rafay-Blog config file:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">baseURL = &#39;https://rafay-blog.onrender.com&#39;
-languageCode = &#39;en-us&#39;
-title = &#39;Abdul Rafay Blogs&#39;
-theme = &#39;gokarna&#39;
-defaultContentLanguage = &#34;en&#34;
-enableRobotsTXT = true
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">baseURL = <span style="color:#0ff;font-weight:bold">&#39;https://rafay-blog.onrender.com&#39;</span>
+languageCode = <span style="color:#0ff;font-weight:bold">&#39;en-us&#39;</span>
+title = <span style="color:#0ff;font-weight:bold">&#39;Abdul Rafay Blogs&#39;</span>
+theme = <span style="color:#0ff;font-weight:bold">&#39;gokarna&#39;</span>
+defaultContentLanguage = <span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>
+enableRobotsTXT = <span style="color:#fff;font-weight:bold">true</span>
 
-  # -----------------------------------------------------------
-  #                 Default Parameters
-  # -----------------------------------------------------------
+  <span style="color:#007f7f"># -----------------------------------------------------------</span>
+  <span style="color:#007f7f">#                 Default Parameters</span>
+  <span style="color:#007f7f"># -----------------------------------------------------------</span>
 [params]
-    avatarURL = &#34;/images/avatar.jpg&#34;
-    description = &#34;Don&#39;t Comments bad code- rewrite it.&#34;
-    showPostsOnHomePage = &#34;popular&#34;
-    togglePreviousAndNextButtons = &#34;true&#34;
-    customHeadHTML = &#34;&lt;script&gt;console.log(&#39;Any HTML&#39;)&lt;/script&gt;&#34;
+    avatarURL = <span style="color:#0ff;font-weight:bold">&#34;/images/avatar.jpg&#34;</span>
+    description = <span style="color:#0ff;font-weight:bold">&#34;Don&#39;t Comments bad code- rewrite it.&#34;</span>
+    showPostsOnHomePage = <span style="color:#0ff;font-weight:bold">&#34;popular&#34;</span>
+    togglePreviousAndNextButtons = <span style="color:#0ff;font-weight:bold">&#34;true&#34;</span>
+    customHeadHTML = <span style="color:#0ff;font-weight:bold">&#34;&lt;script&gt;console.log(&#39;Any HTML&#39;)&lt;/script&gt;&#34;</span>
      socialIcons = [
-      {name = &#34;twitter&#34;, url = &#34;https://twitter.com/abdul_rafay99&#34;},
-      {name = &#34;linkedin&#34;, url = &#34;https://www.linkedin.com/in/abdul-rafay1999/&#34;},
-       {name = &#34;stackoverflow&#34;, url = &#34;https://stackoverflow.com/users/13860632/abdul-rafay&#34;},
-      {name = &#34;github&#34;, url = &#34;https://github.com/rafay99-epic&#34;},
+      {name = <span style="color:#0ff;font-weight:bold">&#34;twitter&#34;</span>, url = <span style="color:#0ff;font-weight:bold">&#34;https://twitter.com/abdul_rafay99&#34;</span>},
+      {name = <span style="color:#0ff;font-weight:bold">&#34;linkedin&#34;</span>, url = <span style="color:#0ff;font-weight:bold">&#34;https://www.linkedin.com/in/abdul-rafay1999/&#34;</span>},
+       {name = <span style="color:#0ff;font-weight:bold">&#34;stackoverflow&#34;</span>, url = <span style="color:#0ff;font-weight:bold">&#34;https://stackoverflow.com/users/13860632/abdul-rafay&#34;</span>},
+      {name = <span style="color:#0ff;font-weight:bold">&#34;github&#34;</span>, url = <span style="color:#0ff;font-weight:bold">&#34;https://github.com/rafay99-epic&#34;</span>},
     ]
-    pygmentsStyle = &#34;monokai&#34;
-    metaKeywords = [&#34;blog&#34;, &#34;gokarna&#34;, &#34;hugo&#34;]
-    search= true
-    favicon = &#34;/images/favicon.jpg&#34;
-    summaryLength = &#34;10&#34;
+    pygmentsStyle = <span style="color:#0ff;font-weight:bold">&#34;monokai&#34;</span>
+    metaKeywords = [<span style="color:#0ff;font-weight:bold">&#34;blog&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;gokarna&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;hugo&#34;</span>]
+    search= <span style="color:#fff;font-weight:bold">true</span>
+    favicon = <span style="color:#0ff;font-weight:bold">&#34;/images/favicon.jpg&#34;</span>
+    summaryLength = <span style="color:#0ff;font-weight:bold">&#34;10&#34;</span>
 
-  # -----------------------------------------------------------
-  #                 Main Menu Parmeters
-  # -----------------------------------------------------------
+  <span style="color:#007f7f"># -----------------------------------------------------------</span>
+  <span style="color:#007f7f">#                 Main Menu Parmeters</span>
+  <span style="color:#007f7f"># -----------------------------------------------------------</span>
   [[menu.main]]
-    identifier = &#34;post&#34;
-    url = &#34;/post/&#34;
-    name = &#34;Posts&#34;
-    weight = 1
-    pre = &#34;&lt;span data-feather=&#39;book&#39;&gt;&lt;/span&gt;&#34;
-
-  [[menu.main]]
-    identifier = &#34;home&#34;
-    url = &#34;/&#34;
-    name = &#34;Home&#34;
-    weight = 1
-    pre = &#34;&lt;span data-feather=&#39;home&#39;&gt;&lt;/span&gt;&#34;
+    identifier = <span style="color:#0ff;font-weight:bold">&#34;post&#34;</span>
+    url = <span style="color:#0ff;font-weight:bold">&#34;/post/&#34;</span>
+    name = <span style="color:#0ff;font-weight:bold">&#34;Posts&#34;</span>
+    weight = <span style="color:#ff0;font-weight:bold">1</span>
+    pre = <span style="color:#0ff;font-weight:bold">&#34;&lt;span data-feather=&#39;book&#39;&gt;&lt;/span&gt;&#34;</span>
 
   [[menu.main]]
-    identifier = &#34;tags&#34;
-    name = &#34;Tags&#34;
-    url = &#34;/tags/&#34;
-    weight = 2
-    pre = &#34;&lt;span data-feather=&#39;tag&#39;&gt;&lt;/span&gt;&#34;
+    identifier = <span style="color:#0ff;font-weight:bold">&#34;home&#34;</span>
+    url = <span style="color:#0ff;font-weight:bold">&#34;/&#34;</span>
+    name = <span style="color:#0ff;font-weight:bold">&#34;Home&#34;</span>
+    weight = <span style="color:#ff0;font-weight:bold">1</span>
+    pre = <span style="color:#0ff;font-weight:bold">&#34;&lt;span data-feather=&#39;home&#39;&gt;&lt;/span&gt;&#34;</span>
 
   [[menu.main]]
-    identifier = &#34;github&#34;
-    url = &#34;https://github.com/rafay99-epic&#34;
-    weight = 3
-    pre = &#34;&lt;span data-feather=&#39;github&#39;&gt;&lt;/span&gt;&#34;
+    identifier = <span style="color:#0ff;font-weight:bold">&#34;tags&#34;</span>
+    name = <span style="color:#0ff;font-weight:bold">&#34;Tags&#34;</span>
+    url = <span style="color:#0ff;font-weight:bold">&#34;/tags/&#34;</span>
+    weight = <span style="color:#ff0;font-weight:bold">2</span>
+    pre = <span style="color:#0ff;font-weight:bold">&#34;&lt;span data-feather=&#39;tag&#39;&gt;&lt;/span&gt;&#34;</span>
+
+  [[menu.main]]
+    identifier = <span style="color:#0ff;font-weight:bold">&#34;github&#34;</span>
+    url = <span style="color:#0ff;font-weight:bold">&#34;https://github.com/rafay99-epic&#34;</span>
+    weight = <span style="color:#ff0;font-weight:bold">3</span>
+    pre = <span style="color:#0ff;font-weight:bold">&#34;&lt;span data-feather=&#39;github&#39;&gt;&lt;/span&gt;&#34;</span>
 
 
-# --------------------------------------
-#   --- Markdown Config Section ---
-# --------------------------------------
+<span style="color:#007f7f"># --------------------------------------</span>
+<span style="color:#007f7f">#   --- Markdown Config Section ---</span>
+<span style="color:#007f7f"># --------------------------------------</span>
 
 [markup]
   [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 3
-    ordered = true
+    startLevel = <span style="color:#ff0;font-weight:bold">1</span>
+    endLevel = <span style="color:#ff0;font-weight:bold">3</span>
+    ordered = <span style="color:#fff;font-weight:bold">true</span>
 
 [markup.highlight]
-      codeFences = true
-      guessSyntax = true
-      hl_Lines = &#34;&#34;
-      lineNoStart = 1
-      lineNos = false
-      lineNumbersInTable = false
-      tabWidth = 4
-      noClasses = false
+      codeFences = <span style="color:#fff;font-weight:bold">true</span>
+      guessSyntax = <span style="color:#fff;font-weight:bold">true</span>
+      hl_Lines = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>
+      lineNoStart = <span style="color:#ff0;font-weight:bold">1</span>
+      lineNos = <span style="color:#fff;font-weight:bold">false</span>
+      lineNumbersInTable = <span style="color:#fff;font-weight:bold">false</span>
+      tabWidth = <span style="color:#ff0;font-weight:bold">4</span>
+      noClasses = <span style="color:#fff;font-weight:bold">false</span>
 
 </code></pre></div><h4 id="theme-config-file">Theme Config File:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">#----------------------------------------------------------
-#     This is the theme config File                        #
-#     Author and Theme setting                            #
-#     Author Name: Abdul Rafay                            #
-#-----------------------------------------------------------                                                                                                                                                                                                                                                                                                                            
-name = &#34;Gokarna&#34;
-description = &#34;Gokarna is an opinionated theme with a focus on minimalism and simplicity&#34;
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#007f7f">#----------------------------------------------------------</span>
+<span style="color:#007f7f">#     This is the theme config File                        #</span>
+<span style="color:#007f7f">#     Author and Theme setting                            #</span>
+<span style="color:#007f7f">#     Author Name: Abdul Rafay                            #</span>
+<span style="color:#007f7f">#-----------------------------------------------------------                                                                                                                                                                                                                                                                                                                            </span>
+name = <span style="color:#0ff;font-weight:bold">&#34;Gokarna&#34;</span>
+description = <span style="color:#0ff;font-weight:bold">&#34;Gokarna is an opinionated theme with a focus on minimalism and simplicity&#34;</span>
 
-license = &#34;MIT License&#34;
-licenselink = &#34;https://github.com/rafay99-epic/Blog-website/blob/main/LICENSE&#34;
+license = <span style="color:#0ff;font-weight:bold">&#34;MIT License&#34;</span>
+licenselink = <span style="color:#0ff;font-weight:bold">&#34;https://github.com/rafay99-epic/Blog-website/blob/main/LICENSE&#34;</span>
 
-tags = [&#34;blog&#34;, &#34;minimal&#34;, &#34;dark&#34;, &#34;light&#34;, &#34;responsive&#34;, &#34;personal&#34;, &#34;portfolio&#34;]
-features = [&#34;Blog&#34;, &#34;Responsive&#34;, &#34;Minimal&#34;, &#34;Clean&#34;, &#34;Simple&#34;, &#34;SEO&#34;, &#34;Bootstrap&#34;, &#34;Fast&#34;, &#34;Dark&#34;, &#34;Light&#34;]
+tags = [<span style="color:#0ff;font-weight:bold">&#34;blog&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;minimal&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;dark&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;light&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;responsive&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;personal&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;portfolio&#34;</span>]
+features = [<span style="color:#0ff;font-weight:bold">&#34;Blog&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Responsive&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Minimal&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Clean&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Simple&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;SEO&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Bootstrap&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Fast&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Dark&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;Light&#34;</span>]
 authors = [
-  {name = &#34;Abdul Rafay&#34;, homepage = &#34;https://raafay99.info&#34;},
+  {name = <span style="color:#0ff;font-weight:bold">&#34;Abdul Rafay&#34;</span>, homepage = <span style="color:#0ff;font-weight:bold">&#34;https://raafay99.info&#34;</span>},
 ]
-min_version = &#34;0.81.0&#34;
+min_version = <span style="color:#0ff;font-weight:bold">&#34;0.81.0&#34;</span>
 </code></pre></div><p>So you can now experiment with different themes and the config file to see what you like and create some awesome.</p>
 <h3 id="build-website">Build Website:</h3>
 <p>Now you have conpleted your website now it&rsquo;s time to build and deploy your website.</p>
 <p>To build your website you need to enter the following command into the terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo -t &lt;theme name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -t &lt;theme name&gt;
 </code></pre></div><p><strong>example</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo -t gokarna
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo -t gokarna
 </code></pre></div><p>When you enter this command, it will begin building your website, placing all files in the public folder or creating one if one does not already exist.</p>
 <p>Then you can upload your code to github and deploy your website using any of the available deployment platforms.</p>
 <h4 id="hugos-layouts-folder">Hugo’s Layouts Folder</h4>
@@ -417,18 +417,18 @@ min_version = &#34;0.81.0&#34;
 <p>If you’re wondering why we didn’t mention JavaScript or CSS files, it’s because they’re often dynamically processed via pipelines during site development. In Hugo, JavaScript and CSS files are commonly stored within the <strong>theme</strong> folder because they require additional processing.</p>
 <h3 id="adding-content">Adding Content:</h3>
 <p>Now the only thing that is left is to add new posts and content to the website. To add content to the website, you must enter the following command into the terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo new posts/&lt;post name&gt;.md
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/&lt;post name&gt;.md
 </code></pre></div><p><strong>Example:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo new posts/2021/2021-08-30-a-sample-post.md
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/2021/2021-08-30-a-sample-post.md
 </code></pre></div><p>The above command will create a new post with the mardown extension. This chapter also includes some templates.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">---
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">---
 
-title: &#34;2021 08 30 a Sample Post&#34;
+title<span style="color:#f00">:</span> <span style="color:#0ff;font-weight:bold">&#34;2021 08 30 a Sample Post&#34;</span>
 
-date: 2023-01-22T00:22:58+05:00
+date<span style="color:#f00">:</span> <span style="color:#ff0;font-weight:bold">2023-01-22T00:22:58+05:00</span>
 
-draft: true
+draft<span style="color:#f00">:</span> <span style="color:#fff;font-weight:bold">true</span>
 
 ---
 </code></pre></div><p>You can write in Markdown and then build your website, which will render it and then deploy it to the internet.</p>
@@ -436,13 +436,22 @@ draft: true
 <p>Hugo is one of the most popular static site generators in the world, and for good reason. Not only does it have super-fast build processing, but it also ships with powerful templating capabilities that support partials and shortcodes.</p>
 <p>In this tutorial, you learned how to configure Hugo, create a new project, add content files, edit theme files, and deploy a finished static site. We recommend going through the official Hugo documentation to learn more about Hugo and its more advanced features like custom functions, front matter, and CSS/JS buildpacks.</p>
 <p>I&rsquo;m using hugo base website on daily bases and belive me it works like a champ. I have no compain regarding this framwork. So Try it and then let me your thoughts.</p>
-<h2 id="contact-information">Contact Information:</h2>
-<p>Email: <a href="mailto:99marafay@gmail.com">99marafay@gmail.com</a></p>
-<p>My website:  <a href="https://rafay99.info">rafay99.info</a></p>
-<p>Github: <a href="github.com/rafay99-epic">rafay99-epic</a></p>
-<p>Medium: <a href="https://medium.com/@99marafay">99marafay</a></p>
-<p>Blog Website: <a href="https://rafayblogs.tech/">rafayblogs.tech</a></p>
 <p>I will see you next time.❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
 
         </p>
     </div>
@@ -510,7 +519,17 @@ draft: true
           </ol>
         </li>
         <li><a href="#summary">Summary:</a></li>
-        <li><a href="#contact-information">Contact Information:</a></li>
+      </ol>
+    </li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
