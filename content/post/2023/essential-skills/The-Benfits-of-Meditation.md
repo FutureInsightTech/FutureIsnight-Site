@@ -7,6 +7,7 @@ tags: ["blog" ,"essential-skills"]
 description: ""
 showTableOfContents: true
 url: /Benefits-of-Mindfulness-Meditation/
+image: "/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
 ---
 
 # Introduction:
@@ -31,14 +32,20 @@ Many people struggle with getting a good night's sleep. Mindfulness meditation h
 ## Conclusion:
 Mindfulness meditation offers many benefits for our physical, emotional, and mental well-being. By making it a daily practice, you can reduce stress and anxiety levels, improve focus and concentration, boost your immune system, enhance emotional well-being, and promote better sleep. So, why not give it a try and see the positive impact it can have on your life?
 
-
-# Contact Me:
-If you have any questions, please contact me 
-- [Email](mailto:99marafay@gmail.com)
-- [My website](https://rafay99.info)
-- [GitHub](github.com/rafay99-epic) 
-
 I will see you next time❤️.
+
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
 
 
 # Thumbnail:

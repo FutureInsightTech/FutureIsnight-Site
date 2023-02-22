@@ -1,12 +1,13 @@
 ---
 title: "Logistical Regression"
 date: 2023-02-18T13:58:50+05:00
-draft: true
+draft: false
 type: "post"
 tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
 url: /logistic-regression/
+image: "/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png"
 ---
 
 # Introduction
@@ -77,14 +78,21 @@ In the above patch of code, first we import a bunch of Python libraries, then we
 # Conclusion
 Logistical regression is a great way to understand how many different outcomes matter in your data. If you have a lot of data and need to make predictions, logistic regression is a great tool to use. With this algorithm, you can make predictions about how many outcomes will occur on their own or when combined with other factors like age or gender.
 
+I will see you next time❤️.
 
-# Contact Me:
-If you have any questions, please contact me 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
 - [Email](mailto:99marafay@gmail.com)
-- [My website](https://rafay99.info)
+- [Personal-Website](https://rafay99.info)
 - [GitHub](github.com/rafay99-epic) 
 
-I will see you next time❤️.
 
 # References:
 ## Articles references:

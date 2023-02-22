@@ -13,35 +13,41 @@ enableRobotsTXT = true
     description = "Programming is not about typing, it's about thinking. - Rich Hickey"
     showPostsOnHomePage = "popular"
     togglePreviousAndNextButtons = "true"
-    customHeadHTML = "<script>console.log('Any HTML')</script>"
     avatarSize = "size-l"
     socialIcons = [
       {name = "twitter", url = "https://twitter.com/abdul_rafay99"},
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
+      {name = "youtube", url = "https://www.youtube.com/"}
     ]
-    # pygmentsStyle = "monokai"
+    footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
-    favicon = "/images/favicon.png"
+    favicon = "/images/favicon_io/favicon-32x32.png"
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
     mainSections = ["posts", "projects","Authors"]
     pygmentsStyle = "catppuccin-frappe" 
-    
+  
   #---------------------------
   #     Google Analytics
   #---------------------------
     googleAnalytics="G-HSKPE7HLQL"
 
+  #---------------------------
+  # Website Output Format
+  #---------------------------
+  [outputs]
+  home = ["HTML"]
+ 
   #-----------------------------------------
   #               cookies
   #-----------------------------------------
   [params.cookies]
-  enable = true
-  expire_days = 2
+    enable = true
+    expire_days = 2
 
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
@@ -58,7 +64,7 @@ enableRobotsTXT = true
   # Author
     [[menu.main]]
     identifier = "author"
-    url = "https://rafay99.info"
+    url = "/author/"
     name = "Author"
     weight = 2
     pre = "<span data-feather='user'></span>"
@@ -71,13 +77,13 @@ enableRobotsTXT = true
     weight = 3
     pre = "<span data-feather='book'></span>"
     
-    # #Projects 
-    # [[menu.main]]
-    # identifier = "page"
-    # url = "/projects/"
-    # name = "Projects"
-    # weight = 4
-    # pre = "<span data-feather='code'></span>"
+  # Projects
+  [[menu.main]]
+    identifier = "project"
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+    pre = "<span data-feather='code'></span>"
   
   # Tage or Categories
   [[menu.main]]
@@ -86,11 +92,18 @@ enableRobotsTXT = true
     url = "/tags/"
     weight = 5
     pre = "<span data-feather='tag'></span>"
-    
+  
+  [[menu.main]]
+    identifier="Privacy"
+    name="Policy"
+    url="/policy/"
+    weight=6
+    pre="<span data-feather='edit-3'></span>"
+  
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 6
+    weight = 7
     pre = "<span data-feather='github'></span>"
 
 
@@ -104,8 +117,6 @@ enableRobotsTXT = true
     endLevel = 3
     ordered = true
 
-[outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
 [markup.goldmark.renderer]
     unsafe = true
 [markup.highlight]
@@ -116,11 +127,16 @@ home = ["HTML", "AMP", "RSS", "JSON"]
       lineNos = false
       lineNumbersInTable = false
       tabWidth = 4
-      noClasses = false
-
-#-------------------------
-#  Pre-Load images
-#-------------------------
-[params.preloader]
-enable = true
-preloader = "png" # use png, jpg, svg or gif format
+      noClasses = true
+      anchorLineNos = false
+      hl_inline = false
+      lineAnchors = ''
+      noHl = false
+      style = 'catppuccin-frappe'
+      
+  #-------------------------
+  #  Pre-Load images
+  #-------------------------
+  [params.preloader]
+  enable = true
+  preloader = "png" # use png, jpg, svg or gif format
