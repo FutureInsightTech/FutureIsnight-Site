@@ -1,7 +1,7 @@
 ---
-title: "The Benefits of Mindfulness Meditation: Why You Should Make It a Daily Practice"
+title: "The Benefits of Mindfulness Meditation"
 date: 2023-02-19T01:29:36+05:00
-draft: true
+draft: false
 type: "post"
 tags: ["blog" ,"essential-skills"]
 description: ""
