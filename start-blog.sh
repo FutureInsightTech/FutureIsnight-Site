@@ -17,7 +17,7 @@ function run_hugo_server()
 Running Hugo Server
 =======================
 "
-  hugo server
+  hugo server --disableFastRender
 }
 
 function create_project()
