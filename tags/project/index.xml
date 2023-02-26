@@ -6,17 +6,17 @@
     <description>Recent content in Project on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 15:03:36 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 15:21:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Parking Assistant</title>
-      <link>https://future-insight.blog/Parking-Assistant/</link>
-      <pubDate>Tue, 21 Feb 2023 15:03:36 +0500</pubDate>
+      <title>Web Scrapper</title>
+      <link>https://future-insight.blog/web-scrapper/</link>
+      <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Parking-Assistant/</guid>
-      <description>Introduction: In this project we are going to make a parking assistant. Using the power of IOT Devices we will be able to detect the parking space, Also we reserved the parking space.
-Technology Used: The project is developed using the following technologies:
- HTML CSS JavaScript Bootstrap  Required Software: To run this application on your computer you need to install the following software:
- Xampp Node JS VS Code Arduino IDE  Required Hardware: For this application to run properly we also required hardware.</description>
+      <guid>https://future-insight.blog/web-scrapper/</guid>
+      <description>Introduction: Implementation: Conclusion: Contact Me: If you have any questions, please contact me
+ Email My website GitHub  I will see you next time❤️.
+References: Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+Articles references:  Article 1 Article 2 Article 3  GitHub Repository:  GitHub Repository 1 GitHub Repository 2 GitHub Repository 3  Video References:  Video Reference 1 Video Reference 2 Video Reference 3  Thumbnail: </description>
     </item>
     
   </channel>
