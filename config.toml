@@ -77,28 +77,28 @@ enableRobotsTXT = true
     weight = 3
     pre = "<span data-feather='book'></span>"
     
-  # Projects
-  [[menu.main]]
-    identifier = "project"
-    url = "/project/"
-    name = "Projects"
-    weight = 4
-    pre = "<span data-feather='code'></span>"
-  
   # Tage or Categories
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 5
+    weight = 4
     pre = "<span data-feather='tag'></span>"
   
   [[menu.main]]
     identifier="Privacy"
     name="Policy"
     url="/policy/"
-    weight=6
+    weight=5
     pre="<span data-feather='edit-3'></span>"
+  
+    # Projects
+  [[menu.main]]
+    identifier = "Contact"
+    url = "/contact/"
+    name = "Contact Me"
+    weight = 6
+    pre = "<span data-feather='send'></span>"
   
   [[menu.main]]
     identifier = "github"
