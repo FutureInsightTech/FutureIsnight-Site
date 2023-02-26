@@ -71,3 +71,6 @@ These are the stats of my GitHub account. I'm a very active user, and I contribu
 
 # Experince:
 [Click here](/Author-Experience) to read about my experience.
+
+# Projects::
+[Click here](/Project) to read about my Projects.

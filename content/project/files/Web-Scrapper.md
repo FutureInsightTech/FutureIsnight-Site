@@ -1,12 +1,10 @@
 ---
-title: "Portifilo Website"
+title: "Web Scrapper"
 date: 2023-02-21T15:21:08+05:00
-draft: true
-type: "post"
+draft: false
+type: "page"
 tags: ["Project"]
-description: "The perfect way to show your work"
-showTableOfContents: true
-url: /Portifilo-Website/
+url: /web-scrapper/
 ---
 
 # Introduction:

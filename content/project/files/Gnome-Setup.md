@@ -2,10 +2,7 @@
 title: "Gnome Setup"
 date: 2023-02-21T15:21:08+05:00
 draft: true
-type: "post"
-tags: ["Project"]
-description: "Using Bash to Setup a Perfect Coding Environment"
-showTableOfContents: true
+type: "page"
 url: /Gnome-Setup/
 ---
 
