@@ -12,17 +12,17 @@ To install these Program follow these steps:
 To install git enter the following commands in the terminal:
 #### Linux:
 ##### Debian or Ububtu:
-```
+```shell
 sudo apt install git -y
 ```
 ##### Arch Linux:
-```
+```shell
 sudo pacman -Syyu git --noconfirm --needed
 ```
 
 #### Windows
 **Install git using winget:**
-```
+```PowerShell
 winget install git
 ```
 **Download an exe**
@@ -52,7 +52,7 @@ sudo pacman -Syyu hugo --noconfirm --needed
 
 #### Windows
 **Install git using scoop:**
-```
+```PowerShell
 scoop install hugo
 ```
 **Note:** 
@@ -83,7 +83,7 @@ if Home Brew is not installed on your system then install it by using the follwo
 	cd Blog-website
 	```
 3. Run the server using the following command:
-	``` 
+	```bash
 	hugo server
 	```
 4. Open your Browser and enter the following URL:

@@ -10,6 +10,7 @@ echo "
 =============================================================================
 "
 
+#  Compoents
 function run_hugo_server()
 {
   echo -ne "
@@ -20,24 +21,6 @@ Running Hugo Server
   hugo server --disableFastRender
 }
 
-function create_project()
-{
-
-  echo -ne "
-======================================
-Enter the name of the Project:
-
-Please enter the extension as well.
-For this Project the extension is .md
-======================================
-  "
-  read  project_name
-
-  hugo new project/$project_name
-
-}
-
-
 function create_post()
 {
   echo -ne "
@@ -47,26 +30,7 @@ Please Enter the year:
 "
   read  year
 
-  echo -ne "
-==================================
-Please Enter the Tag Name:
-
-Choose:
-1. machine-learning
-2. essential-skills
-3. Web-Development
-
-Note: Do not add spaces 
-and enter the correct spelling
-====================================
-"
-read  tag
-
-#if [[]];then
-
-#if
-
-  echo -ne "
+echo -ne "
 ======================================
 Enter the name of the Blog:
 
@@ -76,20 +40,41 @@ For this Project the extension is .md
   "
   read  post_name
 
-  hugo new post/$year/$tag/$post_name
-}
-function run_git()
-{
-  chmod +x run.sh
-  ./run.sh
-}
-function reduce_image_size()
-{
-  chmod +x reduce_image.sh 
-  ./reduce_image.sh
+echo "
+==================================
+Please Enter the Tag Name:
+
+Choose:
+1. machine-learning
+2. essential-skills
+3. Web-Development
+
+Choose Options: (1/2/3)
+====================================
+"
+read tag
+
+case $tag in
+  1)
+    tag_name="machine-learning"
+    ;;
+  2)
+    tag_name="essential-skills"
+    ;;
+  3)
+    tag_name="Web-Development"
+    ;;
+  *)
+    echo "Invalid option"
+    exit 1
+    ;;
+esac
+
+hugo new "post/$year/$tag_name/$post_name"
+
 }
 
-
+# The Logic of the application
 function logic()
 {
 
@@ -97,18 +82,13 @@ function logic()
 ========================================
 1. Do you want to create new Blog Post?
 
-              OR
-2. Do you want to create a New Project?
-
-Enter yout choice (1/2):
+Enter yout choice (1/None):
 ========================================
 "
 read choice_post
 
   if [[ $choice_post == 1 ]];then
     create_post
-  else
-    create_project
   fi
 
   echo -ne "
@@ -123,33 +103,10 @@ Enter yout choice (y/n):
     run_hugo_server
   fi
 
-  echo -ne "
-==========================================
-Do you want to Optimus Images:
-Enter yout choice (y/n):
-==========================================
-  "
-  read choice_optimus_image
-
-  if [[ $choice_optimus_image == 'y' ]]; then
-    reduce_image_size
-  fi
-
-  echo -ne "
-==========================================
-Do want to commit to GitHub:
-Enter your choice (y/n):
-==========================================
-  "
-  read choice_git
-
-  if [[ $choice_git == 'y' ]]; then
-    run_git
-  fi
-
   bye
 }
 
+# Bye function
 function bye()
 {
   echo -ne "
@@ -160,6 +117,7 @@ Bye !!
 ===============================================
 "
 }
+# Main Function
 function main()
 {
   logic
