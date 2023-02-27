@@ -2,9 +2,7 @@
 title: "Parking Assistant"
 date: 2023-02-21T15:03:36+05:00
 draft: false
-type: "post"
-tags: ["Project"]
-description: "With the power of IOT devices and machine learning, we can make a parking assistant."
+type: "page"
 showTableOfContents: true
 url: /Parking-Assistant/
 ---

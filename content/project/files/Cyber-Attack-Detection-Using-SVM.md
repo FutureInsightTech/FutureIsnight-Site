@@ -2,11 +2,11 @@
 title: "Cyber Attack Detection Using SVM"
 date: 2023-02-21T15:18:57+05:00
 draft: true
-type: "post"
+type: "page"
 tags: ["Project"]
 description: "Using the power of SVM to detect cyber attacks"
 showTableOfContents: true
-url: /cyber-attack-detection-SVM/
+url: /cyber-attack-detection/
 ---
 
 # Introduction:
