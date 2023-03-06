@@ -7,7 +7,7 @@ tags: ["blog" ,"Linux", "Operating System"]
 description: "Learn about Linux."
 showTableOfContents: true
 url: /world-of-linux/
-image: "/images/2023/"
+image: "/images/2023/Operating-System/Linux/The-world-of-linux/The-World-of-Linux.png"
 ---
 
 # Introduction:
