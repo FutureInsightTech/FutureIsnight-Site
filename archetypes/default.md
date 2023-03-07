@@ -23,7 +23,7 @@ This article was written by [Abdul Rafay](https://rafay99.info) and published on
 # Contact Us: 
 If you have any questions, please contact
 ## Future Insight:
-- [Email](mailto:fututeinsight@gmail.com)
+- [Email](mailto:futureinsightblog@gmail.com)
 ## Author:
 ### Abdul Rafay:
 - [Email](mailto:99marafay@gmail.com)
