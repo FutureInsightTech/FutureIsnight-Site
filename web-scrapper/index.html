@@ -18,18 +18,18 @@
 
     
     <title>Web Scrapper</title>
-    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
-    <meta name="keywords" content='blog, gokarna, hugo, Project'>
+    <meta name="description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
+    <meta name="keywords" content='blog, gokarna, hugo, Web Development'>
 
     <meta property="og:url" content="https://future-insight.blog/web-scrapper/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Web Scrapper">
-    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
     <meta property="og:image" content="/images/16.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Web Scrapper">
-    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="twitter:description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
     <meta property="twitter:domain" content="https://future-insight.blog/web-scrapper/">
     <meta property="twitter:url" content="https://future-insight.blog/web-scrapper/">
     <meta name="twitter:image" content="/images/16.png">
@@ -182,56 +182,352 @@
     </nav>
 </header>
 <main id="content">
-    
-
     <div class="post container">
-
     <div class="post-header-section">
         <h1>Web Scrapper</h1>
+        <small role="doc-subtitle">Using the Power of JavaScript we will Build a web Scrapper to get some informations</small>
+        <p class="post-date">
+            January 28, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/web-development">Web Development</a></li>
+        
+        </ul>
     </div>
 
     <div class="post-content">
         <p>
-            <h1 id="introduction">Introduction:</h1>
-<h1 id="implementation">Implementation:</h1>
-<h1 id="conclusion">Conclusion:</h1>
-<h1 id="contact-me">Contact Me:</h1>
-<p>If you have any questions, please contact me</p>
+            <h1 id="introducation">Introducation</h1>
+<p>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.</p>
+<h1 id="solution">Solution:</h1>
+<p>What the heck am I thinking? I am a developer,  so I can build what I want and make tasks easy. So here&rsquo;s the plan: I need a script that will visit multiple websites and download some of the data that is available for download.The data I need is</p>
+<ol>
+<li>Email Address</li>
+<li>Phone Numbers</li>
+<li>Office Address</li>
+</ol>
+<p>So are the things that I think I might need for now. If I need something else, then I will change the script.</p>
+<h1 id="exit-strategy">Exit Strategy:</h1>
+<p>So before I start to code, I need to see what&rsquo;s on the internet and check how people have implemented this solution. So I searched and got some answers. There are multiple options out there, each with its own features, and they are great, but I don&rsquo;t need those features, plus some of the products are expensive. So I will be coding the application myself. Furthermore, because I enjoy command-line programming and may learn something new, the application will be command-line-based.</p>
+<h1 id="technologies">Technologies:</h1>
+<p>There are several programming languages available for this project, but I will use Python or JavaScript. I am a full stack developer who is comfortable with JavaScript and Node, so I will run and build this application using NodeJs.</p>
+<ol>
+<li>Python</li>
+<li>JavaScript</li>
+</ol>
+<p>But for me, I will go with JavaScript because I like it, but if you are more comfortable with Python, then go for it; the logic remains the same.</p>
+<p>So to get started, you need to have a couple of things installed on your system, which will be stated below:</p>
+<ol>
+<li>Node.js for JavaScript or Python</li>
+<li>Text Editor for Writing Code (Visual Studio Code)</li>
+</ol>
+<h2 id="install-programs">Install Programs:</h2>
+<h3 id="python">Python:</h3>
+<h3 id="nodejs">NodeJs:</h3>
+<h4 id="windows">Windows:</h4>
+<p>To download NodeJs download the exe file from <a href="https://nodejs.org/en/download/current/">here</a>.</p>
+<h4 id="macos">MacOS;</h4>
+<p>To download Node Js on Mac OS then open the terminal and enter the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install node
+</code></pre></div><h4 id="linux">Linux:</h4>
+<h5 id="debianubuntu">Debian/Ubuntu:</h5>
+<p>To install on ubuntu or Debian then open a terminala nd then enter the following commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install nodejs npm
+</code></pre></div><h5 id="arch-linux">Arch Linux:</h5>
+<p>If you are using arch Linux then open a terminal and then enter the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nodejs npm
+</code></pre></div><h3 id="python-1">Python</h3>
+<h4 id="windows-1">Windows</h4>
+<p>To downloads and Install Python downloads the exe file from Python website and you can download the exe file by clicking <a href="https://www.python.org/downloads/">here</a></p>
+<h4 id="macos-1">MacOS</h4>
+<p>To install python on your Mac then follow this <a href="https://docs.brew.sh/Homebrew-and-Python">guide</a></p>
+<h4 id="linux-1">Linux</h4>
+<h5 id="debianubuntu-1">Debian/Ubuntu</h5>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install python
+</code></pre></div><h6 id="arch">Arch</h6>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo pacman -S python
+</code></pre></div><h1 id="javascript">JavaScript</h1>
+<p>JavaScript has become a popular language for web scraping due to its versatility and ubiquity on the web. With JavaScript, you can easily extract data from websites and use it for various purposes. In this blog, we will explore how to create a web scraper using JavaScript.</p>
+<p><strong>Puppeteer</strong>: A Headless Chrome Library for Web Scraping</p>
+<p>Puppeteer is a popular library for web scraping with JavaScript. It allows you to automate the Chrome browser and interact with websites as if you were a real user. This makes it an ideal tool for web scraping because it can handle the complexities of websites and provide you with the data you need.</p>
+<h1 id="getting-started-with-puppeteer">Getting Started with Puppeteer</h1>
+<p>To get started with Puppeteer, you will need to install the library using npm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install puppeteer
+</code></pre></div><p>Once you have installed Puppeteer, you can create a new file with the following code to launch a headless Chrome browser:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#fff;font-weight:bold">const</span> puppeteer = require(<span style="color:#0ff;font-weight:bold">&#34;puppeteer&#34;</span>);
+
+<span style="color:#fff;font-weight:bold">async</span> <span style="color:#fff;font-weight:bold">function</span> run() {
+  <span style="color:#fff;font-weight:bold">const</span> browser = <span style="color:#fff;font-weight:bold">await</span> puppeteer.launch();
+  <span style="color:#fff;font-weight:bold">const</span> page = <span style="color:#fff;font-weight:bold">await</span> browser.newPage();
+  <span style="color:#fff;font-weight:bold">await</span> page.<span style="color:#fff;font-weight:bold">goto</span>(<span style="color:#0ff;font-weight:bold">&#34;https://example.com&#34;</span>);
+  <span style="color:#fff;font-weight:bold">await</span> browser.close();
+}
+
+run();
+</code></pre></div><h1 id="code-explain">Code Explain</h1>
+<p>This code launches a headless Chrome browser and navigates to the specified URL. You can then use the page object to interact with the website and extract the data you need.</p>
+<h1 id="extracting-data-from-a-website">Extracting Data from a Website</h1>
+<p>Puppeteer provides a number of methods for extracting data from a website, including $eval and evaluate. The $eval method allows you to select an element on the page and retrieve its properties, such as the text content or the value of an attribute. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#fff;font-weight:bold">const</span> data = <span style="color:#fff;font-weight:bold">await</span> page.$eval(<span style="color:#0ff;font-weight:bold">&#34;div.data-class&#34;</span>, (el) =&gt; el.innerText);
+console.log(data);
+</code></pre></div><p>This code selects a div element with a data-class class and retrieves its inner text. You can use this method to extract any data from the website that you need.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Web scraping with JavaScript is a powerful tool for extracting data from websites. With Puppeteer, you can automate the Chrome browser and extract data from websites with ease. Whether you&rsquo;re using the data for market research, competitor analysis, or lead generation, web scraping can provide you with valuable insights into your business or industry.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
 <ul>
 <li><a href="mailto:99marafay@gmail.com">Email</a></li>
-<li><a href="https://rafay99.info">My website</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
 <li><a href="github.com/rafay99-epic">GitHub</a></li>
 </ul>
-<p>I will see you next time❤️.</p>
-<h1 id="references">References:</h1>
-<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
-<h2 id="articles-references">Articles references:</h2>
-<ul>
-<li><a href="">Article 1</a></li>
-<li><a href="">Article 2</a></li>
-<li><a href="">Article 3</a></li>
-</ul>
-<h2 id="github-repository">GitHub Repository:</h2>
-<ul>
-<li><a href="">GitHub Repository 1</a></li>
-<li><a href="">GitHub Repository 2</a></li>
-<li><a href="">GitHub Repository 3</a></li>
-</ul>
-<h2 id="video-references">Video References:</h2>
-<ul>
-<li><a href="">Video Reference 1</a></li>
-<li><a href="">Video Reference 2</a></li>
-<li><a href="">Video Reference 3</a></li>
-</ul>
 <h1 id="thumbnail">Thumbnail:</h1>
-<p><img src="/images/2023/" alt="image"></p>
+<p><img src="/images/2023/web-scrapper/web-scrapper.png" alt="image"></p>
+<!-- # Introducation:
+So, I have been working in the field of machine learning and web development for a while, and I am still looking for great options. To get more options, I need to see what is out there.
+
+So to get what I want, I need to send emails and gather data so that I can apply for different jobs and see what's out there. So I need data, and I can get data by going to the multiple websites and applying one by one. It's hard, and I don't want to work like that.
+
+# Solution:
+What the heck am I thinking? I am a developer,  so I can build what I want and make tasks easy. So here's the plan: I need a script that will visit multiple websites and download some of the data that is available for download.The data I need is
+
+1. Email Address
+2. Phone Numbers
+3. Office Address
+
+So are the things that I think I might need for now. If I need something else, then I will change the script.
+
+# Exit Strategy:
+So before I start to code, I need to see what's on the internet and check how people have implemented this solution. So I searched and got some answers. There are multiple options out there, each with its own features, and they are great, but I don't need those features, plus some of the products are expensive. So I will be coding the application myself. Furthermore, because I enjoy command-line programming and may learn something new, the application will be command-line-based.
+
+# Technologies:
+There are several programming languages available for this project, but I will use Python or JavaScript. I am a full stack developer who is comfortable with JavaScript and Node, so I will run and build this application using NodeJs.
+
+1. Python
+2. JavaScript
+
+But for me, I will go with JavaScript because I like it, but if you are more comfortable with Python, then go for it; the logic remains the same.
+
+So to get started, you need to have a couple of things installed on your system, which will be stated below:
+
+1. Node.js for JavaScript or Python
+2. Text Editor for Writing Code (Visual Studio Code)
+
+## Install Programs:
+
+### Python: 
+
+### NodeJs:
+#### Windows: 
+To download NodeJs download the exe file from [here](https://nodejs.org/en/download/current/).
+#### MacOS;
+To download Node Js on Mac OS then open the terminal and enter the following command
+``` shell
+brew install node
+```
+#### Linux:
+##### Debian/Ubuntu:
+To install on ubuntu or Debian then open a terminala nd then enter the following commands.
+```shell
+sudo apt-get install nodejs npm
+```
+##### Arch Linux:
+If you are using arch Linux then open a terminal and then enter the following command.
+```shell
+sudo pacman -S nodejs npm
+```
+
+### Python
+#### Windows
+To downloads and Install Python downloads the exe file from Python website and you can download the exe file by clicking [here](https://www.python.org/downloads/)
+#### MacOS
+To install python on your Mac then follow this [guide](https://docs.brew.sh/Homebrew-and-Python)
+#### Linux
+##### Debian/Ubuntu
+```shell
+sudo apt-get install python
+```
+###### Arch
+```shell
+sudo pacman -S python
+```
+
+# A Web Scraper
+So this is the main deal I will be designing a web scrapper, I will be hosting all of my code on [GitHub](https://github.com/rafay99-epic). The Job of this Web Scrapper is to get a couple of information from the given website and then store them in the form of json file pattern. The data will be stored in a variable for now but later it will saved in an excel shell, where it'll be stored.
+
+
+So for this Project I will using **thee** npm packages and those packages are stated bellow:
+
+1. Express
+2. Axios
+3. Cherio
+
+## Whole Story:
+So the entire process will be as follows: I will obtain website code, and once I have the code in HTML, I will search for specific things in that code, and once the entire website has been searched, I will store all the relative data into a variable.
+
+All the data from the variable will be stored in the form of JSON, and then the JSON will be saved into the Excel sheet.
+
+## Starting An NPM Project
+### Crearing a Project
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```shell
+npm init
+```
+Once you have entered the command then You need to answer a couple questions about the project. Once you have answer the question then a packages.json file will be created. 
+### Installing Package
+Now we can start installing packages from npm.
+#### Downloading Package: Express
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install express
+```
+#### Downloading Package: Cherio
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install cherio
+```
+#### Downloading Package: Axios
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install axios
+```
+### Creating Files:
+Now we need to creat some javaScript files that will contain our code. So enter the following command into your terminal
+```shell
+touch index.js
+```
+Once this command is executed then a file will be created called **index.js**
+
+### Coding time:
+Now it's time to code the application.
+```javascript
+//Loading the express for application
+const port= 5000;
+const express = require("express");
+const axios= require("axios");
+const cherrio= require("cheerio");
+
+
+// Using express for run the application
+var app = express();
+
+//The url of different website
+const url= "https://www.pakistanlawsite.com/Login/MainPage";
+
+
+//axio will get the html data from the url
+axios(url)
+        .then(respond =>{
+              const html_code= respond.data
+              console.log(html_code);
+  });
+
+
+
+app.listen(port,()=>{
+    console.log("The server is running on port:" + port)
+});
+
+
+``` -->
 
         </p>
     </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/best-resources-for-ML/">
+            &#8592;
+            Previous:
+            Best Resources to Learn ML
+        </a>
+    </p>
+    <p class="prev-post-date">
+        January 27, 2023
+    </p>
 </div>
 
 
 
+<div class="next-post">
+    <p>
+        <a href="/create-your-own-ml-model/">
+            Next:
+            Design your own Machine Learning Model: Beginner Guide
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 2, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introducation">Introducation</a></li>
+    <li><a href="#solution">Solution:</a></li>
+    <li><a href="#exit-strategy">Exit Strategy:</a></li>
+    <li><a href="#technologies">Technologies:</a>
+      <ol>
+        <li><a href="#install-programs">Install Programs:</a>
+          <ol>
+            <li><a href="#python">Python:</a></li>
+            <li><a href="#nodejs">NodeJs:</a></li>
+            <li><a href="#python-1">Python</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#javascript">JavaScript</a></li>
+    <li><a href="#getting-started-with-puppeteer">Getting Started with Puppeteer</a></li>
+    <li><a href="#code-explain">Code Explain</a></li>
+    <li><a href="#extracting-data-from-a-website">Extracting Data from a Website</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
 
         </main><footer class="footer">
     <span>&copy; 2023  by Future Insight</span>
