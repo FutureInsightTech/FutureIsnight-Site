@@ -7,8 +7,10 @@ tags: ["blog" ,"Linux", "Operating System"]
 description: "Install Linux, the write way"
 showTableOfContents: true
 url: /install-linux/
-image: "/images/2023/Operating-System/Linux/Install-linux/Install-Linux.png"
+image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
+
 ---
+
 
 # Introduction:
 You are already aware that I use Linux for everything, from development to my regular tasks.If you don't have any idea what Linux is, check out my last [blog](https://future-insight.blog/world-of-linx).
@@ -179,5 +181,5 @@ If you have any questions, please contact
 - [Personal-Website](https://rafay99.info)
 - [GitHub](github.com/rafay99-epic) 
 # Thumbnail:
-image: "/images/2023/Operating-System/Linux/Install-linux/Install-Linux.png"
+![image](/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png)
 
