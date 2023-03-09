@@ -59,8 +59,8 @@ jobs:
        #   MESSAGE: "Build: ({sha}) {msg}" # The commit message
       
       - name: Upload Artifacts
-        #uses: s0/git-publish-subdir-action@develop
-        uses: actions/upload-pages-artifact@v1 
+        uses: s0/git-publish-subdir-action@develop
+        #uses: actions/upload-pages-artifact@v1 
         env:
           REPO: self
           BRANCH: github-build # The branch name where you want to push the assets
