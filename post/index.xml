@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Mar 2023 00:29:28 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Mar 2023 14:19:41 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Linux</title>
+      <link>https://future-insight.blog/install-linux/</link>
+      <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/install-linux/</guid>
+      <description>Introduction: You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
+So today I will teach you how to install Linux and how to dual boot with another operating system.
+Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in which your computer has more than one operating system.</description>
+    </item>
+    
     <item>
       <title>The World of Operating System</title>
       <link>https://future-insight.blog/world-of-os/</link>
