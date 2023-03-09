@@ -49,14 +49,26 @@ jobs:
       - name: Build with Hugo
         run: 
           hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
+      
+      #- name: Upload artifact
+       # uses: actions/upload-pages-artifact@v1 
+       # with:
+       #   BRANCH: github-pages # The branch name where you want to push the assets
+       #   FOLDER: public # The directory where your assets are generated
+       #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+       #   MESSAGE: "Build: ({sha}) {msg}" # The commit message
+      
+      - name: Upload Artifacts
+        #uses: s0/git-publish-subdir-action@develop
         uses: actions/upload-pages-artifact@v1 
-        with:
-          BRANCH: github-pages # The branch name where you want to push the assets
+        env:
+          REPO: self
+          BRANCH: github-build # The branch name where you want to push the assets
           FOLDER: public # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
-
+      
+      
   # Deployment job
   deploy:
     environment:
