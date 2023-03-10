@@ -6,7 +6,7 @@ type: "page"
 url: /Project/
 ---
 
-<h1 align="center">Projects</h1>
+<h1 align="center">Project Gallery</h1>
 
 -----
 
@@ -29,23 +29,22 @@ url: /Project/
 
 ----
 
-[Cyber Attack Detection on EV Station](/cyber-attack-detection/) | Under development
+[EV Cyber Attack Detection](/ev-cyber-detection/) | Under development
 - With the power of the SVM model, I can detect a false data injection attack in an EV station. To make this work, you need data, and I have created a dataset to match the requirements of the research paper.
 - This model is very powerful, and the theory behind it is provided in this [research paper](https://github.com/rafay99-epic/Cyber-Attack-Detection/blob/main/Research%20Paper/Cyber-Attack_on_P2P_Energy_Transaction_Between_Connected_Electric_Vehicles_A_False_Data_Injection_Detection_Based_Machine_Learning_Model-1.pdf).
 
 ----
 
-[Web Scrapper](/web-scrapper/) | 15th January 2023
-- Finding information on the internet can be difficult and time-consuming, so I devised a unique solution.
-- I wrote a web scraper to collect the necessary data.
-- It's simple—just enter the URL for the website, and data will be printed.
+[URLHunter](/url-hunter/) | 15th January 2023
+- Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data. However, with URLHunter, you can collect all the necessary information in just one go. URLHunter is a powerful web scraper that extracts data from websites based on user inputs. With just a URL, URLHunter will fetch the relevant data from multiple websites and present it to you in an easy-to-read format.
+- Gone are the days when you had to spend hours searching for information on the internet. With URLHunter, all you have to do is run the command-line utility, enter the URL, and watch as the data is fetched and displayed on your screen. It's a one-stop-shop for all your web scraping needs.
+- URLHunter is an open-source project, and you can find the source code on our GitHub repository. We encourage you to use and modify the code according to your needs. You can also contribute to the development of URLHunter by submitting pull requests or raising issues on the GitHub page.
+- With URLHunter, web scraping has never been easier. So, head over to our GitHub repository and download URLHunter for free today.
 
 ----
 
-[Set-Up](/Gnome-Setup/) | 19th March 2020
-- I work as a developer, and sometimes your computer gets messed up and you have to reinstall the operating system, but it takes hours to configure the system to your needs.
-- But not this time, so I created a powerful script that will install all of your applications and configure your PC to your liking.
-- Run it and then forget it.
+[DevBox](/DevBox/) | 19th March 2020
+- DevBox is a software designed to make the life of developers easier. As a developer myself, I know how frustrating it can be to reinstall the operating system and spend hours configuring the system to meet your needs. That's why I created DevBox, a powerful script that can install all of your necessary applications and configure your PC to your liking. With DevBox, you can run the script and forget about it while it does all the work for you. No more wasted hours trying to get your development environment set up just right. DevBox makes it easy and hassle-free.
 
 
 
