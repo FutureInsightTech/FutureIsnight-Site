@@ -8,15 +8,31 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Feb 2023 15:21:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Web Scrapper</title>
-      <link>https://future-insight.blog/web-scrapper/</link>
+      <title>DevBox</title>
+      <link>https://future-insight.blog/DevBox/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-scrapper/</guid>
-      <description>Introduction: Implementation: Conclusion: Contact Me: If you have any questions, please contact me
- Email My website GitHub  I will see you next time❤️.
-References: Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-Articles references:  Article 1 Article 2 Article 3  GitHub Repository:  GitHub Repository 1 GitHub Repository 2 GitHub Repository 3  Video References:  Video Reference 1 Video Reference 2 Video Reference 3  Thumbnail: </description>
+      <guid>https://future-insight.blog/DevBox/</guid>
+      <description>Introduction: DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems.</description>
+    </item>
+    
+    <item>
+      <title>Introducing URL Hunter: The Web Scraper for Your Data Need</title>
+      <link>https://future-insight.blog/url-hunter/</link>
+      <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/url-hunter/</guid>
+      <description>URL Hunter is a powerful web scraping tool designed for developers and data analysts. With URL Hunter, you can easily extract data from websites and APIs by providing a URL and selecting the relevant data to scrape. This tool allows you to scrape data from any website, regardless of its structure or complexity, and supports various data formats, including JSON, XML, and CSV. Whether you need to collect data for market research, lead generation, or any other purpose, URL Hunter is the ideal tool for the job.</description>
+    </item>
+    
+    <item>
+      <title>EV Cyber Attack Detection Using SVM</title>
+      <link>https://future-insight.blog/ev-cyber-detection/</link>
+      <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/ev-cyber-detection/</guid>
+      <description>Introduction: Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.
+Machine learning has emerged as a promising solution to the challenge of detecting cyber attacks in real-time.</description>
     </item>
     
     <item>
@@ -37,7 +53,7 @@ Technology Used: The project is developed using the following technologies:
       <pubDate>Tue, 21 Feb 2023 15:03:15 +0500</pubDate>
       
       <guid>https://future-insight.blog/Project/</guid>
-      <description>Projects  Parking Assistant | 3rd Augest 2022
+      <description>Project Gallery  Parking Assistant | 3rd Augest 2022
  Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area. The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.   React Porofilo Website | 2nd February 2023
  Using React to create a stunning Porofilo project.</description>
     </item>

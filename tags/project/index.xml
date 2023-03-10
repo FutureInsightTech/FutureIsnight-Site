@@ -6,17 +6,15 @@
     <description>Recent content in Project on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 15:21:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 15:18:57 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Web Scrapper</title>
-      <link>https://future-insight.blog/web-scrapper/</link>
-      <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
+      <title>EV Cyber Attack Detection Using SVM</title>
+      <link>https://future-insight.blog/ev-cyber-detection/</link>
+      <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-scrapper/</guid>
-      <description>Introduction: Implementation: Conclusion: Contact Me: If you have any questions, please contact me
- Email My website GitHub  I will see you next time❤️.
-References: Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-Articles references:  Article 1 Article 2 Article 3  GitHub Repository:  GitHub Repository 1 GitHub Repository 2 GitHub Repository 3  Video References:  Video Reference 1 Video Reference 2 Video Reference 3  Thumbnail: </description>
+      <guid>https://future-insight.blog/ev-cyber-detection/</guid>
+      <description>Introduction: Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.
+Machine learning has emerged as a promising solution to the challenge of detecting cyber attacks in real-time.</description>
     </item>
     
   </channel>
