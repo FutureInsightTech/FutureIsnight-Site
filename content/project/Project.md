@@ -16,8 +16,10 @@ url: /Project/
 
 -----
 
-[React Porofilo Website](/Portifilo-Website/) | 2nd February 2023
-- Using React to create a stunning Porofilo project.
+[ReactJS Porofilo Website](/portifilo/) | 2nd February 2023
+- It is a personal website created by Rafay, a web developer and designer.
+- The website showcases Rafay's skills and experience in web development, design, and related fields through a portfolio of projects and a blog section.
+- Visitors can learn more about Rafay's background, skills, and experience through the about section and get in touch with him directly through the contact section.
 - You can find this project live by [clicking here](https://rafay99.info)
 
 ----
@@ -45,15 +47,3 @@ url: /Project/
 
 [DevBox](/DevBox/) | 19th March 2020
 - DevBox is a software designed to make the life of developers easier. As a developer myself, I know how frustrating it can be to reinstall the operating system and spend hours configuring the system to meet your needs. That's why I created DevBox, a powerful script that can install all of your necessary applications and configure your PC to your liking. With DevBox, you can run the script and forget about it while it does all the work for you. No more wasted hours trying to get your development environment set up just right. DevBox makes it easy and hassle-free.
-
-
-
-
-<!-- With My experience and my work flow here are my project:
-
-## University Final Year Project:
-You find every thing, the working and code checkout this article [Parking Assistant](/Parking-Space-Detection/)
-
-## Web Scrapper:
-A web scrapper is used to get alot of information from different website, All you need to provide the URl of the websie and you can find the Working and code of this application in this article [Web Scrapper](/web-scrapper/) -->
-

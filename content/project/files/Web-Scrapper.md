@@ -3,7 +3,7 @@ title: "Introducing URL Hunter: The Web Scraper for Your Data Need"
 date: 2023-02-21T15:21:08+05:00
 draft: false
 type: "page"
-url: /url-hunter/
+url: Project/url-hunter/
 image: "/images/2023/pages/url-hunter/url-hunter.png"
 ---
 

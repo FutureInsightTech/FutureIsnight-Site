@@ -3,7 +3,7 @@ title: "DevBox"
 date: 2023-02-21T15:21:08+05:00
 draft: false
 type: "page"
-url: /DevBox/
+url:  Project/DevBox/
 image: "/images/2023/pages/DevBox/DevBox.png"
 ---
 # Introduction:

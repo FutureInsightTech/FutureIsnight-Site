@@ -3,8 +3,8 @@ title: "Parking Assistant"
 date: 2023-02-21T15:03:36+05:00
 draft: false
 type: "page"
-showTableOfContents: true
-url: /Parking-Assistant/
+#showTableOfContents: true
+url: Project/Parking-Assistant/
 ---
 
 # Introduction:
