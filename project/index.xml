@@ -9,53 +9,59 @@
     <lastBuildDate>Tue, 21 Feb 2023 15:21:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevBox</title>
-      <link>https://future-insight.blog/DevBox/</link>
+      <link>https://future-insight.blog/Project/DevBox/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/DevBox/</guid>
-      <description>Introduction: DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems.</description>
+      <guid>https://future-insight.blog/Project/DevBox/</guid>
+      <description>DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems.</description>
     </item>
     
     <item>
       <title>Introducing URL Hunter: The Web Scraper for Your Data Need</title>
-      <link>https://future-insight.blog/url-hunter/</link>
+      <link>https://future-insight.blog/Project/url-hunter/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/url-hunter/</guid>
+      <guid>https://future-insight.blog/Project/url-hunter/</guid>
       <description>URL Hunter is a powerful web scraping tool designed for developers and data analysts. With URL Hunter, you can easily extract data from websites and APIs by providing a URL and selecting the relevant data to scrape. This tool allows you to scrape data from any website, regardless of its structure or complexity, and supports various data formats, including JSON, XML, and CSV. Whether you need to collect data for market research, lead generation, or any other purpose, URL Hunter is the ideal tool for the job.</description>
     </item>
     
     <item>
-      <title>EV Cyber Attack Detection Using SVM</title>
-      <link>https://future-insight.blog/ev-cyber-detection/</link>
-      <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
+      <title>Portifilo Website</title>
+      <link>https://future-insight.blog/Project/portifilo/</link>
+      <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/ev-cyber-detection/</guid>
-      <description>Introduction: Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.
-Machine learning has emerged as a promising solution to the challenge of detecting cyber attacks in real-time.</description>
-    </item>
-    
-    <item>
-      <title>Parking Assistant</title>
-      <link>https://future-insight.blog/Parking-Assistant/</link>
-      <pubDate>Tue, 21 Feb 2023 15:03:36 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/Parking-Assistant/</guid>
-      <description>Introduction: In this project we are going to make a parking assistant. Using the power of IOT Devices we will be able to detect the parking space, Also we reserved the parking space.
-Technology Used: The project is developed using the following technologies:
- HTML CSS JavaScript Bootstrap  Required Software: To run this application on your computer you need to install the following software:
- Xampp Node JS VS Code Arduino IDE  Required Hardware: For this application to run properly we also required hardware.</description>
+      <guid>https://future-insight.blog/Project/portifilo/</guid>
+      <description>Welcome to my website! This is a personal portfolio website created using React, a popular front-end JavaScript library for building user interfaces. The website is designed to showcase my skills, experience, and projects in the field of web development.
+Feature: I have created a personal portfolio website using React, a popular front-end JavaScript library, to showcase his skills and experience to potential clients and employers. This modern and stylish website boasts a clean, dark-themed design with a user-friendly interface that is easy to navigate.</description>
     </item>
     
     <item>
       <title></title>
+      <link>https://future-insight.blog/Project/ev-cyber-detection/</link>
+      <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/Project/ev-cyber-detection/</guid>
+      <description>EV Cyber Attact Dection Using ML  Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://future-insight.blog/Project/Parking-Assistant/</link>
+      <pubDate>Tue, 21 Feb 2023 15:03:36 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/Project/Parking-Assistant/</guid>
+      <description>Parking Assistant Imagine a world where finding a parking space is no longer a frustrating experience. With the rise of smart cities and the Internet of Things, we now have the ability to solve this problem using advanced technology. Introducing our project, an innovative solution that uses IoT sensors and a web application to help drivers quickly find available parking spots. Our system is built using an Arduino board, equipped with infrared sensors that detect the presence of vehicles in parking spots.</description>
+    </item>
+    
+    <item>
+      <title>Project Gallery</title>
       <link>https://future-insight.blog/Project/</link>
       <pubDate>Tue, 21 Feb 2023 15:03:15 +0500</pubDate>
       
       <guid>https://future-insight.blog/Project/</guid>
-      <description>Project Gallery  Parking Assistant | 3rd Augest 2022
- Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area. The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.   React Porofilo Website | 2nd February 2023
- Using React to create a stunning Porofilo project.</description>
+      <description>Parking Assistant | 3rd Augest 2022
+ Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area. The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.   ReactJS Porofilo Website | 2nd February 2023
+ It is a personal website created by Rafay, a web developer and designer.</description>
     </item>
     
   </channel>
