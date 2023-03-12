@@ -9,8 +9,7 @@ showTableOfContents: true
 url: /JavaScript-vs-Python-for-ml/
 ---
 
-
-## Introduction:
+<link rel="stylesheet" href="/css/style.css">
 
 Hi!, Over the years I have developed multiple websites using multiple technologies such as HTML, CSS, JavaScript, and a couple of frameworks, but now I am expanding my skill set in the world of machine learning. I used JavaScript for everything and loved it; things were very easy and simple for me. I needed to create a static website, so I just used NodeJS with an EJS template to create a simple website. For something special and animations, I will use React. I needed to redo something on the server, so I got NodeJS. But now I am getting into machine learning, and everyone is using Python. So As a newsiest In machine Learning which is better Python or JavaScript.
 

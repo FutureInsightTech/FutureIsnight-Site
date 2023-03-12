@@ -4,6 +4,7 @@ type: "page"
 description: "About Author"
 url: /author/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
 ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png)
 <!-- ![My project2](/images/avatar2.png) -->
@@ -69,8 +70,8 @@ These are the stats of my GitHub account. I'm a very active user, and I contribu
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafay99-epic&hide=java,html,tex&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&langs_count=3" />
 </a>
 
-# Experince:
+# Experiences:
 [Click here](/Author-Experience) to read about my experience.
 
-# Projects::
+# Projects:
 [Click here](/Project) to read about my Projects.

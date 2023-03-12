@@ -10,9 +10,8 @@ url: /install-linux/
 image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
 
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-
-# Introduction:
 You are already aware that I use Linux for everything, from development to my regular tasks.If you don't have any idea what Linux is, check out my last [blog](https://future-insight.blog/world-of-linx).
 
 So today I will teach you how to install Linux and how to dual boot with another operating system.

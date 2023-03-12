@@ -8,8 +8,9 @@ description: "best resources to learn machine learning & Deep Learning"
 showTableOfContents: true
 url: /best-resources-for-ML/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-# Introduction
+
 Machine Learning and Deep Learning are rapidly growing fields that are changing the way we interact with technology. These fields have the power to create intelligent systems that can learn from data and make predictions, decisions, and even create new knowledge. If you're interested in learning about Machine Learning and Deep Learning, there are many resources available to help you get started.
 # Best Resources
 As I was learning Machine Learning and Deep Learning, I got to the point where I did not understand the basic knowledge of Machine Learning Models and Deep Learning Models. So I decided to start over again, and I used these resources to get things started. I am still learning, and every day is a new learning challenge, so use these resources to hone your skills.

@@ -8,10 +8,10 @@ description: "Machine learning is the feeding of data, but not just data, but al
 showTableOfContents: true
 url: /Is-Maths-required-for-ML/
 ---
+<link rel="stylesheet" href="/css/style.css">
+
 ![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png)
 
-
-# Introduction:
 Hi! My name is Abdul Rafay, and I work on training different models from provided data, as well as deploying the model on any of the cloud services.
 
 When I started this journey, my teacher and mentor told me to learn math and probability in order to understand the major concepts needed to become an expert in machine learning. But most students hate math and probability because some of the concepts can be tricky to learn and might not be interesting to them.

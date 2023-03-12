@@ -10,7 +10,7 @@ url: /logistic-regression/
 image: "/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png"
 ---
 
-# Introduction
+<link rel="stylesheet" href="/css/style.css">
 
 Logistical regression is a type of algorithm that uses information from one set of data to predict another set. In this article, we'll take a look at what logistical regression is and how it works as well as some popular examples where it's been used successfully.
 
