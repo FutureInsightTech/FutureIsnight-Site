@@ -6,7 +6,7 @@ type: "page"
 tags: ["Project"]
 description: "Using the power of SVM to detect cyber attacks"
 showTableOfContents: true
-url: /ev-cyber-detection/
+url: Project/ev-cyber-detection/
 image: "/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png"
 ---
 
