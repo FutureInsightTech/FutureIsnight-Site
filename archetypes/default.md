@@ -9,19 +9,23 @@ showTableOfContents: true
 url: //
 image: "/images/2023/"
 ---
+<link rel="stylesheet" href="/css/style.css">
+
 
 # Introduction:
+<p style="text-align: justify;"> </p>
 
 # Implementation: 
+<p style="text-align: justify;"> </p>
 
 # Conclusion:
+<p style="text-align: justify;"> </p>
 With that, we will see you next time.❤️❤️
 
 # Credit:
 This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
 
 # Contact Us: 
-## Future Insight:
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
 
 To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.

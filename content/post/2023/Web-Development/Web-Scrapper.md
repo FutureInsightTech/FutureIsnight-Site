@@ -8,9 +8,8 @@ description: "Using the Power of JavaScript we will Build a web Scrapper to get 
 showTableOfContents: true
 url: /web-scrapper/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-
-# Introducation
 Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 
 # Solution:

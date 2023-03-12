@@ -10,7 +10,8 @@ url: /world-of-linux/
 image: "/images/2023/Operating-System/Linux/The-world-of-linux/The-World-of-Linux.png"
 ---
 
-# Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
 I am a developer. I love what I do, which is write blogs and make awesome applications, and for my work flow, I use an operating system that is called Linux that I use every day. Like 90% of my day I am running Linux on my computer. So in my previous blog, I mentioned different operating systems. So if you want to know about operating systems, then read my previous blog by [clicking here](https://future-insight.blog/world-of-os).
 
 So in this blog, you know everything about the Linux operating system. The pros and cons of running Linux as your main desktop are that no matter which OS you are running—Windows, MacOS, or Linux—it's not perfect.

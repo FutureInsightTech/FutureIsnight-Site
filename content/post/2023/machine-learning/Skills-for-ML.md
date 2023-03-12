@@ -9,7 +9,8 @@ showTableOfContents: true
 url: /skills-for-ml/
 ---
 
-## Introducation: 
+<link rel="stylesheet" href="/css/style.css">
+
 So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development. 
 
 ## Understanding:

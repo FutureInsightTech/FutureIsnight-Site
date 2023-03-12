@@ -7,6 +7,8 @@ url: Project/url-hunter/
 image: "/images/2023/pages/url-hunter/url-hunter.png"
 ---
 
+<link rel="stylesheet" href="/css/style.css">
+
 URL Hunter is a powerful web scraping tool designed for developers and data analysts. With URL Hunter, you can easily extract data from websites and APIs by providing a URL and selecting the relevant data to scrape. This tool allows you to scrape data from any website, regardless of its structure or complexity, and supports various data formats, including JSON, XML, and CSV. Whether you need to collect data for market research, lead generation, or any other purpose, URL Hunter is the ideal tool for the job.
 
 # Features:
@@ -42,10 +44,8 @@ We also welcome feedback and contributions from the community to help us improve
 In summary, URL Hunter is a powerful web scraper that can automate your data collection process. By providing a user-provided URL and fetching data from multiple websites, you can streamline your data collection process and save valuable time and effort. Whether you're a developer or data analyst, URL Hunter is a must-have tool for your data collection needs.
 
 # Contact Me:
-If you have any questions, please contact me 
-- [Email](mailto:99marafay@gmail.com)
-- [My website](https://rafay99.info)
-- [GitHub](github.com/rafay99-epic) 
+If you have any questions or issues with our smart parking system, please do not hesitate to [contact us](https://future-insight.blog/contact). We are always here to help!
+
 
 # Thumbnail:
 ![image](/images/2023/pages/url-hunter/url-hunter.png)

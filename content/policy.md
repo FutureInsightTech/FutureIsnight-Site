@@ -3,10 +3,13 @@ title: "Future Insight Policy"
 date: 2023-02-22T13:00:26+05:00
 draft: false
 type: "page"
-description: "Future Insight Privacy Policy"
-showTableOfContents: true
+# description: "Future Insight Privacy Policy"
+# showTableOfContents: true
 url: /policy/
 ---
+
+<link rel="stylesheet" href="/css/style.css">
+
 # Preview your GDPR Privacy Policy
 Privacy Policy for Future Insight
 At Future Insight, accessible from future-insight.blog, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Future Insight and how we use it.

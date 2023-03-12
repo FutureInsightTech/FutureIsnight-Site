@@ -6,7 +6,8 @@ type: "page"
 url:  Project/DevBox/
 image: "/images/2023/pages/DevBox/DevBox.png"
 ---
-# Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
 DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems. It does not use Snap Pack, ensuring a fast and streamlined installation process. Once the script is executed, you can forget about the installation and focus on your work. DevBox supports AUR and can also be used to theme Gnome desktops. With Git and GitHub configuration, DevBox streamlines the development process. The script is secure, and with its one-line command line execution, it is easy to use even for beginners.
 
 # About Application:
@@ -46,10 +47,7 @@ So, head over to our GitHub repository at https://github.com/rafay99-epic/DevBox
 In conclusion, DevBox is a powerful tool that can help you automate the installation and configuration of a Linux system for development purposes. With its support for multiple distributions, easy-to-use interface, and essential applications and tools for developers, DevBox is the ultimate solution for setting up your development environment quickly and easily.
 
 # Contact Me:
-If you have any questions, please contact me 
-- [Email](mailto:99marafay@gmail.com)
-- [My website](https://rafay99.info)
-- [GitHub](github.com/rafay99-epic) 
+If you have any questions or issues with our smart parking system, please do not hesitate to [contact us](https://future-insight.blog/contact). We are always here to help!
 
 # Thumbnail:
 ![image](/images/2023/pages/DevBox/DevBox.png)

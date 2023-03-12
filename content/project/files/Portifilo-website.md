@@ -7,10 +7,12 @@ url: Project/portifilo/
 image: "/images/2023/pages/portfolio/portfolio.png"
 ---
 
+<link rel="stylesheet" href="/css/style.css">
+
 Welcome to my website! This is a personal portfolio website created using React, a popular front-end JavaScript library for building user interfaces. The website is designed to showcase my skills, experience, and projects in the field of web development.
 
 # Feature:
-I havecreated a personal portfolio website using React, a popular front-end JavaScript library, to showcase his skills and experience to potential clients and employers. This modern and stylish website boasts a clean, dark-themed design with a user-friendly interface that is easy to navigate.
+I have created a personal portfolio website using React, a popular front-end JavaScript library, to showcase his skills and experience to potential clients and employers. This modern and stylish website boasts a clean, dark-themed design with a user-friendly interface that is easy to navigate.
 
 ## Header Section:
 The website's header section includes a navigation menu that allows visitors to quickly access different parts of the website. The menu stays fixed at the top of the page, making it easy for visitors to navigate the website.

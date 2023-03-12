@@ -8,8 +8,8 @@ description: "Build My Blog Website using HUGO"
 showTableOfContents: true
 url: /build-hugo-website/
 ---
-# Website for My Blog:
-## Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
 I'm a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.

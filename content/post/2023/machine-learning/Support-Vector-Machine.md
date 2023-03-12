@@ -8,7 +8,8 @@ description: ""
 showTableOfContents: true
 url: /Support-Vector-Machine/
 ---
-# Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
 So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.
 
 I am doing a project where I need to use SVM for detecting cyber attacks, but in order to identify them, I need to learn what makes this algorithm so good. For this project, I will be learning the basics of SVM with real-world examples, and once we are done with the examples, we will try the real project.

@@ -9,8 +9,9 @@ showTableOfContents: true
 url: /linear-regression/
 ---
 
-# Introduction:
-Here is a series, where I am going to learn different machine learn models and algorithm and see how there different from each other and what make them so unique. So for today I will be going through Linear Regression.
+<link rel="stylesheet" href="/css/style.css">
+
+Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable. In this blog, we will explore the concept of linear regression, its types, and how to implement it using Python.
 
 In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun. 
 
