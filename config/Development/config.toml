@@ -1,8 +1,16 @@
-#-------------------------------------
-# This is the main production Build
-# Main Branch
-#-------------------------------------
-baseURL = 'https://future-insight.blog'
+#---------------------------
+# Development branch Config
+#--------------------------
+
+# Blog Build
+#baseURL = 'https://future-insight-blog-build.onrender.com'
+
+# Main Production URL
+#baseURL = 'https://future-insight.blog'
+
+# Development URL
+baseURL = 'https://futue-insight-development-build.onrender.com'
+
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
