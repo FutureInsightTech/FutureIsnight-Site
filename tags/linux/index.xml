@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Future Insight</title>
-    <link>https://futue-insight-test.onrender.com/tags/linux/</link>
+    <link>https://future-insight.blog/tags/linux/</link>
     <description>Recent content in Linux on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Mar 2023 20:25:31 +0500</lastBuildDate><atom:link href="https://futue-insight-test.onrender.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 20:25:31 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nivida Driver: Arch Linux</title>
-      <link>https://futue-insight-test.onrender.com/nvidia-driver-arch-linux/</link>
+      <link>https://future-insight.blog/nvidia-driver-arch-linux/</link>
       <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
       
-      <guid>https://futue-insight-test.onrender.com/nvidia-driver-arch-linux/</guid>
+      <guid>https://future-insight.blog/nvidia-driver-arch-linux/</guid>
       <description>If you&amp;rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system.</description>
     </item>
     
     <item>
       <title>Install Linux</title>
-      <link>https://futue-insight-test.onrender.com/install-linux/</link>
+      <link>https://future-insight.blog/install-linux/</link>
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
       
-      <guid>https://futue-insight-test.onrender.com/install-linux/</guid>
+      <guid>https://future-insight.blog/install-linux/</guid>
       <description>You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
 So today I will teach you how to install Linux and how to dual boot with another operating system.
 Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in which your computer has more than one operating system.</description>
@@ -29,10 +29,10 @@ Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in whi
     
     <item>
       <title>The World of Linux</title>
-      <link>https://futue-insight-test.onrender.com/world-of-linux/</link>
+      <link>https://future-insight.blog/world-of-linux/</link>
       <pubDate>Sun, 05 Mar 2023 22:42:58 +0500</pubDate>
       
-      <guid>https://futue-insight-test.onrender.com/world-of-linux/</guid>
+      <guid>https://future-insight.blog/world-of-linux/</guid>
       <description>I am a developer. I love what I do, which is write blogs and make awesome applications, and for my work flow, I use an operating system that is called Linux that I use every day. Like 90% of my day I am running Linux on my computer. So in my previous blog, I mentioned different operating systems. So if you want to know about operating systems, then read my previous blog by clicking here.</description>
     </item>
     

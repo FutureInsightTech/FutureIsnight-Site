@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project on Future Insight</title>
-    <link>https://futue-insight-test.onrender.com/tags/project/</link>
+    <link>https://future-insight.blog/tags/project/</link>
     <description>Recent content in Project on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 15:18:57 +0500</lastBuildDate><atom:link href="https://futue-insight-test.onrender.com/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 15:18:57 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://futue-insight-test.onrender.com/Project/ev-cyber-detection/</link>
+      <link>https://future-insight.blog/Project/ev-cyber-detection/</link>
       <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
       
-      <guid>https://futue-insight-test.onrender.com/Project/ev-cyber-detection/</guid>
+      <guid>https://future-insight.blog/Project/ev-cyber-detection/</guid>
       <description>EV Cyber Attact Dection Using ML  Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.</description>
     </item>
     
