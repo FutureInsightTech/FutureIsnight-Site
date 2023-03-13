@@ -205,46 +205,146 @@
         <p>
             <link rel="stylesheet" href="/css/style.css">
 <p>If you&rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system. In this blog post, we&rsquo;ll guide you through the process of installing Nvidia drivers on Arch Linux, so let&rsquo;s get started!</p>
+<h1 id="prerequisite">Prerequisite:</h1>
+<p>In order to install Nvidia drivers on your system, there are a couple of things that need to be checked.</p>
+<ol>
+<li>
+<p>Check which kernel you are running on your system. To check which kernel you are running, enter this command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    uname -r
+</code></pre></div></li>
+<li>
+<p>Check which session you are running—is it Xorg or Wayland? Enter this command to checkout.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">loginctl show-session   $XDG_SESSION_ID -p Type
+</code></pre></div><p>This command will display the type of session you are currently running, which can be either &ldquo;x11&rdquo; or &ldquo;wayland&rdquo;. If the output is &ldquo;Type=x11&rdquo;, it means that you are running an Xorg session, and if the output is &ldquo;Type=wayland&rdquo;, it means that you are running a Wayland session.</p>
+</li>
+<li>
+<p>Check which graphics card you are running on your system, and to check, enter the following command into your terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    lspci -k | <span style="color:#fff;font-weight:bold">grep</span>-A <span style="color:#ff0;font-weight:bold">2</span> -E <span style="color:#0ff;font-weight:bold">&#34;(VGA | 3D)&#34;</span>
+</code></pre></div><p><img src="/images/2023/Operating-System/Linux/Nvidia-arch-linux/my-driver.png" alt="image"></p>
+<p>For me, I have two GPUs: an AMD integrated one and an Nvidia RTX 3060 Mobile.</p>
+</li>
+<li>
+<p>Now that you know the model of your GPU, it&rsquo;s time to go search for a driver using this <a href="https://nouveau.freedesktop.org/CodeNames.html">link</a>. Here you will find the model number of your GPU.</p>
+</li>
+</ol>
 <h1 id="implementation">Implementation:</h1>
+<p>To install the nVidia driver, there are four things that must be kept in mind.</p>
+<ol>
+<li>Driver for supported cards</li>
+<li>Driver for Unsupported Cards</li>
+<li>Which kernel are you using?</li>
+<li>How can I switch between Intergated Graphics and Nivida Graphics?</li>
+</ol>
+<h2 id="supported-cards">Supported Cards:</h2>
 <ol>
 <li>Before you begin, make sure that your system is up-to-date by running the following command in the terminal:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo pacman -Syu
 </code></pre></div></li>
-<li>Next, you need to identify your NVIDIA graphics card. You can do this by running the following command:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">lspci | <span style="color:#fff;font-weight:bold">grep</span> -E <span style="color:#0ff;font-weight:bold">&#34;VGA|3D&#34;</span>
+<li>If your kernel is new and your GPU is supported, then all the drivers can be installed using these commands.
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo pacman -Sy nvidia nvidia-settings nvidia-utils
+</code></pre></div>The above package will install all the drivers on your system.</li>
+</ol>
+<h2 id="unsupported-cards">Unsupported Cards:</h2>
+<ol>
+<li>If you have an older card, NVIDIA no longer actively supports drivers for your card. This means that these drivers do not officially support the current Xorg version. Thus, it might be easier to use the nouveau driver, which supports the old cards with the current Xorg.</li>
+<li>To install the nouveau driver, enter the following command in your terminal.
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    paru -S xf86-video-nouveau
 </code></pre></div></li>
 </ol>
-<p>This will display information about your graphics card.</p>
-<ol start="3">
-<li>Once you know the model of your NVIDIA graphics card, you can install the appropriate driver. You can check the list of available NVIDIA drivers in the Arch Linux repositories by running the following command:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Ss nvidia
+<p>Remember, these are open-source drivers and might not be as good as the originals, but still, something is better than nothing.
+To read more about unsupported drivers, checkout the <a href="https://wiki.archlinux.org/title/Nouveau">Arch Linux Wiki</a>.</p>
+<h2 id="custom-kernel">Custom Kernel:</h2>
+<ol>
+<li>If you are running a custom kernel, for example, a &ldquo;Zen Kernel&rdquo; or an &ldquo;Xmond Kernel,&rdquo; these are different versions of the kernel that have been modified by the community to get more power.</li>
+<li>So if you are running such a kernel, then you need to install this driver.
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    paru -S nvidia-dkms
+</code></pre></div></li>
+<li>Paru is an AUR helper, and if you don&rsquo;t have it installed, then install it using these commands.
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo pacman -S --needed base-devel
+    git clone https://aur.archlinux.org/paru.git
+    <span style="color:#fff;font-weight:bold">cd</span> paru
+    makepkg -si
 </code></pre></div></li>
 </ol>
-<p>This will display a list of available NVIDIA drivers.</p>
-<ol start="4">
-<li>Choose the appropriate driver and install it using the following command:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nvidia
-</code></pre></div></li>
-<li>If you have a newer NVIDIA graphics card, you may need to install a newer version of the driver. You can install the latest version of the driver by running the following command:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nvidia-dkms
-</code></pre></div></li>
+<h2 id="enabling-drivers">Enabling Drivers:</h2>
+<p>If your session is on Xorg, then you need to activate it manually; if you are on Wayland, then it will work automatically. To enable it, follow these instructions.</p>
+<ol>
 <li>Once the driver is installed, you need to enable it. You can do this by creating a configuration file using the following command:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/X11/xorg.conf.d/20-nvidia.conf
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo nano /etc/X11/xorg.conf.d/20-nvidia.conf
 </code></pre></div></li>
 <li>In the configuration file, add the following lines:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Section <span style="color:#0ff;font-weight:bold">&#34;Device&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    Section <span style="color:#0ff;font-weight:bold">&#34;Device&#34;</span>
     Identifier <span style="color:#0ff;font-weight:bold">&#34;Nvidia Card&#34;</span>
     Driver <span style="color:#0ff;font-weight:bold">&#34;nvidia&#34;</span>
-EndSection
+    EndSection
 </code></pre></div></li>
 </ol>
 <p>Save the file and exit the editor.</p>
-<ol start="8">
-<li>Finally, restart your computer to apply the changes:
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo reboot
-</code></pre></div></li>
+<h2 id="switch-between-nvidia-graphics-and-intergated-graphics">Switch between Nvidia Graphics and Intergated Graphics</h2>
+<p>There are a couple of ways to switch to graphics.</p>
+<ol>
+<li>Using EnvyControl</li>
+<li>Using Optimus Manager</li>
+<li>Using Prime
+All three methods are good and serve different purposes.</li>
 </ol>
-<p>That&rsquo;s it! You should now have NVIDIA drivers installed and running on your Arch Linux system.</p>
+<h3 id="envycontrolhttpsgithubcombayasdevenvycontrol"><a href="https://github.com/bayasdev/envycontrol">EnvyControl</a></h3>
+<p>EnvyControl is a CLI tool that provides an easy way to switch between GPU modes on Nvidia Optimus systems (i.e., laptops with hybrid Intel and Nvidia or AMD and Nvidia graphics configurations) under Linux.</p>
+<p>To install it, just enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru-S envycontrol
+</code></pre></div><h4 id="switch-mode">Switch Mode:</h4>
+<p>Run &ldquo;sudo envycontrol -s MODE&gt;&rdquo; to switch graphics mode.
+There are three modes.</p>
+<ol>
+<li>Interfrated</li>
+<li>hybrid</li>
+<li>Nvidia</li>
+</ol>
+<h5 id="commands-to-change-mode">Commands to change mode:</h5>
+<ul>
+<li>Set graphics mode to integrated
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo envycontrol<span style="color:#f00">&#39;</span>s integrated
+</code></pre></div></li>
+<li>Set graphics mode to hybrid.
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo envycontrol --s hybrid
+</code></pre></div></li>
+<li>Set graphics mode to Nvidia:
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo envycontrol -s nvidia
+</code></pre></div></li>
+</ul>
+<p>For more information, check out the EnvyControl page on <a href="https://github.com/bayasdev/EnvyControl">GitHub</a>.</p>
+<h3 id="optimus-managerhttpsgithubcomaskannzoptimus-manager"><a href="https://github.com/Askannz/optimus-manager">Optimus Manager</a></h3>
+<p>This Linux program provides a solution for GPU switching on Optimus laptops (i.e., laptops with a dual Nvidia/Intel or Nvidia/AMD configuration).</p>
+<p>To install it, just enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru-S optimus-prime
+</code></pre></div><h4 id="switch-mode-1">Switch Mode:</h4>
+<ul>
+<li><code>optimus-manager --switch nvidia</code> to switch to the Nvidia GPU</li>
+<li><code>optimus-manager --switch integrated</code> to switch to the integrated GPU and power the Nvidia GPU off</li>
+<li><code>optimus-manager --switch hybrid</code> to switch to the iGPU but leave the Nvidia GPU available for on-demand offloading.</li>
+</ul>
+<p>To read more about Optimus Prime, check out these links:</p>
+<ol>
+<li><a href="https://github.com/Askannz/optimus-manager">GitHub</a></li>
+<li><a href="https://wiki.archlinux.org/title/NVIDIA_Optimus">Arch Linux Wiki</a></li>
+</ol>
+<h3 id="primehttpswikiarchlinuxorgtitleprime"><a href="https://wiki.archlinux.org/title/PRIME">Prime</a></h3>
+<p>PRIME is a technology used to manage hybrid graphics found on recent desktops and laptops (Optimus for NVIDIA, AMD Dynamic Switchable Graphics for Radeon). PRIME GPU offloading and Reverse PRIME are attempts to support muxless hybrid graphics in the Linux kernel.
+PRIME GPU offloading
+We want to render applications on the more powerful card and send the result to the card that has a display connected.</p>
+<p>The command <code>xrandr --setprovideroffloadsink</code> can be used to make a render offload provider send its output to the sink provider (the provider that has a display connected). The provider and sink identifiers can be numeric (0x7d, 0x56) or a case-sensitive name (Intel, Radeon).</p>
+<p>Prime is a CLI-based way that you can run certain tasks on your Nvidia GPU without switching the whole system to Nvidia Graphics. This can be helpful when all of the power of the GPU is needed for a certain application.</p>
+<p>To install Prime, enter the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S nvidia-prime
+</code></pre></div><h4 id="run-commands">Run Commands</h4>
+<p>To render any application on your GPU, enter the following command in your terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">prime-run &lt;Application-Name&gt;
+</code></pre></div><p><strong>Example</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">prime-run android-studio
+</code></pre></div><h1 id="reboot">Reboot:</h1>
+<p>Finally, restart your computer to apply the changes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    sudo reboot
+</code></pre></div><p>That&rsquo;s it! You should now have NVIDIA drivers installed and running on your Arch Linux system.</p>
 <h1 id="conclusion">Conclusion:</h1>
 <p>In conclusion, installing NVIDIA drivers on Arch Linux can be a bit challenging, but it&rsquo;s definitely doable if you follow the right steps. We&rsquo;ve covered the main methods for installing the drivers, including using the official NVIDIA installer, the Arch User Repository, and the DKMS method. Each method has its own advantages and disadvantages, so you should choose the one that works best for your particular setup.</p>
 <p>Remember that installing the NVIDIA drivers is just the first step in getting your graphics card to work properly. You may also need to configure your Xorg settings, tweak your power management settings, or install additional software packages depending on your needs. But by following the steps outlined in this guide, you should be well on your way to getting your NVIDIA GPU up and running on Arch Linux. Good luck!</p>
@@ -290,7 +390,23 @@ EndSection
     <nav id="toc">
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#implementation">Implementation:</a></li>
+    <li><a href="#prerequisite">Prerequisite:</a></li>
+    <li><a href="#implementation">Implementation:</a>
+      <ol>
+        <li><a href="#supported-cards">Supported Cards:</a></li>
+        <li><a href="#unsupported-cards">Unsupported Cards:</a></li>
+        <li><a href="#custom-kernel">Custom Kernel:</a></li>
+        <li><a href="#enabling-drivers">Enabling Drivers:</a></li>
+        <li><a href="#switch-between-nvidia-graphics-and-intergated-graphics">Switch between Nvidia Graphics and Intergated Graphics</a>
+          <ol>
+            <li><a href="#envycontrolhttpsgithubcombayasdevenvycontrol"><a href="https://github.com/bayasdev/envycontrol">EnvyControl</a></a></li>
+            <li><a href="#optimus-managerhttpsgithubcomaskannzoptimus-manager"><a href="https://github.com/Askannz/optimus-manager">Optimus Manager</a></a></li>
+            <li><a href="#primehttpswikiarchlinuxorgtitleprime"><a href="https://wiki.archlinux.org/title/PRIME">Prime</a></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#reboot">Reboot:</a></li>
     <li><a href="#conclusion">Conclusion:</a></li>
     <li><a href="#credit">Credit:</a></li>
     <li><a href="#contact-us">Contact Us:</a></li>
