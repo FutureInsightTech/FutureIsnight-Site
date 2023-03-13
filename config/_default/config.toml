@@ -1,5 +1,5 @@
-#baseURL = 'https://futue-insight-test.onrender.com'
-baseURL = 'https://future-insight.blog'
+baseURL = 'https://futue-insight-test.onrender.com'
+#baseURL = 'https://future-insight.blog'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
