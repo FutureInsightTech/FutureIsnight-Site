@@ -1,4 +1,4 @@
-name: Build & deploy for Blog Testing
+name: Blog Build
 on:
   push:
     branches:
