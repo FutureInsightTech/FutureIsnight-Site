@@ -7,7 +7,7 @@ tags: ["blog" ,"machine-learning"]
 description: "Machine Learning Classifer"
 showTableOfContents: true
 url: /decision-tree/
-image: "/images/2023/"
+image: "/images/2023/Ml-algo/Decision-Tree/Decision-Tree.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
@@ -107,15 +107,3 @@ If you encounter any issues or have any questions regarding any of the articles 
 To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
-
-# References:
-Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Article 1]()
-- [Article 2]()
-
-# Thumbnail:
-![image](/images/2023/)
-
-
-
