@@ -13,13 +13,12 @@ image: "/images/2023/"
 
 
 # Introduction:
-<p style="text-align: justify;"> </p>
+
 
 # Implementation: 
-<p style="text-align: justify;"> </p>
+
 
 # Conclusion:
-<p style="text-align: justify;"> </p>
 With that, we will see you next time.❤️❤️
 
 # Credit:
@@ -40,8 +39,5 @@ Here are all of the links and references that I used to write this blog, so feel
 ## GitHub Repository:
 - [GitHub Repository 1]()
 
-## Video References:
-- [Video Reference 1]()
-# Thumbnail:
-![image](/images/2023/)
-
+## WalkThrough Video:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>

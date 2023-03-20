@@ -63,13 +63,11 @@ If our dataset is Pure then likelihood of incorrect classification is 0. If our 
 
 
 # Advantage of Decision Tree
-
 - Easy to use and understand.
 - Can handle both categorical and numerical data.
 - Resistant to outliers, hence require little data preprocessing.
 
 # Disadvantage of Decision Tree
-
 - Prone to overfitting.
 - Require some kind of measurement as to how well they are doing.
 - Need to be careful with parameter tuning.
@@ -90,7 +88,10 @@ At each stage of splitting the tree, we check the cross-validation error. If the
 
 Early stopping and pruning can be used together, separately, or not at all. Post pruning decision trees is more mathematically rigorous, finding a tree at least as good as early stopping. Early stopping is a quick fix heuristic. If used together with pruning, early stopping may save time.
 
-# Implementation: 
+# Key points
+- When you want to implement a decision tree on a dataset, make sure that all of the data in the dataset is numerical, because converting all of the string data into numerical data can be tricky.
+- You can convert data using multiple methods, and one of the methods is called "Hot One Encoding."
+
 
 # Conclusion:
 In conclusion, a decision tree is a powerful tool for making decisions based on data. It is a visual representation of a decision-making process that allows us to weigh the consequences of different choices and select the best course of action. Decision trees are widely used in fields such as business, finance, healthcare, and engineering to solve complex problems and optimize decision-making. By breaking down a problem into smaller, more manageable parts, decision trees help us identify the most important factors that influence our decisions and find the optimal solution. However, it is important to keep in mind that decision trees are only as good as the data that they are based on, and the accuracy of their predictions depends on the quality and quantity of the data used. With careful planning and analysis, decision trees can be a valuable tool for making informed decisions and achieving desired outcomes.
@@ -111,12 +112,10 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## Articles references:
 - [Article 1]()
+- [Article 2]()
 
-## GitHub Repository:
-- [GitHub Repository 1]()
-
-## Video References:
-- [Video Reference 1]()
 # Thumbnail:
 ![image](/images/2023/)
+
+
 
