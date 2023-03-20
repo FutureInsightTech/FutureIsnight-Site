@@ -6,7 +6,17 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Mar 2023 20:25:31 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 23:32:50 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision Tree Machine Learning Algorithm</title>
+      <link>https://future-insight.blog/decision-tree/</link>
+      <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/decision-tree/</guid>
+      <description>Introduction I came across a project, and in that project, I have to different machine learning classifiers or machine learning algorithms. I know how to apply them, but it&amp;rsquo;s been a while, so today I did it., We will revisit all of the concepts of the decision tree, from major terms to code implementation.
+Decision Tree Decision Tree is a Supervised Learning technique that can be used for classification problems and regression problems, but mostly it is used for classification problems.</description>
+    </item>
+    
     <item>
       <title>Nivida Driver: Arch Linux</title>
       <link>https://future-insight.blog/nvidia-driver-arch-linux/</link>
