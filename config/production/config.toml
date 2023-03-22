@@ -23,7 +23,7 @@ enableRobotsTXT = true
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
-      {name = "youtube", url = "https://www.youtube.com/"}
+      {name = "youtube", url = "https://www.youtube.com/channel/UCw5ZdTiUJuMa2joLI089UnQ"}
     ]
     footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
