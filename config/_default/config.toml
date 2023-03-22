@@ -1,5 +1,9 @@
+#---------------------------------
+# This is the Blog Branch Build
+# Config File
+#---------------------------------
+
 baseURL = 'https://future-insight-blog-build.onrender.com'
-#baseURL = 'https://future-insight.blog'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
