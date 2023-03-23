@@ -49,7 +49,9 @@ Time: 2018-2022
           </p>
 
 
+--------------------------------
+<h1 style="text-decoration: underline">Résumé</h1>
+<p align="justify">Looking for a closer look at my experience and work? Check out my résumé! 
+Download it <a href="/images/CV/Abdul-Rafay.pdf" download>here</a> and let's connect.</p>
 
-
-
-      
+ 
