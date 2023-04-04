@@ -5,14 +5,12 @@ draft: false
 type: "post"
 tags: ["blog" ,"linux"]
 description: "Install Application on Linux"
-showTableOfContents: true
+showTableOfContents: false
 url: /linux-app-simplified/
-image: "/images/2023/"
+image: "/home/prometheus/GitHub-Projects/Future-Insight/static/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
-
-# Introduction:
 Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you've tried searching for installation files like you would on Windows, but to no avail. Don't worry, because in this blog, I'll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
 
 By the end of this article, you'll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.
@@ -57,6 +55,9 @@ Use this command to enable flatpak hub on your system.
 ```bash
 flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+
+![install-flatpak](/images/2023/Operating-System/Linux/Install-application-on-linux/install-Flatpak.png)
+
 ### Arch
 To install Flatpak, enter this command in your terminal
 ```bash
@@ -77,6 +78,10 @@ You can install an application like google chrome just the this command.
 ```bash
 sudo flatpak install googlechrome
 ```
+
+![image](/images/2023/Operating-System/Linux/Install-application-on-linux/install-google-chrome-flatpk.png)
+
+
 Flatpak are fast and easy to learn with an online store from which you can find the commands to isntall applications on your system. The process to install flatpak is the same and on every distro, Debian or Arch.
 
 You can find the online store by clicking [here](https://flathub.org/home)
@@ -109,6 +114,9 @@ This is the example to install an application using snap packs.
 ```bash
 sudo snap install spotify
 ```
+![spotify-snap](/images/2023/Operating-System/Linux/Install-application-on-linux/spotify-snap.png)
+
+
 Snap packs are free, secure, and do not affect your system in any way, plus they have an online store through which you can search for the command that will help you install the application on your system. You can access the Snap Store online by clicking [here](https://snapcraft.io/store).
 
 # Arch User Repository(AUR)
@@ -226,9 +234,10 @@ By default, the downloaded AppImage file won’t have execution permission. You�
 
 If you prefer the graphical way, just right-click on the downloaded .appimage file and select Properties. right click on appimage file and select properties
 
+![properties](/images/2023/Operating-System/Linux/Install-application-on-linux/propertities.png)
 
 In the next screen, go to the Permissions tab and check the box that says “Allow executing file as program”.
-
+![allow-permisision](/images/2023/Operating-System/Linux/Install-application-on-linux/propertities.png)
 
 
 
@@ -237,7 +246,101 @@ Alternatively, if you prefer the command line, you can simply use the below comm
 chmod u+x <AppImage File>
 ```
 # Package Manager
+Another way you can install packages is by using the package manager. A package manager is a programme that is installed on your system and helps you install, uninstall, update, and upgrade your system.
 
+The applications available to install using package manager can be different depending upon the distribution you are using. Some distributions have a lot of packages, while others have very few packages that you can install on your own Linux system.
+
+## Apt Packages Manager
+For Debian and Debian-based distributions, all of them use apt as their package manager. Debian-based distributions are Ubuntu, Mint, Zorin, etc. All of these Linux distros use apt as their package manager, but they are not the same. They will work the same, but they don't have the same number of packages that you install on your system.
+Developers fork (make a copy) the apt package manager and change it according to their own needs; some developers add more packages, while others make it more snappy. So it depends on the distribution that you are using. Debian Linux base distributions include over a million packages that you can install on your system.
+
+### Basic commands for apt
+- Update the list of available packages and versions (it's recommended to run this before other `apt` commands):
+```bash
+sudo apt update
+```
+- Search for a given package:
+```bash
+apt search {{package}}
+```
+
+- Show information for a package:
+```bash
+apt show {{package}}
+```
+
+- Install a package, or update it to the latest available version:
+```bash
+sudo apt install {{package}}
+```
+
+- Remove a package (using `purge` instead also removes its configuration files):
+```bash
+sudo apt remove {{package}}
+```
+
+- Upgrade all installed packages to their newest available versions:
+```bash
+sudo apt upgrade
+```
+
+- List all packages:
+```bash
+apt list
+```
+
+- List installed packages:
+```bash
+apt list --installed
+```
+
+## Pacman Packages manager
+Just like on Debian and Debian-based distributions, there is apt as the package manager; similarly, on Arch, it has its own package manager called Pacman.
+
+Pacman works very differently as compared to apt; the function is the same, but the working is totally different. Just like apt-get, which uses pacman, and other distributions that are based on it also use pacman, but the number of packages can be different. A developer will fork (make a copy of) Pacman and then tweak it according to their needs.
+The base pacman has over one million packages, and if something is not available in pacman, then you can use the AUR to install applications on your system.
+
+### Basic commands for pacman
+
+- Synchronize and update all packages:
+```bash
+sudo pacman -Syu
+```
+
+- Install a new package:
+```bash
+sudo pacman -S {{package_name}}
+```
+
+- Remove a package and its dependencies:
+```bash
+sudo pacman -Rs {{package_name}}
+```
+
+- Search the package database for a regular expression or keyword:
+```bash
+pacman -Ss "{{search_pattern}}"
+```
+
+- List installed packages and versions:
+```bash
+pacman -Q
+```
+
+- List only the explicitly installed packages and versions:
+```bash
+pacman -Qe
+```
+
+- List orphan packages (installed as dependencies but not actually required by any package):
+```bash
+pacman -Qtdq
+```
+
+- Empty the entire pacman cache:
+```bash
+sudo pacman -Scc
+```
 
 # Conclusion:
 There are multiple ways you can install software on Linux, and there are some pros to this system. Choose your format, test it, and experience the way the applications are installed on your system. It does not matter which format you use; all you need is software to get your job done. To be honest, I am on Debian and I use all of these formats: Flatpak, Snap, and even Pacstall. I use apt (package manager) as well to download my software. You need software, and now you have it on your system. So I hope you have learned something.
@@ -254,13 +357,5 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
-Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Article 1]()
-
-## GitHub Repository:
-- [GitHub Repository 1]()
-
-## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
+<!-- # WalkThrough Video: -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
