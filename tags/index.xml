@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Mar 2023 23:32:50 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 20:17:24 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
+      <pubDate>Tue, 28 Mar 2023 20:17:24 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://future-insight.blog/tags/linux/</link>
+      <pubDate>Tue, 28 Mar 2023 20:17:24 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -22,15 +31,6 @@
       <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://future-insight.blog/tags/linux/</link>
-      <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/linux/</guid>
       <description></description>
     </item>
     
