@@ -7,7 +7,7 @@ tags: ["blog" ,"linux"]
 description: "Install Application on Linux"
 showTableOfContents: false
 url: /linux-app-simplified/
-image: "/home/prometheus/GitHub-Projects/Future-Insight/static/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
+image: "/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
