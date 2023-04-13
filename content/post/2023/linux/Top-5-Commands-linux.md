@@ -7,7 +7,7 @@ tags: ["blog" ,"Linux"]
 description: "Learn Top 5 Commands in Linux"
 showTableOfContents: true
 url: /Top-5-linux-command/
-image: "/images/2023/"
+image: "/images/2023/Operating-System/Linux/Top5-Commands/thumbnail/Top-5 Linux-Command.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
