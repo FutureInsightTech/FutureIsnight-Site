@@ -6,7 +6,18 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Mar 2023 20:17:24 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Apr 2023 22:40:06 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top 5 Commands Linux</title>
+      <link>https://future-insight.blog/Top-5-linux-command/</link>
+      <pubDate>Thu, 13 Apr 2023 22:40:06 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/Top-5-linux-command/</guid>
+      <description>For Today Linux commands, You will learn some cool commands and they can help your speed up your workflow and make you cool.
+Commands In this blog post you will learn how to use different commands in linux terminal, these commands will speed up your workflow by alot and I use them on daily basis as well.
+Command 1: tldr The tldr command is a utility for quickly understanding how to use a particular command by providing simplified and practical examples.</description>
+    </item>
+    
     <item>
       <title>Linux App Installation: Simplified</title>
       <link>https://future-insight.blog/linux-app-simplified/</link>
