@@ -1,19 +1,10 @@
-
-
-body 
-{
 /*
-* 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
-font-family: 'Open Sans', sans-serif;
-*/
-}
-
+*Style Sheet for Future Insight Blog website
+* */
 h1 
 {
   text-align: center;
 }
-
 p {
   text-align: justify;
 }
