@@ -42,7 +42,7 @@ url: /author/
 - 📖 To be the best in my field, I'm learning algorithms and the most recent Web technologies. 
 - 👀 Check out my [blogs](https://rafayblogs.tech) and my running projects on [Github](https://github.com/rafay99-epic) and give me your feedback. See you next time!❤️
 
-# Contact Me:
+# Contact Me
 **Do you have a project or need a Solution?**
 
 **Contact me to get in touch now!**  
@@ -59,7 +59,7 @@ url: /author/
 - [![Linkined](/images/img/linkedin-dark.svg)](https://linkedin.com/in/abdul-rafay-0ab626197)
 - [![Instagram](/images/img/instagram-dark.svg)](https://instagram.com/abdul_rafay99) -->
 
-# Languages and Tools:
+# Languages and Tools
 <img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
 <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
@@ -72,7 +72,7 @@ url: /author/
 <img align="left" alt="Terminal" width="26px" src="/images/img/terminal-dark.svg" />
 <br>
 
-# Top Projects on GitHub 🧑‍💻:
+# Top Projects on GitHub 🧑‍💻
 1. [Parking Assistant System](https://github.com/rafay99-epic/Parking-Assistant)
 2. [Blog Website](https://github.com/rafay99-epic/Future-Insight)
 3. [Personal Portfolio](https://github.com/rafay99-epic/Portfolio-Website)
@@ -82,17 +82,32 @@ url: /author/
 7. [Shafiq Law Chamber(SLC) Website](https://github.com/1-Power/SLC)
 
 
-# My GitHub Stats 📈:
+# My GitHub Stats 📈
 These are the stats of my GitHub account. I'm a very active user, and I contribute to the open-source community. I'm always learning new things, and I'm always trying to improve my skills. I'm also a very active user on GitHub. I'm always learning new things, and I'm always trying to improve my skills.
-## Commits and Contributions:
-<a href="https://github.com/rafay99-epic">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=rafay99-epic&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
-</a>
 
-## Most Used Languages 📊:
-<a href="https://github.com/rafay99-epic">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafay99-epic&hide=java,html,tex&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21&langs_count=3" />
-</a>
+## Profile Detail
+<div>
+    <img  src="http://github-stats-flame-one.vercel.app/api/cards/profile-details?username=rafay99-epic&theme=onedark"  alt="profile-detail"  style="width: auto; height: auto;">
+</div>
+<!-- ![](http://github-stats-flame-one.vercel.app/api/cards/profile-details?username=rafay99-epic&theme=onedark) -->
+
+## Commits and Contributions:
+<div>
+    <img src="http://github-stats-flame-one.vercel.app/api/cards/stats?username=rafay99-epic&theme=onedark" alt="commit & contribute"  style="width: 500px; height: 300px;">
+</div>
+
+
+## Most Used Languages 📊
+
+<div style="display: flex; justify-content: center;">
+  <img src="http://github-stats-flame-one.vercel.app/api/cards/repos-per-language?username=rafay99-epic&theme=onedark" alt="lang commits in repo" style="display: inline-block; width: 50%; height: auto;">
+  <img src="http://github-stats-flame-one.vercel.app/api/cards/most-commit-language?username=rafay99-epic&theme=onedark" alt="Top Language by commits" style="display: inline-block; width: 50%; height: auto; margin-left: 20px;">
+</div>
+
+## Time Card 🕒
+<div> 
+    <img src="http://github-stats-flame-one.vercel.app/api/cards/productive-time?username=rafay99-epic&theme=onedark&utcOffset=8" alt="Time Card" style="width: 1500px; height: 300px;">
+</div>
 
 # Experiences:
 [Click here](/Author-Experience) to read about my experience.
