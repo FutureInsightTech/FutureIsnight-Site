@@ -8,8 +8,9 @@ description: "best resources to learn machine learning & Deep Learning"
 showTableOfContents: true
 url: /best-resources-for-ML/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-# Introduction
+
 Machine Learning and Deep Learning are rapidly growing fields that are changing the way we interact with technology. These fields have the power to create intelligent systems that can learn from data and make predictions, decisions, and even create new knowledge. If you're interested in learning about Machine Learning and Deep Learning, there are many resources available to help you get started.
 # Best Resources
 As I was learning Machine Learning and Deep Learning, I got to the point where I did not understand the basic knowledge of Machine Learning Models and Deep Learning Models. So I decided to start over again, and I used these resources to get things started. I am still learning, and every day is a new learning challenge, so use these resources to hone your skills.
@@ -30,10 +31,20 @@ Attending conferences and meetups is a great way to learn about the latest devel
 # Conclusion
 In conclusion, learning Machine Learning and Deep Learning can be a challenging, but rewarding journey. With the right resources and a willingness to learn, anyone can become proficient in these fields. Whether you're interested in a career as a data scientist, machine learning engineer, or research scientist, the above resources can help you get started on your journey to becoming an expert.
 
-So let me know your thoughts, and if there are some awesome resources, then share them with me through [email](mailto:99marafay@gmail.com).
+So let me know your thoughts and with that, we will see you next time.❤️❤️
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
 
-# Contact Me:
-If you have any questions, please contact me [Email](mailto:99marafay@gmail.com), [My website](https://rafay99.info), [Github](github.com/rafay99-epic) and I will see you next time❤️.
-    
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
 
+# Thumbnail:
 ![Best Resources Places to Learn machine Learning](/images/2023/resources-machine-learning/best-resources-for-ml.png)
+

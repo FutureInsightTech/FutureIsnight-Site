@@ -1,6 +1,10 @@
-baseURL = 'https://rafayblogs.tech'
+#-------------------------------------
+# This is the main production Build
+# Main Branch
+#-------------------------------------
+baseURL = 'https://future-insight.blog'
 languageCode = 'en-us'
-title = 'Abdul Rafay Blogs'
+title = 'Future Insight'
 theme = 'gokarna'
 defaultContentLanguage = "en"
 enableRobotsTXT = true
@@ -9,61 +13,101 @@ enableRobotsTXT = true
   #                 Default Parameters
   # -----------------------------------------------------------
 [params]
-    avatarURL = "/images/avatar.jpg"
-    description = "Don't Comments bad code- rewrite it."
+    avatarURL = "/images/16.png"
+    description = "Programming is not about typing, it's about thinking. - Rich Hickey"
     showPostsOnHomePage = "popular"
     togglePreviousAndNextButtons = "true"
-    customHeadHTML = "<script>console.log('Any HTML')</script>"
-     socialIcons = [
+    avatarSize = "size-l"
+    socialIcons = [
       {name = "twitter", url = "https://twitter.com/abdul_rafay99"},
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
+      {name = "youtube", url = "https://www.youtube.com/channel/UCw5ZdTiUJuMa2joLI089UnQ"}
     ]
-    # pygmentsStyle = "monokai"
+    footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
-    favicon = "images/favicon.jpg"
+    favicon = ["/images/favicon/apple-touch-icon.png"]
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
-    mainSections = ["posts"]
-    pygmentsStyle = "catppuccin-frappe"
+    mainSections = ["posts", "projects","Authors"]
+    pygmentsStyle = "catppuccin-frappe" 
+  
+  #---------------------------
+  #     Google Analytics
+  #---------------------------
+    googleAnalytics="G-HSKPE7HLQL"
+
+  #---------------------------
+  # Website Output Format
+  #---------------------------
+  [outputs]
+  home = ["HTML"]
+ 
   #-----------------------------------------
   #               cookies
   #-----------------------------------------
   [params.cookies]
-  enable = false
-  expire_days = 2
+    enable = true
+    expire_days = 2
 
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
   # -----------------------------------------------------------
-  [[menu.main]]
-    identifier = "post"
-    url = "/post/"
-    name = "Posts"
-    weight = 1
-    pre = "<span data-feather='book'></span>"
-
+  
+  # Home
   [[menu.main]]
     identifier = "home"
     url = "/"
     name = "Home"
     weight = 1
     pre = "<span data-feather='home'></span>"
+  
+  # Author
+    [[menu.main]]
+    identifier = "author"
+    url = "/author/"
+    name = "Author"
+    weight = 2
+    pre = "<span data-feather='user'></span>"
 
+  # Posts or Blogs
+  [[menu.main]]
+    identifier = "post"
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+    pre = "<span data-feather='book'></span>"
+    
+  # Tage or Categories
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 2
+    weight = 4
     pre = "<span data-feather='tag'></span>"
-    
+  
+  [[menu.main]]
+    identifier="Privacy"
+    name="Policy"
+    url="/policy/"
+    weight=5
+    pre="<span data-feather='edit-3'></span>"
+  
+    # Projects
+  [[menu.main]]
+    identifier = "Contact"
+    url = "/contact/"
+    name = "Contact Me"
+    weight = 6
+    pre = "<span data-feather='send'></span>"
+  
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 3
+    weight = 7
     pre = "<span data-feather='github'></span>"
 
 
@@ -77,8 +121,6 @@ enableRobotsTXT = true
     endLevel = 3
     ordered = true
 
-[outputs]
-home = ["HTML", "AMP", "RSS", "JSON"]
 [markup.goldmark.renderer]
     unsafe = true
 [markup.highlight]
@@ -89,5 +131,16 @@ home = ["HTML", "AMP", "RSS", "JSON"]
       lineNos = false
       lineNumbersInTable = false
       tabWidth = 4
-      noClasses = false
-
+      noClasses = true
+      anchorLineNos = false
+      hl_inline = false
+      lineAnchors = ''
+      noHl = false
+      style = 'catppuccin-frappe'
+      
+  #-------------------------
+  #  Pre-Load images
+  #-------------------------
+  [params.preloader]
+  enable = true
+  preloader = "png" # use png, jpg, svg or gif format

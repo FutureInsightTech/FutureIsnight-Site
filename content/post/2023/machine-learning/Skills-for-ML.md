@@ -9,7 +9,8 @@ showTableOfContents: true
 url: /skills-for-ml/
 ---
 
-## Introducation: 
+<link rel="stylesheet" href="/css/style.css">
+
 So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development. 
 
 ## Understanding:
@@ -55,13 +56,22 @@ You can use numpy from Python for reshaping, use lists, or use tensorflow for re
 ## Final Thoughts:
 No matter in which field you are, things are always going to be rough and hard, so be with them, learn, make mistakes, and in no time you will do what you do best, which is be great in machine learning and development.
 
-So here are some of the things that I use to read data and make the correct selection when I am learning and practising machine learning. If you have any questions or opinions, feel free to contact me at
-
-	Email: 99marafay@gmail.com
-    My website:  https://rafay99.info
-    Github: github.com/rafay99-epic
-    Medium: https://medium.com/@99marafay
+So here are some of the things that I use to read data and make the correct selection when I am learning and practising machine learning. If you have any questions or opinions, feel free to contact us.
 
 I will see you next time.❤️
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+# Thumbnail:
 ![image](/images/2023/skills-required/Machine-learning-Requires-Blink-Skills.jpg)

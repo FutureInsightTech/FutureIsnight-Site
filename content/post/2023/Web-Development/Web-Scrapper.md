@@ -8,9 +8,8 @@ description: "Using the Power of JavaScript we will Build a web Scrapper to get 
 showTableOfContents: true
 url: /web-scrapper/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-
-# Introducation
 Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 
 # Solution:
@@ -48,18 +47,18 @@ So to get started, you need to have a couple of things installed on your system,
 To download NodeJs download the exe file from [here](https://nodejs.org/en/download/current/).
 #### MacOS;
 To download Node Js on Mac OS then open the terminal and enter the following command
-``` shell
+``` bash
 brew install node
 ```
 #### Linux:
 ##### Debian/Ubuntu:
 To install on ubuntu or Debian then open a terminala nd then enter the following commands.
-```shell
+```bash
 sudo apt-get install nodejs npm
 ```
 ##### Arch Linux:
 If you are using arch Linux then open a terminal and then enter the following command.
-```shell
+```bash
 sudo pacman -S nodejs npm
 ```
 
@@ -89,13 +88,13 @@ Puppeteer is a popular library for web scraping with JavaScript. It allows you t
 
 To get started with Puppeteer, you will need to install the library using npm:
 
-``` node
+```bash
 npm install puppeteer
 ```
 Once you have installed Puppeteer, you can create a new file with the following code to launch a headless Chrome browser:
 
 
-```node
+```javascript
 
 const puppeteer = require("puppeteer");
 
@@ -116,7 +115,7 @@ This code launches a headless Chrome browser and navigates to the specified URL.
 Puppeteer provides a number of methods for extracting data from a website, including $eval and evaluate. The $eval method allows you to select an element on the page and retrieve its properties, such as the text content or the value of an attribute. Here's an example:
 
 
-``` Node
+``` javascript
 const data = await page.$eval("div.data-class", (el) => el.innerText);
 console.log(data);
 ```
@@ -126,7 +125,27 @@ This code selects a div element with a data-class class and retrieves its inner 
 
 Web scraping with JavaScript is a powerful tool for extracting data from websites. With Puppeteer, you can automate the Chrome browser and extract data from websites with ease. Whether you're using the data for market research, competitor analysis, or lead generation, web scraping can provide you with valuable insights into your business or industry.
 
+With that, we will see you next time.❤️❤️
+
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+
+# Thumbnail:
 ![image](/images/2023/web-scrapper/web-scrapper.png)
+
+
+
 
 
 

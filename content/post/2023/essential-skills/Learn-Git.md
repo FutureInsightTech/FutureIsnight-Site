@@ -8,7 +8,9 @@ description: "Learn how to use git and GitHub."
 showTableOfContents: true
 url: /learn-git-&-github/
 ---
-## Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
+
 As a developer, managing your code can be difficult, and you're always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don't miss any of the changes. So for that, you need to learn Git and GitHub.
 
 ## Before Git:
@@ -313,11 +315,19 @@ This is an example of developing a project.
 Learn Git, use GitHub to host your code, applications, and much more, Git and GitHub are two of the most important tools for developers, and without them, we might not be able to learn, read, or contribute code. You must learn Git and GitHub regardless of your field.  
 So please do not hesitate to contact or email me. I would love to know your thoughts.
 
-- [Email](mailto:99marafay@gmail.com)
-- [GitHub](https://github.com/rafay99-epic)
-- [My Portfolio website](https://rafay99.info/)
-- [My Blog](https://rafayblogs.tech/)
+With that, we will see you next time.❤️❤️
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
 
+# Contact Us: 
+If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
+
+To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
+
+Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
+
+# Walkthrough Video:  
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Y05ZT6bU7fE" frameborder="1" allowfullscreen></iframe>
 
 

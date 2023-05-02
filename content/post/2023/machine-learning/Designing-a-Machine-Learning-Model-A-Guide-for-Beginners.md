@@ -9,7 +9,8 @@ description: "Learn the basic to create your own ML Model"
 showTableOfContents: true
 url: /create-your-own-ml-model/
 ---
-# Introduction:
+<link rel="stylesheet" href="/css/style.css">
+
 Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we'll walk through the basics of designing a machine learning model from scratch.
 # Steps:
 Follow these steps to get a better understanding of how machine learning models are created.
@@ -40,6 +41,20 @@ In conclusion, designing a machine learning model requires careful consideration
 
 If you have question then free will to [email me](mailto:99marafay@gmail.com) or Contact me throught my [website](https:rafay99.info).
 
-see you next time❤️.
+See you next time❤️.
 
+# Credit:
+This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+
+# Contact Us: 
+If you have any questions, please contact
+## Future Insight:
+- [Email](mailto:fututeinsight@gmail.com)
+## Author:
+### Abdul Rafay:
+- [Email](mailto:99marafay@gmail.com)
+- [Personal-Website](https://rafay99.info)
+- [GitHub](github.com/rafay99-epic) 
+
+# Thumbnail:
 ![image](/images/2023/create-own-model/Create-your-Own-Machine-Learning-Model.png)

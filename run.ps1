@@ -10,7 +10,7 @@ Write-Host("
 # This will ask user to enter the commit message
 function git_Message()
 {
-    Write-Host("
+      Write-Host("
 -------------------------------------
     Enter your commit Message:
 -------------------------------------");
