@@ -17,7 +17,7 @@ url: /Project/
 - The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area. 
 
 [URLHunter](/Project/url-hunter/) | 14th January 2023
-- Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data. However, with URLHunter, you can collect all the necessary information in just one go. URLHunter is a powerful web scraper that extracts data from websites based on user inputs. With just a URL, URLHunter will fetch the relevant data from multiple websites and present it to you in an easy-to-read format.
+- Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data. However, with URLHunter, you can collect all the necessary information in just one go. URLHunter is a powerful web scraper that extracts data from websites based on user inputs. With just a URL, URLHunter will fetch the relevant data from multiple websites and present it to you in an easy-to-read format.  
 - Gone are the days when you had to spend hours searching for information on the internet. With URLHunter, all you have to do is run the command-line utility, enter the URL, and watch as the data is fetched and displayed on your screen. It's a one-stop-shop for all your web scraping needs.
 - URLHunter is an open-source project, and you can find the source code on our GitHub repository. We encourage you to use and modify the code according to your needs. You can also contribute to the development of URLHunter by submitting pull requests or raising issues on the GitHub page.
 - With URLHunter, web scraping has never been easier. So, head over to our GitHub repository and download URLHunter for free today.
@@ -33,6 +33,11 @@ url: /Project/
 - The website has a clean and modern design that is visually appealing and easy to navigate.
 - The website is optimized for different devices and screen sizes, ensuring a seamless user experience on desktop computers, tablets, and smartphones.
 - The website includes a clear call-to-action, prompting visitors to take action and engage with the company.
+
+[Shafiq Law Chmaber](/shafiqlawchamber/) | 20th February 2023
+- Looking for reliable legal services in Pakistan or around the world? Look no further than Shafiq Law Chamber. With a team of experienced attorneys and a focus on professionalism, this law firm is dedicated to providing top-quality legal services to clients in a wide range of practice areas. 
+- From civil and criminal litigation to corporate and commercial law, their attorneys have the knowledge and expertise needed to help you achieve your legal goals. 
+- Visit their website today to learn more about their services and see why clients trust Shafiq Law Chamber for all their legal needs.
 
 ----
 

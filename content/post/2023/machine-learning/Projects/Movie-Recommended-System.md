@@ -36,12 +36,30 @@ So, for the upcoming project, a publicly available dataset will be used as the p
 
 # Project Stages:
 So the whole Project is divided into 4 parts:
-```mermaid
-graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+```goat
+
+                                             ┌────────────────────┐
+            ┌───────────────────────────────►│    Data Gathering  │
+            │                                │                    │
+            │                                └─────────┬──────────┘
+            │                                          │
+            │                                          │
+            │                                ┌─────────▼──────────┐
+            │                                │  Training Model    │
+            │                                │                    │
+┌───────────┴─────────┐                      └─────────┬──────────┘
+│    Project          │                                │
+│                     │                                │
+│                     │                      ┌─────────▼───────────┐
+└─────────────────────┘                      │ Developing GUI      │
+                                             │                     │
+                                             └─────────┬───────────┘
+                                                       │
+                                                       │
+                                             ┌─────────▼───────────┐
+                                             │ Deploying The UI and│
+                                             │ ML Model            │
+                                             └─────────────────────┘
 ```
 
 # Implementation: 
