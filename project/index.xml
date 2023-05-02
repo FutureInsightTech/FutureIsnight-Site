@@ -6,7 +6,25 @@
     <description>Recent content in Projects on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 15:21:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 12:28:48 +0500</lastBuildDate><atom:link href="https://future-insight.blog/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shafiq Law Chamber</title>
+      <link>https://future-insight.blog/shafiqlawchamber/</link>
+      <pubDate>Tue, 02 May 2023 12:28:48 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/shafiqlawchamber/</guid>
+      <description>Shafiq Law Chamber is a professional law firm that provides a wide range of legal services to clients in Pakistan and around the world. Their website features a clean, modern design and easy navigation, making it simple for users to find the information they need about the firm&amp;rsquo;s practice areas, attorneys, and contact information. Whether you need assistance with civil or criminal litigation, corporate and commercial law, or intellectual property law, the experienced attorneys at Shafiq Law Chamber are ready to help.</description>
+    </item>
+    
+    <item>
+      <title>1 Power</title>
+      <link>https://future-insight.blog/1-Power/</link>
+      <pubDate>Mon, 01 May 2023 16:40:03 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/1-Power/</guid>
+      <description>Welcome to One Power, your premier destination for cutting-edge technology solutions. Our website is designed to showcase our expertise in delivering innovative software and hardware solutions that help businesses and individuals achieve their goals. With a clean and modern design, user-friendly navigation, and a host of powerful features, our website is the perfect place to explore our services and get to know our team. Whether you&amp;rsquo;re looking to boost productivity, streamline operations, or enhance your online presence, One Power has the solutions you need to succeed in today&amp;rsquo;s fast-paced digital landscape.</description>
+    </item>
+    
     <item>
       <title>DevBox</title>
       <link>https://future-insight.blog/Project/DevBox/</link>
@@ -59,9 +77,9 @@ Feature: I have created a personal portfolio website using React, a popular fron
       <pubDate>Tue, 21 Feb 2023 15:03:15 +0500</pubDate>
       
       <guid>https://future-insight.blog/Project/</guid>
-      <description>Parking Assistant | 3rd Augest 2022
- Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area. The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.   ReactJS Porofilo Website | 2nd February 2023
- It is a personal website created by Rafay, a web developer and designer.</description>
+      <description>Web Projects Parking Assistant | 3rd Augest 2022
+ Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area. The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.  URLHunter | 14th January 2023
+ Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data.</description>
     </item>
     
   </channel>

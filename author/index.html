@@ -40,6 +40,8 @@
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
     <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
 
     <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
     <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
@@ -196,7 +198,29 @@
     <div class="post-content">
         <p>
             <link rel="stylesheet" href="/css/style.css">
-<p><img src="https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png" alt="My project2"></p>
+<!-- ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png) -->
+<style>
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  <!-- top: 50%; -->
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.circle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+<div class="circle">
+  <img src="/images/avatar.jpg" alt="Your Image">
+</div>
+<!-- <img src="/images/avatar.jpg" alt="Avatar">  -->
 <!-- ![My project2](/images/avatar2.png) -->
 <h1 id="-hi-there-im-abdul-rafay">👋 Hi there, I’m Abdul Rafay</h1>
 <p><strong>I&rsquo;m a Full Stack Developer &amp; Machine Learning Engineer.</strong></p>
