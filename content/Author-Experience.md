@@ -3,10 +3,34 @@ draft: false
 type: "page"
 url: /Author-Experience/
 ---
+<link rel="stylesheet" href="/css/style.css">
 
-![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png)
-# 👋 Hi there, I’m Mohammad Abdul Rafay
-------------------------------------------------
+<style>
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  <!-- top: 50%; -->
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.circle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+<div class="circle">
+  <img src="/images/avatar.jpg" alt="Your Image">
+</div>
+
+
+<!-- ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png) -->
+# 👋 Hi there, I’m  Abdul Rafay
 
 <h1 style= "text-decoration: underline">Education</h1>
 <h2>Bachelor in Software Engineering</h2>
@@ -18,6 +42,7 @@ Time: 2018-2022
           <p align="justify">With well experienced Professors, Lab Instructors are will to help the students to improve their studies.</p>
           <p align="justify">In this great learning and relaxing enviroment I got 3.0 CGPA in my 4 years of Degree.</p>
      
+---
 
 <h1 style="text-decoration: underline">Professional Experience</h1>
     <h2>Intership</h2>

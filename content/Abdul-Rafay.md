@@ -5,8 +5,32 @@ description: "About Author"
 url: /author/
 ---
 <link rel="stylesheet" href="/css/style.css">
+<!-- ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png) -->
+<style>
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  <!-- top: 50%; -->
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.circle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
 
-![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png)
+<div class="circle">
+  <img src="/images/avatar.jpg" alt="Your Image">
+</div>
+
+<!-- <img src="/images/avatar.jpg" alt="Avatar">  -->
+
 <!-- ![My project2](/images/avatar2.png) -->
 # 👋 Hi there, I’m Abdul Rafay
 
