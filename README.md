@@ -38,7 +38,7 @@ So before we look at what I choose, here are the features that I am looking for 
 
 So these are some of the features that I am looking for. 
 
-# The blog's purpose Website:
+# Website Purpose:
 Since I am learning every single day, I want to save my progress, so I decided to create this blog website. which help me take notes and express my thoughts to the world.
 
 # Site Link:
