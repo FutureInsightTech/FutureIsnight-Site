@@ -6,7 +6,17 @@
     <description>Recent content in Web Development on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Jan 2023 16:09:03 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 May 2023 13:35:51 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic of NodeJs</title>
+      <link>https://future-insight.blog/basic-nodejs/</link>
+      <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/basic-nodejs/</guid>
+      <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
+In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
+    </item>
+    
     <item>
       <title>Web Scrapper</title>
       <link>https://future-insight.blog/web-scrapper/</link>

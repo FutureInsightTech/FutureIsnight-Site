@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://future-insight.blog/basic-nodejs/</loc>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/blog/</loc>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
+  </url><url>
     <loc>https://future-insight.blog/</loc>
-    <lastmod>2023-05-02T12:28:48+05:00</lastmod>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/post/</loc>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/</loc>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/web-development/</loc>
+    <lastmod>2023-05-12T13:35:51+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/project/</loc>
     <lastmod>2023-05-02T12:28:48+05:00</lastmod>
@@ -14,16 +29,7 @@
     <loc>https://future-insight.blog/1-Power/</loc>
     <lastmod>2023-05-01T16:40:03+05:00</lastmod>
   </url><url>
-    <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-04-13T22:40:06+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/tags/linux/</loc>
-    <lastmod>2023-04-13T22:40:06+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/post/</loc>
-    <lastmod>2023-04-13T22:40:06+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/</loc>
     <lastmod>2023-04-13T22:40:06+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/Top-5-linux-command/</loc>
@@ -97,9 +103,6 @@
   </url><url>
     <loc>https://future-insight.blog/create-your-own-ml-model/</loc>
     <lastmod>2023-02-02T11:36:38+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/web-development/</loc>
-    <lastmod>2023-01-28T16:09:03+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/web-scrapper/</loc>
     <lastmod>2023-01-28T16:09:03+05:00</lastmod>
