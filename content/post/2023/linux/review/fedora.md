@@ -23,6 +23,27 @@ In this blog, I will give my review of Fedora 38. So I have divided this blog in
 
 During my time with Fedora 38, I will be noting and testing everything that comes with it.
 
+## Installing Operating System
+I use Windows and Linux. Windows for playing games and printing documents, and Linux for everything else that includes coding applications, watching videos, writing blogs, creating videos, and editing videos.
+
+I installed Fedora 38 on my laptop, which is a Lenovo Legion 7 Slim 2021 model with a Rayzen 7, 16 GB of RAM, an NVIDIA RTX 3060 with a 1080p display, a 165 Hz refresh rate, and a 515 GB SSD. Storage is not enough, so I have divided the storage into partitions of 250GB for Windows and 250GB for Linux. I install Linux and Windows on the same drive.
+
+The installing process is very simple and easy; you download the ISO from [Fedora's website](https://fedoraproject.org/workstation/download/) and then create a bootable drive using [Rufus](https://rufus.ie/en/). If you don't know how to create a bootable drive, then check out my blog on [installing Linux](https://future-insight.blog/install-linux/).
+
+Once the bootable device is ready, you need to boot by pressing F12 on my laptop; your boot options key might be different depending on the model. It can be F2, F9, F10, or F10. So try them all. Once you are booted into the operating system, you will enter the live environment. and from there you can click on "Install Fedora. 
+
+To install Fedora, all you need are three partitions, and to learn about these partitions, check out my blog on [Install Linux](https://future-insight.blog/install-linux/). Once all the partitions are set, you can press install, and you will begin to install Fedora. For me, it took only five minutes, but depending on your SSD speed, this will take some time.
+
+The install that Fedora uses is called **Anaconda**.I don't know why people hate it, but it's clean and gets the job done. Over all, I like the installer, and it installs the operating system without any problem.
+
+## Installing Applications
+Operating System is nothing with applications and there are alot of applications that I use day in day out and if they are not available then I can't do my job so installing application is important but more over how you can install application is also important.To install application for Arch Linux there is AUR and arch repository, For debian there is Pastall and debian repository and if you can't find the application on any platform there is options to use flatpaks and for Fedora there are multiple options. 
+
+On fedora you can find and install applicatioon by using four ways.
+1. [Fedora Build in Repository](https://packages.fedoraproject.org/) 
+2. [RPM Fusion free and Non-Free Repository](https://rpmfusion.org/)
+3. [Coper for Fedora](https://copr.fedorainfracloud.org/coprs/)
+4. [Flatpaks](https://flatpak.org/)
 
 
 
