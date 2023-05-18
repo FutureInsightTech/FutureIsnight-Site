@@ -48,8 +48,9 @@ Choose:
 1. machine-learning
 2. essential-skills
 3. Web-Development
+4. linux
 
-Choose Options: (1/2/3)
+Choose Options: (1/2/3/4)
 ====================================
 "
 read tag
@@ -63,6 +64,9 @@ case $tag in
     ;;
   3)
     tag_name="Web-Development"
+    ;;
+  4)
+    tag_name="linux"
     ;;
   *)
     echo "Invalid option"
