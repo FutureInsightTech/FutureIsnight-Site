@@ -7,7 +7,7 @@ tags: ["blog" ,"linux","review"]
 description: "Fedora 38: A Remarkable Experience"
 showTableOfContents: true
 url: /fedora-review/
-image: "/images/2023/"
+image: "/images/2023/fedora38/fedora38.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
@@ -90,17 +90,18 @@ Overall, my love affair with Fedora 38 continues to blossom. It combines stabili
 
 With that, I bid you adieu until next time, as we embark on new adventures in the ever-evolving world of Linux. ❤️❤️
 
-
-# Credit:
+# Credit
 This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://futureinsight.blog).
 
-# Contact Us: 
+# Contact Us
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
 
 To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
+# Thumbnail
+![fedora38](/images/2023/fedora38/fedora38.png)
 <!-- # References: -->
 <!-- Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help. -->
 <!-- ## Articles references: -->
