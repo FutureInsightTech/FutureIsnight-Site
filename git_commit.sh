@@ -47,3 +47,22 @@ else
 fi
 
 echo
+
+# Section: Push Commit
+echo "=== Push Commit ==="
+current_branch=$(git symbolic-ref --short HEAD)
+
+if git show-ref --verify --quiet "refs/heads/$current_branch"; then
+    # Local branch exists
+    echo "🌿 Local branch detected. Publishing branch..."
+    git branch --set-upstream-to=origin/"$current_branch" "$current_branch"
+    git push -u origin "$current_branch"
+    echo "Branch published and commit pushed successfully! 🚀"
+else
+    # Remote branch exists
+    echo "🔗 Remote branch detected. Pushing commit..."
+    git push
+    echo "Commit pushed successfully! 🚀"
+fi
+
+echo
