@@ -1,13 +1,13 @@
 ---
 title: "Basic of NodeJs"
 date: 2023-05-12T13:35:51+05:00
-draft: true
+draft: false
 type: "post"
 tags: ["blog" ,"Web Development"]
 description: "Learn the basic of NodeJS"
 showTableOfContents: true
 url: /basic-nodejs/
-image: "/images/2023/"
+image: "/images/2023//basic-of-nodejs/basic-of-Node Js.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
@@ -102,6 +102,65 @@ Hello, World!
 ```
 Congratulations! You've just written and run your first Node.js application.
 
+# NodeJs Server:
+Node.js has gained immense popularity in recent years due to its ability to create fast and scalable server-side applications. Whether you're a seasoned developer or a beginner, setting up a Node.js server and managing package installations are essential skills to have. In this blog, we will guide you through the process of creating a Node.js server and explore various methods for installing packages to enhance your server's functionality.
+
+## Step 1: Setting up a Node.js Server:
+Before diving into package installation, let's start by setting up a basic Node.js server. Follow the steps below:
+1. **Install Node.js** : Visit the official Node.js website (https://nodejs.org) and download the appropriate version for your operating system. Run the installer and follow the instructions to complete the installation.
+
+2. **Create a new directory** : Open your preferred terminal or command prompt and navigate to the location where you want to create your Node.js server. Create a new directory by executing the following command:
+```bash
+mkdir my-node-server
+```
+3. **Initialize the project:** Move into the newly created directory and initialize a new Node.js project using the package.json file by running the following command:
+```javascript
+cd my-node-server
+npm init -y
+```
+4. **Install Express:** Express is a popular Node.js framework for building web applications. Install it by executing the following command:
+```bash
+npm install express
+```
+5. **Create a server file**: Create a new file called server.js in your project directory. This will serve as the entry point for your Node.js server.
+
+6. **Build your server**: Open server.js in a text editor and add the following code:
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+```
+7. **Start the server**: Save the changes to server.js and run the server by executing the following command:
+```bash
+node server.js
+```
+8. **Test your server**: Open your web browser and navigate to http://localhost:3000. You should see the message "Hello, World!" displayed, confirming that your Node.js server is up and running. 
+
+## Step 2: Installing Packages:
+Now that your Node.js server is set up, let's explore different methods to install packages and enhance your server's capabilities.
+
+1. **Using npm**: npm (Node Package Manager) is the default package manager for Node.js. To install a package, you can use the following command:
+```bash
+npm install package-name
+```
+Replace package-name with the name of the package you want to install. For example, to install the popular axios package, run:
+```bash
+npm install axios
+```
+2. **Managing package versions**: When installing packages, it's important to consider version management. npm and Yarn provide different ways to specify version requirements.
+
+To install the latest version of a package, simply run:
+```bash
+npm install package-name
+```
 # Conclusion:
 Node.js is a powerful technology that can be used to build fast and scalable server-side applications. With its event-driven architecture and non-blocking I/O, it is ideal for building real-time applications such as chat applications or online gaming platforms. By following the instructions in this blog post, you should now have a basic understanding of how to install Node.js on Debian, Arch Linux, and Windows, and how to write your first Node.js application. With practice and experience, you can build complex applications using Node.js and contribute to the vibrant Node.js community.
 
