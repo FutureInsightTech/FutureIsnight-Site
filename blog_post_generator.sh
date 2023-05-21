@@ -91,7 +91,7 @@ nice_messages=(
 # Select a random message from the array
 random_index=$((RANDOM % ${#nice_messages[@]}))
 random_message=${nice_messages[$random_index]}
-create-blog
+# create-blog
 echo "=== ${rocket} Nice Message ==="
 echo "${random_message}"
 
