@@ -11,10 +11,7 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 
-
-
-
-# Version 2.0.3:
+# Version 2.0.4:
 
 # Section: System Check
 echo "=== System Check ==="
@@ -32,7 +29,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-read -p "✏️ Enter your commit message: " message
+read -rp "✏️ Enter your commit message: " message
 
 echo
 
