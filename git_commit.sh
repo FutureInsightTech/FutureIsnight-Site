@@ -10,8 +10,7 @@ echo "
             ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                                      
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
-# version 2.0.6:
-#!/bin/bash
+# version 2.0.7:
 
 # Section: System Check
 echo "=== System Check ==="
@@ -29,7 +28,22 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-read -p "✏️ Enter your commit message: " message
+
+# Function to validate if a commit message is provided
+validate_commit_message() {
+    read -rp "✏️ Enter your commit message: " message
+    if [[ -z $message ]]; then
+        echo "Commit message cannot be empty. Please enter a commit message."
+        return 1
+    else
+        return 0
+    fi
+}
+
+# Prompt the user for a commit message until a non-empty message is entered
+while ! validate_commit_message; do
+    continue
+done
 
 echo
 

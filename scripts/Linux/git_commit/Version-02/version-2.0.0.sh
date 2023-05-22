@@ -11,6 +11,8 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 # Version 2.0.0
+# Problem:
+# Base Script but with no error handelling
 
 # Section: System Check
 echo "=== System Check ==="

@@ -12,6 +12,9 @@ echo "
 "
 
 # Version 2.0.4:
+# Problem:
+#  In this patch I will remove those log files if there is no error but it casue a problem. 
+# The Problem was it will try to remove those file that does not exits 
 
 # Section: System Check
 echo "=== System Check ==="

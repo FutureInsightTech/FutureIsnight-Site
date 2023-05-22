@@ -11,6 +11,9 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 # Version 2.0.3:
+# Problem:
+# Same Issue as the version 2.0.2 did'nt work in this version
+
 
 # Section: System Check
 echo "=== System Check ==="
@@ -28,7 +31,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-read -p "✏️ Enter your commit message: " message
+read -rp "✏️ Enter your commit message: " message
 
 echo
 

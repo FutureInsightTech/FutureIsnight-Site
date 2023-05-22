@@ -12,6 +12,9 @@ echo "
 "
 
 # Version 2,0.5:
+# Problem:
+# Same Problem as the version 2.0.4, thinked solved it but not sure where is the problem
+
 # Section: System Check
 echo "=== System Check ==="
 echo "Checking system status..."

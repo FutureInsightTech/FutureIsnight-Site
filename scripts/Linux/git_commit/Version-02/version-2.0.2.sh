@@ -12,6 +12,8 @@ echo "
 "
 # Version 2.0.2:
 
+# Problem:
+# In this patch I added the log system for commit, and push and git add but no check if there is error or not.
 
 # Section: System Check
 echo "=== System Check ==="
@@ -29,7 +31,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-read -p "✏️ Enter your commit message: " message
+read -rp "✏️ Enter your commit message: " message
 
 echo
 
