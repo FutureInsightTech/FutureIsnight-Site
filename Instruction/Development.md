@@ -1,22 +1,28 @@
-# Development:
-If you want to help develop this website or contribute with me, please do so; however, before you begin development, you must first complete the following steps:
+# Development
 
-## Process:
-Follow the instructions.
-### Version & Branch:
-    1. No code will be committed to the main branch without the project administrator's testing and approval.
-    2. In order to contribute create a branch from the main branch, the name of the branch should be the feature that you are working on. 
-    3. Every Branch will represent a single major release or version of the project.
-    4. Once the Version is complete, the branch will go into lock mode, No development will be performed on that specific branch.
-### Testing & Documentation:
-    5. Every commit needs to be documented; if not, it won't be accepted.
-    6. Every commit needs to be tested; if not, it won't be accepted.
+If you want to help develop this website or contribute with me, please follow the instructions below:
 
-# Required Applications:
-To Run the application locally you can follow this link [here](/Instruction/INSTALL.md)
+## Process
+1. No code will be committed to the main branch without the project administrator's testing and approval.
+2. To contribute, switch to the Development-Branch and make all changes in that branch. Once you are sure the code is tested and working fine, you can create a pull request to the main branch.
+3. Switch to the Development Branch using the following command:
+    ```bash
+    git checkout Development-Branch
+    ```
+4. When a feature is finalized, create a new branch from the development branch. This branch will represent a specific version (e.g., Version-4).
+5. The new branch will be merged with the main branch, and the old branch will be locked. No code should ever be committed to the old branch.
+6. Every commit you make should have proper documentation. Include timestamps to make it easy to track changes.
+7. Every commit you make should be properly tested. Include timestamps to make it easy to track testing.
 
-# Author:
-This application is currently developed and maintained by [Abdul Rafay](https://github.com/rafay99-epic) and if you have any questions then please [contact](mailto:99marafay@gmail.com).
+### Testing & Documentation
+8. Pull requests without any commits will be rejected.
+9. Pull requests without proper testing will be rejected.
 
-# Contributions:
-Happy Coding 😊...
+# Required Applications
+To run the application locally, please follow the instructions provided in the [installation guide](/Instruction/INSTALL.md).
+
+# Author
+The Future Insight Project is currently developed and maintained by [Abdul Rafay](https://github.com/rafay99-epic). If you have any questions, please [contact](mailto:99marafay@gmail.com) me.
+
+# Contributions
+Happy coding! 😊

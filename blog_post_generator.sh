@@ -9,6 +9,7 @@ echo "
             ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                                      
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
+
 # Get the current year and store it in a variable
 year=$(date +%Y)
 
@@ -16,6 +17,15 @@ year=$(date +%Y)
 rocket="🚀"
 pencil="✏️"
 thumbs_up="👍"
+warning="⚠️"
+
+# Check if Hugo is installed
+if ! command -v hugo &> /dev/null; then
+    echo "${warning} Hugo is not installed on your system."
+    echo "Please install Hugo before running this script."
+    echo "You can install Hugo from: https://gohugo.io/installation/"
+    exit 1
+fi
 
 # Section: Category Selection
 echo "=== ${rocket} Category Selection ==="
@@ -55,7 +65,19 @@ echo
 
 # Section: Blog Post Name
 echo "=== ${rocket} Blog Post Name ==="
-read -p "${pencil} Enter the name of the blog post: " blog_post_name
+
+# Loop until a valid blog post name is entered
+while true; do
+    read -rp "${pencil} Enter the name of the blog post: " blog_post_name
+
+    # Validate the blog post name
+    if [[ -z "$blog_post_name" ]]; then
+        echo "${warning} Blog post name cannot be empty."
+        echo "Please enter a valid blog post name."
+    else
+        break
+    fi
+done
 
 echo
 
@@ -64,18 +86,26 @@ echo "=== ${rocket} Creating Blog Post ==="
 # Use the variables to generate the command
 command="hugo new post/${year}/${category}/${blog_post_name}.md"
 
-# Execute the command
-output=$(eval "$command")
+# Execute the command and redirect stderr to a log file
+log_file="error.log"
+output=$(eval "$command" 2> "$log_file")
 
-# Extract the path from the command output
-path=$(echo "$output" | cut -d' ' -f2)
-
-echo
-
-# Section: Success Message
-echo "=== ${rocket} Success! ==="
-echo "${thumbs_up} New blog post created successfully!"
-echo "Blog post location: $path"
+if [ $? -eq 0 ]; then
+    # Extract the path from the command output
+    path=$(echo "$output" | cut -d' ' -f2)
+    
+    echo
+    # Section: Success Message
+    echo "=== ${rocket} Success! ==="
+    echo "${thumbs_up} New blog post created successfully!"
+    echo "Blog post location: $path"
+else
+    echo
+    # Section: Error Message
+    echo "=== ${rocket} Error! ==="
+    echo "An error occurred while creating the blog post."
+    echo "Please see the error log file: $log_file"
+fi
 
 echo
 
@@ -91,7 +121,7 @@ nice_messages=(
 # Select a random message from the array
 random_index=$((RANDOM % ${#nice_messages[@]}))
 random_message=${nice_messages[$random_index]}
-# create-blog
+
 echo "=== ${rocket} Nice Message ==="
 echo "${random_message}"
 
