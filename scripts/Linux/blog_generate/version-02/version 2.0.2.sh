@@ -10,6 +10,11 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 
+
+# Version 2.0.2
+# Problem: 
+#  In this patch I have added the user check but won't ask again and again, the user should enter blog name to continue.
+
 # Get the current year and store it in a variable
 year=$(date +%Y)
 
@@ -65,19 +70,14 @@ echo
 
 # Section: Blog Post Name
 echo "=== ${rocket} Blog Post Name ==="
+read -rp "${pencil} Enter the name of the blog post: " blog_post_name
 
-# Loop until a valid blog post name is entered
-while true; do
-    read -rp "${pencil} Enter the name of the blog post: " blog_post_name
-
-    # Validate the blog post name
-    if [[ -z "$blog_post_name" ]]; then
-        echo "${warning} Blog post name cannot be empty."
-        echo "Please enter a valid blog post name."
-    else
-        break
-    fi
-done
+# Validate the blog post name
+if [[ -z "$blog_post_name" ]]; then
+    echo "${warning} Blog post name cannot be empty."
+    echo "Please enter a valid blog post name."
+    exit 1
+fi
 
 echo
 

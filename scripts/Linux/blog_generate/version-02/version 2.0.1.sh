@@ -10,6 +10,12 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 
+
+# Version 2.0.1
+# Problem:
+#  So in this patch I added the error handelling for hugo check and created a log file so that user can see the error if any.
+
+
 # Get the current year and store it in a variable
 year=$(date +%Y)
 
@@ -65,19 +71,7 @@ echo
 
 # Section: Blog Post Name
 echo "=== ${rocket} Blog Post Name ==="
-
-# Loop until a valid blog post name is entered
-while true; do
-    read -rp "${pencil} Enter the name of the blog post: " blog_post_name
-
-    # Validate the blog post name
-    if [[ -z "$blog_post_name" ]]; then
-        echo "${warning} Blog post name cannot be empty."
-        echo "Please enter a valid blog post name."
-    else
-        break
-    fi
-done
+read -rp "${pencil} Enter the name of the blog post: " blog_post_name
 
 echo
 
@@ -126,3 +120,4 @@ echo "=== ${rocket} Nice Message ==="
 echo "${random_message}"
 
 echo
+
