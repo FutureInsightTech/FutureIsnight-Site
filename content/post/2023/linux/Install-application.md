@@ -11,6 +11,7 @@ image: "/images/2023/Operating-System/Linux/Install-application-on-linux/Install
 ---
 <link rel="stylesheet" href="/css/style.css">
 
+----
 Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you've tried searching for installation files like you would on Windows, but to no avail. Don't worry, because in this blog, I'll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
 
 By the end of this article, you'll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.
@@ -348,7 +349,7 @@ There are multiple ways you can install software on Linux, and there are some pr
 With that, we will see you next time.❤️❤️
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
