@@ -10,9 +10,8 @@ echo "
             ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                                      
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
-# version 2.0.6:
-#!/bin/bash
 
+# Version 2,0.5:
 # Section: System Check
 echo "=== System Check ==="
 echo "Checking system status..."
@@ -29,7 +28,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-read -p "✏️ Enter your commit message: " message
+read -rp "✏️ Enter your commit message: " message
 
 echo
 
@@ -48,7 +47,7 @@ echo
 echo "=== Check Git Add Success ==="
 if [ $add_exit_code -eq 0 ]; then
     echo "Git add successful! ✅"
-    rm -f add.log
+    rm add.log
 else
     echo "Git add failed. Please check your changes and try again. ❌"
     echo "Errors encountered during git add. Please check add.log for more details."
@@ -71,7 +70,7 @@ echo
 echo "=== Check Git Commit Success ==="
 if [ $commit_exit_code -eq 0 ]; then
     echo "Commit successful! 🎉"
-    rm -f commit.log
+    rm commit.log
 else
     echo "Commit failed. Please check your changes and try again. ❌"
     echo "Errors encountered during commit. Please check commit.log for more details."
@@ -96,7 +95,7 @@ echo
 echo "=== Check Push Commit Success ==="
 if [ $push_exit_code -eq 0 ]; then
     echo "Commit pushed successfully! 🚀"
-    rm -f push.log
+    rm push.log
 else
     echo "Push failed. Please check your network connection and try again. ❌"
     echo "Errors encountered during push. Please check push.log for more details."
@@ -120,7 +119,7 @@ echo
 echo "=== Check Push Commit Upstream Success ==="
 if [ $push_upstream_exit_code -eq 0 ]; then
     echo "Branch published and commit pushed successfully! 🚀"
-    rm -f push_upstream.log
+    rm push_upstream.log
 else
     echo "Push upstream failed. Please check your network connection and try again. ❌"
     echo "Errors encountered during push upstream. Please check push_upstream.log for more details."
