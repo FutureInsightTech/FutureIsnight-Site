@@ -10,9 +10,10 @@ echo "
             ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                                      
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
-# version 2.0.7:
+# version 2.0.6:
+
 # Problem: 
-# Now asking the user to enter the commit message and make this is must becase a commit message there will error.
+# Added the check for log file and if there is an error then it will generate the log files. 
 
 # Section: System Check
 echo "=== System Check ==="
@@ -30,22 +31,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-
-# Function to validate if a commit message is provided
-validate_commit_message() {
-    read -rp "✏️ Enter your commit message: " message
-    if [[ -z $message ]]; then
-        echo "Commit message cannot be empty. Please enter a commit message."
-        return 1
-    else
-        return 0
-    fi
-}
-
-# Prompt the user for a commit message until a non-empty message is entered
-while ! validate_commit_message; do
-    continue
-done
+read -p "✏️ Enter your commit message: " message
 
 echo
 

@@ -1,54 +1,59 @@
-# Writting Blog:
-If you love to write blog, Join us. 
+# Writing Blog: Join Us!
 
-# Getting the File:
-First you need to get the file from the github. To do that follow this guide.
-1. Clone the repo or Fork it.
-2. Switch to Blog branch using this command ```git checkout Blog```.
-3. Now you want to create a new blog Post. To do that Just follow this  guide.
-    - Open your Terminal.
-    - Enter this command to run this script
-        ```bash
-        sh start-blog.sh
-        ```
-    - You can find this script in the main folder. 
-    - This script will ask you butch of questions about your blog post and will create a new blog post accordingly.
-    - Your blog post is created then it will ask you to run the server.
+If you love writing blogs, we invite you to join us and contribute your valuable insights. Here's a guide on how to get started:
 
-4. New Blog will be created in the content folder with your tag and blog post name.
-5. Open the file and write your blog in MarkDown format.
+## Getting the File:
 
-Note: 
-If you are new to MarkDown, you can learn it from [here](https://www.markdownguide.org/cheat-sheet/). 
+To access the file, follow these steps:
 
-# Important Things:
-1. Need to your url in on the Top of the file.
-2. Enter the Title of the Blog.
-3. Enter your Name in the Author Section.
-4. Add some kind of thubnail image in the static folder.
-5. Add the image in the blog using this syntax ```![Image Name](/image-name.png)```.
-6. To see the blog on your local machine, please change the draft from true to false.
+1. Clone or fork the repository.
+2. Switch to the "Blog" branch using the command: `git checkout Blog`.
+3. Now, you can create a new blog post by following this guide.
 
-# Submitting the Blog:
-You can submit the blog by creating a pull request to the Blog branch.
-To do that enter the following command into the terminal.
-```bash
-git add * 
-git commit -m "Your Commit Message"
-git push 
-```
+## Creating a New Blog Post:
 
-OR
+1. Open your terminal.
+2. Run the following command to execute the script:
+   ```bash
+   ./blog_post_generator.sh
+   ```
+3. You can find the script in the main folder of the repository.
+4. The script will prompt you with a series of questions about your blog post and generate a new blog post accordingly.
+5. Once your blog post is created, it will ask you to run the server.
 
-- You can run this script called **run.sh**.
-    - You can run this script by entering the following command
-    ```bash
-    sh run.sh
-    ```
-    - The script can be found in the main folder.
+The new blog post will be created in the "content" folder with your specified tags and blog post name. Open the file and start writing your blog using Markdown format.
 
-    
-- This script will ask you butch of questions and upload your blog post to github. 
-- After that all you need to create a pull request from blog branch to Main repository.
+**Note**: If you are new to Markdown, you can refer to the [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) for a quick reference.
 
-- If you have any doubt, you can ask in the issue section on Github or Email Me.
+## Important Things to Consider:
+
+1. Provide the URL of your blog on the top of the file.
+2. Enter the title of your blog.
+3. Fill in your name in the author section.
+4. Add a thumbnail image in the "static" folder.
+5. Include images in your blog using the following syntax: `![Image Name](/image-name.png)`.
+6. To view the blog on your local machine, change the "draft" field from "true" to "false".
+
+## Updating the Credit Section:
+
+In the blog post, please ensure to change the name in the credit section to properly attribute the author. Replace the placeholder with your name or the desired name you want to be credited.
+
+## Submitting the Blog:
+
+You can submit your blog by creating a pull request to the "Blog" branch. Follow these steps:
+
+1. Use the following commands in your terminal:
+   ```bash
+   git add *
+   git commit -m "Your Commit Message"
+   git push
+   ```
+2. Alternatively, you can run the script called "run.sh" located in the main folder.
+   ```bash
+   ./git_commit.sh
+   ```
+   The script will prompt you with questions and upload your blog post to GitHub.
+   
+After creating the pull request from the "Blog" branch to the main repository, our team will review your blog post. If you have any doubts, feel free to ask in the issue section on GitHub or contact us via email.
+
+Please refer to the documentation for the "git_commit" script to make any necessary improvements and enhancements. Happy blogging!

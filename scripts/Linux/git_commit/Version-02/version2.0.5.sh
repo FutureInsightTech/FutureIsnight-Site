@@ -10,9 +10,10 @@ echo "
             ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                                      
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
-# version 2.0.7:
-# Problem: 
-# Now asking the user to enter the commit message and make this is must becase a commit message there will error.
+
+# Version 2,0.5:
+# Problem:
+# Same Problem as the version 2.0.4, thinked solved it but not sure where is the problem
 
 # Section: System Check
 echo "=== System Check ==="
@@ -30,22 +31,7 @@ echo
 
 # Section: Commit Message
 echo "=== Commit Message ==="
-
-# Function to validate if a commit message is provided
-validate_commit_message() {
-    read -rp "✏️ Enter your commit message: " message
-    if [[ -z $message ]]; then
-        echo "Commit message cannot be empty. Please enter a commit message."
-        return 1
-    else
-        return 0
-    fi
-}
-
-# Prompt the user for a commit message until a non-empty message is entered
-while ! validate_commit_message; do
-    continue
-done
+read -rp "✏️ Enter your commit message: " message
 
 echo
 
@@ -64,7 +50,7 @@ echo
 echo "=== Check Git Add Success ==="
 if [ $add_exit_code -eq 0 ]; then
     echo "Git add successful! ✅"
-    rm -f add.log
+    rm add.log
 else
     echo "Git add failed. Please check your changes and try again. ❌"
     echo "Errors encountered during git add. Please check add.log for more details."
@@ -87,7 +73,7 @@ echo
 echo "=== Check Git Commit Success ==="
 if [ $commit_exit_code -eq 0 ]; then
     echo "Commit successful! 🎉"
-    rm -f commit.log
+    rm commit.log
 else
     echo "Commit failed. Please check your changes and try again. ❌"
     echo "Errors encountered during commit. Please check commit.log for more details."
@@ -112,7 +98,7 @@ echo
 echo "=== Check Push Commit Success ==="
 if [ $push_exit_code -eq 0 ]; then
     echo "Commit pushed successfully! 🚀"
-    rm -f push.log
+    rm push.log
 else
     echo "Push failed. Please check your network connection and try again. ❌"
     echo "Errors encountered during push. Please check push.log for more details."
@@ -136,7 +122,7 @@ echo
 echo "=== Check Push Commit Upstream Success ==="
 if [ $push_upstream_exit_code -eq 0 ]; then
     echo "Branch published and commit pushed successfully! 🚀"
-    rm -f push_upstream.log
+    rm push_upstream.log
 else
     echo "Push upstream failed. Please check your network connection and try again. ❌"
     echo "Errors encountered during push upstream. Please check push_upstream.log for more details."
