@@ -11,7 +11,8 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 
-# Version 2,0.5:
+# Version 2.0.4:
+
 # Section: System Check
 echo "=== System Check ==="
 echo "Checking system status..."
@@ -39,6 +40,7 @@ add_exit_code=$?
 
 if [ $add_exit_code -ne 0 ]; then
     git add . &> add.log
+    echo "Errors encountered during git add. Please check add.log for more details."
 fi
 
 echo
@@ -50,7 +52,6 @@ if [ $add_exit_code -eq 0 ]; then
     rm add.log
 else
     echo "Git add failed. Please check your changes and try again. ❌"
-    echo "Errors encountered during git add. Please check add.log for more details."
 fi
 
 echo
@@ -62,6 +63,7 @@ commit_exit_code=$?
 
 if [ $commit_exit_code -ne 0 ]; then
     git commit -m "$message" &> commit.log
+    echo "Errors encountered during commit. Please check commit.log for more details."
 fi
 
 echo
@@ -73,7 +75,6 @@ if [ $commit_exit_code -eq 0 ]; then
     rm commit.log
 else
     echo "Commit failed. Please check your changes and try again. ❌"
-    echo "Errors encountered during commit. Please check commit.log for more details."
 fi
 
 echo
@@ -87,6 +88,7 @@ push_exit_code=$?
 
 if [ $push_exit_code -ne 0 ]; then
     git push &> push.log
+    echo "Errors encountered during push. Please check push.log for more details."
 fi
 
 echo
@@ -98,7 +100,6 @@ if [ $push_exit_code -eq 0 ]; then
     rm push.log
 else
     echo "Push failed. Please check your network connection and try again. ❌"
-    echo "Errors encountered during push. Please check push.log for more details."
 fi
 
 echo
@@ -111,6 +112,7 @@ push_upstream_exit_code=$?
 
 if [ $push_upstream_exit_code -ne 0 ]; then
     git push -u origin "$current_branch" &> push_upstream.log
+    echo "Errors encountered during push upstream. Please check push_upstream.log for more details."
 fi
 
 echo
@@ -122,7 +124,6 @@ if [ $push_upstream_exit_code -eq 0 ]; then
     rm push_upstream.log
 else
     echo "Push upstream failed. Please check your network connection and try again. ❌"
-    echo "Errors encountered during push upstream. Please check push_upstream.log for more details."
 fi
 
 echo
