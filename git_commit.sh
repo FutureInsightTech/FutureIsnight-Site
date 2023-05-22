@@ -11,6 +11,8 @@ echo "
                                        "Unlocking the Future, One Insight at a Time"                                                                                      
 "
 # version 2.0.7:
+# Problem: 
+# Now asking the user to enter the commit message and make this is must becase a commit message there will error.
 
 # Section: System Check
 echo "=== System Check ==="
