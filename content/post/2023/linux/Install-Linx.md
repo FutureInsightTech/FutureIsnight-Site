@@ -12,6 +12,7 @@ image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
+----
 You are already aware that I use Linux for everything, from development to my regular tasks.If you don't have any idea what Linux is, check out my last [blog](https://future-insight.blog/world-of-linx).
 
 So today I will teach you how to install Linux and how to dual boot with another operating system.
@@ -170,7 +171,7 @@ The above-mentioned Distros differ greatly in appearance and functionality, but 
 So, this is how to install linux and it is easy, Noe you know how to install linux and with this info, go create your own operating system that fit your work flow. If you want some insporection then checkout redit for some cook looks and functionality. With that, we will see you next time ❤️❤️.
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.

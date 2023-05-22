@@ -11,7 +11,7 @@ image: "/images/2023/fedora38/fedora38.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
-
+----
 I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, "Why not? Let's try Fedora and see what's the hype?" Why people love Fedora so much and what it is like to run Fedora for a while
 
 # Review
@@ -91,7 +91,7 @@ Overall, my love affair with Fedora 38 continues to blossom. It combines stabili
 With that, I bid you adieu until next time, as we embark on new adventures in the ever-evolving world of Linux. ❤️❤️
 
 # Credit
-This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.

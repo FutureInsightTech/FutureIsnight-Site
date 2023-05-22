@@ -11,6 +11,8 @@ image: "/images/2023/Operating-System/Linux/Top5-Commands/thumbnail/Top-5 Linux-
 ---
 <link rel="stylesheet" href="/css/style.css">
 
+----
+
 For Today Linux commands, You will learn some cool commands and they can help your speed up your workflow and make you cool. 
 
 # Commands
@@ -153,7 +155,7 @@ Overall, these commands are all useful tools that can make your Linux experience
 With that, we will see you next time.❤️❤️
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
