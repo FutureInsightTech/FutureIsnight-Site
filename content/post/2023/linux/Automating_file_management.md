@@ -192,7 +192,7 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 # Source Code
 ## GitHub Repository:
-- [Scripts](https://github.com/rafay99-epic/Scripts/blob/main/Linux%20Scripts/git_image_processing.sh)
+- [Scripts](https://github.com/rafay99-epic/Linux-DotFiles/blob/main/.scripts/file-monitoring)
 
 # Thumbnail:
 ![Thumbnail](/images/2023/automate-task/Automating-thumbnail.png)
