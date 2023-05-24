@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2023 00:26:19 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 May 2023 14:05:36 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Tue, 23 May 2023 00:26:19 +0500</pubDate>
+      <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Development</title>
+      <link>https://future-insight.blog/tags/web-development/</link>
+      <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/web-development/</guid>
       <description></description>
     </item>
     
@@ -31,15 +40,6 @@
       <pubDate>Tue, 16 May 2023 00:07:49 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web Development</title>
-      <link>https://future-insight.blog/tags/web-development/</link>
-      <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/web-development/</guid>
       <description></description>
     </item>
     
