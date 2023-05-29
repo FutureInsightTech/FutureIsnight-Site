@@ -11,7 +11,7 @@ image: "/images/2023/automate-task/Automating-thumbnail.png"
 ---
 <link rel="stylesheet" href="/css/style.css">
 
-
+---
 In today's fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we'll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We'll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process. Let's dive in!
 
 # Defining the Objective
@@ -181,7 +181,7 @@ Remember to test the script thoroughly and consider any specific edge cases or e
 With that, we will see you next time.❤️❤️
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
@@ -192,7 +192,7 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 # Source Code
 ## GitHub Repository:
-- [Scripts](https://github.com/rafay99-epic/Scripts/blob/main/Linux%20Scripts/git_image_processing.sh)
+- [Scripts](https://github.com/rafay99-epic/Linux-DotFiles/blob/main/.scripts/file-monitoring)
 
 # Thumbnail:
 ![Thumbnail](/images/2023/automate-task/Automating-thumbnail.png)

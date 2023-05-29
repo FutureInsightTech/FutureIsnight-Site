@@ -11,6 +11,8 @@ image: "/images/2023/Operating-System/Linux/Nvidia-arch-linux/NVIDIA-Graphic-Arc
 ---
 <link rel="stylesheet" href="/css/style.css">
 
+----
+
 If you're a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system. In this blog post, we'll guide you through the process of installing Nvidia drivers on Arch Linux, so let's get started!
 # Prerequisite:
 In order to install Nvidia drivers on your system, there are a couple of things that need to be checked.
@@ -177,7 +179,7 @@ Remember that installing the NVIDIA drivers is just the first step in getting yo
 With that, we will see you next time.❤️❤️
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.

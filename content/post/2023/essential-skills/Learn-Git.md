@@ -10,6 +10,7 @@ url: /learn-git-&-github/
 ---
 <link rel="stylesheet" href="/css/style.css">
 
+----
 
 As a developer, managing your code can be difficult, and you're always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don't miss any of the changes. So for that, you need to learn Git and GitHub.
 
@@ -318,7 +319,7 @@ So please do not hesitate to contact or email me. I would love to know your thou
 With that, we will see you next time.❤️❤️
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog/).
 
 # Contact Us: 
 If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.

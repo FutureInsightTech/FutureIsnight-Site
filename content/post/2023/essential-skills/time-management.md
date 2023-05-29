@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /time-management/
 ---
 <link rel="stylesheet" href="/css/style.css">
-
+----
 Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 
 # Strategies:
@@ -23,7 +23,7 @@ Lastly, it’s important to stay organized and eliminate distractions. This can 
 In summary, time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. By creating a daily schedule, setting goals, taking breaks, and staying organized, we can take control of our time and use it more effectively.
 
 # Credit:
-This article was written by [Abdul Rafay](https://rafay99.info) and published on [Future Insight](https://futureinsight.blog).
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
 
 # Contact Us: 
 If you have any questions, please contact
