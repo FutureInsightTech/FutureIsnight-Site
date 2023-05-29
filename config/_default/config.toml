@@ -90,25 +90,34 @@ enableRobotsTXT = true
     weight = 4
     pre = "<span data-feather='tag'></span>"
   
+  #Privacy Page 
   [[menu.main]]
     identifier="Privacy"
     name="Policy"
     url="/policy/"
     weight=5
     pre="<span data-feather='edit-3'></span>"
-  
-    # Projects
+
+# About Page
+  [[menu.main]]
+    identifier="About-Us"
+    name="About Us"
+    url="/About-Us/"
+    weight=6
+    pre="<span data-feather='info'></span>"
+  # Contact Page
   [[menu.main]]
     identifier = "Contact"
     url = "/contact/"
     name = "Contact Me"
-    weight = 6
+    weight = 7
     pre = "<span data-feather='send'></span>"
   
+  # Github Link
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 7
+    weight = 8
     pre = "<span data-feather='github'></span>"
 
 
