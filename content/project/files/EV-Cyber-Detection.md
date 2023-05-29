@@ -3,7 +3,6 @@
 date: 2023-02-21T15:18:57+05:00
 draft: false
 type: "page"
-tags: ["Project"]
 description: "Using the power of SVM to detect cyber attacks"
 #showTableOfContents: true
 url: Project/ev-cyber-detection/detec
