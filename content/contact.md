@@ -59,8 +59,8 @@ url: /contact/
 <body>
   <div class="container">
     <h1 style="text-align: center;">Contact Us: Future Insight</h1>
-    <!-- <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/ap1pWGfgsAJvJHOZ1Lx1"> -->
-      <form>
+    <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/ap1pWGfgsAJvJHOZ1Lx1">
+      <!-- <form> -->
       <div class="input-field">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
