@@ -17,18 +17,18 @@
     
 
     
-    <title>Project Gallery</title>
+    <title>Future Insight</title>
     <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta name="keywords" content='blog, gokarna, hugo'>
 
     <meta property="og:url" content="https://future-insight.blog/Project/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Project Gallery">
+    <meta property="og:title" content="Future Insight">
     <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta property="og:image" content="/images/16.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Project Gallery">
+    <meta name="twitter:title" content="Future Insight">
     <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta property="twitter:domain" content="https://future-insight.blog/Project/">
     <meta property="twitter:url" content="https://future-insight.blog/Project/">
@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -200,73 +202,264 @@
     <div class="post container">
 
     <div class="post-header-section">
-        <h1>Project Gallery</h1>
+        <h1></h1>
     </div>
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
+            <h1 style="text-decoration-line: underline; text-align: center;">Project Gallery</h1>
+<p><strong>Welcome to My Projects Showcase!</strong></p>
+<p>Discover a curated collection of my creative endeavors, showcasing my passion for innovation, problem-solving, and technology. From web development to mobile apps, automation scripts, and more, this page reflects my dedication, skills, and relentless pursuit of excellence.</p>
+<p>Each project represents a unique journey, where I explored new technologies and transformed ideas into reality. Through countless hours of hard work and meticulous planning, I have crafted visually stunning designs and cutting-edge functionalities.</p>
+<p>Click on the cards to explore each project in detail. Witness the diversity of my skills and the breadth of my experiences. From start to finish, I aim to make a meaningful impact and leave a lasting impression.</p>
+<p>Thank you for visiting! If you have any questions or would like to collaborate, feel free to reach out. Let&rsquo;s create something amazing together!</p>
+<p>Best regards,</p>
+<p><a href="https://future-insight.blog/contact">Abdul Rafay</a></p>
 <hr>
+<html>
+<head>
+  <style>
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      width: calc(50% - 15px);
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      background-color: #fff;
+    }
+    .card.dark {
+      background-color: #333;
+      border-color: #000;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: fit;
+      object-position: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card .border {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      height: 90%;
+      border: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transition: opacity 0.3s, background-color 0.3s, border-color 0.3s;
+    }
+    .card .border.dark {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-color: #fff;
+    }
+    .card:hover .border {
+      opacity: 1;
+    }
+    .card .heading {
+      color: #000;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .card.dark .heading {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-decoration-line: underline; text-align: center;">Web Projects</h1>
+    <div class="card-container">
+        <!-- Parking Assistant -->
+        <div class="card" onclick="redirectToURL('/Project/Parking-Assistant')" >
+            <img src="/images/2023/pages/Smart-parking-assistant/parking-assistant.png" alt="Image 1">
+            <div class="border">
+                <div class="heading">Parking Assstant</div>
+            </div>
+        </div>
+        <!-- URL Hunter -->
+        <div class="card" onclick="redirectToURL('/Project/url-hunter/')">
+            <img src="/images/2023/pages/url-hunter/url-hunter.png" alt="Image 2">
+            <div class="border">
+                <div class="heading">URL Hunter</div>
+            </div>
+        </div>
+        <!-- Readct JS Project -->
+        <div class="card" onclick="redirectToURL('/Project/portifilo/')">
+            <img src="/images/2023/pages/portfolio/portfolio.png" alt="Image 3">
+            <div class="border">
+                <div class="heading">React JS Personal Portfolio</div>
+            </div>
+        </div>
+        <!-- Shafiq Law Chmaber -->
+        <div class="card"  onclick="redirectToURL('/shafiqlawchamber/')">
+            <img src="/images/2023/pages/SLC/slc-home.png" alt="Image 4">
+            <div class="border">
+                <div class="heading">Shafiq Law Chamber</div>
+            </div>
+        </div>
+        <!-- Pheonix-AI -->
+        <div class="card" onclick="redirectToURL('https://github.com/rafay99-epic/Pheonix-AI')">
+            <img src="/images/2023/Pheonix-AI/Pheonix-AI.png" alt="Image 10">
+            <div class="border">
+                <div class="heading">Pheonix-AI: ChatBot</div>
+            </div>
+        </div>
+    </div>
+    <!-- machine Learning Section -->
+    <h1 style="text-decoration-line: underline; text-align: center;">Machine Learning Projects</h1>
+    <div class="card-container">
+        <!-- EV Cyber Attack Detection -->
+        <div class="card" onclick="redirectToURL('/Project/ev-cyber-detection/')" >
+            <img src="/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png" alt="Image 5">
+            <div class="border">
+                <div class="heading">EV FDIA Detection System</div>
+            </div>
+        </div>
+        <!-- Detect ChatGPT -->
+        <div class="card" onclick="redirectToURL('')" >
+            <img src="/images/2023/pages/detect-chatgpt/Detect-ChatGPT.png" alt="Image 6">
+            <div class="border">
+                <div class="heading">Detect ChatGPT</div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-decoration-line: underline; text-align: center;">Shell Scripting Projects</h1>
+    <div class="card-container">
+        <!-- TheDevMachine -->
+        <div class="card" onclick="redirectToURL('/Project/DevBox/')" >
+            <img src="/images/2023/pages/DevBox/DevBox.png" alt="Image 7">
+            <div class="border">
+                <div class="heading">TheDevMachine</div>
+            </div>
+        </div>
+        <!-- TheDevMachine -->
+        <!-- <div class="card" onclick="redirectToURL('/Project/Parking-Assistant')" >
+            <img src="/images/2023/pages/TheDevMachine/TheDevMachine.png" alt="Image 8">
+            <div class="border">
+                <div class="heading">TheDevMachine</div>
+            </div>url
+        </div> -->
+        <!-- midNight Toky AWM -->
+        <div class="card" onclick="redirectToURL('/Pheonix-AI/')" >
+            <img src="/images/2023/my-new-desktop/Midnight-Tokyo.png" alt="Image 9">
+            <div class="border">
+                <div class="heading">MidnigTokyo</div>
+            </div>
+        </div>
+        <div class="card" onclick="redirectToURL('/image-optimization/')" >
+            <img src="/images/2023/image-optimization/Image-Optimization.png" alt="Image 9">
+            <div class="border">
+                <div class="heading">Image optimization</div>
+            </div>
+        </div>
+    </div>
+  <script>
+    function redirectToURL(url) {
+      window.location.href = url;
+    }
+    function toggleDarkMode() {
+      const body = document.body;
+      const cards = document.querySelectorAll('.card');
+      const borders = document.querySelectorAll('.border');
+      const headings = document.querySelectorAll('.heading');
+      body.classList.toggle('dark');
+      cards.forEach(card => card.classList.toggle('dark'));
+      borders.forEach(border => border.classList.toggle('dark'));
+      headings.forEach(heading => heading.classList.toggle('dark'));
+    }
+    const darkModeToggle = document.querySelector('#darkModeToggle');
+    darkModeToggle.addEventListener('change', toggleDarkMode);
+  </script>
+</body>
+</html>
+<!-- 
+
+ ██████╗ ██╗     ██████╗     ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+██╔═══██╗██║     ██╔══██╗    ██║   ██║██╔════╝██╔══██╗██╔════╝██║██╔═══██╗████╗  ██║
+██║   ██║██║     ██║  ██║    ██║   ██║█████╗  ██████╔╝███████╗██║██║   ██║██╔██╗ ██║
+██║   ██║██║     ██║  ██║    ╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██║██║   ██║██║╚██╗██║
+╚██████╔╝███████╗██████╔╝     ╚████╔╝ ███████╗██║  ██║███████║██║╚██████╔╝██║ ╚████║
+ ╚═════╝ ╚══════╝╚═════╝       ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+-->
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
+<!-- 
 <h2 style="text-decoration-line: underline">Web Projects</h2>
-<p><a href="/Project/Parking-Assistant/">Parking Assistant</a> | 3rd Augest 2022</p>
-<ul>
-<li>Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area.</li>
-<li>The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area.</li>
-</ul>
-<p><a href="/Project/url-hunter/">URLHunter</a> | 14th January 2023</p>
-<ul>
-<li>Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data. However, with URLHunter, you can collect all the necessary information in just one go. URLHunter is a powerful web scraper that extracts data from websites based on user inputs. With just a URL, URLHunter will fetch the relevant data from multiple websites and present it to you in an easy-to-read format.</li>
-<li>Gone are the days when you had to spend hours searching for information on the internet. With URLHunter, all you have to do is run the command-line utility, enter the URL, and watch as the data is fetched and displayed on your screen. It&rsquo;s a one-stop-shop for all your web scraping needs.</li>
-<li>URLHunter is an open-source project, and you can find the source code on our GitHub repository. We encourage you to use and modify the code according to your needs. You can also contribute to the development of URLHunter by submitting pull requests or raising issues on the GitHub page.</li>
-<li>With URLHunter, web scraping has never been easier. So, head over to our GitHub repository and download URLHunter for free today.</li>
-</ul>
-<p><a href="/Project/portifilo/">ReactJS Porofilo Website</a> | 2nd February 2023</p>
-<ul>
-<li>It is a personal website created by Rafay, a web developer and designer.</li>
-<li>The website showcases Rafay&rsquo;s skills and experience in web development, design, and related fields through a portfolio of projects and a blog section.</li>
-<li>Visitors can learn more about Rafay&rsquo;s background, skills, and experience through the about section and get in touch with him directly through the contact section.</li>
-<li>You can find this project live by <a href="https://rafay99.info">clicking here</a></li>
-</ul>
-<p><a href="/1-Power/">1 Power</a> | 20th February 2022</p>
-<ul>
-<li>OnePower.tech is a technology solutions company that offers innovative software and hardware solutions to businesses and individuals.</li>
-<li>The website has a clean and modern design that is visually appealing and easy to navigate.</li>
-<li>The website is optimized for different devices and screen sizes, ensuring a seamless user experience on desktop computers, tablets, and smartphones.</li>
-<li>The website includes a clear call-to-action, prompting visitors to take action and engage with the company.</li>
-</ul>
-<p><a href="/shafiqlawchamber/">Shafiq Law Chmaber</a> | 20th February 2023</p>
-<ul>
-<li>Looking for reliable legal services in Pakistan or around the world? Look no further than Shafiq Law Chamber. With a team of experienced attorneys and a focus on professionalism, this law firm is dedicated to providing top-quality legal services to clients in a wide range of practice areas.</li>
-<li>From civil and criminal litigation to corporate and commercial law, their attorneys have the knowledge and expertise needed to help you achieve your legal goals.</li>
-<li>Visit their website today to learn more about their services and see why clients trust Shafiq Law Chamber for all their legal needs.</li>
-</ul>
-<hr>
+
+[Parking Assistant](/Project/Parking-Assistant/) | 3rd Augest 2022
+- Using the power of IOT Devices Software, me and my team created this project to detect different parking spaces in a specific area.
+- The use cases of this Porject are limitless, eg: Use this project with hardware to detect different things in a specific area. 
+
+[URLHunter](/Project/url-hunter/) | 14th January 2023
+- Finding relevant information from websites can be a challenging task, especially when you have to visit multiple sites to gather data. However, with URLHunter, you can collect all the necessary information in just one go. URLHunter is a powerful web scraper that extracts data from websites based on user inputs. With just a URL, URLHunter will fetch the relevant data from multiple websites and present it to you in an easy-to-read format.  
+- Gone are the days when you had to spend hours searching for information on the internet. With URLHunter, all you have to do is run the command-line utility, enter the URL, and watch as the data is fetched and displayed on your screen. It's a one-stop-shop for all your web scraping needs.
+- URLHunter is an open-source project, and you can find the source code on our GitHub repository. We encourage you to use and modify the code according to your needs. You can also contribute to the development of URLHunter by submitting pull requests or raising issues on the GitHub page.
+- With URLHunter, web scraping has never been easier. So, head over to our GitHub repository and download URLHunter for free today.
+
+[ReactJS Porofilo Website](/Project/portifilo/) | 2nd February 2023
+- It is a personal website created by Rafay, a web developer and designer.
+- The website showcases Rafay's skills and experience in web development, design, and related fields through a portfolio of projects and a blog section.
+- Visitors can learn more about Rafay's background, skills, and experience through the about section and get in touch with him directly through the contact section.
+- You can find this project live by [clicking here](https://rafay99.info)
+
+[1 Power](/1-Power/) | 20th February 2022
+- OnePower.tech is a technology solutions company that offers innovative software and hardware solutions to businesses and individuals.
+- The website has a clean and modern design that is visually appealing and easy to navigate.
+- The website is optimized for different devices and screen sizes, ensuring a seamless user experience on desktop computers, tablets, and smartphones.
+- The website includes a clear call-to-action, prompting visitors to take action and engage with the company.
+
+[Shafiq Law Chmaber](/shafiqlawchamber/) | 20th February 2023
+- Looking for reliable legal services in Pakistan or around the world? Look no further than Shafiq Law Chamber. With a team of experienced attorneys and a focus on professionalism, this law firm is dedicated to providing top-quality legal services to clients in a wide range of practice areas. 
+- From civil and criminal litigation to corporate and commercial law, their attorneys have the knowledge and expertise needed to help you achieve your legal goals. 
+- Visit their website today to learn more about their services and see why clients trust Shafiq Law Chamber for all their legal needs.
+
+----
+
 <h2 style="text-decoration-line: underline">Machine Learning Projects</h2>
-<p><a href="">Detect ChatGPT</a> | Under development</p>
-<ul>
-<li>With the help of ChatGPT, you can easily copy and paste assignments and all kinds of things.</li>
-<li>So to detect this, I have created a project called <strong>Detect ChatGPT</strong>. Using NLP techniques, I trained and deployed a model to detect text generated by ChatGPT.</li>
-<li>The project is under development and will soon be ready to be deployed.</li>
-</ul>
-<p><a href="/Project/ev-cyber-detection/">EV Cyber Attack Detection</a> | Under development</p>
-<ul>
-<li>With the power of the SVM model, I can detect a false data injection attack in an EV station. To make this work, you need data, and I have created a dataset to match the requirements of the research paper.</li>
-<li>This model is very powerful, and the theory behind it is provided in this <a href="https://github.com/rafay99-epic/Cyber-Attack-Detection/blob/main/Research%20Paper/Cyber-Attack_on_P2P_Energy_Transaction_Between_Connected_Electric_Vehicles_A_False_Data_Injection_Detection_Based_Machine_Learning_Model-1.pdf">research paper</a>.</li>
-</ul>
-<hr>
+
+[Detect ChatGPT]() | Under development
+- With the help of ChatGPT, you can easily copy and paste assignments and all kinds of things.
+- So to detect this, I have created a project called **Detect ChatGPT**. Using NLP techniques, I trained and deployed a model to detect text generated by ChatGPT.
+- The project is under development and will soon be ready to be deployed.
+
+
+[EV Cyber Attack Detection](/Project/ev-cyber-detection/) | Under development
+- With the power of the SVM model, I can detect a false data injection attack in an EV station. To make this work, you need data, and I have created a dataset to match the requirements of the research paper.
+- This model is very powerful, and the theory behind it is provided in this [research paper](https://github.com/rafay99-epic/Cyber-Attack-Detection/blob/main/Research%20Paper/Cyber-Attack_on_P2P_Energy_Transaction_Between_Connected_Electric_Vehicles_A_False_Data_Injection_Detection_Based_Machine_Learning_Model-1.pdf).
+
+----
+
 <h2 style="text-decoration-line: underline">Shell Scripting Projects</h2>
-<p><a href="/Project/DevBox/">DevBox</a> | 19th March 2020</p>
-<ul>
-<li>DevBox is a software designed to make the life of developers easier. As a developer myself, I know how frustrating it can be to reinstall the operating system and spend hours configuring the system to meet your needs. That&rsquo;s why I created DevBox, a powerful script that can install all of your necessary applications and configure your PC to your liking. With DevBox, you can run the script and forget about it while it does all the work for you. No more wasted hours trying to get your development environment set up just right. DevBox makes it easy and hassle-free.</li>
-</ul>
-<p><a href="">TheDevMachine</a> | Under Development</p>
-<ul>
-<li>Intended to help developers set up their Linux environment with the necessary tools and dependencies for programming in a variety of languages.</li>
-<li>Includes scripts and instructions for installing common development tools and utilities such as Git, Vim, tmux, and zsh.</li>
-<li>Also includes specific language and environment tools such as pipenv, Pyenv, Docker, and AWS CLI.</li>
-<li>Scripts are organized by language, making it easy for developers to choose which languages and tools they want to install.</li>
-<li>Provides a convenient starting point for developers who want to begin programming in a variety of languages without spending a lot of time configuring their environment.</li>
-</ul>
+
+[DevBox](/Project/DevBox/) | 19th March 2020
+- DevBox is a software designed to make the life of developers easier. As a developer myself, I know how frustrating it can be to reinstall the operating system and spend hours configuring the system to meet your needs. That's why I created DevBox, a powerful script that can install all of your necessary applications and configure your PC to your liking. With DevBox, you can run the script and forget about it while it does all the work for you. No more wasted hours trying to get your development environment set up just right. DevBox makes it easy and hassle-free.
+
+[TheDevMachine]() | Under Development
+- Intended to help developers set up their Linux environment with the necessary tools and dependencies for programming in a variety of languages.
+- Includes scripts and instructions for installing common development tools and utilities such as Git, Vim, tmux, and zsh.
+- Also includes specific language and environment tools such as pipenv, Pyenv, Docker, and AWS CLI.
+- Scripts are organized by language, making it easy for developers to choose which languages and tools they want to install.
+- Provides a convenient starting point for developers who want to begin programming in a variety of languages without spending a lot of time configuring their environment.
+ -->
 
         </p>
     </div>

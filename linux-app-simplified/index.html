@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,8 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
-<hr>
+            <hr>
 <p>Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you&rsquo;ve tried searching for installation files like you would on Windows, but to no avail. Don&rsquo;t worry, because in this blog, I&rsquo;ll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.</p>
 <p>By the end of this article, you&rsquo;ll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.</p>
 <h1 id="installing-applications">Installing Applications:</h1>
@@ -244,22 +245,22 @@ All of the above-listed sources need to be installed on your system before you c
 <p>To install flat on your system follow these instrutructions.</p>
 <h3 id="debain">Debain</h3>
 <p>Use this command to install flatpk</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install flatpak
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install flatpak
 </code></pre></div><p>Use this command to enable flatpak hub on your system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 </code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/install-Flatpak.png" alt="install-flatpak"></p>
 <h3 id="arch">Arch</h3>
 <p>To install Flatpak, enter this command in your terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S flatpk
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S flatpk
 </code></pre></div><p>Enable flatpak repo, enter this command in your terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 </code></pre></div><h2 id="install-application-using-flatpak">Install Application using Flatpak</h2>
 <p>To install an application using flatpak just enter this command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install &lt;package name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install &lt;package name&gt;
 </code></pre></div><p>Just change the <package name> with the name of the application that you want to download.
 <strong>Example:</strong>
 You can install an application like google chrome just the this command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install googlechrome
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install googlechrome
 </code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/install-google-chrome-flatpk.png" alt="image"></p>
 <p>Flatpak are fast and easy to learn with an online store from which you can find the commands to isntall applications on your system. The process to install flatpak is the same and on every distro, Debian or Arch.</p>
 <p>You can find the online store by clicking <a href="https://flathub.org/home">here</a></p>
@@ -269,17 +270,17 @@ You can install an application like google chrome just the this command.</p>
 <h2 id="install-snap-packs">Install Snap Packs</h2>
 <h3 id="debian">Debian</h3>
 <p>To install snap pack on your debian or ubuntu based distro, enter the following command in your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install snapd 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install snapd 
 </code></pre></div><h3 id="arch-1">Arch</h3>
 <p>Install Snap pack and snap store, enter the following commands into your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S snapd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S snapd
 </code></pre></div><h2 id="install-application-using-snap-packs">Install Application Using Snap Packs</h2>
 <p>Using snap pack you can install applications and it is very easy just enter the package name and snap will begin to install on ypour system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install &lt;package name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install &lt;package name&gt;
 </code></pre></div><p>Just change the <package name> to the application that you want to install.</p>
 <p><strong>Example</strong>
 This is the example to install an application using snap packs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install spotify
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install spotify
 </code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/spotify-snap.png" alt="spotify-snap"></p>
 <p>Snap packs are free, secure, and do not affect your system in any way, plus they have an online store through which you can search for the command that will help you install the application on your system. You can access the Snap Store online by clicking <a href="https://snapcraft.io/store">here</a>.</p>
 <h1 id="arch-user-repositoryaur">Arch User Repository(AUR)</h1>
@@ -298,46 +299,46 @@ This is the example to install an application using snap packs.</p>
 <li>Yay</li>
 </ol>
 <p>Before installing an AUR helper, you need to obtain the base package by using the following command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S base-devel git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S base-devel git
 </code></pre></div><h4 id="install-yay">Install Yay</h4>
 <p>Now to install an AUR helper, you must clone this repository on your system, enter the folder, and then compile and package to install Yay on your system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/yay.git
-<span style="color:#fff;font-weight:bold">cd</span> yay
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 </code></pre></div><p>###/# Install Paru
 Now to install an AUR helper, you must clone this repository on your system, enter the folder, and then compile and package to install Yay on your system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/paru.git
-<span style="color:#fff;font-weight:bold">cd</span> paru
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
 </code></pre></div><p>No Matter which AUR helper you are using the process remain the same and you find then all of the realtive application on AUR webiste.</p>
 <h2 id="installing-application-using-aur">Installing Application Using AUR</h2>
 <p>For this example I will be using paru as the aur helper and install google chrome as the example to install an package.
 <strong>Basic Syntax</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S &lt;package name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S &lt;package name&gt;
 </code></pre></div><p>You can change <package name> to the name of the application.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S google-chrome
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S google-chrome
 </code></pre></div><p><em><strong>If you want to use Yay, then replace Paru with Yay, and you will start using Yay as your AUR helper.</strong></em>
 <em><strong>Want to find the name of the package? Check out the AUR home page to find the name of the application by clicking <a href="https://aur.archlinux.org/packages">here</a>.</strong></em></p>
 <h1 id="pacstall">Pacstall</h1>
 <p>If AUR is for Arch and an Arch-based distro, then what about Debian and a Debian-based distro? While for them there is something called Pacstall. It&rsquo;s great, and you can find a lot of software on PacStall—not as much as AUR, but still a lot.</p>
 <h2 id="isntall-pacstall">Isntall Pacstall</h2>
 <p>You can download pacstall on your system just by entering this command on your system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo bash -c <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#fff;font-weight:bold">$(</span>curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -<span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://git.io/JsADh <span style="color:#f92672">||</span> wget -q https://git.io/JsADh -O -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><h2 id="uninstall-pacstall">uninstall Pacstall</h2>
 <p>To remove pacstall from your system then enter the following command in your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash -c <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#fff;font-weight:bold">$(</span>curl -fsSL https://git.io/JEZbi || wget -q https://git.io/JEZbi -O -<span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://git.io/JEZbi <span style="color:#f92672">||</span> wget -q https://git.io/JEZbi -O -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><h2 id="basic-commands">Basic Commands</h2>
 <p>These are some basic commands that can be used when you are using pacstall.</p>
 <h3 id="install-application">Install Application</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I &lt;package_name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I &lt;package_name&gt;
 </code></pre></div><h3 id="remove-application">Remove Application</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -R &lt;package_name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -R &lt;package_name&gt;
 </code></pre></div><h3 id="search-applications">Search Applications</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -S &lt;package_name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -S &lt;package_name&gt;
 </code></pre></div><p><em><strong>To do any function just change &lt;package_name&gt; to the actuall package name.</strong></em></p>
 <h2 id="installing-application-using-pacstall">Installing Application using Pacstall</h2>
 <p>To install an application on your system then enter the following command on your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I google-chrome-deb
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I google-chrome-deb
 </code></pre></div><p><em><strong>To find the package name, you can check out their website. You can check it out by clicking <a href="https://pacstall.dev/packages">here</a>.</strong></em></p>
 <h1 id="app-images">App Images</h1>
 <p>AppImage is a tool that lets you run applications in a consistent way across any Linux distribution. It also works on Windows if you install Windows Subsystem for Linux, although AppImage is not designed for use on Windows and may not always prove stable or reliable in Windows environments.</p>
@@ -361,7 +362,7 @@ makepkg -si
 <p>In the next screen, go to the Permissions tab and check the box that says “Allow executing file as program”.
 <img src="/images/2023/Operating-System/Linux/Install-application-on-linux/propertities.png" alt="allow-permisision"></p>
 <p>Alternatively, if you prefer the command line, you can simply use the below command to make an AppImage file executable:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+x &lt;AppImage File&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+x &lt;AppImage File&gt;
 </code></pre></div><h1 id="package-manager">Package Manager</h1>
 <p>Another way you can install packages is by using the package manager. A package manager is a programme that is installed on your system and helps you install, uninstall, update, and upgrade your system.</p>
 <p>The applications available to install using package manager can be different depending upon the distribution you are using. Some distributions have a lot of packages, while others have very few packages that you can install on your own Linux system.</p>
@@ -372,35 +373,35 @@ Developers fork (make a copy) the apt package manager and change it according to
 <ul>
 <li>Update the list of available packages and versions (it&rsquo;s recommended to run this before other <code>apt</code> commands):</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
 </code></pre></div><ul>
 <li>Search for a given package:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt search {{package}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt search <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Show information for a package:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt show {{package}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt show <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Install a package, or update it to the latest available version:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install {{package}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Remove a package (using <code>purge</code> instead also removes its configuration files):</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt remove {{package}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt remove <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Upgrade all installed packages to their newest available versions:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt upgrade
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt upgrade
 </code></pre></div><ul>
 <li>List all packages:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list
 </code></pre></div><ul>
 <li>List installed packages:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list --installed
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list --installed
 </code></pre></div><h2 id="pacman-packages-manager">Pacman Packages manager</h2>
 <p>Just like on Debian and Debian-based distributions, there is apt as the package manager; similarly, on Arch, it has its own package manager called Pacman.</p>
 <p>Pacman works very differently as compared to apt; the function is the same, but the working is totally different. Just like apt-get, which uses pacman, and other distributions that are based on it also use pacman, but the number of packages can be different. A developer will fork (make a copy of) Pacman and then tweak it according to their needs.
@@ -409,35 +410,35 @@ The base pacman has over one million packages, and if something is not available
 <ul>
 <li>Synchronize and update all packages:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
 </code></pre></div><ul>
 <li>Install a new package:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S {{package_name}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S <span style="color:#f92672">{{</span>package_name<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Remove a package and its dependencies:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Rs {{package_name}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Rs <span style="color:#f92672">{{</span>package_name<span style="color:#f92672">}}</span>
 </code></pre></div><ul>
 <li>Search the package database for a regular expression or keyword:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Ss <span style="color:#0ff;font-weight:bold">&#34;{{search_pattern}}&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Ss <span style="color:#e6db74">&#34;{{search_pattern}}&#34;</span>
 </code></pre></div><ul>
 <li>List installed packages and versions:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Q
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Q
 </code></pre></div><ul>
 <li>List only the explicitly installed packages and versions:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qe
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qe
 </code></pre></div><ul>
 <li>List orphan packages (installed as dependencies but not actually required by any package):</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qtdq
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qtdq
 </code></pre></div><ul>
 <li>Empty the entire pacman cache:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Scc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Scc
 </code></pre></div><h1 id="conclusion">Conclusion:</h1>
 <p>There are multiple ways you can install software on Linux, and there are some pros to this system. Choose your format, test it, and experience the way the applications are installed on your system. It does not matter which format you use; all you need is software to get your job done. To be honest, I am on Debian and I use all of these formats: Flatpak, Snap, and even Pacstall. I use apt (package manager) as well to download my software. You need software, and now you have it on your system. So I hope you have learned something.</p>
 <p>With that, we will see you next time.❤️❤️</p>
@@ -452,6 +453,8 @@ The base pacman has over one million packages, and if something is not available
 
         </p>
     </div>
+
+    
 
     <div class="prev-next">
         
@@ -490,18 +493,22 @@ The base pacman has over one million packages, and if something is not available
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 

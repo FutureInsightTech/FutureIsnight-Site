@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,8 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
-<hr>
+            <hr>
 <p>As a developer, managing your code can be difficult, and you&rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.</p>
 <h2 id="before-git">Before Git:</h2>
 <p>But before I was using Git, My code folder structure was something like this:<br>
@@ -321,19 +322,19 @@
 <p>To install git enter the following commands in the terminal:</p>
 <h3 id="linux">Linux:</h3>
 <h3 id="debian-or-ububtu">Debian or Ububtu:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install git -y
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install git -y
 </code></pre></div><h3 id="arch-linux">Arch Linux:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syyu git --noconfirm --needed
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syyu git --noconfirm --needed
 </code></pre></div><h3 id="windows">Windows</h3>
 <p><strong>Install git using winget:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winget install git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winget install git
 </code></pre></div><p><strong>Download an exe</strong>
 You can download an exe file by click <a href="https://git-scm.com/downloads">her</a></p>
 <h3 id="mac-os">Mac Os</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install git
 </code></pre></div><p><strong>Note:</strong>
 if Home Brew is not installed on your system then install it by using the follwong command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/bin/bash -c <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#fff;font-weight:bold">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><h2 id="git-commands">Git Commands:</h2>
 <h3 id="create-a-repo">Create a Repo:</h3>
 <ol>
@@ -364,10 +365,10 @@ if Home Brew is not installed on your system then install it by using the follwo
 <p>Congratulation You have created your own repo.</p>
 <h3 id="cloning-the-repo">Cloning the repo:</h3>
 <p>Now you want to add files to the REOP. But first, we need to clone the repo on your machine, which requires you to run a command in your terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone &lt;repo URL&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone &lt;repo URL&gt;
 </code></pre></div><p>The above is the command. But for now, I&rsquo;ll be cloning the <strong>Laptop-Shopping-API</strong> repo.
 So command will be</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/rafay99-epic/Laptop-Shopping-API.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/rafay99-epic/Laptop-Shopping-API.git
 </code></pre></div><p><strong>Note:</strong> You can find the URL of the repo by clicking the <strong>code</strong> Button on your repo.
 <img src="/images/2023/learn-git/url.png" alt="image"></p>
 <p>Once command is in the terminal then press enter on your keyboard to clone the repo on your device.</p>
@@ -375,58 +376,58 @@ So command will be</p>
 <img src="/images/2023/learn-git/repo-folder.png" alt="image"></p>
 <h3 id="create-a-branch">Create a Branch:</h3>
 <p>Now we want to upload files to this repo so we need to create a branch so do that we need open this folder using the terminal.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#fff;font-weight:bold">cd</span> &lt;Folder name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd &lt;Folder name&gt;
 </code></pre></div><p><strong>For this example:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#fff;font-weight:bold">cd</span> Laptop-Shopping-API
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd Laptop-Shopping-API
 </code></pre></div><p>Once you are in the folder then to create a branch.</p>
 <p><strong>Note: Always remeber that when you clone a repo on your machine by default you will be on the Main Branch.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b &lt;branch Name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b &lt;branch Name&gt;
 </code></pre></div><p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b Adding-Files
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b Adding-Files
 </code></pre></div><p>Once the above commad is entered into the termial then a brach will be created.
 <img src="/images/2023/learn-git/git-branch.png" alt="image"></p>
 <p>Using the above command you can create different branch.</p>
 <h3 id="switch-branch">Switch Branch:</h3>
 <p>What if branches already exist and you want to checkout a different branch? There is a command for that as well.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git branch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git branch
 </code></pre></div><p>Using the above command, you will see all of the git branches.
 <img src="/images/2023/learn-git/switch-branch.png" alt="image"></p>
 <p>Now to switch between different branch, to that enter the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout &lt;branch name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout &lt;branch name&gt;
 </code></pre></div><p>In place of &ldquo;branch name,&rdquo; enter the branch name. In this example, I will be entering this command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
 </code></pre></div><p><img src="/images/2023/learn-git/switch-branch-2.png" alt="image"></p>
 <p>As you can see, I have switched to the main branch, but I will be switching to the adding-file branch.</p>
 <p>Now add some files to the branch and make all the changes. I will be adding some Python files along with the PowerShell file.</p>
 <h3 id="check-status">Check Status:</h3>
 <p>To check the status and see how many changes are made to that, enter the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git status
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git status
 </code></pre></div><p><img src="/images/2023/learn-git/git-status.png" alt="image"></p>
 <p>As you can see, I have added two files, and using the command <code>git status</code> , I can view all of the changes that have been made.</p>
 <h3 id="adding-files">Adding Files:</h3>
 <p>Now add these files to the branch; to do that, you need to enter the following command in the terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git add *
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git add *
 </code></pre></div><p>The above command will add all the files to the branch.
 <img src="/images/2023/learn-git/git-add.png" alt="image"></p>
 <p>Now that all the files are added to the branch, when files are added, the colour will change from red to green. The green colour can change depending on the colours of your terminal.</p>
 <h3 id="commiting">Commiting:</h3>
 <p>Now it&rsquo;s time to commit your code and add a message. To do that, please enter the following commands into the terminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git commit -m <span style="color:#0ff;font-weight:bold">&#34;adding Files&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git commit -m <span style="color:#e6db74">&#34;adding Files&#34;</span>
 </code></pre></div><p>The above command will commit your code with a message; the message is important, and it won&rsquo;t commit without a message, so enter your message.</p>
 <p><img src="/images/2023/learn-git/git-comit.png" alt="image"></p>
 <h3 id="push">Push:</h3>
 <p>Now it&rsquo;s time to deploy your local branch and push your code to the repo.</p>
 <h4 id="deploy-your-branch">Deploy your branch:</h4>
 <p>To deploy your branch on GitHub then enter the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin &lt;branch name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin &lt;branch name&gt;
 </code></pre></div><p>In place of &ldquo;branch name,&rdquo; enter the branch name on which you are working.</p>
 <p>For this example, the branch name is <strong>Adding-Files</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin Adding-Files
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin Adding-Files
 </code></pre></div><p>The above command will deploy your branch to GitHub.</p>
 <p><img src="/images/2023/learn-git/git-deploy-branch.png" alt="image"></p>
 <h4 id="push-command">Push Command:</h4>
 <p>To push your code enter your code into the teminal:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push 
 </code></pre></div><h3 id="final-result">Final Result:</h3>
 <p>As you can see, the branch is deployed, and all the files are in the Adding-file branch.
 <img src="/images/2023/learn-git/branch-deploy.png" alt="image"></p>
@@ -435,16 +436,16 @@ So command will be</p>
 <p>This is the stage at which you develop and test your code and application without changing or deploying it to the main repository.</p>
 <p>To merge these branches, we need to create a pull request and merge them. To do that, there are some commands.</p>
 <p><strong>Step 1:</strong> Clone the repository or update your local repository with the latest changes.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git pull origin main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git pull origin main
 </code></pre></div><p><img src="/images/2023/learn-git/git-pull-orgin-main.png" alt="image"></p>
 <p><strong>Step 2:</strong> Switch to the base branch of the pull request.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
 </code></pre></div><p><img src="/images/2023/learn-git/checkout-main.png" alt="image">
 <strong>Step 3:</strong> Merge the head branch into the base branch.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git merge Adding-Files
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git merge Adding-Files
 </code></pre></div><p><img src="/images/2023/learn-git/git-merge-Adding-Files.png" alt="image">
 <strong>Step 4:</strong> Push the changes.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -u origin main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -u origin main
 </code></pre></div><p><img src="/images/2023/learn-git/git-push-u-origin-main.png" alt="image"></p>
 <h2 id="final">Final:</h2>
 <p>Now that you can view GitHub, all the files are added to the main branch. You can make changes to one branch, and once you are sure that the application is working well, you can merge the working branch with the main branch.
@@ -474,6 +475,8 @@ So please do not hesitate to contact or email me. I would love to know your thou
 
         </p>
     </div>
+
+    
 
     <div class="prev-next">
         
@@ -512,18 +515,22 @@ So please do not hesitate to contact or email me. I would love to know your thou
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 <aside class="post-toc">

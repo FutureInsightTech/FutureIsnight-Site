@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,8 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
-<hr>
+            <hr>
 <p>The world of Machine Learning and AI is rapidly evolving, with new tools and technologies being developed and released every day. However, there is one remarkable model that stands out among the rest: GPT-Model. This cutting-edge innovation has become the gold standard in the field.</p>
 <p>But what exactly is a GPT-Model and what makes it so exceptional? GPT, which stands for Generative Pre-trained Transformer, is a state-of-the-art language model built on the transformer architecture. These models are designed to generate high-quality, coherent, and contextually relevant text by predicting the next word or token based on the given context.</p>
 <p>GPT models have achieved unparalleled success in Natural Language Processing (NLP) tasks. Developed by OpenAI, they have revolutionized how machines understand and generate human-like text. The secret behind their extraordinary performance lies in their pre-training process. GPT models are trained on massive amounts of diverse text data, allowing them to capture grammar, facts, and contextual understanding.</p>
@@ -263,36 +264,36 @@
 <ol>
 <li>Create a new directory for your project and navigate into it using the terminal:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir Phoenix-AI
-<span style="color:#fff;font-weight:bold">cd</span> Phoenix-AI
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir Phoenix-AI
+cd Phoenix-AI
 </code></pre></div><ol start="2">
 <li>Initialize the Node.js project and provide the required information as prompted:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm init
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm init
 </code></pre></div><ol start="3">
 <li>Create a &ldquo;public&rdquo; folder to store the client-side files:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir public
-<span style="color:#fff;font-weight:bold">cd</span> public
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir public
+cd public
 </code></pre></div><ol start="4">
 <li>Inside the &ldquo;public&rdquo; folder, create an HTML file, CSS folder, JavaScript folder, and an images folder:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch index.html
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch index.html
 mkdir css js images
 </code></pre></div><ol start="5">
 <li>Within the &ldquo;css&rdquo; folder, create a CSS file to style your web application:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">cd</span> css
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd css
 touch style.css
 </code></pre></div><ol start="6">
 <li>Within the &ldquo;js&rdquo; folder, create a JavaScript file to handle client-side functionality:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">cd</span> ../js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ../js
 touch script.js
 </code></pre></div><ol start="7">
 <li>Return to the root project directory and create a server file:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">cd</span> ..
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ..
 touch app.js
 </code></pre></div><p>Now that you have the basic project structure in place, it&rsquo;s time to start coding the application.</p>
 <h2 id="developing-the-phoenix-ai-application">Developing the Phoenix-AI Application</h2>
@@ -305,18 +306,18 @@ touch app.js
 <ol>
 <li>Install the required Node.js dependencies by executing the following command in the terminal:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install express
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install express
 </code></pre></div><ol start="2">
 <li>Start the server by running the command:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node app.js
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">node app.js
 </code></pre></div><ol start="3">
 <li>Open a web browser and navigate to <code>http://localhost:1313</code>, where <code>&lt;1313&gt;</code> is the port number specified in your <code>app.js</code> file.</li>
 </ol>
 <p>Congratulations! You have successfully set up and developed the Phoenix-AI application. Now you can leverage the power of OpenAI&rsquo;s API to generate dynamic and contextually relevant text outputs within your web application.</p>
 <p>Enjoy exploring the possibilities of language generation with Phoenix-AI!</p>
 <h2 id="project-structure">Project Structure</h2>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Pheonix-AI
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Pheonix-AI
  ├─public
  │  ├─js
  │  │  └─script.js
@@ -328,61 +329,61 @@ touch app.js
  └─node_modules
 </code></pre></div><h2 id="project-code">Project Code:</h2>
 <h3 id="scriptjs-file">Script.jS File</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#007f7f">//  Version 1.0.7: HTML Version 1.0.7
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> submit = <span style="color:#fff;font-weight:bold">document</span>.getElementById(<span style="color:#0ff;font-weight:bold">&#34;submit&#34;</span>);
-<span style="color:#fff;font-weight:bold">const</span> userInput = <span style="color:#fff;font-weight:bold">document</span>.getElementById(<span style="color:#0ff;font-weight:bold">&#34;user-input&#34;</span>);
-<span style="color:#fff;font-weight:bold">const</span> chatHistory = <span style="color:#fff;font-weight:bold">document</span>.getElementById(<span style="color:#0ff;font-weight:bold">&#34;chat-history&#34;</span>);
-<span style="color:#fff;font-weight:bold">const</span> loading = <span style="color:#fff;font-weight:bold">document</span>.getElementById(<span style="color:#0ff;font-weight:bold">&#34;spinner&#34;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//  Version 1.0.7: HTML Version 1.0.7
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">submit</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;submit&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userInput</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;user-input&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chatHistory</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;chat-history&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">loading</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;spinner&#34;</span>);
 
-<span style="color:#fff;font-weight:bold">let</span> promptResponses = [];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">promptResponses</span> <span style="color:#f92672">=</span> [];
 
-<span style="color:#007f7f">// Function to format code snippets
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> formatCodeSnippet = (code) =&gt; {
-    <span style="color:#fff;font-weight:bold">return</span> <span style="color:#0ff;font-weight:bold">`&lt;pre&gt;&lt;code&gt;</span><span style="color:#0ff;font-weight:bold">${</span>code<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&lt;/code&gt;&lt;/pre&gt;`</span>;
+<span style="color:#75715e">// Function to format code snippets
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">formatCodeSnippet</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">code</span>) =&gt; {
+    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`&lt;pre&gt;&lt;code&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">code</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/code&gt;&lt;/pre&gt;`</span>;
 }
 
-<span style="color:#fff;font-weight:bold">const</span> generateResponse = <span style="color:#fff;font-weight:bold">async</span> () =&gt; {
-    loading.classList.remove(<span style="color:#0ff;font-weight:bold">&#34;visually-hidden&#34;</span>);
-    submit.classList.add(<span style="color:#0ff;font-weight:bold">&#34;visually-hidden&#34;</span>);
-    <span style="color:#fff;font-weight:bold">const</span> input = userInput.value;
-    <span style="color:#fff;font-weight:bold">const</span> isCodeSnippet = input.startsWith(<span style="color:#0ff;font-weight:bold">&#34;// Code snippet example&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">generateResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+    <span style="color:#a6e22e">loading</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#e6db74">&#34;visually-hidden&#34;</span>);
+    <span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;visually-hidden&#34;</span>);
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">userInput</span>.<span style="color:#a6e22e">value</span>;
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isCodeSnippet</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;// Code snippet example&#34;</span>);
 
-    <span style="color:#fff;font-weight:bold">let</span> response;
-    <span style="color:#fff;font-weight:bold">if</span> (isCodeSnippet) {
-        response = formatCodeSnippet(input);
-    } <span style="color:#fff;font-weight:bold">else</span> {
-        <span style="color:#fff;font-weight:bold">const</span> apiResponse = <span style="color:#fff;font-weight:bold">await</span> fetch(<span style="color:#0ff;font-weight:bold">&#39;/chat&#39;</span>, {
-            method: <span style="color:#0ff;font-weight:bold">&#39;POST&#39;</span>,
-            body: JSON.stringify({
-                model: <span style="color:#0ff;font-weight:bold">&#34;gpt-3.5-turbo&#34;</span>,
-                messages: [{ <span style="color:#0ff;font-weight:bold">&#34;role&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;user&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;content&#34;</span>: input }],
-                temp: <span style="color:#ff0;font-weight:bold">0.6</span>
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">response</span>;
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isCodeSnippet</span>) {
+        <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatCodeSnippet</span>(<span style="color:#a6e22e">input</span>);
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">apiResponse</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;/chat&#39;</span>, {
+            <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;POST&#39;</span>,
+            <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+                <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;gpt-3.5-turbo&#34;</span>,
+                <span style="color:#a6e22e">messages</span><span style="color:#f92672">:</span> [{ <span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">input</span> }],
+                <span style="color:#a6e22e">temp</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0.6</span>
             }),
-            headers: {
-                <span style="color:#0ff;font-weight:bold">&#39;Content-Type&#39;</span>: <span style="color:#0ff;font-weight:bold">&#39;application/json&#39;</span>
+            <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+                <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span>
             }
         });
 
-        <span style="color:#fff;font-weight:bold">const</span> responseData = <span style="color:#fff;font-weight:bold">await</span> apiResponse.json();
-        response = responseData.result[<span style="color:#ff0;font-weight:bold">0</span>].message.content;
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">responseData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">apiResponse</span>.<span style="color:#a6e22e">json</span>();
+        <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">responseData</span>.<span style="color:#a6e22e">result</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">content</span>;
     }
 
-    promptResponses.push({ question: input, response });
-    userInput.value = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>;
+    <span style="color:#a6e22e">promptResponses</span>.<span style="color:#a6e22e">push</span>({ <span style="color:#a6e22e">question</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">input</span>, <span style="color:#a6e22e">response</span> });
+    <span style="color:#a6e22e">userInput</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
 
-    <span style="color:#fff;font-weight:bold">const</span> historyElement = <span style="color:#fff;font-weight:bold">document</span>.createElement(<span style="color:#0ff;font-weight:bold">&#39;li&#39;</span>);
-    historyElement.classList.add(<span style="color:#0ff;font-weight:bold">&#34;list-group-item&#34;</span>, <span style="color:#0ff;font-weight:bold">&#34;message&#34;</span>);
-    historyElement.innerHTML = <span style="color:#0ff;font-weight:bold">`
-</span><span style="color:#0ff;font-weight:bold">        &lt;div class=&#34;user-message&#34;&gt;</span><span style="color:#0ff;font-weight:bold">${</span>formatCodeSnippet(input)<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&lt;/div&gt;
-</span><span style="color:#0ff;font-weight:bold">        &lt;div class=&#34;bot-message&#34;&gt;</span><span style="color:#0ff;font-weight:bold">${</span>isCodeSnippet ? response : formatCodeSnippet(response)<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">&lt;/div&gt;
-</span><span style="color:#0ff;font-weight:bold">    `</span>;
-    chatHistory.appendChild(historyElement);
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">historyElement</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#39;li&#39;</span>);
+    <span style="color:#a6e22e">historyElement</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;list-group-item&#34;</span>, <span style="color:#e6db74">&#34;message&#34;</span>);
+    <span style="color:#a6e22e">historyElement</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span><span style="color:#e6db74">        &lt;div class=&#34;user-message&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">formatCodeSnippet</span>(<span style="color:#a6e22e">input</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/div&gt;
+</span><span style="color:#e6db74">        &lt;div class=&#34;bot-message&#34;&gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">isCodeSnippet</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">formatCodeSnippet</span>(<span style="color:#a6e22e">response</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&lt;/div&gt;
+</span><span style="color:#e6db74">    `</span>;
+    <span style="color:#a6e22e">chatHistory</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">historyElement</span>);
 
-    loading.classList.add(<span style="color:#0ff;font-weight:bold">&#34;visually-hidden&#34;</span>);
-    submit.classList.remove(<span style="color:#0ff;font-weight:bold">&#34;visually-hidden&#34;</span>);
+    <span style="color:#a6e22e">loading</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;visually-hidden&#34;</span>);
+    <span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">remove</span>(<span style="color:#e6db74">&#34;visually-hidden&#34;</span>);
 }
 
-submit.onclick = generateResponse;
+<span style="color:#a6e22e">submit</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">generateResponse</span>;
 </code></pre></div><h3 id="indexhtml">Index.HTML</h3>
 <h4 id="code-explain">Code Explain</h4>
 <p>The provided code snippet is an HTML file that represents the structure and layout of a chatbot interface. Here&rsquo;s an explanation of each section:</p>
@@ -404,61 +405,61 @@ submit.onclick = generateResponse;
 </ul>
 <p>The HTML code sets up the basic structure of the chatbot interface, including the chat history, user input field, buttons, and dark mode toggle functionality.</p>
 <h4 id="code">Code</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#007f7f">&lt;!--  Version 1..0.8: Dark mode colors and goes with Js file version 1.0.7   --&gt;</span>
-<span style="color:#0f0;font-weight:bold">&lt;!DOCTYPE html&gt;</span> 
-&lt;<span style="font-weight:bold">html</span> <span style="color:#007f7f">lang</span>=<span style="color:#0ff;font-weight:bold">&#34;en&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--  Version 1..0.8: Dark mode colors and goes with Js file version 1.0.7   --&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span> 
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
 
-&lt;<span style="font-weight:bold">head</span>&gt;
-    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">charset</span>=<span style="color:#0ff;font-weight:bold">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">http-equiv</span>=<span style="color:#0ff;font-weight:bold">&#34;X-UA-Compatible&#34;</span> <span style="color:#007f7f">content</span>=<span style="color:#0ff;font-weight:bold">&#34;IE=edge&#34;</span>&gt;
-    &lt;<span style="font-weight:bold">meta</span> <span style="color:#007f7f">name</span>=<span style="color:#0ff;font-weight:bold">&#34;viewport&#34;</span> <span style="color:#007f7f">content</span>=<span style="color:#0ff;font-weight:bold">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="font-weight:bold">title</span>&gt;My Chatbot&lt;/<span style="font-weight:bold">title</span>&gt;
-    &lt;<span style="font-weight:bold">link</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css&#34;</span> <span style="color:#007f7f">rel</span>=<span style="color:#0ff;font-weight:bold">&#34;stylesheet&#34;</span>
-        <span style="color:#007f7f">integrity</span>=<span style="color:#0ff;font-weight:bold">&#34;sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65&#34;</span> <span style="color:#007f7f">crossorigin</span>=<span style="color:#0ff;font-weight:bold">&#34;anonymous&#34;</span>&gt;    
-    &lt;<span style="font-weight:bold">link</span> <span style="color:#007f7f">rel</span>=<span style="color:#0ff;font-weight:bold">&#34;stylesheet&#34;</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;css/style.css&#34;</span>&gt;        
-&lt;/<span style="font-weight:bold">head</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;IE=edge&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;My Chatbot&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>
+        <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;    
+    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css/style.css&#34;</span>&gt;        
+&lt;/<span style="color:#f92672">head</span>&gt;
 
-&lt;<span style="font-weight:bold">body</span>&gt;
-    &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;container mt-5&#34;</span>&gt;
-        &lt;<span style="font-weight:bold">h1</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;text-center&#34;</span>&gt;Pheonix AI&lt;/<span style="font-weight:bold">h1</span>&gt;
-        &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;card&#34;</span>&gt;
-            &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;card-header&#34;</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container mt-5&#34;</span>&gt;
+        &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-center&#34;</span>&gt;Pheonix AI&lt;/<span style="color:#f92672">h1</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card&#34;</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-header&#34;</span>&gt;
                 Chat History
-            &lt;/<span style="font-weight:bold">div</span>&gt;
-            &lt;<span style="font-weight:bold">ul</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;chat-history&#34;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;list-group list-group-flush&#34;</span>&gt;
-            &lt;/<span style="font-weight:bold">ul</span>&gt;
-        &lt;/<span style="font-weight:bold">div</span>&gt;
-        &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;input-group&#34;</span>&gt;
-            &lt;<span style="font-weight:bold">span</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;input-group-text&#34;</span>&gt;
-                &lt;<span style="font-weight:bold">span</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;bot-icon&#34;</span> <span style="color:#007f7f">role</span>=<span style="color:#0ff;font-weight:bold">&#34;img&#34;</span> <span style="color:#007f7f">aria-label</span>=<span style="color:#0ff;font-weight:bold">&#34;Bot&#34;</span>&gt;🤖&lt;/<span style="font-weight:bold">span</span>&gt;Bot
-            &lt;/<span style="font-weight:bold">span</span>&gt;
-            &lt;<span style="font-weight:bold">textarea</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;user-input&#34;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;form-control&#34;</span> <span style="color:#007f7f">aria-label</span>=<span style="color:#0ff;font-weight:bold">&#34;With textarea&#34;</span>
-                <span style="color:#007f7f">placeholder</span>=<span style="color:#0ff;font-weight:bold">&#34;Type your message here&#34;</span>&gt;&lt;/<span style="font-weight:bold">textarea</span>&gt;
-        &lt;/<span style="font-weight:bold">div</span>&gt;
-        &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;text-center mt-2&#34;</span>&gt;
-            &lt;<span style="font-weight:bold">button</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;submit&#34;</span> <span style="color:#007f7f">type</span>=<span style="color:#0ff;font-weight:bold">&#34;button&#34;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;btn btn-primary&#34;</span>&gt;Submit&lt;/<span style="font-weight:bold">button</span>&gt;
-            &lt;<span style="font-weight:bold">button</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;dark-mode-toggle&#34;</span> <span style="color:#007f7f">type</span>=<span style="color:#0ff;font-weight:bold">&#34;button&#34;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;btn btn-primary&#34;</span>&gt;Toggle Dark Mode&lt;/<span style="font-weight:bold">button</span>&gt;
-            &lt;<span style="font-weight:bold">div</span> <span style="color:#007f7f">id</span>=<span style="color:#0ff;font-weight:bold">&#34;spinner&#34;</span> <span style="color:#007f7f">class</span>=<span style="color:#0ff;font-weight:bold">&#34;spinner-grow text-primary visually-hidden mt-2&#34;</span> <span style="color:#007f7f">role</span>=<span style="color:#0ff;font-weight:bold">&#34;status&#34;</span>&gt;&lt;/<span style="font-weight:bold">div</span>&gt;
-        &lt;/<span style="font-weight:bold">div</span>&gt;
-    &lt;/<span style="font-weight:bold">div</span>&gt;
+            &lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;chat-history&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list-group list-group-flush&#34;</span>&gt;
+            &lt;/<span style="color:#f92672">ul</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input-group&#34;</span>&gt;
+            &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input-group-text&#34;</span>&gt;
+                &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bot-icon&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;img&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Bot&#34;</span>&gt;🤖&lt;/<span style="color:#f92672">span</span>&gt;Bot
+            &lt;/<span style="color:#f92672">span</span>&gt;
+            &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;user-input&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;With textarea&#34;</span>
+                <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Type your message here&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-center mt-2&#34;</span>&gt;
+            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Submit&lt;/<span style="color:#f92672">button</span>&gt;
+            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dark-mode-toggle&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Toggle Dark Mode&lt;/<span style="color:#f92672">button</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;spinner&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;spinner-grow text-primary visually-hidden mt-2&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;status&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
 
-    &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;https://code.jquery.com/jquery-3.6.0.min.js&#34;</span>
-        <span style="color:#007f7f">integrity</span>=<span style="color:#0ff;font-weight:bold">&#34;sha384-6H3L42Zm48Hy6z0Yy2gblgj4f4k8li8k2Q59Pz/QHYBHNXgOZxt4Iguzua4KqEM2&#34;</span>
-        <span style="color:#007f7f">crossorigin</span>=<span style="color:#0ff;font-weight:bold">&#34;anonymous&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
-    &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&#34;</span>
-        <span style="color:#007f7f">integrity</span>=<span style="color:#0ff;font-weight:bold">&#34;sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4&#34;</span>
-        <span style="color:#007f7f">crossorigin</span>=<span style="color:#0ff;font-weight:bold">&#34;anonymous&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
-    &lt;<span style="font-weight:bold">script</span> <span style="color:#007f7f">src</span>=<span style="color:#0ff;font-weight:bold">&#34;js/script.js&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;
-    &lt;<span style="font-weight:bold">script</span>&gt;
-        <span style="color:#fff;font-weight:bold">const</span> darkModeToggle = <span style="color:#fff;font-weight:bold">document</span>.getElementById(<span style="color:#0ff;font-weight:bold">&#34;dark-mode-toggle&#34;</span>);
-        <span style="color:#fff;font-weight:bold">const</span> body = <span style="color:#fff;font-weight:bold">document</span>.body;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.6.0.min.js&#34;</span>
+        <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-6H3L42Zm48Hy6z0Yy2gblgj4f4k8li8k2Q59Pz/QHYBHNXgOZxt4Iguzua4KqEM2&#34;</span>
+        <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&#34;</span>
+        <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4&#34;</span>
+        <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;js/script.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span>&gt;
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">darkModeToggle</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;dark-mode-toggle&#34;</span>);
+        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">body</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">body</span>;
 
-        darkModeToggle.addEventListener(<span style="color:#0ff;font-weight:bold">&#34;click&#34;</span>, () =&gt; {
-            body.classList.toggle(<span style="color:#0ff;font-weight:bold">&#34;dark-mode&#34;</span>);
+        <span style="color:#a6e22e">darkModeToggle</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, () =&gt; {
+            <span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">toggle</span>(<span style="color:#e6db74">&#34;dark-mode&#34;</span>);
         });
-    &lt;/<span style="font-weight:bold">script</span>&gt;
-&lt;/<span style="font-weight:bold">body</span>&gt;
-&lt;/<span style="font-weight:bold">html</span>&gt;
+    &lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
 </code></pre></div><h3 id="css-file">CSS file</h3>
 <h4 id="code-explain-1">Code Explain</h4>
 <p>The provided code snippet contains CSS styles for customizing the appearance of a chatbot interface. Here&rsquo;s a breakdown of what each section of the code does:</p>
@@ -487,118 +488,118 @@ submit.onclick = generateResponse;
 </ul>
 <p>These styles can be used to customize the visual appearance of a chatbot interface, including the background, message colors, code snippet formatting, and dark mode styles.</p>
 <h4 id="code-1">Code</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">            <span style="color:#007f7f">/* Additional custom styles can be added here */</span>
-<span style="font-weight:bold">body</span> {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#f8f9fa</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">            <span style="color:#75715e">/* Additional custom styles can be added here */</span>
+<span style="color:#f92672">body</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#f8f9fa</span>;
 }
 
-.container {
-    <span style="color:#fff;font-weight:bold">max-width</span>: <span style="color:#ff0;font-weight:bold">1500</span><span style="color:#fff;font-weight:bold">px</span>;
+.<span style="color:#a6e22e">container</span> {
+    <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">1500</span><span style="color:#66d9ef">px</span>;
 }
 
-.card {
-    <span style="color:#fff;font-weight:bold">margin-bottom</span>: <span style="color:#ff0;font-weight:bold">1</span><span style="color:#fff;font-weight:bold">rem</span>;
+.<span style="color:#a6e22e">card</span> {
+    <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
 }
 
 #chat-history {
-    <span style="color:#fff;font-weight:bold">max-height</span>: <span style="color:#ff0;font-weight:bold">400</span><span style="color:#fff;font-weight:bold">px</span>;
-    <span style="color:#fff;font-weight:bold">overflow-y</span>: <span style="color:#fff;font-weight:bold">auto</span>;
+    <span style="color:#66d9ef">max-height</span>: <span style="color:#ae81ff">400</span><span style="color:#66d9ef">px</span>;
+    <span style="color:#66d9ef">overflow-y</span>: <span style="color:#66d9ef">auto</span>;
 }
 
 #user-input {
-    <span style="color:#fff;font-weight:bold">resize</span>: <span style="color:#fff;font-weight:bold">none</span>;
-    <span style="color:#fff;font-weight:bold">height</span>: <span style="color:#ff0;font-weight:bold">120</span><span style="color:#fff;font-weight:bold">px</span>;
+    <span style="color:#66d9ef">resize</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">120</span><span style="color:#66d9ef">px</span>;
 }
 
-.bot-icon {
-    <span style="color:#fff;font-weight:bold">font-size</span>: <span style="color:#ff0;font-weight:bold">1.5</span><span style="color:#fff;font-weight:bold">rem</span>;
-    <span style="color:#fff;font-weight:bold">margin-right</span>: <span style="color:#ff0;font-weight:bold">0.5</span><span style="color:#fff;font-weight:bold">rem</span>;
+.<span style="color:#a6e22e">bot-icon</span> {
+    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">rem</span>;
+    <span style="color:#66d9ef">margin-right</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
 }
 
-.user-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#f1f1f1</span>;
+.<span style="color:#a6e22e">user-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#f1f1f1</span>;
 }
 
-.bot-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#d6edff</span>;
+.<span style="color:#a6e22e">bot-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#d6edff</span>;
 }
 
-<span style="color:#007f7f">/* Dark mode styles */</span>
-.dark-mode {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#000</span>;
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#fff</span>;
+<span style="color:#75715e">/* Dark mode styles */</span>
+.<span style="color:#a6e22e">dark-mode</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
 }
 
-.dark-mode .card-header {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#000</span>;
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#fff</span>;
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">card-header</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
 }
 
-.dark-mode #chat-history,
-.dark-mode .user-message,
-.dark-mode .bot-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#111</span>;
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#fff</span>;
+.<span style="color:#a6e22e">dark-mode</span> #chat-history<span style="color:#f92672">,</span>
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">user-message</span><span style="color:#f92672">,</span>
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">bot-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#111</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
 }
 
-.dark-mode #user-input {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#111</span>;
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#fff</span>;
+.<span style="color:#a6e22e">dark-mode</span> #user-input {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#111</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
 }
 
-.dark-mode .bot-icon {
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#d4af37</span>;
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">bot-icon</span> {
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#d4af37</span>;
 }
 
-.dark-mode .btn-primary {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#007bff</span>;
-    <span style="color:#fff;font-weight:bold">border-color</span>: <span style="color:#ff0;font-weight:bold">#007bff</span>;
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">btn-primary</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#007bff</span>;
+    <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#007bff</span>;
 }
 
-.dark-mode .btn-primary:hover {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#000</span>;
-    <span style="color:#fff;font-weight:bold">border-color</span>: <span style="color:#ff0;font-weight:bold">#000</span>;
+.<span style="color:#a6e22e">dark-mode</span> .<span style="color:#a6e22e">btn-primary</span>:<span style="color:#a6e22e">hover</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#000</span>;
+    <span style="color:#66d9ef">border-color</span>: <span style="color:#ae81ff">#000</span>;
 }
 
-<span style="color:#007f7f">/* Code snippet styles */</span>
-.message <span style="font-weight:bold">pre</span> {
-    <span style="color:#fff;font-weight:bold">margin</span>: <span style="color:#ff0;font-weight:bold">0</span>;
-    <span style="color:#fff;font-weight:bold">padding</span>: <span style="color:#ff0;font-weight:bold">0.5</span><span style="color:#fff;font-weight:bold">rem</span>;
-    <span style="color:#fff;font-weight:bold">border</span>: <span style="color:#ff0;font-weight:bold">1</span><span style="color:#fff;font-weight:bold">px</span> <span style="color:#fff;font-weight:bold">solid</span> <span style="color:#ff0;font-weight:bold">#dee2e6</span>;
-    <span style="color:#fff;font-weight:bold">border-radius</span>: <span style="color:#ff0;font-weight:bold">0.25</span><span style="color:#fff;font-weight:bold">rem</span>;
-    <span style="color:#fff;font-weight:bold">white-space</span>: <span style="color:#fff;font-weight:bold">pre-wrap</span>;
+<span style="color:#75715e">/* Code snippet styles */</span>
+.<span style="color:#a6e22e">message</span> <span style="color:#f92672">pre</span> {
+    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">rem</span>;
+    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#ae81ff">#dee2e6</span>;
+    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">0.25</span><span style="color:#66d9ef">rem</span>;
+    <span style="color:#66d9ef">white-space</span>: <span style="color:#66d9ef">pre-wrap</span>;
 }
 
-.message.user-message <span style="font-weight:bold">pre</span> {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#d4edda</span>;
+.<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">user-message</span> <span style="color:#f92672">pre</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#d4edda</span>;
 }
 
-<span style="color:#007f7f">/* Chat history styles */</span>
-#chat-history .list-group-item {
-    <span style="color:#fff;font-weight:bold">border</span>: <span style="color:#fff;font-weight:bold">none</span>;
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#f8f9fa</span>;
+<span style="color:#75715e">/* Chat history styles */</span>
+#chat-history .<span style="color:#a6e22e">list-group-item</span> {
+    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#f8f9fa</span>;
 }
 
-#chat-history .list-group-item.user-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#d4edda</span>;
+#chat-history .<span style="color:#a6e22e">list-group-item</span>.<span style="color:#a6e22e">user-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#d4edda</span>;
 }
 
-#chat-history .list-group-item.bot-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#d6edff</span>;
+#chat-history .<span style="color:#a6e22e">list-group-item</span>.<span style="color:#a6e22e">bot-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#d6edff</span>;
 }
 
-<span style="color:#007f7f">/* Dark mode chat history styles */</span>
-.dark-mode #chat-history .list-group-item {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#111</span>;
-    <span style="color:#fff;font-weight:bold">color</span>: <span style="color:#ff0;font-weight:bold">#fff</span>;
+<span style="color:#75715e">/* Dark mode chat history styles */</span>
+.<span style="color:#a6e22e">dark-mode</span> #chat-history .<span style="color:#a6e22e">list-group-item</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#111</span>;
+    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
 }
 
-.dark-mode #chat-history .list-group-item.user-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#1a5316</span>;
+.<span style="color:#a6e22e">dark-mode</span> #chat-history .<span style="color:#a6e22e">list-group-item</span>.<span style="color:#a6e22e">user-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#1a5316</span>;
 }
 
-.dark-mode #chat-history .list-group-item.bot-message {
-    <span style="color:#fff;font-weight:bold">background-color</span>: <span style="color:#ff0;font-weight:bold">#0d4b80</span>;
+.<span style="color:#a6e22e">dark-mode</span> #chat-history .<span style="color:#a6e22e">list-group-item</span>.<span style="color:#a6e22e">bot-message</span> {
+    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#0d4b80</span>;
 }
 </code></pre></div><h3 id="appjs-file">App.js File</h3>
 <h4 id="code-explain-2">Code Explain</h4>
@@ -621,55 +622,55 @@ submit.onclick = generateResponse;
 </ol>
 <p>This code sets up a basic Express server that serves static files and provides an API endpoint for interacting with the OpenAI API. It listens for incoming requests on the specified port and handles the /chat route to generate chatbot responses.</p>
 <h4 id="code-2">Code</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#007f7f">//  Dependencies: express, path, openai, dotenv
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> openai = require(<span style="color:#0ff;font-weight:bold">&#39;openai&#39;</span>);
-require(<span style="color:#0ff;font-weight:bold">&#39;dotenv&#39;</span>).config();
-<span style="color:#fff;font-weight:bold">const</span> express = require(<span style="color:#0ff;font-weight:bold">&#39;express&#39;</span>);
-<span style="color:#fff;font-weight:bold">const</span> path = require(<span style="color:#0ff;font-weight:bold">&#39;path&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//  Dependencies: express, path, openai, dotenv
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">openai</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;openai&#39;</span>);
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;dotenv&#39;</span>).<span style="color:#a6e22e">config</span>();
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
 
-<span style="color:#007f7f">// Initializing the express app
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> app = express();
-<span style="color:#007f7f">// Port 
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> port = <span style="color:#ff0;font-weight:bold">1313</span> || process.env.PORT;
+<span style="color:#75715e">// Initializing the express app
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<span style="color:#75715e">// Port 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1313</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span>;
 
-<span style="color:#007f7f">//  Json Parser
-</span><span style="color:#007f7f"></span>app.use(express.json());
-<span style="color:#007f7f">// Public Directory
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> publicDirectory = path.join(__dirname, <span style="color:#0ff;font-weight:bold">&#34;./public&#34;</span>);
-app.use(express.<span style="color:#fff;font-weight:bold">static</span>(publicDirectory));
+<span style="color:#75715e">//  Json Parser
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">json</span>());
+<span style="color:#75715e">// Public Directory
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">publicDirectory</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#34;./public&#34;</span>);
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">publicDirectory</span>));
 
-app.use(express.urlencoded({ extended: <span style="color:#fff;font-weight:bold">false</span> }));
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">urlencoded</span>({ <span style="color:#a6e22e">extended</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> }));
 
-<span style="color:#007f7f">//Configure OpenAI
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">const</span> configuration = <span style="color:#fff;font-weight:bold">new</span> openai.Configuration({
-    organization: process.env.OPENAI_ORG,
-    apiKey: process.env.OPENAI_API_KEY,
+<span style="color:#75715e">//Configure OpenAI
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">configuration</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">openai</span>.<span style="color:#a6e22e">Configuration</span>({
+    <span style="color:#a6e22e">organization</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">OPENAI_ORG</span>,
+    <span style="color:#a6e22e">apiKey</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">OPENAI_API_KEY</span>,
 });
 
-<span style="color:#fff;font-weight:bold">const</span> openaiapi = <span style="color:#fff;font-weight:bold">new</span> openai.OpenAIApi(configuration);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">openaiapi</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">openai</span>.<span style="color:#a6e22e">OpenAIApi</span>(<span style="color:#a6e22e">configuration</span>);
 
-app.get(<span style="color:#0ff;font-weight:bold">&#39;/&#39;</span>, (req, res) =&gt; {
-    res.sendFile(path.join(__dirname, <span style="color:#0ff;font-weight:bold">&#39;/index.html&#39;</span>));
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">sendFile</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;/index.html&#39;</span>));
 });
 
   
-<span style="color:#007f7f">// Calling the /chat route and passing data to the server
-</span><span style="color:#007f7f"></span>app.post(<span style="color:#0ff;font-weight:bold">&#39;/chat&#39;</span>, <span style="color:#fff;font-weight:bold">async</span> (req, res) =&gt; {
-    <span style="color:#fff;font-weight:bold">const</span> messages = req.body.messages;
-    <span style="color:#fff;font-weight:bold">const</span> model = req.body.model;
-    <span style="color:#fff;font-weight:bold">const</span> temp = req.body.temp;
+<span style="color:#75715e">// Calling the /chat route and passing data to the server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/chat&#39;</span>, <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">messages</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">messages</span>;
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">model</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">model</span>;
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">temp</span>;
 
-    <span style="color:#fff;font-weight:bold">const</span> completion = <span style="color:#fff;font-weight:bold">await</span> openaiapi.createChatCompletion({
-        model: model,
-        messages: messages,
-        temperature: temp,
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">completion</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">openaiapi</span>.<span style="color:#a6e22e">createChatCompletion</span>({
+        <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">model</span>,
+        <span style="color:#a6e22e">messages</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">messages</span>,
+        <span style="color:#a6e22e">temperature</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">temp</span>,
     });
-    res.status(<span style="color:#ff0;font-weight:bold">200</span>).json({ result: completion.data.choices });
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">status</span>(<span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">json</span>({ <span style="color:#a6e22e">result</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">completion</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">choices</span> });
 });
 
-<span style="color:#007f7f">// Running the server on PORT 1313
-</span><span style="color:#007f7f"></span>app.listen(port, () =&gt; {
-    console.log(<span style="color:#0ff;font-weight:bold">`Pheonix AI is Running on PORT: </span><span style="color:#0ff;font-weight:bold">${</span>port<span style="color:#0ff;font-weight:bold">}</span><span style="color:#0ff;font-weight:bold">`</span>);
+<span style="color:#75715e">// Running the server on PORT 1313
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, () =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Pheonix AI is Running on PORT: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">port</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
 });
 
 </code></pre></div><h3 id="packagejson-file">Package.json File:</h3>
@@ -690,36 +691,36 @@ app.get(<span style="color:#0ff;font-weight:bold">&#39;/&#39;</span>, (req, res)
 </ul>
 <p>This package.json file serves as a configuration file for the project, providing important information about the project and its dependencies. It helps manage the project&rsquo;s development environment and allows for easy installation of dependencies and execution of scripts.</p>
 <h4 id="code-3">Code:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="font-weight:bold">&#34;name&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;chatbot&#34;</span>,
-  <span style="font-weight:bold">&#34;version&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;1.0.0&#34;</span>,
-  <span style="font-weight:bold">&#34;description&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;This is a personal chatbot using OPENAI api&#34;</span>,
-  <span style="font-weight:bold">&#34;main&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;app.js&#34;</span>,
-  <span style="font-weight:bold">&#34;scripts&#34;</span>: {
-    <span style="font-weight:bold">&#34;test&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
-    <span style="font-weight:bold">&#34;start&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;nodemon app.js&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;chatbot&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;This is a personal chatbot using OPENAI api&#34;</span>,
+  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;app.js&#34;</span>,
+  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
+    <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;nodemon app.js&#34;</span>
   },
-  <span style="font-weight:bold">&#34;repository&#34;</span>: {
-    <span style="font-weight:bold">&#34;type&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;git&#34;</span>,
-    <span style="font-weight:bold">&#34;url&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;git+https://github.com/rafay99-epic/ChatBot.git&#34;</span>
+  <span style="color:#f92672">&#34;repository&#34;</span>: {
+    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;git&#34;</span>,
+    <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;git+https://github.com/rafay99-epic/ChatBot.git&#34;</span>
   },
-  <span style="font-weight:bold">&#34;author&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;Abdul Rafay&#34;</span>,
-  <span style="font-weight:bold">&#34;license&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;ISC&#34;</span>,
-  <span style="font-weight:bold">&#34;bugs&#34;</span>: {
-    <span style="font-weight:bold">&#34;url&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;https://github.com/rafay99-epic/ChatBot/issues&#34;</span>
+  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;Abdul Rafay&#34;</span>,
+  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>,
+  <span style="color:#f92672">&#34;bugs&#34;</span>: {
+    <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/rafay99-epic/ChatBot/issues&#34;</span>
   },
-  <span style="font-weight:bold">&#34;homepage&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;https://github.com/rafay99-epic/ChatBot#readme&#34;</span>,
-  <span style="font-weight:bold">&#34;dependencies&#34;</span>: {
-    <span style="font-weight:bold">&#34;bootstrap&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^5.2.3&#34;</span>,
-    <span style="font-weight:bold">&#34;consolidate&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^0.16.0&#34;</span>,
-    <span style="font-weight:bold">&#34;dotenv&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^16.0.3&#34;</span>,
-    <span style="font-weight:bold">&#34;ejs&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^3.1.9&#34;</span>,
-    <span style="font-weight:bold">&#34;ejs-template&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^0.1.0&#34;</span>,
-    <span style="font-weight:bold">&#34;express&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^4.18.2&#34;</span>,
-    <span style="font-weight:bold">&#34;nodemon&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^2.0.22&#34;</span>,
-    <span style="font-weight:bold">&#34;openai&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^3.2.1&#34;</span>,
-    <span style="font-weight:bold">&#34;path&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^0.12.7&#34;</span>,
-    <span style="font-weight:bold">&#34;swig&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;^1.4.2&#34;</span>
+  <span style="color:#f92672">&#34;homepage&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/rafay99-epic/ChatBot#readme&#34;</span>,
+  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;bootstrap&#34;</span>: <span style="color:#e6db74">&#34;^5.2.3&#34;</span>,
+    <span style="color:#f92672">&#34;consolidate&#34;</span>: <span style="color:#e6db74">&#34;^0.16.0&#34;</span>,
+    <span style="color:#f92672">&#34;dotenv&#34;</span>: <span style="color:#e6db74">&#34;^16.0.3&#34;</span>,
+    <span style="color:#f92672">&#34;ejs&#34;</span>: <span style="color:#e6db74">&#34;^3.1.9&#34;</span>,
+    <span style="color:#f92672">&#34;ejs-template&#34;</span>: <span style="color:#e6db74">&#34;^0.1.0&#34;</span>,
+    <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.18.2&#34;</span>,
+    <span style="color:#f92672">&#34;nodemon&#34;</span>: <span style="color:#e6db74">&#34;^2.0.22&#34;</span>,
+    <span style="color:#f92672">&#34;openai&#34;</span>: <span style="color:#e6db74">&#34;^3.2.1&#34;</span>,
+    <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;^0.12.7&#34;</span>,
+    <span style="color:#f92672">&#34;swig&#34;</span>: <span style="color:#e6db74">&#34;^1.4.2&#34;</span>
   }
 }
 
@@ -756,6 +757,8 @@ app.get(<span style="color:#0ff;font-weight:bold">&#39;/&#39;</span>, (req, res)
 
         </p>
     </div>
+
+    
 
     <div class="prev-next">
         
@@ -794,18 +797,22 @@ app.get(<span style="color:#0ff;font-weight:bold">&#39;/&#39;</span>, (req, res)
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 <aside class="post-toc">

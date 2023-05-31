@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,8 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
-<hr>
+            <hr>
 <p>Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.</p>
 <p>When writing blog posts with multiple images, the size of the images becomes a crucial factor. Large image sizes can slow down website loading times, impacting user experience. To optimize website performance, we need to address various aspects, including image optimization.</p>
 <p>In this blog post, I will provide a custom script that can help you optimize images for your social media posts, blog articles, or any other purpose you desire.</p>
@@ -224,7 +225,7 @@
 <ol>
 <li>
 <p><strong>PowerToys</strong>: PowerToys is a collection of utilities for power users that enhance productivity on Windows. It provides a range of tools that offer additional functionality and customization options to optimize your workflow. You can install PowerToys using Winget. Open your PowerShell and enter the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps1" data-lang="ps1">winget install Microsoft.PowerToys
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps1" data-lang="ps1">winget install Microsoft.PowerToys
 </code></pre></div></li>
 <li>
 <p><strong>WSL</strong>: Windows Subsystem for Linux (WSL) is a compatibility layer in Windows that allows you to run a Linux environment directly on your Windows machine. It enables you to use command-line tools, utilities, and applications from various Linux distributions without the need for virtual machines or dual-boot setups. To install WSL on your system, you can follow this <a href="https://learn.microsoft.com/en-us/windows/wsl/install">guide</a>.</p>
@@ -239,42 +240,42 @@
 </ul>
 <h2 id="debian-install">Debian Install</h2>
 <p>Open your terminal and run the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install jpegoptim optipng imagemagick webp -y
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install jpegoptim optipng imagemagick webp -y
 git clone https://github.com/VirtuBox/img-optimize.git $HOME/.img-optimize
 sudo ln -s $HOME/.img-optimize/optimize.sh /usr/local/bin/img-optimize
 sudo chmod +x /usr/local/bin/img-optimize
 </code></pre></div><h2 id="arch-install">Arch Install</h2>
 <p>Open your terminal and run the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yay -S jpegoptim optipng imagemagick webp -y
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yay -S jpegoptim optipng imagemagick webp -y
 git clone https://github.com/VirtuBox/img-optimize.git $HOME/.img-optimize
 sudo ln -s $HOME/.img-optimize/optimize.sh /usr/local/bin/img-optimize
 sudo chmod +x /usr/local/bin/img-optimize
 </code></pre></div><h2 id="fedora-install">Fedora Install</h2>
 <p>Open your terminal and run the following commands:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo dnf install jpegoptim optipng ImageMagick webp-pixbuf-loader
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo dnf install jpegoptim optipng ImageMagick webp-pixbuf-loader
 git clone https://github.com/VirtuBox/img-optimize.git $HOME/.img-optimize
 sudo ln -s $HOME/.img-optimize/optimize.sh /usr/local/bin/img-optimize
 sudo chmod +x /usr/local/bin/img-optimize
 </code></pre></div><h1 id="custom-script">Custom Script</h1>
 <p>Below is a customizable script that can be used to optimize images. Remember to change the variables for FOLDER, WIDTH, and HEIGHT to suit your needs.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0f0;font-weight:bold">#!/bin/bash
-</span><span style="color:#0f0;font-weight:bold"></span><span style="color:#007f7f"># Dependencies:</span>
-<span style="color:#007f7f"># - img-optimize: https://virtubox.github.io/img-optimize/</span>
-<span style="color:#007f7f"># - Imagemagick</span>
-<span style="color:#007f7f"># - Jpegoptim</span>
-<span style="color:#007f7f"># - Optipng</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span><span style="color:#75715e"># Dependencies:</span>
+<span style="color:#75715e"># - img-optimize: https://virtubox.github.io/img-optimize/</span>
+<span style="color:#75715e"># - Imagemagick</span>
+<span style="color:#75715e"># - Jpegoptim</span>
+<span style="color:#75715e"># - Optipng</span>
 
-FOLDER=<span style="color:#0ff;font-weight:bold">&#34;/home/prometheus/GitHub-Projects/Blog-website/static/images&#34;</span>
+FOLDER<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/home/prometheus/GitHub-Projects/Blog-website/static/images&#34;</span>
 
-<span style="color:#007f7f"># Max width</span>
-WIDTH=<span style="color:#ff0;font-weight:bold">800</span>
+<span style="color:#75715e"># Max width</span>
+WIDTH<span style="color:#f92672">=</span><span style="color:#ae81ff">800</span>
 
-<span style="color:#007f7f"># Max height</span>
-HEIGHT=<span style="color:#ff0;font-weight:bold">600</span>
+<span style="color:#75715e"># Max height</span>
+HEIGHT<span style="color:#f92672">=</span><span style="color:#ae81ff">600</span>
 
-<span style="color:#007f7f"># Resize PNG or JPG to either height or width while maintaining proportions using Imagemagick</span>
-find <span style="color:#0ff;font-weight:bold">${</span>FOLDER<span style="color:#0ff;font-weight:bold">}</span> -iname <span style="color:#0ff;font-weight:bold">&#39;*.jpg&#39;</span> -o -iname <span style="color:#0ff;font-weight:bold">&#39;*.png&#39;</span> -exec convert <span style="color:#0ff;font-weight:bold">\{</span>} -verbose -resize $WIDTHx$HEIGHT<span style="color:#0ff;font-weight:bold">\&gt;</span> <span style="color:#0ff;font-weight:bold">\{</span>} <span style="color:#0ff;font-weight:bold">\;</span>
-img-optimize --std --path <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#fff;font-weight:bold">$(</span><span style="color:#fff;font-weight:bold">pwd</span><span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">&#34;</span>
+<span style="color:#75715e"># Resize PNG or JPG to either height or width while maintaining proportions using Imagemagick</span>
+find <span style="color:#e6db74">${</span>FOLDER<span style="color:#e6db74">}</span> -iname <span style="color:#e6db74">&#39;*.jpg&#39;</span> -o -iname <span style="color:#e6db74">&#39;*.png&#39;</span> -exec convert <span style="color:#ae81ff">\{</span><span style="color:#f92672">}</span> -verbose -resize $WIDTHx$HEIGHT<span style="color:#ae81ff">\&gt;</span> <span style="color:#ae81ff">\{</span><span style="color:#f92672">}</span> <span style="color:#ae81ff">\;</span>
+img-optimize --std --path <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><p>This script is currently being used on <a href="https://future-insight.blog">Future Insight</a>. You can find the source code in the references section.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>Optimizing images is crucial for improving website performance and user experience. By reducing image sizes without compromising quality, you can significantly enhance the loading speed of your website. The custom optimization script provided in this blog post offers a convenient way to optimize images for various purposes.</p>
@@ -301,6 +302,8 @@ img-optimize --std --path <span style="color:#0ff;font-weight:bold">&#34;</span>
 
         </p>
     </div>
+
+    
 
     <div class="prev-next">
         
@@ -339,18 +342,22 @@ img-optimize --std --path <span style="color:#0ff;font-weight:bold">&#34;</span>
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 <aside class="post-toc">

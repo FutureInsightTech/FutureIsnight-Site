@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,7 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
+            <hr>
 <p>Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable. In this blog, we will explore the concept of linear regression, its types, and how to implement it using Python.</p>
 <p>In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun.</p>
 <h1 id="linear-regression">Linear Regression</h1>
@@ -251,58 +253,58 @@ There are some important thing that are required to be done when you need to tra
 <ol>
 <li>Importing different libraries and the dataset called <strong>Boston</strong></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> numpy <span style="color:#fff;font-weight:bold">as</span> np
-<span style="color:#fff;font-weight:bold">import</span> pandas <span style="color:#fff;font-weight:bold">as</span> pd
-<span style="color:#fff;font-weight:bold">import</span> matplotlib.pyplot <span style="color:#fff;font-weight:bold">as</span> plt
-<span style="color:#fff;font-weight:bold">import</span> seaborn <span style="color:#fff;font-weight:bold">as</span> sns
-<span style="color:#fff;font-weight:bold">from</span> sklearn.linear_model <span style="color:#fff;font-weight:bold">import</span> LinearRegression
-<span style="color:#fff;font-weight:bold">from</span> sklearn.model_selection <span style="color:#fff;font-weight:bold">import</span> train_test_split
-<span style="color:#fff;font-weight:bold">from</span> sklearn.datasets <span style="color:#fff;font-weight:bold">import</span> load_boston
-<span style="color:#fff;font-weight:bold">from</span> sklearn <span style="color:#fff;font-weight:bold">import</span> metrics
-%matplotlib inline
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+<span style="color:#f92672">import</span> seaborn <span style="color:#66d9ef">as</span> sns
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+<span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> load_boston
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
+<span style="color:#f92672">%</span>matplotlib inline
 </code></pre></div><ol start="2">
 <li>Loading the Dataset &amp; Printing the dataset:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data= load_boston()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data<span style="color:#f92672">=</span> load_boston()
 </code></pre></div><p>In the above code we are using the data-frame library and CSV library using the csv library we are reading the excel sheet that will contain all of the data, using data frame we are loading the data into a Visualize form.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data
 </code></pre></div><ol start="3">
 <li>Getting the Data &amp; feature name:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># The explanatory variables.</span>
-X = data[<span style="color:#0ff;font-weight:bold">&#39;data&#39;</span>]
-header = data[<span style="color:#0ff;font-weight:bold">&#39;feature_names&#39;</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># The explanatory variables.</span>
+X <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;data&#39;</span>]
+header <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;feature_names&#39;</span>]
 </code></pre></div><ol start="4">
 <li>Reshaping:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Y = data[<span style="color:#0ff;font-weight:bold">&#39;target&#39;</span>]
-Y = Y.reshape(-<span style="color:#ff0;font-weight:bold">1</span>,<span style="color:#ff0;font-weight:bold">1</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Y <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;target&#39;</span>]
+Y <span style="color:#f92672">=</span> Y<span style="color:#f92672">.</span>reshape(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)
 </code></pre></div><ol start="5">
 <li>Data into Data Frame:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df = pd.DataFrame(np.append(X,Y,axis = <span style="color:#ff0;font-weight:bold">1</span>))
-df.columns = <span style="color:#fff;font-weight:bold">list</span>(header)+[<span style="color:#0ff;font-weight:bold">&#39;PRICE&#39;</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(np<span style="color:#f92672">.</span>append(X,Y,axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>))
+df<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> list(header)<span style="color:#f92672">+</span>[<span style="color:#e6db74">&#39;PRICE&#39;</span>]
 </code></pre></div><ol start="6">
 <li>Rounding the Data Set:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">np.round(df.corr(),<span style="color:#ff0;font-weight:bold">2</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">np<span style="color:#f92672">.</span>round(df<span style="color:#f92672">.</span>corr(),<span style="color:#ae81ff">2</span>)
 </code></pre></div><ol start="7">
 <li>Apply Linear Regression Model:
 So when you want to use linear regression, there are two ways: <strong>1</strong> You can use the built-in model and library; this method is fast and does not require much logic. <strong>2.</strong> You can code linear regression from scratch; by doing this, you can control the logic of the application and push the model to its limits.</li>
 </ol>
 <p>In this Blog I will be using built in functions and libraries to compute Linear Regression.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">lm = LinearRegression(fit_intercept=<span style="color:#fff;font-weight:bold">True</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">lm <span style="color:#f92672">=</span> LinearRegression(fit_intercept<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 
 </code></pre></div><ol start="8">
 <li>Fitting the Data into Model:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">lm.fit(df[[<span style="color:#0ff;font-weight:bold">&#39;parent&#39;</span>]],df[[<span style="color:#0ff;font-weight:bold">&#39;child&#39;</span>]])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">lm<span style="color:#f92672">.</span>fit(df[[<span style="color:#e6db74">&#39;parent&#39;</span>]],df[[<span style="color:#e6db74">&#39;child&#39;</span>]])
 </code></pre></div><ol start="9">
 <li>Display the results in the form of Data frame:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># Display the parameters as a DataFrame.</span>
-parametersDF = pd.DataFrame(lm.coef_,index=[<span style="color:#0ff;font-weight:bold">&#39;Parameter Value&#39;</span>],columns=header)
-parametersDF[<span style="color:#0ff;font-weight:bold">&#39;Intercept&#39;</span>] = lm.intercept_[<span style="color:#ff0;font-weight:bold">0</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Display the parameters as a DataFrame.</span>
+parametersDF <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(lm<span style="color:#f92672">.</span>coef_,index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Parameter Value&#39;</span>],columns<span style="color:#f92672">=</span>header)
+parametersDF[<span style="color:#e6db74">&#39;Intercept&#39;</span>] <span style="color:#f92672">=</span> lm<span style="color:#f92672">.</span>intercept_[<span style="color:#ae81ff">0</span>]
 parametersDF
 
 </code></pre></div><p>In the above patch of code, we are reading the training data set into a data frame, and then that data frame will be displayed.</p>
@@ -310,16 +312,16 @@ parametersDF
 <li>Predicting the Values:
 Now our data is fit and model is trained, we will start with the predication.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">predicty=lm.predict(df[[<span style="color:#0ff;font-weight:bold">&#39;parent&#39;</span>]])
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">predicty<span style="color:#f92672">=</span>lm<span style="color:#f92672">.</span>predict(df[[<span style="color:#e6db74">&#39;parent&#39;</span>]])
 </code></pre></div><ol start="11">
 <li>Result:
 Now we will start with the displaying the result.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007f7f"># Display real Y vs predicted Y.</span>
-plt.scatter(Y,predicty,c = <span style="color:#0ff;font-weight:bold">&#39;green&#39;</span>, s=<span style="color:#ff0;font-weight:bold">15</span>, alpha=<span style="color:#ff0;font-weight:bold">1</span>)
-plt.xlabel(<span style="color:#0ff;font-weight:bold">&#39;REAL PRICE&#39;</span>)
-plt.ylabel(<span style="color:#0ff;font-weight:bold">&#39;PREDICTED PRICE&#39;</span>)
-plt.show()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Display real Y vs predicted Y.</span>
+plt<span style="color:#f92672">.</span>scatter(Y,predicty,c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;green&#39;</span>, s<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;REAL PRICE&#39;</span>)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;PREDICTED PRICE&#39;</span>)
+plt<span style="color:#f92672">.</span>show()
 </code></pre></div><p>Once the code is compiled then your output should like this:
 <img src="/images/2023/Ml-algo/Linear-Regression/result.jpg" alt="result"></p>
 <h1 id="more-examples">More Examples:</h1>
@@ -370,6 +372,8 @@ plt.show()
         </p>
     </div>
 
+    
+
     <div class="prev-next">
         
             
@@ -407,18 +411,22 @@ plt.show()
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 <aside class="post-toc">

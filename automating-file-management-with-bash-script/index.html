@@ -62,9 +62,9 @@
     </script>
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -72,10 +72,12 @@
 
     
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="/js/animation.js"></script>
 
-    
-    <script id="dsq-count-scr" src="//https-future-insight-blog.disqus.com/count.js" async></script>
-    
     
     
 </head>
@@ -214,8 +216,7 @@
 
     <div class="post-content">
         <p>
-            <link rel="stylesheet" href="/css/style.css">
-<hr>
+            <hr>
 <p>In today&rsquo;s fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we&rsquo;ll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We&rsquo;ll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process. Let&rsquo;s dive in!</p>
 <h1 id="defining-the-objective">Defining the Objective</h1>
 <p>To begin, it&rsquo;s crucial to define the objective of our script. In our case, we want to automate the detection and movement of Git repositories and images to designated folders. This will save time and streamline file management.</p>
@@ -227,76 +228,76 @@
 <p>Let&rsquo;s go through the key sections of our Bash script:</p>
 <h2 id="setting-destination-folders">Setting Destination Folders</h2>
 <p>We start by setting the destination folder paths for Git repositories and images. These paths will be used throughout the script for moving files. Here&rsquo;s the code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># Set the destination folder paths</span>
-gitDestination=<span style="color:#0ff;font-weight:bold">&#34;</span>$HOME<span style="color:#0ff;font-weight:bold">/Documents/Testing-Repo&#34;</span>
-imageDestination=<span style="color:#0ff;font-weight:bold">&#34;</span>$HOME<span style="color:#0ff;font-weight:bold">/Pictures/Images&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Set the destination folder paths</span>
+gitDestination<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/Documents/Testing-Repo&#34;</span>
+imageDestination<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/Pictures/Images&#34;</span>
 </code></pre></div><h2 id="functions-for-moving-images-and-git-repositories">Functions for Moving Images and Git Repositories</h2>
 <p>Next, we create two functions to handle the movement of image directories and Git repositories. The <code>moveImages()</code> function moves image files from a specified folder to the image destination folder, while the <code>moveGitRepo()</code> function moves Git repositories to the Git destination folder. These functions perform necessary checks and move the files accordingly. Here are the code snippets:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># Function to move images to the image destination folder</span>
-moveImages() {
-    <span style="color:#007f7f"># Code snippet for moving images</span>
-    <span style="color:#007f7f"># ...</span>
-}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Function to move images to the image destination folder</span>
+moveImages<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e"># Code snippet for moving images</span>
+    <span style="color:#75715e"># ...</span>
+<span style="color:#f92672">}</span>
 
-<span style="color:#007f7f"># Function to move Git repositories to the Git destination folder</span>
-moveGitRepo() {
-    <span style="color:#007f7f"># Code snippet for moving Git repositories</span>
-    <span style="color:#007f7f"># ...</span>
-}
+<span style="color:#75715e"># Function to move Git repositories to the Git destination folder</span>
+moveGitRepo<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e"># Code snippet for moving Git repositories</span>
+    <span style="color:#75715e"># ...</span>
+<span style="color:#f92672">}</span>
 </code></pre></div><h2 id="checking-and-moving-existing-files">Checking and Moving Existing Files</h2>
 <p>The script starts by checking if the destination folders for Git repositories and images exist. If they don&rsquo;t, it creates them using <code>mkdir -p</code>. Then, it moves existing Git repositories (excluding those with images) and image files from the Downloads folder to the designated destination folders. Here&rsquo;s the code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># Check if the destination folder exists for Git repositories, if not, create it</span>
-<span style="color:#fff;font-weight:bold">if</span> [ ! -d <span style="color:#0ff;font-weight:bold">&#34;</span>$gitDestination<span style="color:#0ff;font-weight:bold">&#34;</span> ]; <span style="color:#fff;font-weight:bold">then</span>
-    mkdir -p <span style="color:#0ff;font-weight:bold">&#34;</span>$gitDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
-    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;✅ Created destination folder for Git repositories: </span>$gitDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
-<span style="color:#fff;font-weight:bold">fi</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Check if the destination folder exists for Git repositories, if not, create it</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -d <span style="color:#e6db74">&#34;</span>$gitDestination<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    mkdir -p <span style="color:#e6db74">&#34;</span>$gitDestination<span style="color:#e6db74">&#34;</span>
+    echo <span style="color:#e6db74">&#34;✅ Created destination folder for Git repositories: </span>$gitDestination<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
 
-<span style="color:#007f7f"># Move existing Git repositories to the destination folder, excluding those containing images</span>
-find <span style="color:#0ff;font-weight:bold">&#34;</span>$HOME<span style="color:#0ff;font-weight:bold">/Downloads&#34;</span> -maxdepth <span style="color:#ff0;font-weight:bold">1</span> -type d -name <span style="color:#0ff;font-weight:bold">&#34;*.git&#34;</span> -exec sh -c <span style="color:#0ff;font-weight:bold">&#39;
-</span><span style="color:#0ff;font-weight:bold">    repoDir=$(dirname &#34;$0&#34;)
-</span><span style="color:#0ff;font-weight:bold">    if ! find &#34;$repoDir&#34; -type f -exec file -N -i -- {} + | grep -qE &#34;image/&#34;; then
-</span><span style="color:#0ff;font-weight:bold">        moveGitRepo &#34;$repoDir&#34; &#34;$gitDestination&#34;
-</span><span style="color:#0ff;font-weight:bold">    fi
-</span><span style="color:#0ff;font-weight:bold">&#39;</span> {} <span style="color:#0ff;font-weight:bold">\;</span>
+<span style="color:#75715e"># Move existing Git repositories to the destination folder, excluding those containing images</span>
+find <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/Downloads&#34;</span> -maxdepth <span style="color:#ae81ff">1</span> -type d -name <span style="color:#e6db74">&#34;*.git&#34;</span> -exec sh -c <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">    repoDir=$(dirname &#34;$0&#34;)
+</span><span style="color:#e6db74">    if ! find &#34;$repoDir&#34; -type f -exec file -N -i -- {} + | grep -qE &#34;image/&#34;; then
+</span><span style="color:#e6db74">        moveGitRepo &#34;$repoDir&#34; &#34;$gitDestination&#34;
+</span><span style="color:#e6db74">    fi
+</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
 
 
 
-<span style="color:#007f7f"># Check if the destination folder exists for images, if not, create it</span>
-<span style="color:#fff;font-weight:bold">if</span> [ ! -d <span style="color:#0ff;font-weight:bold">&#34;</span>$imageDestination<span style="color:#0ff;font-weight:bold">&#34;</span> ]; <span style="color:#fff;font-weight:bold">then</span>
-    mkdir -p <span style="color:#0ff;font-weight:bold">&#34;</span>$imageDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
-    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;✅ Created destination folder for images: </span>$imageDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
-<span style="color:#fff;font-weight:bold">fi</span>
+<span style="color:#75715e"># Check if the destination folder exists for images, if not, create it</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -d <span style="color:#e6db74">&#34;</span>$imageDestination<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    mkdir -p <span style="color:#e6db74">&#34;</span>$imageDestination<span style="color:#e6db74">&#34;</span>
+    echo <span style="color:#e6db74">&#34;✅ Created destination folder for images: </span>$imageDestination<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
 
-<span style="color:#007f7f"># Move all existing image files from the Downloads folder to the image destination folder</span>
-moveImages <span style="color:#0ff;font-weight:bold">&#34;</span>$HOME<span style="color:#0ff;font-weight:bold">/Downloads&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;</span>$imageDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
+<span style="color:#75715e"># Move all existing image files from the Downloads folder to the image destination folder</span>
+moveImages <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/Downloads&#34;</span> <span style="color:#e6db74">&#34;</span>$imageDestination<span style="color:#e6db74">&#34;</span>
 </code></pre></div><h2 id="live-monitoring-for-new-files">Live Monitoring for New Files</h2>
 <p>The script enters a live monitoring loop using <code>inotifywait</code>. It waits for new directory creations in the Downloads folder and performs actions based on the type of the newly created directory. If it&rsquo;s a Git repository without images, it waits for 3 minutes using a countdown timer and then moves it to the Git destination folder. If it&rsquo;s an image directory, it moves it to the image destination folder. Here&rsquo;s the code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007f7f"># Start live monitoring of the Downloads folder for new directory creations using inotifywait</span>
-inotifywait -m -e create -r --format <span style="color:#0ff;font-weight:bold">&#34;%w%f&#34;</span> -q <span style="color:#0ff;font-weight:bold">&#34;</span>$HOME<span style="color:#0ff;font-weight:bold">/Downloads&#34;</span> |
-<span style="color:#fff;font-weight:bold">while</span> <span style="color:#fff;font-weight:bold">read</span> -r directory; <span style="color:#fff;font-weight:bold">do</span>
-    <span style="color:#007f7f"># Check if the newly created directory is a Git repository</span>
-    <span style="color:#fff;font-weight:bold">if</span> [ -d <span style="color:#0ff;font-weight:bold">&#34;</span>$directory<span style="color:#0ff;font-weight:bold">/.git&#34;</span> ]; <span style="color:#fff;font-weight:bold">then</span>
-        <span style="color:#007f7f"># Check if the Git repository contains images</span>
-        <span style="color:#fff;font-weight:bold">if</span> ! find <span style="color:#0ff;font-weight:bold">&#34;</span>$directory<span style="color:#0ff;font-weight:bold">&#34;</span> -type f -exec file -N -i -- {} + | grep -qE <span style="color:#0ff;font-weight:bold">&#34;image/&#34;</span>; <span style="color:#fff;font-weight:bold">then</span>
-            <span style="color:#007f7f"># Move the Git repository to the Git destination folder after 3 minutes</span>
-            moveGitRepo <span style="color:#0ff;font-weight:bold">&#34;</span>$directory<span style="color:#0ff;font-weight:bold">&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;</span>$gitDestination<span style="color:#0ff;font-weight:bold">&#34;</span> &amp;
-        <span style="color:#fff;font-weight:bold">fi</span>
-    <span style="color:#fff;font-weight:bold">elif</span> file -N -i <span style="color:#0ff;font-weight:bold">&#34;</span>$directory<span style="color:#0ff;font-weight:bold">&#34;</span> | grep -qE <span style="color:#0ff;font-weight:bold">&#39;image/&#39;</span>; <span style="color:#fff;font-weight:bold">then</span>
-        <span style="color:#007f7f"># Check if the newly created directory is an image</span>
-        <span style="color:#007f7f"># Move the image directory to the image destination folder</span>
-        moveImages <span style="color:#0ff;font-weight:bold">&#34;</span>$directory<span style="color:#0ff;font-weight:bold">&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;</span>$imageDestination<span style="color:#0ff;font-weight:bold">&#34;</span>
-    <span style="color:#fff;font-weight:bold">fi</span>
-<span style="color:#fff;font-weight:bold">done</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Start live monitoring of the Downloads folder for new directory creations using inotifywait</span>
+inotifywait -m -e create -r --format <span style="color:#e6db74">&#34;%w%f&#34;</span> -q <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/Downloads&#34;</span> |
+<span style="color:#66d9ef">while</span> read -r directory; <span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># Check if the newly created directory is a Git repository</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -d <span style="color:#e6db74">&#34;</span>$directory<span style="color:#e6db74">/.git&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+        <span style="color:#75715e"># Check if the Git repository contains images</span>
+        <span style="color:#66d9ef">if</span> ! find <span style="color:#e6db74">&#34;</span>$directory<span style="color:#e6db74">&#34;</span> -type f -exec file -N -i -- <span style="color:#f92672">{}</span> + | grep -qE <span style="color:#e6db74">&#34;image/&#34;</span>; <span style="color:#66d9ef">then</span>
+            <span style="color:#75715e"># Move the Git repository to the Git destination folder after 3 minutes</span>
+            moveGitRepo <span style="color:#e6db74">&#34;</span>$directory<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$gitDestination<span style="color:#e6db74">&#34;</span> &amp;
+        <span style="color:#66d9ef">fi</span>
+    <span style="color:#66d9ef">elif</span> file -N -i <span style="color:#e6db74">&#34;</span>$directory<span style="color:#e6db74">&#34;</span> | grep -qE <span style="color:#e6db74">&#39;image/&#39;</span>; <span style="color:#66d9ef">then</span>
+        <span style="color:#75715e"># Check if the newly created directory is an image</span>
+        <span style="color:#75715e"># Move the image directory to the image destination folder</span>
+        moveImages <span style="color:#e6db74">&#34;</span>$directory<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$imageDestination<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
 </code></pre></div><h1 id="running-the-script-as-a-system-process">Running the Script as a System Process</h1>
 <p>To ensure our script runs as a background process whenever the Linux system starts, we&rsquo;ll create a systemd service. This allows the script to run continuously in the background, monitoring files and performing actions. Follow the steps below to create and configure the systemd service:</p>
 <ol>
 <li>Create a service file for the script using a text editor, such as <code>nano</code>:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/systemd/system/file-management.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/systemd/system/file-management.service
 </code></pre></div><ol start="2">
 <li>Add the following content to the file:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">[Unit]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">[Unit]
 Description=File Management Script
 After=network.target
 
@@ -315,19 +316,19 @@ WantedBy=multi-user.target
 <p>Reload systemd to read the new service:</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl daemon-reload
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl daemon-reload
 </code></pre></div><ol start="5">
 <li>Enable the service to start on boot:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl <span style="color:#fff;font-weight:bold">enable</span> file-management.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl enable file-management.service
 </code></pre></div><ol start="6">
 <li>Start the service:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start file-management.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start file-management.service
 </code></pre></div><ol start="7">
 <li>Verify that the service is running:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl status file-management.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl status file-management.service
 </code></pre></div><p>Congratulations! Your script is now running as a system process. It will start automatically on system boot and continue monitoring files in the background.</p>
 <h2 id="screenshot-created-system-process-for-file-management-script">Screenshot: Created System Process for File Management Script</h2>
 <p><img src="/images/2023/automate-task/proof.png" alt="image-proof"></p>
@@ -354,6 +355,8 @@ WantedBy=multi-user.target
 
         </p>
     </div>
+
+    
 
     <div class="prev-next">
         
@@ -392,18 +395,22 @@ WantedBy=multi-user.target
         
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-        
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>
 
 <aside class="post-toc">
