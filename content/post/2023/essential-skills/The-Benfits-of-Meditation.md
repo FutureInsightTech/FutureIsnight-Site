@@ -10,8 +10,6 @@ url: /Benefits-of-Mindfulness-Meditation/
 image: "/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
 ---
 
-<link rel="stylesheet" href="/css/style.css">
-
 ----
 
 In today's fast-paced world, it can be challenging to find a moment of peace and quiet. We're constantly bombarded with notifications, emails, and messages, making it difficult to focus on the present moment. However, mindfulness meditation offers a way to cultivate inner peace and improve your overall well-being. In this article, we'll explore the benefits of mindfulness meditation and why you should make it a daily practice.

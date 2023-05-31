@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /tools-for-ml/
 ---
 
-<link rel="stylesheet" href="/css/style.css">
+---- 
 
 Hi! My name is Abdul Rafay, and I work as a Web Development and Machine Learning Engineer. I recently finished my studies, and I’ve been working in the web development industry for a while, but machine learning is a new field for me. I’m learning, and my passion grows as my experience in this field grows. So as a developer, I’ll show you some of the tools that are awesome to work with when you are in the field of machine learning and web development.
 

@@ -9,9 +9,9 @@ showTableOfContents: true
 url: //
 image: "/images/2023/"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 -----------
+
 
 # Implementation: 
 

@@ -8,8 +8,6 @@ type: "page"
 url: /policy/
 ---
 
-<link rel="stylesheet" href="/css/style.css">
-
 # Preview your GDPR Privacy Policy
 Privacy Policy for Future Insight
 At Future Insight, accessible from future-insight.blog, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Future Insight and how we use it.
@@ -71,7 +69,7 @@ Another part of our priority is adding protection for children while using the i
 Future Insight does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
 
 # Online Privacy Policy Only
-Our Privacy Policy created at GDPRPrivacyPolicy.net) applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Future Insight. This policy is not applicable to any information collected offline or via channels other than this website.
+Our Privacy Policy created at GDPRPrivacyPolicy.net applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Future Insight. This policy is not applicable to any information collected offline or via channels other than this website.
 
 # Consent
 By using our website, you hereby consent to our Privacy Policy and agree to its terms.

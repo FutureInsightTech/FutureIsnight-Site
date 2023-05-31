@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /automating-file-management-with-bash-script/
 image: "/images/2023/automate-task/Automating-thumbnail.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
+
 
 ---
 In today's fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we'll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We'll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process. Let's dive in!

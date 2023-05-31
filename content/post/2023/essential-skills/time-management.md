@@ -8,7 +8,7 @@ description: "Time is one of the most important resources and you need to spend 
 showTableOfContents: true
 url: /time-management/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
 ----
 Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 

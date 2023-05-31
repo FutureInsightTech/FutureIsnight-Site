@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /fedora-review/
 image: "/images/2023/fedora38/fedora38.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
+
 
 ----
 I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, "Why not? Let's try Fedora and see what's the hype?" Why people love Fedora so much and what it is like to run Fedora for a while
@@ -102,13 +102,6 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 # Thumbnail
 ![fedora38](/images/2023/fedora38/fedora38.png)
-<!-- # References: -->
-<!-- Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help. -->
-<!-- ## Articles references: -->
-<!-- - [Article 1]() -->
-
-<!-- ## GitHub Repository: -->
-<!-- - [GitHub Repository 1]() -->
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

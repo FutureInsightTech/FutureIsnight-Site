@@ -8,7 +8,8 @@ description: ""
 showTableOfContents: true
 url: /FDIA/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+-----
 
 False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 

@@ -1,0 +1,37 @@
+body {
+    transition: background-color 0.5s ease;
+    }
+    h1, h2, h3, h4, h5, h6, p{
+    transition: color 0.5s ease;
+    }
+    a{
+    transition: color 0.1s ease-out;
+    }
+    ul, ol , li {
+        transition: color 0.1s ease;
+    }
+    body {
+    animation: fadeToDark 0.5s ease;
+    }
+    .circle {
+    animation: fadeToDark 0.5s ease;
+    }
+    .dark-mode body {
+    animation: fadeToLight 0.5s ease;
+    }
+    .dark-mode .circle {
+    animation: fadeToLight 0.5s ease;
+    }
+    h1 
+    {
+    text-align: center;
+    }
+    p {
+    text-align: justify;
+    }
+    ul {
+    text-align: justify;
+    }
+    ol {
+    text-align: justify;
+    }

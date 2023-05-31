@@ -4,8 +4,9 @@ type: "page"
 description: "About Author"
 url: /author/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
 <!-- ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png) -->
+<!-- Css for The Circle and into Image -->
 <style>
 .circle {
   width: 300px;
@@ -29,9 +30,6 @@ url: /author/
   <img src="/images/avatar.jpg" alt="Your Image">
 </div>
 
-<!-- <img src="/images/avatar.jpg" alt="Avatar">  -->
-
-<!-- ![My project2](/images/avatar2.png) -->
 # 👋 Hi there, I’m Abdul Rafay
 
 **I'm a Full Stack Developer & Machine Learning Engineer.**

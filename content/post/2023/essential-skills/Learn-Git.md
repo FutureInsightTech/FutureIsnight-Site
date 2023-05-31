@@ -8,7 +8,6 @@ description: "Learn how to use git and GitHub."
 showTableOfContents: true
 url: /learn-git-&-github/
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 ----
 
