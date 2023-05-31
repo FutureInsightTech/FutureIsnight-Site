@@ -9,8 +9,8 @@ showTableOfContents: true
 url: /MidnightTokyoWM/
 image: "/images/2023/my-new-desktop/Midnight-Tokyo.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
+   
 -----------
 
 Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.

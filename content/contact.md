@@ -7,9 +7,6 @@ url: /contact/
 <html>
 <head>
   <style>
-    body {
-      overflow: hidden; /* Disable scrolling */
-    }
     .container {
       max-width: 750px;
       padding: 10px;

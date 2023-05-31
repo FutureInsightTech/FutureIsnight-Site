@@ -9,10 +9,9 @@ showTableOfContents: true
 url: /decision-tree/
 image: "/images/2023/Ml-algo/Decision-Tree/Decision-Tree.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
+---
 
-# Introduction
 I came across a project, and in that project, I have to different machine learning classifiers or machine learning algorithms. I know how to apply them, but it's been a while, so today I did it., We will revisit all of the concepts of the decision tree, from major terms to code implementation.
 
 # Decision Tree

@@ -10,7 +10,6 @@ url: /install-linux/
 image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
 
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 ----
 You are already aware that I use Linux for everything, from development to my regular tasks.If you don't have any idea what Linux is, check out my last [blog](https://future-insight.blog/world-of-linx).

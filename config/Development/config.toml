@@ -41,7 +41,7 @@ enableRobotsTXT = true
     code_copy_button = true 
     author = "Abdul Rafay"
     mainSections = ["posts", "projects","Authors"]
-    pygmentsStyle = "catppuccin-frappe" 
+    pygmentsStyle = "monokai" 
   
   #---------------------------
   #     Google Analytics
@@ -150,7 +150,7 @@ enableRobotsTXT = true
       hl_inline = false
       lineAnchors = ''
       noHl = false
-      style = 'catppuccin-frappe'
+      style = 'monokai'
       
   #-------------------------
   #  Pre-Load images

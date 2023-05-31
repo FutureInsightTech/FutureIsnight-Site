@@ -9,7 +9,8 @@ description: "Learn the basic to create your own ML Model"
 showTableOfContents: true
 url: /create-your-own-ml-model/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+----
 
 Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we'll walk through the basics of designing a machine learning model from scratch.
 # Steps:

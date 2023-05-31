@@ -9,7 +9,6 @@ showTableOfContents: true
 url: /Pheonix-AI/
 image: "/images/2023/Pheonix-AI/Pheonix-AI.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 -----------
 
