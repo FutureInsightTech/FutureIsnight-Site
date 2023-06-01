@@ -21,7 +21,8 @@
                 </a>
             </div>
             {{ end }}
-        
+            
+            <!-- Dark Mode Button -->
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
@@ -29,7 +30,8 @@
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
-        
+            
+            <!-- Sub Menu -->
             <div class="nav-link dropdown-container">
                 <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
                 <ul class="dropdown-menu">
@@ -41,7 +43,8 @@
                     {{ end }}
                 </ul>
             </div>
-        
+
+            <!-- Mobile View -->
             <ul class="nav-hamburger-list visibility-hidden">
                 {{ range .Site.Menus.main }}
                 <li class="nav-item">

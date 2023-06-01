@@ -103,13 +103,13 @@ enableRobotsTXT = true
     url = "/About-Us/"
     name = "About Us"
     weight = 1
-    pre = "<span data-feather='info'></span>"
+    Icon = "<span data-feather='info'></span>"
 
   [[menu.dropdown]]
     identifier = "Privacy Policy"
     url = "/policy/"
     name = "Privacy Policy"
-    pre = "<span data-feather='lock'></span>"
+    Icon = "<span data-feather='lock'></span>"
     weight = 2
   
   [[menu.dropdown]]
@@ -117,7 +117,7 @@ enableRobotsTXT = true
     url="/contact/"
     name="Contact US"
     weight=3
-    pre="<span data-feather='send'></span>"
+    Icon="<span data-feather='send'></span>"
     
     
 # --------------------------------------

@@ -5,7 +5,6 @@ description: "About Author"
 url: /author/
 ---
 
-<!-- ![My project2](https://user-images.githubusercontent.com/82662797/168483717-3d746709-6ae9-487a-bdd7-ebcb137ea919.png) -->
 <!-- Css for The Circle and into Image -->
 <style>
 .circle {
@@ -24,6 +23,63 @@ url: /author/
   height: 100%;
   object-fit: cover;
 }
+
+/* Skill bar animation */
+    .skill-card {
+          margin-bottom: 20px;
+        }
+
+    .skill-bar {
+      width: 100%;
+      height: 20px;
+      background-color: #2d333b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background-color: #4caf50;
+      border-radius: 10px;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 300px;
+      height: 300px;
+      /* background-color: #f5f5f5; */
+      border-radius: 8px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .card-content p {
+      margin-bottom: 0;
+    }
+    .card-text p {
+      color: black; /* Adjust the color to your preference */
+    }
 </style>
 
 <div class="circle">
@@ -32,32 +88,229 @@ url: /author/
 
 # 👋 Hi there, I’m Abdul Rafay
 
-**I'm a Full Stack Developer & Machine Learning Engineer.**
+🌟 Welcome to the digital realm of excellence! I am thrilled to introduce myself as a visionary Full Stack Developer and Machine Learning Engineer, driven by an unwavering passion for crafting extraordinary experiences that leave a lasting impression.
 
-- ⚒️ I build and design different websites for my clients. Not only that, I also train and test different machine learning algorithms to get the desired results.
-- 💼 I have 2 years of experience in designing Products, building websites and contribute code to the open source community. 
-- 🌱 I'm honing all my skills: learning machine learning, web development, and living my life.
-- 📖 To be the best in my field, I'm learning algorithms and the most recent Web technologies. 
-- 👀 Check out my [blogs](https://rafayblogs.tech) and my running projects on [Github](https://github.com/rafay99-epic) and give me your feedback. See you next time!❤️
+✨ With my creative wizardry, I transcend the boundaries of ordinary web development. I orchestrate captivating symphonies of code and design, elevating websites into immersive masterpieces that enchant and inspire. Simultaneously, I delve into the enchanting realm of machine learning, breathing life into algorithms and unlocking their full potential to shape the future.
 
-# Contact Me
-**Do you have a project or need a Solution?**
+🚀 Over the course of my journey, I have honed my skills to perfection, harnessing the latest advancements in technology to create transformative solutions. My expertise in product design, web development, and open source contributions is a testament to my relentless pursuit of excellence.
 
-**Contact me to get in touch now!**  
-- 📫 [Email](mailto:99marafay@gmail.com) 
-- 📝 [Blog Website](https://future-insight.blog)
-- 🌐 [Portfolio Website](https://rafay99.info)
+🌱 Embracing the spirit of continuous growth, I thrive on the cutting edge of innovation. Exploring the depths of intricate algorithms and embracing emerging web technologies, I am a trailblazer navigating uncharted territories. My thirst for knowledge knows no bounds as I strive to redefine what's possible.
 
-## Social Media:
-- 🐦 [Twitter](https://twitter.com/abdul_rafay99/)
-- 🔗 [Linkined](https://linkedin.com/in/abdul-rafay-0ab626197)
-- 📷 [Instagram](https://instagram.com/abdul_rafay99)
+✍️ Venture into the captivating universe of my [blogs](https://future-insight.blog/) to delve into profound insights and thought-provoking ideas. Immerse yourself in the symphony of my [Github](https://github.com/rafay99-epic) projects, where every line of code dances with brilliance. I eagerly await your feedback, as it fuels my drive to constantly evolve and surpass expectations.
+
+🌌 Prepare to embark on an extraordinary journey where possibilities are limitless and innovation knows no bounds. Together, let's shape a future that redefines the boundaries of what can be achieved! ❤️
+
+------
+
+<h1> Skills </h1>
+Here are some of my skills that I have accuired in my life time.
+
+<h2>Development & Problem Solving</h2>
+<p>
+From the start of begining of my university life I want to gain more and more experience with my skills and I became a Machine Learning Engineer and a Full Stack Developer.
+</p>
+<h3>Machine Learning</h3>
+
+- Training & Tesing Model 
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="70%"></div>
+    </div>
+    </div>
+- Data Processing
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="65%"></div>
+    </div>
+    </div>
+- Reading & Analyzing Data Processing
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="60%"></div>
+    </div>
+    </div>
+- Data Visualization
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="60%"></div>
+    </div>
+    </div>
+
+
+<h3>Web Development</h3>
+
+- Back End Development
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="75%"></div>
+    </div>
+    </div>
+- Database Management &  Development
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="70%"></div>
+    </div>
+    </div>
+- Front End Development
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="60%"></div>
+    </div>
+    </div>
+- API Development
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="50%"></div>
+    </div>
+    </div>
+
+<h3>Blogging & Content Writing</h3>
+
+- Content Writing
+  <div class="skill-card">
+    <div class="skill-bar">
+      <div class="skill-progress" data-progress="75%"></div>
+    </div>
+    </div>
+
+
+<!-- java Script Function -->
+<script>
+    function animateSkillsOnScroll() {
+      const skillProgressBars = document.querySelectorAll('.skill-progress');
+      const options = {
+        threshold: 0.21 // Adjust this value based on when you want the animation to start
+      };
+
+      function animateProgressBar(progressBar) {
+        const progressValue = progressBar.dataset.progress;
+        progressBar.style.width = '0';
+        setTimeout(() => {
+          progressBar.style.width = progressValue;
+        }, 500);
+      }
+
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateProgressBar(entry.target);
+            observer.unobserve(entry.target);
+          } else {
+            entry.target.style.width = '5'; // Reset the progress bar animation when not visible
+          }
+        });
+      }
+
+      function reloadProgressBars() {
+        skillProgressBars.forEach((progressBar) => {
+          observer.observe(progressBar);
+        });
+      }
+
+      const observer = new IntersectionObserver(handleIntersection, options);
+      reloadProgressBars();
+
+      window.addEventListener('scroll', reloadProgressBars);
+    }
+
+    animateSkillsOnScroll();
+</script>
+
+----
+
+<h1>Social Media</h1>
+
+<div class="card-container">
+  <div class="card" onclick="redirectToGitHub()">
+    <a href="https://github.com/rafay99-epic" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/author-page-images/GitHub.png" alt="GitHub">
+      <div class="card-content">
+        <h3>GitHub</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card" onclick="redirectToTwitter()">
+    <a href="https://twitter.com/abdul_rafay99/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/author-page-images/Untitled design.png" alt="Twitter">
+      <div class="card-content">
+        <h3>Twitter</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card" onclick="redirectToLinkedIn()">
+    <a href="https://www.linkedin.com/in/abdul-rafay-0ab626197" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/author-page-images/Linkedin.png" alt="LinkedIn">
+      <div class="card-content">
+        <h3>LinkedIn</h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+-----
+
+<h1>Tools & Technologies</h1>
+<h3>Machine Learning</h3>
+
+<h3>Web Developmment</h3>
+
+<h3>Content Writing</h3>
+
+<h3>Operating System</h3>
+
+
+
+
+
+
 <!-- 
-- [![Twitter](/images/img/twitter-dark.svg)](https://twitter.com/abdul_rafay99/)
-- [![Linkined](/images/img/linkedin-dark.svg)](https://linkedin.com/in/abdul-rafay-0ab626197)
-- [![Instagram](/images/img/instagram-dark.svg)](https://instagram.com/abdul_rafay99) -->
+<div class="card-container">
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code">
+    <div class="card-content">Visual Studio Code</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+    <div class="card-content">HTML5</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+    <div class="card-content">CSS3</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+    <div class="card-content">JavaScript</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+    <div class="card-content">Node.js</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+    <div class="card-content">MongoDB</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+    <div class="card-content">MySQL</div>
+  </div>
+  <div class="card">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+    <div class="card-content">Git</div>
+  </div>
+  <div class="card">
+    <img src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" alt="GitHub">
+    <div class="card-content">GitHub</div>
+  </div>
+  <div class="card">
+    <img src="/images/img/terminal-dark.svg" alt="Terminal">
+    <div class="card-content">Terminal</div>
+  </div>
+</div> -->
 
-# Languages and Tools
+
+
+
+<!-- # Languages and Tools -->
 <img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
 <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
@@ -70,16 +323,16 @@ url: /author/
 <img align="left" alt="Terminal" width="26px" src="/images/img/terminal-dark.svg" />
 <br>
 
-# Top Projects on GitHub 🧑‍💻
+<!-- # Top Projects on GitHub 🧑‍💻
 1. [Parking Assistant System](https://github.com/rafay99-epic/Parking-Assistant)
 2. [Blog Website](https://github.com/rafay99-epic/Future-Insight)
 3. [Personal Portfolio](https://github.com/rafay99-epic/Portfolio-Website)
 4. [Gnome-Setup](https://github.com/rafay99-epic/Gnome-setup)
 5. [Development Set](https://github.com/1-Power/Development-Setup)
 6. [1-Power Website](https://github.com/1-Power/1-Power-website)
-7. [Shafiq Law Chamber(SLC) Website](https://github.com/1-Power/SLC)
+7. [Shafiq Law Chamber(SLC) Website](https://github.com/1-Power/SLC) -->
 
-
+<!-- 
 # My GitHub Stats 📈
 These are the stats of my GitHub account. I'm a very active user, and I contribute to the open-source community. I'm always learning new things, and I'm always trying to improve my skills. I'm also a very active user on GitHub. I'm always learning new things, and I'm always trying to improve my skills.
 
@@ -87,7 +340,7 @@ These are the stats of my GitHub account. I'm a very active user, and I contribu
 <div>
     <img  src="http://github-stats-flame-one.vercel.app/api/cards/profile-details?username=rafay99-epic&theme=onedark"  alt="profile-detail"  style="width: auto; height: auto;">
 </div>
-<!-- ![](http://github-stats-flame-one.vercel.app/api/cards/profile-details?username=rafay99-epic&theme=onedark) -->
+
 
 ## Commits and Contributions:
 <div>
@@ -105,10 +358,17 @@ These are the stats of my GitHub account. I'm a very active user, and I contribu
 ## Time Card 🕒
 <div> 
     <img src="http://github-stats-flame-one.vercel.app/api/cards/productive-time?username=rafay99-epic&theme=onedark&utcOffset=8" alt="Time Card" style="width: 1500px; height: 300px;">
-</div>
+</div> -->
 
-# Experiences:
+
+-----
+
+
+# Experiences
 [Click here](/Author-Experience) to read about my experience.
 
-# Projects:
+
+----
+
+# Projects
 [Click here](/Project) to read about my Projects.
