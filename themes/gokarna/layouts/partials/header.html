@@ -13,7 +13,58 @@
             <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         </div>
 
-        <div class="nav-links">
+         <div class="nav-links">
+            {{ range .Site.Menus.main }}
+            <div class="nav-link">
+                <a href="{{ .URL | absURL }}">
+                    {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                </a>
+            </div>
+            {{ end }}
+        
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+        
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    {{ range .Site.Menus.dropdown }}
+                    <li class="dropdown-item">
+                        <a href="{{ .URL | absURL }}"> {{ .Name }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        
+            <ul class="nav-hamburger-list visibility-hidden">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL | absURL }}">
+                        {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                    </a>
+                </li>
+                {{ end }}
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+<!-- Orginal Nav Bar -->
+        <!-- <div class="nav-links">
             {{ range .Site.Menus.main }}
             <div class="nav-link">
                 <a href="{{ .URL | absURL }}">
@@ -37,7 +88,7 @@
                 </a>
             </div>
 
-            <!-- For mobile -->
+
             <ul class="nav-hamburger-list visibility-hidden">
                 {{ range .Site.Menus.main }}
                 <li class="nav-item">
@@ -54,6 +105,5 @@
                 </li>
             </ul>
 
-        </div>
-    </nav>
-</header>
+        </div> -->
+    

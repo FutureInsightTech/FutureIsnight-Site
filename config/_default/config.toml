@@ -90,29 +90,6 @@ enableRobotsTXT = true
     weight = 4
     pre = "<span data-feather='tag'></span>"
   
-  #Privacy Page 
-  [[menu.main]]
-    identifier="Privacy"
-    name="Policy"
-    url="/policy/"
-    weight=5
-    pre="<span data-feather='edit-3'></span>"
-
-# About Page
-  [[menu.main]]
-    identifier="About-Us"
-    name="About Us"
-    url="/About-Us/"
-    weight=6
-    pre="<span data-feather='info'></span>"
-  # Contact Page
-  [[menu.main]]
-    identifier = "Contact"
-    url = "/contact/"
-    name = "Contact Me"
-    weight = 7
-    pre = "<span data-feather='send'></span>"
-  
   # Github Link
   [[menu.main]]
     identifier = "github"
@@ -120,7 +97,29 @@ enableRobotsTXT = true
     weight = 8
     pre = "<span data-feather='github'></span>"
 
+# Drop Down Menu Components
+  [[menu.dropdown]]
+    identifier = "About Us"
+    url = "/About-Us/"
+    name = "About Us"
+    weight = 1
+    pre = "<span data-feather='info'></span>"
 
+  [[menu.dropdown]]
+    identifier = "Privacy Policy"
+    url = "/policy/"
+    name = "Privacy Policy"
+    pre = "<span data-feather='lock'></span>"
+    weight = 2
+  
+  [[menu.dropdown]]
+    identifier="Contact"
+    url="/contact/"
+    name="Contact US"
+    weight=3
+    pre="<span data-feather='send'></span>"
+    
+    
 # --------------------------------------
 #   --- Markdown Config Section ---
 # --------------------------------------

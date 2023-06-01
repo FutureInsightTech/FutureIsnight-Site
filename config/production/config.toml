@@ -89,14 +89,6 @@ enableRobotsTXT = true
     weight = 4
     pre = "<span data-feather='tag'></span>"
   
-  #Privacy Page 
-  [[menu.main]]
-    identifier="Privacy"
-    name="Policy"
-    url="/policy/"
-    weight=5
-    pre="<span data-feather='edit-3'></span>"
-
 # About Page
   [[menu.main]]
     identifier="About-Us"
