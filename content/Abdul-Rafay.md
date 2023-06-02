@@ -160,7 +160,7 @@ url: /author/
 <div class="card-container">
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Full Stack Development">
+      <img src="/images/2023/pages/author-page-images/full-stack-dev-2.png" alt="Full Stack Development">
       <div class="card-content">
         <h3>Full Stack Development</h3>
       </div>
@@ -168,7 +168,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <img src="/images/2023/pages/author-page-images/front-end-2.png" alt="Data-analze">
       <div class="card-content">
         <h3>Front End Development</h3>
       </div>
@@ -176,7 +176,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <img src="/images/2023/pages/author-page-images/back0end.png" alt="data-visulize">
       <div class="card-content">
         <h3>Back End Development</h3>
       </div>
@@ -192,7 +192,7 @@ url: /author/
 <div class="card-container">
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <img src="/images/2023/pages/author-page-images/Bash Shell.png" alt="Traing&Creating-Model">
       <div class="card-content">
         <h3>Bash Shell Scripting</h3>
       </div>
@@ -200,7 +200,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <img src="/images/2023/pages/author-page-images/PowerShell.png" alt="Data-analze">
       <div class="card-content">
         <h3>Power Shell Scripting</h3>
       </div>
@@ -208,7 +208,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <img src="/images/2023/pages/author-page-images/Linux-admin.png" alt="data-visulize">
       <div class="card-content">
         <h3>Linux Administrator</h3>
       </div>
