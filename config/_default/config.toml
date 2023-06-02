@@ -90,11 +90,17 @@ enableRobotsTXT = true
     weight = 4
     pre = "<span data-feather='tag'></span>"
   
+  [[menu.main]]
+    identifier= "Services"
+    name = "Services"
+    url = "/service/"
+    weight = 5
+    pre = "<span data-feather='settings'></span>"
   # Github Link
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 8
+    weight = 6
     pre = "<span data-feather='github'></span>"
 
 # Drop Down Menu Components

@@ -10,7 +10,6 @@
 
 # Development URL
 baseURL = 'https://futue-insight-development-build.onrender.com'
-
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
@@ -31,7 +30,7 @@ enableRobotsTXT = true
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
-      {name = "youtube", url = "https://www.youtube.com/"}
+      {name = "youtube", url = "https://www.youtube.com/channel/UCw5ZdTiUJuMa2joLI089UnQ" }
     ]
     footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
@@ -98,33 +97,41 @@ enableRobotsTXT = true
     pre = "<span data-feather='tag'></span>"
   
   [[menu.main]]
-    identifier="Privacy"
-    name="Policy"
-    url="/policy/"
-    weight=5
-    pre="<span data-feather='edit-3'></span>"
-  
-    [[menu.main]]
-    identifier="About-Us"
-    name="About Us"
-    url="/about-us/"
-    weight=6
-    pre="<span data-feather='info'></span>"
-    # Projects
-  [[menu.main]]
-    identifier = "Contact"
-    url = "/contact/"
-    name = "Contact Me"
-    weight = 7
-    pre = "<span data-feather='send'></span>"
-  
+    identifier= "Services"
+    name = "Services"
+    url = "/service/"
+    weight = 5
+    pre = "<span data-feather='settings'></span>"
+  # Github Link
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 8
+    weight = 6
     pre = "<span data-feather='github'></span>"
 
+# Drop Down Menu Components
+  [[menu.dropdown]]
+    identifier = "About Us"
+    url = "/About-Us/"
+    name = "About Us"
+    weight = 1
+    Icon = "<span data-feather='info'></span>"
 
+  [[menu.dropdown]]
+    identifier = "Privacy Policy"
+    url = "/policy/"
+    name = "Privacy Policy"
+    Icon = "<span data-feather='lock'></span>"
+    weight = 2
+  
+  [[menu.dropdown]]
+    identifier="Contact"
+    url="/contact/"
+    name="Contact US"
+    weight=3
+    Icon="<span data-feather='send'></span>"
+    
+    
 # --------------------------------------
 #   --- Markdown Config Section ---
 # --------------------------------------
