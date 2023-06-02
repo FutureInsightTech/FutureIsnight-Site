@@ -80,6 +80,25 @@ url: /author/
     .card-text p {
       color: black; /* Adjust the color to your preference */
     }
+
+
+    /* Css fro skill cards */
+
+        .card-skill {
+      width: 200px;
+      height: 250px;
+      /* background-color: #f5f5f5; */
+      border-radius: 8px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .card-skill:hover {
+      transform: scale(1.05);
+    }
 </style>
 
 <div class="circle">
@@ -102,119 +121,97 @@ url: /author/
 
 ------
 
-<h1> Skills </h1>
-Here are some of my skills that I have accuired in my life time.
+<h1>Technical Proficiencies</h1>
+<p>Through years of dedicated learning and practical experience, I have cultivated a strong foundation and expertise in various technical domains.</p>
 
-<h2>Development & Problem Solving</h2>
-<p>
-From the start of begining of my university life I want to gain more and more experience with my skills and I became a Machine Learning Engineer and a Full Stack Developer.
-</p>
 <h3>Machine Learning</h3>
 
-- Training & Tesing Model 
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="70%"></div>
-    </div>
-    </div>
-- Data Processing
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="65%"></div>
-    </div>
-    </div>
-- Reading & Analyzing Data Processing
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="60%"></div>
-    </div>
-    </div>
-- Data Visualization
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="60%"></div>
-    </div>
-    </div>
-
+<div class="card-container">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <div class="card-content">
+        <h3>AI Training</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <div class="card-content">
+        <h3>Data Analyzing</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <div class="card-content">
+        <h3>Data Visualisation</h3>
+      </div>
+    </a>
+  </div>
+</div>
 
 <h3>Web Development</h3>
-
-- Back End Development
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="75%"></div>
-    </div>
-    </div>
-- Database Management &  Development
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="70%"></div>
-    </div>
-    </div>
-- Front End Development
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="60%"></div>
-    </div>
-    </div>
-- API Development
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="50%"></div>
-    </div>
-    </div>
-
-<h3>Blogging & Content Writing</h3>
-
-- Content Writing
-  <div class="skill-card">
-    <div class="skill-bar">
-      <div class="skill-progress" data-progress="75%"></div>
-    </div>
-    </div>
+<p></p>
 
 
-<!-- java Script Function -->
-<script>
-    function animateSkillsOnScroll() {
-      const skillProgressBars = document.querySelectorAll('.skill-progress');
-      const options = {
-        threshold: 0.21 // Adjust this value based on when you want the animation to start
-      };
 
-      function animateProgressBar(progressBar) {
-        const progressValue = progressBar.dataset.progress;
-        progressBar.style.width = '0';
-        setTimeout(() => {
-          progressBar.style.width = progressValue;
-        }, 500);
-      }
 
-      function handleIntersection(entries, observer) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateProgressBar(entry.target);
-            observer.unobserve(entry.target);
-          } else {
-            entry.target.style.width = '5'; // Reset the progress bar animation when not visible
-          }
-        });
-      }
+<h3>Automation</h3>
+<p></p>
 
-      function reloadProgressBars() {
-        skillProgressBars.forEach((progressBar) => {
-          observer.observe(progressBar);
-        });
-      }
 
-      const observer = new IntersectionObserver(handleIntersection, options);
-      reloadProgressBars();
+<h3>Content Writing</h3>
+<p></p>
 
-      window.addEventListener('scroll', reloadProgressBars);
-    }
 
-    animateSkillsOnScroll();
-</script>
+<h3>System Design and Architecture</h3>
+<p></p>
+
+----
+
+<h1>Tools & Technologies</h1>
+<h3>Machine Learning</h3>
+
+<div class="card-container">
+  <div class="card" onclick="redirectToGitHub()">
+    <!-- <a href="https://github.com/rafay99-epic" target="_blank" rel="noopener noreferrer"> -->
+      <img src="/images/2023/pages/author-page-images/GitHub.png" alt="GitHub">
+      <div class="card-content">
+        <h3>Juypter Notebook</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card" onclick="redirectToTwitter()">
+    <a href="https://twitter.com/abdul_rafay99/" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/author-page-images/Untitled design.png" alt="Twitter">
+      <div class="card-content">
+        <h3>Visual Studio Code</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card" onclick="redirectToLinkedIn()">
+    <a href="https://www.linkedin.com/in/abdul-rafay-0ab626197" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/author-page-images/Linkedin.png" alt="LinkedIn">
+      <div class="card-content">
+        <h3></h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+
+<h3>Web Developmment</h3>
+
+<h3>Content Writing</h3>
+
+<h3>Operating System</h3>
+
+
 
 ----
 
@@ -249,22 +246,12 @@ From the start of begining of my university life I want to gain more and more ex
 
 -----
 
-<h1>Tools & Technologies</h1>
-<h3>Machine Learning</h3>
-
-<h3>Web Developmment</h3>
-
-<h3>Content Writing</h3>
-
-<h3>Operating System</h3>
 
 
 
 
 
-
-<!-- 
-<div class="card-container">
+<!-- <div class="card-container">
   <div class="card">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code">
     <div class="card-content">Visual Studio Code</div>
@@ -311,7 +298,7 @@ From the start of begining of my university life I want to gain more and more ex
 
 
 <!-- # Languages and Tools -->
-<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
+<!-- <img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
 <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 <img align="left" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
@@ -321,7 +308,7 @@ From the start of begining of my university life I want to gain more and more ex
 <img align="left" alt="Git" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="padding-right:10px;" />
 <img align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" style="padding-right:10px;" />
 <img align="left" alt="Terminal" width="26px" src="/images/img/terminal-dark.svg" />
-<br>
+<br> -->
 
 <!-- # Top Projects on GitHub 🧑‍💻
 1. [Parking Assistant System](https://github.com/rafay99-epic/Parking-Assistant)
