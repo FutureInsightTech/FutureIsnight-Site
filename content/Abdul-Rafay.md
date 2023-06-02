@@ -4,7 +4,6 @@ type: "page"
 description: "About Author"
 url: /author/
 ---
-
 <!-- Css files for the github calander -->
 <link rel="stylesheet"   href="/css/github-calendar-responsive.css" />
 <link rel="stylesheet" href="/css/github-calendar.css">
@@ -12,14 +11,15 @@ url: /author/
 <!-- Css for the Author Page -->
 <link rel="stylesheet" href="/css/author-page.css">
 
-<script derf src="/js/github-calendar.min.js"></script>
-
+<!-- Js files for the Github Calander -->
+<script defer src="/js/github-calendar.min.js"></script>
+<script defer src="/js/github-caender-fetch.js"></script>
 
 <div class="circle">
   <img src="/images/avatar.jpg" alt="Your Image">
 </div>
 
-# 👋 Hi there, I’m Abdul Rafay
+<h1><span class="wave">👋</span>Hi there, I’m Abdul Rafay</h1>
 
 🌟 Welcome to the digital realm of excellence! I am thrilled to introduce myself as a visionary Full Stack Developer and Machine Learning Engineer, driven by an unwavering passion for crafting extraordinary experiences that leave a lasting impression.
 
@@ -29,7 +29,7 @@ url: /author/
 
 🌱 Embracing the spirit of continuous growth, I thrive on the cutting edge of innovation. Exploring the depths of intricate algorithms and embracing emerging web technologies, I am a trailblazer navigating uncharted territories. My thirst for knowledge knows no bounds as I strive to redefine what's possible.
 
-✍️ Venture into the captivating universe of my [blogs](https://future-insight.blog/) to delve into profound insights and thought-provoking ideas. Immerse yourself in the symphony of my [Github](https://github.com/rafay99-epic) projects, where every line of code dances with brilliance. I eagerly await your feedback, as it fuels my drive to constantly evolve and surpass expectations.
+✍️ Venture into the captivating universe of my [blogs](https://future-insight.blog/post) to delve into profound insights and thought-provoking ideas. Immerse yourself in the symphony of my [Github](https://github.com/rafay99-epic) projects, where every line of code dances with brilliance. I eagerly await your feedback, as it fuels my drive to constantly evolve and surpass expectations.
 
 🌌 Prepare to embark on an extraordinary journey where possibilities are limitless and innovation knows no bounds. Together, let's shape a future that redefines the boundaries of what can be achieved! ❤️
 
@@ -97,8 +97,6 @@ url: /author/
   </div>
 </div>
 
-
-
 <h2>Automation</h2>
 <p>As an expert in automation, I excel at streamlining processes and maximizing efficiency. By leveraging automation tools and technologies, I help businesses save time and resources by automating repetitive tasks and workflows. With a focus on accuracy and reliability, I enable organizations to optimize their operations and achieve higher productivity.</p>
 <br>
@@ -129,8 +127,6 @@ url: /author/
   </div>
 </div>
 
-
-
 <h2>Content Writing</h2>
 <p>With a flair for words and a keen eye for detail, I specialize in crafting compelling and engaging content. From captivating blog posts to persuasive marketing copy, I deliver content that effectively communicates ideas, engages the target audience, and drives desired outcomes. By combining creativity and strategic thinking, I help businesses effectively convey their brand message and connect with their readers.</p>
 <br>
@@ -152,8 +148,6 @@ url: /author/
     </a>
   </div>
 </div>
-
-
 
 <h2>System Design and Architecture</h2>
 <p>With a deep understanding of system design principles and architecture, I have the expertise to create scalable and robust solutions. By carefully analyzing requirements, identifying potential bottlenecks, and employing industry best practices, I architect efficient systems that can handle complex demands. From concept to deployment, I ensure that the systems I design are highly reliable, performant, and adaptable to meet evolving needs.</p>
@@ -186,41 +180,15 @@ url: /author/
 </div>
 
 
-
-
-
-<h1>Tools & Technologies</h1>
-<p></p>
-
-
-
-
 <h1>Open Source Contribution</h1>
-<!-- Prepare a container for your calendar. -->
 <div class="calendar">
-
-    Loading the data just for you.
+    <div class="error-message">
+        <span class="error-icon">&#9888;</span>
+        <p class="error-text">Oops! An error occurred while loading the data. Please try again later.</p>
+    </div>
 </div>
 
-<script>
-    GitHubCalendar(".calendar", "rafay99-epic");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "rafay99-epic", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "rafay99-epic", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
-    }).then(r => r.text())
-</script>
-
-
-
-
 <h1>Social Media</h1>
-
 <div class="card-container">
   <div class="card" onclick="redirectToGitHub()">
     <a href="https://github.com/rafay99-epic" target="_blank" rel="noopener noreferrer">
@@ -248,60 +216,16 @@ url: /author/
   </div>
 </div>
 
+<h1>Professional Background</h1>
 
+Explore my extensive professional experience and accomplishments, [Click here](/Author-Experience) to read about my experiences.
 
+<h1> Project Gallery</h1>
 
+Explore a collection of my showcased projects. [Click here](/Project) to view my projects.
 
-
-
-<!-- <div class="card-container">
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Visual Studio Code">
-    <div class="card-content">Visual Studio Code</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-    <div class="card-content">HTML5</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-    <div class="card-content">CSS3</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-    <div class="card-content">JavaScript</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-    <div class="card-content">Node.js</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-    <div class="card-content">MongoDB</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-    <div class="card-content">MySQL</div>
-  </div>
-  <div class="card">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-    <div class="card-content">Git</div>
-  </div>
-  <div class="card">
-    <img src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" alt="GitHub">
-    <div class="card-content">GitHub</div>
-  </div>
-  <div class="card">
-    <img src="/images/img/terminal-dark.svg" alt="Terminal">
-    <div class="card-content">Terminal</div>
-  </div>
-</div> -->
-
-
-
-
-<!-- # Languages and Tools -->
-<!-- <img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
+ <!-- # Languages and Tools
+<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" />
 <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 <img align="left" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
@@ -311,17 +235,5 @@ url: /author/
 <img align="left" alt="Git" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" style="padding-right:10px;" />
 <img align="left" alt="GitHub" width="26px" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" style="padding-right:10px;" />
 <img align="left" alt="Terminal" width="26px" src="/images/img/terminal-dark.svg" />
-<br> -->
-
-
-
-
-<h1>Professional Background</h1>
-
-[Click here](/Author-Experience) to read about my experience.
-
-
-
-<h1>Project Gallery</h1>
-
-[Click here](/Project) to read about my Projects.
+<br> 
+ -->

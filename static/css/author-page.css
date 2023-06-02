@@ -1,3 +1,4 @@
+/* Circle Image Css */
 .circle {
   width: 300px;
   height: 300px;
@@ -16,6 +17,7 @@
 h1,h2{
   text-decoration: underline;
 }
+/* Skill Card of Social Media Account */
 .skill-card {
       margin-bottom: 20px;
     }
@@ -49,6 +51,7 @@ h1,h2{
 .card-text p {
   color: black;
 }
+/* Sill card size */
 .card-skill {
   width: 200px;
   height: 250px;
@@ -61,4 +64,45 @@ h1,h2{
 }
 .card-skill:hover {
   transform: scale(1.05);
+}
+
+/* Moving Hande animation */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/* Error Message if the github calander is not showing*/
+.error-message {
+  background-color: #ffcccc;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.error-icon {
+  font-size: 24px;
+  color: #ff0000;
+  margin-right: 10px;
+}
+
+.error-text {
+  color: #ff0000;
 }
