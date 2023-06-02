@@ -224,7 +224,7 @@ url: /author/
 <div class="card-container">
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <img src="/images/2023/pages/author-page-images/Blog-writing.png" alt="Traing&Creating-Model">
       <div class="card-content">
         <h3>Blog Writing</h3>
       </div>
@@ -232,17 +232,9 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <img src="/images/2023/pages/author-page-images/Scripting.png" alt="Data-analze">
       <div class="card-content">
         <h3>Script Writing</h3>
-      </div>
-    </a>
-  </div>
-  <div class="card-skill">
-    <a>
-      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
-      <div class="card-content">
-        <h3>Product Presentation</h3>
       </div>
     </a>
   </div>
@@ -256,7 +248,7 @@ url: /author/
 <div class="card-container">
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <img src="/images/2023/pages/author-page-images/databaase.png" alt="Traing&Creating-Model">
       <div class="card-content">
         <h3>Database Design</h3>
       </div>
@@ -264,7 +256,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <img src="/images/2023/pages/author-page-images/req-gathering.png" alt="Data-analze">
       <div class="card-content">
         <h3>Requirement Gathering</h3>
       </div>
@@ -272,7 +264,7 @@ url: /author/
   </div>
   <div class="card-skill">
     <a>
-      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <img src="/images/2023/pages/author-page-images/system.png" alt="data-visulize">
       <div class="card-content">
         <h3>System Architecture</h3>
       </div>
