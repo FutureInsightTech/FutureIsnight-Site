@@ -195,7 +195,6 @@ url: /Author-Experience/
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
       transition: color 0.3s, background-color 0.3s;
     }
     body.dark-mode {

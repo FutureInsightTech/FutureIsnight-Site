@@ -5,101 +5,15 @@ description: "About Author"
 url: /author/
 ---
 
-<!-- Css for The Circle and into Image -->
-<style>
-.circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  <!-- top: 50%; -->
-  transform: translateY(-50%);
-  overflow: hidden;
-}
-.circle img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+<!-- Css files for the github calander -->
+<link rel="stylesheet"   href="/css/github-calendar-responsive.css" />
+<link rel="stylesheet" href="/css/github-calendar.css">
 
-/* Skill bar animation */
-    .skill-card {
-          margin-bottom: 20px;
-        }
+<!-- Css for the Author Page -->
+<link rel="stylesheet" href="/css/author-page.css">
 
-    .skill-bar {
-      width: 100%;
-      height: 20px;
-      background-color: #2d333b;
-      border-radius: 10px;
-      overflow: hidden;
-    }
+<script derf src="/js/github-calendar.min.js"></script>
 
-    .skill-progress {
-      height: 100%;
-      background-color: #4caf50;
-      border-radius: 10px;
-      width: 0;
-      transition: width 1s ease-in-out;
-    }
-
-    .card-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .card {
-      width: 300px;
-      height: 300px;
-      /* background-color: #f5f5f5; */
-      border-radius: 8px;
-      margin: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h3 {
-      margin-top: 0;
-    }
-
-    .card-content p {
-      margin-bottom: 0;
-    }
-    .card-text p {
-      color: black; /* Adjust the color to your preference */
-    }
-
-
-    /* Css fro skill cards */
-
-        .card-skill {
-      width: 200px;
-      height: 250px;
-      /* background-color: #f5f5f5; */
-      border-radius: 8px;
-      margin: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    .card-skill:hover {
-      transform: scale(1.05);
-    }
-</style>
 
 <div class="circle">
   <img src="/images/avatar.jpg" alt="Your Image">
@@ -119,12 +33,11 @@ url: /author/
 
 🌌 Prepare to embark on an extraordinary journey where possibilities are limitless and innovation knows no bounds. Together, let's shape a future that redefines the boundaries of what can be achieved! ❤️
 
-------
 
 <h1>Technical Proficiencies</h1>
 <p>Through years of dedicated learning and practical experience, I have cultivated a strong foundation and expertise in various technical domains.</p>
 
-<h3>Machine Learning</h3>
+<h2>Machine Learning</h2>
 <p>As a skilled professional in the field of machine learning, I bring a deep understanding and proficiency in leveraging data-driven algorithms and models to uncover valuable insights and drive informed decision-making.</p>
 <br>
 <div class="card-container">
@@ -154,7 +67,7 @@ url: /author/
   </div>
 </div>
 
-<h3>Web Development</h3>
+<h2>Web Development</h2>
 <p>With a strong foundation in web development, I possess the technical know-how and creativity to bring ideas to life on the digital landscape. From designing intuitive user interfaces to implementing robust backend functionality, I strive to create seamless and engaging web experiences.</p>
 <br>
 <div class="card-container">
@@ -186,7 +99,7 @@ url: /author/
 
 
 
-<h3>Automation</h3>
+<h2>Automation</h2>
 <p>As an expert in automation, I excel at streamlining processes and maximizing efficiency. By leveraging automation tools and technologies, I help businesses save time and resources by automating repetitive tasks and workflows. With a focus on accuracy and reliability, I enable organizations to optimize their operations and achieve higher productivity.</p>
 <br>
 <div class="card-container">
@@ -218,7 +131,7 @@ url: /author/
 
 
 
-<h3>Content Writing</h3>
+<h2>Content Writing</h2>
 <p>With a flair for words and a keen eye for detail, I specialize in crafting compelling and engaging content. From captivating blog posts to persuasive marketing copy, I deliver content that effectively communicates ideas, engages the target audience, and drives desired outcomes. By combining creativity and strategic thinking, I help businesses effectively convey their brand message and connect with their readers.</p>
 <br>
 <div class="card-container">
@@ -242,7 +155,7 @@ url: /author/
 
 
 
-<h3>System Design and Architecture</h3>
+<h2>System Design and Architecture</h2>
 <p>With a deep understanding of system design principles and architecture, I have the expertise to create scalable and robust solutions. By carefully analyzing requirements, identifying potential bottlenecks, and employing industry best practices, I architect efficient systems that can handle complex demands. From concept to deployment, I ensure that the systems I design are highly reliable, performant, and adaptable to meet evolving needs.</p>
 <br>
 <div class="card-container">
@@ -274,14 +187,37 @@ url: /author/
 
 
 
-----
+
 
 <h1>Tools & Technologies</h1>
 <p></p>
 
 
 
-----
+
+<h1>Open Source Contribution</h1>
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+
+    Loading the data just for you.
+</div>
+
+<script>
+    GitHubCalendar(".calendar", "rafay99-epic");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "rafay99-epic", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "rafay99-epic", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>
+
+
+
 
 <h1>Social Media</h1>
 
@@ -312,7 +248,6 @@ url: /author/
   </div>
 </div>
 
------
 
 
 
@@ -378,50 +313,15 @@ url: /author/
 <img align="left" alt="Terminal" width="26px" src="/images/img/terminal-dark.svg" />
 <br> -->
 
-<!-- # Top Projects on GitHub 🧑‍💻
-1. [Parking Assistant System](https://github.com/rafay99-epic/Parking-Assistant)
-2. [Blog Website](https://github.com/rafay99-epic/Future-Insight)
-3. [Personal Portfolio](https://github.com/rafay99-epic/Portfolio-Website)
-4. [Gnome-Setup](https://github.com/rafay99-epic/Gnome-setup)
-5. [Development Set](https://github.com/1-Power/Development-Setup)
-6. [1-Power Website](https://github.com/1-Power/1-Power-website)
-7. [Shafiq Law Chamber(SLC) Website](https://github.com/1-Power/SLC) -->
-
-<!-- 
-# My GitHub Stats 📈
-These are the stats of my GitHub account. I'm a very active user, and I contribute to the open-source community. I'm always learning new things, and I'm always trying to improve my skills. I'm also a very active user on GitHub. I'm always learning new things, and I'm always trying to improve my skills.
-
-## Profile Detail
-<div>
-    <img  src="http://github-stats-flame-one.vercel.app/api/cards/profile-details?username=rafay99-epic&theme=onedark"  alt="profile-detail"  style="width: auto; height: auto;">
-</div>
-
-
-## Commits and Contributions:
-<div>
-    <img src="http://github-stats-flame-one.vercel.app/api/cards/stats?username=rafay99-epic&theme=onedark" alt="commit & contribute"  style="width: 500px; height: 300px;">
-</div>
-
-
-## Most Used Languages 📊
-
-<div style="display: flex; justify-content: center;">
-  <img src="http://github-stats-flame-one.vercel.app/api/cards/repos-per-language?username=rafay99-epic&theme=onedark" alt="lang commits in repo" style="display: inline-block; width: 50%; height: auto;">
-  <img src="http://github-stats-flame-one.vercel.app/api/cards/most-commit-language?username=rafay99-epic&theme=onedark" alt="Top Language by commits" style="display: inline-block; width: 50%; height: auto; margin-left: 20px;">
-</div>
-
-## Time Card 🕒
-<div> 
-    <img src="http://github-stats-flame-one.vercel.app/api/cards/productive-time?username=rafay99-epic&theme=onedark&utcOffset=8" alt="Time Card" style="width: 1500px; height: 300px;">
-</div> -->
 
 
 
-# Experiences
+<h1>Professional Background</h1>
+
 [Click here](/Author-Experience) to read about my experience.
 
 
-----
 
-# Projects
+<h1>Project Gallery</h1>
+
 [Click here](/Project) to read about my Projects.
