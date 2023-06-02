@@ -125,7 +125,8 @@ url: /author/
 <p>Through years of dedicated learning and practical experience, I have cultivated a strong foundation and expertise in various technical domains.</p>
 
 <h3>Machine Learning</h3>
-
+<p>As a skilled professional in the field of machine learning, I bring a deep understanding and proficiency in leveraging data-driven algorithms and models to uncover valuable insights and drive informed decision-making.</p>
+<br>
 <div class="card-container">
   <div class="card-skill">
     <a>
@@ -154,49 +155,30 @@ url: /author/
 </div>
 
 <h3>Web Development</h3>
-<p></p>
-
-
-
-
-<h3>Automation</h3>
-<p></p>
-
-
-<h3>Content Writing</h3>
-<p></p>
-
-
-<h3>System Design and Architecture</h3>
-<p></p>
-
-----
-
-<h1>Tools & Technologies</h1>
-<h3>Machine Learning</h3>
-
+<p>With a strong foundation in web development, I possess the technical know-how and creativity to bring ideas to life on the digital landscape. From designing intuitive user interfaces to implementing robust backend functionality, I strive to create seamless and engaging web experiences.</p>
+<br>
 <div class="card-container">
-  <div class="card" onclick="redirectToGitHub()">
-    <!-- <a href="https://github.com/rafay99-epic" target="_blank" rel="noopener noreferrer"> -->
-      <img src="/images/2023/pages/author-page-images/GitHub.png" alt="GitHub">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Full Stack Development">
       <div class="card-content">
-        <h3>Juypter Notebook</h3>
+        <h3>Full Stack Development</h3>
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToTwitter()">
-    <a href="https://twitter.com/abdul_rafay99/" target="_blank" rel="noopener noreferrer">
-      <img src="/images/2023/pages/author-page-images/Untitled design.png" alt="Twitter">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
       <div class="card-content">
-        <h3>Visual Studio Code</h3>
+        <h3>Front End Development</h3>
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToLinkedIn()">
-    <a href="https://www.linkedin.com/in/abdul-rafay-0ab626197" target="_blank" rel="noopener noreferrer">
-      <img src="/images/2023/pages/author-page-images/Linkedin.png" alt="LinkedIn">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
       <div class="card-content">
-        <h3></h3>
+        <h3>Back End Development</h3>
       </div>
     </a>
   </div>
@@ -204,12 +186,106 @@ url: /author/
 
 
 
+<h3>Automation</h3>
+<p>As an expert in automation, I excel at streamlining processes and maximizing efficiency. By leveraging automation tools and technologies, I help businesses save time and resources by automating repetitive tasks and workflows. With a focus on accuracy and reliability, I enable organizations to optimize their operations and achieve higher productivity.</p>
+<br>
+<div class="card-container">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <div class="card-content">
+        <h3>Bash Shell Scripting</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <div class="card-content">
+        <h3>Power Shell Scripting</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <div class="card-content">
+        <h3>Linux Administrator</h3>
+      </div>
+    </a>
+  </div>
+</div>
 
-<h3>Web Developmment</h3>
+
 
 <h3>Content Writing</h3>
+<p>With a flair for words and a keen eye for detail, I specialize in crafting compelling and engaging content. From captivating blog posts to persuasive marketing copy, I deliver content that effectively communicates ideas, engages the target audience, and drives desired outcomes. By combining creativity and strategic thinking, I help businesses effectively convey their brand message and connect with their readers.</p>
+<br>
+<div class="card-container">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <div class="card-content">
+        <h3>Blog Writing</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <div class="card-content">
+        <h3>Script Writing</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <div class="card-content">
+        <h3>Product Presentation</h3>
+      </div>
+    </a>
+  </div>
+</div>
 
-<h3>Operating System</h3>
+
+
+<h3>System Design and Architecture</h3>
+<p>With a deep understanding of system design principles and architecture, I have the expertise to create scalable and robust solutions. By carefully analyzing requirements, identifying potential bottlenecks, and employing industry best practices, I architect efficient systems that can handle complex demands. From concept to deployment, I ensure that the systems I design are highly reliable, performant, and adaptable to meet evolving needs.</p>
+<br>
+<div class="card-container">
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/20945590-PhotoRoom.png-PhotoRoom.png" alt="Traing&Creating-Model">
+      <div class="card-content">
+        <h3>Database Design</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/Data-analyize.png" alt="Data-analze">
+      <div class="card-content">
+        <h3>Requirement Gathering</h3>
+      </div>
+    </a>
+  </div>
+  <div class="card-skill">
+    <a>
+      <img src="/images/2023/pages/author-page-images/dATA visualization.png" alt="data-visulize">
+      <div class="card-content">
+        <h3>System Architecture</h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+----
+
+<h1>Tools & Technologies</h1>
+<p></p>
 
 
 
@@ -347,8 +423,6 @@ These are the stats of my GitHub account. I'm a very active user, and I contribu
     <img src="http://github-stats-flame-one.vercel.app/api/cards/productive-time?username=rafay99-epic&theme=onedark&utcOffset=8" alt="Time Card" style="width: 1500px; height: 300px;">
 </div> -->
 
-
------
 
 
 # Experiences
