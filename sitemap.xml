@@ -2,10 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-05-26T16:36:17+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/service/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/services/web-development/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Web-Development/Package-01/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Web-Development/Package-02/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Web-Development/Pacakge-03/</loc>
+    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Application-Development/Package-03/</loc>
+    <lastmod>2023-06-02T23:41:26+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Application-Development/Package-02/</loc>
+    <lastmod>2023-06-02T23:41:23+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/Application-Development/Package-01/</loc>
+    <lastmod>2023-06-02T23:41:19+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/services/application-development/</loc>
+    <lastmod>2023-06-02T23:41:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/MachineLearning/Package02/</loc>
+    <lastmod>2023-06-02T23:40:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/MachineLearning/Package03/</loc>
+    <lastmod>2023-06-02T23:40:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Service/MachineLearning/Package01/</loc>
+    <lastmod>2023-06-02T23:40:29+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/services/MachineLearning/</loc>
+    <lastmod>2023-06-02T23:40:17+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/services/assignment/</loc>
+    <lastmod>2023-06-02T23:39:45+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/services/</loc>
+    <lastmod>2023-06-02T23:35:11+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/blog/</loc>
     <lastmod>2023-05-26T16:36:17+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/tags/linux/</loc>
