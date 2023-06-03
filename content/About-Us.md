@@ -3,52 +3,15 @@ draft: false
 type: "page"
 url: /about-us/
 ---
-<link rel="stylesheet" href="/css/style.css">
-<style>
-    /* CSS styles */
-    body {
-      transition: background-color 0.5s ease;
-    }
-    .circle {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      margin: 0 auto;
-      position: relative;
-      transform: translateY(-9%);
-      overflow: hidden;
-      background-color: #fff;
-      transition: background-color 0.5s ease;
-    }
-    .circle img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    h1, h2, p, a {
-      transition: color 0.5s ease;
-    }
-    body {
-      animation: fadeToDark 0.5s ease;
-    }
-    .circle {
-      animation: fadeToDark 0.5s ease;
-    }
-    .dark-mode body {
-      animation: fadeToLight 0.5s ease;
-    }
-    .dark-mode .circle {
-      animation: fadeToLight 0.5s ease;
-    }
-
-  </style>
-<body>
-  <div>
+<!-- Importing Files -->
+<link rel="stylesheet" href="/css/author-page.css">
+<link rel="stylesheet" href="/css/intro-image.css">
+<link rel="stylesheet" href="/css/wave-hand.css">
+<div>
     <div class="circle">
       <img src="/images/16.png" alt="Your Image">
     </div>
-    <h1>Welcome to Future Insight Blog</h1>
+    <h1><span class="wave">👋</span>Welcome to Future Insight Blog</h1>
     <p>
       At Future Insight Blog, we embark on a captivating journey into the depths of technology and the boundless horizons it unveils. This digital sanctuary is crafted by Abdul Rafay, a visionary dreamer and technology aficionado who passionately breathes life into his thoughts, feelings, and profound insights about the world and the future.
     </p>
@@ -70,8 +33,9 @@ url: /about-us/
     <p>
     Thank you for embarking on this extraordinary odyssey with us.
     </p>
-  </div>
-  <div>
+</div>
+
+<div>
       <h1>Discover the Vision Behind Future Insight Technology</h1>
       <p>
         "At Future Insight Technology, our vision is to empower individuals and organizations to embrace the limitless possibilities of technology, while fostering a deep understanding and appreciation for its impact on our lives and the world. We strive to be a beacon of knowledge, inspiration, and innovation, guiding our readers on a transformative journey through the ever-evolving landscape of technology.
@@ -85,8 +49,9 @@ url: /about-us/
       <p>
         Our ultimate goal is to empower individuals to shape their own futures and make informed decisions in an increasingly technology-driven world. With Future Insight Technology, we envision a future where technology is harnessed responsibly, ethically, and inclusively, transforming lives and shaping a brighter tomorrow."
       </p>
-  </div>
-  <div>
+</div>
+
+<div>
     <h1> Contact Us: </h1> 
     <p> 
       As the sole creator and writer of this blog, I am personally dedicated to providing you with the best experience possible. Your feedback, questions, and comments are incredibly valuable to me. I'm here to assist and support you in any way I can.
@@ -107,23 +72,4 @@ url: /about-us/
     <p>
     I am committed to responding promptly and addressing any concerns or questions you may have. Your engagement is important to me, and I strive to provide the best assistance to ensure that your journey through my blog is enjoyable and enriching.
     </p>
-    </div>
-  <script>
-    // Dark mode toggle functionality
-    function toggleDarkMode() {
-      const body = document.body;
-      const container = document.querySelector('.container');
-      const circle = document.querySelector('.circle');
-      body.classList.toggle('dark-mode');
-      container.classList.toggle('dark-mode');
-      circle.classList.toggle('dark-mode');
-    }
-    // Detect user's preference for dark mode
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // Set initial mode based on user preference
-    if (prefersDarkMode) {
-      toggleDarkMode();
-    }
-  </script>
-</body>
-</html>
+  </div>

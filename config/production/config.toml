@@ -23,16 +23,15 @@ enableRobotsTXT = true
       {name = "linkedin", url = "https://www.linkedin.com/in/abdul-rafay1999/"},
        {name = "stackoverflow", url = "https://stackoverflow.com/users/13860632/abdul-rafay"},
       {name = "github", url = "https://github.com/rafay99-epic"},
-      {name = "youtube", url = "https://www.youtube.com/channel/UCw5ZdTiUJuMa2joLI089UnQ"}
+      {name = "youtube", url = "https://www.youtube.com/channel/UCw5ZdTiUJuMa2joLI089UnQ" }
     ]
     footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
-    favicon = "/images/favicon/apple-touch-icon.png"
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
-    mainSections = ["posts", "projects","Authors"]
+    mainSections = ["posts", "projects","Authors","Service"]
     pygmentsStyle = "monokai" 
   
   #---------------------------
@@ -89,37 +88,44 @@ enableRobotsTXT = true
     weight = 4
     pre = "<span data-feather='tag'></span>"
   
-  #Privacy Page 
-  [[menu.main]]
-    identifier="Privacy"
-    name="Policy"
-    url="/policy/"
-    weight=5
-    pre="<span data-feather='edit-3'></span>"
+  # Service Page 
+  # [[menu.main]]
+  #   identifier = "Services"
+  #   name = "Services"
+  #   url = "/services/"
+  #   weight = 5
+  #   pre = "<span data-feather='settings'></span>"
 
-# About Page
-  [[menu.main]]
-    identifier="About-Us"
-    name="About Us"
-    url="/About-Us/"
-    weight=6
-    pre="<span data-feather='info'></span>"
-  # Contact Page
-  [[menu.main]]
-    identifier = "Contact"
-    url = "/contact/"
-    name = "Contact Me"
-    weight = 7
-    pre = "<span data-feather='send'></span>"
-  
   # Github Link
   [[menu.main]]
     identifier = "github"
     url = "https://github.com/rafay99-epic"
-    weight = 8
+    weight = 6
     pre = "<span data-feather='github'></span>"
 
+# Drop Down Menu Components
+  [[menu.dropdown]]
+    identifier = "About Us"
+    url = "/About-Us/"
+    name = "About Us"
+    weight = 1
+    Icon = "<span data-feather='info'></span>"
 
+  [[menu.dropdown]]
+    identifier = "Privacy Policy"
+    url = "/policy/"
+    name = "Privacy Policy"
+    Icon = "<span data-feather='lock'></span>"
+    weight = 2
+  
+  [[menu.dropdown]]
+    identifier="Contact"
+    url="/contact/"
+    name="Contact US"
+    weight=3
+    Icon="<span data-feather='send'></span>"
+    
+    
 # --------------------------------------
 #   --- Markdown Config Section ---
 # --------------------------------------
