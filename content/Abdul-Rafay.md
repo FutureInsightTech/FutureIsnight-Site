@@ -190,7 +190,7 @@ url: /author/
 
 <h1>Social Media</h1>
 <div class="card-container">
-  <div class="card" onclick="redirectToGitHub()">
+  <div class="card">
     <a href="https://github.com/rafay99-epic" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/author-page-images/GitHub.png" alt="GitHub">
       <div class="card-content">
@@ -198,7 +198,7 @@ url: /author/
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToTwitter()">
+  <div class="card">
     <a href="https://twitter.com/abdul_rafay99/" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/author-page-images/Untitled design.png" alt="Twitter">
       <div class="card-content">
@@ -206,7 +206,7 @@ url: /author/
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToLinkedIn()">
+  <div class="card">
     <a href="https://www.linkedin.com/in/abdul-rafay-0ab626197" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/author-page-images/Linkedin.png" alt="LinkedIn">
       <div class="card-content">
