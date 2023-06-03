@@ -8,6 +8,10 @@ url: /author/
 <link rel="stylesheet"   href="/css/github-calendar-responsive.css" />
 <link rel="stylesheet" href="/css/github-calendar.css">
 
+<!-- Css Files fro the Way Hand & Inro Circle Image -->
+<link rel="stylesheet" href="/css/wave-hand.css">
+<link rel="stylesheet" href="/css/intro-image.css">
+
 <!-- Css for the Author Page -->
 <link rel="stylesheet" href="/css/author-page.css">
 
