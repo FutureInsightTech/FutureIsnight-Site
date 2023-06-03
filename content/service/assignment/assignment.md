@@ -3,6 +3,6 @@ title: "Assignment"
 date: 2023-06-02T23:39:45+05:00
 draft: false
 type: "page"
-url: services/assignment/
+url: /services/assignment/
 image: "/images/2023/"
 ---
