@@ -97,7 +97,7 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
     <img src="static/images/readME/new-logo.png" alt="Future Insight"  width="230px" height="230px">
     </a>
   <br>
-  <h1><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
+  <h1 style=" text-align: center;"><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
 </p>
 
 <div style="display: flex; justify-content: center;">
