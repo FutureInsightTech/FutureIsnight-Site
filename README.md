@@ -93,8 +93,10 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 
 
 <div style="text-align: center;">
-  <div style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto; position: relative; transform: translateY(-5%); overflow: hidden;">
-    <img src="static/images/16.png" alt="Your Image" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+  <div>
+    <a herf="https://future-insight.blog/">
+    <img src="static/images/readME/new-logo.png" alt="Future Insight"  width="230px" height="230px">
+    </a>
   </div>
   <br>
   <h1><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
