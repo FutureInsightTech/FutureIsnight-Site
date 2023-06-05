@@ -92,15 +92,13 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 
 
 
-<div style="text-align: center;">
-  <div>
+<p align="center">
     <a herf="https://future-insight.blog/">
     <img src="static/images/readME/new-logo.png" alt="Future Insight"  width="230px" height="230px">
     </a>
-  </div>
   <br>
   <h1><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
-</div>
+</p>
 
 <div style="display: flex; justify-content: center;">
   <div style="justify-content: center; align-items: center; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
