@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>essential-skills on Future Insight</title>
-    <link>https://future-insight-blog-build.onrender.com/tags/essential-skills/</link>
+    <link>https://future-insight.blog/tags/essential-skills/</link>
     <description>Recent content in essential-skills on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Feb 2023 01:29:36 +0500</lastBuildDate><atom:link href="https://future-insight-blog-build.onrender.com/tags/essential-skills/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Feb 2023 01:29:36 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/essential-skills/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Benefits of Mindfulness Meditation</title>
-      <link>https://future-insight-blog-build.onrender.com/Benefits-of-Mindfulness-Meditation/</link>
+      <link>https://future-insight.blog/Benefits-of-Mindfulness-Meditation/</link>
       <pubDate>Sun, 19 Feb 2023 01:29:36 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/Benefits-of-Mindfulness-Meditation/</guid>
+      <guid>https://future-insight.blog/Benefits-of-Mindfulness-Meditation/</guid>
       <description>In today&amp;rsquo;s fast-paced world, it can be challenging to find a moment of peace and quiet. We&amp;rsquo;re constantly bombarded with notifications, emails, and messages, making it difficult to focus on the present moment. However, mindfulness meditation offers a way to cultivate inner peace and improve your overall well-being. In this article, we&amp;rsquo;ll explore the benefits of mindfulness meditation and why you should make it a daily practice.
 Body: Reduces Stress and Anxiety Mindfulness meditation has been shown to reduce stress and anxiety levels.</description>
     </item>
     
     <item>
       <title>Time Management</title>
-      <link>https://future-insight-blog-build.onrender.com/time-management/</link>
+      <link>https://future-insight.blog/time-management/</link>
       <pubDate>Thu, 26 Jan 2023 02:56:44 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/time-management/</guid>
+      <guid>https://future-insight.blog/time-management/</guid>
       <description>Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 Strategies:  One strategy that can be effective is to create a daily schedule.</description>
     </item>
     
     <item>
       <title>Learn Git</title>
-      <link>https://future-insight-blog-build.onrender.com/learn-git-&amp;-github/</link>
+      <link>https://future-insight.blog/learn-git-&amp;-github/</link>
       <pubDate>Tue, 24 Jan 2023 17:13:24 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/learn-git-&amp;-github/</guid>
+      <guid>https://future-insight.blog/learn-git-&amp;-github/</guid>
       <description>As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.
 Before Git: But before I was using Git, My code folder structure was something like this:
 Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.</description>

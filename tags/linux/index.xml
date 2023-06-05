@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Future Insight</title>
-    <link>https://future-insight-blog-build.onrender.com/tags/linux/</link>
+    <link>https://future-insight.blog/tags/linux/</link>
     <description>Recent content in linux on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 May 2023 16:36:17 +0500</lastBuildDate><atom:link href="https://future-insight-blog-build.onrender.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 16:36:17 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Midnight Tokyo: Awesome Window Manager</title>
-      <link>https://future-insight-blog-build.onrender.com/MidnightTokyoWM/</link>
+      <link>https://future-insight.blog/MidnightTokyoWM/</link>
       <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/MidnightTokyoWM/</guid>
+      <guid>https://future-insight.blog/MidnightTokyoWM/</guid>
       <description>Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.</description>
     </item>
     
     <item>
       <title>Image Optimization</title>
-      <link>https://future-insight-blog-build.onrender.com/image-optimization/</link>
+      <link>https://future-insight.blog/image-optimization/</link>
       <pubDate>Tue, 23 May 2023 00:26:19 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/image-optimization/</guid>
+      <guid>https://future-insight.blog/image-optimization/</guid>
       <description>Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.
 When writing blog posts with multiple images, the size of the images becomes a crucial factor. Large image sizes can slow down website loading times, impacting user experience.</description>
     </item>
     
     <item>
       <title>Automating File Management with a Bash Script</title>
-      <link>https://future-insight-blog-build.onrender.com/automating-file-management-with-bash-script/</link>
+      <link>https://future-insight.blog/automating-file-management-with-bash-script/</link>
       <pubDate>Mon, 22 May 2023 01:38:46 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/automating-file-management-with-bash-script/</guid>
+      <guid>https://future-insight.blog/automating-file-management-with-bash-script/</guid>
       <description>In today&amp;rsquo;s fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we&amp;rsquo;ll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We&amp;rsquo;ll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process.</description>
     </item>
     
     <item>
       <title>Fedora 38: Review</title>
-      <link>https://future-insight-blog-build.onrender.com/fedora-review/</link>
+      <link>https://future-insight.blog/fedora-review/</link>
       <pubDate>Tue, 16 May 2023 00:07:49 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/fedora-review/</guid>
+      <guid>https://future-insight.blog/fedora-review/</guid>
       <description>I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, &amp;ldquo;Why not? Let&amp;rsquo;s try Fedora and see what&amp;rsquo;s the hype?&amp;rdquo; Why people love Fedora so much and what it is like to run Fedora for a while</description>
     </item>
     
     <item>
       <title>Top 5 Commands Linux</title>
-      <link>https://future-insight-blog-build.onrender.com/Top-5-linux-command/</link>
+      <link>https://future-insight.blog/Top-5-linux-command/</link>
       <pubDate>Thu, 13 Apr 2023 22:40:06 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/Top-5-linux-command/</guid>
+      <guid>https://future-insight.blog/Top-5-linux-command/</guid>
       <description>For Today Linux commands, You will learn some cool commands and they can help your speed up your workflow and make you cool.
 Commands In this blog post you will learn how to use different commands in linux terminal, these commands will speed up your workflow by alot and I use them on daily basis as well.
 Command 1: tldr The tldr command is a utility for quickly understanding how to use a particular command by providing simplified and practical examples.</description>
@@ -57,29 +57,29 @@ Command 1: tldr The tldr command is a utility for quickly understanding how to u
     
     <item>
       <title>Linux App Installation: Simplified</title>
-      <link>https://future-insight-blog-build.onrender.com/linux-app-simplified/</link>
+      <link>https://future-insight.blog/linux-app-simplified/</link>
       <pubDate>Tue, 28 Mar 2023 20:17:24 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/linux-app-simplified/</guid>
+      <guid>https://future-insight.blog/linux-app-simplified/</guid>
       <description>Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you&amp;rsquo;ve tried searching for installation files like you would on Windows, but to no avail. Don&amp;rsquo;t worry, because in this blog, I&amp;rsquo;ll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
 By the end of this article, you&amp;rsquo;ll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.</description>
     </item>
     
     <item>
       <title>Nivida Driver: Arch Linux</title>
-      <link>https://future-insight-blog-build.onrender.com/nvidia-driver-arch-linux/</link>
+      <link>https://future-insight.blog/nvidia-driver-arch-linux/</link>
       <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/nvidia-driver-arch-linux/</guid>
+      <guid>https://future-insight.blog/nvidia-driver-arch-linux/</guid>
       <description>If you&amp;rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system.</description>
     </item>
     
     <item>
       <title>Install Linux</title>
-      <link>https://future-insight-blog-build.onrender.com/install-linux/</link>
+      <link>https://future-insight.blog/install-linux/</link>
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/install-linux/</guid>
+      <guid>https://future-insight.blog/install-linux/</guid>
       <description>You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
 So today I will teach you how to install Linux and how to dual boot with another operating system.
 Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in which your computer has more than one operating system.</description>
@@ -87,10 +87,10 @@ Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in whi
     
     <item>
       <title>The World of Linux</title>
-      <link>https://future-insight-blog-build.onrender.com/world-of-linux/</link>
+      <link>https://future-insight.blog/world-of-linux/</link>
       <pubDate>Sun, 05 Mar 2023 22:42:58 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/world-of-linux/</guid>
+      <guid>https://future-insight.blog/world-of-linux/</guid>
       <description>I am a developer. I love what I do, which is write blogs and make awesome applications, and for my work flow, I use an operating system that is called Linux that I use every day. Like 90% of my day I am running Linux on my computer. So in my previous blog, I mentioned different operating systems. So if you want to know about operating systems, then read my previous blog by clicking here.</description>
     </item>
     

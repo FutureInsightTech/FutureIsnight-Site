@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Development on Future Insight</title>
-    <link>https://future-insight-blog-build.onrender.com/tags/web-development/</link>
+    <link>https://future-insight.blog/tags/web-development/</link>
     <description>Recent content in Web Development on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 May 2023 14:05:36 +0500</lastBuildDate><atom:link href="https://future-insight-blog-build.onrender.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 May 2023 14:05:36 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pheonix AI: ChatBot</title>
-      <link>https://future-insight-blog-build.onrender.com/Pheonix-AI/</link>
+      <link>https://future-insight.blog/Pheonix-AI/</link>
       <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/Pheonix-AI/</guid>
+      <guid>https://future-insight.blog/Pheonix-AI/</guid>
       <description>The world of Machine Learning and AI is rapidly evolving, with new tools and technologies being developed and released every day. However, there is one remarkable model that stands out among the rest: GPT-Model. This cutting-edge innovation has become the gold standard in the field.
 But what exactly is a GPT-Model and what makes it so exceptional? GPT, which stands for Generative Pre-trained Transformer, is a state-of-the-art language model built on the transformer architecture.</description>
     </item>
     
     <item>
       <title>Basic of NodeJs</title>
-      <link>https://future-insight-blog-build.onrender.com/basic-nodejs/</link>
+      <link>https://future-insight.blog/basic-nodejs/</link>
       <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/basic-nodejs/</guid>
+      <guid>https://future-insight.blog/basic-nodejs/</guid>
       <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
     </item>
     
     <item>
       <title>Web Scrapper</title>
-      <link>https://future-insight-blog-build.onrender.com/web-scrapper/</link>
+      <link>https://future-insight.blog/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/web-scrapper/</guid>
+      <guid>https://future-insight.blog/web-scrapper/</guid>
       <description>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://future-insight-blog-build.onrender.com/build-hugo-website/</link>
+      <link>https://future-insight.blog/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://future-insight-blog-build.onrender.com/build-hugo-website/</guid>
+      <guid>https://future-insight.blog/build-hugo-website/</guid>
       <description>I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>
