@@ -110,8 +110,6 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 <p>Welcome to Future Insight, your gateway to a world where possibilities are limitless. We are a platform dedicated to exploring emerging trends, groundbreaking ideas, and cutting-edge advancements that shape the future. Whether you're a developer, tech enthusiast, or entrepreneur, our blog offers valuable insights, thought-provoking content, and practical resources to keep you informed and inspired. Join us on this journey of exploration, collaboration, and innovation as we shape a brighter future together. Welcome to Future Insight, where the power of tomorrow is within your reach.</p>
 
 <h2>Key Features</h2>
-<hr>
-
 <ul>
   <li>Seamless Light and Dark Mode: Effortlessly switch between light and dark mode to enhance readability and personalize your browsing experience.</li>
   <li>Simplified User Experience: Enjoy hassle-free browsing without the need for a complicated login system.</li>
@@ -125,12 +123,11 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 </ul>
 
 <h2>License:</h2>
-<hr>
+
 
 <p>This repository is licensed under the MIT License. You can find the license details in the <a href="/LICENSE">LICENSE</a> file.</p>
 
-<h2>Local Installation Guide:</h2>
-<hr>
+<h2>Local Installation Guide:</h2>s
 
 <p>To run the website on your local machine, please follow the provided instructions:</p>
 <ol>
@@ -139,7 +136,7 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 </ol>
 
 <h2>Contribution:</h2>
-<hr>
+
 
 <p>There are two ways you can make a contribution:</p>
 <ol>
@@ -150,8 +147,6 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 <p>Happy Coding... <span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span></p>
 
 <h2>Contact Information:</h2>
-<hr>
-
 <p>If you encounter any issues or have any questions, feel free to reach out to me. Here are my contact details:</p>
 <ul>
   <li><strong>Author:</strong> Abdul Rafay</li>
