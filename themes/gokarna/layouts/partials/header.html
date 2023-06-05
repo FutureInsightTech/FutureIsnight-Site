@@ -22,6 +22,7 @@
             </div>
             {{ end }}
 
+            <!-- Dark Mode Toggle -->
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
@@ -29,7 +30,19 @@
                     <span id="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
-
+            <!-- Drop Down Menu -->
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    {{ range .Site.Menus.dropdown }}
+                    <li class="dropdown-item">
+                        <a href="{{ .URL | absURL }}"> {{ .Name }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <!-- Hamburge menu -->
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
                 <a>

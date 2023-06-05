@@ -6,6 +6,9 @@ type: "page"
 url: /Project/
 ---
 
+<script src="/js/redirect.js"></script>
+<link rel="stylesheet" href="/css/project-gallery.css">
+
 <h1 style="text-decoration-line: underline; text-align: center;">Project Gallery</h1>
 
 **Welcome to My Projects Showcase!**
@@ -24,78 +27,10 @@ Best regards,
 
 -----
 
-<html>
-<head>
   <style>
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      width: calc(50% - 15px);
-      height: 300px;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      border: 2px solid #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-      background-color: #fff;
-    }
-    .card.dark {
-      background-color: #333;
-      border-color: #000;
-    }
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: fit;
-      object-position: center;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card .border {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      height: 90%;
-      border: 2px solid #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      box-sizing: border-box;
-      background-color: rgba(255, 255, 255, 0.7);
-      opacity: 0;
-      transition: opacity 0.3s, background-color 0.3s, border-color 0.3s;
-    }
-    .card .border.dark {
-      background-color: rgba(0, 0, 0, 0.7);
-      border-color: #fff;
-    }
-    .card:hover .border {
-      opacity: 1;
-    }
-    .card .heading {
-      color: #000;
-      text-align: center;
-      font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
-    .card.dark .heading {
-      color: #fff;
-    }
+ 
   </style>
-</head>
-<body>
-    <h1 style="text-decoration-line: underline; text-align: center;">Web Projects</h1>
+  <h1 style="text-decoration-line: underline; text-align: center;">Web Projects</h1>
     <div class="card-container">
         <!-- Parking Assistant -->
         <div class="card" onclick="redirectToURL('/Project/Parking-Assistant')" >
@@ -126,7 +61,7 @@ Best regards,
             </div>
         </div>
         <!-- Pheonix-AI -->
-        <div class="card" onclick="redirectToURL('https://github.com/rafay99-epic/Pheonix-AI')">
+        <div class="card" onclick="redirectToURL('/Pheonix-AI/')">
             <img src="/images/2023/Pheonix-AI/Pheonix-AI.png" alt="Image 10">
             <div class="border">
                 <div class="heading">Pheonix-AI: ChatBot</div>
@@ -168,7 +103,7 @@ Best regards,
             </div>url
         </div> -->
         <!-- midNight Toky AWM -->
-        <div class="card" onclick="redirectToURL('/Pheonix-AI/')" >
+        <div class="card" onclick="redirectToURL('/MidnightTokyoWM/')" >
             <img src="/images/2023/my-new-desktop/Midnight-Tokyo.png" alt="Image 9">
             <div class="border">
                 <div class="heading">MidnigTokyo</div>
@@ -181,25 +116,8 @@ Best regards,
             </div>
         </div>
     </div>
-  <script>
-    function redirectToURL(url) {
-      window.location.href = url;
-    }
-    function toggleDarkMode() {
-      const body = document.body;
-      const cards = document.querySelectorAll('.card');
-      const borders = document.querySelectorAll('.border');
-      const headings = document.querySelectorAll('.heading');
-      body.classList.toggle('dark');
-      cards.forEach(card => card.classList.toggle('dark'));
-      borders.forEach(border => border.classList.toggle('dark'));
-      headings.forEach(heading => heading.classList.toggle('dark'));
-    }
-    const darkModeToggle = document.querySelector('#darkModeToggle');
-    darkModeToggle.addEventListener('change', toggleDarkMode);
-  </script>
-</body>
-</html>
+
+
 
 
 

@@ -1,9 +1,9 @@
 #---------------------------------
-# This is the Blog Branch Build
+# This is Development Config File
 # Config File
 #---------------------------------
 
-baseURL = 'https://future-insight.blog'
+baseURL = 'https://future-insight-blog-build.onrender.com'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
@@ -29,17 +29,17 @@ enableRobotsTXT = true
     footer = " by Future Insight"
     metaKeywords = ["blog", "gokarna", "hugo"]
     search= true
-    favicon = ["/images/favicon/apple-touch-icon.png"]
     summaryLength = "10"
     code_copy_button = true 
     author = "Abdul Rafay"
-    mainSections = ["posts", "projects","Authors"]
+    mainSections = ["posts", "projects","Authors","Service"]
     pygmentsStyle = "monokai" 
   
   #---------------------------
   #     Google Analytics
   #---------------------------
-    googleAnalytics="G-HSKPE7HLQL"
+  # Disble because this is development config file   
+    # googleAnalytics="G-HSKPE7HLQL"
 
   #---------------------------
   # Website Output Format
@@ -58,69 +58,77 @@ enableRobotsTXT = true
   #                 Main Menu Parmeters
   # -----------------------------------------------------------
   
-  # Home
-  [[menu.main]]
-    identifier = "home"
-    url = "/"
-    name = "Home"
-    weight = 1
-    pre = "<span data-feather='home'></span>"
-  
-  # Author
+  [menu]
+    # Home
     [[menu.main]]
-    identifier = "author"
-    url = "/author/"
-    name = "Author"
-    weight = 2
-    pre = "<span data-feather='user'></span>"
-
-  # Posts or Blogs
-  [[menu.main]]
-    identifier = "post"
-    url = "/post/"
-    name = "Posts"
-    weight = 3
-    pre = "<span data-feather='book'></span>"
+      identifier = "home"
+      url = "/"
+      name = "Home"
+      weight = 1
+      pre = "<span data-feather='home'></span>"
     
-  # Tage or Categories
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
-    pre = "<span data-feather='tag'></span>"
-  
-  #Privacy Page 
-  [[menu.main]]
-    identifier="Privacy"
-    name="Policy"
-    url="/policy/"
-    weight=5
-    pre="<span data-feather='edit-3'></span>"
+    # Author
+      [[menu.main]]
+      identifier = "author"
+      url = "/author/"
+      name = "Author"
+      weight = 2
+      pre = "<span data-feather='user'></span>"
 
-# About Page
-  [[menu.main]]
-    identifier="About-Us"
-    name="About Us"
-    url="/About-Us/"
-    weight=6
-    pre="<span data-feather='info'></span>"
-  # Contact Page
-  [[menu.main]]
-    identifier = "Contact"
-    url = "/contact/"
-    name = "Contact Me"
-    weight = 7
-    pre = "<span data-feather='send'></span>"
-  
-  # Github Link
-  [[menu.main]]
-    identifier = "github"
-    url = "https://github.com/rafay99-epic"
-    weight = 8
-    pre = "<span data-feather='github'></span>"
+    # Posts or Blogs
+    [[menu.main]]
+      identifier = "post"
+      url = "/post/"
+      name = "Posts"
+      weight = 3
+      pre = "<span data-feather='book'></span>"
+      
+    # Tage or Categories
+    [[menu.main]]
+      identifier = "tags"
+      name = "Tags"
+      url = "/tags/"
+      weight = 4
+      pre = "<span data-feather='tag'></span>"
+    
+    # Service Page 
+    # [[menu.main]]
+    #   identifier = "Services"
+    #   name = "Services"
+    #   url = "/services/"
+    #   weight = 5
+    #   pre = "<span data-feather='settings'></span>"
 
+    # Github Link
+    [[menu.main]]
+      identifier = "github"
+      url = "https://github.com/rafay99-epic"
+      weight = 6
+      pre = "<span data-feather='github'></span>"
 
+  # Drop Down Menu Components
+    [[menu.dropdown]]
+      identifier = "About Us"
+      url = "/About-Us/"
+      name = "About Us"
+      weight = 1
+      Icon = "<span data-feather='info'></span>"
+
+    [[menu.dropdown]]
+      identifier = "Privacy Policy"
+      url = "/policy/"
+      name = "Privacy Policy"
+      Icon = "<span data-feather='lock'></span>"
+      weight = 2
+    
+    [[menu.dropdown]]
+      identifier="Contact"
+      url="/contact/"
+      name="Contact US"
+      weight=3
+      Icon="<span data-feather='send'></span>"
+    
+    
 # --------------------------------------
 #   --- Markdown Config Section ---
 # --------------------------------------
