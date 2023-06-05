@@ -123,12 +123,8 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 </ul>
 
 <h2>License:</h2>
-
-
 <p>This repository is licensed under the MIT License. You can find the license details in the <a href="/LICENSE">LICENSE</a> file.</p>
-
-<h2>Local Installation Guide:</h2>s
-
+<h2>Local Installation Guide:</h2>
 <p>To run the website on your local machine, please follow the provided instructions:</p>
 <ol>
   <li>Go to the <a href="/Instruction/INSTALL.md">INSTALL.md</a> file.</li>
@@ -136,8 +132,6 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
 </ol>
 
 <h2>Contribution:</h2>
-
-
 <p>There are two ways you can make a contribution:</p>
 <ol>
   <li><a href="/Instruction/Development.md">Creating a Website</a></li>
