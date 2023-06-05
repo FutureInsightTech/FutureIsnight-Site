@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Future Insight</title>
-    <link>https://future-insight.blog/post/</link>
+    <link>https://future-insight-blog-build.onrender.com/post/</link>
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 May 2023 16:36:17 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 16:36:17 +0500</lastBuildDate><atom:link href="https://future-insight-blog-build.onrender.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Midnight Tokyo: Awesome Window Manager</title>
-      <link>https://future-insight.blog/MidnightTokyoWM/</link>
+      <link>https://future-insight-blog-build.onrender.com/MidnightTokyoWM/</link>
       <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
       
-      <guid>https://future-insight.blog/MidnightTokyoWM/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/MidnightTokyoWM/</guid>
       <description>Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.</description>
     </item>
     
     <item>
       <title>Pheonix AI: ChatBot</title>
-      <link>https://future-insight.blog/Pheonix-AI/</link>
+      <link>https://future-insight-blog-build.onrender.com/Pheonix-AI/</link>
       <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Pheonix-AI/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/Pheonix-AI/</guid>
       <description>The world of Machine Learning and AI is rapidly evolving, with new tools and technologies being developed and released every day. However, there is one remarkable model that stands out among the rest: GPT-Model. This cutting-edge innovation has become the gold standard in the field.
 But what exactly is a GPT-Model and what makes it so exceptional? GPT, which stands for Generative Pre-trained Transformer, is a state-of-the-art language model built on the transformer architecture.</description>
     </item>
     
     <item>
       <title>Image Optimization</title>
-      <link>https://future-insight.blog/image-optimization/</link>
+      <link>https://future-insight-blog-build.onrender.com/image-optimization/</link>
       <pubDate>Tue, 23 May 2023 00:26:19 +0500</pubDate>
       
-      <guid>https://future-insight.blog/image-optimization/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/image-optimization/</guid>
       <description>Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.
 When writing blog posts with multiple images, the size of the images becomes a crucial factor. Large image sizes can slow down website loading times, impacting user experience.</description>
     </item>
     
     <item>
       <title>Automating File Management with a Bash Script</title>
-      <link>https://future-insight.blog/automating-file-management-with-bash-script/</link>
+      <link>https://future-insight-blog-build.onrender.com/automating-file-management-with-bash-script/</link>
       <pubDate>Mon, 22 May 2023 01:38:46 +0500</pubDate>
       
-      <guid>https://future-insight.blog/automating-file-management-with-bash-script/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/automating-file-management-with-bash-script/</guid>
       <description>In today&amp;rsquo;s fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we&amp;rsquo;ll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We&amp;rsquo;ll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process.</description>
     </item>
     
     <item>
       <title>Fedora 38: Review</title>
-      <link>https://future-insight.blog/fedora-review/</link>
+      <link>https://future-insight-blog-build.onrender.com/fedora-review/</link>
       <pubDate>Tue, 16 May 2023 00:07:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/fedora-review/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/fedora-review/</guid>
       <description>I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, &amp;ldquo;Why not? Let&amp;rsquo;s try Fedora and see what&amp;rsquo;s the hype?&amp;rdquo; Why people love Fedora so much and what it is like to run Fedora for a while</description>
     </item>
     
     <item>
       <title>Basic of NodeJs</title>
-      <link>https://future-insight.blog/basic-nodejs/</link>
+      <link>https://future-insight-blog-build.onrender.com/basic-nodejs/</link>
       <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
       
-      <guid>https://future-insight.blog/basic-nodejs/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/basic-nodejs/</guid>
       <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
     </item>
     
     <item>
       <title>Top 5 Commands Linux</title>
-      <link>https://future-insight.blog/Top-5-linux-command/</link>
+      <link>https://future-insight-blog-build.onrender.com/Top-5-linux-command/</link>
       <pubDate>Thu, 13 Apr 2023 22:40:06 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Top-5-linux-command/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/Top-5-linux-command/</guid>
       <description>For Today Linux commands, You will learn some cool commands and they can help your speed up your workflow and make you cool.
 Commands In this blog post you will learn how to use different commands in linux terminal, these commands will speed up your workflow by alot and I use them on daily basis as well.
 Command 1: tldr The tldr command is a utility for quickly understanding how to use a particular command by providing simplified and practical examples.</description>
@@ -77,39 +77,39 @@ Command 1: tldr The tldr command is a utility for quickly understanding how to u
     
     <item>
       <title>Linux App Installation: Simplified</title>
-      <link>https://future-insight.blog/linux-app-simplified/</link>
+      <link>https://future-insight-blog-build.onrender.com/linux-app-simplified/</link>
       <pubDate>Tue, 28 Mar 2023 20:17:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/linux-app-simplified/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/linux-app-simplified/</guid>
       <description>Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you&amp;rsquo;ve tried searching for installation files like you would on Windows, but to no avail. Don&amp;rsquo;t worry, because in this blog, I&amp;rsquo;ll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
 By the end of this article, you&amp;rsquo;ll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.</description>
     </item>
     
     <item>
       <title>Decision Tree Machine Learning Algorithm</title>
-      <link>https://future-insight.blog/decision-tree/</link>
+      <link>https://future-insight-blog-build.onrender.com/decision-tree/</link>
       <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/decision-tree/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/decision-tree/</guid>
       <description>I came across a project, and in that project, I have to different machine learning classifiers or machine learning algorithms. I know how to apply them, but it&amp;rsquo;s been a while, so today I did it., We will revisit all of the concepts of the decision tree, from major terms to code implementation.
 Decision Tree Decision Tree is a Supervised Learning technique that can be used for classification problems and regression problems, but mostly it is used for classification problems.</description>
     </item>
     
     <item>
       <title>Nivida Driver: Arch Linux</title>
-      <link>https://future-insight.blog/nvidia-driver-arch-linux/</link>
+      <link>https://future-insight-blog-build.onrender.com/nvidia-driver-arch-linux/</link>
       <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
       
-      <guid>https://future-insight.blog/nvidia-driver-arch-linux/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/nvidia-driver-arch-linux/</guid>
       <description>If you&amp;rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system.</description>
     </item>
     
     <item>
       <title>Install Linux</title>
-      <link>https://future-insight.blog/install-linux/</link>
+      <link>https://future-insight-blog-build.onrender.com/install-linux/</link>
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
       
-      <guid>https://future-insight.blog/install-linux/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/install-linux/</guid>
       <description>You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
 So today I will teach you how to install Linux and how to dual boot with another operating system.
 Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in which your computer has more than one operating system.</description>
@@ -117,136 +117,136 @@ Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in whi
     
     <item>
       <title>The World of Operating System</title>
-      <link>https://future-insight.blog/world-of-os/</link>
+      <link>https://future-insight-blog-build.onrender.com/world-of-os/</link>
       <pubDate>Mon, 06 Mar 2023 00:29:28 +0500</pubDate>
       
-      <guid>https://future-insight.blog/world-of-os/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/world-of-os/</guid>
       <description>I was at work and I was doing my work, which was developing applications and making sure that the code that I was writing worked, and I was using Linux to do all my work. In Linux, I use a terminal to write my blogs and code my applications, and when my coworker saw me using a terminal and asked me what was on my screen, I told him it was my terminal that I was using to do my work.</description>
     </item>
     
     <item>
       <title>The World of Linux</title>
-      <link>https://future-insight.blog/world-of-linux/</link>
+      <link>https://future-insight-blog-build.onrender.com/world-of-linux/</link>
       <pubDate>Sun, 05 Mar 2023 22:42:58 +0500</pubDate>
       
-      <guid>https://future-insight.blog/world-of-linux/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/world-of-linux/</guid>
       <description>I am a developer. I love what I do, which is write blogs and make awesome applications, and for my work flow, I use an operating system that is called Linux that I use every day. Like 90% of my day I am running Linux on my computer. So in my previous blog, I mentioned different operating systems. So if you want to know about operating systems, then read my previous blog by clicking here.</description>
     </item>
     
     <item>
       <title>The Benefits of Mindfulness Meditation</title>
-      <link>https://future-insight.blog/Benefits-of-Mindfulness-Meditation/</link>
+      <link>https://future-insight-blog-build.onrender.com/Benefits-of-Mindfulness-Meditation/</link>
       <pubDate>Sun, 19 Feb 2023 01:29:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Benefits-of-Mindfulness-Meditation/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/Benefits-of-Mindfulness-Meditation/</guid>
       <description>In today&amp;rsquo;s fast-paced world, it can be challenging to find a moment of peace and quiet. We&amp;rsquo;re constantly bombarded with notifications, emails, and messages, making it difficult to focus on the present moment. However, mindfulness meditation offers a way to cultivate inner peace and improve your overall well-being. In this article, we&amp;rsquo;ll explore the benefits of mindfulness meditation and why you should make it a daily practice.
 Body: Reduces Stress and Anxiety Mindfulness meditation has been shown to reduce stress and anxiety levels.</description>
     </item>
     
     <item>
       <title>Logistical Regression</title>
-      <link>https://future-insight.blog/logistic-regression/</link>
+      <link>https://future-insight-blog-build.onrender.com/logistic-regression/</link>
       <pubDate>Sat, 18 Feb 2023 13:58:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/logistic-regression/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/logistic-regression/</guid>
       <description>Logistical regression is a type of algorithm that uses information from one set of data to predict another set. In this article, we&amp;rsquo;ll take a look at what logistical regression is and how it works as well as some popular examples where it&amp;rsquo;s been used successfully.
 What is Logistical Regression Logistic regression is a type of regression analysis that is used to predict the probability of an event occurring. It&amp;rsquo;s also known as multinomial logistic regression, and it&amp;rsquo;s used in marketing, fraud detection, and risk assessment.</description>
     </item>
     
     <item>
       <title>Linear Regression</title>
-      <link>https://future-insight.blog/linear-regression/</link>
+      <link>https://future-insight-blog-build.onrender.com/linear-regression/</link>
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/linear-regression/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/linear-regression/</guid>
       <description>Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
     </item>
     
     <item>
       <title>False Data Injection Attack</title>
-      <link>https://future-insight.blog/FDIA/</link>
+      <link>https://future-insight-blog-build.onrender.com/FDIA/</link>
       <pubDate>Mon, 13 Feb 2023 20:00:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/FDIA/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/FDIA/</guid>
       <description>False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records.</description>
     </item>
     
     <item>
       <title>Support Vector Machine</title>
-      <link>https://future-insight.blog/Support-Vector-Machine/</link>
+      <link>https://future-insight-blog-build.onrender.com/Support-Vector-Machine/</link>
       <pubDate>Tue, 07 Feb 2023 20:13:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Support-Vector-Machine/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/Support-Vector-Machine/</guid>
       <description>So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.
 I am doing a project where I need to use SVM for detecting cyber attacks, but in order to identify them, I need to learn what makes this algorithm so good. For this project, I will be learning the basics of SVM with real-world examples, and once we are done with the examples, we will try the real project.</description>
     </item>
     
     <item>
       <title>Design your own Machine Learning Model: Beginner Guide</title>
-      <link>https://future-insight.blog/create-your-own-ml-model/</link>
+      <link>https://future-insight-blog-build.onrender.com/create-your-own-ml-model/</link>
       <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
       
-      <guid>https://future-insight.blog/create-your-own-ml-model/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/create-your-own-ml-model/</guid>
       <description>Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we&amp;rsquo;ll walk through the basics of designing a machine learning model from scratch.
 Steps: Follow these steps to get a better understanding of how machine learning models are created.</description>
     </item>
     
     <item>
       <title>Web Scrapper</title>
-      <link>https://future-insight.blog/web-scrapper/</link>
+      <link>https://future-insight-blog-build.onrender.com/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-scrapper/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/web-scrapper/</guid>
       <description>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Best Resources to Learn ML</title>
-      <link>https://future-insight.blog/best-resources-for-ML/</link>
+      <link>https://future-insight-blog-build.onrender.com/best-resources-for-ML/</link>
       <pubDate>Fri, 27 Jan 2023 01:07:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/best-resources-for-ML/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/best-resources-for-ML/</guid>
       <description>Machine Learning and Deep Learning are rapidly growing fields that are changing the way we interact with technology. These fields have the power to create intelligent systems that can learn from data and make predictions, decisions, and even create new knowledge. If you&amp;rsquo;re interested in learning about Machine Learning and Deep Learning, there are many resources available to help you get started.
 Best Resources As I was learning Machine Learning and Deep Learning, I got to the point where I did not understand the basic knowledge of Machine Learning Models and Deep Learning Models.</description>
     </item>
     
     <item>
       <title>Tools for ML</title>
-      <link>https://future-insight.blog/tools-for-ml/</link>
+      <link>https://future-insight-blog-build.onrender.com/tools-for-ml/</link>
       <pubDate>Fri, 27 Jan 2023 00:50:32 +0500</pubDate>
       
-      <guid>https://future-insight.blog/tools-for-ml/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/tools-for-ml/</guid>
       <description>Hi! My name is Abdul Rafay, and I work as a Web Development and Machine Learning Engineer. I recently finished my studies, and I’ve been working in the web development industry for a while, but machine learning is a new field for me. I’m learning, and my passion grows as my experience in this field grows. So as a developer, I’ll show you some of the tools that are awesome to work with when you are in the field of machine learning and web development.</description>
     </item>
     
     <item>
       <title>IS Maths Needed for ML</title>
-      <link>https://future-insight.blog/Is-Maths-required-for-ML/</link>
+      <link>https://future-insight-blog-build.onrender.com/Is-Maths-required-for-ML/</link>
       <pubDate>Thu, 26 Jan 2023 03:34:34 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Is-Maths-required-for-ML/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/Is-Maths-required-for-ML/</guid>
       <description>Hi! My name is Abdul Rafay, and I work on training different models from provided data, as well as deploying the model on any of the cloud services.
 When I started this journey, my teacher and mentor told me to learn math and probability in order to understand the major concepts needed to become an expert in machine learning. But most students hate math and probability because some of the concepts can be tricky to learn and might not be interesting to them.</description>
     </item>
     
     <item>
       <title>Time Management</title>
-      <link>https://future-insight.blog/time-management/</link>
+      <link>https://future-insight-blog-build.onrender.com/time-management/</link>
       <pubDate>Thu, 26 Jan 2023 02:56:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/time-management/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/time-management/</guid>
       <description>Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 Strategies:  One strategy that can be effective is to create a daily schedule.</description>
     </item>
     
     <item>
       <title>Learn Git</title>
-      <link>https://future-insight.blog/learn-git-&amp;-github/</link>
+      <link>https://future-insight-blog-build.onrender.com/learn-git-&amp;-github/</link>
       <pubDate>Tue, 24 Jan 2023 17:13:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/learn-git-&amp;-github/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/learn-git-&amp;-github/</guid>
       <description>As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.
 Before Git: But before I was using Git, My code folder structure was something like this:
 Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.</description>
@@ -254,40 +254,40 @@ Every time I was working on a project, I made a copy of that folder and then mad
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://future-insight.blog/build-hugo-website/</link>
+      <link>https://future-insight-blog-build.onrender.com/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://future-insight.blog/build-hugo-website/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/build-hugo-website/</guid>
       <description>I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>
     
     <item>
       <title>Road Map for ML</title>
-      <link>https://future-insight.blog/road-map-for-ml/</link>
+      <link>https://future-insight-blog-build.onrender.com/road-map-for-ml/</link>
       <pubDate>Thu, 19 Jan 2023 14:11:15 +0500</pubDate>
       
-      <guid>https://future-insight.blog/road-map-for-ml/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/road-map-for-ml/</guid>
       <description>Learning is something that we have to do every day. As a developer, you need to learn the latest and hottest technologies because if you don&amp;rsquo;t, you might not be able to succeed in this field.
 I am a web developer and machine learning engineer. I am working on both and trying to improve my skills with time, but sometimes you need guidance to see where you are right now and where you see yourself in the future.</description>
     </item>
     
     <item>
       <title>Machine learning Requires Amazing Skills</title>
-      <link>https://future-insight.blog/skills-for-ml/</link>
+      <link>https://future-insight-blog-build.onrender.com/skills-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://future-insight.blog/skills-for-ml/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/skills-for-ml/</guid>
       <description>So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development.
 Understanding: Those things are: 1. understanding the type of data; and 2. once you know what kind of data this is, you need to check what kind of model you are going to use.</description>
     </item>
     
     <item>
       <title>Python vs JavaScript ML</title>
-      <link>https://future-insight.blog/JavaScript-vs-Python-for-ml/</link>
+      <link>https://future-insight-blog-build.onrender.com/JavaScript-vs-Python-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://future-insight.blog/JavaScript-vs-Python-for-ml/</guid>
+      <guid>https://future-insight-blog-build.onrender.com/JavaScript-vs-Python-for-ml/</guid>
       <description>Hi!, Over the years I have developed multiple websites using multiple technologies such as HTML, CSS, JavaScript, and a couple of frameworks, but now I am expanding my skill set in the world of machine learning. I used JavaScript for everything and loved it; things were very easy and simple for me. I needed to create a static website, so I just used NodeJS with an EJS template to create a simple website.</description>
     </item>
     
