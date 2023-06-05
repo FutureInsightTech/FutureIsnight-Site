@@ -9,7 +9,7 @@
 #baseURL = 'https://future-insight.blog'
 
 # Development URL
-baseURL = 'https://futue-insight-development-build.onrender.com'
+# baseURL = 'https://futue-insight-development-build.onrender.com'
 
 languageCode = 'en-us'
 title = 'Future Insight'
