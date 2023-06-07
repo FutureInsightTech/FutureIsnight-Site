@@ -30,8 +30,8 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
         <li class="feature3">Alteration to Solved Assignment</li>
       </ul>
       <div class="buttons">
-        <button onclick="redirectToURL('https://future-insight.blog/author')">Explore Terms</button>
-        <button onclick="redirectToURL('https://future-insight.blog/author')">Select Plan</button>
+        <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
+        <button onclick="redirectToURL('')">Select Plan</button>
       </div>
     </div>
   <!-- Plan 2 -->
@@ -45,7 +45,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
         <li class="feature4">1 Video Call Support</li>
       </ul>
       <div class="buttons">
-        <button onclick="redirectToURL('https://example.com/advanced')">Explore Terms</button>
+        <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('https://example.com/advanced')">Select Plan</button>
       </div>
     </div>
@@ -60,7 +60,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
         <li class="feature4">3 Video Call Support</li>
       </ul>
       <div class="buttons">
-        <button onclick="redirectToURL('https://example.com/premium')">Explore Terms</button>
+        <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('https://example.com/premium')">Select Plan</button>
       </div>
     </div>

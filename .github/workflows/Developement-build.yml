@@ -1,8 +1,8 @@
-name: Development Build(testing-build)
+name: Development Build
 on:
   push:
     branches:
-      - Developement-Branch
+        - Development-Branch
 jobs:
   build:
     runs-on: ubuntu-latest
