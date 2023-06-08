@@ -47,7 +47,7 @@
     <script src="{{ .Site.BaseURL }}/js/main.js"></script>
 
     <!---analytics for umami Software--> 
-    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    <!-- <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script> -->
     
     <!-- Aweosme Fonts Version 4.7 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -82,12 +82,20 @@
     <!-- Style & animation for the website -->
     <!-- This animation is to switch from dark mode to light mode -->
     <link rel="stylesheet" href="/css/animation.css">
-    <script src="/js/animation.js"></script>
+    <!-- <script src="/js/animation.js"></script> -->
 
 
     <!-- Style and animation for the Nav bar Redesign -->
     <link rel="stylesheet" href="/css/nav-bar-animation.css">
-    <script src = "/js/nav-bar-animation.js"></script>
+    <!-- <script src = "/js/nav-bar-animation.js"></script> -->
+
+    <!-- Firebase Setup -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+
 
     <!-- Option for user to inject custom html -->
     {{ if .Site.Params.CustomHeadHTML }}
