@@ -3,7 +3,7 @@
 # Config File
 #---------------------------------
 
-baseURL = 'https://future-insight.blog'
+baseURL = 'https://future-insight-develelopment.onrender.com'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
@@ -92,12 +92,12 @@ enableRobotsTXT = true
       pre = "<span data-feather='tag'></span>"
     
     # Service Page 
-    # [[menu.main]]
-    #   identifier = "Services"
-    #   name = "Services"
-    #   url = "/services/"
-    #   weight = 5
-    #   pre = "<span data-feather='settings'></span>"
+    [[menu.main]]
+      identifier = "Services"
+      name = "Services"
+      url = "/services/"
+      weight = 5
+      pre = "<span data-feather='settings'></span>"
 
     # Github Link
     [[menu.main]]
