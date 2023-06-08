@@ -46,7 +46,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
-        <button onclick="redirectToURL('/select-package/'">Select Plan</button>
+        <button onclick="redirectToURL('/select-package/')">Select Plan</button>
       </div>
     </div>
   <!-- Plan 3 -->
@@ -61,7 +61,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
-        <button onclick="redirectToURL('/select-package/'">Select Plan</button>
+        <button onclick="redirectToURL('/select-package/')">Select Plan</button>
       </div>
     </div>
   </div>
