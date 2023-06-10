@@ -6,12 +6,11 @@ url: /select-package/
 ---
 
 <!-- Adding Css -->
-<link rel="stylesheet" href="/css/Select-Package/css/style.css">
+<link rel="stylesheet" href="/css/Select-Package/select-package.css">
 
 <!-- Fetching Data -->
 <script defer src="/js/select-package/autodate.js"></script>
 <script defer src="/js/select-package/firebase-connection.js"></script>
-
 
 <div class="container">
   <div class="form-container">
