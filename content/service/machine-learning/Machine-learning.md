@@ -9,6 +9,7 @@ image: "/images/2023/"
 
 <script src="/js/redirect.js"></script>
 <link rel="stylesheet" href="/css/services/machine-learning/machine-learning-page.css">
+<link rel="stylesheet" href="/css/services/price-card.css">
 
 <h1>Empowering Success with Revolutionary Machine Learning Solutions</h1>
 
