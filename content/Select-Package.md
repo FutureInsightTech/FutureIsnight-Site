@@ -8,16 +8,9 @@ url: /select-package/
 <!-- Adding Css -->
 <link rel="stylesheet" href="/css/Select-Package/css/style.css">
 
-<!-- Enabling Firebase Storage & Firebase Cloud Database -->
-<!-- Already included in the Head File of the template -->
-
-<!-- <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> -->
-
 <!-- Fetching Data -->
-<script defer src="/css/Select-Package/js/autodate.js"></script>
-<script defer src="/css/Select-Package/js/main.js"></script>
+<script defer src="/js/select-package/autodate.js"></script>
+<script defer src="/js/select-package/firebase-connection.js"></script>
 
 
 <div class="container">
