@@ -23,7 +23,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
     <!-- Plan 01 -->
     <div class="price-card">
       <h2>Normal</h2>
-      <p class="price">1500 Rs/Assignment</p>
+      <!-- <p class="price">1500 Rs/Assignment</p> -->
       <ul class="pros">
         <li class="feature1">Solved Assignment</li>
         <li class="feature2">Documentation</li>
@@ -37,7 +37,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
   <!-- Plan 2 -->
     <div class="price-card">
       <h2>Advanced</h2>
-      <p class="price">2500 Rs/Assignment</p>
+      <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
         <li class="feature1">Solved Assignment</li>
         <li class="feature2">Documentation</li>
@@ -52,7 +52,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
   <!-- Plan 3 -->
     <div class="price-card">
       <h2>Premium</h2>
-      <p class="price">3500 Rs/Assignment</p>
+      <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">
         <li class="feature1">Solved Assignment</li>
         <li class="feature2">Documentation</li>

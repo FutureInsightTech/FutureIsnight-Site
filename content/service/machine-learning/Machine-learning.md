@@ -22,48 +22,52 @@ Welcome to Future Insight, your premier destination for cutting-edge machine lea
     <!-- Plan 01 -->
     <div class="price-card">
       <h2>Normal</h2>
-      <p class="price">1500 Rs/Project</p>
+      <!-- <p class="price">1500 Rs/Project</p> -->
       <ul class="pros">
-        <li class="feature1">Solved Assignment</li>
-        <li class="feature2">Documentation</li>
-        <li class="feature3">1 Alteration to Solved Assignment</li>
+        <li class="feature1">Unleash the Power of Data Creation</li>
+        <li class="feature2">Generate Diverse and Representative Datasets</li>
+        <li class="feature3">Custom Data Creation Made Easy</li>
+        <li class="feature4">Documentation</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="redirectToURL('/contact-us/')">Contact Us</button>
+        <button onclick="redirectToURL('/services/MachineLearning/Package01')">More Detail</button>
       </div>
     </div>
   <!-- Plan 2 -->
     <div class="price-card">
       <h2>Advanced</h2>
-      <p class="price">2500 Rs/Assignment</p>
+      <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
-        <li class="feature1">Solved Assignment</li>
-        <li class="feature2">Documentation</li>
-        <li class="feature3">2 Times for Alteration to Solved Assignment</li>
-        <li class="feature4">1 Video Call Support</li>
+        <li class="feature1">Seamlessly Train and Test Your Models</li>
+        <li class="feature2">Empower your ML Journey</li>
+        <li class="feature3">Achieve Accurate Results with Your Own Data</li>
+        <li class="feature4">Alteration to the Model</li>
+        <li class="feature5">1 Video Call Support</li>
+        <li class="feature6">Documentation</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="redirectToURL('/contact-us/')">Contact Us</button>
+        <button onclick="redirectToURL('/services/MachineLearning/Package02')">More Detail</button>
       </div>
     </div>
   <!-- Plan 3 -->
     <div class="price-card">
       <h2>Premium</h2>
-      <p class="price">3500 Rs/Assignment</p>
+      <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">
-        <li class="feature1">Solved Assignment</li>
-        <li class="feature2">Documentation</li>
-        <li class="feature3">4 Times for Alteration to Solved Assignment</li>
-        <li class="feature4">3 Video Call Support</li>
+        <li class="feature1">Next-Level Model Training and Testing Experience</li>
+        <li class="feature2">Intuitive GUI and Powerful APIs for Your Models</li>
+        <li class="feature4">2 Alteration to ML Model</li>
+        <li class="feature5">2 Video Call Support</li>
+        <li class="feature6">Documentation</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="redirectToURL('/contact-us/')">Contact Us</button> 
+        <button onclick="redirectToURL('/services/MachineLearning/Package03/')">More Detail</button> 
       </div>
     </div>
 </div>

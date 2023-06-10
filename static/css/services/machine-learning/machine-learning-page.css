@@ -1,7 +1,8 @@
-.price-table {
+/* .price-table {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  height: 1000px;
 }
 
 .price-card {
@@ -15,6 +16,26 @@
   overflow: hidden;
   width: 500px;
   height: 400px;
+} */
+
+.price-table {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  height: 500px;
+}
+
+.price-card {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 40px;
+  background-color: white;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
 }
 
 .price-card h2 {
@@ -39,6 +60,8 @@
   padding-left: 5px;
   margin-bottom: 10px;
   transition: color 0.3s;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .pros li::before {
