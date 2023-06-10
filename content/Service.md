@@ -35,7 +35,16 @@ At Future Insight, we specialize in a diverse range of innovative services desig
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToURL('/services/web-development/')">
+  <!-- main Redirect to the Web Development Section -->
+  <!-- <div class="card" onclick="redirectToURL('/services/web-development/')">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
+      <div class="card-content">
+        <h3>Web Development</h3>
+      </div>
+    </a>
+  </div> -->
+  <div class="card" onclick="showUnderDevMessage()">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
       <div class="card-content">
@@ -43,7 +52,17 @@ At Future Insight, we specialize in a diverse range of innovative services desig
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToURL('/services/application-development/')">
+  <div class="card" onclick="showUnderDevMessage()">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/services/service-page/and.png" alt="ANDROID">
+      <div class="card-content">
+        <h3>Android Application Development</h3>
+      </div>
+    </a>
+    </div>
+  </div>
+<!-- Orgin Code that will redirect to the Android Development Section -->
+  <!-- <div class="card" onclick="redirectToURL('/services/application-development/')">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/and.png" alt="ANDROID">
       <div class="card-content">
@@ -51,4 +70,10 @@ At Future Insight, we specialize in a diverse range of innovative services desig
       </div>
     </a>
   </div>
-</div>
+</div> -->
+<script>
+  function showUnderDevMessage() {
+     event.preventDefault();
+    alert('This section is currently under development.');
+  }
+</script>
