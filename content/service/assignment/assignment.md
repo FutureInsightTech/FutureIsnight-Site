@@ -7,10 +7,10 @@ url: /services/assignment/
 image: "/images/2023/"
 ---
 
-
-
 <script src="/js/redirect.js"></script>
-<link rel="stylesheet" href="/css/assignment-service.css">
+<!-- <link rel="stylesheet" href="/css/services/assignment/assignment-service.css"> -->
+
+<link rel="stylesheet" href="/css/services/machine-learning/machine-learning-page.css">
 
 <h1>Our Assignment Solutions: Unlocking Your Academic Success</h1>
 
@@ -27,7 +27,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       <ul class="pros">
         <li class="feature1">Solved Assignment</li>
         <li class="feature2">Documentation</li>
-        <li class="feature3">Alteration to Solved Assignment</li>
+        <li class="feature3">1 Alteration to Solved Assignment</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
