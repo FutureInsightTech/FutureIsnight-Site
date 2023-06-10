@@ -6,6 +6,9 @@ type: "page"
 url: /services/MachineLearning/Package01
 image: "/images/2023/"
 ---
+<!-- Links -->
+<script src="/js/redirect.js"></script>
+<link rel="stylesheet" href="/css/services/package.css">
 
 # Data Creation Package - Empowering Your Machine Learning Journey
 
@@ -40,7 +43,10 @@ Empowering Your Machine Learning Journey
 The Data Creation package is a powerful tool for data scientists and machine learning practitioners. It equips them with the necessary tools and utilities to create diverse and realistic datasets, enabling more accurate and robust model training. By leveraging the package's capabilities and comprehensive documentation, users can take their machine learning projects to new heights and achieve outstanding results. Contact us today to discuss your project scope and get started on your data creation journey.
 
 
-
+<div class="button-container">
+    <button class="green-button" onclick="redirectToURL('/terms-conditions/')">Terms & Conditions</button>
+    <button class="green-button" onclick="redirectToURL('/select-package/')">Select this Package</button>
+</div>
 
 
 
