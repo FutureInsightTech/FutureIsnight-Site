@@ -1,38 +1,18 @@
-.price-table {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  
-.price-card {
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    position: relative;
-    padding-bottom: 40px;
-    background-color: white;
-    overflow: hidden; /* Add this line to clip overflowing content */
-    width: 500px;
-    height: 400px;   
-  }
-  
 .price-card h2 {
     margin-top: 0;
     color: black;
-  }
+}
   
 .price {
     font-size: 20px;
-    /* margin-bottom: 30px; */
     color: #555;
-  }
+}
   
 .pros {
     list-style-type: none;
     padding-left: 5px;
     margin-bottom: 30px;
-  }
+}
   
 .pros li {
     color: black;
@@ -40,7 +20,9 @@
     padding-left: 5px;
     margin-bottom: 10px;
     transition: color 0.3s;
-  }
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
   
 .pros li::before {
     content: '';
@@ -51,93 +33,93 @@
     height: 10px;
     border-radius: 50%;
     transition: background-color 0.3s;
-  }
+}
   
-.pros li:hover {
+.pros li:hover,
+.price-card:focus .pros li {
     color: black;
-    font-weight: bold;
-  }
+}
   
-.pros li:hover::before {
+.pros li:hover::before,
+.price-card:focus .pros li::before {
     background-color: #ccc;
-  }
+}
   
 .pros li.feature1::before {
     background-color: #ff7f50;
-  }
+}
   
 .pros li.feature2::before {
     background-color: #1e90ff;
-  }
+}
   
 .pros li.feature3::before {
     background-color: #8a2be2;
-  }
+}
   
 .pros li.feature4::before {
     background-color: #ff1493;
-  }
+}
   
 .pros li.feature5::before {
     background-color: #32cd32;
-  }
+}
   
 .pros li.feature6::before {
     background-color: #ffd700;
-  }
+}
   
+  /* Button UI */
 .buttons {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 92%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    text-align: center;  
-  }
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
   
 .buttons button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     color: #fff;
     background-color: green;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 5px;
-    white-space: nowrap;
-    padding-left: 5px; 
-  }
+    margin: 10px 0;
+    width: 100%;
+}
   
-.buttons button:hover {
+.buttons button:hover,
+.price-card:focus .buttons button {
     background-color: darkgreen;
-  }
+}
   
+.price-card:hover,
+.price-card:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
   
-
-/* New Code  */
-.price-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Change the box shadow on hover */
-    transform: translateY(-20px); /* Add a slight lift effect */
-  }
+.price-card:hover h2,
+.price-card:focus h2 {
+    color: black;
+}
   
-  .price-card:hover h2 {
-    color: black; 
-  }
+.price-card:hover .pros li::before,
+.price-card:focus .pros li::before {
+    background-color: #ccc;
+}
   
-  .price-card:hover .pros li {
-    font-weight: bold; 
-  }
-  
-  .price-card:hover .pros li::before {
-    background-color: #ccc; 
-  }
-  
-  .buttons button:hover {
-    background-color: green; 
-    color: #fff; 
+.buttons button:hover,
+.price-card:focus .buttons button {
+    background-color: green;
+    color: #fff;
     font-weight: bold;
-  }
+}
   

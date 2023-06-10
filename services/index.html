@@ -227,7 +227,7 @@
     <div class="post-content">
         <p>
             <!-- importing CSS File -->
-<link rel="stylesheet" href="/css/author-page.css">
+<link rel="stylesheet" href="/css/service-page.css">
 <script defer src="/js/redirect.js"></script>
 <h1>Explore Our Expertise</h1>
 <p>Welcome to Future Insight's Services!</p>
@@ -252,7 +252,16 @@
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToURL('/services/web-development/')">
+  <!-- main Redirect to the Web Development Section -->
+  <!-- <div class="card" onclick="redirectToURL('/services/web-development/')">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
+      <div class="card-content">
+        <h3>Web Development</h3>
+      </div>
+    </a>
+  </div> -->
+  <div class="card" onclick="showUnderDevMessage()">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
       <div class="card-content">
@@ -260,7 +269,17 @@
       </div>
     </a>
   </div>
-  <div class="card" onclick="redirectToURL('/services/application-development/')">
+  <div class="card" onclick="showUnderDevMessage()">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/services/service-page/and.png" alt="ANDROID">
+      <div class="card-content">
+        <h3>Android Application Development</h3>
+      </div>
+    </a>
+    </div>
+  </div>
+<!-- Orgin Code that will redirect to the Android Development Section -->
+  <!-- <div class="card" onclick="redirectToURL('/services/application-development/')">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/and.png" alt="ANDROID">
       <div class="card-content">
@@ -268,8 +287,13 @@
       </div>
     </a>
   </div>
-</div>
-
+</div> -->
+<script>
+  function showUnderDevMessage() {
+     event.preventDefault();
+    alert('This section is currently under development.');
+  }
+</script>
         </p>
     </div>
 </div>
