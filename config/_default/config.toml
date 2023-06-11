@@ -51,8 +51,8 @@ enableRobotsTXT = true
   #               cookies
   #-----------------------------------------
   [params.cookies]
-    enable = true
-    expire_days = 2
+    enable = false
+    # expire_days = 2
 
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
