@@ -27,10 +27,11 @@ With a focus on exceptional customer service, we strive to build long-term partn
       <h2>Normal</h2>
       <!-- <p class="price">1500 Rs/Project</p> -->
       <ul class="pros">
-        <li class="feature1">Unleash the Power of Data Creation</li>
-        <li class="feature2">Generate Diverse and Representative Datasets</li>
-        <li class="feature3">Custom Data Creation Made Easy</li>
-        <li class="feature4">Documentation</li>
+        <li class="feature1">GUI Development</li>
+        <li class="feature2">Documentation</li>
+        <li class="feature3">Latest Technologies for Development</li>
+        <li class="feature4">Customization of GUI</li>
+        <li class="feature5">1 Video Call Support</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
@@ -43,12 +44,11 @@ With a focus on exceptional customer service, we strive to build long-term partn
       <h2>Advanced</h2>
       <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
-        <li class="feature1">Seamlessly Train and Test Your Models</li>
-        <li class="feature2">Empower your ML Journey</li>
-        <li class="feature3">Achieve Accurate Results with Your Own Data</li>
-        <li class="feature4">Alteration to the Model</li>
-        <li class="feature5">1 Video Call Support</li>
-        <li class="feature6">Documentation</li>
+        <li class="feature1">Back-End Development</li>
+        <li class="feature2">Documentation</li>
+        <li class="feature3">Database Design</li>
+        <li class="feature4">2 time Alteration to Project</li>
+        <li class="feature5">2 Video Call Support</li>
       </ul>
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
@@ -61,9 +61,10 @@ With a focus on exceptional customer service, we strive to build long-term partn
       <h2>Premium</h2>
       <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">
-        <li class="feature1">Next-Level Model Training and Testing Experience</li>
-        <li class="feature2">Intuitive GUI and Powerful APIs for Your Models</li>
-        <li class="feature4">2 Alteration to ML Model</li>
+        <li class="feature1">Full-Stack Development</li>
+        <li class="feature2">Front-End & Back-End Development</li>
+        <li class="feature4">API Development</li>
+        <li class="feature4">2 time Alteration to Project</li>
         <li class="feature5">2 Video Call Support</li>
         <li class="feature6">Documentation</li>
       </ul>
@@ -74,9 +75,6 @@ With a focus on exceptional customer service, we strive to build long-term partn
       </div>
     </div>
 </div>
-
-
-
 
 
 
