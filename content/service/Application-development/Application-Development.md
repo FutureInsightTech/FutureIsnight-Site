@@ -37,7 +37,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="showUnderDevMessage()">More Detail</button>
+        <button onclick="redirectToURL('/services/Application-Development/Package01/')">More Detail</button>
       </div>
     </div>
   <!-- Plan 2 -->
@@ -54,7 +54,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="showUnderDevMessage()">More Detail</button>
+        <button onclick="redirectToURL('/services/Application-Development/Package02/')">More Detail</button>
       </div>
     </div>
   <!-- Plan 3 -->
@@ -70,7 +70,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
       <div class="buttons">
         <button onclick="redirectToURL('/terms-conditions/')">Explore Terms</button>
         <button onclick="redirectToURL('/select-package/')">Select Plan</button>
-        <button onclick="showUnderDevMessage()">More Detail</button> 
+        <button onclick="redirectToURL('/services/Application-Development/Package03/')">More Detail</button> 
       </div>
     </div>
 </div>
