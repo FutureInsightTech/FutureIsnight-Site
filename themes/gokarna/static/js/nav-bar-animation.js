@@ -1,9 +1,4 @@
-// function toggleDarkMode() {
-//     var body = document.body;
-//    body.classList.toggle('dark-theme');
-//   }
-  
-  // Toggle dropdown menu
+// Toggle dropdown menu
 var dropdownToggle = document.querySelector('.dropdown-toggle');
 var dropdownMenu = document.querySelector('.dropdown-menu');
 
@@ -64,23 +59,4 @@ window.addEventListener('load', function() {
         dropdownMenu.style.color = '#000'; // Set light mode text color
     }
     }
-
-    // toggleDarkMode(); // Initial setup based on current mode
-
-    // Listen for changes in dark mode
-    // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // body.classList.add('dark-theme'); // Dark mode is enabled
-    // } else {
-    // body.classList.remove('dark-theme'); // Dark mode is disabled
-    // }
-
-    // // Listen for changes in mode preference
-    // window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
-    // if (e.matches) {
-    //     body.classList.add('dark-theme'); // Dark mode is enabled
-    // } else {
-    //     body.classList.remove('dark-theme'); // Dark mode is disabled
-    // }
-    // toggleDarkMode(); // Update drop-down menu colors
-    // });
 });
