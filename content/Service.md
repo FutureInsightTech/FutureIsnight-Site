@@ -36,15 +36,7 @@ At Future Insight, we specialize in a diverse range of innovative services desig
     </a>
   </div>
   <!-- main Redirect to the Web Development Section -->
-  <!-- <div class="card" onclick="redirectToURL('/services/web-development/')">
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
-      <div class="card-content">
-        <h3>Web Development</h3>
-      </div>
-    </a>
-  </div> -->
-  <div class="card" onclick="showUnderDevMessage()">
+  <div class="card" onclick="redirectToURL('/services/web-development/')">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
       <div class="card-content">
@@ -52,6 +44,14 @@ At Future Insight, we specialize in a diverse range of innovative services desig
       </div>
     </a>
   </div>
+  <!-- <div class="card" onclick="showUnderDevMessage()">
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <img src="/images/2023/pages/services/service-page/web.png" alt="WEB">
+      <div class="card-content">
+        <h3>Web Development</h3>
+      </div>
+    </a>
+  </div> -->
   <div class="card" onclick="showUnderDevMessage()">
     <a href="" target="_blank" rel="noopener noreferrer">
       <img src="/images/2023/pages/services/service-page/and.png" alt="ANDROID">
