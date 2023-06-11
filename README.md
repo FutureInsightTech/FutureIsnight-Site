@@ -1,75 +1,150 @@
-# Introduction:
-I'm a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
+<!-- 
+<br>
+<br>
+<div>
+    <div class="circle">
+        <img src="static/images/16.png" alt="Your Image">
+    </div>
+    <br>
+    <h1><span class="wave">👋</span> Welcome to Future Insight</h1>
+</div>
 
-I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.
+<div class="image-container">
+        <img src="static/images/readME/final-intor-image(1).png" alt="Future Insight Preview" class="preview-image">
+</div>
+<br>
 
-Such as Medium or Notion, but these are great, but I didn't get the feel of writing blogs, and to be honest, the writing experience was just okay on Medium and Notion.
+Visit: [Future Insight](https://future-insight.blog/) to see all features in action.
 
-I love Markdown; it's flexible and works like a champ. I have been using markdown for something like three months, and I wanted some place where I could post my blogs in markdown.
+<br>
+<br>
+<div style="display: flex; justify-content: center;">
+  <a href="https://gohugo.io/"><img src="https://img.shields.io/badge/Built%20with-HUGO-FF4088?style=flat-square&logo=hugo&logoColor=white" alt="Built with HUGO"></a>
+  <span style="margin: 0 10px;"></span>
+  <a href="https://www.netlify.com/"><img src="https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" alt="Deployed on Netlify"></a>
+  <span style="margin: 0 10px;"></span>
+  <a href="https://future-insight.blog/"><img src="https://img.shields.io/badge/Powered%20by-Blog-3498DB?style=flat-square&logo=blogger&logoColor=white" alt="Powered by Blog"></a>
+</div>
+<br>
+<br>
 
-Hey! What I'm thinking is that I am a developer; I can build a blogging website. It will be easy, and I can do whatever I want with it.
+<p>
+Welcome to Future Insight, your gateway to a world where possibilities are limitless. We are a platform dedicated to exploring emerging trends, groundbreaking ideas, and cutting-edge advancements that shape the future. Whether you're a developer, tech enthusiast, or entrepreneur, our blog offers valuable insights, thought-provoking content, and practical resources to keep you informed and inspired. Join us on this journey of exploration, collaboration, and innovation as we shape a brighter future together. Welcome to Future Insight, where the power of tomorrow is within your reach.
+</p>
 
-# Exiting Solutions
-So I went online and started looking for existing solutions, and boy, did I find a lot of them, but they are either very time-consuming or lack the feature that I was looking for.
+<h2>Key Features</h2>
 
-When I was researching for blog website, I have to make a couple of key choices that was, which technologies I will be using to develop and code my application, 
+------
 
-So before that, I need to decide whether I need a dynamic website or a static website since I want to post just blogs on my website, so I will go with a static website. There are a few good reasons to go with a static website, such as speed and ease of configuration and coding. Because I don't have time to build a dynamic website, I'm going with a static website, but you can choose your own framework, such as React, Angular, or any other framework.
+<ul>
+  <li>Seamless Light and Dark Mode: Effortlessly switch between light and dark mode to enhance readability and personalize your browsing experience.</li>
+  <li>Simplified User Experience: Enjoy hassle-free browsing without the need for a complicated login system.</li>
+  <li>Ad-Free Environment: Immerse yourself in a distraction-free environment without any annoying advertisements.</li>
+  <li>Markdown Blogging: Create and publish blog posts using the versatile and user-friendly Markdown syntax.</li>
+  <li>Responsive Design: Experience a seamless browsing experience across both mobile and desktop devices.</li>
+  <li>Easy Blog Creation: Get started quickly with an intuitive starting script that guides you through the process of creating and publishing blog content.</li>
+  <li>Organized Blog Categories: Browse through a variety of blog categories, enhanced with tags and timestamps, to easily discover the content you're interested in.</li>
+  <li>Rich Media Support: Enhance your blog posts with captivating images and properly formatted code snippets for a visually appealing reading experience.</li>
+  <li>Swift Build Time with HUGO: Benefit from the fast build time of HUGO, ensuring efficient website performance and quick content updates.</li>
+</ul>
 
-Not just a any static website, I need a way to post blogs without creating an admin dashboard and this was super important, I am trying to avoid an entire full system. 
 
-So after searching like a lot I came across something called **HUGO**. 
+<h2>License:</h2>
 
-# Desired characteristics:
-So before we look at what I choose, here are the features that I am looking for in a blogging website.
+----
 
-- Post blogs using Markdown.  
-- Easy to Post Blogs  
-- There is no login.  
-- No security  
-- No ads  
-- Good Color Scheme  
-- Has the ability to switch between light and dark modes.  
-- Blogs by Category  
-- Tags for Blogs  
-- Each blog's date and time  
-- Support for code and images  
-- The existing code is simple to read and modify
+<p>This repository is licensed under the MIT License. You can find the license details in the <a href="/LICENSE">LICENSE</a> file.</p>
 
-So these are some of the features that I am looking for. 
+<h2>Local Installation Guide:</h2>
 
-# Website Purpose:
-Since I am learning every single day, I want to save my progress, so I decided to create this blog website. which help me take notes and express my thoughts to the world.
+----
 
-# Site Link:
+<p>To run the website on your local machine, please follow the provided instructions:</p>
+<ol>
+  <li>Go to the <a href="/Instruction/INSTALL.md">INSTALL.md</a> file.</li>
+  <li>Follow the guide provided in the file to set up and run the website locally.</li>
+</ol>
 
-The website is active on the following Link: [Future-Insight](https://future-insight.blog)
+<h2>Contribution:</h2>
 
-# Licence
-This repository is licensed under the MIT License. You can find the license in the [LICENSE](/LICENSE) file.
+----
 
-# Running website Locally:
-To run the website locally then follow this guide by [clicking here](/Instruction/INSTALL.md):
+<p>There are two ways you can make a contribution:</p>
+<ol>
+  <li><a href="/Instruction/Development.md">Creating a Website</a></li>
+  <li><a href="/Instruction/Write-blog.md">Writing a Blog</a></li>
+</ol>
+<p>If you encounter any issues or have suggestions for new features, please feel free to post them in the issue section. You are also welcome to fork this project and contribute in any way you prefer.</p>
+<p>Happy Coding... <span class="wave">👋</span></p>
 
-# Deployed Website:
-The website is deployed on [render](https://render.com/) and the domain is from [Hostring](https://www.hostinger.com/).
-All of the code is available on [GitHub](https://github.com/rafay99-epic/Future-Insight)
-To see how to deploy website on render please follow this webpage from [freecodingCamp](https://www.freecodecamp.org/news/how-to-deploy-nodejs-application-with-render/)
 
-# Coding Contribution:
-So there are two ways you can make a contribution. 1. creating a website; 2. writing blogs; and you can follow these guidelines for each type of contribution.
-1. [Creating a Website](/Instruction/Development.md)
-2. [Writing a blog](/Instruction/Write-blog.md)
+<h2>Contact Information:</h2>
 
-For more features or face any issue free will to post on the issue section. Free will to fork this project and add more thing to this project.
+----
 
-Happy Coding…👋
+<p>If you encounter any issues or have any questions, feel free to reach out to me. Here are my contact details:</p>
+<ul>
+  <li><strong>Author:</strong> Abdul Rafay</li>
+  <li><strong>Email:</strong> <a href="mailto:99marafay@gmail.com">99marafay@gmail.com</a></li>
+  <li><strong>Blog Website:</strong> <a href="https://future-insight.blog">future-insight.blog</a></li>
+</ul>
+<p>Don't hesitate to contact me if you need any assistance or have feedback regarding the website. I'm here to help!</p> -->
 
-# Contact Information:
-Free will contact me, If you are facing any issue. 
-- **Author:** Abdul Rafay
-- **Email:** [99marafay@gmail.com](mailto:99marafay@gmail.com)
-- **Medium:** [99marafay](https://medium.com/@99marafay)
-- **Blog Website:** [future-insight.blog](https://future-insight.blog)
-- **Portfolio Website:**  [rafay99.info](https://rafay99.info/)
 
+
+<p align="center">
+    <a herf="https://future-insight.blog/">
+    <img src="static/images/readME/new-logo.png" alt="Future Insight"  width="230px" height="230px">
+    </a>
+  <br>
+  <h1 style=" text-align: center;"><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
+</p>
+
+<div style="display: flex; justify-content: center;">
+  <div style="justify-content: center; align-items: center; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
+    <img src="static/images/readME/final-intor-image(1).png" alt="Future Insight Preview" style="display: block; max-width: 100%; height: auto; border-radius: 10px;">
+  </div>
+</div>
+<br>
+
+<p>Welcome to Future Insight, your gateway to a world where possibilities are limitless. We are a platform dedicated to exploring emerging trends, groundbreaking ideas, and cutting-edge advancements that shape the future. Whether you're a developer, tech enthusiast, or entrepreneur, our blog offers valuable insights, thought-provoking content, and practical resources to keep you informed and inspired. Join us on this journey of exploration, collaboration, and innovation as we shape a brighter future together. Welcome to Future Insight, where the power of tomorrow is within your reach.</p>
+
+<h2>Key Features</h2>
+<ul>
+  <li>Seamless Light and Dark Mode: Effortlessly switch between light and dark mode to enhance readability and personalize your browsing experience.</li>
+  <li>Simplified User Experience: Enjoy hassle-free browsing without the need for a complicated login system.</li>
+  <li>Ad-Free Environment: Immerse yourself in a distraction-free environment without any annoying advertisements.</li>
+  <li>Markdown Blogging: Create and publish blog posts using the versatile and user-friendly Markdown syntax.</li>
+  <li>Responsive Design: Experience a seamless browsing experience across both mobile and desktop devices.</li>
+  <li>Easy Blog Creation: Get started quickly with an intuitive starting script that guides you through the process of creating and publishing blog content.</li>
+  <li>Organized Blog Categories: Browse through a variety of blog categories, enhanced with tags and timestamps, to easily discover the content you're interested in.</li>
+  <li>Rich Media Support: Enhance your blog posts with captivating images and properly formatted code snippets for a visually appealing reading experience.</li>
+  <li>Swift Build Time with HUGO: Benefit from the fast build time of HUGO, ensuring efficient website performance and quick content updates.</li>
+</ul>
+
+<h2>License:</h2>
+<p>This repository is licensed under the MIT License. You can find the license details in the <a href="/LICENSE">LICENSE</a> file.</p>
+<h2>Local Installation Guide:</h2>
+<p>To run the website on your local machine, please follow the provided instructions:</p>
+<ol>
+  <li>Go to the <a href="/Instruction/INSTALL.md">INSTALL.md</a> file.</li>
+  <li>Follow the guide provided in the file to set up and run the website locally.</li>
+</ol>
+
+<h2>Contribution:</h2>
+<p>There are two ways you can make a contribution:</p>
+<ol>
+  <li><a href="/Instruction/Development.md">Creating a Website</a></li>
+  <li><a href="/Instruction/Write-blog.md">Writing a Blog</a></li>
+</ol>
+<p>If you encounter any issues or have suggestions for new features, please feel free to post them in the issue section. You are also welcome to fork this project and contribute in any way you prefer.</p>
+<p>Happy Coding... <span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span></p>
+
+<h2>Contact Information:</h2>
+<p>If you encounter any issues or have any questions, feel free to reach out to me. Here are my contact details:</p>
+<ul>
+  <li><strong>Author:</strong> Abdul Rafay</li>
+  <li><strong>Email:</strong> <a href="mailto:99marafay@gmail.com">99marafay@gmail.com</a></li>
+  <li><strong>Blog Website:</strong> <a href="https://future-insight.blog">future-insight.blog</a></li>
+</ul>
+<p>Don't hesitate to contact me if you need any assistance or have feedback regarding the website. I'm here to help!</p>

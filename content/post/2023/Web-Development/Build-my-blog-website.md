@@ -8,7 +8,8 @@ description: "Build My Blog Website using HUGO"
 showTableOfContents: true
 url: /build-hugo-website/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+----
 
 I'm a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 

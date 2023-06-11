@@ -19,6 +19,15 @@
         </p>
     </div>
 
+    <!-- <script src="https://utteranc.es/client.js" 
+        repo="https://github.com/rafay99-epic/Future-Insight.github.io" 
+        issue-term="title" 
+        label="comments-Future-insight" 
+        theme="github-dark" 
+        crossorigin="anonymous" 
+        async> 
+    </script> -->
+
     <div class="prev-next">
         {{ if eq .Site.Params.TogglePreviousAndNextButtons "true" }}
             {{ if or .PrevInSection .NextInSection }}
@@ -27,16 +36,20 @@
         {{ end }}
     </div>
 
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <!-- Comment System for blogs  -->    
-    <div id="disqus_thread"></div>
-    <script>
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://https-future-insight-blog.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    <!-- Comments linked with GitHub Issues -->
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
     </script>
-
+    
 </div>

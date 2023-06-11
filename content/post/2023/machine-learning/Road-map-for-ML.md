@@ -8,7 +8,8 @@ description: "solid road map for machine learning and deep learning"
 showTableOfContents: true
 url: /road-map-for-ml/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+----
 
 Learning is something that we have to do every day. As a developer, you need to learn the latest and hottest technologies because if you don't, you might not be able to succeed in this field.
 

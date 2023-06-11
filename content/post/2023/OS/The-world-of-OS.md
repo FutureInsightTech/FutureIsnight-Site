@@ -9,7 +9,9 @@ showTableOfContents: true
 url: /world-of-os/
 image: "/images/2023/"
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+----
+
 I was at work and I was doing my work, which was developing applications and making sure that the code that I was writing worked, and I was using Linux to do all my work. In Linux, I use a terminal to write my blogs and code my applications, and when my coworker saw me using a terminal and asked me what was on my screen, I told him it was my terminal that I was using to do my work.
  
 He was shocked, so at that time, normal people didn't know what an operating system was, so that's the topic for today: what is an operating system? Soon,  you will know everything there is to know about operating systems.

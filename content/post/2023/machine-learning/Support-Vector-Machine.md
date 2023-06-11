@@ -8,7 +8,8 @@ description: ""
 showTableOfContents: true
 url: /Support-Vector-Machine/
 ---
-<link rel="stylesheet" href="/css/style.css">
+
+----
 
 So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.
 

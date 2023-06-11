@@ -9,7 +9,6 @@ showTableOfContents: true
 url: /image-optimization/
 image: "/images/2023/image-optimization/Image-Optimization.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 -----
 Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.

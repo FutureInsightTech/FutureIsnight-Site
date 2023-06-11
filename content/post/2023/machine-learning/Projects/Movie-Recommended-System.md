@@ -9,8 +9,8 @@ showTableOfContents: true
 url: /build-movie-recommended-system/
 image: "/images/2023/"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
+---
 I always want to build a recommended system to practise my skills and make sure that I won't forget what I have learned in the past 2 years. So in this blog, I will be going through the plan and building a recommended system. I will be using a public dataset, which will be linked up in the references section of this blog.
 
 

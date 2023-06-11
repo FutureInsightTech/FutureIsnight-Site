@@ -1,15 +1,139 @@
 ---
-title: "Project Gallery"
+# title: "Project Gallery"
 date: 2023-02-21T15:03:15+05:00
 draft: false
 type: "page"
 url: /Project/
 ---
 
-<link rel="stylesheet" href="/css/style.css">
+<script src="/js/redirect.js"></script>
+<link rel="stylesheet" href="/css/project-gallery.css">
+
+<h1 style="text-decoration-line: underline; text-align: center;">Project Gallery</h1>
+
+**Welcome to My Projects Showcase!**
+
+Discover a curated collection of my creative endeavors, showcasing my passion for innovation, problem-solving, and technology. From web development to mobile apps, automation scripts, and more, this page reflects my dedication, skills, and relentless pursuit of excellence.
+
+Each project represents a unique journey, where I explored new technologies and transformed ideas into reality. Through countless hours of hard work and meticulous planning, I have crafted visually stunning designs and cutting-edge functionalities.
+
+Click on the cards to explore each project in detail. Witness the diversity of my skills and the breadth of my experiences. From start to finish, I aim to make a meaningful impact and leave a lasting impression.
+
+Thank you for visiting! If you have any questions or would like to collaborate, feel free to reach out. Let's create something amazing together!
+
+Best regards,
+
+[Abdul Rafay](https://future-insight.blog/contact)
 
 -----
 
+  <style>
+ 
+  </style>
+  <h1 style="text-decoration-line: underline; text-align: center;">Web Projects</h1>
+    <div class="card-container">
+        <!-- Parking Assistant -->
+        <div class="card" onclick="redirectToURL('/Project/Parking-Assistant')" >
+            <img src="/images/2023/pages/Smart-parking-assistant/parking-assistant.png" alt="Image 1">
+            <div class="border">
+                <div class="heading">Parking Assstant</div>
+            </div>
+        </div>
+        <!-- URL Hunter -->
+        <div class="card" onclick="redirectToURL('/Project/url-hunter/')">
+            <img src="/images/2023/pages/url-hunter/url-hunter.png" alt="Image 2">
+            <div class="border">
+                <div class="heading">URL Hunter</div>
+            </div>
+        </div>
+        <!-- Readct JS Project -->
+        <div class="card" onclick="redirectToURL('/Project/portifilo/')">
+            <img src="/images/2023/pages/portfolio/portfolio.png" alt="Image 3">
+            <div class="border">
+                <div class="heading">React JS Personal Portfolio</div>
+            </div>
+        </div>
+        <!-- Shafiq Law Chmaber -->
+        <div class="card"  onclick="redirectToURL('/shafiqlawchamber/')">
+            <img src="/images/2023/pages/SLC/slc-home.png" alt="Image 4">
+            <div class="border">
+                <div class="heading">Shafiq Law Chamber</div>
+            </div>
+        </div>
+        <!-- Pheonix-AI -->
+        <div class="card" onclick="redirectToURL('/Pheonix-AI/')">
+            <img src="/images/2023/Pheonix-AI/Pheonix-AI.png" alt="Image 10">
+            <div class="border">
+                <div class="heading">Pheonix-AI: ChatBot</div>
+            </div>
+        </div>
+    </div>
+    <!-- machine Learning Section -->
+    <h1 style="text-decoration-line: underline; text-align: center;">Machine Learning Projects</h1>
+    <div class="card-container">
+        <!-- EV Cyber Attack Detection -->
+        <div class="card" onclick="redirectToURL('/Project/ev-cyber-detection/')" >
+            <img src="/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png" alt="Image 5">
+            <div class="border">
+                <div class="heading">EV FDIA Detection System</div>
+            </div>
+        </div>
+        <!-- Detect ChatGPT -->
+        <div class="card" onclick="redirectToURL('')" >
+            <img src="/images/2023/pages/detect-chatgpt/Detect-ChatGPT.png" alt="Image 6">
+            <div class="border">
+                <div class="heading">Detect ChatGPT</div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-decoration-line: underline; text-align: center;">Shell Scripting Projects</h1>
+    <div class="card-container">
+        <!-- TheDevMachine -->
+        <div class="card" onclick="redirectToURL('/Project/DevBox/')" >
+            <img src="/images/2023/pages/DevBox/DevBox.png" alt="Image 7">
+            <div class="border">
+                <div class="heading">TheDevMachine</div>
+            </div>
+        </div>
+        <!-- TheDevMachine -->
+        <!-- <div class="card" onclick="redirectToURL('/Project/Parking-Assistant')" >
+            <img src="/images/2023/pages/TheDevMachine/TheDevMachine.png" alt="Image 8">
+            <div class="border">
+                <div class="heading">TheDevMachine</div>
+            </div>url
+        </div> -->
+        <!-- midNight Toky AWM -->
+        <div class="card" onclick="redirectToURL('/MidnightTokyoWM/')" >
+            <img src="/images/2023/my-new-desktop/Midnight-Tokyo.png" alt="Image 9">
+            <div class="border">
+                <div class="heading">MidnigTokyo</div>
+            </div>
+        </div>
+        <div class="card" onclick="redirectToURL('/image-optimization/')" >
+            <img src="/images/2023/image-optimization/Image-Optimization.png" alt="Image 9">
+            <div class="border">
+                <div class="heading">Image optimization</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- 
+
+ ██████╗ ██╗     ██████╗     ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+██╔═══██╗██║     ██╔══██╗    ██║   ██║██╔════╝██╔══██╗██╔════╝██║██╔═══██╗████╗  ██║
+██║   ██║██║     ██║  ██║    ██║   ██║█████╗  ██████╔╝███████╗██║██║   ██║██╔██╗ ██║
+██║   ██║██║     ██║  ██║    ╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██║██║   ██║██║╚██╗██║
+╚██████╔╝███████╗██████╔╝     ╚████╔╝ ███████╗██║  ██║███████║██║╚██████╔╝██║ ╚████║
+ ╚═════╝ ╚══════╝╚═════╝       ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+-->
+
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
+<!-- 
 <h2 style="text-decoration-line: underline">Web Projects</h2>
 
 [Parking Assistant](/Project/Parking-Assistant/) | 3rd Augest 2022
@@ -66,4 +190,5 @@ url: /Project/
 - Also includes specific language and environment tools such as pipenv, Pyenv, Docker, and AWS CLI.
 - Scripts are organized by language, making it easy for developers to choose which languages and tools they want to install.
 - Provides a convenient starting point for developers who want to begin programming in a variety of languages without spending a lot of time configuring their environment.
+ -->
 

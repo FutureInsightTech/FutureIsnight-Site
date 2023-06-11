@@ -9,7 +9,6 @@ showTableOfContents: true
 url: /nvidia-driver-arch-linux/
 image: "/images/2023/Operating-System/Linux/Nvidia-arch-linux/NVIDIA-Graphic-Arch-Linux.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 ----
 

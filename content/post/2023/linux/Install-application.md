@@ -9,7 +9,6 @@ showTableOfContents: false
 url: /linux-app-simplified/
 image: "/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
 ---
-<link rel="stylesheet" href="/css/style.css">
 
 ----
 Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you've tried searching for installation files like you would on Windows, but to no avail. Don't worry, because in this blog, I'll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
