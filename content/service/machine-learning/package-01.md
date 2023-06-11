@@ -47,22 +47,3 @@ The Data Creation package is a powerful tool for data scientists and machine lea
     <button class="green-button" onclick="redirectToURL('/terms-conditions/')">Terms & Conditions</button>
     <button class="green-button" onclick="redirectToURL('/select-package/')">Select this Package</button>
 </div>
-
-
-
-<!-- 
-2. Train & Test Model Package:
-   - The Train & Test Model package is designed to simplify the process of training and testing machine learning models.
-   - Users can provide their own data to train the models, allowing them to work with their specific datasets.
-   - The package provides clear documentation on how to train the models effectively, ensuring users can achieve accurate and reliable results.
-   - Additionally, the package offers alternatives and variations in machine learning models, allowing users to explore different algorithms and techniques for their specific use cases.
-
-3. Train & Test Model with GUI & API Package:
-   - This comprehensive package combines the functionalities of the previous package with additional features for user convenience.
-   - Users can train and test machine learning models using their own datasets, just like in the previous package.
-   - In addition, the package includes a graphical user interface (GUI) for the models, providing a user-friendly interface to interact with the trained models.
-   - The GUI enables users to easily input data, perform predictions, and visualize results, enhancing the usability and accessibility of the models.
-   - Furthermore, the package offers APIs that allow seamless integration of the models into other applications or systems, providing flexibility for deployment scenarios.
-   - The package includes documentation covering the model, GUI, and APIs, facilitating the usage and understanding of the various components.
-
-Overall, these packages aim to streamline the process of working with machine learning tasks. They empower users to create and manipulate datasets effectively, train and test models with flexibility, and provide user-friendly interfaces and APIs for enhanced usability and integration. The clear documentation accompanying each package ensures that users can easily navigate and leverage the provided functionalities, ultimately enabling them to achieve accurate and reliable machine learning outcomes. -->
