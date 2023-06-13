@@ -8,6 +8,7 @@ image: "/images/2023/"
 ---
 
 <script src="/js/redirect.js"></script>
+<script src="/js/height.js"></script>
 <link rel="stylesheet" href="/css/services/assignment/assignment-service.css">
 <link rel="stylesheet" href="/css/services/price-card.css">
 
@@ -20,7 +21,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
 </p>
 
 <h1>Flexible Pricing: Choose the Plan That Fits Your Budget</h1>
-<div class="price-table">
+<div class="price-table"  data-height="400">
     <!-- Plan 01 -->
     <div class="price-card">
       <h2>Normal</h2>
@@ -36,7 +37,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       </div>
     </div>
   <!-- Plan 2 -->
-    <div class="price-card">
+    <div class="price-card"  data-height="400">
       <h2>Advanced</h2>
       <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
@@ -51,7 +52,7 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       </div>
     </div>
   <!-- Plan 3 -->
-    <div class="price-card">
+    <div class="price-card" data-height="400">
       <h2>Premium</h2>
       <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">
@@ -66,5 +67,16 @@ Welcome to Future Insight, your solution for expert assignment assistance. Our e
       </div>
     </div>
   </div>
+
+  <!-- <script>
+    window.addEventListener('DOMContentLoaded', function() {
+  var priceCards = document.querySelectorAll('.price-card');
+
+  priceCards.forEach(function(card) {
+    var heightValue = card.getAttribute('data-height');
+    card.style.height = heightValue + 'px';
+  });
+});
+  </script> -->
 
 
