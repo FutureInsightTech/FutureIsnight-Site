@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://future-insight.blog/tags/blog/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/linux/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/linux-distribution/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/post/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/</loc>
+    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
+  </url><url>
     <loc>https://future-insight.blog/select-package/</loc>
     <lastmod>2023-06-08T23:49:59+05:00</lastmod>
   </url><url>
@@ -18,9 +36,6 @@
     <lastmod>2023-06-02T23:41:49+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/services/web-development/</loc>
-    <lastmod>2023-06-02T23:41:49+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/</loc>
     <lastmod>2023-06-02T23:41:49+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/service/</loc>
@@ -56,19 +71,7 @@
     <loc>https://future-insight.blog/services/</loc>
     <lastmod>2023-06-02T23:35:11+05:00</lastmod>
   </url><url>
-    <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-05-26T16:36:17+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/linux/</loc>
-    <lastmod>2023-05-26T16:36:17+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/MidnightTokyoWM/</loc>
-    <lastmod>2023-05-26T16:36:17+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/post/</loc>
-    <lastmod>2023-05-26T16:36:17+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/</loc>
     <lastmod>2023-05-26T16:36:17+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/tags/window-manager/</loc>
