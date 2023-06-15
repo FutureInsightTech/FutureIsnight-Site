@@ -1,5 +1,10 @@
-// TO display your github calendar change the username
+// Author: Abdul Rafay
+// Script: This script will get the github calander for a user.
 
+// Working: 👇
+//  to use this just change the user name in the github_user variable
+
+// Code 👇
 const github_user="rafay99-epic";
 
 GitHubCalendar(".calendar", github_user);

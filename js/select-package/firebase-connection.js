@@ -1,3 +1,10 @@
+// Author: Abdul Rafay
+// Script: This script will connect to firebase database and then pass the data from the form to the database
+//         and then show a success message if not then error will be shown
+
+
+// Code 👇
+
 // Firebase connection
 const firebaseConfig = {
     apiKey: "AIzaSyBN26OZKDjZUwWKcU2zWbEhU7WGme1wYhM",
@@ -9,11 +16,9 @@ const firebaseConfig = {
     appId: "1:448034602560:web:355cd2b70da4a07df769a5",
     measurementId: "G-FWKZLBB4F6"
 };
+
 // Inintialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-
-// New Error Checking Version
 
 // Get references to the HTML elements
 const form = document.getElementById('assignment-form');
@@ -103,8 +108,10 @@ function setResultMessage(message) {
 
 
 //  Orginal Code:
+// Do not change this code or uncomment it. 
 
-//   // Get references to the HTML elements
+// Code 👇
+//  // Get references to the HTML elements
 //   const form = document.getElementById('assignment-form');
 //   const resultContainer = document.getElementById('result');
 
