@@ -6,10 +6,11 @@ type: "page"
 url: /services/MachineLearning/
 image: "/images/2023/"
 ---
-
+<!-- JS Redirect -->
 <script src="/js/redirect.js"></script>
-<link rel="stylesheet" href="/css/services/machine-learning/machine-learning-page.css">
-<link rel="stylesheet" href="/css/services/price-card.css">
+<script src="/js/height.js"></script>
+<!-- Styling for the cards -->
+<link rel="stylesheet" href="/css/services/price-card3.css">
 
 <h1>Empowering Success with Revolutionary Machine Learning Solutions</h1>
 
@@ -21,7 +22,7 @@ Welcome to Future Insight, your premier destination for cutting-edge machine lea
 
 <div class="price-table">
     <!-- Plan 01 -->
-    <div class="price-card">
+    <div class="price-card"  data-height="500">
       <h2>Normal</h2>
       <!-- <p class="price">1500 Rs/Project</p> -->
       <ul class="pros">
@@ -37,7 +38,7 @@ Welcome to Future Insight, your premier destination for cutting-edge machine lea
       </div>
     </div>
   <!-- Plan 2 -->
-    <div class="price-card">
+    <div class="price-card"  data-height="500">
       <h2>Advanced</h2>
       <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
@@ -55,7 +56,7 @@ Welcome to Future Insight, your premier destination for cutting-edge machine lea
       </div>
     </div>
   <!-- Plan 3 -->
-    <div class="price-card">
+    <div class="price-card"  data-height="500">
       <h2>Premium</h2>
       <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">

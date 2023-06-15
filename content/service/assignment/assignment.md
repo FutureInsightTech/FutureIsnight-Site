@@ -6,13 +6,11 @@ type: "page"
 url: /services/assignment/
 image: "/images/2023/"
 ---
-
+<!-- Redirect -->
 <script src="/js/redirect.js"></script>
 <script src="/js/height.js"></script>
-<link rel="stylesheet" href="/css/services/assignment/assignment-service.css">
-<link rel="stylesheet" href="/css/services/price-card.css">
-
-<!-- <link rel="stylesheet" href="/css/services/machine-learning/machine-learning-page.css"> -->
+<!-- Styling Using Css  -->
+<link rel="stylesheet" href="/css/services/price-card3.css">
 
 <h1>Our Assignment Solutions: Unlocking Your Academic Success</h1>
 

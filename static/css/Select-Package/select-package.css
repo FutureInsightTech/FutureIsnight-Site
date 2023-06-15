@@ -1,3 +1,9 @@
+/* Author:  Abdul Rafay  
+  CSS FILE: This css file will style the content in the services page
+*/
+
+/* code 👇 */
+
 .container {
     max-width: 900px;
   }
@@ -67,18 +73,18 @@ label {
   /* Card Animation when Assignment is Provided */
   #result {
     margin-top: 20px;
-    opacity: 0; /* Start with the element hidden */
-    animation: fade-in 0.5s ease forwards; /* Apply fade-in animation */
+    opacity: 0; 
+    animation: fade-in 0.5s ease forwards; 
   }
   
   @keyframes fade-in {
     from {
-      opacity: 0; /* Start with 0 opacity */
-      transform: translateY(20px); /* Start slightly below its position */
+      opacity: 0; 
+      transform: translateY(20px); 
     }
     to {
-      opacity: 1; /* Fade to full opacity */
-      transform: translateY(0); /* Move to its original position */
+      opacity: 1; 
+      transform: translateY(0); 
     }
   }
   
@@ -96,20 +102,3 @@ label {
     margin-bottom: 10px;
   }
 
-  /* #result {
-    margin-top: 20px;
-  }
-
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .card-body {
-    padding: 20px;
-  }
-
-  .card-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  } */

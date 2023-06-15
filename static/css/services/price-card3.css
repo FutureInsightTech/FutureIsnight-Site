@@ -1,3 +1,24 @@
+/* Author: Abdul Rafay
+    CSS  FILE: THis css file will style the price card of every package in the services page
+*/
+
+.price-table {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+.price-card {
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: white;
+    overflow: hidden;
+    width: 500px;
+}
 .price-card h2 {
     margin-top: 0;
     color: black;
@@ -122,4 +143,38 @@
     color: #fff;
     font-weight: bold;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .price-table {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
+    .price-card {
+      width: 45%;
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .price-table {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .price-card {
+      width: 90%;
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .price-card {
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+  }
