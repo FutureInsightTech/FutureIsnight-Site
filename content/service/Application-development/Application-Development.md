@@ -7,12 +7,12 @@ url: services/application-development/
 image: "/images/2023/"
 ---
 <!-- CSS Styling File -->
-<link rel="stylesheet" href="/css/services/price-card.css">
-<link rel="stylesheet" href="/css/services/android-development/android-development.css">
+<link rel="stylesheet" href="/css/services/price-card3.css">
+
 <!-- Redirecting Script -->
+<script src="/js/height.js"></script>
 <script defer src="/js/redirect.js"></script>
-<!-- calling the user paue script -->
-<script defer src="/js/pause-user.js"></script>
+
 
 <h1>Android Application Development Tiers: Unlocking the Potential of Your Mobile Experience</h1>
 
@@ -24,7 +24,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
 
 <div class="price-table">
     <!-- Plan 01 -->
-    <div class="price-card">
+    <div class="price-card" data-height="550">
       <h2>Normal</h2>
       <!-- <p class="price">1500 Rs/Project</p> -->
       <ul class="pros">
@@ -41,7 +41,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
       </div>
     </div>
   <!-- Plan 2 -->
-    <div class="price-card">
+    <div class="price-card" data-height="550">
       <h2>Advanced</h2>
       <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
@@ -58,7 +58,7 @@ At Future Insight, we offer three comprehensive tiers for Android application de
       </div>
     </div>
   <!-- Plan 3 -->
-    <div class="price-card">
+    <div class="price-card" data-height="550">
       <h2>Premium</h2>
       <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">

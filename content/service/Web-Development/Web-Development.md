@@ -6,10 +6,12 @@ type: "page"
 url: /services/web-development/
 image: "/images/2023/"
 ---
-<!-- Links -->
-<link rel="stylesheet" href="/css/services/price-card.css">
-<link rel="stylesheet" href="/css/services/web-development/web-development-page.css">
+<!-- JS Redirect -->
 <script defer src="/js/redirect.js"></script>
+<script src="/js/height.js"></script>
+<!-- Styling for the Page -->
+<link rel="stylesheet" href="/css/services/price-card3.css">
+
 
 <h1>Welcome to Future Insight: Your Web Development Partner</h1>
 
@@ -21,9 +23,9 @@ With a focus on exceptional customer service, we strive to build long-term partn
 
 <h1>Flexible Pricing: Choose the Plan That Fits Your Budget</h1>
 
-<div class="price-table">
+<div class="price-table" >
     <!-- Plan 01 -->
-    <div class="price-card">
+    <div class="price-card" data-height="450">
       <h2>Normal</h2>
       <!-- <p class="price">1500 Rs/Project</p> -->
       <ul class="pros">
@@ -40,7 +42,7 @@ With a focus on exceptional customer service, we strive to build long-term partn
       </div>
     </div>
   <!-- Plan 2 -->
-    <div class="price-card">
+    <div class="price-card" data-height="450">
       <h2>Advanced</h2>
       <!-- <p class="price">2500 Rs/Assignment</p> -->
       <ul class="pros">
@@ -57,7 +59,7 @@ With a focus on exceptional customer service, we strive to build long-term partn
       </div>
     </div>
   <!-- Plan 3 -->
-    <div class="price-card">
+    <div class="price-card" data-height="450">
       <h2>Premium</h2>
       <!-- <p class="price">3500 Rs/Assignment</p> -->
       <ul class="pros">
