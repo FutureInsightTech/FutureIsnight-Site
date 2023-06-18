@@ -17,25 +17,25 @@
     
 
     
-    <title>Projects</title>
+    <title>Future Insight</title>
     <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta name="keywords" content='blog, gokarna, hugo'>
 
-    <meta property="og:url" content="https://future-insight.blog/project/">
+    <meta property="og:url" content="https://future-insight.blog/building-legacy/version-6.1/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Projects">
+    <meta property="og:title" content="Future Insight">
     <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta property="og:image" content="/images/16.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Projects">
+    <meta name="twitter:title" content="Future Insight">
     <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
-    <meta property="twitter:domain" content="https://future-insight.blog/project/">
-    <meta property="twitter:url" content="https://future-insight.blog/project/">
+    <meta property="twitter:domain" content="https://future-insight.blog/building-legacy/version-6.1/">
+    <meta property="twitter:url" content="https://future-insight.blog/building-legacy/version-6.1/">
     <meta name="twitter:image" content="/images/16.png">
 
     
-    <link rel="canonical" href="https://future-insight.blog/project/" />
+    <link rel="canonical" href="https://future-insight.blog/building-legacy/version-6.1/" />
 
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
@@ -224,13 +224,53 @@
     </nav>
 </header>
 <main id="content">
-    <div class="container list-posts">
-
-    <h1 class="list-title">Projects</h2>
-
     
 
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="version-61">Version 6.1</h1>
+<h2 id="code-improvement-performance-optimization-and-code-cleanup">Code Improvement: Performance Optimization and Code Cleanup</h2>
+<h2 id="problems">Problems:</h2>
+<p>There are two main issues in the codebase that need to be addressed:</p>
+<ol>
+<li>Repeating Height for Every Service Page.</li>
+<li>Handling Height and Mobile View Detection.</li>
+</ol>
+<h2 id="1-repeating-css-files">1. Repeating CSS Files:</h2>
+<p>In the previous codebase, the CSS for the price table in the service pages was repeated for each page due to the changing height attribute. This resulted in multiple CSS files for each service page, negatively impacting performance.</p>
+<h3 id="solution">Solution:</h3>
+<p>To solve this problem, we can refactor the code and introduce a JavaScript file called &ldquo;height.js&rdquo; that handles the dynamic height and mobile view detection logic.</p>
+<ul>
+<li>In &ldquo;height.js&rdquo;, we can implement functions to:
+<ul>
+<li>Modify the height of the price table using the <code>data-height</code> attribute passed to the function.</li>
+<li>Detect multiple screen sizes and, if the screen size is for a mobile device, set the height according to the mobile view using the <code>data-height</code> attribute.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-mobile-view-handling">2. Mobile View Handling:</h2>
+<p>In the previous codebase, mobile view was managed using CSS media queries, but now it has been shifted to JavaScript. JavaScript will detect the screen size and set the height for the mobile view based on the height of the price card.</p>
+<h2 id="code-cleanup">Code Cleanup:</h2>
+<p>In addition to the above improvements, we can perform some code cleanup:</p>
+<ul>
+<li>Remove unrelated CSS files from the codebase since the logic is now handled by JavaScript.</li>
+<li>Add comments to make the code more readable and enhance understanding.</li>
+<li>Include the previous version of the commented code for reference.</li>
+<li>Implement error handling to gracefully handle any potential errors that may occur.</li>
+</ul>
+<p>By addressing these improvements, we can optimize the performance of the website, remove unnecessary files, and make the code more maintainable and readable.</p>
+
+        </p>
+    </div>
 </div>
+
+
 
 
         </main><footer class="footer">

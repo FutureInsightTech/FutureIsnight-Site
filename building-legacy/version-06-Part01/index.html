@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Future Insight</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/building-legacy/version-06-Part01/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Future Insight">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Future Insight">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/building-legacy/version-06-Part01/">
+    <meta property="twitter:url" content="https://future-insight.blog/building-legacy/version-06-Part01/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/building-legacy/version-06-Part01/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="version-06-part-01">Version 06 Part 01:</h1>
+<h2 id="next-level-development-solutions-unveiling-our-latest-services">Next-level Development Solutions: Unveiling Our Latest Services</h2>
+<p><strong>Welcome to Future Insight Version 06!</strong>
+Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.</p>
+<h1 id="features">Features</h1>
+<p>Here are all of the Features for this update</p>
+<ol>
+<li>Navbar Redesign (Implemented )</li>
+<li>Updated Author Page (Implemented )</li>
+<li>Services Page with Different Packages
+<ul>
+<li>3.1: Available  Services:
+- Web Development
+- Machine Learning Development
+- Android Application Development
+- Student Assignment</li>
+<li>3.2. Multiple Packages within Each Service</li>
+<li>3.3. Proper Terms and Conditions Page</li>
+<li>3.4. Payment Process for Packages</li>
+</ul>
+</li>
+</ol>
+<p><strong>Note: This updated is divided into two parts</strong></p>
+<h2 id="part-01-redesign">Part 01: Redesign</h2>
+<p>At Future Insight, we are constantly striving to enhance your user experience. We are thrilled to announce the implementation of our latest updates, focusing on two significant areas: Navbar and Author Page. These updates are designed to improve usability, streamline code, and introduce modularization for enhanced clarity and ease of understanding.</p>
+<p>Navbar Redesign: Experience a sleek and intuitive navigation system with our newly redesigned navbar. We have carefully crafted a user-friendly interface that ensures effortless navigation throughout the website. Find the information you need, access key features, and explore various sections with ease.</p>
+<p>Author Page Redesign: Discover the revamped Author Page, offering a visually appealing and engaging interface. We have reimagined the layout to provide a seamless browsing experience while showcasing the work of our esteemed authors. Explore their profiles, browse through their published content, and gain valuable insights into their expertise.</p>
+<p>Cleaner Code and Modular Approach: As part of our commitment to delivering high-quality user experiences, we have undertaken a comprehensive code cleanup process. By optimizing and organizing our codebase, we ensure improved performance and maintainability. Additionally, we have implemented a modular approach, breaking down complex functionalities into smaller, more manageable components. This modular structure makes it easier to understand and navigate the codebase, fostering collaboration and reducing development time.</p>
+<p>We are excited about these updates and confident that they will significantly enhance your interaction with Future Insight. Stay tuned for more exciting improvements as we continue to refine and innovate our platform to meet your evolving needs.</p>
+<h2 id="part-02-services-pages">Part 02: Services Pages</h2>
+<p>This feature will be available soon.</p>
+<h1 id="part-01-changes-made">Part 01: Changes Made:</h1>
+<h2 id="navbar-redesign">Navbar Redesign</h2>
+<p><em><strong>Date: 01-July-2023</strong></em>
+Here&rsquo;s a summary of the changes we&rsquo;ve made to the code:</p>
+<ol>
+<li>
+<p>Updated HTML template to include a drop-down menu with options:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link dropdown-container&#34;</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-toggle&#34;</span>&gt;&lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-bars&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+  &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-menu&#34;</span>&gt;
+    {{ range .Site.Menus.dropdown }}
+    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-item&#34;</span>&gt;
+      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .URL | absURL }}&#34;</span>&gt; {{ .Name }}&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;/<span style="color:#f92672">li</span>&gt;
+    {{ end }}
+  &lt;/<span style="color:#f92672">ul</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div></li>
+<li>
+<p>Added CSS styles for the drop-down menu and hover effect:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">dropdown-container</span> {
+  <span style="color:#75715e">/* CSS styles for the drop-down container */</span>
+}
+.<span style="color:#a6e22e">dropdown-toggle</span> {
+  <span style="color:#75715e">/* CSS styles for the drop-down toggle */</span>
+}
+.<span style="color:#a6e22e">dropdown-menu</span> {
+  <span style="color:#75715e">/* CSS styles for the drop-down menu */</span>
+}
+.<span style="color:#a6e22e">dropdown-item</span> {
+  <span style="color:#75715e">/* CSS styles for the drop-down menu items */</span>
+}
+.<span style="color:#a6e22e">dropdown-item</span>:<span style="color:#a6e22e">hover</span> {
+  <span style="color:#75715e">/* CSS styles for the hover effect on drop-down menu items */</span>
+}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">dropdown-menu</span> {
+  <span style="color:#75715e">/* CSS styles for dark mode */</span>
+}
+.<span style="color:#a6e22e">dark-theme</span> .<span style="color:#a6e22e">dropdown-item</span> <span style="color:#f92672">a</span> {
+  <span style="color:#75715e">/* CSS styles for dark mode text color */</span>
+}
+</code></pre></div></li>
+<li>
+<p>Added JavaScript code to detect dark mode and update drop-down menu colors:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// JavaScript code for dark mode detection and color update
+</span></code></pre></div></li>
+</ol>
+<h4 id="preview">Preview</h4>
+<p>The Nav Bar is much Smaller and the necessary components are in the sub Menu.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/ef6a692e-204a-42f3-8134-2425e15823bd" alt="image"></p>
+<h2 id="updated-author-page">Updated Author Page</h2>
+<p><em><strong>Date: June, 2nd, 2023</strong></em>
+Everything have changed from the last four commits, previously there were progress  bar which as being remove and as added something new.
+All of the changes are stated bellow.</p>
+<ol>
+<li>New Header</li>
+</ol>
+<ul>
+<li>The header section typically contains your name or the page title.</li>
+<li>It may also include a logo or profile picture for personal branding.</li>
+<li>The header can be customized using CSS to match your desired design and style.</li>
+</ul>
+<ol start="2">
+<li>New Introduction</li>
+</ol>
+<ul>
+<li>The introduction section will introduce to the new user.</li>
+<li>It include a berif overview of my background, experience and passion with skills.</li>
+</ul>
+<ol start="3">
+<li>New Skill Section</li>
+</ol>
+<ul>
+<li>So in the last commit, I was using progress bar, which was taking a lot of space, not looking good.</li>
+<li>In this commit I changed it to card like system, divided skills into category section and describing them.</li>
+</ul>
+<ol start="5">
+<li>GitHub Calendar</li>
+</ol>
+<ul>
+<li>In the old version, I was using GitHub card and they were not good, if there was a lot of traffic then they might fail.</li>
+<li>So I added a couple of JavaScript file and  CSS file to make my GitHub calendar appeared on the profile.</li>
+<li>Thanks to <a href="https://github.com/Bloggify">Bloggify</a> for the configuration and showing the way for this.</li>
+</ul>
+<ol start="6">
+<li>New Social Representation</li>
+</ol>
+<ul>
+<li>In the last version I was using bullet  points for social media redirect.</li>
+<li>In this version, I switched to card and displayed my social with proper flashing and animation.</li>
+</ul>
+<p>And with that the Author Page is complete.</p>
+<h4 id="preview-1">Preview</h4>
+<p><img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/0c683e22-15de-4f4d-92e0-4d43f4307f28" alt="image">
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/c7d548ce-5e97-4ea6-9ed6-78eae5aa13d7" alt="image">
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/13f92a6b-e0d5-436b-b1a1-461bd027346c" alt="image">
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/5076ee02-390c-46dc-ace4-095eb9f94e6e" alt="image">
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/eedeb1f2-d814-42ae-ac4d-d511cb19d18d" alt="image">
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/3db1ad82-e7b8-4c3e-b423-eecccdac81ba" alt="image"></p>
+<h1 id="note">Note:</h1>
+<ul>
+<li>All of the error are fixed and it will be merged into the main Repo.</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

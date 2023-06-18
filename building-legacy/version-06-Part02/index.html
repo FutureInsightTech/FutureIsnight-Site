@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Future Insight</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/building-legacy/version-06-Part02/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Future Insight">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Future Insight">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/building-legacy/version-06-Part02/">
+    <meta property="twitter:url" content="https://future-insight.blog/building-legacy/version-06-Part02/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/building-legacy/version-06-Part02/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="version-06-part-02">Version 06: Part 02</h1>
+<h2 id="next-level-development-solutions-unveiling-our-latest-services">Next-level Development Solutions: Unveiling Our Latest Services</h2>
+<p><strong>Welcome to Future Insight Version 06!</strong>
+Experience the future of educational support with Future Insight. We are thrilled to introduce our latest website version, brimming with advanced features and enhancements, designed to deliver an exceptional learning experience like never before.</p>
+<h2 id="features">Features</h2>
+<p>Explore the exciting features of this update:</p>
+<h3 id="1-navbar-redesign-implemented">1. Navbar Redesign (Implemented)</h3>
+<p>Enjoy a fresh and modern look with our revamped navbar design. Streamlined navigation ensures effortless browsing and easy access to all our services and resources.</p>
+<h3 id="2-updated-author-page-implemented">2. Updated Author Page (Implemented)</h3>
+<p>Discover the enhanced author page, providing comprehensive details about our talented team of experts. Learn more about their expertise, experience, and contributions to the field of education.</p>
+<h3 id="3-services-page-with-different-packages-implemented">3. Services Page with Different Packages (Implemented)</h3>
+<p>Experience a diverse range of services tailored to your specific needs. Our services page now offers an array of options to choose from, including:</p>
+<ul>
+<li>Web Development</li>
+<li>Machine Learning Development</li>
+<li>Android Application Development</li>
+<li>Student Assignment</li>
+</ul>
+<h3 id="31-available-services">3.1: Available Services</h3>
+<p>Each service category provides a unique set of solutions to cater to various requirements. Whether you need a website developed, machine learning solutions, an Android app, or assistance with student assignments, we have you covered.</p>
+<h3 id="32-multiple-packages-within-each-service">3.2: Multiple Packages within Each Service</h3>
+<p>We understand that different projects have different needs. To provide you with greater flexibility, we offer multiple packages within each service. These packages are designed to meet varying demands and budgets, ensuring a customized solution for every client.</p>
+<h3 id="33-proper-terms-and-conditions-page">3.3: Proper Terms and Conditions Page</h3>
+<p>To ensure transparency and clarity, we have introduced a dedicated terms and conditions page. This page outlines the rights, responsibilities, and guidelines associated with each service and package. We encourage you to review the terms and conditions to make an informed decision.</p>
+<p><strong>Note: The entire Version 6 is divided into two parts, this is the Part 02.</strong></p>
+<h2 id="part-01-documentation">Part 01: Documentation</h2>
+<p>For detailed information about Part 01 of this update, please refer to the <a href="https://github.com/rafay99-epic/Future-Insight/releases/tag/06-01">documentation</a>.</p>
+<h2 id="part-02-services-pages">Part 02: Services Pages</h2>
+<p>In this section, we have introduced multiple service pages to cater to your specific needs. Whether you require assistance with student assignments or professional development services, we have a solution for you. Each service category offers three tiers, each with its unique benefits and features. The higher the tier, the more comprehensive the perks and advantages.</p>
+<h3 id="service-page">Service Page</h3>
+<p>Take a closer look at our service page, where we provide four distinct services: Solving Assignments, Machine Learning Development, Web Development, and Android Development. Each service is accompanied by detailed package information, including features and pricing.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/41e00734-90d7-4141-b9ec-7e6c6d634820" alt="image"></p>
+<h4 id="student-assignment-page">Student Assignment Page</h4>
+<p>For students seeking assignment assistance, we have dedicated a page specifically for assignments. Here, you can explore various packages designed to help you excel in your academic endeavors.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/4683424b-01ad-4478-83f0-fe785428a128" alt="image"></p>
+<h4 id="machine-learning-development">Machine Learning Development</h4>
+<p>Discover our cutting-edge machine learning development services. Whether you need custom solutions, data analysis, or predictive modeling, our experienced team is ready to assist you.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/4c4e6bbb-284f-479b-ad48-a46d12e2074a" alt="image"></p>
+<h4 id="web-development">Web Development</h4>
+<p>Experience the power of web development with our expert team. From responsive designs to interactive user interfaces, we ensure that your website stands out and delivers an exceptional user experience.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/8eb3aa65-83ee-4651-a449-b7efa18918d7" alt="image"></p>
+<h4 id="android-development">Android Development</h4>
+<p>Unlock the potential of Android with our professional app development services. We create robust, user-friendly, and feature-rich Android applications tailored to your specific requirements.
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/603a1ea7-de04-4b54-81dd-810a72997cff" alt="image"></p>
+<h3 id="terms-and-conditions">Terms and Conditions</h3>
+<p>To provide clarity and transparency, we have included detailed terms and conditions for each service and package. To review our terms and conditions, please visit our website <a href="https://future-insight.blog/terms-conditions">here</a>.</p>
+<h3 id="select-package-page">Select Package Page</h3>
+<p>Introducing the new Service Page Selection, where you can provide essential details about your project or assignment. This page allows you to
+<img src="https://github.com/rafay99-epic/Future-Insight/assets/82662797/abd8996c-f18d-446a-83c5-3e81036d1d62" alt="image"></p>
+<p>Choose the desired package and provide all the necessary information to ensure a tailored solution that meets your expectations.</p>
+<p>We are excited to bring you these next-level development solutions, empowering you to unlock the full potential of your educational journey. With Future Insight, your success is our priority.</p>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>
