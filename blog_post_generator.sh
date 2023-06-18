@@ -34,6 +34,8 @@ echo "1. ${rocket} machine-learning"
 echo "2. ${rocket} essential-skills"
 echo "3. ${rocket} Web-Development"
 echo "4. ${rocket} linux"
+echo "5. ${rocket} OS"
+echo "6. ${rocket} Write your Ownn Category"
 
 # Function to validate user input as a number
 validate_number() {
@@ -46,14 +48,16 @@ validate_number() {
 
 # Prompt the user for category until a valid number is entered
 while true; do
-    read -p "${pencil} Enter the number corresponding to your choice: " category
-    validate_number $category
+    read -rp "${pencil} Enter the number corresponding to your choice: " category
+    validate_number "$category"
     if [ $? -eq 0 ]; then
         case $category in
             1) category="machine-learning"; break;;
             2) category="essential-skills"; break;;
             3) category="Web-Development"; break;;
             4) category="linux"; break;;
+            5) category="OS"; break;;
+            6) read -rp "${pencil} Enter the name of the category: " category; break;;
             *) echo "Invalid choice. Please enter a valid number.";;
         esac
     else
