@@ -125,9 +125,14 @@ enableRobotsTXT = true
       identifier="Contact"
       url="/contact/"
       name="Contact US"
-      weight=3
+      weight=4
       Icon="<span data-feather='send'></span>"
-    
+
+    [[menu.dropdown]]
+      identifier="Building a Legacy: Unveiling the Future"
+      url="/building-legacy/"
+      name="Timeline"
+      weight=3
     
 # --------------------------------------
 #   --- Markdown Config Section ---
