@@ -97,8 +97,16 @@ Welcome to Future Insight, your gateway to a world where possibilities are limit
     <img src="static/images/readME/new-logo.png" alt="Future Insight"  width="230px" height="230px">
     </a>
   <br>
-  <h1 style=" text-align: center;"><span style="animation-name: wave-animation; animation-duration: 2.5s; animation-iteration-count: infinite; transform-origin: 70% 70%; display: inline-block;">👋</span> Welcome to Future Insight</h1>
 </p>
+
+<h1 align="center">
+    Hi there
+    <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" 
+         alt="Waving hand animated gif"
+         height="35"
+         width="35" />
+     Welcome to Future Insight
+</h1>
 
 <div style="display: flex; justify-content: center;">
   <div style="justify-content: center; align-items: center; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
