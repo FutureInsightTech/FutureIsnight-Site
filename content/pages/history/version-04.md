@@ -1,41 +1,35 @@
 ---
-title: "Version 04"
+# title: "Version 04"
 date: 2023-06-17T02:10:58+05:00
-draft: true
-type: "post"
-tags: ["blog" ,""]
-description: ""
-showTableOfContents: true
-url: //
-image: "/images/2023/"
+draft: false
+type: "page"
+url: /building-legacy/version-04/
 ---
+# Version 4: 
+## Interactive Comments, Enriched Content, and Project Showcase
 
------------
+# Changes:
+So in this patch I have added just one main feature and I have cleaned the code of this Project along qith some Projection section change and added some new Blog and Updating old blogs as well.
+
+## Comment Section:
+The comment section on our blog website provides an interactive platform for our readers to engage with the content and with each other. With our easy-to-use comment system, readers can share their thoughts, opinions, and feedback on our articles, ask questions, and participate in discussions with other like-minded individuals.
+
+Our comment section is fully customizable, allowing us to moderate and manage comments, ensuring that all discussions remain respectful and on-topic. It also allows us to foster a sense of community around our content, encouraging readers to return to our website and engage with our articles regularly.
+
+Whether you're a seasoned blogger or just starting out, our comment section is the perfect addition to any website that wants to encourage open dialogue and engagement with their readers. So why not join the conversation today and see what our community has to say?
+
+## New Blog:
+Updating a new blog called Movie Recommendation System. It's not complete yet but will be released soon.
+
+## New Projection Section:
+In the projection, more projects have been added, along with an update and cleaning of the old project description as well.
+Some of the projects are
+- 1-Power Website
+- SLC Website
+
+Adding categories for different projects with a time stamp as well
+
+## Author Page:
+Updating the author page as well. Updating the profile image to the author page, along with some CSS files as well.
 
 
-# Implementation: 
-
-
-# Conclusion:
-With that, we will see you next time.❤️❤️
-
-# Credit:
-This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog/).
-
-# Contact Us: 
-If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
-
-To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
-
-Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
-
-# References:
-Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Article 1]()
-
-## GitHub Repository:
-- [GitHub Repository 1]()
-
-## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>

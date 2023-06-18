@@ -1,41 +1,37 @@
 ---
-title: "Version 6.1"
+# title: "Version 6.1"
 date: 2023-06-17T02:11:45+05:00
-draft: true
-type: "post"
-tags: ["blog" ,""]
-description: ""
-showTableOfContents: true
-url: //
-image: "/images/2023/"
+draft: false
+type: "page"
+url: /building-legacy/version-6.1/
 ---
+# Version 6.1
+## Code Improvement: Performance Optimization and Code Cleanup
 
------------
+## Problems:
+There are two main issues in the codebase that need to be addressed:
+1. Repeating Height for Every Service Page.
+2. Handling Height and Mobile View Detection.
 
+## 1. Repeating CSS Files:
+In the previous codebase, the CSS for the price table in the service pages was repeated for each page due to the changing height attribute. This resulted in multiple CSS files for each service page, negatively impacting performance.
 
-# Implementation: 
+### Solution:
+To solve this problem, we can refactor the code and introduce a JavaScript file called "height.js" that handles the dynamic height and mobile view detection logic.
 
+- In "height.js", we can implement functions to:
+   - Modify the height of the price table using the `data-height` attribute passed to the function.
+   - Detect multiple screen sizes and, if the screen size is for a mobile device, set the height according to the mobile view using the `data-height` attribute.
 
-# Conclusion:
-With that, we will see you next time.❤️❤️
+## 2. Mobile View Handling:
+In the previous codebase, mobile view was managed using CSS media queries, but now it has been shifted to JavaScript. JavaScript will detect the screen size and set the height for the mobile view based on the height of the price card.
 
-# Credit:
-This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog/).
+## Code Cleanup:
+In addition to the above improvements, we can perform some code cleanup:
 
-# Contact Us: 
-If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
+- Remove unrelated CSS files from the codebase since the logic is now handled by JavaScript.
+- Add comments to make the code more readable and enhance understanding.
+- Include the previous version of the commented code for reference.
+- Implement error handling to gracefully handle any potential errors that may occur.
 
-To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
-
-Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
-
-# References:
-Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Article 1]()
-
-## GitHub Repository:
-- [GitHub Repository 1]()
-
-## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
+By addressing these improvements, we can optimize the performance of the website, remove unnecessary files, and make the code more maintainable and readable.
