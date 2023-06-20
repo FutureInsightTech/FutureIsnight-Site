@@ -16,7 +16,7 @@ jobs:
       
       - name: Build
         run: 
-            hugo 
+            hugo
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
