@@ -3,7 +3,7 @@
 # Config File
 #---------------------------------
 
-baseURL = 'https://future-insight-admin.onrender.com'
+baseURL = 'https://rafayblog.tech'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
