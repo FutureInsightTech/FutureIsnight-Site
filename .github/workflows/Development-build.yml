@@ -2,7 +2,7 @@ name: Development Build
 on:
   push:
     branches:
-        - Development-Branch
+        - Future-Insight-admin
 jobs:
   build:
     runs-on: ubuntu-latest
