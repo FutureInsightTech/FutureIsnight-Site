@@ -3,7 +3,7 @@
 # Config File
 #---------------------------------
 
-baseURL = 'https://rafayblog.tech'
+baseURL = 'https://rafayblogs.tech'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
