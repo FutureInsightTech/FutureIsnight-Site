@@ -1,9 +1,9 @@
 #---------------------------------
-# This is Production Config File
+# This is Staging Config File
 # Config File
 #---------------------------------
 
-baseURL = 'https://future-insight.blog'
+baseURL = 'https://future-insight-develelopment.onrender.com'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
@@ -38,7 +38,8 @@ enableRobotsTXT = true
   #---------------------------
   #     Google Analytics
   #---------------------------
-  googleAnalytics="G-HSKPE7HLQL"
+  # Disble because this is development config file   
+    # googleAnalytics="G-HSKPE7HLQL"
 
   #---------------------------
   # Website Output Format
@@ -50,8 +51,8 @@ enableRobotsTXT = true
   #               cookies
   #-----------------------------------------
   [params.cookies]
-    enable = true
-    expire_days = 2
+    enable = false
+    # expire_days = 2
 
   # -----------------------------------------------------------
   #                 Main Menu Parmeters
@@ -124,9 +125,14 @@ enableRobotsTXT = true
       identifier="Contact"
       url="/contact/"
       name="Contact US"
-      weight=3
+      weight=4
       Icon="<span data-feather='send'></span>"
-    
+
+    [[menu.dropdown]]
+      identifier="Building a Legacy: Unveiling the Future"
+      url="/building-legacy/"
+      name="Timeline"
+      weight=3
     
 # --------------------------------------
 #   --- Markdown Config Section ---
