@@ -1,4 +1,4 @@
-name: Production Build (build)
+name: Admin Production Build 
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ jobs:
       
       - name: Build
         run: 
-            hugo --config config-stage.toml
+            hugo 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
