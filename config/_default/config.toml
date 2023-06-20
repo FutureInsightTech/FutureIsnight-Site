@@ -1,7 +1,7 @@
-#---------------------------------
-# This is Development Config File
+#-------------------------------------------------
+# This is Development Config File  or local check
 # Config File
-#---------------------------------
+#--------------------------------------------------
 
 baseURL = 'https://future-insight-develelopment.onrender.com'
 languageCode = 'en-us'
