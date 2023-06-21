@@ -1,13 +1,14 @@
 ---
-# title: "Version 05"
-date: 2023-06-17T02:11:01+05:00
+title: "Version 05"
+date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /building-legacy/version-05/
+url: /future-insight-wiki/Version05/
 ---
-# Version 05: Visual Effects & Website Page Redesign 
 
-# Changes
+# Visual Effects & Website Page Redesign 
+
+##  Changes
 Here is an enhanced version of the requested changes:
 
 ## **1. Adding new Pages called "About Us"** 
@@ -119,4 +120,3 @@ Create a favicon that represents the website's brand or logo. The favicon should
 Review and update the website's configuration file to reflect any changes made during the redesign process. Additionally, consider changing the color scheme of the code sections to a lighter tone using tools like lightroom, ensuring better readability and a more pleasing visual experience.
 
 Remember to thoroughly test all the changes to ensure they work seamlessly across different devices and browsers. Continuously gather user feedback to refine and improve the website further.
-

@@ -1,13 +1,12 @@
 ---
-# title: "Version 06"
-date: 2023-06-17T02:11:04+05:00
+title: "Version 06"
+date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /building-legacy/version-06/
+url: /future-insight-wiki/Version06/
 ---
 
-# Version 06: 
-## Next-level Development Solutions: Unveiling Our Latest Services
+# Next-level Development Solutions: Unveiling Our Latest Services
 
 **Welcome to Future Insight Version 06!**
 Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.
