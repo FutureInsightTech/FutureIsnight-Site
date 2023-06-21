@@ -17,25 +17,25 @@
     
 
     
-    <title>Future Insight</title>
+    <title>Writing Blogs: Join Us!</title>
     <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta name="keywords" content='blog, gokarna, hugo'>
 
-    <meta property="og:url" content="https://future-insight.blog/building-legacy/version-6.1/">
+    <meta property="og:url" content="https://future-insight.blog/Future-Insight-Wiki/StartBlogging/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Future Insight">
+    <meta property="og:title" content="Writing Blogs: Join Us!">
     <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
     <meta property="og:image" content="/images/16.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Future Insight">
+    <meta name="twitter:title" content="Writing Blogs: Join Us!">
     <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
-    <meta property="twitter:domain" content="https://future-insight.blog/building-legacy/version-6.1/">
-    <meta property="twitter:url" content="https://future-insight.blog/building-legacy/version-6.1/">
+    <meta property="twitter:domain" content="https://future-insight.blog/Future-Insight-Wiki/StartBlogging/">
+    <meta property="twitter:url" content="https://future-insight.blog/Future-Insight-Wiki/StartBlogging/">
     <meta name="twitter:image" content="/images/16.png">
 
     
-    <link rel="canonical" href="https://future-insight.blog/building-legacy/version-6.1/" />
+    <link rel="canonical" href="https://future-insight.blog/Future-Insight-Wiki/StartBlogging/" />
 
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
@@ -48,7 +48,7 @@
     <script src="https://future-insight.blog/js/main.js"></script>
 
      
-    
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
     
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -143,6 +143,10 @@
             </div>
             
             <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
                 <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
             </div>
             
@@ -209,6 +213,10 @@
                 </li>
                 
                 <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
                     <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
                 </li>
                 
@@ -229,42 +237,97 @@
     <div class="post container">
 
     <div class="post-header-section">
-        <h1></h1>
+        <h1>Writing Blogs: Join Us!</h1>
     </div>
 
     <div class="post-content">
         <p>
-            <h1 id="version-61">Version 6.1</h1>
-<h2 id="code-improvement-performance-optimization-and-code-cleanup">Code Improvement: Performance Optimization and Code Cleanup</h2>
-<h2 id="problems">Problems:</h2>
-<p>There are two main issues in the codebase that need to be addressed:</p>
+            <p>If you love writing blogs, we invite you to join us and contribute your valuable insights. Here&rsquo;s a guide on how to get started:</p>
+<h2 id="getting-the-file">Getting the File:</h2>
+<p>To access the file, follow these steps:</p>
 <ol>
-<li>Repeating Height for Every Service Page.</li>
-<li>Handling Height and Mobile View Detection.</li>
+<li>Clone or fork the repository.</li>
+<li>Switch to the &ldquo;Blog&rdquo; branch using the command: <code>git checkout Blog</code>.</li>
+<li>Now, you can create a new blog post by following this guide.</li>
 </ol>
-<h2 id="1-repeating-css-files">1. Repeating CSS Files:</h2>
-<p>In the previous codebase, the CSS for the price table in the service pages was repeated for each page due to the changing height attribute. This resulted in multiple CSS files for each service page, negatively impacting performance.</p>
-<h3 id="solution">Solution:</h3>
-<p>To solve this problem, we can refactor the code and introduce a JavaScript file called &ldquo;height.js&rdquo; that handles the dynamic height and mobile view detection logic.</p>
-<ul>
-<li>In &ldquo;height.js&rdquo;, we can implement functions to:
-<ul>
-<li>Modify the height of the price table using the <code>data-height</code> attribute passed to the function.</li>
-<li>Detect multiple screen sizes and, if the screen size is for a mobile device, set the height according to the mobile view using the <code>data-height</code> attribute.</li>
-</ul>
+<h2 id="creating-a-new-blog-post">Creating a New Blog Post:</h2>
+<ol>
+<li>Open your terminal.</li>
+<li>Run the following command to execute the script:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./blog_post_generator.sh
+</code></pre></div></li>
+<li>You can find the script in the main folder of the repository.</li>
+<li>The script will prompt you with a series of questions about your blog post and generate a new blog post accordingly.</li>
+<li>Once your blog post is created, you can open the file in your preferred text editor and start writing your blog.</li>
+</ol>
+<p>The new blog post will be created in the &ldquo;content&rdquo; folder with your specified tags and blog post name. Open the file and start writing your blog using Markdown format.</p>
+<p><strong>Note</strong>: If you are new to Markdown, you can refer to the <a href="https://www.markdownguide.org/cheat-sheet/">Markdown Guide</a> for a quick reference.</p>
+<h2 id="important-things-to-consider">Important Things to Consider:</h2>
+<ol>
+<li>Provide the URL of your blog on the top of the file.</li>
+<li>Enter the title of your blog.</li>
+<li>Fill in your name in the author section.</li>
+<li>Add a thumbnail image in the &ldquo;static&rdquo; folder.</li>
+<li>Include images in your blog using the following syntax: <code>![Image Name](/image-name.png)</code>.</li>
+<li>To view the blog on your local machine, change the &ldquo;draft&rdquo; field from &ldquo;true&rdquo; to &ldquo;false&rdquo;.</li>
+</ol>
+<h2 id="updating-the-credit-section">Updating the Credit Section:</h2>
+<p>In the blog post, please ensure to change the name in the credit section to properly attribute the author. Replace the placeholder with your name or the desired name you want to be credited.</p>
+<h2 id="running-locally">Running Locally:</h2>
+<p>To run and check out your work on the Future Insight website locally, follow these steps:</p>
+<ol>
+<li>
+<p>Open your terminal or command prompt.</p>
 </li>
-</ul>
-<h2 id="2-mobile-view-handling">2. Mobile View Handling:</h2>
-<p>In the previous codebase, mobile view was managed using CSS media queries, but now it has been shifted to JavaScript. JavaScript will detect the screen size and set the height for the mobile view based on the height of the price card.</p>
-<h2 id="code-cleanup">Code Cleanup:</h2>
-<p>In addition to the above improvements, we can perform some code cleanup:</p>
-<ul>
-<li>Remove unrelated CSS files from the codebase since the logic is now handled by JavaScript.</li>
-<li>Add comments to make the code more readable and enhance understanding.</li>
-<li>Include the previous version of the commented code for reference.</li>
-<li>Implement error handling to gracefully handle any potential errors that may occur.</li>
-</ul>
-<p>By addressing these improvements, we can optimize the performance of the website, remove unnecessary files, and make the code more maintainable and readable.</p>
+<li>
+<p>Navigate to the project&rsquo;s root directory using the <code>cd</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /path/to/Future-Insight
+</code></pre></div></li>
+<li>
+<p>Start the Hugo server by running the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
+</code></pre></div></li>
+<li>
+<p>After executing the command, you should see output similar to the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">...
+Web Server is available at //localhost:1313/ <span style="color:#f92672">(</span>bind address 127.0.0.1<span style="color:#f92672">)</span>
+...
+</code></pre></div></li>
+<li>
+<p>Open your preferred web browser and enter the following URL:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://localhost:1313/
+</code></pre></div></li>
+<li>
+<p>The Future Insight website will now be running locally on your machine. You can explore the different pages, navigate through the site, and interact with its features.</p>
+</li>
+<li>
+<p>As you make changes to the code or content, the Hugo server will automatically rebuild the site, and you can see the updates by refreshing your browser.</p>
+</li>
+</ol>
+<p>By running the website locally, you can test and preview your changes before deploying them to a live environment. This allows you to ensure everything looks and functions as intended. Enjoy exploring your work on the Future Insight website!</p>
+<h2 id="preview">Preview:</h2>
+<h3 id="terminal-commands">Terminal Commands:</h3>
+<p>Terminal Command to run hugo server
+<img src="/images/doc_images/hugo_command.png" alt="image"></p>
+<h3 id="local-server">Local Server:</h3>
+<p>Browser view of the local server and port Number
+<img src="/images/doc_images/local-server.png" alt="image"></p>
+<h2 id="submitting-the-blog">Submitting the Blog:</h2>
+<p>You can submit your blog by creating a pull request to the &ldquo;Blog&rdquo; branch. Follow these steps:</p>
+<ol>
+<li>Use the following commands in your terminal:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add *
+git commit -m <span style="color:#e6db74">&#34;Your Commit Message&#34;</span>
+git push
+</code></pre></div></li>
+<li>Alternatively, you can run the script called &ldquo;run.sh&rdquo; located in the main folder.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./git_commit.sh
+</code></pre></div>The script will prompt you with questions and upload your blog post to GitHub.</li>
+</ol>
+<p>After creating the pull request from the &ldquo;Blog&rdquo; branch to the main repository, our team will review your blog post. If you have any doubts, feel free to ask in the issue section on GitHub or contact us via email.</p>
+<p>Please refer to the documentation for the &ldquo;git_commit&rdquo; script to make any necessary improvements and enhancements. Happy blogging!</p>
+<p><strong>Note:</strong>
+To read about the script, refer to the documentation of <a href="/Instruction/Write-blog.md">Blog generator Script</a>.</p>
 
         </p>
     </div>

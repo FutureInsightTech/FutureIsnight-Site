@@ -6,107 +6,140 @@
     <description>Recent content in Pages on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jun 2023 02:13:58 +0500</lastBuildDate><atom:link href="https://future-insight.blog/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jun 2023 17:11:24 +0500</lastBuildDate><atom:link href="https://future-insight.blog/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Building a Legacy: Unveiling the Future</title>
-      <link>https://future-insight.blog/building-legacy/</link>
-      <pubDate>Sat, 17 Jun 2023 02:13:58 +0500</pubDate>
+      <title>Code Contribution</title>
+      <link>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/</guid>
-      <description>  </description>
+      <guid>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</guid>
+      <description>If you want to help develop this website or contribute with me, please follow the instructions below:
+Process  No code will be committed to the main branch without the project administrator&amp;rsquo;s testing and approval. To contribute, switch to the Development-Branch and make all changes in that branch. Once you are sure the code is tested and working fine, you can create a pull request to the main branch. Switch to the Development Branch using the following command: git checkout Development-Branch  When a feature is finalized, create a new branch from the development branch.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-6.1/</link>
-      <pubDate>Sat, 17 Jun 2023 02:11:45 +0500</pubDate>
+      <title>Future Insight Github Branches</title>
+      <link>https://future-insight.blog/future-insight-wiki/bracnhes/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-6.1/</guid>
-      <description>Version 6.1 Code Improvement: Performance Optimization and Code Cleanup Problems: There are two main issues in the codebase that need to be addressed:
- Repeating Height for Every Service Page. Handling Height and Mobile View Detection.  1. Repeating CSS Files: In the previous codebase, the CSS for the price table in the service pages was repeated for each page due to the changing height attribute. This resulted in multiple CSS files for each service page, negatively impacting performance.</description>
+      <guid>https://future-insight.blog/future-insight-wiki/bracnhes/</guid>
+      <description>Branches This project consists of three main branches:
+ Main Branch (Production) Blog Branch Development Branch  Main Branch The main branch, also known as the production branch, represents the live version of the project. Finalized blogs or tested features are merged into this branch. It is continuously hosted on the server.
+Blog Branch The blog branch is dedicated to writing and finalizing blogs. Once a blog is completed, it is merged into the main branch.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-06-Part02/</link>
-      <pubDate>Sat, 17 Jun 2023 02:11:20 +0500</pubDate>
+      <title>Future Insight Wiki</title>
+      <link>https://future-insight.blog/future-insight-wiki/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-06-Part02/</guid>
-      <description>Version 06: Part 02 Next-level Development Solutions: Unveiling Our Latest Services Welcome to Future Insight Version 06! Experience the future of educational support with Future Insight. We are thrilled to introduce our latest website version, brimming with advanced features and enhancements, designed to deliver an exceptional learning experience like never before.
-Features Explore the exciting features of this update:
-1. Navbar Redesign (Implemented) Enjoy a fresh and modern look with our revamped navbar design.</description>
+      <guid>https://future-insight.blog/future-insight-wiki/</guid>
+      <description>Welcome to the Future Insight Wiki! This wiki serves as a gateway to explore the multifaceted world of Future Insight and delve into the mind behind it all. Here, you will find a treasure trove of knowledge, creativity, and inspiration. Join us on a journey through our work, passion, and ideas that shape our vision of the future.
+Table of Contents  Introduction Versions  Version 01 Version 02 Version 03 Version 04 Version 05 Version 06   Contribution  Writing Blog Code Contribution   Branch Explain Running Locally Script Documentation  </description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-06-Part01/</link>
-      <pubDate>Sat, 17 Jun 2023 02:11:17 +0500</pubDate>
+      <title>Introduction</title>
+      <link>https://future-insight.blog/future-insight-wiki/Introduction/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-06-Part01/</guid>
-      <description>Version 06 Part 01: Next-level Development Solutions: Unveiling Our Latest Services Welcome to Future Insight Version 06! Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.
-Features Here are all of the Features for this update
- Navbar Redesign (Implemented ) Updated Author Page (Implemented ) Services Page with Different Packages  3.</description>
+      <guid>https://future-insight.blog/future-insight-wiki/Introduction/</guid>
+      <description>Here, you will find a treasure trove of knowledge, creativity, and inspiration. This wiki serves as a gateway to explore the multifaceted world of Future Insight and delve into the mind behind it all.
+My name is Abdul Rafay, and I am thrilled to invite you on a journey through my work, my passion, and the ideas that shape my vision of the future. This wiki is a curated collection of articles, projects, and insights that reflect my dedication to pushing boundaries, fostering innovation, and making a positive impact on the world.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-06/</link>
-      <pubDate>Sat, 17 Jun 2023 02:11:04 +0500</pubDate>
+      <title>Running Locally</title>
+      <link>https://future-insight.blog/Future-Insight-Wiki/Running-Locally/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-06/</guid>
-      <description>Version 06: Next-level Development Solutions: Unveiling Our Latest Services Welcome to Future Insight Version 06! Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.
-Features Here are all of the Features for this update
- Navbar Redesign Updated Author Page Services Page with Different Packages  3.</description>
+      <guid>https://future-insight.blog/Future-Insight-Wiki/Running-Locally/</guid>
+      <description>To run the Future Insight website locally on your system, please follow the instructions below.
+Required Applications: Before you can run the application, make sure you have the following programs installed on your system:
+ Git: You need Git installed to clone the project repository. Hugo: Hugo is the static site generator used for this project.  Installing Git: To install Git, follow the instructions based on your operating system:</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-05/</link>
-      <pubDate>Sat, 17 Jun 2023 02:11:01 +0500</pubDate>
+      <title>Start Blog Script: Documentation</title>
+      <link>https://future-insight.blog/Future-Insight-Wiki/StartBlogScript/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-05/</guid>
-      <description>Version 05: Visual Effects &amp;amp; Website Page Redesign Changes Here is an enhanced version of the requested changes:
-1. Adding new Pages called &amp;ldquo;About Us&amp;rdquo; Introduce a dedicated &amp;ldquo;About Us&amp;rdquo; page that showcases the organization&amp;rsquo;s background, values, mission, and team members. Use engaging visuals, concise and impactful copy, and possibly include testimonials or success stories to create a connection with visitors and build trust.
-Preview 2. Redesigning the &amp;ldquo;Contact Us&amp;rdquo; page: Enhance the user experience of the &amp;ldquo;Contact Us&amp;rdquo; page by creating an intuitive and visually appealing layout.</description>
+      <guid>https://future-insight.blog/Future-Insight-Wiki/StartBlogScript/</guid>
+      <description>This Bash script, called &amp;ldquo;Blog Post Generator,&amp;rdquo; is designed to assist you in creating a new blog post quickly and easily. The script is available on GitHub at https://github.com/rafay99-epic/Future-Insight, and it is authored by Abdul Rafay.
+To use the script, you will be prompted to answer a few important questions to generate your blog post. These questions include:
+ Selecting the category Entering the Blog Post Name  Please note that both of these fields are mandatory, and without providing valid inputs, the script will not proceed with creating the blog post.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-04/</link>
-      <pubDate>Sat, 17 Jun 2023 02:10:58 +0500</pubDate>
+      <title>Version 01</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version01/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-04/</guid>
-      <description>Version 4: Interactive Comments, Enriched Content, and Project Showcase Changes: So in this patch I have added just one main feature and I have cleaned the code of this Project along qith some Projection section change and added some new Blog and Updating old blogs as well.
-Comment Section: The comment section on our blog website provides an interactive platform for our readers to engage with the content and with each other.</description>
+      <guid>https://future-insight.blog/future-insight-wiki/Version01/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-03/</link>
-      <pubDate>Sat, 17 Jun 2023 02:10:50 +0500</pubDate>
+      <title>Version 02</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version02/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-03/</guid>
-      <description>Version 3: Enhanced Collaboration, Deployment, and User Interaction Changes:  Several configuration files for various deployment branches Introduction to multiple branches Blog: Deployment Testing Branch Production Build Branch Development and New Feature Testing Branch Comment Section for every Blog Post  Work Flow:  The main branch is the production branch, and no code or blog will be added without creating a branch and going through multiple GitHub actions. All of the blogs and images for the blogs will be added to the blog branch.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-02/</link>
-      <pubDate>Sat, 17 Jun 2023 02:10:46 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/building-legacy/version-02/</guid>
+      <guid>https://future-insight.blog/future-insight-wiki/Version02/</guid>
       <description>Introduction: in this new version of the website. We are changing a lot of things, and all of the changes are stated below.
 📔 Changes: In this massive update, we are changing a lot of things, and all of the key points are stated below👇:
  Rebranding our website name Adding colour support to markdown New domain for this blog Adding author support. Improving Speed and Optimizing Images Enable umami analytics.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://future-insight.blog/building-legacy/version-01/</link>
-      <pubDate>Sat, 17 Jun 2023 02:10:38 +0500</pubDate>
+      <title>Version 03</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version03/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/building-legacy/version-01/</guid>
-      <description></description>
+      <guid>https://future-insight.blog/future-insight-wiki/Version03/</guid>
+      <description>Enhanced Collaboration, Deployment, and User Interaction Changes:  Several configuration files for various deployment branches Introduction to multiple branches Blog: Deployment Testing Branch Production Build Branch Development and New Feature Testing Branch Comment Section for every Blog Post  Work Flow:  The main branch is the production branch, and no code or blog will be added without creating a branch and going through multiple GitHub actions. All of the blogs and images for the blogs will be added to the blog branch.</description>
+    </item>
+    
+    <item>
+      <title>Version 04</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version04/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/future-insight-wiki/Version04/</guid>
+      <description>Interactive Comments, Enriched Content, and Project Showcase Changes: So in this patch I have added just one main feature and I have cleaned the code of this Project along qith some Projection section change and added some new Blog and Updating old blogs as well.
+Comment Section: The comment section on our blog website provides an interactive platform for our readers to engage with the content and with each other. With our easy-to-use comment system, readers can share their thoughts, opinions, and feedback on our articles, ask questions, and participate in discussions with other like-minded individuals.</description>
+    </item>
+    
+    <item>
+      <title>Version 05</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version05/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/future-insight-wiki/Version05/</guid>
+      <description>Visual Effects &amp;amp; Website Page Redesign Changes Here is an enhanced version of the requested changes:
+1. Adding new Pages called &amp;ldquo;About Us&amp;rdquo; Introduce a dedicated &amp;ldquo;About Us&amp;rdquo; page that showcases the organization&amp;rsquo;s background, values, mission, and team members. Use engaging visuals, concise and impactful copy, and possibly include testimonials or success stories to create a connection with visitors and build trust.
+Preview 2. Redesigning the &amp;ldquo;Contact Us&amp;rdquo; page: Enhance the user experience of the &amp;ldquo;Contact Us&amp;rdquo; page by creating an intuitive and visually appealing layout.</description>
+    </item>
+    
+    <item>
+      <title>Version 06</title>
+      <link>https://future-insight.blog/future-insight-wiki/Version06/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/future-insight-wiki/Version06/</guid>
+      <description>Next-level Development Solutions: Unveiling Our Latest Services Welcome to Future Insight Version 06! Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.
+Features Here are all of the Features for this update
+ Navbar Redesign Updated Author Page Services Page with Different Packages  3.1: Available Services: - Web Development - Machine Learning Development - Android Application Development - Student Assignment 3.</description>
+    </item>
+    
+    <item>
+      <title>Writing Blogs: Join Us!</title>
+      <link>https://future-insight.blog/Future-Insight-Wiki/StartBlogging/</link>
+      <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/Future-Insight-Wiki/StartBlogging/</guid>
+      <description>If you love writing blogs, we invite you to join us and contribute your valuable insights. Here&amp;rsquo;s a guide on how to get started:
+Getting the File: To access the file, follow these steps:
+ Clone or fork the repository. Switch to the &amp;ldquo;Blog&amp;rdquo; branch using the command: git checkout Blog. Now, you can create a new blog post by following this guide.  Creating a New Blog Post:  Open your terminal.</description>
     </item>
     
     <item>
