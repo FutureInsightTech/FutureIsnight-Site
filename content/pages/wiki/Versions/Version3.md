@@ -1,14 +1,13 @@
 ---
-# title: "Version 03"
-date: 2023-06-17T02:10:50+05:00
+title: "Version 03"
+date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /building-legacy/version-03/
+url: /future-insight-wiki/Version03/
 ---
 
-# Version 3: 
-## Enhanced Collaboration, Deployment, and User Interaction
-# Changes:
+# Enhanced Collaboration, Deployment, and User Interaction
+## Changes:
 - Several configuration files for various deployment branches
 - Introduction to multiple branches
 - Blog: Deployment Testing Branch
@@ -16,14 +15,14 @@ url: /building-legacy/version-03/
 - Development and New Feature Testing Branch
 - Comment Section for every Blog Post
 
-# Work Flow:
+## Work Flow:
 - The main branch is the production branch, and no code or blog will be added without creating a branch and going through multiple GitHub actions.
 - All of the blogs and images for the blogs will be added to the blog branch.
 - All code and development-related work will be done in the Development Branch.
 - Each of these branches has its own build branch, as all of the complied code from each branch will be stored and placed in another branch.
 - The other branches are known as build branches.
 
-# Different Branches:
+## Different Branches:
 In this project, there are three main branches.
 1. Main
 2. Blog
@@ -52,5 +51,5 @@ And all of these branches have corresponding building branches.
    -  No blog will be added here.
    -  The structure of the website will change here.
 
-# Comments:
+## Comments:
 Adding Comments for each Blog Post, Using the power of Hugo, Now you add comments and give your thoughts. 

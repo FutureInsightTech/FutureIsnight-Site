@@ -1,16 +1,15 @@
 ---
-# title: "Version 02"
-date: 2023-06-17T02:10:46+05:00
+title: "Version 02"
+date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /building-legacy/version-02/
-image: "/images/2023/"
+url: /future-insight-wiki/Version02/
 ---
 
-# Introduction:
+## Introduction:
 in this new version of the website. We are changing a lot of things, and all of the changes are stated below.  
 
-#  📔 Changes:
+##  📔 Changes:
 In this massive update, we are changing a lot of things, and all of the key points are stated below👇:
 1. Rebranding our website name
 2. Adding colour support to markdown
@@ -29,12 +28,12 @@ In this massive update, we are changing a lot of things, and all of the key poin
 16.  Simple Script that can help you to create new Blogs for Author and for other contributions as  we.
 So these are the changes in version 2. 
 
-# Version 01:
+## Version 01:
 If you want to checkout version one of the application then visit [here](https://github.com/rafay99-epic/Future-Insight/tree/Version-01). This branch is lock and there will be no development in version 1 of the application.
 
 **Note: Version 02 is merged into the main Branch and it is live now.**
 
-# Live Website:
+## Live Website:
 You can visit [Future Insight](https;//future-insight.blog) now, It is live now So check it out.🥳
 
 ## Automated Generated  Detail Notes:

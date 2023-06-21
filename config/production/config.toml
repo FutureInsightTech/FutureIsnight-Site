@@ -98,11 +98,19 @@ enableRobotsTXT = true
       weight = 5
       pre = "<span data-feather='settings'></span>"
 
+    # Wiki Page
+    [[menu.main]]
+      identifier = "Wiki"
+      name = "Wiki"
+      url = "/Future-Insight-Wiki/"
+      weight = 6
+      pre = "<span data-feather='book-open'></span>"
+
     # Github Link
     [[menu.main]]
       identifier = "github"
       url = "https://github.com/rafay99-epic"
-      weight = 6
+      weight = 7
       pre = "<span data-feather='github'></span>"
 
   # Drop Down Menu Components

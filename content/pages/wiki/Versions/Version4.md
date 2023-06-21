@@ -1,14 +1,13 @@
 ---
-# title: "Version 04"
-date: 2023-06-17T02:10:58+05:00
+title: "Version 04"
+date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /building-legacy/version-04/
+url: /future-insight-wiki/Version04/
 ---
-# Version 4: 
 ## Interactive Comments, Enriched Content, and Project Showcase
 
-# Changes:
+## Changes:
 So in this patch I have added just one main feature and I have cleaned the code of this Project along qith some Projection section change and added some new Blog and Updating old blogs as well.
 
 ## Comment Section:
@@ -31,5 +30,3 @@ Adding categories for different projects with a time stamp as well
 
 ## Author Page:
 Updating the author page as well. Updating the profile image to the author page, along with some CSS files as well.
-
-
