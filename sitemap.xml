@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://future-insight.blog/building-legacy/</loc>
-    <lastmod>2023-06-17T02:13:58+05:00</lastmod>
+    <loc>https://future-insight.blog/tags/blog/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/operating-system/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/post/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/security/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/secure-your-windows/</loc>
+    <lastmod>2023-06-19T02:58:06+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/building-legacy/</loc>
     <lastmod>2023-06-17T02:13:58+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/pages/</loc>
@@ -38,19 +56,10 @@
     <loc>https://future-insight.blog/building-legacy/version-01/</loc>
     <lastmod>2023-06-17T02:10:38+05:00</lastmod>
   </url><url>
-    <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/tags/linux/</loc>
     <lastmod>2023-06-13T20:11:35+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/linux-distribution/</loc>
-    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/post/</loc>
-    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/</loc>
     <lastmod>2023-06-13T20:11:35+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/select-package/</loc>
@@ -147,9 +156,6 @@
     <lastmod>2023-03-17T23:32:50+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/nvidia-driver-arch-linux/</loc>
-    <lastmod>2023-03-12T20:25:31+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/operating-system/</loc>
     <lastmod>2023-03-12T20:25:31+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/install-linux/</loc>

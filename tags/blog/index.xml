@@ -6,7 +6,16 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jun 2023 20:11:35 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jun 2023 02:58:06 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Security: Protecting Your Operating System</title>
+      <link>https://future-insight.blog/secure-your-windows/</link>
+      <pubDate>Mon, 19 Jun 2023 02:58:06 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/secure-your-windows/</guid>
+      <description>The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks. If one is not cautious, personal information can be sold online. Various organizations track your online activities, creating profiles that are used to deliver targeted advertisements. Additionally, the threat of viruses looms, capable of compromising your system and resulting in the loss of valuable data.</description>
+    </item>
+    
     <item>
       <title>Navigating the Linux Universe: Finding Your Perfect Distribution</title>
       <link>https://future-insight.blog/linux-distribution/</link>
