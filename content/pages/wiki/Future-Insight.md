@@ -24,5 +24,6 @@ Welcome to the Future Insight Wiki! This wiki serves as a gateway to explore the
    2. [Code Contribution](/future-insight-wiki/Code-Contribution/)
 4. [Branch Explain](/future-insight-wiki/Bracnhes/)
 5. [Running Locally](/future-insight-wiki/Running-Locally/)
-6. [Script Documentation](/future-Insight-wiki/StartBlogScript/)
+6. [Script Documentation](/future-insight-wiki/StartBlogScript/)
+7. [Vision & Mission](/future-insight-wiki/vision-mission/)
 
