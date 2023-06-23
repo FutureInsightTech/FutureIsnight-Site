@@ -3,7 +3,7 @@ title: "Start Blog Script: Documentation"
 date: 2023-06-21T17:11:24+05:00
 draft: false
 type: "page"
-url: /Future-Insight-Wiki/StartBlogScript/
+url: /future-insight-wiki/StartBlogScript/
 ---
 
 This Bash script, called "Blog Post Generator," is designed to assist you in creating a new blog post quickly and easily. The script is available on GitHub at [https://github.com/rafay99-epic/Future-Insight](https://github.com/rafay99-epic/Future-Insight), and it is authored by Abdul Rafay.
