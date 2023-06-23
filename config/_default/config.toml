@@ -98,12 +98,20 @@ enableRobotsTXT = true
       url = "/services/"
       weight = 5
       pre = "<span data-feather='settings'></span>"
+    
+    [[menu.main]]
+      identifier = "Wiki"
+      name = "Wiki"
+      url = "/Future-Insight-Wiki/"
+      weight = 6
+      pre = "<span data-feather='book-open'></span>"
+
 
     # Github Link
     [[menu.main]]
       identifier = "github"
       url = "https://github.com/rafay99-epic"
-      weight = 6
+      weight = 7
       pre = "<span data-feather='github'></span>"
 
   # Drop Down Menu Components
@@ -125,15 +133,10 @@ enableRobotsTXT = true
       identifier="Contact"
       url="/contact/"
       name="Contact US"
-      weight=4
+      weight=3
       Icon="<span data-feather='send'></span>"
 
-    [[menu.dropdown]]
-      identifier="Building a Legacy: Unveiling the Future"
-      url="/building-legacy/"
-      name="Timeline"
-      weight=3
-    
+     
 # --------------------------------------
 #   --- Markdown Config Section ---
 # --------------------------------------
