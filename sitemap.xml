@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</loc>
-    <lastmod>2023-06-21T17:11:24+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/</loc>
+    <lastmod>2023-06-23T16:22:37+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/pages/</loc>
+    <lastmod>2023-06-23T16:22:37+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/future-insight-wiki/vision-mission/</loc>
+    <lastmod>2023-06-23T16:22:37+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</loc>
     <lastmod>2023-06-21T17:11:24+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/future-insight-wiki/bracnhes/</loc>
@@ -17,13 +23,10 @@
     <loc>https://future-insight.blog/future-insight-wiki/Introduction/</loc>
     <lastmod>2023-06-21T17:11:24+05:00</lastmod>
   </url><url>
-    <loc>https://future-insight.blog/pages/</loc>
-    <lastmod>2023-06-21T17:11:24+05:00</lastmod>
-  </url><url>
     <loc>https://future-insight.blog/Future-Insight-Wiki/Running-Locally/</loc>
     <lastmod>2023-06-21T17:11:24+05:00</lastmod>
   </url><url>
-    <loc>https://future-insight.blog/Future-Insight-Wiki/StartBlogScript/</loc>
+    <loc>https://future-insight.blog/future-insight-wiki/StartBlogScript/</loc>
     <lastmod>2023-06-21T17:11:24+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/future-insight-wiki/Version01/</loc>
