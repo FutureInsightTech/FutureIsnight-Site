@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code-report on Future Insight</title>
+    <link>https://future-insight.blog/tags/code-report/</link>
+    <description>Recent content in code-report on Future Insight</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Jun 2023 22:51:59 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/code-report/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Report: 24th June 2023</title>
+      <link>https://future-insight.blog/code-report/24th-June-2023/</link>
+      <pubDate>Sat, 24 Jun 2023 22:51:59 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/24th-June-2023/</guid>
+      <description>Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
+This announcement raises several crucial questions:
+ What is closed-source software? What is the significance of Red Hat Linux? What actions are they taking? What is the problem? Should i be worry? But what about licensing?</description>
+    </item>
+    
+  </channel>
+</rss>
