@@ -102,10 +102,9 @@ enableRobotsTXT = true
     [[menu.main]]
       identifier = "Wiki"
       name = "Wiki"
-      url = "/Future-Insight-Wiki/"
+      url = "/future-insight-wiki/"
       weight = 6
       pre = "<span data-feather='book-open'></span>"
-
 
     # Github Link
     [[menu.main]]
