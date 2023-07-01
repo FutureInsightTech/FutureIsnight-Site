@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jun 2023 22:51:59 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jun 2023 16:15:07 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Sat, 24 Jun 2023 22:51:59 +0500</pubDate>
+      <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fedora</title>
+      <link>https://future-insight.blog/tags/fedora/</link>
+      <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://future-insight.blog/tags/linux/</link>
+      <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nvidia-Drivers</title>
+      <link>https://future-insight.blog/tags/nvidia-drivers/</link>
+      <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/nvidia-drivers/</guid>
       <description></description>
     </item>
     
@@ -53,15 +80,6 @@
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://future-insight.blog/tags/linux/</link>
-      <pubDate>Tue, 13 Jun 2023 20:11:35 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Window-Manager</title>
       <link>https://future-insight.blog/tags/window-manager/</link>
       <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
@@ -85,6 +103,15 @@
       <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arch-Linux</title>
+      <link>https://future-insight.blog/tags/arch-linux/</link>
+      <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/arch-linux/</guid>
       <description></description>
     </item>
     

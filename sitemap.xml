@@ -3,21 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-06-24T22:51:59+05:00</lastmod>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/fedora/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/linux/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/nvidia-driver-fedora-linux/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/nvidia-drivers/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/post/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/</loc>
+    <lastmod>2023-06-30T16:15:07+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/terminal-feedback-password/</loc>
+    <lastmod>2023-06-30T15:37:54+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/code-report/24th-June-2023/</loc>
     <lastmod>2023-06-24T22:51:59+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/tags/code-report/</loc>
-    <lastmod>2023-06-24T22:51:59+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/</loc>
-    <lastmod>2023-06-24T22:51:59+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/post/</loc>
-    <lastmod>2023-06-24T22:51:59+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/</loc>
     <lastmod>2023-06-24T22:51:59+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/explore-databases/</loc>
@@ -82,9 +97,6 @@
   </url><url>
     <loc>https://future-insight.blog/secure-your-windows/</loc>
     <lastmod>2023-06-19T02:58:06+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/linux/</loc>
-    <lastmod>2023-06-13T20:11:35+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/linux-distribution/</loc>
     <lastmod>2023-06-13T20:11:35+05:00</lastmod>
@@ -178,6 +190,9 @@
   </url><url>
     <loc>https://future-insight.blog/tags/machine-learning/</loc>
     <lastmod>2023-03-17T23:32:50+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/arch-linux/</loc>
+    <lastmod>2023-03-12T20:25:31+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/nvidia-driver-arch-linux/</loc>
     <lastmod>2023-03-12T20:25:31+05:00</lastmod>

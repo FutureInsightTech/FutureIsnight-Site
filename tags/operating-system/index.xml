@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Nivida Driver: Arch Linux</title>
-      <link>https://future-insight.blog/nvidia-driver-arch-linux/</link>
-      <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/nvidia-driver-arch-linux/</guid>
-      <description>If you&amp;rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system.</description>
-    </item>
-    
-    <item>
       <title>Install Linux</title>
       <link>https://future-insight.blog/install-linux/</link>
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
