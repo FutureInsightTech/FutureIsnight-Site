@@ -3,8 +3,8 @@ title: "Nivida Driver: Arch Linux"
 date: 2023-03-12T20:25:31+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"Linux", "Operating System"]
-description: ""
+tags: ["blog" ,"Linux","Nvidia-Drivers", "Arch-Linux"]
+description: "Nvidia Drivers on Arch Linux"
 showTableOfContents: true
 url: /nvidia-driver-arch-linux/
 image: "/images/2023/Operating-System/Linux/Nvidia-arch-linux/NVIDIA-Graphic-Arch-Linux.png"
