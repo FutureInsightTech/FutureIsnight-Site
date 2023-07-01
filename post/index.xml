@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Jun 2023 16:15:07 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 20:26:58 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimize Your Fedora: 5 Essential Post-Installation Steps</title>
+      <link>https://future-insight.blog/fedora-install-tips/</link>
+      <pubDate>Sat, 01 Jul 2023 20:26:58 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/fedora-install-tips/</guid>
+      <description>So you&amp;rsquo;ve installed Fedora on your system, and I hope you&amp;rsquo;re enjoying it. However, out of the box, there are a few things that could be improved. In this blog post, we will go through the top five things to do after installing Fedora on your system.
+Top 5: Here are the top 5 things I would do when I install Fedora on my system, and I will be throwing in a bonus one as well.</description>
+    </item>
+    
     <item>
       <title>Nvidia Driver: Fedora Linux</title>
       <link>https://future-insight.blog/nvidia-driver-fedora-linux/</link>
