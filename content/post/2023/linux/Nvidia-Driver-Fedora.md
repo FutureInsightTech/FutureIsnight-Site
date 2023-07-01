@@ -75,9 +75,8 @@ Now that you have enabled RPM Fusion, it's time to check your Nvidia driver. Fol
 1. Open the Terminal.
 2. Check your Nvidia card:
    - NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you'll first need to find your graphics card model.
-   - If you don't know it, open a Terminal (Applications > System
-
- Tools > Terminal) and type:
+   - If you don't know it, open a Terminal (Applications > System Tools > Terminal) and type:
+   
      ```bash
      /sbin/lspci | grep -e VGA
      ```
