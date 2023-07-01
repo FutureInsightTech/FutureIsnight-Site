@@ -3,7 +3,7 @@ title: "Fedora 38: Review"
 date: 2023-05-16T00:07:49+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux","review"]
+tags: ["blog" ,"linux","review", "fedora"]
 description: "Fedora 38: A Remarkable Experience"
 showTableOfContents: true
 url: /fedora-review/

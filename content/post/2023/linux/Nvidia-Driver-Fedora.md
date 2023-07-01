@@ -7,7 +7,7 @@ tags: ["blog" ,"Linux", "Nvidia-Drivers", "Fedora"]
 description: "Nvidia Drivers on Fedora"
 showTableOfContents: true
 url: /nvidia-driver-fedora-linux/
-image: "/images/2023/"
+image: "/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png/"
 ---
 
 -----------
@@ -22,7 +22,7 @@ Let's embark on this journey together and equip your Fedora system with the Nvid
 
 If you are running Arch Linux and want to install Nvidia Drivers on your system, you can check out my other blog post by clicking [here](/nvidia-driver-arch-linux/).
 
-## Prerequisites
+# Prerequisites
 Before we begin, there are a couple of things that need to be done, and all of them are stated below:
 1. Fedora should be installed.
 2. Internet connection is required.
@@ -38,13 +38,13 @@ So now you have installed Fedora on your system, and your system is updated. If 
 
 An internet connection is a must; without it, you cannot install anything on your system.
 
-## Install Drivers
+# Install Drivers
 To install the Nvidia driver, there are three things that you need to do on your system:
 1. Enable RPM Fusion Repository.
 2. Check which Nvidia Card you have.
 3. Install Nvidia Drivers.
 
-### Enable RPM Fusion Repository
+## Enable RPM Fusion Repository
 To enable the RPM Fusion repository, follow these steps:
 1. Open the Terminal.
 2. Enter the following commands:
@@ -70,13 +70,14 @@ To enable the RPM Fusion repository, follow these steps:
    ```bash
    sudo dnf update -y
    ```
-
-### Check Nvidia Card
+## Check Nvidia Card
 Now that you have enabled RPM Fusion, it's time to check your Nvidia driver. Follow these steps:
 1. Open the Terminal.
 2. Check your Nvidia card:
    - NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you'll first need to find your graphics card model.
-   - If you don't know it, open a Terminal (Applications > System Tools > Terminal) and type:
+   - If you don't know it, open a Terminal (Applications > System
+
+ Tools > Terminal) and type:
      ```bash
      /sbin/lspci | grep -e VGA
      ```
@@ -86,10 +87,10 @@ Now that you have enabled RPM Fusion, it's time to check your Nvidia driver. Fol
      ```
    - You can also check the [supported chips](https://download.nvidia.com/XFree86/Linux-x86_64/495.44/README/supportedchips.html) section and see which series is recommended for your card, then install the appropriate driver series.
 
-### Install Nvidia Driver
+## Install Nvidia Driver
 Now that you know which card you are using, you can install Nvidia drivers on your system. Check your model's year, and based on that information, follow the steps below to install the drivers on your system.
 
-#### Current GeForce/Quadro/Tesla
+### Current GeForce/Quadro/Tesla
 - Supported on the current stable Xorg server release.
 - This driver is suitable for any GPU found in 2014 and later.
 
@@ -100,7 +101,7 @@ sudo dnf install akmod-nvidia
 sudo dnf install xorg-x11-drv-nvidia-cuda #optional
 ```
 
-#### Legacy GeForce 600/700
+### Legacy GeForce 600/700
 - Supported on the current stable Xorg server release.
 - This driver is suitable for any NVIDIA Kepler GPU found between 2012 and 2014.
 
@@ -109,7 +110,7 @@ sudo dnf install xorg-x11-drv-nvidia-470xx akmod-nvidia-470xx
 sudo dnf install xorg-x11-drv-nvidia-470xx-cuda #optional for CUDA up to 11.4 support
 ```
 
-#### Legacy GeForce 400/500
+### Legacy GeForce 400/500
 - Supported on the current stable Xorg server release. EOL by NVIDIA at the end of 2022. Still available on a "best effort basis" (newer kernels may break, will be discontinued at any time if not actively maintained).
 - This driver is suitable for any NVIDIA Fermi GPU found between 2010 and 2012.
 
@@ -118,7 +119,7 @@ sudo dnf install xorg-x11-drv-nvidia-390xx akmod-nvidia-390xx
 sudo dnf install xorg-x11-drv-nvidia-390xx-cuda #optional for CUDA up to 9.2 support
 ```
 
-#### Legacy GeForce 8/9/200/300
+### Legacy GeForce 8/9/200/300
 - Supported on the current stable Xorg server release. EOL by NVIDIA at the end of 2019. Still available on a "best effort basis" (newer kernels may break, will be discontinued at any time if not actively maintained).
 
 ```bash
@@ -134,15 +135,14 @@ sudo dnf install akmods gcc kernel-longterm kernel-longterm-devel
 sudo dnf install xorg-x11-drv-nvidia-340xx akmod-nvidia-340xx
 ```
 
-#### Legacy GeForce 6/7
+### Legacy GeForce 6/7
 Supported up to Fedora 27 - EOL, no more Nvidia updates.
 
-#### Legacy GeForce 5 (FX series)
+### Legacy GeForce 5 (FX series)
 Supported up to Fedora 20 - EOL, no more Nvidia updates.
 
-#### Legacy GeForce 2 through GeForce 4
+### Legacy GeForce 2 through GeForce 4
 Supported up to Fedora 14 - EOL, no more Nvidia updates.
-
 
 
 # Conclusion:
@@ -164,10 +164,10 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 
 ## GitHub Repository
-- [RPM Fusion](https://github.com/rafay99-epic/DevTestBox)
-
+- [RPM Fusion Enable](https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/)
+- [Offical Documentation RPM Fusion](https://rpmfusion.org/Howto/NVIDIA#About_this_Howto)
 # Thubnail Image
-![image](/images/2023/)
+![image](/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png)
 
 
 
