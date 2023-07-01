@@ -311,19 +311,23 @@
 <li>Open the Terminal.</li>
 <li>Check your Nvidia card:
 <ul>
-<li>NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you&rsquo;ll first need to find your graphics card model.</li>
-<li>If you don&rsquo;t know it, open a Terminal (Applications &gt; System</li>
+<li>
+<p>NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you&rsquo;ll first need to find your graphics card model.</p>
+</li>
+<li>
+<p>If you don&rsquo;t know it, open a Terminal (Applications &gt; System Tools &gt; Terminal) and type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/sbin/lspci | grep -e VGA
+</code></pre></div></li>
+<li>
+<p>If your NVIDIA card is found, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/sbin/lspci | grep -e 3D
+</code></pre></div></li>
+<li>
+<p>You can also check the <a href="https://download.nvidia.com/XFree86/Linux-x86_64/495.44/README/supportedchips.html">supported chips</a> section and see which series is recommended for your card, then install the appropriate driver series.</p>
+</li>
 </ul>
 </li>
 </ol>
-<p>Tools &gt; Terminal) and type:
-<code>bash /sbin/lspci | grep -e VGA </code></p>
-<ul>
-<li>If your NVIDIA card is found, use the following command:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/sbin/lspci | grep -e 3D
-</code></pre></div></li>
-<li>You can also check the <a href="https://download.nvidia.com/XFree86/Linux-x86_64/495.44/README/supportedchips.html">supported chips</a> section and see which series is recommended for your card, then install the appropriate driver series.</li>
-</ul>
 <h2 id="install-nvidia-driver">Install Nvidia Driver</h2>
 <p>Now that you know which card you are using, you can install Nvidia drivers on your system. Check your model&rsquo;s year, and based on that information, follow the steps below to install the drivers on your system.</p>
 <h3 id="current-geforcequadrotesla">Current GeForce/Quadro/Tesla</h3>
