@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"code-report"]
 description: "Fake it till you make it"
 showTableOfContents: true
-url: /code-report/04th-July-2023/
+url: /code-report/06th-July-2023/
 image: "/images/2023/code-report/2023/6th-July/Code-Report-6th-July-2023.png"
 ---
 
