@@ -7,7 +7,7 @@ tags: ["blog" ,"code-report"]
 description: "Fake it till you make it"
 showTableOfContents: true
 url: /code-report/04th-July-2023/
-# image: "/images/2023/"
+image: "/images/2023/code-report/2023/6th-July/Code-Report-6th-July-2023.png"
 ---
 
 -----------
@@ -56,6 +56,9 @@ Here are all of the links and references that I used to write this blog, so feel
 - [Tech Crunch](https://techcrunch.com/2023/06/26/irl-shut-down-fake-users/#:~:text=Ironically%2C%20the%20social%20app%20IRL,capital%2C%20IRL%20is%20shutting%20down)
 
 - [Fireship](https://www.youtube.com/watch?v=M_wZpSEvOkc)
+
+# Thumbnail
+![image](/images/2023/code-report/2023/6th-July/Code-Report-6th-July-2023.png)
 
 <!-- ## GitHub Repository: -->
 <!-- - [GitHub Repository 1]() -->
