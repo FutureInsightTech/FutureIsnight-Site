@@ -1,0 +1,172 @@
+---
+title: "Nvidia Driver: Fedora Linux"
+date: 2023-06-30T16:15:07+05:00
+draft: false
+type: "post"
+tags: ["blog" ,"Linux", "Nvidia-Drivers", "Fedora"]
+description: "Nvidia Drivers on Fedora"
+showTableOfContents: true
+url: /nvidia-driver-fedora-linux/
+image: "/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png/"
+---
+
+-----------
+
+In the world of graphics-intensive tasks and gaming, having the right drivers installed is crucial for optimal performance and compatibility. If you are a Fedora user seeking to harness the power of Nvidia graphics cards, you've come to the right place. This comprehensive guide will walk you through the step-by-step process of installing Nvidia drivers on your Fedora system.
+
+By following this guide, you'll be able to unlock the full potential of your Nvidia graphics card, ensuring smooth visuals, improved stability, and access to advanced features. Whether you're a seasoned Fedora user or new to the Linux ecosystem, this guide will provide clear instructions and valuable insights to simplify the driver installation process.
+
+We'll cover the necessary preparations, package management techniques, and troubleshooting tips to help you overcome any potential challenges. With the right drivers in place, you'll experience enhanced graphics performance, increased compatibility with modern applications, and the ability to explore the latest advancements in graphics technology.
+
+Let's embark on this journey together and equip your Fedora system with the Nvidia drivers it deserves. Get ready to elevate your visual experience and unlock the full potential of your Nvidia graphics card on Fedora.
+
+If you are running Arch Linux and want to install Nvidia Drivers on your system, you can check out my other blog post by clicking [here](/nvidia-driver-arch-linux/).
+
+# Prerequisites
+Before we begin, there are a couple of things that need to be done, and all of them are stated below:
+1. Fedora should be installed.
+2. Internet connection is required.
+3. The system should be up to date.
+
+So now you have installed Fedora on your system, and your system is updated. If not, you can update your system by following these steps:
+1. Open the Terminal.
+2. Enter the following command:
+   ```bash
+   sudo dnf update -y
+   ```
+   Once this command is entered, your system will begin to update, and all the necessary packages will be installed on your system.
+
+An internet connection is a must; without it, you cannot install anything on your system.
+
+# Install Drivers
+To install the Nvidia driver, there are three things that you need to do on your system:
+1. Enable RPM Fusion Repository.
+2. Check which Nvidia Card you have.
+3. Install Nvidia Drivers.
+
+## Enable RPM Fusion Repository
+To enable the RPM Fusion repository, follow these steps:
+1. Open the Terminal.
+2. Enter the following commands:
+
+   2.1. **To enable the Free repository:**
+   ```bash
+   sudo dnf install \
+   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+   ```
+
+   2.2. **To enable the Nonfree repository:**
+   ```bash
+   sudo dnf install \
+   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+   ```
+
+   2.3. **Install one command line tool:**
+   ```bash
+   sudo dnf group update core -y
+   ```
+
+3. **Update the system:**
+   ```bash
+   sudo dnf update -y
+   ```
+## Check Nvidia Card
+Now that you have enabled RPM Fusion, it's time to check your Nvidia driver. Follow these steps:
+1. Open the Terminal.
+2. Check your Nvidia card:
+   - NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you'll first need to find your graphics card model.
+   - If you don't know it, open a Terminal (Applications > System Tools > Terminal) and type:
+   
+     ```bash
+     /sbin/lspci | grep -e VGA
+     ```
+   - If your NVIDIA card is found, use the following command:
+     ```bash
+     /sbin/lspci | grep -e 3D
+     ```
+   - You can also check the [supported chips](https://download.nvidia.com/XFree86/Linux-x86_64/495.44/README/supportedchips.html) section and see which series is recommended for your card, then install the appropriate driver series.
+
+## Install Nvidia Driver
+Now that you know which card you are using, you can install Nvidia drivers on your system. Check your model's year, and based on that information, follow the steps below to install the drivers on your system.
+
+### Current GeForce/Quadro/Tesla
+- Supported on the current stable Xorg server release.
+- This driver is suitable for any GPU found in 2014 and later.
+
+⚠️ The 510+ driver is available by default on Fedora 34+ and later and has dropped support for some older Kepler GPUs.
+
+```bash
+sudo dnf install akmod-nvidia
+sudo dnf install xorg-x11-drv-nvidia-cuda #optional
+```
+
+### Legacy GeForce 600/700
+- Supported on the current stable Xorg server release.
+- This driver is suitable for any NVIDIA Kepler GPU found between 2012 and 2014.
+
+```bash
+sudo dnf install xorg-x11-drv-nvidia-470xx akmod-nvidia-470xx
+sudo dnf install xorg-x11-drv-nvidia-470xx-cuda #optional for CUDA up to 11.4 support
+```
+
+### Legacy GeForce 400/500
+- Supported on the current stable Xorg server release. EOL by NVIDIA at the end of 2022. Still available on a "best effort basis" (newer kernels may break, will be discontinued at any time if not actively maintained).
+- This driver is suitable for any NVIDIA Fermi GPU found between 2010 and 2012.
+
+```bash
+sudo dnf install xorg-x11-drv-nvidia-390xx akmod-nvidia-390xx
+sudo dnf install xorg-x11-drv-nvidia-390xx-cuda #optional for CUDA up to 9.2 support
+```
+
+### Legacy GeForce 8/9/200/300
+- Supported on the current stable Xorg server release. EOL by NVIDIA at the end of 2019. Still available on a "best effort basis" (newer kernels may break, will be discontinued at any time if not actively maintained).
+
+```bash
+sudo dnf install xorg-x11-drv-nvidia-340xx akmod-nvidia-340xx
+sudo dnf install xorg-x11-drv-nvidia-340xx-cuda #optional for CUDA up to 6.5 support
+```
+
+⚠️ This driver doesn't support "pre-optimus" devices, so if you have a means to only use the NVIDIA device in BIOS, use the following commands:
+
+```bash
+sudo dnf copr enable kwizart/kernel-longterm-6.1
+sudo dnf install akmods gcc kernel-longterm kernel-longterm-devel
+sudo dnf install xorg-x11-drv-nvidia-340xx akmod-nvidia-340xx
+```
+
+### Legacy GeForce 6/7
+Supported up to Fedora 27 - EOL, no more Nvidia updates.
+
+### Legacy GeForce 5 (FX series)
+Supported up to Fedora 20 - EOL, no more Nvidia updates.
+
+### Legacy GeForce 2 through GeForce 4
+Supported up to Fedora 14 - EOL, no more Nvidia updates.
+
+
+# Conclusion:
+In conclusion, installing Nvidia drivers on your Fedora system is essential for optimizing the performance and compatibility of your Nvidia graphics card. This guide has provided clear instructions on enabling the RPM Fusion repository, identifying your Nvidia card, and installing the appropriate drivers. By following these steps, you can enhance graphics performance, stability, and access advanced features. Keep your drivers up to date and refer to this guide for troubleshooting. Enjoy the improved visual experience and happy computing!
+
+With that, we will see you next time.❤️❤️
+
+# Credit:
+This article was written by [Abdul Rafay](https://future-insight.blog/author) and published on [Future Insight](https://future-insight.blog).
+
+# Contact Us: 
+If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website's support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.
+
+To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
+
+Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
+
+# References
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+
+## GitHub Repository
+- [RPM Fusion Enable](https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/)
+- [Offical Documentation RPM Fusion](https://rpmfusion.org/Howto/NVIDIA#About_this_Howto)
+# Thubnail Image
+![image](/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png)
+
+
+
