@@ -6,63 +6,72 @@
     <description>Recent content in Web Development on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jun 2023 01:53:49 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 11:26:23 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EJS: A Templating Engine for Node.js</title>
+      <link>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</link>
+      <pubDate>Sat, 08 Jul 2023 11:26:23 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</guid>
+      <description>HTML is great—simple and fast for rendering webpages. However, there is a problem: code repetition. Writing the same code again and again for every page can be tedious. What if there was a way to write the code once and use it everywhere? That&amp;rsquo;s where EJS comes in. EJS is a templating engine that allows us to write code once and reuse it across multiple pages. Let&amp;rsquo;s get started!</description>
+    </item>
+    
     <item>
       <title>Exploring Different Types of Databases in Web Development</title>
-      <link>https://future-insight.blog/explore-databases/</link>
+      <link>https://future-insight.blog/web-development/explore-databases/</link>
       <pubDate>Sat, 24 Jun 2023 01:53:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/explore-databases/</guid>
+      <guid>https://future-insight.blog/web-development/explore-databases/</guid>
       <description>Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
 Databases in Web Development Relational Databases Relational databases store data in a structured manner, using tables with predefined relationships between them.</description>
     </item>
     
     <item>
       <title>Getting Started with Firebase Database: A Comprehensive Guide</title>
-      <link>https://future-insight.blog/firebase-connection/</link>
+      <link>https://future-insight.blog/web-development/firebase-connection/</link>
       <pubDate>Sat, 24 Jun 2023 01:48:15 +0500</pubDate>
       
-      <guid>https://future-insight.blog/firebase-connection/</guid>
+      <guid>https://future-insight.blog/web-development/firebase-connection/</guid>
       <description>In today&amp;rsquo;s blog post, we will delve into the world of Firebase Database and explore how to use it effectively in your web development projects. Whether you&amp;rsquo;re a beginner or an experienced developer, this guide will take you from the basics to advanced concepts, covering everything you need to know about Firebase Database. So let&amp;rsquo;s dive in!
 Understanding Firebase Database Firebase Database is a cloud-hosted NoSQL database provided by Google as part of the Firebase platform.</description>
     </item>
     
     <item>
       <title>Pheonix AI: ChatBot</title>
-      <link>https://future-insight.blog/Pheonix-AI/</link>
+      <link>https://future-insight.blog/web-development/Pheonix-AI/</link>
       <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Pheonix-AI/</guid>
+      <guid>https://future-insight.blog/web-development/Pheonix-AI/</guid>
       <description>The world of Machine Learning and AI is rapidly evolving, with new tools and technologies being developed and released every day. However, there is one remarkable model that stands out among the rest: GPT-Model. This cutting-edge innovation has become the gold standard in the field.
 But what exactly is a GPT-Model and what makes it so exceptional? GPT, which stands for Generative Pre-trained Transformer, is a state-of-the-art language model built on the transformer architecture.</description>
     </item>
     
     <item>
       <title>Basic of NodeJs</title>
-      <link>https://future-insight.blog/basic-nodejs/</link>
+      <link>https://future-insight.blog/web-development/basic-nodejs/</link>
       <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
       
-      <guid>https://future-insight.blog/basic-nodejs/</guid>
+      <guid>https://future-insight.blog/web-development/basic-nodejs/</guid>
       <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
     </item>
     
     <item>
       <title>Web Scrapper</title>
-      <link>https://future-insight.blog/web-scrapper/</link>
+      <link>https://future-insight.blog/web-development/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-scrapper/</guid>
+      <guid>https://future-insight.blog/web-development/web-scrapper/</guid>
       <description>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://future-insight.blog/build-hugo-website/</link>
+      <link>https://future-insight.blog/web-development/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://future-insight.blog/build-hugo-website/</guid>
+      <guid>https://future-insight.blog/web-development/build-hugo-website/</guid>
       <description>I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>

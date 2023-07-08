@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Learn Git</title>
+    <meta name="description" content="Learn how to use git and GitHub.">
+    <meta name="keywords" content='blog, gokarna, hugo, essential-skills'>
+
+    <meta property="og:url" content="https://future-insight.blog/essential-skills/learn-git-&amp;-github/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Learn Git">
+    <meta property="og:description" content="Learn how to use git and GitHub.">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Learn Git">
+    <meta name="twitter:description" content="Learn how to use git and GitHub.">
+    <meta property="twitter:domain" content="https://future-insight.blog/essential-skills/learn-git-&amp;-github/">
+    <meta property="twitter:url" content="https://future-insight.blog/essential-skills/learn-git-&amp;-github/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/essential-skills/learn-git-&amp;-github/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Learn Git</h1>
+        <small role="doc-subtitle">Learn how to use git and GitHub.</small>
+        <p class="post-date">
+            January 24, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/essential-skills">essential-skills</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>As a developer, managing your code can be difficult, and you&rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.</p>
+<h2 id="before-git">Before Git:</h2>
+<p>But before I was using Git, My code folder structure was something like this:<br>
+<img src="/images/2023/learn-git/code-folder.png" alt="image"></p>
+<p>Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.</p>
+<h2 id="importance-of-git">Importance of Git</h2>
+<p>There are multiple reasons why you should use git and GitHub.</p>
+<ul>
+<li>Using Git and GitHub, you can save different versions of code without losing any data.</li>
+<li>When you publish your code, others can view it, read it, and even contribute to your project.</li>
+<li>There is the option of adding documentation to your code, so that if you forget how it works, you can refer to or read the documentation to run it.</li>
+</ul>
+<h3 id="personal-experience">Personal Experience:</h3>
+<p>I can&rsquo;t tell you how many times I&rsquo;ve lost data and code because I didn&rsquo;t use git and GitHub. I have worked on hundreds of projects, and one time I was not updating or saving my code on Github, and my computer crashed. All of my work and my code were gone. From that point on, I learned git and used GitHub to keep my code saved.</p>
+<h2 id="what-is-git">What is Git?</h2>
+<blockquote>
+<p>Git is a version control system that allows you to contribute to existing projects or start new ones.</p>
+</blockquote>
+<blockquote>
+<p>Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. A staggering number of software projects rely on Git for version control, including commercial projects as well as open source. Developers who have worked with Git are well represented in the pool of available software development talent, and it works well on a wide range of operating systems and IDEs (integrated development environments).</p>
+</blockquote>
+<h2 id="what-is-github">What is GitHub:</h2>
+<blockquote>
+<p>GitHub is a code hosting platform for collaboration and version control.</p>
+</blockquote>
+<blockquote>
+<p>GitHub lets you (and others) work together on projects.</p>
+</blockquote>
+<h2 id="important-terms">Important Terms:</h2>
+<p>So before you learn how to use git, you need to learn a couple of important terms, which are stated below:</p>
+<ol>
+<li>Repositories</li>
+<li>Branch</li>
+<li>Commits</li>
+<li>Pull Requests</li>
+<li>Push Request</li>
+</ol>
+<h3 id="repositories">Repositories</h3>
+<ul>
+<li>
+<p>A GitHub <strong>repository</strong> can be used to store a development <strong>project</strong>.</p>
+</li>
+<li>
+<p>It can contain <strong>folders</strong> and any type of <strong>files</strong> (HTML, CSS, JavaScript, Documents, Data, Images).</p>
+</li>
+<li>
+<p>To simple words it&rsquo;s a folder in which your store all of your code with a couple of essential files such a <strong>licence</strong> and a <strong>ReadMe File</strong></p>
+</li>
+<li>
+<p>A GitHub repository should also include a <strong>licence</strong> file and a <strong>README</strong> file about the project.</p>
+</li>
+<li>
+<p>The &ldquo;README&rdquo; file tells you about your project, how you will run the applications, and an introduction to your project.</p>
+</li>
+<li>
+<p>The <strong>licence</strong> file will tell the user which kind of Project is this, IS it MIT Project or General Public licence.</p>
+</li>
+</ul>
+<h3 id="branch">Branch</h3>
+<ul>
+<li>
+<p>A GitHub branch is used to work with different <strong>versions</strong> of a repository at the same time.</p>
+</li>
+<li>
+<p>By default a repository has a <strong>master</strong> branch (a production branch).</p>
+</li>
+<li>
+<p>Any other branch is a <strong>copy</strong> of the master branch (as it was at a point in time).</p>
+</li>
+<li>
+<p>New Branches are for bug fixes and feature work separate from the master branch. When changes are ready, they can be merged into the master branch. If you make changes to the master branch while working on a new branch, these updates can be pulled in.</p>
+</li>
+</ul>
+<h3 id="commits">Commits</h3>
+<ul>
+<li>
+<p>At GitHub, changes are called commits.</p>
+</li>
+<li>
+<p>Each commit (change) has a description explaining why a change was made.</p>
+</li>
+</ul>
+<h3 id="pull-requests">Pull Requests</h3>
+<ul>
+<li>
+<p>Pull Requests are the heart of GitHub <strong>collaboration</strong>.</p>
+</li>
+<li>
+<p>With a pull request you are <strong>proposing</strong> that your changes should be <strong>merged</strong> (pulled in) with the master.</p>
+</li>
+<li>
+<p>Pull requests show content <strong>differences</strong>, changes, additions, and subtractions in <strong>colors</strong> (green and red).</p>
+</li>
+<li>
+<p>As soon as you have a commit, you can open a pull request and start a discussion, even before the code is finished.</p>
+</li>
+</ul>
+<h3 id="push-request">Push Request:</h3>
+<ul>
+<li>Push requests occur when you want to update your local code folder to the branch&rsquo;s deployed branch code; if there are any changes, then all the changes will be made on your local machine.</li>
+</ul>
+<h2 id="install-git">Install Git:</h2>
+<p>To install git enter the following commands in the terminal:</p>
+<h3 id="linux">Linux:</h3>
+<h3 id="debian-or-ububtu">Debian or Ububtu:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install git -y
+</code></pre></div><h3 id="arch-linux">Arch Linux:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syyu git --noconfirm --needed
+</code></pre></div><h3 id="windows">Windows</h3>
+<p><strong>Install git using winget:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winget install git
+</code></pre></div><p><strong>Download an exe</strong>
+You can download an exe file by click <a href="https://git-scm.com/downloads">her</a></p>
+<h3 id="mac-os">Mac Os</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install git
+</code></pre></div><p><strong>Note:</strong>
+if Home Brew is not installed on your system then install it by using the follwong command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="git-commands">Git Commands:</h2>
+<h3 id="create-a-repo">Create a Repo:</h3>
+<ol>
+<li>
+<p>Open <a href="https://github.com/">GitHub</a> and create an account. If you don&rsquo;t have an account then follow this <a href="https://www.wikihow.com/Create-an-Account-on-GitHub">Guide</a>.</p>
+</li>
+<li>
+<p>Then Press the new Button to create a new Repo:
+<img src="/images/2023/learn-git/create-a-repo.png" alt="image"></p>
+</li>
+<li>
+<p>Fill the form to create your Repo.</p>
+<ol>
+<li>Enter The name of the repo</li>
+<li>Enter the description of the repo</li>
+<li>Select the Lience for the repo
+<img src="/images/2023/learn-git/Fill-form.png" alt="image"></li>
+</ol>
+</li>
+<li>
+<p>Once You have filled the form then click on the create Repo button.</p>
+</li>
+<li>
+<p>After click that button your repo will be created and you will be redirected toword your repo.
+<img src="/images/2023/learn-git/Repo-Page.png" alt="image"></p>
+</li>
+</ol>
+<p>Congratulation You have created your own repo.</p>
+<h3 id="cloning-the-repo">Cloning the repo:</h3>
+<p>Now you want to add files to the REOP. But first, we need to clone the repo on your machine, which requires you to run a command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone &lt;repo URL&gt;
+</code></pre></div><p>The above is the command. But for now, I&rsquo;ll be cloning the <strong>Laptop-Shopping-API</strong> repo.
+So command will be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/rafay99-epic/Laptop-Shopping-API.git
+</code></pre></div><p><strong>Note:</strong> You can find the URL of the repo by clicking the <strong>code</strong> Button on your repo.
+<img src="/images/2023/learn-git/url.png" alt="image"></p>
+<p>Once command is in the terminal then press enter on your keyboard to clone the repo on your device.</p>
+<p>When you clone the repo it will look like this:
+<img src="/images/2023/learn-git/repo-folder.png" alt="image"></p>
+<h3 id="create-a-branch">Create a Branch:</h3>
+<p>Now we want to upload files to this repo so we need to create a branch so do that we need open this folder using the terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd &lt;Folder name&gt;
+</code></pre></div><p><strong>For this example:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd Laptop-Shopping-API
+</code></pre></div><p>Once you are in the folder then to create a branch.</p>
+<p><strong>Note: Always remeber that when you clone a repo on your machine by default you will be on the Main Branch.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b &lt;branch Name&gt;
+</code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout -b Adding-Files
+</code></pre></div><p>Once the above commad is entered into the termial then a brach will be created.
+<img src="/images/2023/learn-git/git-branch.png" alt="image"></p>
+<p>Using the above command you can create different branch.</p>
+<h3 id="switch-branch">Switch Branch:</h3>
+<p>What if branches already exist and you want to checkout a different branch? There is a command for that as well.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git branch
+</code></pre></div><p>Using the above command, you will see all of the git branches.
+<img src="/images/2023/learn-git/switch-branch.png" alt="image"></p>
+<p>Now to switch between different branch, to that enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout &lt;branch name&gt;
+</code></pre></div><p>In place of &ldquo;branch name,&rdquo; enter the branch name. In this example, I will be entering this command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
+</code></pre></div><p><img src="/images/2023/learn-git/switch-branch-2.png" alt="image"></p>
+<p>As you can see, I have switched to the main branch, but I will be switching to the adding-file branch.</p>
+<p>Now add some files to the branch and make all the changes. I will be adding some Python files along with the PowerShell file.</p>
+<h3 id="check-status">Check Status:</h3>
+<p>To check the status and see how many changes are made to that, enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git status
+</code></pre></div><p><img src="/images/2023/learn-git/git-status.png" alt="image"></p>
+<p>As you can see, I have added two files, and using the command <code>git status</code> , I can view all of the changes that have been made.</p>
+<h3 id="adding-files">Adding Files:</h3>
+<p>Now add these files to the branch; to do that, you need to enter the following command in the terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git add *
+</code></pre></div><p>The above command will add all the files to the branch.
+<img src="/images/2023/learn-git/git-add.png" alt="image"></p>
+<p>Now that all the files are added to the branch, when files are added, the colour will change from red to green. The green colour can change depending on the colours of your terminal.</p>
+<h3 id="commiting">Commiting:</h3>
+<p>Now it&rsquo;s time to commit your code and add a message. To do that, please enter the following commands into the terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git commit -m <span style="color:#e6db74">&#34;adding Files&#34;</span>
+</code></pre></div><p>The above command will commit your code with a message; the message is important, and it won&rsquo;t commit without a message, so enter your message.</p>
+<p><img src="/images/2023/learn-git/git-comit.png" alt="image"></p>
+<h3 id="push">Push:</h3>
+<p>Now it&rsquo;s time to deploy your local branch and push your code to the repo.</p>
+<h4 id="deploy-your-branch">Deploy your branch:</h4>
+<p>To deploy your branch on GitHub then enter the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin &lt;branch name&gt;
+</code></pre></div><p>In place of &ldquo;branch name,&rdquo; enter the branch name on which you are working.</p>
+<p>For this example, the branch name is <strong>Adding-Files</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push --set-upstream origin Adding-Files
+</code></pre></div><p>The above command will deploy your branch to GitHub.</p>
+<p><img src="/images/2023/learn-git/git-deploy-branch.png" alt="image"></p>
+<h4 id="push-command">Push Command:</h4>
+<p>To push your code enter your code into the teminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push 
+</code></pre></div><h3 id="final-result">Final Result:</h3>
+<p>As you can see, the branch is deployed, and all the files are in the Adding-file branch.
+<img src="/images/2023/learn-git/branch-deploy.png" alt="image"></p>
+<h3 id="merge-both-branch">Merge Both Branch:</h3>
+<p>Now all the files are in the Adding-File branch, but we need them to be added to the main branch. For that, we will be merging both branches.</p>
+<p>This is the stage at which you develop and test your code and application without changing or deploying it to the main repository.</p>
+<p>To merge these branches, we need to create a pull request and merge them. To do that, there are some commands.</p>
+<p><strong>Step 1:</strong> Clone the repository or update your local repository with the latest changes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git pull origin main
+</code></pre></div><p><img src="/images/2023/learn-git/git-pull-orgin-main.png" alt="image"></p>
+<p><strong>Step 2:</strong> Switch to the base branch of the pull request.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout main
+</code></pre></div><p><img src="/images/2023/learn-git/checkout-main.png" alt="image">
+<strong>Step 3:</strong> Merge the head branch into the base branch.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git merge Adding-Files
+</code></pre></div><p><img src="/images/2023/learn-git/git-merge-Adding-Files.png" alt="image">
+<strong>Step 4:</strong> Push the changes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git push -u origin main
+</code></pre></div><p><img src="/images/2023/learn-git/git-push-u-origin-main.png" alt="image"></p>
+<h2 id="final">Final:</h2>
+<p>Now that you can view GitHub, all the files are added to the main branch. You can make changes to one branch, and once you are sure that the application is working well, you can merge the working branch with the main branch.
+<img src="/images/2023/learn-git/Final-Files-added.png" alt="image"></p>
+<h2 id="version-of-applications">Version of Applications:</h2>
+<p>This is how versions are made: each branch represents a single version. When that branch is developed and tested, it will be merged into the main branch, and then your code is deployed.</p>
+<h2 id="release-pages">Release Pages:</h2>
+<p>This is the release page; you can document each version here, and each version will be assigned a number.
+<img src="/images/2023/learn-git/release-page.png" alt="image"></p>
+<p>Fill out all of the changes and then press the &ldquo;Publish&rdquo; button to publish your work on GitHub.
+<img src="/images/2023/learn-git/release-page-info.png" alt="image"></p>
+<p><strong>Example Release Pages:</strong>
+This is an example of developing a project.
+<img src="/images/2023/learn-git/Ghome-Setup-release-page.png" alt="image"></p>
+<h2 id="conclusion">Conclusion:</h2>
+<p>Learn Git, use GitHub to host your code, applications, and much more, Git and GitHub are two of the most important tools for developers, and without them, we might not be able to learn, read, or contribute code. You must learn Git and GitHub regardless of your field.<br>
+So please do not hesitate to contact or email me. I would love to know your thoughts.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="walkthrough-video">Walkthrough Video:</h1>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Y05ZT6bU7fE" frameborder="1" allowfullscreen></iframe>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/web-development/build-hugo-website/">
+            &#8592;
+            Previous:
+            Build My Blog Website
+        </a>
+    </p>
+    <p class="prev-post-date">
+        January 22, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/essential-skills/time-management/">
+            Next:
+            Time Management
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            January 26, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#before-git">Before Git:</a></li>
+        <li><a href="#importance-of-git">Importance of Git</a>
+          <ol>
+            <li><a href="#personal-experience">Personal Experience:</a></li>
+          </ol>
+        </li>
+        <li><a href="#what-is-git">What is Git?</a></li>
+        <li><a href="#what-is-github">What is GitHub:</a></li>
+        <li><a href="#important-terms">Important Terms:</a>
+          <ol>
+            <li><a href="#repositories">Repositories</a></li>
+            <li><a href="#branch">Branch</a></li>
+            <li><a href="#commits">Commits</a></li>
+            <li><a href="#pull-requests">Pull Requests</a></li>
+            <li><a href="#push-request">Push Request:</a></li>
+          </ol>
+        </li>
+        <li><a href="#install-git">Install Git:</a>
+          <ol>
+            <li><a href="#linux">Linux:</a></li>
+            <li><a href="#debian-or-ububtu">Debian or Ububtu:</a></li>
+            <li><a href="#arch-linux">Arch Linux:</a></li>
+            <li><a href="#windows">Windows</a></li>
+            <li><a href="#mac-os">Mac Os</a></li>
+          </ol>
+        </li>
+        <li><a href="#git-commands">Git Commands:</a>
+          <ol>
+            <li><a href="#create-a-repo">Create a Repo:</a></li>
+            <li><a href="#cloning-the-repo">Cloning the repo:</a></li>
+            <li><a href="#create-a-branch">Create a Branch:</a></li>
+            <li><a href="#switch-branch">Switch Branch:</a></li>
+            <li><a href="#check-status">Check Status:</a></li>
+            <li><a href="#adding-files">Adding Files:</a></li>
+            <li><a href="#commiting">Commiting:</a></li>
+            <li><a href="#push">Push:</a></li>
+            <li><a href="#final-result">Final Result:</a></li>
+            <li><a href="#merge-both-branch">Merge Both Branch:</a></li>
+          </ol>
+        </li>
+        <li><a href="#final">Final:</a></li>
+        <li><a href="#version-of-applications">Version of Applications:</a></li>
+        <li><a href="#release-pages">Release Pages:</a></li>
+        <li><a href="#conclusion">Conclusion:</a></li>
+      </ol>
+    </li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a></li>
+    <li><a href="#walkthrough-video">Walkthrough Video:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

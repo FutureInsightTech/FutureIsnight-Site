@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Design your own Machine Learning Model: Beginner Guide</title>
+    <meta name="description" content="Learn the basic to create your own ML Model">
+    <meta name="keywords" content='blog, gokarna, hugo, Machine learning'>
+
+    <meta property="og:url" content="https://future-insight.blog/machine-learning/create-your-own-ml-model/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Design your own Machine Learning Model: Beginner Guide">
+    <meta property="og:description" content="Learn the basic to create your own ML Model">
+    <meta property="og:image" content="/images/Create-your-Own-Machine-Learning-Model.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Design your own Machine Learning Model: Beginner Guide">
+    <meta name="twitter:description" content="Learn the basic to create your own ML Model">
+    <meta property="twitter:domain" content="https://future-insight.blog/machine-learning/create-your-own-ml-model/">
+    <meta property="twitter:url" content="https://future-insight.blog/machine-learning/create-your-own-ml-model/">
+    <meta name="twitter:image" content="/images/Create-your-Own-Machine-Learning-Model.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/machine-learning/create-your-own-ml-model/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Design your own Machine Learning Model: Beginner Guide</h1>
+        <small role="doc-subtitle">Learn the basic to create your own ML Model</small>
+        <p class="post-date">
+            February 2, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/machine-learning">Machine learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we&rsquo;ll walk through the basics of designing a machine learning model from scratch.</p>
+<h1 id="steps">Steps:</h1>
+<p>Follow these steps to get a better understanding of how machine learning models are created.</p>
+<h2 id="step-1-define-the-problem-and-identify-the-data">Step 1: Define the Problem and Identify the Data</h2>
+<p>The first step in designing a machine learning model is to clearly define the problem you are trying to solve. This could be anything from predicting the stock price of a company to identifying whether an email is spam or not. Once you have a clear definition of the problem, you need to identify the data that will be used to train your model. This could be data you have collected yourself or data that is publicly available.</p>
+<h2 id="step-2-prepare-the-data">Step 2: Prepare the Data</h2>
+<p>Once you have identified your data, the next step is to prepare it for use in your machine learning model. This includes cleaning the data, filling in any missing values, and transforming the data into a format that can be used by the machine learning algorithm. It&rsquo;s also important to split the data into training and testing sets to ensure that the model has been trained on enough data and can be tested for accuracy.</p>
+<h2 id="step-3-choose-a-machine-learning-algorithm">Step 3: Choose a Machine Learning Algorithm</h2>
+<p>There are many different machine learning algorithms to choose from, and each has its own strengths and weaknesses. The algorithm you choose will depend on the nature of your problem and the type of data you are working with. Some popular algorithms include decision trees, k-nearest neighbors, and artificial neural networks.</p>
+<h2 id="step-4-train-the-model">Step 4: Train the Model</h2>
+<p>Once you have prepared the data and chosen your algorithm, the next step is to train the model. This involves feeding the algorithm the training data and allowing it to &ldquo;learn&rdquo; from the data. The algorithm will then use this knowledge to make predictions about the test data.</p>
+<h2 id="step-5-evaluate-the-model">Step 5: Evaluate the Model</h2>
+<p>Once the model has been trained, it&rsquo;s important to evaluate its performance to ensure that it&rsquo;s accurate. This is done by comparing the predictions made by the model with the actual values in the test data. Common evaluation metrics include accuracy, precision, and recall.</p>
+<h2 id="step-6-refine-the-model">Step 6: Refine the Model</h2>
+<p>If the performance of the model is not satisfactory, it may be necessary to refine the model by adjusting its parameters or trying a different algorithm. This process may need to be repeated several times to achieve the desired level of accuracy.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In conclusion, designing a machine learning model requires careful consideration of the problem you are trying to solve, the data you have available, and the machine learning algorithm that will be used. By following these steps and continually refining the model, you can build a machine learning model that accurately predicts outcomes and helps you make better decisions.</p>
+<p>If you have question then free will to <a href="mailto:99marafay@gmail.com">email me</a> or Contact me throught my <a href="https:rafay99.info">website</a>.</p>
+<p>See you next time❤️.</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/create-own-model/Create-your-Own-Machine-Learning-Model.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/web-development/web-scrapper/">
+            &#8592;
+            Previous:
+            Web Scrapper
+        </a>
+    </p>
+    <p class="prev-post-date">
+        January 28, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/machine-learning/Support-Vector-Machine/">
+            Next:
+            Support Vector Machine
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 7, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#steps">Steps:</a>
+      <ol>
+        <li><a href="#step-1-define-the-problem-and-identify-the-data">Step 1: Define the Problem and Identify the Data</a></li>
+        <li><a href="#step-2-prepare-the-data">Step 2: Prepare the Data</a></li>
+        <li><a href="#step-3-choose-a-machine-learning-algorithm">Step 3: Choose a Machine Learning Algorithm</a></li>
+        <li><a href="#step-4-train-the-model">Step 4: Train the Model</a></li>
+        <li><a href="#step-5-evaluate-the-model">Step 5: Evaluate the Model</a></li>
+        <li><a href="#step-6-refine-the-model">Step 6: Refine the Model</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

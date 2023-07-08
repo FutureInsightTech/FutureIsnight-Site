@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>False Data Injection Attack</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo, machine-learning'>
+
+    <meta property="og:url" content="https://future-insight.blog/machine-learning/machine-learning/FDIA/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="False Data Injection Attack">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="False Data Injection Attack">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/machine-learning/machine-learning/FDIA/">
+    <meta property="twitter:url" content="https://future-insight.blog/machine-learning/machine-learning/FDIA/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/machine-learning/machine-learning/FDIA/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>False Data Injection Attack</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 13, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/machine-learning">machine-learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.</p>
+<p>False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records. These attacks can be carried out by insiders or outsiders with various motives, ranging from theft and sabotage to espionage and cyber warfare.</p>
+<h1 id="type-of-false-data-injection-attacks">Type of False Data Injection Attacks:</h1>
+<h2 id="type-01">Type 01:</h2>
+<p>One common type of false data injection attack is the manipulation of sensor readings. This type of attack can be carried out by altering the readings of sensors used in control systems to measure physical parameters, such as temperature, pressure, and flow rate. By introducing false readings into the control system, the attacker can cause the system to make incorrect decisions, leading to improper operation and potentially dangerous conditions.</p>
+<h2 id="type-02">Type 02:</h2>
+<p>Another type of false data injection attack is the injection of false control commands. This type of attack occurs when an attacker sends false control signals to actuators or other control elements in the system, causing them to perform unintended actions. This type of attack can be particularly dangerous in safety-critical systems, such as nuclear power plants and aerospace systems, where incorrect control commands can result in equipment damage or even loss of life.</p>
+<p>False data injection attacks can also be used to alter historical data records, such as logs and audit trails, to hide evidence of an attack or conceal the attacker&rsquo;s activities. This type of attack can make it difficult for system administrators to detect the attack and identify the attacker, increasing the risk of future attacks.</p>
+<h1 id="protection-against-false-data-injection-attack">Protection Against False Data Injection Attack:</h1>
+<p>To protect against false data injection attacks, it is important to implement a robust cyber security strategy that includes measures such as access control, encryption, and data validation. Access control measures, such as user authentication and authorization, can help prevent unauthorized access to control systems and their communication networks. Encryption can help protect sensitive data from unauthorized access and manipulation, while data validation procedures can help detect false data and prevent it from affecting the operation of the control system.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>In conclusion, false data injection is a serious type of cyber attack that can have significant consequences for control systems and the safety and security of critical infrastructure. It is important for organizations to implement comprehensive cyber security measures to prevent and detect false data injection attacks, and to respond quickly and effectively in the event of an attack.</p>
+<p>I will see you next time❤️.</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<h1 id="references">References:</h1>
+<h2 id="articles-references">Articles references:</h2>
+<ol>
+<li><a href="https://crashtest-security.com/false-data-injection-attack/">https://crashtest-security.com/false-data-injection-attack/</a></li>
+</ol>
+<h2 id="github-repository">GitHub Repository:</h2>
+<ol>
+<li><a href="https://github.com/wsyCUHK/WSYCUHK_FDIA">https://github.com/wsyCUHK/WSYCUHK_FDIA</a></li>
+<li><a href="https://github.com/dependable-cps/FDIA-PdM">https://github.com/dependable-cps/FDIA-PdM</a></li>
+<li><a href="https://github.com/urwithajit9/FDIA-classification">https://github.com/urwithajit9/FDIA-classification</a></li>
+</ol>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/FDIA/False-Data-Injection-Attack.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/machine-learning/Support-Vector-Machine/">
+            &#8592;
+            Previous:
+            Support Vector Machine
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 7, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/machine-learning/linear-regression/">
+            Next:
+            Linear Regression
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 16, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#type-of-false-data-injection-attacks">Type of False Data Injection Attacks:</a>
+      <ol>
+        <li><a href="#type-01">Type 01:</a></li>
+        <li><a href="#type-02">Type 02:</a></li>
+      </ol>
+    </li>
+    <li><a href="#protection-against-false-data-injection-attack">Protection Against False Data Injection Attack:</a></li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#references">References:</a>
+      <ol>
+        <li><a href="#articles-references">Articles references:</a></li>
+        <li><a href="#github-repository">GitHub Repository:</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

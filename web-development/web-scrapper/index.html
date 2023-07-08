@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Web Scrapper</title>
+    <meta name="description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
+    <meta name="keywords" content='blog, gokarna, hugo, Web Development'>
+
+    <meta property="og:url" content="https://future-insight.blog/web-development/web-scrapper/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Scrapper">
+    <meta property="og:description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Web Scrapper">
+    <meta name="twitter:description" content="Using the Power of JavaScript we will Build a web Scrapper to get some informations">
+    <meta property="twitter:domain" content="https://future-insight.blog/web-development/web-scrapper/">
+    <meta property="twitter:url" content="https://future-insight.blog/web-development/web-scrapper/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/web-development/web-scrapper/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Web Scrapper</h1>
+        <small role="doc-subtitle">Using the Power of JavaScript we will Build a web Scrapper to get some informations</small>
+        <p class="post-date">
+            January 28, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/web-development">Web Development</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.</p>
+<h1 id="solution">Solution:</h1>
+<p>What the heck am I thinking? I am a developer,  so I can build what I want and make tasks easy. So here&rsquo;s the plan: I need a script that will visit multiple websites and download some of the data that is available for download.The data I need is</p>
+<ol>
+<li>Email Address</li>
+<li>Phone Numbers</li>
+<li>Office Address</li>
+</ol>
+<p>So are the things that I think I might need for now. If I need something else, then I will change the script.</p>
+<h1 id="exit-strategy">Exit Strategy:</h1>
+<p>So before I start to code, I need to see what&rsquo;s on the internet and check how people have implemented this solution. So I searched and got some answers. There are multiple options out there, each with its own features, and they are great, but I don&rsquo;t need those features, plus some of the products are expensive. So I will be coding the application myself. Furthermore, because I enjoy command-line programming and may learn something new, the application will be command-line-based.</p>
+<h1 id="technologies">Technologies:</h1>
+<p>There are several programming languages available for this project, but I will use Python or JavaScript. I am a full stack developer who is comfortable with JavaScript and Node, so I will run and build this application using NodeJs.</p>
+<ol>
+<li>Python</li>
+<li>JavaScript</li>
+</ol>
+<p>But for me, I will go with JavaScript because I like it, but if you are more comfortable with Python, then go for it; the logic remains the same.</p>
+<p>So to get started, you need to have a couple of things installed on your system, which will be stated below:</p>
+<ol>
+<li>Node.js for JavaScript or Python</li>
+<li>Text Editor for Writing Code (Visual Studio Code)</li>
+</ol>
+<h2 id="install-programs">Install Programs:</h2>
+<h3 id="python">Python:</h3>
+<h3 id="nodejs">NodeJs:</h3>
+<h4 id="windows">Windows:</h4>
+<p>To download NodeJs download the exe file from <a href="https://nodejs.org/en/download/current/">here</a>.</p>
+<h4 id="macos">MacOS;</h4>
+<p>To download Node Js on Mac OS then open the terminal and enter the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install node
+</code></pre></div><h4 id="linux">Linux:</h4>
+<h5 id="debianubuntu">Debian/Ubuntu:</h5>
+<p>To install on ubuntu or Debian then open a terminala nd then enter the following commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install nodejs npm
+</code></pre></div><h5 id="arch-linux">Arch Linux:</h5>
+<p>If you are using arch Linux then open a terminal and then enter the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S nodejs npm
+</code></pre></div><h3 id="python-1">Python</h3>
+<h4 id="windows-1">Windows</h4>
+<p>To downloads and Install Python downloads the exe file from Python website and you can download the exe file by clicking <a href="https://www.python.org/downloads/">here</a></p>
+<h4 id="macos-1">MacOS</h4>
+<p>To install python on your Mac then follow this <a href="https://docs.brew.sh/Homebrew-and-Python">guide</a></p>
+<h4 id="linux-1">Linux</h4>
+<h5 id="debianubuntu-1">Debian/Ubuntu</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install python
+</code></pre></div><h6 id="arch">Arch</h6>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo pacman -S python
+</code></pre></div><h1 id="javascript">JavaScript</h1>
+<p>JavaScript has become a popular language for web scraping due to its versatility and ubiquity on the web. With JavaScript, you can easily extract data from websites and use it for various purposes. In this blog, we will explore how to create a web scraper using JavaScript.</p>
+<p><strong>Puppeteer</strong>: A Headless Chrome Library for Web Scraping</p>
+<p>Puppeteer is a popular library for web scraping with JavaScript. It allows you to automate the Chrome browser and interact with websites as if you were a real user. This makes it an ideal tool for web scraping because it can handle the complexities of websites and provide you with the data you need.</p>
+<h1 id="getting-started-with-puppeteer">Getting Started with Puppeteer</h1>
+<p>To get started with Puppeteer, you will need to install the library using npm:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install puppeteer
+</code></pre></div><p>Once you have installed Puppeteer, you can create a new file with the following code to launch a headless Chrome browser:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;puppeteer&#34;</span>);
+
+<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run</span>() {
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">browser</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">puppeteer</span>.<span style="color:#a6e22e">launch</span>();
+  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">newPage</span>();
+  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#34;https://example.com&#34;</span>);
+  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>();
+}
+
+<span style="color:#a6e22e">run</span>();
+</code></pre></div><h1 id="code-explain">Code Explain</h1>
+<p>This code launches a headless Chrome browser and navigates to the specified URL. You can then use the page object to interact with the website and extract the data you need.</p>
+<h1 id="extracting-data-from-a-website">Extracting Data from a Website</h1>
+<p>Puppeteer provides a number of methods for extracting data from a website, including $eval and evaluate. The $eval method allows you to select an element on the page and retrieve its properties, such as the text content or the value of an attribute. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">$eval</span>(<span style="color:#e6db74">&#34;div.data-class&#34;</span>, (<span style="color:#a6e22e">el</span>) =&gt; <span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">innerText</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>);
+</code></pre></div><p>This code selects a div element with a data-class class and retrieves its inner text. You can use this method to extract any data from the website that you need.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Web scraping with JavaScript is a powerful tool for extracting data from websites. With Puppeteer, you can automate the Chrome browser and extract data from websites with ease. Whether you&rsquo;re using the data for market research, competitor analysis, or lead generation, web scraping can provide you with valuable insights into your business or industry.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/web-scrapper/web-scrapper.png" alt="image"></p>
+<!-- # Introducation:
+So, I have been working in the field of machine learning and web development for a while, and I am still looking for great options. To get more options, I need to see what is out there.
+
+So to get what I want, I need to send emails and gather data so that I can apply for different jobs and see what's out there. So I need data, and I can get data by going to the multiple websites and applying one by one. It's hard, and I don't want to work like that.
+
+# Solution:
+What the heck am I thinking? I am a developer,  so I can build what I want and make tasks easy. So here's the plan: I need a script that will visit multiple websites and download some of the data that is available for download.The data I need is
+
+1. Email Address
+2. Phone Numbers
+3. Office Address
+
+So are the things that I think I might need for now. If I need something else, then I will change the script.
+
+# Exit Strategy:
+So before I start to code, I need to see what's on the internet and check how people have implemented this solution. So I searched and got some answers. There are multiple options out there, each with its own features, and they are great, but I don't need those features, plus some of the products are expensive. So I will be coding the application myself. Furthermore, because I enjoy command-line programming and may learn something new, the application will be command-line-based.
+
+# Technologies:
+There are several programming languages available for this project, but I will use Python or JavaScript. I am a full stack developer who is comfortable with JavaScript and Node, so I will run and build this application using NodeJs.
+
+1. Python
+2. JavaScript
+
+But for me, I will go with JavaScript because I like it, but if you are more comfortable with Python, then go for it; the logic remains the same.
+
+So to get started, you need to have a couple of things installed on your system, which will be stated below:
+
+1. Node.js for JavaScript or Python
+2. Text Editor for Writing Code (Visual Studio Code)
+
+## Install Programs:
+
+### Python: 
+
+### NodeJs:
+#### Windows: 
+To download NodeJs download the exe file from [here](https://nodejs.org/en/download/current/).
+#### MacOS;
+To download Node Js on Mac OS then open the terminal and enter the following command
+``` shell
+brew install node
+```
+#### Linux:
+##### Debian/Ubuntu:
+To install on ubuntu or Debian then open a terminala nd then enter the following commands.
+```shell
+sudo apt-get install nodejs npm
+```
+##### Arch Linux:
+If you are using arch Linux then open a terminal and then enter the following command.
+```shell
+sudo pacman -S nodejs npm
+```
+
+### Python
+#### Windows
+To downloads and Install Python downloads the exe file from Python website and you can download the exe file by clicking [here](https://www.python.org/downloads/)
+#### MacOS
+To install python on your Mac then follow this [guide](https://docs.brew.sh/Homebrew-and-Python)
+#### Linux
+##### Debian/Ubuntu
+```shell
+sudo apt-get install python
+```
+###### Arch
+```shell
+sudo pacman -S python
+```
+
+# A Web Scraper
+So this is the main deal I will be designing a web scrapper, I will be hosting all of my code on [GitHub](https://github.com/rafay99-epic). The Job of this Web Scrapper is to get a couple of information from the given website and then store them in the form of json file pattern. The data will be stored in a variable for now but later it will saved in an excel shell, where it'll be stored.
+
+
+So for this Project I will using **thee** npm packages and those packages are stated bellow:
+
+1. Express
+2. Axios
+3. Cherio
+
+## Whole Story:
+So the entire process will be as follows: I will obtain website code, and once I have the code in HTML, I will search for specific things in that code, and once the entire website has been searched, I will store all the relative data into a variable.
+
+All the data from the variable will be stored in the form of JSON, and then the JSON will be saved into the Excel sheet.
+
+## Starting An NPM Project
+### Crearing a Project
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```shell
+npm init
+```
+Once you have entered the command then You need to answer a couple questions about the project. Once you have answer the question then a packages.json file will be created. 
+### Installing Package
+Now we can start installing packages from npm.
+#### Downloading Package: Express
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install express
+```
+#### Downloading Package: Cherio
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install cherio
+```
+#### Downloading Package: Axios
+So in order to create a node application, you need to open your terminal and then enter the following command:
+```node
+npm install axios
+```
+### Creating Files:
+Now we need to creat some javaScript files that will contain our code. So enter the following command into your terminal
+```shell
+touch index.js
+```
+Once this command is executed then a file will be created called **index.js**
+
+### Coding time:
+Now it's time to code the application.
+```javascript
+//Loading the express for application
+const port= 5000;
+const express = require("express");
+const axios= require("axios");
+const cherrio= require("cheerio");
+
+
+// Using express for run the application
+var app = express();
+
+//The url of different website
+const url= "https://www.pakistanlawsite.com/Login/MainPage";
+
+
+//axio will get the html data from the url
+axios(url)
+        .then(respond =>{
+              const html_code= respond.data
+              console.log(html_code);
+  });
+
+
+
+app.listen(port,()=>{
+    console.log("The server is running on port:" + port)
+});
+
+
+``` -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/machine-learning/best-resources-for-ML/">
+            &#8592;
+            Previous:
+            Best Resources to Learn ML
+        </a>
+    </p>
+    <p class="prev-post-date">
+        January 27, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/machine-learning/create-your-own-ml-model/">
+            Next:
+            Design your own Machine Learning Model: Beginner Guide
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 2, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#solution">Solution:</a></li>
+    <li><a href="#exit-strategy">Exit Strategy:</a></li>
+    <li><a href="#technologies">Technologies:</a>
+      <ol>
+        <li><a href="#install-programs">Install Programs:</a>
+          <ol>
+            <li><a href="#python">Python:</a></li>
+            <li><a href="#nodejs">NodeJs:</a></li>
+            <li><a href="#python-1">Python</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#javascript">JavaScript</a></li>
+    <li><a href="#getting-started-with-puppeteer">Getting Started with Puppeteer</a></li>
+    <li><a href="#code-explain">Code Explain</a></li>
+    <li><a href="#extracting-data-from-a-website">Extracting Data from a Website</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

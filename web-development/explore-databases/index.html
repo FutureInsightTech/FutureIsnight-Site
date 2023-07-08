@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Exploring Different Types of Databases in Web Development</title>
+    <meta name="description" content="Different Types of Databases in Web Development">
+    <meta name="keywords" content='blog, gokarna, hugo, web-development'>
+
+    <meta property="og:url" content="https://future-insight.blog/web-development/explore-databases/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Exploring Different Types of Databases in Web Development">
+    <meta property="og:description" content="Different Types of Databases in Web Development">
+    <meta property="og:image" content="/images/2023/databases/Database-exployer.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exploring Different Types of Databases in Web Development">
+    <meta name="twitter:description" content="Different Types of Databases in Web Development">
+    <meta property="twitter:domain" content="https://future-insight.blog/web-development/explore-databases/">
+    <meta property="twitter:url" content="https://future-insight.blog/web-development/explore-databases/">
+    <meta name="twitter:image" content="/images/2023/databases/Database-exployer.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/web-development/explore-databases/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Exploring Different Types of Databases in Web Development</h1>
+        <small role="doc-subtitle">Different Types of Databases in Web Development</small>
+        <p class="post-date">
+            June 24, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/web-development">web-development</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.</p>
+<h1 id="databases-in-web-development">Databases in Web Development</h1>
+<h2 id="relational-databases">Relational Databases</h2>
+<p>Relational databases store data in a structured manner, using tables with predefined relationships between them. They use Structured Query Language (SQL) for data manipulation and retrieval. Relational databases are ideal for applications with complex data relationships and transactions. The most popular relational database management systems (RDBMS) are MySQL, PostgreSQL, and Oracle.</p>
+<p>Example Configuration Code (MySQL):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">-- Connect to the MySQL server
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">$</span>servername <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>;
+<span style="color:#960050;background-color:#1e0010">$</span>username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username&#34;</span>;
+<span style="color:#960050;background-color:#1e0010">$</span>password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;password&#34;</span>;
+<span style="color:#960050;background-color:#1e0010">$</span>dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;database_name&#34;</span>;
+
+<span style="color:#960050;background-color:#1e0010">$</span>conn <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> mysqli(<span style="color:#960050;background-color:#1e0010">$</span>servername, <span style="color:#960050;background-color:#1e0010">$</span>username, <span style="color:#960050;background-color:#1e0010">$</span>password, <span style="color:#960050;background-color:#1e0010">$</span>dbname);
+
+<span style="color:#66d9ef">if</span> (<span style="color:#960050;background-color:#1e0010">$</span>conn<span style="color:#f92672">-&gt;</span>connect_error) <span style="color:#960050;background-color:#1e0010">{</span>
+    die(<span style="color:#e6db74">&#34;Connection failed: &#34;</span> . <span style="color:#960050;background-color:#1e0010">$</span>conn<span style="color:#f92672">-&gt;</span>connect_error);
+<span style="color:#960050;background-color:#1e0010">}</span>
+</code></pre></div><h2 id="nosql-databases">NoSQL Databases</h2>
+<p>NoSQL (Not Only SQL) databases offer flexible data models and scalability. They can handle large volumes of unstructured or semi-structured data efficiently. NoSQL databases are categorized into key-value stores, document databases, columnar databases, and graph databases. Popular examples include MongoDB, Cassandra, and Redis.</p>
+<p>Example Configuration Code (MongoDB - Node.js):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Connect to the MongoDB server
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoose</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mongoose&#39;</span>);
+<span style="color:#a6e22e">mongoose</span>.<span style="color:#a6e22e">connect</span>(<span style="color:#e6db74">&#39;mongodb://localhost:27017/database_name&#39;</span>, {
+    <span style="color:#a6e22e">useNewUrlParser</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">useUnifiedTopology</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+}).<span style="color:#a6e22e">then</span>(() =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Connected to MongoDB&#39;</span>);
+}).<span style="color:#66d9ef">catch</span>((<span style="color:#a6e22e">error</span>) =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Error connecting to MongoDB:&#39;</span>, <span style="color:#a6e22e">error</span>);
+});
+</code></pre></div><h2 id="graph-databases">Graph Databases</h2>
+<p>Graph databases are designed to represent complex relationships between entities. They utilize nodes, edges, and properties to store and retrieve interconnected data efficiently. Graph databases are suitable for applications that require advanced relationship querying, such as social networks and recommendation systems. Neo4j is a widely used graph database.</p>
+<p>Example Configuration Code (Neo4j - Java):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Connect to the Neo4j server
+</span><span style="color:#75715e"></span><span style="color:#f92672">import</span> org.neo4j.driver.*<span style="color:#f92672">;</span>
+<span style="color:#f92672">import static</span> org.neo4j.driver.Values.parameters<span style="color:#f92672">;</span>
+
+Driver driver <span style="color:#f92672">=</span> GraphDatabase<span style="color:#f92672">.</span><span style="color:#a6e22e">driver</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;bolt://localhost:7687&#34;</span><span style="color:#f92672">,</span> AuthTokens<span style="color:#f92672">.</span><span style="color:#a6e22e">basic</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;username&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;password&#34;</span><span style="color:#f92672">));</span>
+Session session <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span><span style="color:#a6e22e">session</span><span style="color:#f92672">();</span>
+
+<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e">// Execute queries here
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span> <span style="color:#66d9ef">finally</span> <span style="color:#f92672">{</span>
+    session<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+    driver<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h2 id="firebase-realtime-database-and-firestore">Firebase (Realtime Database and Firestore)</h2>
+<p>Firebase is a popular backend-as-a-service (BaaS) platform that offers real-time databases for web and mobile applications. It provides two primary database options: the Realtime Database and Firestore.</p>
+<p>The Realtime Database is a NoSQL, JSON-based database that allows developers to build real-time applications with synchronized data across clients. It is suitable for applications that require real-time updates and collaboration.</p>
+<p>Example Configuration Code (Firebase Realtime Database - JavaScript):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Initialize Firebase
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">firebase</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;firebase/database&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firebaseConfig</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">apiKey</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_API_KEY&#34;</span>,
+    <span style="color:#a6e22e">authDomain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_AUTH_DOMAIN&#34;</span>,
+    <span style="color:#a6e22e">databaseURL</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_DATABASE_URL&#34;</span>,
+    <span style="color:#a6e22e">projectId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_PROJECT_ID&#34;</span>,
+    <span style="color:#a6e22e">storageBucket</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_STORAGE_BUCKET&#34;</span>,
+    <span style="color:#a6e22e">messagingSenderId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_MESSAGING_SENDER_ID&#34;</span>,
+    <span style="color:#a6e22e">appId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_APP_ID&#34;</span>
+};
+
+<span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">initializeApp</span>(<span style="color:#a6e22e">firebaseConfig</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">database</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">database</span>();
+</code></pre></div><p>Firestore, on the other hand, is a NoSQL document database that offers more advanced querying capabilities, scalability, and offline support. It is a better fit for applications that require complex data querying and structured data organization.</p>
+<p>Example Configuration Code (Firebase Firestore - JavaScript):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// Initialize Firebase
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">firebase</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;firebase/app&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;firebase/firestore&#39;</span>;
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firebaseConfig</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">apiKey</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_API_KEY&#34;</span>,
+    <span style="color:#a6e22e">authDomain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_AUTH_DOMAIN&#34;</span>,
+    <span style="color:#a6e22e">projectId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_PROJECT_ID&#34;</span>,
+    <span style="color:#a6e22e">storageBucket</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_STORAGE_BUCKET&#34;</span>,
+    <span style="color:#a6e22e">messagingSenderId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_MESSAGING_SENDER_ID&#34;</span>,
+    <span style="color:#a6e22e">appId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_APP_ID&#34;</span>
+};
+
+<span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">initializeApp</span>(<span style="color:#a6e22e">firebaseConfig</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firestore</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">firestore</span>();
+</code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>Choosing the right database for your web development project is crucial for optimal performance and scalability. Relational databases excel in handling complex relationships, while NoSQL databases offer flexibility and scalability. Graph databases specialize in managing interconnected data. Additionally, Firebase provides real-time and document-based database options suitable for different application needs. Understanding the strengths and use cases of each database type will help you make informed decisions in your web development endeavors.</p>
+<p>Remember, these configuration code snippets provide a basic starting point, and you should refer to the official documentation of the respective databases for comprehensive configuration and usage instructions. Happy coding!</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="references">References</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="github-repository">GitHub Repository</h2>
+<ul>
+<li><a href="https://github.com/rafay99-epic/DevTestBox">Example Code</a></li>
+</ul>
+<h1 id="thubnail-image">Thubnail Image</h1>
+<p><img src="/images/2023/databases/Database-exployer.png" alt="image"></p>
+<!-- ## WalkThrough Video:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/web-development/firebase-connection/">
+            &#8592;
+            Previous:
+            Getting Started with Firebase Database: A Comprehensive Guide
+        </a>
+    </p>
+    <p class="prev-post-date">
+        June 24, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/code-report/24th-June-2023/">
+            Next:
+            Code Report: 24th June 2023
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            June 24, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#databases-in-web-development">Databases in Web Development</a>
+      <ol>
+        <li><a href="#relational-databases">Relational Databases</a></li>
+        <li><a href="#nosql-databases">NoSQL Databases</a></li>
+        <li><a href="#graph-databases">Graph Databases</a></li>
+        <li><a href="#firebase-realtime-database-and-firestore">Firebase (Realtime Database and Firestore)</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#references">References</a>
+      <ol>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+      </ol>
+    </li>
+    <li><a href="#thubnail-image">Thubnail Image</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

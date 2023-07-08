@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Linux App Installation: Simplified</title>
+    <meta name="description" content="Install Application on Linux">
+    <meta name="keywords" content='blog, gokarna, hugo, linux, operating-system'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/linux/linux-app-simplified/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Linux App Installation: Simplified">
+    <meta property="og:description" content="Install Application on Linux">
+    <meta property="og:image" content="/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Linux App Installation: Simplified">
+    <meta name="twitter:description" content="Install Application on Linux">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/linux/linux-app-simplified/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/linux/linux-app-simplified/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/linux/linux-app-simplified/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5813fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2480387803052595" crossorigin="anonymous"></script>
+
+    
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Linux App Installation: Simplified</h1>
+        <small role="doc-subtitle">Install Application on Linux</small>
+        <p class="post-date">
+            March 28, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">operating-system</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you&rsquo;ve tried searching for installation files like you would on Windows, but to no avail. Don&rsquo;t worry, because in this blog, I&rsquo;ll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.</p>
+<p>By the end of this article, you&rsquo;ll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.</p>
+<h1 id="installing-applications">Installing Applications:</h1>
+<p>Installing applications on Linux is a breeze, with a plethora of options available to users. You can download and install applications from various sources, giving you complete control over your system. However, the one constant is the need for the command line interface, which can be intimidating for some users. While graphical user interfaces are available, they may not be the best option. Therefore, it is crucial to become familiar with the command-line interface to get the most out of Linux.</p>
+<p>In this blog, we will explore the different methods available for installing applications on Linux, demystifying the command-line interface and helping you become a more proficient user. Whether you are a beginner or an experienced user, this blog will equip you with the knowledge to install applications on Linux with ease.</p>
+<p>So, let&rsquo;s dive in and discover the different ways you can install applications on Linux and how to make the most of the command-line interface.</p>
+<h1 id="application-source">Application Source:</h1>
+<p>If you&rsquo;re new to Linux, it&rsquo;s natural to feel overwhelmed by the different methods of installing applications. However, finding the commands to install applications is easier than you might think. You can easily find the necessary commands through Google or by visiting the official app store website, which will list all the required commands for you.</p>
+<p>There are several ways to install applications on Linux, including:</p>
+<ol>
+<li>Flatpak Packages</li>
+<li>Snap Packages</li>
+<li>AppImages</li>
+<li>AUR (Arch User Repository)</li>
+<li>Pacstall</li>
+<li>Distro Package Manager
+All of the above-listed sources need to be installed on your system before you can begin installing applications. While each source comes with a graphical user interface, the command line interface is generally faster and easier to use for installing applications.</li>
+</ol>
+<p>By following this comprehensive guide, you&rsquo;ll be able to find the application sources you need and start installing applications on your Linux system with confidence.</p>
+<h1 id="flatpak-packages">Flatpak Packages:</h1>
+<p>Flatpak is a framework for distributing desktop applications across various Linux distributions. It has been created by developers who have a long history of working on the Linux desktop, and is run as an independent open source project.</p>
+<h2 id="target-audience">Target audience</h2>
+<p>Flatpak can be used by all kinds of desktop applications, and aims to be as agnostic as possible regarding how applications are built. There are no requirements regarding which programming languages, build tools, toolkits or frameworks can be used.</p>
+<p>While Flatpak only runs on Linux, it can be used by applications that target other operating systems, as well as those that are Linux-specific. Applications can be open source or proprietary (although some distribution services, like Flathub, can have restrictions in this respect).</p>
+<h2 id="installing-flatpak">Installing Flatpak:</h2>
+<p>To install flat on your system follow these instrutructions.</p>
+<h3 id="debain">Debain</h3>
+<p>Use this command to install flatpk</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install flatpak
+</code></pre></div><p>Use this command to enable flatpak hub on your system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/install-Flatpak.png" alt="install-flatpak"></p>
+<h3 id="arch">Arch</h3>
+<p>To install Flatpak, enter this command in your terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S flatpk
+</code></pre></div><p>Enable flatpak repo, enter this command in your terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flatpak --user remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre></div><h2 id="install-application-using-flatpak">Install Application using Flatpak</h2>
+<p>To install an application using flatpak just enter this command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install &lt;package name&gt;
+</code></pre></div><p>Just change the <package name> with the name of the application that you want to download.
+<strong>Example:</strong>
+You can install an application like google chrome just the this command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo flatpak install googlechrome
+</code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/install-google-chrome-flatpk.png" alt="image"></p>
+<p>Flatpak are fast and easy to learn with an online store from which you can find the commands to isntall applications on your system. The process to install flatpak is the same and on every distro, Debian or Arch.</p>
+<p>You can find the online store by clicking <a href="https://flathub.org/home">here</a></p>
+<h1 id="snap-packs">Snap Packs</h1>
+<p>Snaps are a secure and scalable way to embed applications on Linux devices. A snap is an application containerised with all its dependencies. A snap can be installed using a single command on any device running Linux. With snaps, software updates are automatic and resilient. Applications run fully isolated in their own sandbox, thus minimising security risks.</p>
+<p>Snaps are hosted in the global Snap Store, an application repository hosted and managed by Canonical, and are free for anyone to download. Snaps can be created by anyone - existing software can be packaged as a snap or new software can be built from scratch using snap packaging.</p>
+<h2 id="install-snap-packs">Install Snap Packs</h2>
+<h3 id="debian">Debian</h3>
+<p>To install snap pack on your debian or ubuntu based distro, enter the following command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install snapd 
+</code></pre></div><h3 id="arch-1">Arch</h3>
+<p>Install Snap pack and snap store, enter the following commands into your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S snapd
+</code></pre></div><h2 id="install-application-using-snap-packs">Install Application Using Snap Packs</h2>
+<p>Using snap pack you can install applications and it is very easy just enter the package name and snap will begin to install on ypour system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install &lt;package name&gt;
+</code></pre></div><p>Just change the <package name> to the application that you want to install.</p>
+<p><strong>Example</strong>
+This is the example to install an application using snap packs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install spotify
+</code></pre></div><p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/spotify-snap.png" alt="spotify-snap"></p>
+<p>Snap packs are free, secure, and do not affect your system in any way, plus they have an online store through which you can search for the command that will help you install the application on your system. You can access the Snap Store online by clicking <a href="https://snapcraft.io/store">here</a>.</p>
+<h1 id="arch-user-repositoryaur">Arch User Repository(AUR)</h1>
+<p>The AUR, which stands for Arch Unit Repository, is used to install software pertinent to Arch Linux and otherArch distributions in the Linux operating system. But, before diving deep into the procedure for using AUR with Arch Linux, it is crucial to comprehend the concept of the AUR. Using the AUR not only enhances the efficacy of the system, but it also provides easy installation of various applications and packages. This guide provides an introduction to AUR, methods for using the AUR, and reasons to opt for the AUR. The step-by-step procedure provided in this article will allow you to run and install apps effectively via the AUR and its respective packages.</p>
+<p>The AUR constitutes an important part of the overall Arch Linux nexus. Inherently, the AUR is a community-driven repository that hosts a versatile range of installation packages in the Arch Linux operation system. The AUR also allows you to host packages extrinsic to the domain of the official Arch Linux database. One beneficial factor of the AUR is that most of the packages in this repository adhere to the AUR before officially becoming part of the Arch Linux database.</p>
+<p>This conventionally follows the sequential criteria constituting the three cardinal packages. PKGBuilds allows the user access to the package source through the makepkg, and you can install the software or application by incorporating Pacman, the root package manager of the Arch Linux operating system.</p>
+<p>The core purpose of the AUR is to delegate the information of community packages for the deposition of such packages in the repository of a community depository, along with the Linux database. The AUR community can select packages to become a part of the community repository, given the attributes of prevalence and license authenticity.</p>
+<h2 id="using-aur">Using AUR</h2>
+<p>The AUR can assist greatly in downloading and installing programs and packages in Arch Linux and its associated distributions, such as Manjaro. You can install the AUR by following the two steps listed below:</p>
+<p><strong>Step 1: Install AUR</strong></p>
+<p><strong>Step 2: Enable AUR</strong></p>
+<h3 id="installing-aur">Installing AUR:</h3>
+<p>In order to use AUR you need a aur helper and there are multiple option out there, so you can choose anyone, Some of them are</p>
+<ol>
+<li>Paru</li>
+<li>Yay</li>
+</ol>
+<p>Before installing an AUR helper, you need to obtain the base package by using the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S base-devel git
+</code></pre></div><h4 id="install-yay">Install Yay</h4>
+<p>Now to install an AUR helper, you must clone this repository on your system, enter the folder, and then compile and package to install Yay on your system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+</code></pre></div><p>###/# Install Paru
+Now to install an AUR helper, you must clone this repository on your system, enter the folder, and then compile and package to install Yay on your system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+</code></pre></div><p>No Matter which AUR helper you are using the process remain the same and you find then all of the realtive application on AUR webiste.</p>
+<h2 id="installing-application-using-aur">Installing Application Using AUR</h2>
+<p>For this example I will be using paru as the aur helper and install google chrome as the example to install an package.
+<strong>Basic Syntax</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S &lt;package name&gt;
+</code></pre></div><p>You can change <package name> to the name of the application.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">paru -S google-chrome
+</code></pre></div><p><em><strong>If you want to use Yay, then replace Paru with Yay, and you will start using Yay as your AUR helper.</strong></em>
+<em><strong>Want to find the name of the package? Check out the AUR home page to find the name of the application by clicking <a href="https://aur.archlinux.org/packages">here</a>.</strong></em></p>
+<h1 id="pacstall">Pacstall</h1>
+<p>If AUR is for Arch and an Arch-based distro, then what about Debian and a Debian-based distro? While for them there is something called Pacstall. It&rsquo;s great, and you can find a lot of software on PacStall—not as much as AUR, but still a lot.</p>
+<h2 id="isntall-pacstall">Isntall Pacstall</h2>
+<p>You can download pacstall on your system just by entering this command on your system.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://git.io/JsADh <span style="color:#f92672">||</span> wget -q https://git.io/JsADh -O -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="uninstall-pacstall">uninstall Pacstall</h2>
+<p>To remove pacstall from your system then enter the following command in your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://git.io/JEZbi <span style="color:#f92672">||</span> wget -q https://git.io/JEZbi -O -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="basic-commands">Basic Commands</h2>
+<p>These are some basic commands that can be used when you are using pacstall.</p>
+<h3 id="install-application">Install Application</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I &lt;package_name&gt;
+</code></pre></div><h3 id="remove-application">Remove Application</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -R &lt;package_name&gt;
+</code></pre></div><h3 id="search-applications">Search Applications</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -S &lt;package_name&gt;
+</code></pre></div><p><em><strong>To do any function just change &lt;package_name&gt; to the actuall package name.</strong></em></p>
+<h2 id="installing-application-using-pacstall">Installing Application using Pacstall</h2>
+<p>To install an application on your system then enter the following command on your terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstall -I google-chrome-deb
+</code></pre></div><p><em><strong>To find the package name, you can check out their website. You can check it out by clicking <a href="https://pacstall.dev/packages">here</a>.</strong></em></p>
+<h1 id="app-images">App Images</h1>
+<p>AppImage is a tool that lets you run applications in a consistent way across any Linux distribution. It also works on Windows if you install Windows Subsystem for Linux, although AppImage is not designed for use on Windows and may not always prove stable or reliable in Windows environments.</p>
+<p>This means that, using AppImage, you can run any software package that is designed to work with AppImage, regardless of which Linux distribution you are using or how your local environment is configured.</p>
+<h2 id="how-to-use-appimage-in-linux">How to use AppImage in Linux</h2>
+<p>Using AppImage is pretty simple. It is done in these three simple steps:</p>
+<ol>
+<li>Download AppImage file</li>
+<li>Make it executable</li>
+<li>Run it</li>
+</ol>
+<p>Don’t worry, I’ll show you how to run AppImage in detail. I am using Ubuntu 22.04 in this AppImage tutorial, but you can also use the same steps on other Linux distributions. After all, the entire point of AppImage is to be independent of the distributions.</p>
+<h2 id="running-and-downloading-app-images">Running And Downloading App Images</h2>
+<h3 id="step-1-download-the-appimage-package">Step 1: Download the .appimage package</h3>
+<p>There is plenty of software that is available in AppImage format. Krita, Kdenlive, and OpenShot are just a few names. You can find an extensive list of applications available in AppImage format here.</p>
+<p>I will be using the OpenShot video editor in this tutorial. You can download it from its <a href="https://www.openshot.org/download/?ref=itsfoss.com">website</a>.</p>
+<h3 id="step-2-make-it-executable">Step 2: Make it executable</h3>
+<p>By default, the downloaded AppImage file won’t have execution permission. You’ll have to change the permission on the file to make it executable. You don’t need root privilege to do that.</p>
+<p>If you prefer the graphical way, just right-click on the downloaded .appimage file and select Properties. right click on appimage file and select properties</p>
+<p><img src="/images/2023/Operating-System/Linux/Install-application-on-linux/propertities.png" alt="properties"></p>
+<p>In the next screen, go to the Permissions tab and check the box that says “Allow executing file as program”.
+<img src="/images/2023/Operating-System/Linux/Install-application-on-linux/propertities.png" alt="allow-permisision"></p>
+<p>Alternatively, if you prefer the command line, you can simply use the below command to make an AppImage file executable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+x &lt;AppImage File&gt;
+</code></pre></div><h1 id="package-manager">Package Manager</h1>
+<p>Another way you can install packages is by using the package manager. A package manager is a programme that is installed on your system and helps you install, uninstall, update, and upgrade your system.</p>
+<p>The applications available to install using package manager can be different depending upon the distribution you are using. Some distributions have a lot of packages, while others have very few packages that you can install on your own Linux system.</p>
+<h2 id="apt-packages-manager">Apt Packages Manager</h2>
+<p>For Debian and Debian-based distributions, all of them use apt as their package manager. Debian-based distributions are Ubuntu, Mint, Zorin, etc. All of these Linux distros use apt as their package manager, but they are not the same. They will work the same, but they don&rsquo;t have the same number of packages that you install on your system.
+Developers fork (make a copy) the apt package manager and change it according to their own needs; some developers add more packages, while others make it more snappy. So it depends on the distribution that you are using. Debian Linux base distributions include over a million packages that you can install on your system.</p>
+<h3 id="basic-commands-for-apt">Basic commands for apt</h3>
+<ul>
+<li>Update the list of available packages and versions (it&rsquo;s recommended to run this before other <code>apt</code> commands):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+</code></pre></div><ul>
+<li>Search for a given package:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt search <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Show information for a package:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt show <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Install a package, or update it to the latest available version:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Remove a package (using <code>purge</code> instead also removes its configuration files):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt remove <span style="color:#f92672">{{</span>package<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Upgrade all installed packages to their newest available versions:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt upgrade
+</code></pre></div><ul>
+<li>List all packages:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list
+</code></pre></div><ul>
+<li>List installed packages:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt list --installed
+</code></pre></div><h2 id="pacman-packages-manager">Pacman Packages manager</h2>
+<p>Just like on Debian and Debian-based distributions, there is apt as the package manager; similarly, on Arch, it has its own package manager called Pacman.</p>
+<p>Pacman works very differently as compared to apt; the function is the same, but the working is totally different. Just like apt-get, which uses pacman, and other distributions that are based on it also use pacman, but the number of packages can be different. A developer will fork (make a copy of) Pacman and then tweak it according to their needs.
+The base pacman has over one million packages, and if something is not available in pacman, then you can use the AUR to install applications on your system.</p>
+<h3 id="basic-commands-for-pacman">Basic commands for pacman</h3>
+<ul>
+<li>Synchronize and update all packages:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu
+</code></pre></div><ul>
+<li>Install a new package:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S <span style="color:#f92672">{{</span>package_name<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Remove a package and its dependencies:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Rs <span style="color:#f92672">{{</span>package_name<span style="color:#f92672">}}</span>
+</code></pre></div><ul>
+<li>Search the package database for a regular expression or keyword:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Ss <span style="color:#e6db74">&#34;{{search_pattern}}&#34;</span>
+</code></pre></div><ul>
+<li>List installed packages and versions:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Q
+</code></pre></div><ul>
+<li>List only the explicitly installed packages and versions:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qe
+</code></pre></div><ul>
+<li>List orphan packages (installed as dependencies but not actually required by any package):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -Qtdq
+</code></pre></div><ul>
+<li>Empty the entire pacman cache:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Scc
+</code></pre></div><h1 id="conclusion">Conclusion:</h1>
+<p>There are multiple ways you can install software on Linux, and there are some pros to this system. Choose your format, test it, and experience the way the applications are installed on your system. It does not matter which format you use; all you need is software to get your job done. To be honest, I am on Debian and I use all of these formats: Flatpak, Snap, and even Pacstall. I use apt (package manager) as well to download my software. You need software, and now you have it on your system. So I hope you have learned something.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<!-- # WalkThrough Video: -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/machine-learning/decision-tree/">
+            &#8592;
+            Previous:
+            Decision Tree Machine Learning Algorithm
+        </a>
+    </p>
+    <p class="prev-post-date">
+        March 17, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/OS/linux/Top-5-linux-command/">
+            Next:
+            Top 5 Commands Linux
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            April 13, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>
