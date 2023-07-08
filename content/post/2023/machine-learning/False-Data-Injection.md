@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
-url: /FDIA/
+url: /machine-learning/machine-learning/FDIA/
 ---
 
 -----

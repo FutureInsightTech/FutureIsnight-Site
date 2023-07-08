@@ -3,10 +3,10 @@ title: "Enhancing Terminal Experience: Feedback for Password Entry"
 date: 2023-06-30T15:37:54+05:00
 draft: false 
 type: "post"
-tags: ["blog" ,"linux"]
+tags: ["blog" ,"linux", "operating-system"]
 description: "Get Fedback from Terminal"
 showTableOfContents: true
-url: /terminal-feedback-password/
+url: /OS/linux/terminal-feedback-password/
 image: "/images/2023/Terminal-feedback/Enhance-Terminal-Experience.png/"
 ---
 

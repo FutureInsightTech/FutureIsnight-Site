@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"linux","review", "fedora"]
 description: "Fedora 38: A Remarkable Experience"
 showTableOfContents: true
-url: /fedora-review/
+url: /OS/linux/review/fedora-review/
 image: "/images/2023/fedora38/fedora38.png"
 ---
 

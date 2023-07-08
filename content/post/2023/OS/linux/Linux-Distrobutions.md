@@ -3,15 +3,14 @@ title: "Navigating the Linux Universe: Finding Your Perfect Distribution"
 date: 2023-06-13T20:11:35+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux"]
+tags: ["blog" ,"linux", "operating-system"]
 description: "Discovering the ideal Linux distribution that suits your needs and preferences"
 showTableOfContents: true
-url: /linux-distribution/
+url: /OS/linux/linux-distribution/
 image: "/images/2023/navigate-linux/Linux-Distro.png"
 ---
 
 -----------
-
 
 In every profession, there is a journey we must embark on to become proficient. It involves making mistakes, learning from them, and gaining valuable experience. I've been on this Linux journey for a while now, and I must say, I love it. The process of starting as a Linux novice and eventually using it as a full-time desktop is an unforgettable experience. The constant updates and exciting new developments in the Linux world make it an ever-evolving adventure.
 

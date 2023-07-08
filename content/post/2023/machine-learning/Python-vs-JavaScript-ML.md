@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog", "Machine Learning"]
 description: "Python vs JavaScript for Machine Learning"
 showTableOfContents: true
-url: /JavaScript-vs-Python-for-ml/
+url: /machine-learning/JavaScript-vs-Python-for-ml/
 ---
 
 -----

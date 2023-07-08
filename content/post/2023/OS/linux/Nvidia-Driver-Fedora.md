@@ -3,10 +3,10 @@ title: "Nvidia Driver: Fedora Linux"
 date: 2023-06-30T16:15:07+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"Linux", "Nvidia-Drivers", "Fedora"]
+tags: ["blog" ,"Linux", "Nvidia-Drivers", "Fedora", "operating-system"]
 description: "Nvidia Drivers on Fedora"
 showTableOfContents: true
-url: /nvidia-driver-fedora-linux/
+url: /OS/linux/nvidia-driver-fedora-linux/
 image: "/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png/"
 ---
 

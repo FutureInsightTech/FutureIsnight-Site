@@ -3,10 +3,10 @@ title: "Automating File Management with a Bash Script"
 date: 2023-05-22T01:38:46+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux"]
+tags: ["blog" ,"linux" , "operating-system" ]
 description: "Streamline Your File Organization with Automation"
 showTableOfContents: true
-url: /automating-file-management-with-bash-script/
+url: /OS/linux/automating-file-management-with-bash-script/
 image: "/images/2023/automate-task/Automating-thumbnail.png"
 ---
 

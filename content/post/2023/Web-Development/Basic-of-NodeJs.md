@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Web Development"]
 description: "Learn the basic of NodeJS"
 showTableOfContents: true
-url: /basic-nodejs/
+url: /web-development/basic-nodejs/
 image: "/images/2023//basic-of-nodejs/basic-of-Node Js.png"
 ---
 

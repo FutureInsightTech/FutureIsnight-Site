@@ -3,10 +3,10 @@ title: "Top 5 Commands Linux"
 date: 2023-04-13T22:40:06+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"Linux"]
+tags: ["blog" ,"Linux", "operating-system"]
 description: "Learn Top 5 Commands in Linux"
 showTableOfContents: true
-url: /Top-5-linux-command/
+url: /OS/linux/Top-5-linux-command/
 image: "/images/2023/Operating-System/Linux/Top5-Commands/thumbnail/Top-5 Linux-Command.png"
 ---
 

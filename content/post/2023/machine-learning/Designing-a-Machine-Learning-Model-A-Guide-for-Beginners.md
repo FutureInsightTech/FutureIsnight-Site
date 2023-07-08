@@ -7,7 +7,7 @@ type: "post"
 tags: ["blog" ,"Machine learning"]
 description: "Learn the basic to create your own ML Model"
 showTableOfContents: true
-url: /create-your-own-ml-model/
+url: /machine-learning/create-your-own-ml-model/
 ---
 
 ----
