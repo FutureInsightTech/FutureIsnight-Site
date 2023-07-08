@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"machine-learning"]
 description: "Machine Learning Classifer"
 showTableOfContents: true
-url: /decision-tree/
+url: /machine-learning/decision-tree/
 image: "/images/2023/Ml-algo/Decision-Tree/Decision-Tree.png"
 ---
 

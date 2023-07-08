@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"essential-skills"]
 description: "Time is one of the most important resources and you need to spend it will."
 showTableOfContents: true
-url: /time-management/
+url: /essential-skills/time-management/
 ---
 
 ----

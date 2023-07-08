@@ -3,10 +3,10 @@ title: "The World of Operating System"
 date: 2023-03-06T00:29:28+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"Operating System"]
+tags: ["blog" ,"operating-system"]
 description: "Know everything about OS"
 showTableOfContents: true
-url: /world-of-os/
+url: /OS/windows/world-of-os/
 image: "/images/2023/"
 ---
 

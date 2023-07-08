@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"machine learning"]
 description: ""
 showTableOfContents: true
-url: /Support-Vector-Machine/
+url: /machine-learning/Support-Vector-Machine/
 ---
 
 ----

@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Machine Learning"]
 description: "best resources to learn machine learning & Deep Learning"
 showTableOfContents: true
-url: /best-resources-for-ML/
+url: /machine-learning/best-resources-for-ML/
 ---
 
 -----

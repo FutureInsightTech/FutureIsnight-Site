@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog", "Machine Learning", "roadmap"]
 description: "Machine learning is the feeding of data, but not just data, but also a big lead in mathematical and statistical programming."
 showTableOfContents: true
-url: /Is-Maths-required-for-ML/
+url: /machine-learning/Is-Maths-required-for-ML/
 image: "/images/2023/maths-for-Ml/maths-for-ml.png"
 ---
 

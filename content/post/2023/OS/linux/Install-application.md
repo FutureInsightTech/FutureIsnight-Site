@@ -3,10 +3,10 @@ title: "Linux App Installation: Simplified"
 date: 2023-03-28T20:17:24+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux"]
+tags: ["blog" ,"linux" , "operating-system"]
 description: "Install Application on Linux"
 showTableOfContents: false
-url: /linux-app-simplified/
+url: /OS/linux/linux-app-simplified/
 image: "/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
 ---
 

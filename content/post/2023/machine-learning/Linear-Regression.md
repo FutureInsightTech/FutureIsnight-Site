@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Machine Learning"]
 description: ""
 showTableOfContents: true
-url: /linear-regression/
+url: /machine-learning/linear-regression/
 ---
 
 ----

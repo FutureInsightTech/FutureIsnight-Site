@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"web-development"]
 description: "Learn Firebase connection"
 showTableOfContents: true
-url: /firebase-connection/
+url: /web-development/firebase-connection/
 image: "/images/2023/firebase-database/Firebase-connection.png"
 ---
 -----------

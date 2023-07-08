@@ -3,10 +3,10 @@ title: "Midnight Tokyo: Awesome Window Manager"
 date: 2023-05-26T16:36:17+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux", "Window-Manager"]
+tags: ["blog" ,"linux", "Window-Manager", "operating-system"]
 description: "Embrace the midnight allure of Tokyo on your Linux desktop"
 showTableOfContents: true
-url: /MidnightTokyoWM/
+url: /OS/linux/MidnightTokyoWM/
 image: "/images/2023/my-new-desktop/Midnight-Tokyo.png"
 ---
 

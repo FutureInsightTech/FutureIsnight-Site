@@ -3,10 +3,10 @@ title: "Window Sub-System for Linux (WSL)"
 date: 2023-07-07T23:04:42+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"windows"]
+tags: ["blog" ,"windows", "operating-system"]
 description: "Linux on Windows (WSL)"
 showTableOfContents: true
-url: /wsl-install/
+url: /OS/windows/wsl-install/
 image: "/images/2023/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png"
 ---
 
