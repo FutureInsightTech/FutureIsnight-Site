@@ -18,6 +18,15 @@ rocket="🚀"
 pencil="✏️"
 thumbs_up="👍"
 warning="⚠️"
+book="📖"
+machine="🤖"
+skills="🛠️"
+web_development="🌐"
+linux="🐧"
+windows="🪟"
+code="💻"
+operating_system="🖥️"
+report="💻 📊"
 
 # Check if Hugo is installed
 if ! command -v hugo &> /dev/null; then
@@ -70,6 +79,29 @@ while true; do
 done
 
 echo
+echo
+
+# Telling user which caregory they have seclected using emoji plus category name 
+if [[ "$category" = "machine-learning" ]]; then 
+    echo "=== ${machine} You have seclect: ${category} Category ==="
+elif [[ "$category" = "essential-skills" ]]; then 
+    echo "=== ${skills} You have seclect: ${category} Category ==="
+elif [[ "$category" = "Web-Development"  ]]; then 
+     echo "=== ${web_development} You have seclect: ${category} Category ==="
+elif [[ "$category" = "OS" ]]; then
+     echo "=== ${operating_system} You have seclect: ${category} Category ==="
+elif [[ "$category" = "linux" ]]; then
+     echo "=== ${linux} You have seclect: ${category} Category ==="
+elif [[ "$category" = "windows" ]]; then
+     echo "=== ${windows} You have seclect: ${category} Category ==="
+elif [[ "$category" = "Code-Report" ]]; then
+     echo "=== ${report} You have seclect: ${category} Category ==="
+else 
+    echo "=== ${book} You have seclect: ${category} Category ==="
+fi
+
+echo 
+echo 
 
 # Section: Blog Post Name
 echo "=== ${rocket} Blog Post Name ==="
