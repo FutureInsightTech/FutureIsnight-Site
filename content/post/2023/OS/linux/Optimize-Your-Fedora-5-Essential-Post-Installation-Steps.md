@@ -3,10 +3,10 @@ title: "Optimize Your Fedora: 5 Essential Post-Installation Steps"
 date: 2023-07-01T20:26:58+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"fedora", "linux"]
+tags: ["blog" ,"fedora", "linux", "operating-system"]
 description: "Top 5 things when freshed installed Fedora"
 showTableOfContents: true
-url: /fedora-install-tips/
+url: /OS/linux/fedora-install-tips/
 image: "/images/2023/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png"
 ---
 

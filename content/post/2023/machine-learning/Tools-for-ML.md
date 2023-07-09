@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Machine Learning"]
 description: "Great Tools for Machine Learning & Deep Learning"
 showTableOfContents: true
-url: /tools-for-ml/
+url: /machine-learning/tools-for-ml/
 ---
 
 ---- 

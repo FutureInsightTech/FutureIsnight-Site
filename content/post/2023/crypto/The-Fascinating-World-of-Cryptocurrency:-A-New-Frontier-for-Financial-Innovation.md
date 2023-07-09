@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"crypto"]
 description: "Basic of Crypto"
 showTableOfContents: true
-url: /world-of-crypto/
+url: /crypto/world-of-crypto/
 ---
 
 -----------

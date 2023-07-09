@@ -3,10 +3,10 @@ title: "The World of Linux"
 date: 2023-03-05T22:42:58+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"Linux", "Operating System"]
+tags: ["blog" ,"Linux", "operating-system"]
 description: "Learn about Linux."
 showTableOfContents: true
-url: /world-of-linux/
+url: /OS/linux/world-of-linux/
 image: "/images/2023/Operating-System/Linux/The-world-of-linux/The-World-of-Linux.png"
 ---
 

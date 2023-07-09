@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Linux", "Operating System"]
 description: "Install Linux, the write way"
 showTableOfContents: true
-url: /install-linux/
+url: /OS/linux/install-linux/
 image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
 
 ---

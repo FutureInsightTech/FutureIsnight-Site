@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
-url: /logistic-regression/
+url: /machine-learning/logistic-regression/
 image: "/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png"
 ---
 

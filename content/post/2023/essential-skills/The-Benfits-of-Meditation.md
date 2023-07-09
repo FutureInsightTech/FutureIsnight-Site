@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"essential-skills"]
 description: ""
 showTableOfContents: true
-url: /Benefits-of-Mindfulness-Meditation/
+url: /essential-skills/Benefits-of-Mindfulness-Meditation/
 image: "/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
 ---
 

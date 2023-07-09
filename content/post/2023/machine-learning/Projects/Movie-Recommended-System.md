@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"machine-leaarning"]
 description: " Build Movie Recommended System"
 showTableOfContents: true
-url: /build-movie-recommended-system/
+url: /machine-learning/project/build-movie-recommended-system/
 image: "/images/2023/"
 ---
 

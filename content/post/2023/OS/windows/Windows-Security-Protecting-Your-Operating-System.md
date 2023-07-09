@@ -3,10 +3,10 @@ title: "Windows Security: Protecting Your Operating System"
 date: 2023-06-19T02:58:06+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"operating-system", "security"]
+tags: ["blog" ,"operating-system", "security" , "windows"]
 description: "Learn secure window"
 showTableOfContents: true
-url: /secure-your-windows/
+url: /OS/windows/secure-your-windows/
 image: "/images/2023/Window-Security/Windows-Security-Protecting-Your-Operating-System.png"
 ---
 

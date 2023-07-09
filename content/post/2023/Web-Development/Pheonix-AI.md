@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"web-development"]
 description: "Engage in intelligent conversations with Pheonix-AI."
 showTableOfContents: true
-url: /Pheonix-AI/
+url: /web-development/Pheonix-AI/
 image: "/images/2023/Pheonix-AI/Pheonix-AI.png"
 ---
 

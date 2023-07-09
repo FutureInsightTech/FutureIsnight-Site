@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog", "essential-skills"]
 description: "Learn how to use git and GitHub."
 showTableOfContents: true
-url: /learn-git-&-github/
+url: /essential-skills/learn-git-&-github/
 ---
 
 ----

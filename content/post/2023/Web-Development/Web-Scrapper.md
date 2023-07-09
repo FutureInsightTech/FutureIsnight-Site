@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"Web Development"]
 description: "Using the Power of JavaScript we will Build a web Scrapper to get some informations"
 showTableOfContents: true
-url: /web-scrapper/
+url: /web-development/web-scrapper/
 ---
 
 ----

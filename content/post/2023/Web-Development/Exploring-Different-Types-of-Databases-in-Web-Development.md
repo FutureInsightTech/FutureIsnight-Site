@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"web-development"]
 description: "Different Types of Databases in Web Development"
 showTableOfContents: true
-url: /explore-databases/
+url: /web-development/explore-databases/
 image: "/images/2023/databases/Database-exployer.png"
 ---
 
