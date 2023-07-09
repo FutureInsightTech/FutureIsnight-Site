@@ -7,7 +7,7 @@ tags: ["blog" ,"linux", "operating-system"]
 description: "Optimize Your Images for Better Performance"
 showTableOfContents: true
 url: /OS/linux/image-optimization/
-image: "/images/2023/Operating-System/Linux/image-optimization/Image-Optimization.png"
+image: "/images/2023/image-optimization/Image-Optimization.png"
 ---
 
 -----
@@ -112,7 +112,7 @@ Here are all of the links and references that I used to write this blog, so feel
 
 # Thumbnail:
 <!-- ![image](/images/2023/image-optimization/iMAGE-opTIMIZATION.png) -->
-![image](/images/2023/Operating-System/Linux/image-optimization/Image-Optimization.png)
+![image](/images/2023/image-optimization/Image-Optimization.png)
 
 
 <!-- ## WalkThrough Video: -->

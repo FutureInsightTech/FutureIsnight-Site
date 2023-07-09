@@ -7,7 +7,7 @@ tags: ["blog" ,"linux","review", "fedora"]
 description: "Fedora 38: A Remarkable Experience"
 showTableOfContents: true
 url: /OS/linux/review/fedora-review/
-image: "/images/2023/Operating-System/Linux/fedora38/fedora38.png"
+image: "/images/2023/fedora38/fedora38.png"
 ---
 
 
@@ -101,7 +101,7 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
 # Thumbnail
-![fedora38](/images/2023/Operating-System/Linux/fedora38/fedora38.png)
+![fedora38](/images/2023/fedora38/fedora38.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
