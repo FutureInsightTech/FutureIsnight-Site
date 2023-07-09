@@ -7,7 +7,7 @@ tags: ["blog" ,"linux", "operating-system"]
 description: "Discovering the ideal Linux distribution that suits your needs and preferences"
 showTableOfContents: true
 url: /OS/linux/linux-distribution/
-image: "/images/2023/Operating-System/Linux/navigate-linux/Linux-Distro.png"
+image: "/images/2023/navigate-linux/Linux-Distro.png"
 ---
 
 -----------
@@ -65,7 +65,7 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 
 # Thumbnail
-![Link Name](/images/2023/Operating-System/Linux/navigate-linux/Linux-Distro.png)
+![Link Name](/images/2023/navigate-linux/Linux-Distro.png)
 
 
 <!-- ## WalkThrough Video: -->

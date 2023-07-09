@@ -7,7 +7,7 @@ tags: ["blog" ,"essential-skills"]
 description: ""
 showTableOfContents: true
 url: /essential-skills/Benefits-of-Mindfulness-Meditation/
-image: "/images/2023/essential-skills/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
+image: "/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png"
 ---
 
 ----
@@ -50,5 +50,5 @@ If you have any questions, please contact
 
 
 # Thumbnail:
-![image](/images/2023/essential-skills/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png)
+![image](/images/2023/Benefits-of-Mindfulness-Meditation/Benefits-of-Mindfulness-Meditation.png)
 

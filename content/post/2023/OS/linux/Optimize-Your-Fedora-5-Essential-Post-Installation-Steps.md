@@ -7,7 +7,7 @@ tags: ["blog" ,"fedora", "linux", "operating-system"]
 description: "Top 5 things when freshed installed Fedora"
 showTableOfContents: true
 url: /OS/linux/fedora-install-tips/
-image: "/images/2023/Operating-System/Linux/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png"
+image: "/images/2023/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png"
 ---
 
 -----------
@@ -136,7 +136,7 @@ Here are all of the links and references that I used to write this blog, so feel
 3.  [RPM-Fusion](https://rpmfusion.org/Configuration)
 
 # Thumbnail:
-![image](/images/2023/Operating-System/Linux/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png)
+![image](/images/2023/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

@@ -4,7 +4,7 @@ date: 2023-01-19T14:11:15+05:00
 draft: false
 type: "post"
 tags: ["blog", "Machine Learning", "roadmap"]
-description: "Solid road map for machine learning and deep learning"
+description: "solid road map for machine learning and deep learning"
 showTableOfContents: true
 url: /machine-learning/machine-learning/road-map-for-ml/
 ---
@@ -128,4 +128,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/machine-Learning/Road-Map/Road-to-ML.png)
+![image](/images/2023/Road-Map/Road-to-ML.png)

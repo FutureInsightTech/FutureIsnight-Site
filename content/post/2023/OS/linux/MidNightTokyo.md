@@ -7,7 +7,7 @@ tags: ["blog" ,"linux", "Window-Manager", "operating-system"]
 description: "Embrace the midnight allure of Tokyo on your Linux desktop"
 showTableOfContents: true
 url: /OS/linux/MidnightTokyoWM/
-image: "/images/2023/Operating-System/Linux/my-new-desktop/Midnight-Tokyo.png"
+image: "/images/2023/my-new-desktop/Midnight-Tokyo.png"
 ---
 
    
@@ -38,11 +38,11 @@ It is worth noting that the quest for the perfect desktop environment is an ongo
 # Look & Feel
 At the time of writing this blog post, my desktop environment look like this, but with time I will be tweaking and making it better. 
 - Full Desktop View
-![first-look](/images/2023/Operating-System/Linux/my-new-desktop/home-screen.png)
+![first-look](/images/2023/my-new-desktop/home-screen.png)
 - Tilting View
-![titleing-view](/images/2023/Operating-System/Linux/my-new-desktop/terminal-look.png)
+![titleing-view](/images/2023/my-new-desktop/terminal-look.png)
 - Multiple Terminal
-![multiple-terminal](/images/2023/Operating-System/Linux/my-new-desktop/multiple-terminal-look.png)
+![multiple-terminal](/images/2023/my-new-desktop/multiple-terminal-look.png)
 
 # Programming Language
 
@@ -190,7 +190,7 @@ The source code for this project is available on the GitHub platform.
 - [MidnightTokyoWM](https://github.com/rafay99-epic/MidnightTokyo)
 
 # Thumbnail
-![thumbnail](/images/2023/Operating-System/Linux/my-new-desktop/Midnight-Tokyo.png)
+![thumbnail](/images/2023/my-new-desktop/Midnight-Tokyo.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
