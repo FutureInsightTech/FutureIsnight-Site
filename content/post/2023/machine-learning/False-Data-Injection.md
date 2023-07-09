@@ -7,6 +7,7 @@ tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
 url: /machine-learning/machine-learning/FDIA/
+image: "/images/2023/machine-Learning/Ml-algo/FDIA/False-Data-Injection-Attack.png"
 ---
 
 -----
@@ -46,8 +47,6 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 
-
-
 # References:
 ## Articles references:
 1. https://crashtest-security.com/false-data-injection-attack/
@@ -57,5 +56,5 @@ If you have any questions, please contact
 3. https://github.com/urwithajit9/FDIA-classification
 
 # Thumbnail:
-![image](/images/2023/FDIA/False-Data-Injection-Attack.png)
+![image](/images/2023/machine-Learning/Ml-algo/FDIA/False-Data-Injection-Attack.png)
 

@@ -8,6 +8,7 @@ tags: ["blog" ,"Machine learning"]
 description: "Learn the basic to create your own ML Model"
 showTableOfContents: true
 url: /machine-learning/create-your-own-ml-model/
+image: "/images/2023/machine-Learning/create-own-model/Create-your-Own-Machine-Learning-Model.png"
 ---
 
 ----
@@ -58,4 +59,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/create-own-model/Create-your-Own-Machine-Learning-Model.png)
+![image](/images/2023/machine-Learning/create-own-model/Create-your-Own-Machine-Learning-Model.png)

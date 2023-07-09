@@ -7,12 +7,12 @@ tags: ["blog", "Machine Learning", "roadmap"]
 description: "Machine learning is the feeding of data, but not just data, but also a big lead in mathematical and statistical programming."
 showTableOfContents: true
 url: /machine-learning/Is-Maths-required-for-ML/
-image: "/images/2023/maths-for-Ml/maths-for-ml.png"
+image: "/images/2023/machine-Learning/maths-for-Ml/maths-for-ml.png"
 ---
 
 ----
 
-![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/maths-for-Ml/maths-for-ml.png)
+![Is Math Really Required for Machine Learning, or Is It Just an Drama](/images/2023/machine-Learning/maths-for-Ml/maths-for-ml.png)
 
 Hi! My name is Abdul Rafay, and I work on training different models from provided data, as well as deploying the model on any of the cloud services.
 

@@ -7,6 +7,7 @@ tags: ["blog" ,"Machine Learning"]
 description: ""
 showTableOfContents: true
 url: /machine-learning/linear-regression/
+image: "/images/2023/machine-Learning/Ml-algo/Linear-Regression/linear-regression.png"
 ---
 
 ----
@@ -29,11 +30,11 @@ Whereas in **Multiple Linear Regression** there will be more than one independen
 ### Simple Linear Regression
 Equation of Simple Linear Regression, where bo is the intercept, b1 is coefficient or slope, x is the independent variable and y is the dependent variable.
 
-![eq1](/images/2023/Ml-algo/Linear-Regression/simple.png)
+![eq1](/images/2023/machine-Learning/Ml-algo/Linear-Regression/simple.png)
 
 ### Multiple Linear Regression
 Equation of Multiple Linear Regression, where bo is the intercept, b1,b2,b3,b4…,bn are coefficients or slopes of the independent variables x1,x2,x3,x4…,xn and y is the dependent variable.
-![eq2](/images/2023/Ml-algo/Linear-Regression/multiple.png)
+![eq2](/images/2023/machine-Learning/Ml-algo/Linear-Regression/multiple.png)
 
 
 **A Linear Regression model’s main aim is to find the best fit linear line and the optimal values of intercept and coefficients such that the error is minimized.
@@ -139,10 +140,7 @@ plt.ylabel('PREDICTED PRICE')
 plt.show()
 ```
 Once the code is compiled then your output should like this:
-![result](/images/2023/Ml-algo/Linear-Regression/result.jpg)
-
-# More Examples:
-You can find more examples and problems by [clicking here](https://github.com/1-Power/Machine-Learning).
+![result](/images/2023/machine-Learning/Ml-algo/Linear-Regression/result.jpg)
 
 
 # Conclusion:
@@ -180,5 +178,5 @@ So this Blog I did some research and tried my best to learn so if you any issue 
 - [Video Reference 1](https://www.youtube.com/watch?v=kHwlB_j7Hkc)
 
 # Thumbnail:
-![image](/images/2023/Ml-algo/Linear-Regression/linear-regression.png)
+![image](/images/2023/machine-Learning/Ml-algo/Linear-Regression/linear-regression.png)
 

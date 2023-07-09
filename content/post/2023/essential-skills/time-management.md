@@ -7,6 +7,7 @@ tags: ["blog" ,"essential-skills"]
 description: "Time is one of the most important resources and you need to spend it will."
 showTableOfContents: true
 url: /essential-skills/time-management/
+image: "/images/2023/essential-skills/time-management/image.png"
 ---
 
 ----
@@ -36,5 +37,5 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/time-management/image.png)
+![image](/images/2023/essential-skills/time-management/image.png)
 

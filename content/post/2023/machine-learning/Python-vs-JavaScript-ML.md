@@ -1,5 +1,5 @@
 ---
-title: "Python vs JavaScript ML"
+title: "Which Programming Language is better for Machine Learning: Python or JavaScript?"
 date: 2023-01-18T00:34:56+05:00
 draft: false
 type: "post"
@@ -7,6 +7,7 @@ tags: ["blog", "Machine Learning"]
 description: "Python vs JavaScript for Machine Learning"
 showTableOfContents: true
 url: /machine-learning/JavaScript-vs-Python-for-ml/
+image: "/images/2023/machine-Learning/Python-vs-JavaScript/Python-JavaScript.png"
 ---
 
 -----
@@ -97,5 +98,5 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/static/images/2023/Python-vs-JavaScript/Python-JavaScript.png)
+![image](/images/2023/machine-Learning/Python-vs-JavaScript/Python-JavaScript.png)
 
