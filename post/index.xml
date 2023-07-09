@@ -178,7 +178,7 @@ When writing blog posts with multiple images, the size of the images becomes a c
       <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
       
       <guid>https://future-insight.blog/web-development/basic-nodejs/</guid>
-      <description>Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
+      <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
     </item>
     
@@ -401,7 +401,7 @@ Understanding: Those things are: 1. understanding the type of data; and 2. once 
     </item>
     
     <item>
-      <title>Which Programming Language is better for Machine Learning: Python or JavaScript?</title>
+      <title>Python vs JavaScript ML</title>
       <link>https://future-insight.blog/machine-learning/JavaScript-vs-Python-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
