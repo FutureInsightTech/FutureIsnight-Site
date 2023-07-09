@@ -7,6 +7,7 @@ tags: ["blog" ,"Machine Learning"]
 description: "Important Skills for Machine Learning"
 showTableOfContents: true
 url: /machine-learning/skills-for-ml/
+image: "/images/2023/machine-Learning/skills-required/Machine-learning-Requires-Blink-Skills.jpg"
 ---
 
 -----
@@ -74,4 +75,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/skills-required/Machine-learning-Requires-Blink-Skills.jpg)
+![image](/images/2023/machine-Learning/skills-required/Machine-learning-Requires-Blink-Skills.jpg)

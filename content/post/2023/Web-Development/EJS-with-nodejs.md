@@ -7,7 +7,7 @@ tags: ["blog" ,"web-development"]
 description: "EJS with Nodejs"
 showTableOfContents: true
 url: /web-development/ejs-nodejs-templating-guide/
-image: "/images/2023/ejs-nodejs/Using-ejs-thumbnail.png"
+image: "/images/2023/web-deevelopment/ejs-nodejs/Using-ejs-thumbnail.png"
 ---
 
 -----------
@@ -20,7 +20,7 @@ First, you need to have Node.js installed on your system. To check if Node.js is
 ```powershell
 node --version
 ```
-![node-js-check](/images/2023/ejs-nodejs/check-nodejs.png)
+![node-js-check](/images/2023/web-deevelopment/ejs-nodejs/check-nodejs.png)
 
 If you are using Linux, the command is the same as for Windows.
 
@@ -38,14 +38,14 @@ mkdir ejs-nodejs
 npm init
 ```
 
-![step-1](/images/2023/ejs-nodejs/step01.png)
+![step-1](/images/2023/web-deevelopment/ejs-nodejs/step01.png)
 
 
 If you are using Linux, the commands are the same as for Windows. The `mkdir` command will create a folder named `ejs-nodejs`, and the `npm init` command will initialize the project. It will ask you some questions which you can answer or simply press Enter to skip.
 
 Once you have answered all the questions, you will see a `package.json` file in your project folder.
 
-![package-json](/images/2023/ejs-nodejs/package.png)
+![package-json](/images/2023/web-deevelopment/ejs-nodejs/package.png)
 
 ## Step 2 - Installing Essential Packages:
 In the current folder, we have a `package.json` file. Now let's install some packages that we need for our project. For this project, we will need several packages, including `express`, `ejs`, `nodemon`, `ejs-layouts`, and `body-parser`. You can find these packages on the [npm website](https://www.npmjs.com/). Let's install them using the following command:
@@ -54,7 +54,7 @@ In the current folder, we have a `package.json` file. Now let's install some pac
 npm install express ejs nodemon ejs-layout express-ejs-layouts body-parser
 ```
 
-![image](/images/2023/ejs-nodejs/install-nodejs.png)
+![image](/images/2023/web-deevelopment/ejs-nodejs/install-nodejs.png)
 
 All these commands are the same for Linux and macOS.
 
@@ -318,7 +318,7 @@ Here are all of the links and references that I used to write this blog, so feel
 
 
 # Thumbnail
-![thumbnail](/images/2023/ejs-nodejs/Using-ejs-thumbnail.png)
+![thumbnail](/images/2023/web-deevelopment/ejs-nodejs/Using-ejs-thumbnail.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

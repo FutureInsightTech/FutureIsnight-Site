@@ -7,12 +7,11 @@ tags: ["blog" ,"Web Development"]
 description: "Learn the basic of NodeJS"
 showTableOfContents: true
 url: /web-development/basic-nodejs/
-image: "/images/2023//basic-of-nodejs/basic-of-Node Js.png"
+image: "/images/2023/web-deevelopment/basic-of-nodejs/basic-of-Node Js.png"
 ---
 
 ----
 
-# Introduction to NodeJs:
 Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.js application.

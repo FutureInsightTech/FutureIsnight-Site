@@ -7,7 +7,7 @@ tags: ["blog" ,"web-development"]
 description: "Different Types of Databases in Web Development"
 showTableOfContents: true
 url: /web-development/explore-databases/
-image: "/images/2023/databases/Database-exployer.png"
+image: "/images/2023/web-deevelopment/databases/Database-exployer.png"
 ---
 
 -----------
@@ -141,7 +141,7 @@ Here are all of the links and references that I used to write this blog, so feel
 - [Example Code](https://github.com/rafay99-epic/DevTestBox)
 
 # Thubnail Image
-![image](/images/2023/databases/Database-exployer.png)
+![image](/images/2023/web-deevelopment/databases/Database-exployer.png)
 
 <!-- ## WalkThrough Video:
 <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

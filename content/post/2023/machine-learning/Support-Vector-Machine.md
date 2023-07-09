@@ -7,6 +7,7 @@ tags: ["blog" ,"machine learning"]
 description: ""
 showTableOfContents: true
 url: /machine-learning/Support-Vector-Machine/
+image: "/images/2023/Ml-algo/SVM/Machine-Learning-Algo-SVM.png"
 ---
 
 ----

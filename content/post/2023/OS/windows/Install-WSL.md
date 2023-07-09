@@ -7,7 +7,7 @@ tags: ["blog" ,"windows", "operating-system"]
 description: "Linux on Windows (WSL)"
 showTableOfContents: true
 url: /OS/windows/wsl-install/
-image: "/images/2023/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png"
+image: "/images/2023/Operating-System/Windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png"
 ---
 
 -----------
@@ -192,7 +192,7 @@ Here are all of the links and references that I used to write this blog, so feel
 - [Arch WSL Development](https://github.com/VSWSL/Arch-WSL)
 - [Fedora WSL Development](https://github.com/VSWSL/Fedora-WSL)
 # Thumbnail
-![Image](/images/2023/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png)
+![Image](/images/2023/Operating-System/Windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

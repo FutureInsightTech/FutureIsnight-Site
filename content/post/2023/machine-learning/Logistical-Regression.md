@@ -7,7 +7,7 @@ tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
 url: /machine-learning/logistic-regression/
-image: "/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png"
+image: "/images/2023/machine-Learning/Ml-algo/Logistic-Regression/Logistic-Regression.png"
 ---
 
 ----
@@ -99,5 +99,5 @@ If you have any questions, please contact
 - [Article References 1](https://copy.ai/)
 
 # Thumbnail:
-![image](/images/2023/Ml-algo/Logistic-Regression/Logistic-Regression.png)
+![image](/images/2023/machine-Learning/Ml-algo/Logistic-Regression/Logistic-Regression.png)
 
