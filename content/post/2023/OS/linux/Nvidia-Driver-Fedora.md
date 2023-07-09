@@ -7,7 +7,7 @@ tags: ["blog" ,"Linux", "Nvidia-Drivers", "Fedora", "operating-system"]
 description: "Nvidia Drivers on Fedora"
 showTableOfContents: true
 url: /OS/linux/nvidia-driver-fedora-linux/
-image: "/images/2023/Operating-System/Linux/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png/"
+image: "/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png/"
 ---
 
 -----------
@@ -166,7 +166,7 @@ Here are all of the links and references that I used to write this blog, so feel
 - [RPM Fusion Enable](https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/)
 - [Offical Documentation RPM Fusion](https://rpmfusion.org/Howto/NVIDIA#About_this_Howto)
 # Thubnail Image
-![image](/images/2023/Operating-System/Linux/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png)
+![image](/images/2023/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png)
 
 
 

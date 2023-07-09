@@ -7,7 +7,7 @@ tags: ["blog" ,"linux" , "operating-system" ]
 description: "Streamline Your File Organization with Automation"
 showTableOfContents: true
 url: /OS/linux/automating-file-management-with-bash-script/
-image: "/images/2023/Operating-System/Linux/automate-task/Automating-thumbnail.png"
+image: "/images/2023/automate-task/Automating-thumbnail.png"
 ---
 
 
@@ -168,7 +168,7 @@ sudo systemctl status file-management.service
 Congratulations! Your script is now running as a system process. It will start automatically on system boot and continue monitoring files in the background.
 
 ## Screenshot: Created System Process for File Management Script
-![image-proof](/images/2023/Operating-System/Linux/automate-task/proof.png)
+![image-proof](/images/2023/automate-task/proof.png)
 
 # Conclusion
 
@@ -195,7 +195,7 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 - [Scripts](https://github.com/rafay99-epic/Linux-DotFiles/blob/main/.scripts/file-monitoring)
 
 # Thumbnail:
-![Thumbnail](/images/2023/Operating-System/Linux/automate-task/Automating-thumbnail.png)
+![Thumbnail](/images/2023/automate-task/Automating-thumbnail.png)
 
  <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

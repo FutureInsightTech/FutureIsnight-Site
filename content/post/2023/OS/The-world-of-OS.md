@@ -7,7 +7,7 @@ tags: ["blog" ,"operating-system"]
 description: "Know everything about OS"
 showTableOfContents: true
 url: /OS/windows/world-of-os/
-image: "/images/2023/Operating-System/The-World-of-OS/the-world-of-OS.png"
+image: "/images/2023/"
 ---
 
 ----
