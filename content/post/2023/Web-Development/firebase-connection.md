@@ -7,7 +7,7 @@ tags: ["blog" ,"web-development"]
 description: "Learn Firebase connection"
 showTableOfContents: true
 url: /web-development/firebase-connection/
-image: "/images/2023/firebase-database/Firebase-connection.png"
+image: "/images/2023/Web-Development/firebase-database/Firebase-connection.png"
 ---
 -----------
 
@@ -149,7 +149,7 @@ Here are all of the links and references that I used to write this blog, so feel
 - [DevTestBox](https://github.com/rafay99-epic/DevTestBox)
 
 # Thumbnail Image
-![image](/images/2023/firebase-database/Firebase-connection.png)
+![image](/images/2023/Web-Development/firebase-database/Firebase-connection.png)
 
 <!-- ## WalkThrough Video:
 <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

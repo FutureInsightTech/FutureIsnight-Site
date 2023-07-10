@@ -7,18 +7,19 @@ tags: ["blog" ,"Machine Learning"]
 description: "Important Skills for Machine Learning"
 showTableOfContents: true
 url: /machine-learning/skills-for-ml/
+image: "/images/2023/Machine-Learning/skills-required/Machine-learning-Requires-Blink-Skills.jpg"
 ---
 
 -----
 
 So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development. 
 
-## Understanding:
+# Understanding:
 Those things are: 1. understanding the type of data; and 2. once you know what kind of data this is, you need to check what kind of model you are going to use. 3. Choose a model, and then you've got three things down, 4. How to reshape the data according to the model that you are using for that project
 
 These things are easy to say, but believe me, it is so hard if you don't have a good understanding of the basics, and my basics are just getting better. So for today, the main question is, **"How can we get these things right?"** and **"How can we do well in this field?"**
 
-### Different Domain, Different Concept:
+## Different Domain, Different Concept:
 You see, in the domain of Web development, it is easy to say, "Build a lot of applications," and you will see how to create a beautiful interface, but in the domain of machine learning, there is something else, something that I cannot explain.
 
 ## Hidden Skills for Machine Learning:
@@ -74,4 +75,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/skills-required/Machine-learning-Requires-Blink-Skills.jpg)
+![image](/images/2023/Machine-Learning/skills-required/Machine-learning-Requires-Blink-Skills.jpg)
