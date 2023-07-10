@@ -7,7 +7,7 @@ tags: ["blog" ,"linux", "operating-system"]
 description: "Get Fedback from Terminal"
 showTableOfContents: true
 url: /OS/linux/terminal-feedback-password/
-image: "/images/2023/Terminal-feedback/Enhance-Terminal-Experience.png/"
+image: "/images/2023/Operating-System/Linux/Terminal-feedback/Enhance-Terminal-Experience.png/"
 ---
 
 -----------
@@ -30,7 +30,7 @@ sudo visudo
 ```
 You will be prompted to enter your password.
 
-![Open-Terminal](/images/2023/Terminal-feedback/editior.png)
+![Open-Terminal](/images/2023/Operating-System/Linux/Terminal-feedback/editior.png)
 
 3. **Step 3: Modifying the Configuration File**
 Once you enter your password, the sudo configuration file will open in the terminal. Scroll to an appropriate location in the file and paste the following line:
@@ -60,7 +60,7 @@ sudo dnf update -y
 
 Now that you have enhanced your terminal experience with feedback for password entry, you can enjoy a more confident and error-free interaction with your shell.
 
-![Terminal-output](/images/2023/Terminal-feedback/terminal-ffedback.png)
+![Terminal-output](/images/2023/Operating-System/Linux/Terminal-feedback/terminal-ffedback.png)
 
 
 # Conclusion:
@@ -87,7 +87,7 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
 # Thumbnail
-![image](/images/2023/Terminal-feedback/Enhance-Terminal-Experience.png)
+![image](/images/2023//Operating-System/Linux/Terminal-feedback/Enhance-Terminal-Experience.png)
 
 
 <!-- # References: -->
