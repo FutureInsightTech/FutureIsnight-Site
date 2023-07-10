@@ -7,6 +7,7 @@ tags: ["blog" ,"Machine Learning"]
 description: "Great Tools for Machine Learning & Deep Learning"
 showTableOfContents: true
 url: /machine-learning/tools-for-ml/
+image: "/images/2023/Machine-Learning/Tools-for-ML/Tools-for-Machine-Learning.png"
 ---
 
 ---- 
@@ -78,4 +79,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail
-![image](/images/2023/Tools-for-ML/Tools-for-Machine-Learning.png)
+![image](/images/2023/Machine-Learning/Tools-for-ML/Tools-for-Machine-Learning.png)

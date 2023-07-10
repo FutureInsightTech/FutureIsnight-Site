@@ -7,6 +7,7 @@ tags: ["blog", "Machine Learning", "roadmap"]
 description: "solid road map for machine learning and deep learning"
 showTableOfContents: true
 url: /machine-learning/machine-learning/road-map-for-ml/
+image: "/images/2023/Machine-Learning/Road-Map/Road-to-ML.png"
 ---
 
 ----
@@ -128,4 +129,4 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![image](/images/2023/Road-Map/Road-to-ML.png)
+![image](/images/2023/Machine-Learning/Road-Map/Road-to-ML.png)
