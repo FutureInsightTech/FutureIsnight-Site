@@ -7,7 +7,7 @@ tags: ["blog" ,"web-development"]
 description: "Engage in intelligent conversations with Pheonix-AI."
 showTableOfContents: true
 url: /web-development/Pheonix-AI/
-image: "/images/2023/Pheonix-AI/Pheonix-AI.png"
+image: "/images/2023/Web-Development/Pheonix-AI/Pheonix-AI.png"
 ---
 
 -----------
@@ -45,12 +45,12 @@ Now you might be wondering how to obtain an API key. It's pretty easy! Just visi
 1. Visit the OpenAI website: Go to the OpenAI website at https://www.openai.com/.
 
 2. Sign in to your account: Click on the "Sign In" button located at the top-right corner of the page. Enter your login credentials to sign in to your OpenAI account. If you don't have an account, you'll need to create one first.
-![image](/images/2023/Pheonix-AI/dashboard.png)
+![image](/images/2023/Web-Development/Pheonix-AI/dashboard.png)
 3. Navigate to the API section: Once you're logged in, navigate to the API section of your OpenAI account. You can usually find it in the account dashboard or under the API tab.
 4. Create a new API key: Look for an option to create a new API key. It may be labeled as "Generate API Key" or something similar. Click on it to proceed.
-![image](/images/2023/Pheonix-AI/AIP_dashboard.png)
+![image](/images/2023/Web-Development/Pheonix-AI/AIP_dashboard.png)
 5. Copy and secure the API key: After the API key is generated, it will be displayed on the screen. Copy the API key and store it securely. Treat it as a sensitive piece of information, similar to a password, as it provides access to your OpenAI account and services.
-![image](/images/2023/Pheonix-AI/Press_create_newKey.png)
+![image](/images/2023/Web-Development/Pheonix-AI/Press_create_newKey.png)
 6. Start using the API key: With the API key generated, you can start integrating it into your applications or projects that interact with OpenAI services. Refer to the OpenAI documentation or relevant resources for instructions on how to use the API key with specific programming languages or frameworks.
 
 ## Important Note:
@@ -550,9 +550,9 @@ This package.json file serves as a configuration file for the project, providing
 # Project UI
 This is the UI of the Project.
 ## Dark Mode
-![UI-Dark](/images/2023/Pheonix-AI/dark_mode.png)
+![UI-Dark](/images/2023/Web-Development/Pheonix-AI/dark_mode.png)
 ## Light Mode
-![UI-Light](/images/2023/Pheonix-AI/light-mode.png)
+![UI-Light](/images/2023/Web-Development/Pheonix-AI/light-mode.png)
 # Conclusion:
 In conclusion, the Pheonix-AI project showcases the practical implementation of OpenAI's GPT models in a web application. By combining Node.js, HTML, CSS, and JavaScript, the project demonstrates how developers can leverage the power of GPT models to enhance user experiences and generate dynamic text.
 
@@ -587,4 +587,4 @@ Here are all of the links and references that I used to write this blog, so feel
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
 
 # Thumbnail
-![image](/images/2023/Pheonix-AI/Pheonix-AI.png)
+![image](/images/2023/Web-Development/Pheonix-AI/Pheonix-AI.png)
