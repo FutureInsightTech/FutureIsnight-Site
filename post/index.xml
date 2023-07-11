@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jul 2023 11:26:23 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 14:11:13 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming</title>
+      <link>https://future-insight.blog/code-report/11th-July-2023/</link>
+      <pubDate>Tue, 11 Jul 2023 14:11:13 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/11th-July-2023/</guid>
+      <description>It is July 11th, 2023, and amidst the belief that the AI hype was dying down, OpenAI surprised everyone by releasing a Code Interpreter to its 20 million subscription users. In this blog post, we will explore the implications of this new feature and its potential effects on programmers. We will also delve into its current capabilities by performing various tasks to gauge its limitations.
+The Arrival of the Code Interpreter: OpenAI&amp;rsquo;s recent announcement revealed that the Code Interpreter would be made available to all ChatGPT Plus users within the next week.</description>
+    </item>
+    
     <item>
       <title>EJS: A Templating Engine for Node.js</title>
       <link>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</link>
