@@ -7,6 +7,7 @@ tags: ["blog" ,"machine-learning"]
 description: ""
 showTableOfContents: true
 url: /machine-learning/machine-learning/FDIA/
+image: ""
 ---
 
 -----
@@ -42,10 +43,8 @@ If you have any questions, please contact
 ## Author:
 ### Abdul Rafay:
 - [Email](mailto:99marafay@gmail.com)
-- [Personal-Website](https://rafay99.info)
+- [Personal-Website](/author)
 - [GitHub](github.com/rafay99-epic) 
-
-
 
 
 # References:
@@ -57,5 +56,5 @@ If you have any questions, please contact
 3. https://github.com/urwithajit9/FDIA-classification
 
 # Thumbnail:
-![image](/images/2023/FDIA/False-Data-Injection-Attack.png)
+![image](/images/2023/Machine-Learning/FDIA/False-Data-Injection-Attack.png)
 

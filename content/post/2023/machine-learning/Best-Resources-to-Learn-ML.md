@@ -7,6 +7,7 @@ tags: ["blog" ,"Machine Learning"]
 description: "best resources to learn machine learning & Deep Learning"
 showTableOfContents: true
 url: /machine-learning/best-resources-for-ML/
+image: "/images/2023/Machine-Learning/resources-machine-learning/best-resources-for-ml.png"
 ---
 
 -----
@@ -45,5 +46,5 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 # Thumbnail:
-![Best Resources Places to Learn machine Learning](/images/2023/resources-machine-learning/best-resources-for-ml.png)
+![Best Resources Places to Learn machine Learning](/images/2023/Machine-Learning/resources-machine-learning/best-resources-for-ml.png)
 

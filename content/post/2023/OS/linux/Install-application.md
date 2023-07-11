@@ -5,7 +5,7 @@ draft: false
 type: "post"
 tags: ["blog" ,"linux" , "operating-system"]
 description: "Install Application on Linux"
-showTableOfContents: false
+showTableOfContents: true
 url: /OS/linux/linux-app-simplified/
 image: "/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png"
 ---
@@ -356,6 +356,9 @@ If you encounter any issues or have any questions regarding any of the articles 
 To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
+
+# Thumbnail
+![image](/images/2023/Operating-System/Linux/Install-application-on-linux/Install-application-on-Linux.png)
 
 <!-- # WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

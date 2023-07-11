@@ -7,7 +7,7 @@ tags: ["blog" ,"Web Development"]
 description: "Learn the basic of NodeJS"
 showTableOfContents: true
 url: /web-development/basic-nodejs/
-image: "/images/2023//basic-of-nodejs/basic-of-Node Js.png"
+image: "/images/2023/Web-Development/basic-of-nodejs/basic-of-Node-Js.png"
 ---
 
 ----
@@ -175,6 +175,8 @@ If you encounter any issues or have any questions regarding any of the articles 
 To access the contact page, simply click on the "Contact" tab in the navigation menu or visit the following URL: [contact page](https://future-insight.blog/contact). From there, you can fill out a contact form or find additional information on how to get in touch with the support team.
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
+# Thumbnail:
+![image](/images/2023/Web-Development/basic-of-nodejs/basic-of-Node-Js.png)
 
 <!-- # References: -->
 <!-- Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help. -->

@@ -7,7 +7,7 @@ tags: ["blog" ,"operating-system", "security" , "windows"]
 description: "Learn secure window"
 showTableOfContents: true
 url: /OS/windows/secure-your-windows/
-image: "/images/2023/Window-Security/Windows-Security-Protecting-Your-Operating-System.png"
+image: "/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png"
 ---
 
 --------------------------------
@@ -63,16 +63,16 @@ A firewall is like the bouncer of network security, keeping the bad guys out and
 To enable the firewall on Windows 10, you can follow these steps:
 
 1. Click on the "Start" button on your desktop and select the "Settings" gear icon.
-![image](/images/2023/Window-Security/open-setting.png)
+![image](/images/2023/Operating-System/Windows/Window-Security/open-setting.png)
 
 2. In the Settings window, click on "Update & Security."
-![image](/images/2023/Window-Security/security-&-update.png)
+![image](/images/2023//Operating-System/Windows/Window-Security/security-&-update.png)
 
 3. From the left-hand menu, choose "Windows Security."
-![image](/images/2023/Window-Security/window-security.png)
+![image](/images/2023//Operating-System/Windows/Window-Security/window-security.png)
 
 4. Within Windows Security, select "Firewall & network protection."
-![image](/images/2023/Window-Security/firewall-on.png)
+![image](/images/2023//Operating-System/Windows/Window-Security/firewall-on.png)
 
 5. Under the "Firewall & network protection" section, you will see your active network connections. Click on the network you want to enable the firewall for (e.g., "Private network").
 
@@ -103,16 +103,16 @@ Detecting viruses is crucial for any operating system as they can rapidly wreak 
 To fortify your defense, enabling Windows Defender on Windows 10 is a key step. Here's how to do it:
 
 1. Begin by clicking on the "Start" button on your desktop and selecting the gear icon for "Settings."
-![image](/images/2023/Window-Security/open-setting.png)
+![image](/images/2023//Operating-System/Windows/Window-Security/open-setting.png)
 
 2. Within the Settings window, click on "Update & Security."
-![image](/images/2023/Window-Security/security-&-update.png)
+![image](/images/2023/Operating-System/Windows/Window-Security/security-&-update.png)
 
 3. From the left-hand menu, choose "Windows Security."
-![image](/images/2023/Window-Security/window-security.png)
+![image](/images/2023/Operating-System/Windows/Window-Security/window-security.png)
 
 4. In the Windows Security section, click on "Virus & threat protection."
-![image](/images/2023/Window-Security/virus-protection.png)
+![image](/images/2023/Operating-System/Windows/Window-Security/virus-protection.png)
 
 5. Under Virus & threat protection, you will find the Windows Defender settings. Ensure that the "Real-time protection" toggle switch is turned on.
 
@@ -297,7 +297,7 @@ Here are all of the links and references that I used to write this blog, so feel
 - [Pureinfotech](https://pureinfotech.com/best-security-settings-windows-11/)
 
 # Thumbnail
-![window-Security](/images/2023/Window-Security/Windows-Security-Protecting-Your-Operating-System.png)
+![window-Security](/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png)
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
