@@ -1,5 +1,5 @@
 ---
-title: "Window Package Manager: Winget"
+title: "Winget: A Powerful Tool for Effortless Software Installation on Windows"
 date: 2023-07-13T12:51:13+05:00
 draft: false
 type: "post"
