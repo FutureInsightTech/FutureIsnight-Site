@@ -35,9 +35,16 @@ Installing Winget is very easy. If you are using Windows 11, Winget is already i
 To install Winget, follow these steps:
 
 1. Search for "Microsoft Store" in the Windows search bar.
+  ![image](/images/2023/Operating-System/Windows/Use-winget/Screenshot%202023-07-19%20220614.png)
 2. Open the Microsoft Store.
+  ![image](/images/2023/Operating-System/Windows/Use-winget/microsoft-srore-open.png)
+
 3. In the store, search for "App Installer".
+  ![image](/images/2023/Operating-System/Windows/Use-winget/winget-store.png)
+
 4. Open the App Installer page. You can also visit this [link](https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1?hl=en-us&gl=us).
+  ![image](/images/2023/Operating-System/Windows/Use-winget/update=winget.png)
+
 5. Click on "Install". Winget should now be installed on your system.
 
 # Using Winget
@@ -61,7 +68,7 @@ To search for any software using Winget, follow these instructions:
    ```ps
    winget search google-chrome
    ```
-
+![search-applications](/images/2023/Operating-System/Windows/Use-winget/winget-search-application.png)
 ## Install
 
 Once you have found your desired application, it's time to install it. To install the application, you need two pieces of information: the Application ID and the Application name. You can find both of these by searching for the application or copying the command from [winget.run](https://winget.run/). The installation command is as follows:
@@ -71,11 +78,13 @@ winget install -e --id <package_name>
 ```
 
 **Example:**
-To install the Brave browser, the command would be:
+To install the Unity Hub, the command would be:
 
 ```ps
-winget install -e --id Brave.Brave
+winget install -e --id Unity.UnityHub
 ```
+![image](/images/2023/Operating-System/Windows/Use-winget/Install-application.png)
+
 
 ## Upgrade
 
@@ -84,6 +93,8 @@ Now that you have all the applications installed on your system, it's essential 
 ```ps
 winget upgrade --all
 ```
+
+![upgrade-applications](/images/2023/Operating-System/Windows/Use-winget/upgrade-all.png)
 
 This command will check the version numbers of all your applications and search for any available updates. If updates are found, Winget will download and install them on your system.
 
