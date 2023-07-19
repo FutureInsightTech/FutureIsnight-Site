@@ -7,7 +7,7 @@ tags: ["blog" ,"windows", "Operating System"]
 description: "winget the ultimate way to install applications"
 showTableOfContents: true
 url: /OS/windows/winget-package-manager
-image: "/images/2023/"
+image: "/images/2023/Operating-System/Windows/Use-winget/Winget-CLI.png"
 ---
 
 -----------
@@ -172,8 +172,6 @@ The following table lists the commands that are available in the winget tool.
 </table>
 
 
-
-
 # Windows Updates
 
 It's important to note that Winget will not update your Windows operating system. You will need to perform Windows updates separately.
@@ -206,6 +204,8 @@ Here are all of the links and references that I used to write this blog, so feel
 - [Article 2](https://www.windowscentral.com/how-use-winget-windows-10)
 - [Article 3](https://pureinfotech.com/install-winget-windows-11/)
 
+# Thumbnail
+![image](/images/2023/Operating-System/Windows/Use-winget/Winget-CLI.png)
 <!-- ## WalkThrough Video -->
 
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
