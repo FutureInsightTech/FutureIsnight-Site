@@ -10,6 +10,8 @@ url: /OS/windows/Power-Shell-Scripting/
 image: "/images/2023/Operating-System/Windows/PowerShell-Script/PowerShell-Unleashing-the-Power-of-Automation-and-System-Management.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 Windows, oh Windows! It may look like a friendly playground for beginners, but let me tell you, it's a true powerhouse under the hood, and today, we're diving into its secret weapons that every developer should know about!
@@ -17,7 +19,7 @@ Windows, oh Windows! It may look like a friendly playground for beginners, but l
 1. **Introducing WSL (Windows Subsystem for Linux):**
 Ever dreamed of having the best of both worlds? With WSL, you can seamlessly run a full-fledged Linux environment right inside your Windows system. It's like magic! Developers, this gem will revolutionize your workflow, and I'll guide you through the wonders it brings in my latest blog post on [WSL](/OS/windows/wsl-install/).
 
-2. **PowerShell: A Powerful Tool for Windows System Management**
+1. **PowerShell: A Powerful Tool for Windows System Management**
 Get ready to unleash the ultimate developer tool – Power Shell Scripting! If you've ever felt the power of command-line tools, this will take it to a whole new level. But fear not, I've got you covered! In this blog post, I'll walk you through what Power Shell Scripting is, how to use it like a pro, and the reasons why it's an absolute game-changer for developers.
 
 But wait, there's more! I won't just leave you with theory; we'll dive into some basic commands that will elevate your scripting skills from day one. From automating repetitive tasks to streamlining your workflows, Power Shell will be your new best friend.
@@ -242,58 +244,6 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 # Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## Knowledge Nexus
-
-<style>
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: calc(29.33% - 20px); /* 3 cards in a single line with 20px space between each */
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 2px solid black; /* Add a strong black border around the card */
-    border-radius: 4px;
-    text-align: center; /* Center card content */
-    text-decoration: none; /* Remove default underline for anchor links */
-    color: black; /* Optional: Text color for the card content */
-    transition: box-shadow 0.9s; /* Smooth transition for the hover effect */
-  }
-
-  .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Hover effect: Slightly raise the card on hover */
-    transform: translateY(-5px); /* Hover effect: Slightly move the card upwards */
-  }
-
-  .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* Updated border-radius for a smoother appearance */
-  }
-
-  .card h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    /* Color removed to show the text in default color */
-  }
-
-  @media (max-width: 768px) {
-    .card {
-      width: calc(50% - 20px); /* 2 cards in a single line with 20px space between each for smaller screens */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .card {
-      width: 100%; /* 1 card taking full width for even smaller screens */
-    }
-  }
-</style>
 
 <div class="cards-container">
   <a class="card" href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.3">
