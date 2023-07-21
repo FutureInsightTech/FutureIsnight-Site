@@ -3,7 +3,7 @@ title: "Image Optimization"
 date: 2023-05-23T00:26:19+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"linux", "operating-system"]
+tags: ["blog" ,"linux", "operating-system", "scripting"]
 description: "Optimize Your Images for Better Performance"
 showTableOfContents: true
 url: /OS/linux/image-optimization/
