@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /web-development/explore-databases/
 image: "/images/2023/Web-Development/databases/Database-exployer.png"
 ---
-
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
 -----------
 
 Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
@@ -134,14 +134,18 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-
 ## GitHub Repository
-- [Example Code](https://github.com/rafay99-epic/DevTestBox)
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/DevTestBox">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Example Code</h3>
+  </a>
+</div>
 
+<!-- ## Video WalkThrough -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
 # Thubnail Image
 ![image](/images/2023/Web-Development/databases/Database-exployer.png)
-
-<!-- ## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

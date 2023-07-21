@@ -578,13 +578,18 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## GitHub Repository
-- [Pheonix-AI](https://github.com/rafay99-epic/Pheonix-AI)
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Pheonix-AI">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Pheonix-AI</h3>
+  </a>
+</div>
 
-<!-- ## WalkThrough Video: -->
-<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+<!-- ## Video WalkThrough
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
 
 # Thumbnail
 ![image](/images/2023/Web-Development/Pheonix-AI/Pheonix-AI.png)
