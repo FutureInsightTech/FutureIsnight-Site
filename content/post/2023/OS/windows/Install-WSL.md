@@ -10,7 +10,10 @@ url: /OS/windows/wsl-install/
 image: "/images/2023/Operating-System/windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
+
 Linux is ubiquitous, and no matter how much we resist, there will come a point when we must embrace it. So, why not start now? In this article, we will explore the process of installing Linux on Windows.
 
 As we embark on this journey, you may find yourself pondering various questions, such as:
@@ -181,16 +184,36 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references
-- Microsoft Documentation
-    - [WSL Install](https://learn.microsoft.com/en-us/windows/wsl/install)
-    - [Features od WSL](https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features)
-    - [ About WSL](https://learn.microsoft.com/en-us/windows/wsl/about)
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/install">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">WSL Install</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Features of WSL</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/about">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">About WSL</h3>
+  </a>
+</div>
+
 ## GitHub Repository
-- [Arch WSL Development](https://github.com/VSWSL/Arch-WSL)
-- [Fedora WSL Development](https://github.com/VSWSL/Fedora-WSL)
+<div class="cards-container">
+  <a class="card" href="https://github.com/VSWSL/Arch-WSL">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Arch WSL Development</h3>
+  </a>
+    <a class="card" href="https://github.com/VSWSL/Fedora-WSL">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Fedora WSL Development</h3>
+  </a>
+</div>
+
 # Thumbnail
 ![Image](/images/2023/Operating-System/Windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png)
 
