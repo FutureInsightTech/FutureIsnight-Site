@@ -10,6 +10,7 @@ url: /machine-learning/linear-regression/
 image: "/images/2023/Machine-Learning/Linear-Regression/linear-regression.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
 ----
 
 Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable. In this blog, we will explore the concept of linear regression, its types, and how to implement it using Python.
@@ -167,16 +168,31 @@ If you have any questions, please contact
 - [Personal-Website](/author)
 - [GitHub](github.com/rafay99-epic) 
 
-# References:
-So this Blog I did some research and tried my best to learn so if you any issue you can contact me or references the links bellow.
-## Articles references:
-- [Article 1](https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/what-is-linear-regression/)
-- [Article 2](https://www.analyticsvidhya.com/blog/2021/05/all-you-need-to-know-about-your-first-machine-learning-model-linear-regression/#:~:text=In%20the%20most%20simple%20words,the%20dependent%20and%20independent%20variable.)
-## GitHub Repository:
-- [Repository 1](https://github.com/1-Power/Machine-Learning/blob/main/Linear-Regression/LinearRegession.ipynb)
-## Video References:
-- [Video Reference 1](https://www.youtube.com/watch?v=kHwlB_j7Hkc)
+# Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/what-is-linear-regression/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href="https://www.analyticsvidhya.com/blog/2021/05/all-you-need-to-know-about-your-first-machine-learning-model-linear-regression/#:~:text=In%20the%20most%20simple%20words,the%20dependent%20and%20independent%20variable.">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+</div>
+
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/1-Power/Machine-Learning/blob/main/Linear-Regression/LinearRegession.ipynb">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![image](/images/2023/Machine-Learning/Linear-Regression/linear-regression.png)
 
+
+<!-- ## Video References:
+- [Video Reference 1](https://www.youtube.com/watch?v=kHwlB_j7Hkc) -->
