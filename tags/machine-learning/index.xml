@@ -33,7 +33,7 @@ What is Logistical Regression Logistic regression is a type of regression analys
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
       <guid>https://future-insight.blog/machine-learning/linear-regression/</guid>
-      <description>Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
+      <description>---- Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ What is Logistical Regression Logistic regression is a type of regression analys
       <pubDate>Mon, 13 Feb 2023 20:00:44 +0500</pubDate>
       
       <guid>https://future-insight.blog/machine-learning/machine-learning/FDIA/</guid>
-      <description>False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
+      <description>----- False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records.</description>
     </item>
     

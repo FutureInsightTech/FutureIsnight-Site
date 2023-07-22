@@ -122,7 +122,7 @@ Problem: The default behavior of most shells is to not display any feedback, suc
       <pubDate>Sat, 24 Jun 2023 22:51:59 +0500</pubDate>
       
       <guid>https://future-insight.blog/code-report/24th-June-2023/</guid>
-      <description>Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
+      <description>----------- Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
 This announcement raises several crucial questions:
  What is closed-source software? What is the significance of Red Hat Linux? What actions are they taking? What is the problem? Should i be worry? But what about licensing?</description>
     </item>
@@ -133,7 +133,7 @@ This announcement raises several crucial questions:
       <pubDate>Sat, 24 Jun 2023 01:53:49 +0500</pubDate>
       
       <guid>https://future-insight.blog/web-development/explore-databases/</guid>
-      <description>Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
+      <description>----------- Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
 Databases in Web Development Relational Databases Relational databases store data in a structured manner, using tables with predefined relationships between them.</description>
     </item>
     
@@ -317,7 +317,7 @@ What is Logistical Regression Logistic regression is a type of regression analys
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
       <guid>https://future-insight.blog/machine-learning/linear-regression/</guid>
-      <description>Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
+      <description>---- Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
     </item>
     
     <item>
@@ -326,7 +326,7 @@ What is Logistical Regression Logistic regression is a type of regression analys
       <pubDate>Mon, 13 Feb 2023 20:00:44 +0500</pubDate>
       
       <guid>https://future-insight.blog/machine-learning/machine-learning/FDIA/</guid>
-      <description>False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
+      <description>----- False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records.</description>
     </item>
     

@@ -22,7 +22,7 @@
       <pubDate>Sat, 24 Jun 2023 01:53:49 +0500</pubDate>
       
       <guid>https://future-insight.blog/web-development/explore-databases/</guid>
-      <description>Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
+      <description>----------- Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
 Databases in Web Development Relational Databases Relational databases store data in a structured manner, using tables with predefined relationships between them.</description>
     </item>
     
