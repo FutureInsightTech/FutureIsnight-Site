@@ -94,9 +94,18 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 
-# References:
-## Articles references:
-- [Article References 1](https://copy.ai/)
+
+
+
+# Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://copy.ai/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![image](/images/2023/Machine-Learning/Logistic-Regression/Logistic-Regression.png)

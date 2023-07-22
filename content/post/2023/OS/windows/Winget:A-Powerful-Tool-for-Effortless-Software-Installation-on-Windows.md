@@ -10,6 +10,8 @@ url: /OS/windows/winget-package-manager
 image: "/images/2023/Operating-System/Windows/Use-winget/Winget-CLI.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 For years, when it came to installing applications on Windows, we would visit the internet, like the Google Chrome website, and download the **.exe** file. Once downloaded, we would click and click until the application was installed on our system.
@@ -194,18 +196,27 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
-
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Microsoft Article</h3>
+  </a>
+  <a class="card" href="https://pureinfotech.com/install-winget-windows-11/">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">PureinFotech Article</h3>
+  </a>
+  <a class="card" href="https://www.windowscentral.com/how-use-winget-windows-10">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Window Centeral Article</h3>
+  </a>
 
-## Articles references
+</div>
 
-- [Article 1](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget)
-- [Article 2](https://www.windowscentral.com/how-use-winget-windows-10)
-- [Article 3](https://pureinfotech.com/install-winget-windows-11/)
+<!-- ## Video WalkThrough -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
 
 # Thumbnail
 ![image](/images/2023/Operating-System/Windows/Use-winget/Winget-CLI.png)
-<!-- ## WalkThrough Video -->
-
-<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

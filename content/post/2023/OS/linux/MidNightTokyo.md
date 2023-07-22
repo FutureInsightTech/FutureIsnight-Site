@@ -10,6 +10,7 @@ url: /OS/linux/MidnightTokyoWM/
 image: "/images/2023/Operating-System/Linux/my-new-desktop/Midnight-Tokyo.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
    
 -----------
 
@@ -183,11 +184,17 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
+
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## GitHub Repository:
-The source code for this project is available on the GitHub platform.
-- [MidnightTokyoWM](https://github.com/rafay99-epic/MidnightTokyo)
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/MidnightTokyo">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">MidnightTokyoWM</h3>
+  </a>
+</div>
+
 
 # Thumbnail
 ![thumbnail](/images/2023/Operating-System/Linux/my-new-desktop/Midnight-Tokyo.png)

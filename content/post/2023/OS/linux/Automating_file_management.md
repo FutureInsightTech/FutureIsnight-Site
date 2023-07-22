@@ -10,6 +10,7 @@ url: /OS/linux/automating-file-management-with-bash-script/
 image: "/images/2023/Operating-System/Linux/automate-task/Automating-thumbnail.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
 
 ---
 In today's fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we'll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We'll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process. Let's dive in!
@@ -190,9 +191,15 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# Source Code
-## GitHub Repository:
-- [Scripts](https://github.com/rafay99-epic/Linux-DotFiles/blob/main/.scripts/file-monitoring)
+# Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Linux-DotFiles/blob/main/.scripts/file-monitoring">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Script in GitHub</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![Thumbnail](/images/2023/Operating-System/Linux/automate-task/Automating-thumbnail.png)

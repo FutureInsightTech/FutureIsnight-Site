@@ -10,6 +10,8 @@ url: /web-development/ejs-nodejs-templating-guide/
 image: "/images/2023/ejs-nodejs/Using-ejs-thumbnail.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 HTML is great—simple and fast for rendering webpages. However, there is a problem: code repetition. Writing the same code again and again for every page can be tedious. What if there was a way to write the code once and use it everywhere? That's where EJS comes in. EJS is a templating engine that allows us to write code once and reuse it across multiple pages. Let's get started!
@@ -308,13 +310,26 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [EJS Pratice](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application)
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">EJS Pratice & Article</h3>
+  </a>
+</div>
 
-## GitHub Repository:
-- [GitHub Project](https://github.com/rafay99-epic/Portfolio-Website/tree/main)
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Portfolio-Website/tree/main">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Working Project</h3>
+  </a>
+</div>
+
+## Video WalkThrough
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
 
 
 # Thumbnail

@@ -10,6 +10,8 @@ url: /OS/linux/image-optimization/
 image: "/images/2023/Operating-System/Linux/image-optimization/Image-Optimization.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----
 Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.
 
@@ -105,10 +107,15 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## GitHub Repository:
-- [Source Code](https://github.com/rafay99-epic/Future-Insight/blob/main/reduce_image.sh)
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Future-Insight/blob/main/reduce_image.sh">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Source Code</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![image](/images/2023/Operating-System/Linux/image-optimization/Image-Optimization.png)

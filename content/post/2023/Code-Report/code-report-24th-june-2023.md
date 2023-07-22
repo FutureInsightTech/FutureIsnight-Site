@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /code-report/24th-June-2023/
 image: "/images/2023/code-report/2023/24th-june/red-hat.png"
 ---
-
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
 -----------
 
 Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
@@ -114,15 +114,26 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Article 1](https://news.itsfoss.com/red-hat-restricts-source-code/)
-- [Article 2](https://www.itpro.com/software/open-source/what-red-hats-source-code-restrictions-mean-for-businesses)
+## Knowledge Nexus
+
+<div class="cards-container">
+  <a class="card" href="https://news.itsfoss.com/red-hat-restricts-source-code/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  
+  <a class="card" href="https://www.itpro.com/software/open-source/what-red-hats-source-code-restrictions-mean-for-businesses">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  
+</div>
 
 # Thumbnail
 ![Thumbnail](/images/2023/code-report/2023/24th-june/red-hat.png)
-
 
 <!-- ## WalkThrough Video: -->
 <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
