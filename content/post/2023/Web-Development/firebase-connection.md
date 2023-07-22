@@ -9,6 +9,9 @@ showTableOfContents: true
 url: /web-development/firebase-connection/
 image: "/images/2023/Web-Development/firebase-database/Firebase-connection.png"
 ---
+
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 In today's blog post, we will delve into the world of Firebase Database and explore how to use it effectively in your web development projects. Whether you're a beginner or an experienced developer, this guide will take you from the basics to advanced concepts, covering everything you need to know about Firebase Database. So let's dive in!
@@ -142,14 +145,19 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/DevTestBox">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">DevTexBox Repository</h3>
+  </a>
+</div>
 
-## GitHub Repository:
-- [DevTestBox](https://github.com/rafay99-epic/DevTestBox)
+## Video WalkThrough
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
 
-# Thumbnail Image
-![image](/images/2023/Web-Development/firebase-database/Firebase-connection.png)
-
-<!-- ## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+<!-- # Thumbnail Image
+![image](/images/2023/Web-Development/firebase-database/Firebase-connection.png) -->

@@ -1,0 +1,49 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.card {
+    width: calc(29.33% - 20px); /* 3 cards in a single line with 20px space between each */
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black; /* Add a strong black border around the card */
+    border-radius: 4px;
+    text-align: center; /* Center card content */
+    text-decoration: none; /* Remove default underline for anchor links */
+    color: black; /* Optional: Text color for the card content */
+    transition: box-shadow 0.9s; /* Smooth transition for the hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Hover effect: Slightly raise the card on hover */
+    transform: translateY(-5px); /* Hover effect: Slightly move the card upwards */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Updated border-radius for a smoother appearance */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    /* Color removed to show the text in default color */
+}
+
+@media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px); /* 2 cards in a single line with 20px space between each for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+      width: 100%; /* 1 card taking full width for even smaller screens */
+    }
+}

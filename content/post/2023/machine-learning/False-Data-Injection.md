@@ -9,7 +9,7 @@ showTableOfContents: true
 url: /machine-learning/machine-learning/FDIA/
 image: ""
 ---
-
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
 -----
 
 False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
@@ -47,13 +47,34 @@ If you have any questions, please contact
 - [GitHub](github.com/rafay99-epic) 
 
 
-# References:
-## Articles references:
-1. https://crashtest-security.com/false-data-injection-attack/
-## GitHub Repository:
-1. https://github.com/wsyCUHK/WSYCUHK_FDIA
-2. https://github.com/dependable-cps/FDIA-PdM
-3. https://github.com/urwithajit9/FDIA-classification
+
+# Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://crashtest-security.com/false-data-injection-attack/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+</div>
+
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href="https://github.com/wsyCUHK/WSYCUHK_FDIA">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository 01</h3>
+  </a>
+
+  <a class="card" href="https://github.com/dependable-cps/FDIA-PdM">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository 02</h3>
+  </a>
+
+  <a class="card" href="https://github.com/urwithajit9/FDIA-classification">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository 03</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![image](/images/2023/Machine-Learning/FDIA/False-Data-Injection-Attack.png)

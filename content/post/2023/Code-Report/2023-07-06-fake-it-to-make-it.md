@@ -10,6 +10,8 @@ url: /code-report/06th-July-2023/
 image: "/images/2023/code-report/2023/6th-July/Code-Report-6th-July-2023.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 # The Perils of Faking User Growth: Lessons from IRL's Rise and Fall
@@ -50,18 +52,28 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
-Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Tech Crunch](https://techcrunch.com/2023/06/26/irl-shut-down-fake-users/#:~:text=Ironically%2C%20the%20social%20app%20IRL,capital%2C%20IRL%20is%20shutting%20down)
 
-- [Fireship](https://www.youtube.com/watch?v=M_wZpSEvOkc)
+# Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://techcrunch.com/2023/06/26/irl-shut-down-fake-users/#:~:text=Ironically%2C%20the%20social%20app%20IRL,capital%2C%20IRL%20is%20shutting%20down">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  
+  <a class="card" href="https://www.youtube.com/watch?v=M_wZpSEvOkc">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  
+</div>
+
+<!-- ## Video WalkThrough
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
 
 # Thumbnail
 ![image](/images/2023/code-report/2023/6th-July/Code-Report-6th-July-2023.png)
 
-<!-- ## GitHub Repository: -->
-<!-- - [GitHub Repository 1]() -->
 
-<!-- ## WalkThrough Video: -->
-<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+

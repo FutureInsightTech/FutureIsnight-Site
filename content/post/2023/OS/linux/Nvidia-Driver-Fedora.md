@@ -10,6 +10,8 @@ url: /OS/linux/nvidia-driver-fedora-linux/
 image: "/images/2023/Operating-System/Linux/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 In the world of graphics-intensive tasks and gaming, having the right drivers installed is crucial for optimal performance and compatibility. If you are a Fedora user seeking to harness the power of Nvidia graphics cards, you've come to the right place. This comprehensive guide will walk you through the step-by-step process of installing Nvidia drivers on your Fedora system.
@@ -159,12 +161,29 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href="https://rpmfusion.org/Howto/NVIDIA#About_this_Howto">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+</div>
 
 ## GitHub Repository
-- [RPM Fusion Enable](https://docs.fedoraproject.org/en-US/quick-docs/setup_rpmfusion/)
-- [Offical Documentation RPM Fusion](https://rpmfusion.org/Howto/NVIDIA#About_this_Howto)
+<div class="cards-container">
+  <a class="card" href=" ">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository</h3>
+  </a>
+</div>
+
 # Thubnail Image
 ![image](/images/2023/Operating-System/Linux/Nvidia-Driver-Fedora/Nvidia-Driver-Fedora.png)
 

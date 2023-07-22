@@ -88,12 +88,3 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 # Thumbnail
 ![image](/images/2023//Operating-System/Linux/Terminal-feedback/Enhance-Terminal-Experience.png)
-
-
-<!-- # References: -->
-<!-- Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help. -->
-<!-- ## Articles references: -->
-<!-- - [Article 1]() -->
-
-<!-- ## WalkThrough Video: -->
-<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->

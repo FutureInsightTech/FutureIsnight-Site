@@ -10,6 +10,8 @@ url: /OS/windows/secure-your-windows/
 image: "/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 --------------------------------
 
 The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks. If one is not cautious, personal information can be sold online. Various organizations track your online activities, creating profiles that are used to deliver targeted advertisements. Additionally, the threat of viruses looms, capable of compromising your system and resulting in the loss of valuable data.
@@ -291,10 +293,15 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-- [Pureinfotech](https://pureinfotech.com/best-security-settings-windows-11/)
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://pureinfotech.com/best-security-settings-windows-11/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Pureinfotech</h3>
+  </a>
+</div>
 
 # Thumbnail
 ![window-Security](/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png)

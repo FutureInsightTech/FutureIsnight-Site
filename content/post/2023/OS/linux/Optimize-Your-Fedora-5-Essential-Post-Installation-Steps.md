@@ -10,6 +10,8 @@ url: /OS/linux/fedora-install-tips/
 image: "/images/2023/Operating-System/Linux/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png"
 ---
 
+<link rel="stylesheet" href="/css/reference-content/reference-content.css">
+
 -----------
 
 So you've installed Fedora on your system, and I hope you're enjoying it. However, out of the box, there are a few things that could be improved. In this blog post, we will go through the top five things to do after installing Fedora on your system.
@@ -128,12 +130,23 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# References:
+# Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-## Articles references:
-1.  [Flatpak](https://flatpak.org/setup/Fedora)
-2.  [MultiMedia-Codec](https://rpmfusion.org/Howto/Multimedia)
-3.  [RPM-Fusion](https://rpmfusion.org/Configuration)
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href="https://flatpak.org/setup/Fedora">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href="https://rpmfusion.org/Howto/Multimedia">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  <a class="card" href="https://rpmfusion.org/Configuration">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+</div>
 
 # Thumbnail:
 ![image](/images/2023/Operating-System/Linux/Top-5-Fedora/Optimize-Your-Fedora-5-Essential-Post-Installation-Steps.png)
