@@ -62,7 +62,7 @@ Best regards,
         </div>
         <!-- Pheonix-AI -->
         <div class="card" onclick="redirectToURL('/Pheonix-AI/')">
-            <img src="/images/2023/Pheonix-AI/Pheonix-AI.png" alt="Image 10">
+            <img src="/images/2023/Web-Development/Pheonix-AI/Pheonix-AI.png" alt="Image 10">
             <div class="border">
                 <div class="heading">Pheonix-AI: ChatBot</div>
             </div>
@@ -104,13 +104,13 @@ Best regards,
         </div> -->
         <!-- midNight Toky AWM -->
         <div class="card" onclick="redirectToURL('/MidnightTokyoWM/')" >
-            <img src="/images/2023/my-new-desktop/Midnight-Tokyo.png" alt="Image 9">
+            <img src="/images/2023/Operating-System/Linux/my-new-desktop/Midnight-Tokyo.png" alt="Image 9">
             <div class="border">
                 <div class="heading">MidnigTokyo</div>
             </div>
         </div>
         <div class="card" onclick="redirectToURL('/image-optimization/')" >
-            <img src="/images/2023/image-optimization/Image-Optimization.png" alt="Image 9">
+            <img src="/images/2023/Operating-System/Linux/image-optimization/Image-Optimization.png" alt="Image 9">
             <div class="border">
                 <div class="heading">Image optimization</div>
             </div>
