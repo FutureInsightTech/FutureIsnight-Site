@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Jul 2023 20:58:13 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jul 2023 15:03:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Report: From Birds to X Org Transformation</title>
+      <link>https://future-insight.blog/code-report/25th-July-2023/</link>
+      <pubDate>Tue, 25 Jul 2023 15:03:44 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/25th-July-2023/</guid>
+      <description>Today is July 25, and I am reading code report about Twitter&amp;rsquo;s recent logo change. Regrettably, the iconic blue bird logo was replaced this morning with a new logo called &amp;ldquo;X.&amp;rdquo;
+Elon Musk, the owner of Twitter, tweeted on Sunday that the idea behind changing the logo to &amp;ldquo;X&amp;rdquo; was to &amp;ldquo;embody the imperfections in us all that make us unique.&amp;rdquo; He also mentioned that they will gradually bid farewell to the Twitter brand and all bird-related imagery.</description>
+    </item>
+    
     <item>
       <title>PowerShell: Unleashing the Power of Automation and System Management</title>
       <link>https://future-insight.blog/OS/windows/Power-Shell-Scripting/</link>
