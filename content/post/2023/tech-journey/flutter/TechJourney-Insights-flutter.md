@@ -6,7 +6,7 @@ type: "post"
 tags: ["blog" ,"new-tech", "Flutter"]
 description: "Begining of my journey with Flutter"
 showTableOfContents: true
-url: /tech-journey/Flutter/Flutter-begining
+url: /tech-journey/Flutter/Flutter-begining/
 image: "/images/2023/Tech-Journey/Flutter/Flutter-Begining/Tech-Journey-Insights-Flutter-Begining.png"
 ---
 
