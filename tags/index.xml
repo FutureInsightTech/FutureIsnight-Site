@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jul 2023 15:03:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Jul 2023 22:00:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Tue, 25 Jul 2023 15:03:44 +0500</pubDate>
+      <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://future-insight.blog/tags/flutter/</link>
+      <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>new-tech</title>
+      <link>https://future-insight.blog/tags/new-tech/</link>
+      <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/new-tech/</guid>
       <description></description>
     </item>
     
