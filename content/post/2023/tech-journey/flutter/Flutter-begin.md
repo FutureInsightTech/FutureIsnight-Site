@@ -7,7 +7,7 @@ tags: ["blog" ,"new-tech", "Flutter"]
 description: "Basic of Dart Programming Language"
 showTableOfContents: true
 url: /tech-journey/Flutter/dart-programming/
-image: "/images/2023/"
+# image: "/images/2023/"
 ---
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
@@ -294,31 +294,15 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## Knowledge Nexus
 <div class="cards-container">
-  <a class="card" href=" ">
+  <a class="card" href="https://dart.dev/">
     <img src="/images/content-icons/19197011.jpg" alt="Article 1">
-    <h3 class="title">Article 1</h3>
+    <h3 class="title">Dart Website</h3>
   </a>
-  <a class="card" href=" ">
+  <a class="card" href="https://dart.dev/language">
     <img src="/images/content-icons/20944335.jpg" alt="Article 2">
-    <h3 class="title">Article 2</h3>
+    <h3 class="title">Dart Language</h3>
   </a>
-  <a class="card" href=" ">
+  <a class="card" href="https://dartpad.dev/">
     <img src="/images/content-icons/2936024.jpg" alt="Article 3">
-    <h3 class="title">Article 3</h3>
+    <h3 class="title">Try Dart</h3>
   </a>
-  <a class="card" href=" ">
-    <img src="/images/content-icons/8767135.jpg" alt="Article 3">
-    <h3 class="title">Article 3</h3>
-  </a>
-</div>
-
-## GitHub Repository
-<div class="cards-container">
-  <a class="card" href=" ">
-    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
-    <h3 class="title">GitHub Repository</h3>
-  </a>
-</div>
-
-## Video WalkThrough
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
