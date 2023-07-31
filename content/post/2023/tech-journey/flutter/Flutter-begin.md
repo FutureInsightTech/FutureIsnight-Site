@@ -274,16 +274,9 @@ void main() {
    */
 }
 ```
-
-## Types
-
-
-
-
-
-
-
 # Conclusion
+After Reading the documentation of Dart I can say that Dart is a very easy language to learn and I am excited to learn more about it. I will be writing more blogs on Dart and Flutter so stay tuned for that. plus the main concepts for programming is not changing not matter which programming language you are using. So if you know one programming language then you can learn any programming language.
+
 With that, we will see you next time.❤️❤️
 
 # Credit
