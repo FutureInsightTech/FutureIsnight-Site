@@ -14,20 +14,20 @@ image: "/images/2023/"
 
 -----------
 
-I want to learn Flutter and make cools apps but it was a while ago that I have to learn a new Programming language and I am rusty to learn a new programming lanaguage but I am eagure to learn something new so I  this blog Post I will be learning Dart Programming Language and I will be sharing my experience with you guys.
+I want to learn Flutter and make cool apps, but it was a while ago that I had to learn a new Programming language, and I am rusty to learn a new programming language, but I am eager to learn something new, so in this blog post, I will be learning the Dart Programming language, and I will be sharing my experience with you guys.
 
-Before we begin we need dark sdk on my system. So let's get started.
+Before we begin, we need dark sdk on my system. So let's get started.
 
 # Installing Dart SDK
-To install the Dart SDK is easy you can follow the guide on there website by [clicking here](https://dart.dev/get-dart).
+To install the Dart SDK, it is easy. You can follow the guide on their website by [clicking here](https://dart.dev/get-dart).
 
-I am using Window 11 so I will installing Dart SDK on my system. To install the Dark SDK you need a package manager called chocolatey. To install chocolatey you need to run the following command in the powershell as an administrator.
+I am using Windows 11, so I will install the Dart SDK on my system. To install the Dark SDK, you need a package manager called Chocolatey. To install Chocolatey, you need to run the following command in PowerShell as an administrator:
 
 ```ps
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Once Choc is installed on your system then you can installl Dart SDK and to install it the command is:
+Once Choc is installed on your system, you can install the Dart SDK. To install it, the command is:
 ```ps 
  choco install dart-sdk
 ```
