@@ -1,11 +1,11 @@
 ---
 title: "Flutter: Dart Programming Language"
 date: 2023-07-26T14:07:01+05:00
-draft: true
+draft: false
 type: "post"
 tags: ["blog" ,"new-tech", "Flutter"]
 description: "Basic of Dart Programming Language"
-showTableOfContents: true
+showTableOfContents: false
 url: /tech-journey/Flutter/dart-programming/
 # image: "/images/2023/"
 ---
