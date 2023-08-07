@@ -1,0 +1,59 @@
+.container-contact-US {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* max-width:200%; */
+    max-width:750px;
+    padding-right: 20px;
+  }
+.input-field {
+    margin-bottom: 20px;
+  }
+.input-field label {
+    display: block;
+    font-weight: bold;
+  }
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    resize: vertical;
+  }
+.input-field input:focus,
+.input-field textarea:focus {
+    outline: none;
+    border-color: #5c95e8; 
+  }
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5c95e8; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.submit-btn:hover {
+    background-color: #3d7ed5; 
+  }
+.h1
+  {
+    text-align: center;
+  }
+@media only screen and (max-width: 1024px),
+       only screen and (max-width: 961px),
+       only screen and (max-width: 822px),
+       only screen and (max-width: 768px),
+       only screen and (max-width: 480px),
+       only screen and (max-width: 320px) {
+  .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* max-width:200%; */
+        max-width:750px;
+        padding-right: 20px;
+  } 
+}
