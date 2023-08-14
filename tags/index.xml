@@ -6,13 +6,31 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Jul 2023 22:00:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 18:15:04 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
+      <pubDate>Mon, 14 Aug 2023 18:15:04 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://future-insight.blog/tags/linux/</link>
+      <pubDate>Mon, 14 Aug 2023 18:15:04 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operating-system</title>
+      <link>https://future-insight.blog/tags/operating-system/</link>
+      <pubDate>Mon, 14 Aug 2023 18:15:04 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/operating-system/</guid>
       <description></description>
     </item>
     
@@ -44,15 +62,6 @@
     </item>
     
     <item>
-      <title>operating-system</title>
-      <link>https://future-insight.blog/tags/operating-system/</link>
-      <pubDate>Fri, 21 Jul 2023 20:58:13 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/operating-system/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>scripting</title>
       <link>https://future-insight.blog/tags/scripting/</link>
       <pubDate>Fri, 21 Jul 2023 20:58:13 +0500</pubDate>
@@ -67,15 +76,6 @@
       <pubDate>Fri, 21 Jul 2023 20:58:13 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://future-insight.blog/tags/linux/</link>
-      <pubDate>Thu, 20 Jul 2023 16:55:10 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/linux/</guid>
       <description></description>
     </item>
     

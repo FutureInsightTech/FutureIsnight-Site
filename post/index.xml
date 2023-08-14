@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Jul 2023 22:00:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 18:15:04 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discovering Linux: My Path to Becoming a Command Line Maestro</title>
+      <link>https://future-insight.blog/OS/linux/My-Linux-Journey/</link>
+      <pubDate>Mon, 14 Aug 2023 18:15:04 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/My-Linux-Journey/</guid>
+      <description>Embarking on my Linux journey during my student days as a budding software engineer, I eagerly dove into Linux distro videos and blog posts. However, despite my efforts, the seemingly elusive task of installing Linux and setting up dual boot with Windows remained an enigma.
+My Linux Journey The Dual Boot Dilemma As a newcomer to the world of computers, I grappled with the concept of dual booting and sought help from a tech-savvy friend.</description>
+    </item>
+    
     <item>
       <title>Flutter Kickstart: From Setup to Emulator in Style</title>
       <link>https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/</link>
