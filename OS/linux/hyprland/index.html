@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Hyprland Window Manager Tour: A New Desktop Experience</title>
+    <meta name="description" content="My new Desktop Environment">
+    <meta name="keywords" content='blog, gokarna, hugo, linux, window-manager, operating system'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/linux/hyprland/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hyprland Window Manager Tour: A New Desktop Experience">
+    <meta property="og:description" content="My new Desktop Environment">
+    <meta property="og:image" content="/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hyper-land-vm.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hyprland Window Manager Tour: A New Desktop Experience">
+    <meta name="twitter:description" content="My new Desktop Environment">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/linux/hyprland/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/linux/hyprland/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hyper-land-vm.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/linux/hyprland/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+    
+    
+
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9499607095405263"
+    crossorigin="anonymous"></script>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Hyprland Window Manager Tour: A New Desktop Experience</h1>
+        <small role="doc-subtitle">My new Desktop Environment</small>
+        <p class="post-date">
+            August 25, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/window-manager">window-manager</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">operating system</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<style>
+    .gdoc-tabs-container {
+    display: flex;
+    overflow-x: auto;
+    background-color: transparent;
+    margin: 20px;
+    width: 100%;
+  }
+  .gdoc-tabs {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+  }
+  .gdoc-tabs__control {
+    display: none;
+  }
+  .gdoc-tabs__label {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  .gdoc-tabs__control:checked + .gdoc-tabs__label {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .gdoc-tabs__content {
+    display: none;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: transpant;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .gdoc-tabs__control:checked + .gdoc-tabs__label + .gdoc-tabs__content {
+    display: block;
+  }
+</style>
+<script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          const tabControls = document.querySelectorAll('.gdoc-tabs__control');
+          const tabContents = document.querySelectorAll('.gdoc-tabs__content');
+
+          tabControls.forEach((control, index) => {
+              control.addEventListener('change', () => {
+                  tabContents.forEach((content, contentIndex) => {
+                      if (contentIndex === index) {
+                          content.style.display = 'block';
+                      } else {
+                          content.style.display = 'none';
+                      }
+                  });
+              });
+          });
+
+          // Set the default tab's content to be visible on page load
+          const defaultTabIndex = Array.from(tabControls).findIndex(control => control.checked);
+          if (defaultTabIndex !== -1) {
+              tabContents[defaultTabIndex].style.display = 'block';
+          }
+      });
+</script>
+<h1 id="hyprland-window-manager-tour-a-new-desktop-experience">Hyprland Window Manager Tour: A New Desktop Experience</h1>
+<p>As many of you may already know, I have been using Linux for several years now, both on servers and desktop systems. Throughout my journey, I have transitioned from a full-fledged desktop environment to a minimalistic setup tailored specifically for my needs.</p>
+<p>In this ongoing exploration, I recently made a significant switch in my window manager choice. While I had been using the Awesome Window Manager for quite some time, I decided to shift gears and embrace the relatively new and rapidly evolving hyprland Window Manager. hyprland has been in development for about a year, and its developers and community are highly active and enthusiastic.</p>
+<p>Join me in this blog post as I delve into my experiences with hyprland Window Manager and the reasons behind my decision to make the switch.</p>
+<h2 id="hyprland-installation-choices">Hyprland Installation Choices</h2>
+<p>Hyprland is a relatively new development that demands a host of fresh dependencies with updated versions. To install hyprland on your system, you have three viable options:</p>
+<ol>
+<li><strong>Arch Linux</strong></li>
+<li><strong>Fedora Linux</strong></li>
+<li><strong>Nix-OS</strong></li>
+</ol>
+<p>For an optimal experience, I would recommend using Arch Linux. While I&rsquo;ve experimented with Fedora, it&rsquo;s worth noting that you may need to build packages from source since hyprland is not readily available in the Fedora Repository. On the other hand, Nix OS offers a different approach with its package management system. Although I haven&rsquo;t personally tried it, based on other articles, it appears to be a viable option for installing hyprland, offering a distinct package management experience.</p>
+<h2 id="installation">Installation:</h2>
+<p>You can install hyprland by following the official guide on their <a href="https://wiki.hyprland.org/Getting-Started/Installation/">website</a>. However, here&rsquo;s a simplified guide for installing hyprland:</p>
+<div class="gdoc-tabs-container">
+  <div class="gdoc-tabs">
+    <input type="radio" class="gdoc-tabs__control" name="tabs-uniqueid" id="tabs-uniqueid-0">
+    <label for="tabs-uniqueid-0" class="gdoc-tabs__label">Arch Linux</label>
+    <input type="radio" class="gdoc-tabs__control" name="tabs-uniqueid" id="tabs-uniqueid-1" checked>
+    <label for="tabs-uniqueid-1" class="gdoc-tabs__label">Nix</label>
+    <input type="radio" class="gdoc-tabs__control" name="tabs-uniqueid" id="tabs-uniqueid-2">
+    <label for="tabs-uniqueid-2" class="gdoc-tabs__label">openSUSE</label>
+    <input type="radio" class="gdoc-tabs__control" name="tabs-uniqueid" id="tabs-uniqueid-3">
+    <label for="tabs-uniqueid-3" class="gdoc-tabs__label">Fedora</label>
+  </div>
+  <div class="gdoc-tabs__content">
+    <p>Use AUR to install hyprland</p>
+    <pre>yay -S hyprland-git </pre>
+  </div>
+  <div class="gdoc-tabs__content">
+    <p>Enable Hyprland in your NixOS configuration:</p>
+    <pre>programs.hyprland.enable = true;</pre>
+  </div>
+  <div class="gdoc-tabs__content">
+    <p>To install it simply use zypper</p>
+    <pre>sudo zypper in hyprland</pre>
+  </div>
+  <div class="gdoc-tabs__content">
+    <p>Install hyprland on Fedora</p> 
+      <a href="https://github.com/hyprwm/Hyprland/discussions/284">https://github.com/hyprwm/Hyprland/discussions/284</a>
+  </div>
+</div>
+<p>These are a couple of ways you can install hyprland on your system but checkout the office installing processor on there <a href="https://wiki.hyprland.org/Getting-Started/Installation/">website</a></p>
+<h2 id="my-desktop-environment">My Desktop Environment</h2>
+<p>So this my current hyprland window manager setup.</p>
+<ul>
+<li>
+<p>Home Page
+<img src="/images/2023/Operating-System/Linux/Wayland-Window-Manager/Home-Screen.png" alt="Home-Page"></p>
+</li>
+<li>
+<p>Terminal View
+<img src="/images/2023/Operating-System/Linux/Wayland-Window-Manager/Terminal.png" alt="Terminal View"></p>
+</li>
+<li>
+<p>Multiple Terminal
+<img src="/images/2023/Operating-System/Linux/Wayland-Window-Manager/Three-Terminal.png" alt="Terminal View"></p>
+</li>
+<li>
+<p>Neovim
+<img src="/images/2023/Operating-System/Linux/Wayland-Window-Manager/Neovim.png" alt="Neovim"></p>
+</li>
+<li>
+<p>Visual Studio Code
+<img src="/images/2023/Operating-System/Linux/Wayland-Window-Manager/VS-Code.png" alt="Terminal View"></p>
+</li>
+</ul>
+<h2 id="my-experience-with-hyprland">My Experience with hyprland</h2>
+<p>I&rsquo;ll be honest here; the installation process for hyprland is straightforward. Using a script from an online source to set up hyprland was quite convenient, and I made some modifications to the script to tailor my system to my needs.</p>
+<p>hyprland, being based on Wayland, offers some remarkable and visually stunning animations that I had never experienced or seen in a window manager before. While I did manage to incorporate some animations in Awesome Window Manager, I couldn&rsquo;t achieve the same level of richness.</p>
+<p>In the past, I&rsquo;ve been a user of Awesome Window Manager, which is solid and Lua-based, running on Xorg. It was an awesome experience, and you can read more about it in my <a href="/OS/linux/MidnightTokyoWM/">blog post</a>.</p>
+<p>The key difference here is that hyprland is based on Wayland, which is relatively new. Some features I used with Xorg work differently or aren&rsquo;t possible with Wayland. Nevertheless, I love hyprland for its animations, workflow, straightforward config file, and live reloading feature. It has been a delightful experience.</p>
+<p>On hyprland, I&rsquo;ve developed multiple Flutter applications, and with Wayland, I&rsquo;ve had to use PipeWire, opening up opportunities to learn new things.</p>
+<h2 id="pros-of-hyprland">Pros of hyprland</h2>
+<p>Here are some pros of the hyprland window manager:</p>
+<ol>
+<li>
+<p><strong>Amazing Looks</strong></p>
+<ul>
+<li>Incredible animations</li>
+<li>Smooth transitions between virtual desktops</li>
+<li>Rounded corners</li>
+<li>Excellent integration with Waybar and Wayland utilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Debugging</strong></p>
+<ul>
+<li>Simple config file</li>
+<li>Live reloading</li>
+<li>Options for different statuses</li>
+</ul>
+</li>
+</ol>
+<p>These are some of the advantages of hyprland window manager. As I mentioned earlier, the animations and overall feel of this window manager are stunning.</p>
+<h2 id="cons-of-hyprland">Cons of hyprland</h2>
+<p>Here are some cons of the hyprland window manager:</p>
+<ol>
+<li>
+<p><strong>Nvidia Driver Support</strong></p>
+<ul>
+<li>We all know that Nvidia drivers can be a nightmare on Linux. If you&rsquo;re using hyprland, good luck with Nvidia drivers. As of this date, Nvidia driver support can be hit or miss. Older cards might work, but if you have something newer like my RTX 3060, you might face issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Config File</strong></p>
+<ul>
+<li>The issue with the config file is that even though it&rsquo;s live-reloaded, if you assign a shortcut to an application, you can&rsquo;t use the same key for another application. For instance, if you set certain keys for a game, you won&rsquo;t be able to use those same keys for other functions in OBS. hyprland will only detect one input for a key.</li>
+</ul>
+</li>
+<li>
+<p><strong>PipeWire</strong></p>
+<ul>
+<li>While I appreciate PipeWire and its functionality, on Wayland, you can&rsquo;t perform screen sharing or screen recording using the traditional methods. To screen share and record, you need to use PipeWire, and that&rsquo;s something I find cumbersome. Why should I rely on another application as a middleman for screen recording and sharing?</li>
+<li>PipeWire works well most of the time, around 90 percent, but occasionally it doesn&rsquo;t. However, I believe that over time, these issues will be resolved.</li>
+</ul>
+</li>
+</ol>
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>In all honesty, I absolutely love using hyprland. It&rsquo;s the perfect fit for me. I went ahead and set up an Arch Linux server, building my system from the ground up, including only the things I truly appreciate. There&rsquo;s no bloat, no unnecessary applications cluttering my system—just the essentials that I use daily.</p>
+<p>hyprland&rsquo;s stunning aesthetics have enhanced my overall computing experience, encouraging me to use my system more frequently. The project on GitHub is performing admirably, and I believe it will only get better with time. However, I do have one important piece of advice: please steer clear of Nvidia cards when using hyprland. That&rsquo;s the only downside I have to mention.</p>
+<p>Overall, my experience with hyprland has been fantastic, and I couldn&rsquo;t be happier with my choice.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<!-- ## Knowledge Nexus -->
+<!-- <div class="cards-container"> -->
+<!--   <a class="card" href=" "> -->
+<!--     <img src="/images/content-icons/19197011.jpg" alt="Article 1"> -->
+<!--     <h3 class="title">Article 1</h3> -->
+<!--   </a> -->
+<!--   <a class="card" href=" "> -->
+<!--     <img src="/images/content-icons/20944335.jpg" alt="Article 2"> -->
+<!--     <h3 class="title">Article 2</h3> -->
+<!--   </a> -->
+<!--   <a class="card" href=" "> -->
+<!--     <img src="/images/content-icons/2936024.jpg" alt="Article 3"> -->
+<!--     <h3 class="title">Article 3</h3> -->
+<!--   </a> -->
+<!--   <a class="card" href=" "> -->
+<!--     <img src="/images/content-icons/8767135.jpg" alt="Article 3"> -->
+<!--     <h3 class="title">Article 3</h3> -->
+<!--   </a> -->
+<!-- </div> -->
+<!---->
+<h2 id="github-repository">GitHub Repository</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Hyprland-Config/">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <p class="title">My Configuration & Setup script </p>
+  </a>
+</div>
+<!-- ## Video WalkThrough -->
+<iframe width="800" height="450" src="https://www.youtube.com/embed/kPvncCIb4Es" frameborder="0" allowfullscreen></iframe>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/linux/My-Linux-Journey/">
+            &#8592;
+            Previous:
+            Discovering Linux: My Path to Becoming a Command Line Maestro
+        </a>
+    </p>
+    <p class="prev-post-date">
+        August 14, 2023
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="rafay99-epic/Future-Insight"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hyprland-window-manager-tour-a-new-desktop-experience">Hyprland Window Manager Tour: A New Desktop Experience</a>
+      <ol>
+        <li><a href="#hyprland-installation-choices">Hyprland Installation Choices</a></li>
+        <li><a href="#installation">Installation:</a></li>
+        <li><a href="#my-desktop-environment">My Desktop Environment</a></li>
+        <li><a href="#my-experience-with-hyprland">My Experience with hyprland</a></li>
+        <li><a href="#pros-of-hyprland">Pros of hyprland</a></li>
+        <li><a href="#cons-of-hyprland">Cons of hyprland</a></li>
+      </ol>
+    </li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>
