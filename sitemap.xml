@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://future-insight.blog/tags/blog/</loc>
-    <lastmod>2023-08-25T23:45:20+05:00</lastmod>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/web-development/claim-your-website/</loc>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/</loc>
-    <lastmod>2023-08-25T23:45:20+05:00</lastmod>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/post/</loc>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/</loc>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
+  </url><url>
+    <loc>https://future-insight.blog/tags/web-development/</loc>
+    <lastmod>2023-09-08T22:54:56+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/OS/linux/hyprland/</loc>
     <lastmod>2023-08-25T23:45:20+05:00</lastmod>
@@ -15,12 +27,6 @@
     <lastmod>2023-08-25T23:45:20+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/tags/operating-system/</loc>
-    <lastmod>2023-08-25T23:45:20+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/post/</loc>
-    <lastmod>2023-08-25T23:45:20+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/</loc>
     <lastmod>2023-08-25T23:45:20+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/tags/window-manager/</loc>
@@ -72,9 +78,6 @@
     <lastmod>2023-07-11T14:11:13+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</loc>
-    <lastmod>2023-07-08T11:26:23+05:00</lastmod>
-  </url><url>
-    <loc>https://future-insight.blog/tags/web-development/</loc>
     <lastmod>2023-07-08T11:26:23+05:00</lastmod>
   </url><url>
     <loc>https://future-insight.blog/OS/windows/wsl-install/</loc>
