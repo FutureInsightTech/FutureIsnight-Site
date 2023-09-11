@@ -7,7 +7,7 @@ tags: ["blog" ,"web-development"]
 description: "Learn how to get your own website"
 showTableOfContents: true
 url: /web-development/claim-your-website/
-image: "/images/2023/"
+image: "/images/2023/Web-Development/build-your-own-website/CreateYour-own-website.png"
 ---
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
