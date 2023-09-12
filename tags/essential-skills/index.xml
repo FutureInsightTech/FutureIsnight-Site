@@ -33,9 +33,7 @@ Strategies:  One strategy that can be effective is to create a daily schedule.</
       <pubDate>Tue, 24 Jan 2023 17:13:24 +0500</pubDate>
       
       <guid>https://future-insight.blog/essential-skills/learn-git-&amp;-github/</guid>
-      <description>As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes. So for that, you need to learn Git and GitHub.
-Before Git: But before I was using Git, My code folder structure was something like this:
-Every time I was working on a project, I made a copy of that folder and then made changes to it, which led to the destruction of your application.</description>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes.</description>
     </item>
     
   </channel>

@@ -44,7 +44,7 @@ As we embark on this journey, you may find yourself pondering various questions,
       <pubDate>Mon, 19 Jun 2023 02:58:06 +0500</pubDate>
       
       <guid>https://future-insight.blog/OS/windows/secure-your-windows/</guid>
-      <description>The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks. If one is not cautious, personal information can be sold online. Various organizations track your online activities, creating profiles that are used to deliver targeted advertisements. Additionally, the threat of viruses looms, capable of compromising your system and resulting in the loss of valuable data.</description>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks.</description>
     </item>
     
   </channel>

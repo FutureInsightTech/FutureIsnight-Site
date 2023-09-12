@@ -32,8 +32,7 @@ My Linux Journey The Dual Boot Dilemma As a newcomer to the world of computers, 
       <pubDate>Thu, 20 Jul 2023 16:55:10 +0500</pubDate>
       
       <guid>https://future-insight.blog/OS/linux/secure-linux/</guid>
-      <description>After using a Linux system for a while, I&amp;rsquo;ve noticed that there are some common mistakes people make that can compromise the security of their Linux installations. In this blog post, I will address the three most significant security mistakes that Linux users often make. These mistakes can be exploited by hackers, making them essential points to consider for basic security layers.
-Base Security Layer The base security layer is the first line of defense against attackers and consists of three components: Network Security Layer, Operating System Security Layer, and Application Security Layer.</description>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   After using a Linux system for a while, I&amp;rsquo;ve noticed that there are some common mistakes people make that can compromise the security of their Linux installations. In this blog post, I will address the three most significant security mistakes that Linux users often make.</description>
     </item>
     
     <item>
@@ -148,9 +147,8 @@ By the end of this article, you&amp;rsquo;ll have a better understanding of how 
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
       
       <guid>https://future-insight.blog/OS/linux/install-linux/</guid>
-      <description>You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
-So today I will teach you how to install Linux and how to dual boot with another operating system.
-Dual Boot: If you don&amp;rsquo;t know what dual boot is, it is a process in which your computer has more than one operating system.</description>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
+So today I will teach you how to install Linux and how to dual boot with another operating system.</description>
     </item>
     
     <item>

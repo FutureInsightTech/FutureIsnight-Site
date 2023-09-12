@@ -304,6 +304,21 @@
   .gdoc-tabs__control:checked + .gdoc-tabs__label + .gdoc-tabs__content {
     display: block;
   }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 <script>
       window.addEventListener('DOMContentLoaded', (event) => {
@@ -460,26 +475,6 @@
 <p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
 <h1 id="supporting-materials">Supporting Materials</h1>
 <p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
-<!-- ## Knowledge Nexus -->
-<!-- <div class="cards-container"> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/19197011.jpg" alt="Article 1"> -->
-<!--     <h3 class="title">Article 1</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/20944335.jpg" alt="Article 2"> -->
-<!--     <h3 class="title">Article 2</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/2936024.jpg" alt="Article 3"> -->
-<!--     <h3 class="title">Article 3</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/8767135.jpg" alt="Article 3"> -->
-<!--     <h3 class="title">Article 3</h3> -->
-<!--   </a> -->
-<!-- </div> -->
-<!---->
 <h2 id="github-repository">GitHub Repository</h2>
 <div class="cards-container">
   <a class="card" href="https://github.com/rafay99-epic/Hyprland-Config/">
@@ -487,9 +482,10 @@
     <p class="title">My Configuration & Setup script </p>
   </a>
 </div>
-<!-- ## Video WalkThrough -->
-<iframe width="800" height="450" src="https://www.youtube.com/embed/kPvncCIb4Es" frameborder="0" allowfullscreen></iframe>
-
+<h2 id="video-walkthrough">Video WalkThrough</h2>
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/kPvncCIb4Es" frameborder="0" allowfullscreen></iframe>
+</div>
         </p>
     </div>
 
@@ -568,6 +564,7 @@
     <li><a href="#supporting-materials">Supporting Materials</a>
       <ol>
         <li><a href="#github-repository">GitHub Repository</a></li>
+        <li><a href="#video-walkthrough">Video WalkThrough</a></li>
       </ol>
     </li>
   </ol>
