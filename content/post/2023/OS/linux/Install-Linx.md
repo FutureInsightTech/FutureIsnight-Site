@@ -11,6 +11,25 @@ image: "/images/2023/Operating-System/Linux/Install-Linux/Install-Linux.png"
 
 ---
 
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
 ----
 You are already aware that I use Linux for everything, from development to my regular tasks.If you don't have any idea what Linux is, check out my last [blog](https://future-insight.blog/world-of-linx).
 
@@ -180,5 +199,7 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
 ## WalkThrough Video:
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Wk20fKyDD_8" frameborder="1" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/Wk20fKyDD_8" frameborder="0" allowfullscreen></iframe>
+</div>
 

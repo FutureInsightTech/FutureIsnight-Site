@@ -9,6 +9,25 @@ showTableOfContents: true
 url: /essential-skills/learn-git-&-github/
 ---
 
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
 ----
 
 As a developer, managing your code can be difficult, and you're always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don't miss any of the changes. So for that, you need to learn Git and GitHub.
@@ -328,6 +347,8 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
 # Walkthrough Video:  
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Y05ZT6bU7fE" frameborder="1" allowfullscreen></iframe>
 
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/Y05ZT6bU7fE" frameborder="0" allowfullscreen></iframe>
+</div>
 
