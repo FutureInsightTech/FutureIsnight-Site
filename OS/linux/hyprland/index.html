@@ -261,23 +261,26 @@
     <div class="post-content">
         <p>
             <link rel="stylesheet" href="/css/reference-content/reference-content.css">
-<hr>
 <style>
-    .gdoc-tabs-container {
+  .gdoc-tabs-container {
     display: flex;
     overflow-x: auto;
     background-color: transparent;
     margin: 20px;
     width: 100%;
   }
+
+  /* gdoc-tabs styles */
   .gdoc-tabs {
     display: flex;
     flex-direction: column;
     min-width: 200px;
   }
+
   .gdoc-tabs__control {
     display: none;
   }
+
   .gdoc-tabs__label {
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -286,23 +289,37 @@
     color: white;
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   }
+
   .gdoc-tabs__control:checked + .gdoc-tabs__label {
     background-color: #000;
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+
   .gdoc-tabs__content {
     display: none;
     flex-shrink: 0;
     padding: 20px;
-    background-color: transpant;
+    background-color: transparent; /* Typo corrected: transpant to transparent */
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 10px;
   }
 
+  /* Show content when the control is checked */
   .gdoc-tabs__control:checked + .gdoc-tabs__label + .gdoc-tabs__content {
     display: block;
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .gdoc-tabs-container {
+      flex-direction: column;
+    }
+
+    .gdoc-tabs {
+      min-width: auto;
+    }
   }
   .video-container {
     position: relative;
@@ -344,11 +361,11 @@
           }
       });
 </script>
-<h1 id="hyprland-window-manager-tour-a-new-desktop-experience">Hyprland Window Manager Tour: A New Desktop Experience</h1>
+<hr>
 <p>As many of you may already know, I have been using Linux for several years now, both on servers and desktop systems. Throughout my journey, I have transitioned from a full-fledged desktop environment to a minimalistic setup tailored specifically for my needs.</p>
 <p>In this ongoing exploration, I recently made a significant switch in my window manager choice. While I had been using the Awesome Window Manager for quite some time, I decided to shift gears and embrace the relatively new and rapidly evolving hyprland Window Manager. hyprland has been in development for about a year, and its developers and community are highly active and enthusiastic.</p>
 <p>Join me in this blog post as I delve into my experiences with hyprland Window Manager and the reasons behind my decision to make the switch.</p>
-<h2 id="hyprland-installation-choices">Hyprland Installation Choices</h2>
+<h1 id="hyprland-installation-choices">Hyprland Installation Choices</h1>
 <p>Hyprland is a relatively new development that demands a host of fresh dependencies with updated versions. To install hyprland on your system, you have three viable options:</p>
 <ol>
 <li><strong>Arch Linux</strong></li>
@@ -356,7 +373,7 @@
 <li><strong>Nix-OS</strong></li>
 </ol>
 <p>For an optimal experience, I would recommend using Arch Linux. While I&rsquo;ve experimented with Fedora, it&rsquo;s worth noting that you may need to build packages from source since hyprland is not readily available in the Fedora Repository. On the other hand, Nix OS offers a different approach with its package management system. Although I haven&rsquo;t personally tried it, based on other articles, it appears to be a viable option for installing hyprland, offering a distinct package management experience.</p>
-<h2 id="installation">Installation:</h2>
+<h1 id="installation">Installation:</h1>
 <p>You can install hyprland by following the official guide on their <a href="https://wiki.hyprland.org/Getting-Started/Installation/">website</a>. However, here&rsquo;s a simplified guide for installing hyprland:</p>
 <div class="gdoc-tabs-container">
   <div class="gdoc-tabs">
@@ -387,7 +404,7 @@
   </div>
 </div>
 <p>These are a couple of ways you can install hyprland on your system but checkout the office installing processor on there <a href="https://wiki.hyprland.org/Getting-Started/Installation/">website</a></p>
-<h2 id="my-desktop-environment">My Desktop Environment</h2>
+<h1 id="my-desktop-environment">My Desktop Environment</h1>
 <p>So this my current hyprland window manager setup.</p>
 <ul>
 <li>
@@ -417,7 +434,7 @@
 <p>In the past, I&rsquo;ve been a user of Awesome Window Manager, which is solid and Lua-based, running on Xorg. It was an awesome experience, and you can read more about it in my <a href="/OS/linux/MidnightTokyoWM/">blog post</a>.</p>
 <p>The key difference here is that hyprland is based on Wayland, which is relatively new. Some features I used with Xorg work differently or aren&rsquo;t possible with Wayland. Nevertheless, I love hyprland for its animations, workflow, straightforward config file, and live reloading feature. It has been a delightful experience.</p>
 <p>On hyprland, I&rsquo;ve developed multiple Flutter applications, and with Wayland, I&rsquo;ve had to use PipeWire, opening up opportunities to learn new things.</p>
-<h2 id="pros-of-hyprland">Pros of hyprland</h2>
+<h1 id="pros-of-hyprland">Pros of hyprland</h1>
 <p>Here are some pros of the hyprland window manager:</p>
 <ol>
 <li>
@@ -439,7 +456,7 @@
 </li>
 </ol>
 <p>These are some of the advantages of hyprland window manager. As I mentioned earlier, the animations and overall feel of this window manager are stunning.</p>
-<h2 id="cons-of-hyprland">Cons of hyprland</h2>
+<h1 id="cons-of-hyprland">Cons of hyprland</h1>
 <p>Here are some cons of the hyprland window manager:</p>
 <ol>
 <li>
@@ -548,16 +565,15 @@
     <nav id="toc">
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#hyprland-window-manager-tour-a-new-desktop-experience">Hyprland Window Manager Tour: A New Desktop Experience</a>
+    <li><a href="#hyprland-installation-choices">Hyprland Installation Choices</a></li>
+    <li><a href="#installation">Installation:</a></li>
+    <li><a href="#my-desktop-environment">My Desktop Environment</a>
       <ol>
-        <li><a href="#hyprland-installation-choices">Hyprland Installation Choices</a></li>
-        <li><a href="#installation">Installation:</a></li>
-        <li><a href="#my-desktop-environment">My Desktop Environment</a></li>
         <li><a href="#my-experience-with-hyprland">My Experience with hyprland</a></li>
-        <li><a href="#pros-of-hyprland">Pros of hyprland</a></li>
-        <li><a href="#cons-of-hyprland">Cons of hyprland</a></li>
       </ol>
     </li>
+    <li><a href="#pros-of-hyprland">Pros of hyprland</a></li>
+    <li><a href="#cons-of-hyprland">Cons of hyprland</a></li>
     <li><a href="#final-thoughts">Final Thoughts</a></li>
     <li><a href="#credit">Credit</a></li>
     <li><a href="#contact-us">Contact Us</a></li>

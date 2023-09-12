@@ -13,7 +13,7 @@
       <pubDate>Fri, 25 Aug 2023 23:45:20 +0500</pubDate>
       
       <guid>https://future-insight.blog/OS/linux/hyprland/</guid>
-      <description>.gdoc-tabs-container { display: flex; overflow-x: auto; background-color: transparent; margin: 20px; width: 100%; } .gdoc-tabs { display: flex; flex-direction: column; min-width: 200px; } .gdoc-tabs__control { display: none; } .gdoc-tabs__label { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; text-align: center; color: white; transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; } .gdoc-tabs__control:checked + .gdoc-tabs__label { background-color: #000; color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } .gdoc-tabs__content { display: none; flex-shrink: 0; padding: 20px; background-color: transpant; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px; } .</description>
+      <description>.gdoc-tabs-container { display: flex; overflow-x: auto; background-color: transparent; margin: 20px; width: 100%; } /* gdoc-tabs styles */ .gdoc-tabs { display: flex; flex-direction: column; min-width: 200px; } .gdoc-tabs__control { display: none; } .gdoc-tabs__label { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; text-align: center; color: white; transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; } .gdoc-tabs__control:checked + .gdoc-tabs__label { background-color: #000; color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } .</description>
     </item>
     
     <item>
