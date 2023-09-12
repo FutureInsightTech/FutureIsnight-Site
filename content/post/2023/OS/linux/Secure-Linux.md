@@ -10,6 +10,25 @@ url: /OS/linux/secure-linux
 image: "/images/2023/Operating-System/Linux/Secure-Linux/Secure-Linux-3.png"
 ---
 
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
 -----------
 
 After using a Linux system for a while, I've noticed that there are some common mistakes people make that can compromise the security of their Linux installations. In this blog post, I will address the three most significant security mistakes that Linux users often make. These mistakes can be exploited by hackers, making them essential points to consider for basic security layers.
@@ -160,5 +179,9 @@ To access the contact page, simply click on the "Contact" tab in the navigation 
 
 Don't let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.
 
-# Thumbnail
-![image](/images/2023/Operating-System/Linux/Secure-Linux/Secure-Linux-3.png)
+# Video WalkThrough
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/KHGTRnUFbEE?si=xx1jy9Jelsr5djCk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+

@@ -12,6 +12,26 @@ image: "/images/2023/"
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
 
+<!-- Youtube iframe Link -->
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
 -----------
 
 
@@ -65,4 +85,7 @@ Here are all of the links and references that I used to write this blog, so feel
 </div>
 
 ## Video WalkThrough
-<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
+
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-LINK" frameborder="1" allowfullscreen></iframe>
+</div>

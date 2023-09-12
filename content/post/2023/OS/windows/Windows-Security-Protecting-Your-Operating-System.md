@@ -12,6 +12,24 @@ image: "/images/2023/Operating-System/Windows/Window-Security/Windows-Security-P
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
 
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
 --------------------------------
 
 The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks. If one is not cautious, personal information can be sold online. Various organizations track your online activities, creating profiles that are used to deliver targeted advertisements. Additionally, the threat of viruses looms, capable of compromising your system and resulting in the loss of valuable data.
@@ -303,8 +321,8 @@ Here are all of the links and references that I used to write this blog, so feel
   </a>
 </div>
 
-# Thumbnail
-![window-Security](/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png)
+## WalkThrough Video:
 
-<!-- ## WalkThrough Video: -->
-<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/YXPrBd-lZ3g?si=HQ9dJ25wz5wFMiVC" frameborder="0" allowfullscreen></iframe>
+</div>

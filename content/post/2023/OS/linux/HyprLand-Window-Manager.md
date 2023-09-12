@@ -55,6 +55,21 @@ image: "/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hype
   .gdoc-tabs__control:checked + .gdoc-tabs__label + .gdoc-tabs__content {
     display: block;
   }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 <script>
       window.addEventListener('DOMContentLoaded', (event) => {
@@ -216,26 +231,6 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 # Supporting Materials
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
-<!-- ## Knowledge Nexus -->
-<!-- <div class="cards-container"> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/19197011.jpg" alt="Article 1"> -->
-<!--     <h3 class="title">Article 1</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/20944335.jpg" alt="Article 2"> -->
-<!--     <h3 class="title">Article 2</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/2936024.jpg" alt="Article 3"> -->
-<!--     <h3 class="title">Article 3</h3> -->
-<!--   </a> -->
-<!--   <a class="card" href=" "> -->
-<!--     <img src="/images/content-icons/8767135.jpg" alt="Article 3"> -->
-<!--     <h3 class="title">Article 3</h3> -->
-<!--   </a> -->
-<!-- </div> -->
-<!---->
 ## GitHub Repository
 <div class="cards-container">
   <a class="card" href="https://github.com/rafay99-epic/Hyprland-Config/">
@@ -244,5 +239,7 @@ Here are all of the links and references that I used to write this blog, so feel
   </a>
 </div>
 
-<!-- ## Video WalkThrough -->
-<iframe width="800" height="450" src="https://www.youtube.com/embed/kPvncCIb4Es" frameborder="0" allowfullscreen></iframe>
+## Video WalkThrough
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/kPvncCIb4Es" frameborder="0" allowfullscreen></iframe>
+</div>
