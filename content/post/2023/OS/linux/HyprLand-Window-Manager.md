@@ -12,23 +12,27 @@ image: "/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hype
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
 
------------
+
 <style>
-    .gdoc-tabs-container {
+  .gdoc-tabs-container {
     display: flex;
     overflow-x: auto;
     background-color: transparent;
     margin: 20px;
     width: 100%;
   }
+
+  /* gdoc-tabs styles */
   .gdoc-tabs {
     display: flex;
     flex-direction: column;
     min-width: 200px;
   }
+
   .gdoc-tabs__control {
     display: none;
   }
+
   .gdoc-tabs__label {
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -37,23 +41,37 @@ image: "/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hype
     color: white;
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   }
+
   .gdoc-tabs__control:checked + .gdoc-tabs__label {
     background-color: #000;
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+
   .gdoc-tabs__content {
     display: none;
     flex-shrink: 0;
     padding: 20px;
-    background-color: transpant;
+    background-color: transparent; /* Typo corrected: transpant to transparent */
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 10px;
   }
 
+  /* Show content when the control is checked */
   .gdoc-tabs__control:checked + .gdoc-tabs__label + .gdoc-tabs__content {
     display: block;
+  }
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .gdoc-tabs-container {
+      flex-direction: column;
+    }
+
+    .gdoc-tabs {
+      min-width: auto;
+    }
   }
   .video-container {
     position: relative;
@@ -96,8 +114,9 @@ image: "/images/2023/Operating-System/Linux/Wayland-Window-Manager/thubnail-hype
       });
 </script>
 
+-----------
 
-# Hyprland Window Manager Tour: A New Desktop Experience
+
 
 As many of you may already know, I have been using Linux for several years now, both on servers and desktop systems. Throughout my journey, I have transitioned from a full-fledged desktop environment to a minimalistic setup tailored specifically for my needs.
 
@@ -106,7 +125,7 @@ In this ongoing exploration, I recently made a significant switch in my window m
 Join me in this blog post as I delve into my experiences with hyprland Window Manager and the reasons behind my decision to make the switch.
 
 
-## Hyprland Installation Choices 
+# Hyprland Installation Choices 
 Hyprland is a relatively new development that demands a host of fresh dependencies with updated versions. To install hyprland on your system, you have three viable options:
 
 1. **Arch Linux**
@@ -115,7 +134,7 @@ Hyprland is a relatively new development that demands a host of fresh dependenci
 
 For an optimal experience, I would recommend using Arch Linux. While I've experimented with Fedora, it's worth noting that you may need to build packages from source since hyprland is not readily available in the Fedora Repository. On the other hand, Nix OS offers a different approach with its package management system. Although I haven't personally tried it, based on other articles, it appears to be a viable option for installing hyprland, offering a distinct package management experience.
 
-## Installation: 
+# Installation: 
 You can install hyprland by following the official guide on their [website](https://wiki.hyprland.org/Getting-Started/Installation/). However, here's a simplified guide for installing hyprland:
 
 <div class="gdoc-tabs-container">
@@ -149,7 +168,7 @@ You can install hyprland by following the official guide on their [website](http
 
 These are a couple of ways you can install hyprland on your system but checkout the office installing processor on there [website](https://wiki.hyprland.org/Getting-Started/Installation/)
 
-## My Desktop Environment
+# My Desktop Environment
 So this my current hyprland window manager setup.
 - Home Page
 ![Home-Page](/images/2023/Operating-System/Linux/Wayland-Window-Manager/Home-Screen.png)
@@ -178,7 +197,7 @@ The key difference here is that hyprland is based on Wayland, which is relativel
 
 On hyprland, I've developed multiple Flutter applications, and with Wayland, I've had to use PipeWire, opening up opportunities to learn new things.
 
-## Pros of hyprland
+# Pros of hyprland
 
 Here are some pros of the hyprland window manager:
 
@@ -195,7 +214,7 @@ Here are some pros of the hyprland window manager:
 
 These are some of the advantages of hyprland window manager. As I mentioned earlier, the animations and overall feel of this window manager are stunning.
 
-## Cons of hyprland
+# Cons of hyprland
 
 Here are some cons of the hyprland window manager:
 
