@@ -139,4 +139,26 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 
 
 # Video WalkThrough
-<iframe width="800" height="450" src="https://www.youtube.com/embed/O7ymFysW2RM" frameborder="1" allowfullscreen></iframe>
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/O7ymFysW2RM" frameborder="1" allowfullscreen></iframe> -->
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/O7ymFysW2RM" frameborder="0" allowfullscreen></iframe>
+</div>
