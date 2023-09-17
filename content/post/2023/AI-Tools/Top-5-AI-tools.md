@@ -3,11 +3,11 @@ title: "AI Tools that are Life Changing"
 date: 2023-09-16T01:06:13+05:00
 draft: false
 type: "post"
-tags: ["blog" ,"AI-Tools"]
+tags: ["blog" ,"AI-Tools", "AI-Thoughts"]
 description: "Check out these AI tools"
 showTableOfContents: true
 url: /ai-thoughts/ai-tools
-image: "/images/2023/"
+image: "/images/2023/AI-Thoughts/life-changing-tools/thumbnail.png"
 ---
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
@@ -34,9 +34,7 @@ image: "/images/2023/"
 
 -----------
 
-# Thoughts on AI Tools
-
-
+# AI Tools: Smaller, Better, and Beyond
 The release of OpenAI's ChatGPT has revolutionized the way we work and communicate. The chatbot has broken multiple records, and its impact on various industries is undeniable. 
 With its ability to generate human-like text, ChatGPT has opened up new possibilities for automating tasks, streamlining workflows, and enhancing productivity. 
 In this blog post, we'll explore some exciting AI tools that can help you speed up your work, and discuss their effects on different industries.
@@ -76,7 +74,6 @@ you can use AI models as a co-writer, helping you put together first drafts fast
 
 ### Jasper
 Jasper is a powerful AI content creation platform, favoring users who need a high volume of content. It packs dozens of templates to help you get started, connects to the internet to find research and sources, and also lets you generate images with AI. All your content creation needs are covered here.
-
 ![image](/images/2023/AI-Thoughts/life-changing-tools/Jasspy.png)
 
 ### Anyword
@@ -88,23 +85,35 @@ Spell-checking has been around for a long time, but AI is changing the game. Bef
 
 ### Grammarly
 [Grammarly](https://www.grammarly.com/) is the mainstream spell- and structure-checking app. It's a complete solution that keeps your English on point, lets you adjust your tone, and suggests shortcuts to simplify wordy or complex phrases. It has plenty of extensions and integrations, so you can use it almost anywhere there's a text box.
-
 ![image](/images/2023/AI-Thoughts/life-changing-tools/gram.png)
 
 ### Wordtune
 Wordtune helps you find plenty of wording alternatives to improve your text. When you input the text you want to check, you can easily browse synonyms, ask to rewrite entire sentences, and adapt the suggestions into a final draft.
-
 ![image](/images/2023/AI-Thoughts/life-changing-tools/word.png)
 
 ## Video Creation
 
 While full-blown video generation is still coming together, there's already a set of video tools that leverage AI to enhance video, remove backgrounds accurately, and even paint a few new images into each frame.
 
+### Descript
+[Descript](https://www.descript.com/) transcribes your videos into a script. Then, instead of using a timeline to trim the audio and video tracks, you edit the text script. As you do so, the video gets trimmed automatically. The rest of the editing works in a similar way, cutting the time to edit your talking head videos.
+![image](/images/2023/AI-Thoughts/life-changing-tools/desc.png)
+
+### Wondershare Filmora
+[Wondershare Filmora](https://filmora.wondershare.com/) has been around for a long time. Now, it also brings to the table a set of AI features that let you remove backgrounds, denoise low-quality clips, and improve sound quality. All this with the classic video editing user experience, so you'll never feel lost.
+![image](/images/2023/AI-Thoughts/life-changing-tools/editior.png)
 
 
+## Image Generation
+An image is worth a thousand words, but you don't need so many to generate a beautiful one with AI. These image generators take a text prompt and deliver the results—and this can be anywhere between mind-blowing to nightmare-inducing. They're both hugely entertaining and highly useful.
 
+### DALL·E 2
+[DALL·E 2](https://openai.com/dall-e-2) is an image generator by OpenAI, the creators of ChatGPT. It's very simple to use and produces interesting results, no matter if you've just started writing image prompts or are already a master. A great choice to begin exploring the realm of AI image generation.
+![image](/images/2023/AI-Thoughts/life-changing-tools/image-gen-1.png)
 
-
+### Midjourney
+[Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F) is impressive. Anything you throw at it generates incredible results—even if sometimes they're slightly off the mark. The fact that you have to use Discord to access it feels unintuitive at first, but once you get the hang of it, you'll be spending hours turning your imagination into colorful pixels.
+![image](/images/2023/AI-Thoughts/life-changing-tools/image-gen-2.png)
 
 
 # Conclusion
@@ -125,34 +134,24 @@ Don't let any questions or concerns go unanswered - reach out to the support tea
 Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
 ## Knowledge Nexus
 <div class="cards-container">
-  <a class="card" href=" ">
+  <a class="card" href="https://zapier.com/blog/best-ai-productivity-tools/">
     <img src="/images/content-icons/19197011.jpg" alt="Article 1">
     <h3 class="title">Article 1</h3>
   </a>
-  <a class="card" href=" ">
+  <a class="card" href="https://intellipaat.com/blog/top-artificial-intelligence-tools/">
     <img src="/images/content-icons/20944335.jpg" alt="Article 2">
     <h3 class="title">Article 2</h3>
   </a>
-  <a class="card" href=" ">
+  <a class="card" href="https://geekflare.com/most-powerful-ai-tools-list/">
     <img src="/images/content-icons/2936024.jpg" alt="Article 3">
     <h3 class="title">Article 3</h3>
   </a>
-  <a class="card" href=" ">
-    <img src="/images/content-icons/8767135.jpg" alt="Article 3">
-    <h3 class="title">Article 3</h3>
-  </a>
-</div>
+ </div>
 
-## GitHub Repository
-<div class="cards-container">
-  <a class="card" href=" ">
-    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
-    <h3 class="title">GitHub Repository</h3>
-  </a>
-</div>
+ ## Thumbnail
+![image](/images/2023/AI-Thoughts/life-changing-tools/thumbnail.png)
+<!-- ## Video WalkThrough -->
 
-## Video WalkThrough
-
-<div class="video-container">
-  <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-LINK" frameborder="1" allowfullscreen></iframe>
-</div>
+<!-- <div class="video-container"> -->
+<!--   <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-LINK" frameborder="1" allowfullscreen></iframe> -->
+<!-- </div> -->
