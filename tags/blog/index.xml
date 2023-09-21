@@ -6,7 +6,16 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Sep 2023 01:06:13 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Sep 2023 20:54:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cooking Up a Storm: Bun vs. Node.js Performance Showdown</title>
+      <link>https://future-insight.blog/web-development/bun-vs-nodejs/</link>
+      <pubDate>Thu, 21 Sep 2023 20:54:34 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/web-development/bun-vs-nodejs/</guid>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   There&amp;rsquo;s a new sensation in town, and it goes by the name &amp;ldquo;Bun.&amp;rdquo; Recently, a new JavaScript runtime called &amp;ldquo;Bun&amp;rdquo; was released. I&amp;rsquo;ve been a long-time user of Node.js, having completed my final year project and various client projects with it.</description>
+    </item>
+    
     <item>
       <title>AI Tools that are Life Changing</title>
       <link>https://future-insight.blog/ai-thoughts/ai-tools/</link>
