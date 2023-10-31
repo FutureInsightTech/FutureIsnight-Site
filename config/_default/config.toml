@@ -106,12 +106,18 @@ enableRobotsTXT = true
       weight = 6
       pre = "<span data-feather='book-open'></span>"
 
+    [[menu.main]]
+      identifier = "Search"
+      url = "/search"
+      weight = 7
+      pre = "<span data-feather='search'></span>"
+
     # Github Link
     [[menu.main]]
       identifier = "github"
       url = "https://github.com/rafay99-epic"
-      weight = 7
-      pre = "<span data-feather='github'></span>"
+      weight = 8
+      pre = "<span data-feather='github'></span>" 
 
   # Drop Down Menu Components
     [[menu.dropdown]]
