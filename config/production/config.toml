@@ -106,6 +106,7 @@ enableRobotsTXT = true
       weight = 6
       pre = "<span data-feather='book-open'></span>"
 
+
     [[menu.main]]
       identifier = "Search"
       url = "/search"
