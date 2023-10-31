@@ -430,5 +430,14 @@ Each project represents a unique journey, where I explored new technologies and 
       <description>Contact US Name  Email  Message   Submit  </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://future-insight.blog/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://future-insight.blog/search/</guid>
+      <description>   window.addEventListener(&#39;DOMContentLoaded&#39;, (event) = { new PagefindUI({ element: &#34;#search&#34;, showSubResults: true }); }); </description>
+    </item>
+    
   </channel>
 </rss>
