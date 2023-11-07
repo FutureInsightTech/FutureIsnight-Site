@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>EJS: A Templating Engine for Node.js</title>
+    <meta name="description" content="EJS with Nodejs">
+    <meta name="keywords" content='blog, gokarna, hugo, web-development'>
+
+    <meta property="og:url" content="https://future-insight.blog/web-development/ejs-nodejs-templating-guide/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EJS: A Templating Engine for Node.js">
+    <meta property="og:description" content="EJS with Nodejs">
+    <meta property="og:image" content="/images/2023/ejs-nodejs/Using-ejs-thumbnail.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EJS: A Templating Engine for Node.js">
+    <meta name="twitter:description" content="EJS with Nodejs">
+    <meta property="twitter:domain" content="https://future-insight.blog/web-development/ejs-nodejs-templating-guide/">
+    <meta property="twitter:url" content="https://future-insight.blog/web-development/ejs-nodejs-templating-guide/">
+    <meta name="twitter:image" content="/images/2023/ejs-nodejs/Using-ejs-thumbnail.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/web-development/ejs-nodejs-templating-guide/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>EJS: A Templating Engine for Node.js</h1>
+        <small role="doc-subtitle">EJS with Nodejs</small>
+        <p class="post-date">
+            July 8, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/web-development">web-development</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>HTML is great—simple and fast for rendering webpages. However, there is a problem: code repetition. Writing the same code again and again for every page can be tedious. What if there was a way to write the code once and use it everywhere? That&rsquo;s where EJS comes in. EJS is a templating engine that allows us to write code once and reuse it across multiple pages. Let&rsquo;s get started!</p>
+<h1 id="prerequisites">Prerequisites:</h1>
+<p>First, you need to have Node.js installed on your system. To check if Node.js is installed, open your terminal (PowerShell on Windows, or Terminal on Linux) and enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>node --version
+</span></span></code></pre></div><p><img src="/images/2023/Web-Development/ejs-nodejs/check-nodejs.png" alt="node-js-check"></p>
+<p>If you are using Linux, the command is the same as for Windows.</p>
+<h1 id="installation">Installation:</h1>
+<p>If you haven&rsquo;t installed Node.js yet, you can follow my previous guide by clicking <a href="/basic-nodejs/">here</a>, In my pervious guide I have explained how to install Node.js on Windows, Linux, and macOS and the basic concepts of Node.js. If you have already installed Node.js, you can skip this step.</p>
+<h1 id="creating-a-project">Creating a Project:</h1>
+<p>Now let&rsquo;s create a project and install EJS in it.</p>
+<h2 id="step-1---creating-a-project">Step 1 - Creating a Project:</h2>
+<p>To create a project in Node.js, open your terminal (PowerShell on Windows or Terminal on Linux) and enter the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>mkdir ejs-nodejs
+</span></span><span style="display:flex;"><span>npm init
+</span></span></code></pre></div><p><img src="/images/2023/Web-Development/ejs-nodejs/step01.png" alt="step-1"></p>
+<p>If you are using Linux, the commands are the same as for Windows. The <code>mkdir</code> command will create a folder named <code>ejs-nodejs</code>, and the <code>npm init</code> command will initialize the project. It will ask you some questions which you can answer or simply press Enter to skip.</p>
+<p>Once you have answered all the questions, you will see a <code>package.json</code> file in your project folder.</p>
+<p><img src="/images/2023/Web-Development/ejs-nodejs/package.png" alt="package-json"></p>
+<h2 id="step-2---installing-essential-packages">Step 2 - Installing Essential Packages:</h2>
+<p>In the current folder, we have a <code>package.json</code> file. Now let&rsquo;s install some packages that we need for our project. For this project, we will need several packages, including <code>express</code>, <code>ejs</code>, <code>nodemon</code>, <code>ejs-layouts</code>, and <code>body-parser</code>. You can find these packages on the <a href="https://www.npmjs.com/">npm website</a>. Let&rsquo;s install them using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">express</span> <span style="color:#a6e22e">ejs</span> <span style="color:#a6e22e">nodemon</span> <span style="color:#a6e22e">ejs</span><span style="color:#f92672">-</span><span style="color:#a6e22e">layout</span> <span style="color:#a6e22e">express</span><span style="color:#f92672">-</span><span style="color:#a6e22e">ejs</span><span style="color:#f92672">-</span><span style="color:#a6e22e">layouts</span> <span style="color:#a6e22e">body</span><span style="color:#f92672">-</span><span style="color:#a6e22e">parser</span>
+</span></span></code></pre></div><p><img src="/images/2023/Web-Development/ejs-nodejs/install-nodejs.png" alt="image"></p>
+<p>All these commands are the same for Linux and macOS.</p>
+<h2 id="step-3---creating-a-folder-structure">Step 3 - Creating a Folder Structure:</h2>
+<p>Before we start coding, let&rsquo;s create a folder structure. It&rsquo;s easy to create the required folders. Here&rsquo;s the structure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ejs-nodejs
+</span></span><span style="display:flex;"><span> ├─assets
+</span></span><span style="display:flex;"><span> │  ├─css
+</span></span><span style="display:flex;"><span> │  │  └─styles.css
+</span></span><span style="display:flex;"><span> │  ├─js
+</span></span><span style="display:flex;"><span> │  │  ├─main.js
+</span></span><span style="display:flex;"><span> │  │  └─script.js
+</span></span><span style="display:flex;"><span> │  └─image
+</span></span><span style="display:flex;"><span> ├─routes
+</span></span><span style="display:flex;"><span> │  └─pages.js
+</span></span><span style="display:flex;"><span> └─views
+</span></span><span style="display:flex;"><span>    ├─partials
+</span></span><span style="display:flex;"><span>    │  ├─header.ejs
+</span></span><span style="display:flex;"><span>    │  ├─footer.ejs
+</span></span><span style="display:flex;"><span>    │  └─navbar.ejs     
+</span></span><span style="display:flex;"><span>    ├─pages
+</span></span><span style="display:flex;"><span>    │  └─index.ejs
+</span></span><span style="display:flex;"><span>    ├─about
+</span></span><span style="display:flex;"><span>    │  └─about.ejs
+</span></span><span style="display:flex;"><span>    ├─contact
+</span></span><span style="display:flex;"><span>    │  └─contact.ejs
+</span></span><span style="display:flex;"><span>    ├─credit
+</span></span><span style="display:flex;"><span>    │  └─credit.ejs
+</span></span><span style="display:flex;"><span>    ├─portfolio-details
+</span></span><span style="display:flex;"><span>    │  └─project-detail.ejs
+</span></span><span style="display:flex;"><span>    ├─portfolio
+</span></span><span style="display:flex;"><span>    │  └─portfolio.ejs
+</span></span><span style="display:flex;"><span>    ├─resume
+</span></span><span style="display:flex;"><span>    │  └─resume.ejs
+</span></span><span style="display:flex;"><span>    └─service
+</span></span><span style="display:flex;"><span>       └─service.ejs
+</span></span></code></pre></div><p>This folder structure organizes our project. <code>ejs-nodejs</code> is the main folder, and inside it, we have <code>assets</code>, <code>routes</code>, and <code>views</code> folders. Each folder serves a specific purpose and contains the necessary files for this project.</p>
+<h2 id="step-4---creating-a-server">Step 4 - Creating a Server:</h2>
+<p>Now that we have installed all the required applications, it&rsquo;s time to create a server. Before that, we need to create a server file called <code>app.js</code>. Let&rsquo;s create it using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch app.js
+</span></span></code></pre></div><p>Now that we have the file, let&rsquo;s code our server. Open <code>app.js</code> and add the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PORT</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8080</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Serve static files from the &#39;assets&#39; folder
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;assets&#39;</span>)));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Set &#39;ejs&#39; as the template engine
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>, <span style="color:#e6db74">&#39;ejs&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;views&#39;</span>, <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>, <span style="color:#e6db74">&#39;views&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Define routes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pagesRouter</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./routes/pages&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#a6e22e">pagesRouter</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Start the server
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">PORT</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Server is running on port </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">PORT</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>In this code, we use Express to start the server on port 8080. We serve static files from the &lsquo;assets&rsquo; folder, set &rsquo;ejs&rsquo; as the template engine, define routes using <code>pagesRouter</code> from <code>routes/pages.js</code>, and finally, start the server.</p>
+<h2 id="step-5---creating-a-pagesjs-file">Step 5 - Creating a pages.js File:</h2>
+<p>Depending on the website, you may have multiple pages. For this project, we will create a file called <code>pages.js</code> and add all the page URLs to it. Then, we will import it into the <code>app.js</code> file. Let&rsquo;s create <code>pages.js</code> and add the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;express&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//getting the router for the webpages.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">router</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Router</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the index pages
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;./pages/index&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the portfolio-details pages
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the web project called Smart Parking assistant
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-web&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-web&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//This will render the runner game
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-apps-run-game&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-apps-run-game&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the application called: &#34;Application Installer for Linux&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-apps-application-installer&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-apps-application-installer&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the virus killing game
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-apps-virus-killer&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-apps-virus-killer&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the script bot detail.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-script-bot-class&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-script-bot-class&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//this will render the update script script detail page
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-script-update-system&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-script-update-system&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/portfolio-script-terminal-config&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/portfolio-script-terminal-config&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/one-power-detail&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#34;portfolio-details/one-power-detail&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">router</span>;
+</span></span></code></pre></div><p>In this code, we create an Express router and define routes for each page. For example, the <code>'/'</code> route renders the <code>pages/index</code> view. You can add more routes for other pages following the same pattern.</p>
+<h2 id="step-6---creating-an-indexejs-file">Step 6 - Creating an index.ejs File:</h2>
+<p>Now, let&rsquo;s create an <code>index.ejs</code> file that will serve as the main template for our website. This file will include other partials and render different sections of the page. Here&rsquo;s the code for <code>index.ejs</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../partials/head&#39;); %&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Home Page&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>     &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../partials/header&#39;); %&gt;            
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">&lt;!-- Tracking Softwaare Umami Cloud --&gt;</span>
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://analytics.umami.is/script.js&#34;</span> <span style="color:#a6e22e">data-website-id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5af65bc3-1cbf-43ab-8987-9af6cc4d4aef&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">header</span>&gt; 
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- This is the about Section--&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../about/about&#39;); %&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../about/count&#39;); %&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../about/skills&#39;); %&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../about/interest&#39;); %&gt; 
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">section</span>&gt; 
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- This is the Resume Section --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;resume&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;resume&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../resume/resume&#39;); %&gt;            
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- This is the Service Page--&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;services&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;services&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../service/service&#39;); %&gt; 
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- This is the protfolio Section --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;portfolio&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;portfolio&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../portfolio/portfolio&#39;); %&gt; 
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">&lt;!-- This is the Contact Section --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;contact&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;contact&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../contact/contact&#39;); %&gt; 
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../credit/credit&#39; ); %&gt; 
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">&lt;</span>%- include(&#39;../partials/footer&#39;); %&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>In this code, we have an HTML structure where we include different partials such as <code>head</code>, <code>header</code>, <code>navbar</code>, <code>about</code>, <code>portfolio</code>, <code>contact</code>, and <code>footer</code>. You can modify this code and create other partials according to your website&rsquo;s needs.</p>
+<h2 id="step-7---running-the-project">Step 7 - Running the Project:</h2>
+<p>Once you have finished coding and added all the necessary code to `app</p>
+<p>.js`, you can run the project by typing the following command in the terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm start
+</span></span></code></pre></div><p>This command is the same for Windows, Linux, and macOS.</p>
+<h1 id="package-json-file">Package Json File</h1>
+<p>This is the package json file containing all the dependencies that will be used in this project. Also in this project we will define the testing script and nodemon setup everything related to this project will be configured in this file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;portfolio-website&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;It&#39;s a blog and portfolio website for the author&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;app.js&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;nodemon app.js&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;repository&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;git&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;git+https://github.com/rafay99-epic/Portfolio-Website.git&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;Abdul Rafay&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;bugs&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/rafay99-epic/Portfolio-Website/issues&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;homepage&#34;</span>: <span style="color:#e6db74">&#34;https://github.com/rafay99-epic/Portfolio-Website#readme&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;body-parser&#34;</span>: <span style="color:#e6db74">&#34;^1.20.0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;bootstrap&#34;</span>: <span style="color:#e6db74">&#34;^5.1.3&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;bootstrap-icons&#34;</span>: <span style="color:#e6db74">&#34;^1.9.0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;ejs&#34;</span>: <span style="color:#e6db74">&#34;^3.1.8&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;ejs-lint&#34;</span>: <span style="color:#e6db74">&#34;^1.2.2&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.18.1&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;nodemon&#34;</span>: <span style="color:#e6db74">&#34;^2.0.20&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>Congratulations! You have successfully set up EJS with Node.js. Now you can use EJS to write reusable code and create dynamic webpages without repeating the same code again and again.</p>
+<p>Note: This blog post provides a basic overview of using EJS with Node.js. For a more detailed implementation and advanced features, you can refer to the code and the GitHub repository mentioned in the article&rsquo;s references.</p>
+<p>I hope this guide helps you in using EJS with Node.js. Happy coding! ❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">EJS Pratice & Article</h3>
+  </a>
+</div>
+<h2 id="github-repository">GitHub Repository</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Portfolio-Website/tree/main">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Working Project</h3>
+  </a>
+</div>
+<h2 id="video-walkthrough">Video WalkThrough</h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Web-Development/ejs-nodejs/Using-ejs-thumbnail.png" alt="thumbnail"></p>
+<!-- ## WalkThrough Video: -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/windows/wsl-install/">
+            &#8592;
+            Previous:
+            Window Sub-System for Linux (WSL)
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 7, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/code-report/11th-July-2023/">
+            Next:
+            Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 11, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#prerequisites">Prerequisites:</a></li>
+    <li><a href="#installation">Installation:</a></li>
+    <li><a href="#creating-a-project">Creating a Project:</a>
+      <ol>
+        <li><a href="#step-1---creating-a-project">Step 1 - Creating a Project:</a></li>
+        <li><a href="#step-2---installing-essential-packages">Step 2 - Installing Essential Packages:</a></li>
+        <li><a href="#step-3---creating-a-folder-structure">Step 3 - Creating a Folder Structure:</a></li>
+        <li><a href="#step-4---creating-a-server">Step 4 - Creating a Server:</a></li>
+        <li><a href="#step-5---creating-a-pagesjs-file">Step 5 - Creating a pages.js File:</a></li>
+        <li><a href="#step-6---creating-an-indexejs-file">Step 6 - Creating an index.ejs File:</a></li>
+        <li><a href="#step-7---running-the-project">Step 7 - Running the Project:</a></li>
+      </ol>
+    </li>
+    <li><a href="#package-json-file">Package Json File</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+        <li><a href="#video-walkthrough">Video WalkThrough</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

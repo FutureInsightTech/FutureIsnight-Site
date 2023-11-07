@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Code Report: From Birds to X Org Transformation</title>
+    <meta name="description" content="Twitter Tansformation">
+    <meta name="keywords" content='blog, gokarna, hugo, code-report'>
+
+    <meta property="og:url" content="https://future-insight.blog/code-report/25th-July-2023/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Code Report: From Birds to X Org Transformation">
+    <meta property="og:description" content="Twitter Tansformation">
+    <meta property="og:image" content="/images/2023/code-report/2023/25th-july/Twitter-New-Logo-(1).png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Code Report: From Birds to X Org Transformation">
+    <meta name="twitter:description" content="Twitter Tansformation">
+    <meta property="twitter:domain" content="https://future-insight.blog/code-report/25th-July-2023/">
+    <meta property="twitter:url" content="https://future-insight.blog/code-report/25th-July-2023/">
+    <meta name="twitter:image" content="/images/2023/code-report/2023/25th-july/Twitter-New-Logo-(1).png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/code-report/25th-July-2023/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Code Report: From Birds to X Org Transformation</h1>
+        <small role="doc-subtitle">Twitter Tansformation</small>
+        <p class="post-date">
+            July 25, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/code-report">code-report</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>Today is July 25, and I am reading code report about Twitter&rsquo;s recent logo change. Regrettably, the iconic blue bird logo was replaced this morning with a new logo called &ldquo;X.&rdquo;</p>
+<p>Elon Musk, the owner of Twitter, tweeted on Sunday that the idea behind changing the logo to &ldquo;X&rdquo; was to &ldquo;embody the imperfections in us all that make us unique.&rdquo; He also mentioned that they will gradually bid farewell to the Twitter brand and all bird-related imagery.</p>
+<p>By Sunday afternoon, the web address x.com had already started redirecting to what was once Twitter. The domain had been returned to Musk in 2017 after it was relinquished as part of a merger that became PayPal.</p>
+<p>This change from bird imagery to an &ldquo;X&rdquo; is just one of the sweeping changes that have occurred since Musk bought Twitter for $44 billion last year. In April, Musk had already renamed the company from Twitter Inc. to X Corp.</p>
+<div style="display: flex; justify-content: center;">
+  <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Our headquarters tonight <a href="https://t.co/GO6yY8R7fO">pic.twitter.com/GO6yY8R7fO</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1683378289031761920?ref_src=twsrc%5Etfw">July 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<h1 id="changes-in-twitter">Changes in Twitter</h1>
+<p>It has been widely expected that significant changes would come after Elon Musk acquired Twitter, and now we are witnessing some of those changes. One notable alteration is the introduction of a &ldquo;DM limit&rdquo; that restricts the number of daily direct messages unverified users can send. This change is set to take effect this coming Friday. Additionally, Twitter faces competition from Meta&rsquo;s new app, Threads, which was launched earlier this month.</p>
+<h1 id="twitter-vs-threads">Twitter vs Threads</h1>
+<p>Not too long ago, Twitter&rsquo;s code was accidentally published on Github, providing Threads with enough resources to create its own product. However, the true power of META lies in its ability to incorporate features from other applications and integrate them into their products, although sometimes this strategy can backfire.</p>
+<p>I have created a chart to help illustrate the dynamic nature of each social media platform.</p>
+<p><img src="/images/2023/code-report/2023/25th-july/Social-deia.png" alt="image"></p>
+<p>As shown in the image above, Twitter seems to attract both intelligent and less aesthetically pleasing individuals, whereas Facebook and Reddit are more popular among less attractive and less intelligent users. Instagram and TikTok, on the other hand, are perceived as platforms for attractive but less intelligent people. Threads, however, was intended to bridge the gap between intelligent and attractive individuals, but unfortunately, there aren&rsquo;t enough people who fall into both categories to make this concept successful.</p>
+<p>Furthermore, Elon Musk dealt a significant blow to Threads last week by introducing the first revenue sharing mechanism to different accounts. This change had a substantial impact on Threads. Until this point, META had not shared its revenue with anyone in the world. The only thing users received from META was a virtual internet presence, and to earn some cash, they needed to turn to other platforms like OnlyFans, YouTube, and potentially Twitter in the near future.</p>
+<h1 id="twitter-future">Twitter Future</h1>
+<p>Twitter CEO Linda Yaccarino said in a series of posts that the rebrand is the start of a move to push the app in new directions. She is the former head of ad sales for NBCUniversal, the parent company of NBC News.</p>
+<p>&ldquo;X is the future state of unlimited interactivity — centered in audio, video, messaging, payments/banking — creating a global marketplace for ideas, goods, services, and opportunities,&rdquo; she wrote. &ldquo;Powered by AI, X will connect us all in ways we’re just beginning to imagine.&rdquo;</p>
+<p>Musk has teased turning Twitter into a bigger app since he bought the platform last year, talking about an &ldquo;everything app&rdquo; similar to what WeChat has become in China.</p>
+<p>The shifts marks the end of one of the most recognizable brands of the social media boom. The blue Twitter bird had also become a known icon, and one that the company previously valued.</p>
+<p>&ldquo;Our logo is our most recognizable asset,&rdquo; the company said in a branding page that was still live as of Monday morning. &ldquo;That’s why we’re so protective of it.&rdquo;</p>
+<h1 id="my-perspective">My Perspective</h1>
+<p>While I don&rsquo;t fully understand Elon Musk&rsquo;s intentions, I can&rsquo;t help but imagine that he is strategizing a complex and significant move for the company, possibly akin to a game of 5D chess. However, the question remains: Is he trying to overhaul Twitter drastically, or are there other underlying reasons for these changes? Perhaps it&rsquo;s related to the technical aspects of Twitter, such as its use of htmx on the site. Only time will reveal Musk&rsquo;s true intentions and thoughts regarding Twitter.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In conclusion, under Elon Musk&rsquo;s ownership, Twitter has undergone significant changes, including the replacement of the blue bird logo with the letter &ldquo;X.&rdquo; The shift towards X Corp signifies a strategic move towards embracing imperfections and exploring new possibilities. The introduction of a &ldquo;DM limit&rdquo; and competition from Meta&rsquo;s Threads app add to the platform&rsquo;s evolving landscape. As we await Twitter&rsquo;s future direction, Elon Musk&rsquo;s vision for an all-encompassing &ldquo;everything app&rdquo; remains a source of curiosity and intrigue.</p>
+<p>This is it from Code Report, and I will see you next time. ❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://twitter.com/elonmusk/status/1683378289031761920">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Elon Musk Tweet</h3>
+  </a>
+  <a class="card" href="https://www.nbcnews.com/news/us-news/twitter-rebrands-x-elon-musk-loses-iconic-bird-logo-rcna95880">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">NBC News Article</h3>
+  </a>
+  <a class="card" href="https://www.ft.com/content/a4330d6b-03cd-41a2-a391-a08d3580b3d1">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">FT Article</h3>
+  </a>
+</div>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/code-report/2023/25th-july/Twitter-New-Logo-(1).png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/tech-journey/Flutter/Flutter-begining/">
+            &#8592;
+            Previous:
+            Tech Journey Insights: Flutter Begining
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 24, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/tech-journey/Flutter/dart-programming/">
+            Next:
+            Flutter: Dart Programming Language
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 26, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#changes-in-twitter">Changes in Twitter</a></li>
+    <li><a href="#twitter-vs-threads">Twitter vs Threads</a></li>
+    <li><a href="#twitter-future">Twitter Future</a></li>
+    <li><a href="#my-perspective">My Perspective</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

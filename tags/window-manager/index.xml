@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>window-manager on Future Insight</title>
+    <link>https://future-insight.blog/tags/window-manager/</link>
+    <description>Recent content in window-manager on Future Insight</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Aug 2023 23:45:20 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/window-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hyprland Window Manager Tour: A New Desktop Experience</title>
+      <link>https://future-insight.blog/OS/linux/hyprland/</link>
+      <pubDate>Fri, 25 Aug 2023 23:45:20 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/hyprland/</guid>
+      <description>As many of you may already know, I have been using Linux for several years now, both on servers and desktop systems. Throughout my journey, I have transitioned from a full-fledged desktop environment to a minimalistic setup tailored specifically for my needs.
+In this ongoing exploration, I recently made a significant switch in my window manager choice. While I had been using the Awesome Window Manager for quite some time, I decided to shift gears and embrace the relatively new and rapidly evolving hyprland Window Manager.</description>
+    </item>
+    
+    <item>
+      <title>Midnight Tokyo: Awesome Window Manager</title>
+      <link>https://future-insight.blog/OS/linux/MidnightTokyoWM/</link>
+      <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/MidnightTokyoWM/</guid>
+      <description>Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.</description>
+    </item>
+    
+  </channel>
+</rss>

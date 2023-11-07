@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Getting Started with Firebase Database: A Comprehensive Guide</title>
+    <meta name="description" content="Learn Firebase connection">
+    <meta name="keywords" content='blog, gokarna, hugo, web-development'>
+
+    <meta property="og:url" content="https://future-insight.blog/web-development/firebase-connection/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Getting Started with Firebase Database: A Comprehensive Guide">
+    <meta property="og:description" content="Learn Firebase connection">
+    <meta property="og:image" content="/images/2023/Web-Development/firebase-database/Firebase-connection.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Getting Started with Firebase Database: A Comprehensive Guide">
+    <meta name="twitter:description" content="Learn Firebase connection">
+    <meta property="twitter:domain" content="https://future-insight.blog/web-development/firebase-connection/">
+    <meta property="twitter:url" content="https://future-insight.blog/web-development/firebase-connection/">
+    <meta name="twitter:image" content="/images/2023/Web-Development/firebase-database/Firebase-connection.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/web-development/firebase-connection/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Getting Started with Firebase Database: A Comprehensive Guide</h1>
+        <small role="doc-subtitle">Learn Firebase connection</small>
+        <p class="post-date">
+            June 24, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/web-development">web-development</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>In today&rsquo;s blog post, we will delve into the world of Firebase Database and explore how to use it effectively in your web development projects. Whether you&rsquo;re a beginner or an experienced developer, this guide will take you from the basics to advanced concepts, covering everything you need to know about Firebase Database. So let&rsquo;s dive in!</p>
+<h1 id="understanding-firebase-database">Understanding Firebase Database</h1>
+<p>Firebase Database is a cloud-hosted NoSQL database provided by Google as part of the Firebase platform. It is designed to store and sync data in real-time, making it ideal for applications that require real-time updates and collaboration. Firebase Database offers two primary options: the Realtime Database and Firestore.</p>
+<h2 id="realtime-database">Realtime Database</h2>
+<p>Firebase Realtime Database is a NoSQL, JSON-based database that allows developers to build real-time applications with synchronized data across clients. It offers real-time data synchronization, which means any changes made to the database are immediately reflected on all connected clients. This makes it perfect for applications such as chat apps, collaborative tools, and live dashboards.</p>
+<h3 id="connecting-to-firebase-realtime-database">Connecting to Firebase Realtime Database</h3>
+<p>To get started with Firebase Realtime Database, follow these steps:</p>
+<ol>
+<li>Create a Firebase project and enable the Realtime Database in the Firebase console.</li>
+<li>Obtain the necessary configuration details (apiKey, authDomain, databaseURL) for your Firebase project.</li>
+<li>Include the Firebase SDK in your web application by adding the following code snippet to your HTML file:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Firebase SDK --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><ol start="4">
+<li>Initialize Firebase and connect to the Realtime Database using the configuration details:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Initialize Firebase
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firebaseConfig</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">apiKey</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_API_KEY&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">authDomain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_AUTH_DOMAIN&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">databaseURL</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_DATABASE_URL&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">initializeApp</span>(<span style="color:#a6e22e">firebaseConfig</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Access the Realtime Database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">database</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">database</span>();
+</span></span></code></pre></div><h3 id="basic-read-and-write-operations">Basic Read and Write Operations</h3>
+<p>Once connected to the Firebase Realtime Database, you can perform basic read and write operations. Here are a few examples:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Write data to the database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">database</span>.<span style="color:#a6e22e">ref</span>(<span style="color:#e6db74">&#39;users&#39;</span>).<span style="color:#a6e22e">set</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;john@example.com&#39;</span>,
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Read data from the database
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">database</span>.<span style="color:#a6e22e">ref</span>(<span style="color:#e6db74">&#39;users&#39;</span>).<span style="color:#a6e22e">once</span>(<span style="color:#e6db74">&#39;value&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">snapshot</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">users</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">snapshot</span>.<span style="color:#a6e22e">val</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">users</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="firestore">Firestore</h2>
+<p>Firestore is a more advanced NoSQL document database provided by Firebase. It offers scalability, more advanced querying capabilities, offline support, and multi-region data replication. Firestore is a suitable choice for applications that require complex data querying and structured data organization.</p>
+<h3 id="connecting-to-firestore">Connecting to Firestore</h3>
+<p>To use Firestore in your web application, follow these steps:</p>
+<ol>
+<li>Enable Firestore in the Firebase console for your project.</li>
+<li>Include the Firebase SDK by adding the following code snippet to your HTML file:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Firebase SDK --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Initialize Firebase and connect to Firestore:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Initialize Firebase
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firebaseConfig</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">apiKey</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_API_KEY&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">authDomain</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_AUTH_DOMAIN&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">projectId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YOUR_PROJECT_ID&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">initializeApp</span>(<span style="color:#a6e22e">firebaseConfig</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Access Firestore
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">firestore</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">firebase</span>.<span style="color:#a6e22e">firestore</span>();
+</span></span></code></pre></div><h3 id="basic-read-and-write-operations-1">Basic Read and Write Operations</h3>
+<p>Firestore offers powerful querying capabilities and flexible data organization. Here are a few examples of basic read and</p>
+<p>write operations in Firestore:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Add a document to a collection
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">firestore</span>.<span style="color:#a6e22e">collection</span>(<span style="color:#e6db74">&#39;users&#39;</span>).<span style="color:#a6e22e">doc</span>(<span style="color:#e6db74">&#39;user1&#39;</span>).<span style="color:#a6e22e">set</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;john@example.com&#39;</span>,
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Get a document from a collection
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">firestore</span>.<span style="color:#a6e22e">collection</span>(<span style="color:#e6db74">&#39;users&#39;</span>).<span style="color:#a6e22e">doc</span>(<span style="color:#e6db74">&#39;user1&#39;</span>).<span style="color:#a6e22e">get</span>().<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">doc</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">doc</span>.<span style="color:#a6e22e">exists</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userData</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">doc</span>.<span style="color:#a6e22e">data</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">userData</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>In this comprehensive guide, we explored Firebase Database and its two primary options: Realtime Database and Firestore. We learned how to connect to each database and perform basic read and write operations. Firebase Database provides a powerful and scalable solution for real-time data synchronization and structured data storage. Whether you&rsquo;re building chat applications, collaborative tools, or any real-time app, Firebase Database can be a game-changer for your web development projects.</p>
+<p>Remember to refer to the official Firebase documentation for more detailed information and advanced usage. Happy coding with Firebase Database!</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="github-repository">GitHub Repository</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/DevTestBox">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">DevTexBox Repository</h3>
+  </a>
+</div>
+<h2 id="video-walkthrough">Video WalkThrough</h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe>
+<!-- # Thumbnail Image
+![image](/images/2023/Web-Development/firebase-database/Firebase-connection.png) -->
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/windows/secure-your-windows/">
+            &#8592;
+            Previous:
+            Windows Security: Protecting Your Operating System
+        </a>
+    </p>
+    <p class="prev-post-date">
+        June 19, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/web-development/explore-databases/">
+            Next:
+            Exploring Different Types of Databases in Web Development
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            June 24, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#understanding-firebase-database">Understanding Firebase Database</a>
+      <ol>
+        <li><a href="#realtime-database">Realtime Database</a>
+          <ol>
+            <li><a href="#connecting-to-firebase-realtime-database">Connecting to Firebase Realtime Database</a></li>
+            <li><a href="#basic-read-and-write-operations">Basic Read and Write Operations</a></li>
+          </ol>
+        </li>
+        <li><a href="#firestore">Firestore</a>
+          <ol>
+            <li><a href="#connecting-to-firestore">Connecting to Firestore</a></li>
+            <li><a href="#basic-read-and-write-operations-1">Basic Read and Write Operations</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+        <li><a href="#video-walkthrough">Video WalkThrough</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Application Development: Package 03</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/services/Application-Development/Package03/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Application Development: Package 03">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/2023/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Application Development: Package 03">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/services/Application-Development/Package03/">
+    <meta property="twitter:url" content="https://future-insight.blog/services/Application-Development/Package03/">
+    <meta name="twitter:image" content="/images/2023/">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/services/Application-Development/Package03/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>Application Development: Package 03</h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <!-- Css and Js Files -->
+<script src="/js/redirect.js"></script>
+<link rel="stylesheet" href="/css/services/package.css">
+<h2 id="premium-tier-unleashing-the-full-potential">Premium Tier: Unleashing the Full Potential</h2>
+<p>Unleash the full potential of your Android app with Future Insight&rsquo;s Premium Tier. Our comprehensive package offers a range of cutting-edge services to elevate your app to new heights of success.</p>
+<h2 id="full-stack-app-development-with-api-integration">Full-Stack App Development with API Integration</h2>
+<p>Our team of expert developers will craft a full-stack app that seamlessly integrates with powerful APIs. From front-end interfaces to back-end functionalities, we ensure a cohesive and dynamic user experience that sets your app apart.</p>
+<h2 id="seamless-deployment-for-optimal-performance">Seamless Deployment for Optimal Performance</h2>
+<p>Deploying your app is a critical step in ensuring optimal performance. Our experts follow industry best practices to deploy your app efficiently, minimizing downtime and maximizing user satisfaction.</p>
+<h2 id="comprehensive-project-documentation">Comprehensive Project Documentation</h2>
+<p>We believe in transparency and clarity. That&rsquo;s why we provide comprehensive project documentation, giving you a clear understanding of the app&rsquo;s architecture, features, and functionality. With detailed documentation, you can easily navigate your app&rsquo;s development journey.</p>
+<h2 id="three-video-call-support-sessions">Three Video Call Support Sessions</h2>
+<p>Effective communication is the cornerstone of success. With our Premium Tier, you&rsquo;ll have the opportunity to engage in three video call support sessions. These sessions foster collaboration, enable real-time feedback, and ensure that your vision is accurately translated into the final product.</p>
+<h2 id="price-customization-based-on-project-scope">Price Customization Based on Project Scope</h2>
+<p>We understand that every project is unique. That&rsquo;s why our pricing is tailored to the scope of your app. Whether it&rsquo;s a simple app or a complex solution, our pricing is flexible and customized to meet your specific requirements.</p>
+<h2 id="github-delivery-for-easy-access-and-download">GitHub Delivery for Easy Access and Download</h2>
+<p>We believe in empowering our clients with full control over their app. That&rsquo;s why we deliver your project through GitHub, providing easy access and enabling you to download and manage your app&rsquo;s source code effortlessly.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With Future Insight&rsquo;s Premium Tier, you&rsquo;ll experience the full potential of your Android app. From seamless integration to comprehensive support, our package is designed to propel your app to success. Let us be your trusted partner in revolutionizing the mobile app landscape.</p>
+<!-- Button -->
+<div class="button-container">
+    <button class="green-button" onclick="redirectToURL('/terms-conditions/')">Terms & Conditions</button>
+    <button class="green-button" onclick="redirectToURL('/select-package/')">Select this Package</button>
+</div>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

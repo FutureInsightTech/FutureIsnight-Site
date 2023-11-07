@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code-report on Future Insight</title>
+    <link>https://future-insight.blog/tags/code-report/</link>
+    <description>Recent content in code-report on Future Insight</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Jul 2023 15:03:44 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/code-report/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Report: From Birds to X Org Transformation</title>
+      <link>https://future-insight.blog/code-report/25th-July-2023/</link>
+      <pubDate>Tue, 25 Jul 2023 15:03:44 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/25th-July-2023/</guid>
+      <description>Today is July 25, and I am reading code report about Twitter&amp;rsquo;s recent logo change. Regrettably, the iconic blue bird logo was replaced this morning with a new logo called &amp;ldquo;X.&amp;rdquo;
+Elon Musk, the owner of Twitter, tweeted on Sunday that the idea behind changing the logo to &amp;ldquo;X&amp;rdquo; was to &amp;ldquo;embody the imperfections in us all that make us unique.&amp;rdquo; He also mentioned that they will gradually bid farewell to the Twitter brand and all bird-related imagery.</description>
+    </item>
+    
+    <item>
+      <title>Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming</title>
+      <link>https://future-insight.blog/code-report/11th-July-2023/</link>
+      <pubDate>Tue, 11 Jul 2023 14:11:13 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/11th-July-2023/</guid>
+      <description>It is July 11th, 2023, and amidst the belief that the AI hype was dying down, OpenAI surprised everyone by releasing a Code Interpreter to its 20 million subscription users. In this blog post, we will explore the implications of this new feature and its potential effects on programmers. We will also delve into its current capabilities by performing various tasks to gauge its limitations.
+The Arrival of the Code Interpreter: OpenAI&amp;rsquo;s recent announcement revealed that the Code Interpreter would be made available to all ChatGPT Plus users within the next week.</description>
+    </item>
+    
+    <item>
+      <title>Code Report: 06th July 2023</title>
+      <link>https://future-insight.blog/code-report/06th-July-2023/</link>
+      <pubDate>Thu, 06 Jul 2023 15:21:52 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/06th-July-2023/</guid>
+      <description>The Perils of Faking User Growth: Lessons from IRL&amp;rsquo;s Rise and Fall The phrase &amp;ldquo;Fake it till you make it&amp;rdquo; is commonly used in the world of software engineering, often embraced by new entrepreneurs and startups. It suggests projecting confidence and success even before achieving it. However, the recent demise of IRL, a promising social app, serves as a stark reminder of the consequences of fabricating user growth. This article explores the rise and fall of IRL, highlighting the risks associated with creating fake user bases and emphasizing the importance of genuine user acquisition.</description>
+    </item>
+    
+    <item>
+      <title>Code Report: 24th June 2023</title>
+      <link>https://future-insight.blog/code-report/24th-June-2023/</link>
+      <pubDate>Sat, 24 Jun 2023 22:51:59 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/24th-June-2023/</guid>
+      <description>----------- Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
+This announcement raises several crucial questions:
+What is closed-source software? What is the significance of Red Hat Linux? What actions are they taking? What is the problem? Should i be worry? But what about licensing?</description>
+    </item>
+    
+  </channel>
+</rss>

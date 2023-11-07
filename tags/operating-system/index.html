@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>operating-system</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/tags/operating-system/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="operating-system">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="operating-system">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/tags/operating-system/">
+    <meta property="twitter:url" content="https://future-insight.blog/tags/operating-system/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/tags/operating-system/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="container list-posts">
+
+    <h1 class="list-title">operating-system</h2>
+
+    
+
+    <h2 class="posts-year">2023</h2><article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/hyprland/" class="post-link">Hyprland Window Manager Tour: A New Desktop Experience</a>
+    <div class="flex-break"></div>
+    <span class="post-date">August 25, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/My-Linux-Journey/" class="post-link">Discovering Linux: My Path to Becoming a Command Line Maestro</a>
+    <div class="flex-break"></div>
+    <span class="post-date">August 14, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/windows/Power-Shell-Scripting/" class="post-link">PowerShell: Unleashing the Power of Automation and System Management</a>
+    <div class="flex-break"></div>
+    <span class="post-date">July 21, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/secure-linux/" class="post-link">Secure Linux The 3 Biggest Security Mistakes Linux Users Make</a>
+    <div class="flex-break"></div>
+    <span class="post-date">July 20, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/windows/winget-package-manager/" class="post-link">Winget: A Powerful Tool for Effortless Software Installation on Windows</a>
+    <div class="flex-break"></div>
+    <span class="post-date">July 13, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/windows/wsl-install/" class="post-link">Window Sub-System for Linux (WSL)</a>
+    <div class="flex-break"></div>
+    <span class="post-date">July 7, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/fedora-install-tips/" class="post-link">Optimize Your Fedora: 5 Essential Post-Installation Steps</a>
+    <div class="flex-break"></div>
+    <span class="post-date">July 1, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/nvidia-driver-fedora-linux/" class="post-link">Nvidia Driver: Fedora Linux</a>
+    <div class="flex-break"></div>
+    <span class="post-date">June 30, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/terminal-feedback-password/" class="post-link">Enhancing Terminal Experience: Feedback for Password Entry</a>
+    <div class="flex-break"></div>
+    <span class="post-date">June 30, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/windows/secure-your-windows/" class="post-link">Windows Security: Protecting Your Operating System</a>
+    <div class="flex-break"></div>
+    <span class="post-date">June 19, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/linux-distribution/" class="post-link">Navigating the Linux Universe: Finding Your Perfect Distribution</a>
+    <div class="flex-break"></div>
+    <span class="post-date">June 13, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/MidnightTokyoWM/" class="post-link">Midnight Tokyo: Awesome Window Manager</a>
+    <div class="flex-break"></div>
+    <span class="post-date">May 26, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/image-optimization/" class="post-link">Image Optimization</a>
+    <div class="flex-break"></div>
+    <span class="post-date">May 23, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/automating-file-management-with-bash-script/" class="post-link">Automating File Management with a Bash Script</a>
+    <div class="flex-break"></div>
+    <span class="post-date">May 22, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/Top-5-linux-command/" class="post-link">Top 5 Commands Linux</a>
+    <div class="flex-break"></div>
+    <span class="post-date">April 13, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/linux-app-simplified/" class="post-link">Linux App Installation: Simplified</a>
+    <div class="flex-break"></div>
+    <span class="post-date">March 28, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/nvidia-driver-arch-linux/" class="post-link">Nivida Driver: Arch Linux</a>
+    <div class="flex-break"></div>
+    <span class="post-date">March 12, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/install-linux/" class="post-link">Install Linux</a>
+    <div class="flex-break"></div>
+    <span class="post-date">March 8, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/windows/world-of-os/" class="post-link">The World of Operating System</a>
+    <div class="flex-break"></div>
+    <span class="post-date">March 6, 2023</span>
+</article>
+<article class="post-title">
+    <a href="https://future-insight.blog/OS/linux/world-of-linux/" class="post-link">The World of Linux</a>
+    <div class="flex-break"></div>
+    <span class="post-date">March 5, 2023</span>
+</article>
+
+    
+
+</div>
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

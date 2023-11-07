@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fedora on Future Insight</title>
+    <link>https://future-insight.blog/tags/fedora/</link>
+    <description>Recent content in Fedora on Future Insight</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jul 2023 20:26:58 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimize Your Fedora: 5 Essential Post-Installation Steps</title>
+      <link>https://future-insight.blog/OS/linux/fedora-install-tips/</link>
+      <pubDate>Sat, 01 Jul 2023 20:26:58 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/fedora-install-tips/</guid>
+      <description>So you&amp;rsquo;ve installed Fedora on your system, and I hope you&amp;rsquo;re enjoying it. However, out of the box, there are a few things that could be improved. In this blog post, we will go through the top five things to do after installing Fedora on your system.
+Top 5: Here are the top 5 things I would do when I install Fedora on my system, and I will be throwing in a bonus one as well.</description>
+    </item>
+    
+    <item>
+      <title>Nvidia Driver: Fedora Linux</title>
+      <link>https://future-insight.blog/OS/linux/nvidia-driver-fedora-linux/</link>
+      <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/nvidia-driver-fedora-linux/</guid>
+      <description>In the world of graphics-intensive tasks and gaming, having the right drivers installed is crucial for optimal performance and compatibility. If you are a Fedora user seeking to harness the power of Nvidia graphics cards, you&amp;rsquo;ve come to the right place. This comprehensive guide will walk you through the step-by-step process of installing Nvidia drivers on your Fedora system.
+By following this guide, you&amp;rsquo;ll be able to unlock the full potential of your Nvidia graphics card, ensuring smooth visuals, improved stability, and access to advanced features.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 38: Review</title>
+      <link>https://future-insight.blog/OS/linux/review/fedora-review/</link>
+      <pubDate>Tue, 16 May 2023 00:07:49 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/OS/linux/review/fedora-review/</guid>
+      <description>I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, &amp;ldquo;Why not? Let&amp;rsquo;s try Fedora and see what&amp;rsquo;s the hype?&amp;rdquo; Why people love Fedora so much and what it is like to run Fedora for a while</description>
+    </item>
+    
+  </channel>
+</rss>

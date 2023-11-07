@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Flutter: Dart Programming Language</title>
+    <meta name="description" content="Basic of Dart Programming Language">
+    <meta name="keywords" content='blog, gokarna, hugo, new-tech, Flutter'>
+
+    <meta property="og:url" content="https://future-insight.blog/tech-journey/Flutter/dart-programming/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flutter: Dart Programming Language">
+    <meta property="og:description" content="Basic of Dart Programming Language">
+    <meta property="og:image" content="/images/16.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flutter: Dart Programming Language">
+    <meta name="twitter:description" content="Basic of Dart Programming Language">
+    <meta property="twitter:domain" content="https://future-insight.blog/tech-journey/Flutter/dart-programming/">
+    <meta property="twitter:url" content="https://future-insight.blog/tech-journey/Flutter/dart-programming/">
+    <meta name="twitter:image" content="/images/16.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/tech-journey/Flutter/dart-programming/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Flutter: Dart Programming Language</h1>
+        <small role="doc-subtitle">Basic of Dart Programming Language</small>
+        <p class="post-date">
+            July 26, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/new-tech">new-tech</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/flutter">Flutter</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>I want to learn Flutter and make cool apps, but it was a while ago that I had to learn a new Programming language, and I am rusty to learn a new programming language, but I am eager to learn something new, so in this blog post, I will be learning the Dart Programming language, and I will be sharing my experience with you guys.</p>
+<p>Before we begin, we need dark sdk on my system. So let&rsquo;s get started.</p>
+<h1 id="installing-dart-sdk">Installing Dart SDK</h1>
+<p>To install the Dart SDK, it is easy. You can follow the guide on their website by <a href="https://dart.dev/get-dart">clicking here</a>.</p>
+<p>I am using Windows 11, so I will install the Dart SDK on my system. To install the Dark SDK, you need a package manager called Chocolatey. To install Chocolatey, you need to run the following command in PowerShell as an administrator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Set-ExecutionPolicy</span> <span style="color:#a6e22e">Bypass</span> <span style="color:#a6e22e">-Scope</span> <span style="color:#a6e22e">Process</span> <span style="color:#a6e22e">-Force;</span> [<span style="color:#a6e22e">System.Net.ServicePointManager</span>]<span style="color:#a6e22e">::SecurityProtocol</span> <span style="color:#a6e22e">=</span> [<span style="color:#a6e22e">System.Net.ServicePointManager</span>]<span style="color:#a6e22e">::SecurityProtocol</span> <span style="color:#a6e22e">-bor</span> <span style="color:#a6e22e">3072;</span> <span style="color:#a6e22e">iex</span> <span style="color:#e6db74">((New-Object System.Net.WebClient).DownloadString(&#39;https://community.chocolatey.org/install.ps1&#39;))</span>
+</span></span></code></pre></div><p>Once Choc is installed on your system, you can install the Dart SDK. To install it, the command is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span> <span style="color:#a6e22e">choco</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">dart-sdk</span>
+</span></span></code></pre></div><p>To learn more about dart-sdk you can check out the <a href="https://dart.dev/">website</a></p>
+<h1 id="check-out-dart-on-browser">Check out Dart on Browser</h1>
+<p>If don&rsquo;t want to install Dart on your system then you can run dart in yout browser as well. Just <a href="https://dart.dev/#try-dart">click here</a> to see the online compiler.</p>
+<h1 id="dart-programming-language-basic-syntax">Dart Programming Language: Basic Syntax</h1>
+<h2 id="variables">Variables</h2>
+<p>Just like other programming languages Dart also have variables. To declare a variable in Dart you need to use the <code>var</code> keyword. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Abdul Rafay&#34;</span>;
+</span></span></code></pre></div><p>The type of the name variable is inferred to be String, but you can change that type by specifying it. If an object isn’t restricted to a single type, specify the Object type (or dynamic if necessary).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">Object</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bob&#39;</span>;
+</span></span></code></pre></div><p>Another option is to explicitly declare the type that would be inferred:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">String</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bob&#39;</span>;
+</span></span></code></pre></div><h3 id="null-safety">Null Safety</h3>
+<p>The Dart language enforces sound null safety.</p>
+<p>Null safety prevents an error that results from unintentional access of variables set to null. The error is called a null dereference error. A null dereference error occurs when you access a property or call a method on an expression that evaluates to null. An exception to this rule is when null supports the property or method, like toString() or hashCode. With null safety, the Dart compiler detects these potential errors at compile time.</p>
+<p><strong>For example</strong>, say you want to find the absolute value of an int variable i. If i is null, calling i.abs() causes a null dereference error. In other languages, trying this could lead to a runtime error, but Dart’s compiler prohibits these actions. Therefore, Dart apps can’t cause runtime errors.</p>
+<h3 id="default-value">Default value</h3>
+<p>Uninitialized variables that have a nullable type have an initial value of null. Even variables with numeric types are initially null, because numbers—like everything else in Dart—are objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">int</span><span style="color:#f92672">?</span> lineCount;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span>(lineCount <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span>);
+</span></span></code></pre></div><h3 id="late-variables">Late variables</h3>
+<p>The late modifier has two use cases:</p>
+<ul>
+<li>Declaring a non-nullable variable that’s initialized after its declaration.</li>
+<li>Lazily initializing a variable.</li>
+</ul>
+<p>Often Dart’s control flow analysis can detect when a non-nullable variable is set to a non-null value before it’s used, but sometimes analysis fails. Two common cases are top-level variables and instance variables: Dart often can’t determine whether they’re set, so it doesn’t try.</p>
+<p>If you’re sure that a variable is set before it’s used, but Dart disagrees, you can fix the error by marking the variable as late:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>late <span style="color:#66d9ef">String</span> description;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() {
+</span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Feijoada!&#39;</span>;
+</span></span><span style="display:flex;"><span>  print(description);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>When you mark a variable as late but initialize it at its declaration, then the initializer runs the first time the variable is used. This lazy initialization is handy in a couple of cases:</p>
+<ul>
+<li>The variable might not be needed, and initializing it is costly.</li>
+<li>You’re initializing an instance variable, and its initializer needs access to this.</li>
+</ul>
+<h3 id="final--const">Final &amp; Const</h3>
+<p>You can set a variable’s value only once. Declaring a variable with the final modifier prevents you from accidentally overwriting it then final or constant is used just like another programming language.</p>
+<p>Here’s an example of creating and setting a final variable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bob&#39;</span>; <span style="color:#75715e">// Without a type annotation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">final</span> <span style="color:#66d9ef">String</span> nickname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bobby&#39;</span>;
+</span></span></code></pre></div><p>You can’t change the value of a final variable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Alice&#39;</span>; <span style="color:#75715e">// Error: a final variable can only be set once.
+</span></span></span></code></pre></div><p>Use const for variables that you want to be compile-time constants. If the const variable is at the class level, mark it static const. Where you declare the variable, set the value to a compile-time constant such as a number or string literal, a const variable, or the result of an arithmetic operation on constant numbers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> bar <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000000</span>; <span style="color:#75715e">// Unit of pressure (dynes/cm2)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">double</span> atm <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.01325</span> <span style="color:#f92672">*</span> bar; <span style="color:#75715e">// Standard atmosphere
+</span></span></span></code></pre></div><h2 id="operators">Operators:</h2>
+<p>Dart supports the operators shown in the following table. The table shows Dart’s operator associativity and operator precedence from highest to lowest, which are an approximation of Dart’s operator relationships. You can implement many of these operators as class members.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Operator Table
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  print(<span style="color:#e6db74">&#34;Operator Table in Dart:&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;----------------------------&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Unary Postfix:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">expr++</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">expr--</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">()</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">[]</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">?[]</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">.</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">?.</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">!&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Unary Prefix:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">-expr</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">!expr</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">~expr</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">++expr</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">--expr</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">await expr&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Multiplicative:</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">*</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">/</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">%</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">~/&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Additive:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">+</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">-&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Shift:</span><span style="color:#ae81ff">\t\t\t</span><span style="color:#e6db74">&lt;&lt;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&gt;&gt;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&gt;&gt;&gt;&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Bitwise AND:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">&amp;&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Bitwise XOR:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">^&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Bitwise OR:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">|&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Relational and Type Test: &gt;=</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&gt;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&lt;=</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&lt;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">as</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">is</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">is!&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Equality:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">==</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">!=&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Logical AND:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">&amp;&amp;&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Logical OR:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">||&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;If Null:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">??&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Conditional:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">expr1 ? expr2 : expr3&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Cascade:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">..</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">?..&#34;</span>);
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Assignment:</span><span style="color:#ae81ff">\t\t</span><span style="color:#e6db74">=</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">*=</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">/=   +=</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">-=   &amp;=   ^=   etc.&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You see the operators different programming language are the same as the one in Dart.</p>
+<style>
+table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+      border: 2px solid white;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      color: white;
+    }
+</style>
+<table>
+    <tr>
+      <th>Description</th>
+      <th>Operator</th>
+      <th>Associativity</th>
+    </tr>
+    <tr>
+      <td>Unary Postfix</td>
+      <td>expr++<br>expr--<br>()<br>[]<br>?[]<br>.<br>?.<br>!</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Unary Prefix</td>
+      <td>-expr<br>!expr<br>~expr<br>++expr<br>--expr<br>await expr</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Multiplicative</td>
+      <td>*, / ,% ,~/ </td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Additive</td>
+      <td>+ , -</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Shift</td>
+      <td>&lt;&lt;, &gt;&gt;, &gt;&gt;&gt;,  </td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Bitwise AND</td>
+      <td>&amp;</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Bitwise XOR</td>
+      <td>^</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Bitwise OR</td>
+      <td>|</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Relational and Type Test</td>
+      <td>&gt;=, &gt;, &lt;=,&lt;,as,is, is! </td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Equality</td>
+      <td>==, !=</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Logical AND</td>
+      <td>&amp;&amp;</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Logical OR</td>
+      <td>||</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>If Null</td>
+      <td>??</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Conditional</td>
+      <td>expr1 ? expr2 : expr3</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>Cascade</td>
+      <td>.. , ?..</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assignment</td>
+      <td>=, *=, /=, +=,-=, &amp;=, ^= </td>
+      <td>Right</td>
+    </tr>
+  </table>
+<h2 id="comments">Comments</h2>
+<p>Dart supports single-line comments, multi-line comments, and documentation comments.</p>
+<p>Single-line comments
+A single-line comment begins with //. Everything between // and the end of line is ignored by the Dart compiler.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// TODO: refactor into an AbstractLlamaGreetingFactory?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  print(<span style="color:#e6db74">&#39;Welcome to my Llama farm!&#39;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Multi-line comments
+A multi-line comment begins with /* and ends with <em>/. Everything between /</em> and */ is ignored by the Dart compiler (unless the comment is a documentation comment; see the next section). Multi-line comments can nest.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> main() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   * This is a lot of work. Consider raising chickens.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Llama larry = Llama();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  larry.feed();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  larry.exercise();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  larry.clean();
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>After Reading the documentation of Dart I can say that Dart is a very easy language to learn and I am excited to learn more about it. I will be writing more blogs on Dart and Flutter so stay tuned for that. plus the main concepts for programming is not changing not matter which programming language you are using. So if you know one programming language then you can learn any programming language.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://dart.dev/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Dart Website</h3>
+  </a>
+  <a class="card" href="https://dart.dev/language">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Dart Language</h3>
+  </a>
+  <a class="card" href="https://dartpad.dev/">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Try Dart</h3>
+  </a>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/code-report/25th-July-2023/">
+            &#8592;
+            Previous:
+            Code Report: From Birds to X Org Transformation
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 25, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/tech-journey/Flutter/flutter-kickstart/">
+            Next:
+            Flutter Kickstart: From Setup to Emulator in Style
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 31, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

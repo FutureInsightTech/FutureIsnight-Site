@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Windows Security: Protecting Your Operating System</title>
+    <meta name="description" content="Learn secure window">
+    <meta name="keywords" content='blog, gokarna, hugo, operating-system, security, windows'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/windows/secure-your-windows/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Windows Security: Protecting Your Operating System">
+    <meta property="og:description" content="Learn secure window">
+    <meta property="og:image" content="/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Windows Security: Protecting Your Operating System">
+    <meta name="twitter:description" content="Learn secure window">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/windows/secure-your-windows/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/windows/secure-your-windows/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/Windows/Window-Security/Windows-Security-Protecting-Your-Operating-System.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/windows/secure-your-windows/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Windows Security: Protecting Your Operating System</h1>
+        <small role="doc-subtitle">Learn secure window</small>
+        <p class="post-date">
+            June 19, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">operating-system</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/security">security</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/windows">windows</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<hr>
+<p>The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks. If one is not cautious, personal information can be sold online. Various organizations track your online activities, creating profiles that are used to deliver targeted advertisements. Additionally, the threat of viruses looms, capable of compromising your system and resulting in the loss of valuable data.</p>
+<p>Therefore, the question arises: How can you safeguard your operating system from viruses, data theft, and other potential dangers? Fear not, for I will provide an explanation on everything you need to secure your computer or laptop, ensuring the protection of your digital world.</p>
+<p>There are a lot of ways you can secure your computer. In this blog, we will go through how to secure Windows 10 or Windows 11.</p>
+<h1 id="windows">Windows</h1>
+<p>Windows 11 was released a while ago with its main selling point being enhanced security. However, I&rsquo;m not entirely convinced about its level of security. While Windows is great for various tasks, it does have certain limitations when it comes to protecting your private data and defending against different types of attacks.
+Even after years of development, Windows 10 still exhibits some security issues. Moreover, Windows has a tendency to collect a significant amount of user data during installation.</p>
+<h1 id="windows-security">Windows Security</h1>
+<p>When it comes to securing Windows, follow these steps in the specified order:</p>
+<ol>
+<li>Install Latest Security Patches.</li>
+<li>Enable Firewall.</li>
+<li>Enable Windows security features.</li>
+<li>Add Password/Biometric authentication.</li>
+<li>Encrypt Disk.</li>
+<li>Backup your system.</li>
+<li>Debloat Windows.</li>
+</ol>
+<p>By following these steps, you can ensure better security and privacy for your Windows computer.</p>
+<h2 id="security-patches">Security Patches</h2>
+<p>A security patch in the context of Windows refers to an update or fix provided by Microsoft to address known vulnerabilities or security issues in the operating system. These patches play a critical role in maintaining the security and integrity of your Windows system.</p>
+<p>Security patches are released by Microsoft on a regular basis, typically in the form of Windows Updates. These updates are designed to close security loopholes, fix software bugs, and improve overall system stability. By applying these patches, you ensure that your operating system has the latest security enhancements and protection against potential threats.</p>
+<p>The importance of installing security patches cannot be overstated. Neglecting to update your system leaves it vulnerable to attacks that exploit known vulnerabilities. Hackers and cybercriminals often target unpatched systems, taking advantage of these security gaps to gain unauthorized access, compromise data, or disrupt operations.</p>
+<p>Microsoft continuously monitors and analyzes potential security risks to identify vulnerabilities in their software. Once a vulnerability is identified, the company develops a corresponding security patch to address the issue. These patches are thoroughly tested to ensure compatibility and stability before they are made available to users.</p>
+<p>To keep your Windows system secure, it is crucial to stay up to date with the latest security patches. You can configure your system to automatically download and install Windows Updates or manually check for updates on a regular basis. By doing so, you protect your computer from known security vulnerabilities and benefit from the ongoing efforts of Microsoft to maintain the security of their operating system.</p>
+<p>Remember that security patches alone are not enough to guarantee absolute security. It is equally important to implement other security measures, such as using robust passwords, employing antivirus software, practicing safe browsing habits, and regularly backing up your data. Together, these practices form a comprehensive approach to safeguarding your Windows system and protecting your digital assets.</p>
+<h2 id="enabling-firewall">Enabling Firewall</h2>
+<p>A firewall is a simple yet powerful tool that helps protect your computer and all its valuable information.
+It acts as a digital shield, standing guard between your device and the vast sea of online threats.
+This robust guardian keeps a watchful eye on the traffic flowing in and out, ensuring that only authorized and safe data gets through while malicious intruders are kept at bay.
+By analyzing and filtering data packets based on specific rules, the firewall acts as a gatekeeper, safeguarding your precious files and personal data from hackers, viruses, and other cyber-attacks. It&rsquo;s like having a vigilant security guard for your digital fortress, giving you peace of mind and a solid defense against online dangers.</p>
+<p>A firewall is like the bouncer of network security, keeping the bad guys out and letting the good stuff in. It&rsquo;s a vital shield between a company&rsquo;s internal network and all the sketchy stuff out there. This cyber-guardian watches the traffic coming and going, using some cool rules to decide who gets in and who gets kicked to the curb. By examining data packets and checking their source, destination, and content, firewalls can stop hackers, malware, and all sorts of troublemakers from messing with your network. They&rsquo;re like the ultimate bodyguards, filtering out the bad while allowing the legit stuff to flow freely. Firewalls can be either hardware or software, but either way, they&rsquo;re your trusty defenders, making sure your precious data stays safe and sound.</p>
+<h3 id="enable-firewall-on-window-10">Enable Firewall on Window 10</h3>
+<p>To enable the firewall on Windows 10, you can follow these steps:</p>
+<ol>
+<li>
+<p>Click on the &ldquo;Start&rdquo; button on your desktop and select the &ldquo;Settings&rdquo; gear icon.
+<img src="/images/2023/Operating-System/Windows/Window-Security/open-setting.png" alt="image"></p>
+</li>
+<li>
+<p>In the Settings window, click on &ldquo;Update &amp; Security.&rdquo;
+<img src="/images/2023//Operating-System/Windows/Window-Security/security-&amp;-update.png" alt="image"></p>
+</li>
+<li>
+<p>From the left-hand menu, choose &ldquo;Windows Security.&rdquo;
+<img src="/images/2023//Operating-System/Windows/Window-Security/window-security.png" alt="image"></p>
+</li>
+<li>
+<p>Within Windows Security, select &ldquo;Firewall &amp; network protection.&rdquo;
+<img src="/images/2023//Operating-System/Windows/Window-Security/firewall-on.png" alt="image"></p>
+</li>
+<li>
+<p>Under the &ldquo;Firewall &amp; network protection&rdquo; section, you will see your active network connections. Click on the network you want to enable the firewall for (e.g., &ldquo;Private network&rdquo;).</p>
+</li>
+<li>
+<p>On the next screen, you will find the Windows Defender Firewall settings for that specific network. Ensure that the &ldquo;Windows Defender Firewall&rdquo; toggle switch is turned on.</p>
+</li>
+<li>
+<p>You can also customize the firewall settings by clicking on &ldquo;Allow an app through firewall&rdquo; or &ldquo;Advanced settings&rdquo; on the same page.</p>
+</li>
+</ol>
+<p>By following these steps, you will successfully enable the firewall on your Windows 10 computer, providing an added layer of protection against unauthorized access and potential security threats.</p>
+<h3 id="firewall-on-window-11">Firewall on Window 11</h3>
+<p>The firewall is typically enabled by default. It provides a basic level of protection for your computer by monitoring incoming and outgoing network traffic and blocking potentially malicious connections.</p>
+<p>To ensure that the firewall is active on your Windows 11 system, you can follow these general steps once Windows 11 becomes available:</p>
+<ol>
+<li>
+<p>Click on the Start button or press the Windows key to open the Start menu.</p>
+</li>
+<li>
+<p>Search for &ldquo;Windows Security&rdquo; or &ldquo;Defender Security Center&rdquo; and open the corresponding app.</p>
+</li>
+<li>
+<p>In the Windows Security or Defender Security Center window, you should see an indication that the firewall is active and protecting your system.</p>
+</li>
+<li>
+<p>If the firewall is not enabled, you can typically activate it by going to the &ldquo;Firewall &amp; network protection&rdquo; or similar section within the app and following the prompts to turn on the firewall.</p>
+</li>
+</ol>
+<h2 id="enable-window-defender-security">Enable Window Defender/ security</h2>
+<p>Detecting viruses is crucial for any operating system as they can rapidly wreak havoc on your computer, potentially leading to its destruction within minutes. Moreover, these stealthy culprits have the ability to silently pilfer all your sensitive information, leaving you unaware of their malicious activities.</p>
+<h3 id="window-defender-on-window-10">Window Defender on Window 10</h3>
+<p>To fortify your defense, enabling Windows Defender on Windows 10 is a key step. Here&rsquo;s how to do it:</p>
+<ol>
+<li>
+<p>Begin by clicking on the &ldquo;Start&rdquo; button on your desktop and selecting the gear icon for &ldquo;Settings.&rdquo;
+<img src="/images/2023//Operating-System/Windows/Window-Security/open-setting.png" alt="image"></p>
+</li>
+<li>
+<p>Within the Settings window, click on &ldquo;Update &amp; Security.&rdquo;
+<img src="/images/2023/Operating-System/Windows/Window-Security/security-&amp;-update.png" alt="image"></p>
+</li>
+<li>
+<p>From the left-hand menu, choose &ldquo;Windows Security.&rdquo;
+<img src="/images/2023/Operating-System/Windows/Window-Security/window-security.png" alt="image"></p>
+</li>
+<li>
+<p>In the Windows Security section, click on &ldquo;Virus &amp; threat protection.&rdquo;
+<img src="/images/2023/Operating-System/Windows/Window-Security/virus-protection.png" alt="image"></p>
+</li>
+<li>
+<p>Under Virus &amp; threat protection, you will find the Windows Defender settings. Ensure that the &ldquo;Real-time protection&rdquo; toggle switch is turned on.</p>
+</li>
+<li>
+<p>Additionally, you can click on &ldquo;Scan options&rdquo; to perform various types of scans, such as a Quick Scan or a Full Scan, to proactively detect and eliminate any existing malware on your system.</p>
+</li>
+<li>
+<p>Windows Defender also provides additional security features such as &ldquo;Cloud-delivered protection&rdquo; and &ldquo;Automatic sample submission&rdquo; to enhance your defense against emerging threats. You can enable these features by navigating to the corresponding sections in the Windows Security settings.</p>
+</li>
+</ol>
+<p>By following these steps and enabling Windows Defender, you significantly bolster your computer&rsquo;s security, safeguarding it against viruses and potential data breaches. Regularly updating your antivirus definitions and performing scans will further enhance your protection against evolving threats.</p>
+<h3 id="window-defender-on-window-11">Window Defender on Window 11</h3>
+<p>Windows Defender is typically enabled by default as the built-in antivirus and security solution. It should activate automatically upon installation or when no other third-party antivirus software is detected on the system.</p>
+<p>To ensure that Windows Defender is enabled on your Windows 11 system, you can follow these general steps once Windows 11 becomes available:</p>
+<ol>
+<li>
+<p>Click on the Start button or press the Windows key to open the Start menu.</p>
+</li>
+<li>
+<p>Search for &ldquo;Windows Security&rdquo; or &ldquo;Defender Security Center&rdquo; and open the corresponding app.</p>
+</li>
+<li>
+<p>In the Windows Security or Defender Security Center window, you should see an indication that Windows Defender is active and protecting your system.</p>
+</li>
+<li>
+<p>If Windows Defender is not enabled, you can typically activate it by going to the &ldquo;Virus &amp; threat protection&rdquo; or similar section within the app and following the prompts to enable real-time protection.</p>
+</li>
+</ol>
+<p>Please note that these steps are based on previous versions of Windows, and the process may vary in Windows 11. It is always recommended to refer to the official documentation or support resources provided by Microsoft for accurate and up-to-date instructions on how to activate Windows Defender on Windows 11 once it becomes available.</p>
+<h2 id="adding-password-to-account">Adding Password to Account</h2>
+<p>In my experience, it&rsquo;s essential to always protect your computer with strong passwords. If, unfortunately, your computer gets lost or stolen, having a password in place adds an extra layer of security. In such cases, the thief would need to reset your computer, which would result in the erasure of all your personal files. This added protection acts as a safeguard, ensuring that even if your device falls into the wrong hands, your sensitive information remains inaccessible. Remember to choose passwords that are unique, complex, and not easily guessable to maximize the effectiveness of this security measure.</p>
+<p>To add a password or PIN to your account in Windows 10, you can follow these steps:</p>
+<ol>
+<li>
+<p>Click on the &ldquo;Start&rdquo; button on your desktop and select the gear icon for &ldquo;Settings.&rdquo;</p>
+</li>
+<li>
+<p>In the Settings window, click on &ldquo;Accounts.&rdquo;</p>
+</li>
+<li>
+<p>From the left-hand menu, choose &ldquo;Sign-in options.&rdquo;</p>
+</li>
+<li>
+<p>Under the &ldquo;Sign-in options&rdquo; section, you will see different methods for signing into your account.</p>
+</li>
+<li>
+<p>To set a password, click on &ldquo;Password&rdquo; and then click on the &ldquo;Add&rdquo; button.</p>
+</li>
+<li>
+<p>Follow the on-screen prompts to create a strong password. Make sure to choose a password that is unique and not easily guessable.</p>
+</li>
+<li>
+<p>To set a PIN, click on &ldquo;PIN&rdquo; and then click on the &ldquo;Add&rdquo; button.</p>
+</li>
+<li>
+<p>Follow the on-screen prompts to create a PIN. A PIN is usually a shorter and easier-to-remember option compared to a password.</p>
+</li>
+<li>
+<p>Once you have set a password or PIN, you will be required to enter it when logging into your Windows 10 account.</p>
+</li>
+</ol>
+<p>By following these steps, you can add a password or PIN to your Windows 10 account, adding an additional layer of security to protect your computer and personal information.</p>
+<p>To add a password or PIN to your account in Windows 10, you can follow these steps:</p>
+<ol>
+<li>
+<p>Click on the &ldquo;Start&rdquo; button on your desktop and select the gear icon for &ldquo;Settings.&rdquo;</p>
+</li>
+<li>
+<p>In the Settings window, click on &ldquo;Accounts.&rdquo;</p>
+</li>
+<li>
+<p>From the left-hand menu, choose &ldquo;Sign-in options.&rdquo;</p>
+</li>
+<li>
+<p>Under the &ldquo;Sign-in options&rdquo; section, you will see different methods for signing into your account.</p>
+</li>
+<li>
+<p>To set a password, click on &ldquo;Password&rdquo; and then click on the &ldquo;Add&rdquo; button.</p>
+</li>
+<li>
+<p>Follow the on-screen prompts to create a strong password. Make sure to choose a password that is unique and not easily guessable.</p>
+</li>
+<li>
+<p>To set a PIN, click on &ldquo;PIN&rdquo; and then click on the &ldquo;Add&rdquo; button.</p>
+</li>
+<li>
+<p>Follow the on-screen prompts to create a PIN. A PIN is usually a shorter and easier-to-remember option compared to a password.</p>
+</li>
+<li>
+<p>Once you have set a password or PIN, you will be required to enter it when logging into your Windows 10 account.</p>
+</li>
+</ol>
+<p>By following these steps, you can add a password or PIN to your Windows 10 account, adding an additional layer of security to protect your computer and personal information.</p>
+<h2 id="encrypt-disk">Encrypt Disk</h2>
+<p>Disk encryption is a powerful security measure that helps protect your sensitive data from unauthorized access.
+By encrypting a disk, you scramble its contents, making them unreadable without the appropriate decryption key or password.
+This ensures that even if your disk falls into the wrong hands, the data stored on it remains secure and inaccessible.
+Windows 10 provides a convenient built-in tool called BitLocker, allowing you to encrypt your disks effortlessly.
+Whether it&rsquo;s an external hard drive, USB flash drive, or even your computer&rsquo;s internal drive, encrypting the disk with BitLocker adds an additional layer of protection, giving you peace of mind that your confidential information remains confidential.</p>
+<h3 id="encrypt-disk-on-window-10">Encrypt Disk on Window 10</h3>
+<p>To encrypt a disk in Windows 10, you can use the built-in feature called BitLocker. Here&rsquo;s how you can encrypt a disk using BitLocker:</p>
+<ol>
+<li>
+<p>Connect the disk you want to encrypt to your computer.</p>
+</li>
+<li>
+<p>Open File Explorer by clicking on the folder icon in the taskbar or by pressing the Windows key + E.</p>
+</li>
+<li>
+<p>Right-click on the disk you want to encrypt and select &ldquo;Turn on BitLocker.&rdquo;</p>
+</li>
+<li>
+<p>If BitLocker prompts you for permission, click &ldquo;Yes&rdquo; to continue.</p>
+</li>
+<li>
+<p>In the BitLocker setup wizard, select &ldquo;Use a password to unlock the drive.&rdquo;</p>
+</li>
+<li>
+<p>Enter a strong password that meets the complexity requirements. Make sure to remember or securely store this password, as it is required to unlock the encrypted disk.</p>
+</li>
+<li>
+<p>Choose a method to back up your recovery key. You can either save it to a file, print it, or save it to your Microsoft account. This recovery key is essential if you forget your password or need to access the encrypted disk from another computer.</p>
+</li>
+<li>
+<p>Select the encryption method. The recommended option is &ldquo;Encrypt entire drive,&rdquo; which encrypts all the existing and future files on the disk.</p>
+</li>
+<li>
+<p>Click &ldquo;Start encrypting&rdquo; to begin the encryption process.</p>
+</li>
+<li>
+<p>The encryption process may take some time, depending on the size of the disk. You can continue to use your computer during the encryption, but it may affect performance.</p>
+</li>
+</ol>
+<p>Once the encryption process is complete, your disk will be protected by BitLocker. Each time you connect the encrypted disk to your computer, you will need to enter the password you set earlier to unlock and access the data on the disk.</p>
+<h2 id="backup-your-system">Backup your system</h2>
+<p>Backing up your system is a crucial step to ensure the safety of your data and protect against potential data loss. Regularly creating backups of your files and system settings can be a lifesaver in case of hardware failure, software issues, malware attacks, or accidental deletions. Here are some key steps to follow when backing up your system:</p>
+<ol>
+<li>
+<p>Identify the data and files you want to back up: Determine which files, folders, and important data you need to include in your backup. This can include documents, photos, videos, music, and any other valuable files.</p>
+</li>
+<li>
+<p>Choose a backup method: Decide on the backup method that suits your needs. Options include external hard drives, network-attached storage (NAS), cloud storage services, or dedicated backup software. Each method has its advantages and considerations, so choose the one that aligns with your preferences and requirements.</p>
+</li>
+<li>
+<p>Set up a regular backup schedule: Establish a routine for performing backups on a regular basis. Whether it&rsquo;s daily, weekly, or monthly, consistency is key to ensuring that your data stays protected and up to date.</p>
+</li>
+<li>
+<p>Select a backup software or service: If you opt for backup software or a cloud backup service, research and choose a reputable and reliable solution that meets your requirements. Popular options include Windows File History, Windows Backup and Restore, third-party backup software like Acronis True Image, or cloud storage services like Google Drive or Microsoft OneDrive.</p>
+</li>
+<li>
+<p>Configure backup settings: Once you&rsquo;ve chosen a backup method or software, configure the settings accordingly. This includes selecting the specific files and folders to include in the backup, setting up encryption if desired, and specifying the backup destination.</p>
+</li>
+<li>
+<p>Perform the initial backup: Start the initial backup process, which may take some time depending on the size of your data. This first backup ensures that all your important files are securely saved.</p>
+</li>
+<li>
+<p>Test your backups: Regularly verify the integrity of your backups by restoring some files or data from the backup. This will help ensure that your backups are functioning correctly and that you can successfully retrieve your data if needed.</p>
+</li>
+</ol>
+<p>By following these steps and maintaining a regular backup routine, you can safeguard your system and data against unforeseen events and have peace of mind knowing that your valuable files are protected.</p>
+<h2 id="debload-window">Debload Window</h2>
+<p>Debloating Windows refers to the process of removing unnecessary or unwanted software and features from the operating system, which can help improve system performance, free up storage space, and enhance overall efficiency. Here are some general steps to debloat Windows:</p>
+<ol>
+<li>
+<p>Uninstall unnecessary software: Open the &ldquo;Settings&rdquo; app, go to &ldquo;Apps,&rdquo; and review the list of installed applications. Uninstall any programs that you no longer need or use. Be cautious when removing built-in Windows apps, as some may be required for system functionality.</p>
+</li>
+<li>
+<p>Disable startup programs: Open the &ldquo;Task Manager&rdquo; by right-clicking on the taskbar and selecting &ldquo;Task Manager.&rdquo; Navigate to the &ldquo;Startup&rdquo; tab and disable any programs that you don&rsquo;t need to launch automatically with Windows. This can help improve startup speed and reduce system resource usage.</p>
+</li>
+<li>
+<p>Remove unnecessary startup services: Press the Windows key + R, type &ldquo;msconfig,&rdquo; and hit Enter. In the &ldquo;System Configuration&rdquo; window, go to the &ldquo;Services&rdquo; tab and check the box for &ldquo;Hide all Microsoft services.&rdquo; Then, disable any non-essential services that you don&rsquo;t need. Exercise caution and research before disabling any services to avoid affecting system stability.</p>
+</li>
+<li>
+<p>Clean up temporary files: Press the Windows key + R, type &ldquo;%temp%,&rdquo; and hit Enter. This opens the temporary files folder. Select all files and folders and delete them. Similarly, you can run the Disk Cleanup tool by typing &ldquo;Disk Cleanup&rdquo; in the Windows search bar and selecting the appropriate result. This tool can help remove unnecessary files, including system files, temporary files, and other junk.</p>
+</li>
+<li>
+<p>Review and disable unnecessary Windows features: Open the &ldquo;Control Panel&rdquo; and navigate to &ldquo;Programs&rdquo; &gt; &ldquo;Programs and Features.&rdquo; On the left-hand side, click on &ldquo;Turn Windows features on or off.&rdquo; Here, you can review the list of Windows features and disable any that you don&rsquo;t use or need. Be cautious with this step, as disabling certain features may affect specific functionalities.</p>
+</li>
+<li>
+<p>Disable or customize visual effects: Press the Windows key + R, type &ldquo;sysdm.cpl,&rdquo; and hit Enter. In the &ldquo;System Properties&rdquo; window, go to the &ldquo;Advanced&rdquo; tab and click on &ldquo;Settings&rdquo; under &ldquo;Performance.&rdquo; Here, you can choose to adjust visual effects to optimize performance. You can either select the &ldquo;Adjust for best performance&rdquo; option or customize individual visual effects according to your preferences.</p>
+</li>
+</ol>
+<p>It&rsquo;s important to note that debloating Windows carries some risks, and it&rsquo;s recommended to create a system restore point or backup your important files before making any significant changes. Additionally, be cautious when modifying system settings or uninstalling programs, and research each step to understand its implications and ensure you don&rsquo;t disable critical components.</p>
+<h3 id="open-source-project">Open source Project</h3>
+<p>Debloating Windows for improved performance and efficiency is a common practice among users. If you&rsquo;re looking for a comprehensive guide and an excellent open-source project to debloat Windows 10, you can visit <a href="https://christitus.com/debloat-windows-10-2020/">https://christitus.com/debloat-windows-10-2020/</a>. This resource provides step-by-step instructions and valuable insights on debloating techniques.</p>
+<p>Moreover, I&rsquo;d like to highlight an outstanding open-source project called &ldquo;WinScript&rdquo; developed by Chris Titus. WinScript is designed to streamline the process of debloating Windows, enhancing its speed and overall performance. You can explore WinScript and leverage its features to efficiently remove unnecessary software, disable services, optimize privacy settings, and more.</p>
+<p>By combining the guide mentioned earlier with the powerful capabilities of the WinScript project, you can take control of your Windows system and tailor it to your specific preferences, resulting in a faster and better computing experience.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Securing your operating system and protecting your digital world has become more important than ever in the face of evolving threats and advancements in technology. In this blog, we have discussed several essential steps to safeguard your Windows 10 or Windows 11 computer.</p>
+<p>Installing the latest security patches and updates is crucial to address known vulnerabilities and ensure the integrity of your system. Enabling the firewall acts as a vigilant guardian, filtering network traffic and preventing unauthorized access to your computer. Activating Windows Defender or security features provides real-time protection against viruses and malware.</p>
+<p>Adding a strong password or PIN to your account enhances your defense against unauthorized access, especially in case of device loss or theft. Encrypting your disks using tools like BitLocker adds an additional layer of protection, making your data inaccessible to unauthorized individuals.</p>
+<p>Lastly, regularly backing up your system is a vital practice to protect your data from loss or damage. Whether it&rsquo;s hardware failure, malware attacks, or accidental deletions, having backups ensures that you can restore your files and settings.</p>
+<p>By implementing these security measures and following best practices, you can significantly improve the security of your Windows computer. However, it&rsquo;s important to remember that security is an ongoing process. Staying vigilant, keeping your software up to date, practicing safe browsing habits, and being mindful of the information you share online are all critical in maintaining a secure digital environment.</p>
+<p>Remember, your digital security is in your hands. Take proactive steps to protect your operating system, safeguard your personal information, and enjoy a safer online experience.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://pureinfotech.com/best-security-settings-windows-11/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Pureinfotech</h3>
+  </a>
+</div>
+<h2 id="walkthrough-video">WalkThrough Video:</h2>
+<div class="video-container">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/YXPrBd-lZ3g?si=HQ9dJ25wz5wFMiVC" frameborder="0" allowfullscreen></iframe>
+</div>
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/linux/linux-distribution/">
+            &#8592;
+            Previous:
+            Navigating the Linux Universe: Finding Your Perfect Distribution
+        </a>
+    </p>
+    <p class="prev-post-date">
+        June 13, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/web-development/firebase-connection/">
+            Next:
+            Getting Started with Firebase Database: A Comprehensive Guide
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            June 24, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#windows">Windows</a></li>
+    <li><a href="#windows-security">Windows Security</a>
+      <ol>
+        <li><a href="#security-patches">Security Patches</a></li>
+        <li><a href="#enabling-firewall">Enabling Firewall</a>
+          <ol>
+            <li><a href="#enable-firewall-on-window-10">Enable Firewall on Window 10</a></li>
+            <li><a href="#firewall-on-window-11">Firewall on Window 11</a></li>
+          </ol>
+        </li>
+        <li><a href="#enable-window-defender-security">Enable Window Defender/ security</a>
+          <ol>
+            <li><a href="#window-defender-on-window-10">Window Defender on Window 10</a></li>
+            <li><a href="#window-defender-on-window-11">Window Defender on Window 11</a></li>
+          </ol>
+        </li>
+        <li><a href="#adding-password-to-account">Adding Password to Account</a></li>
+        <li><a href="#encrypt-disk">Encrypt Disk</a>
+          <ol>
+            <li><a href="#encrypt-disk-on-window-10">Encrypt Disk on Window 10</a></li>
+          </ol>
+        </li>
+        <li><a href="#backup-your-system">Backup your system</a></li>
+        <li><a href="#debload-window">Debload Window</a>
+          <ol>
+            <li><a href="#open-source-project">Open source Project</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+        <li><a href="#walkthrough-video">WalkThrough Video:</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

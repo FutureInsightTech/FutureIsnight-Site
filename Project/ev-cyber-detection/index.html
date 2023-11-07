@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Future Insight</title>
+    <meta name="description" content="Using the power of SVM to detect cyber attacks">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/Project/ev-cyber-detection/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Future Insight">
+    <meta property="og:description" content="Using the power of SVM to detect cyber attacks">
+    <meta property="og:image" content="/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Future Insight">
+    <meta name="twitter:description" content="Using the power of SVM to detect cyber attacks">
+    <meta property="twitter:domain" content="https://future-insight.blog/Project/ev-cyber-detection/">
+    <meta property="twitter:url" content="https://future-insight.blog/Project/ev-cyber-detection/">
+    <meta name="twitter:image" content="/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/Project/ev-cyber-detection/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1></h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 style="text-align: center"> EV Cyber Attact Dection Using ML </h1>
+<p style="text-align: justify;">
+Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.
+</p>
+<p style="text-align: justify;">
+Machine learning has emerged as a promising solution to the challenge of detecting cyber attacks in real-time. Specifically, Support Vector Machines (SVMs) have been shown to be effective in detecting malicious activities in network traffic data. SVMs are a type of supervised learning algorithm that can be trained to classify data into different categories based on its features. They work by finding the hyperplane that best separates the data into its respective categories.
+</p>
+<p style="text-align: justify;">
+In this paper, we explore the use of SVMs in detecting cyber attacks in real-time network traffic data. We discuss the challenges and limitations of traditional approaches to cyber security, and describe the advantages of using machine learning techniques for detecting attacks. We also provide an overview of the SVM algorithm and how it can be used to classify network traffic data. Finally, we present experimental results that demonstrate the effectiveness of SVMs in detecting different types of cyber attacks.
+</p>
+<h1 id="research-paper">Research Paper:</h1>
+<p>I implementated this research paper and this paper is called: <strong>Cyber-Attack on P2P Energy Transaction Between Connected Electric Vehicles: A False Data Injection Detection Based Machine Learning Model</strong> and you can find the research paper on by <a href="https://ieeexplore.ieee.org/document/9794999">clicking here</a>.</p>
+<p>So here is a summary of this reseach paper.</p>
+<h2 id="research-paper-introduction">Research paper Introduction:</h2>
+<p style="text-align: justify;">
+The increasing popularity of electric vehicles (EVs) and their ability to participate in peer-to-peer (P2P) energy transactions have raised concerns about the security of these transactions. One of the major security threats is the possibility of false data injection attacks, where an attacker can manipulate data in the energy transaction system to achieve malicious goals, such as stealing energy or disrupting the system.
+</p>
+<p style="text-align: justify;">
+To address this issue, the research paper proposes a false data injection detection based machine learning model for P2P energy transactions between connected EVs. The model is based on support vector machines (SVMs), a popular machine learning algorithm, and uses a set of features related to the energy transaction, such as the amount of energy transferred, the cost of the transaction, and the day of the week. The model is trained on a dataset of simulated P2P energy transactions, which includes both legitimate and malicious transactions, and is evaluated using cross-validation and precision score.
+</p>
+<p style="text-align: justify;">
+The results of the study show that the proposed model can effectively detect false data injection attacks in P2P energy transactions, with a high precision score of 0.86. This research has important implications for the security of P2P energy transactions and the broader field of cybersecurity, as it demonstrates the potential of machine learning algorithms in detecting and mitigating cyber threats.
+</p>
+<h1 id="my-contribution">My Contribution:</h1>
+<p style="text-align: justify;">
+My contribution towards implementing this research paper was to apply the machine learning techniques described in the paper to the data provided, and to fine-tune the model parameters to achieve the best possible results. I also explored different methods for data preprocessing and feature selection to improve the performance of the model. In addition, I tested the model on a variety of datasets and evaluated its accuracy and precision using various metrics.
+</p>
+<h1 id="implementation">Implementation:</h1>
+<p style="text-align: justify;">
+This repository contains the following components:
+<p>
+<ul style="text-align: justify;">
+  <li> 
+    Dataset: A sample dataset used in the implementation of the research paper "Cyber-Attack on P2P Energy Transaction Between Connected Electric Vehicles: A False Data Injection Detection Based Machine Learning Model"
+  </li>
+  <li> 
+    Code: Implementation of the machine learning model in Python using Scikit-learn library.
+  </li>
+  <li>
+    Research paper: The original research paper titled "Cyber-Attack on P2P Energy Transaction Between Connected Electric Vehicles: A False Data Injection Detection Based Machine Learning Model".
+  </li>
+  <li>
+    Running file: A Jupyter notebook file that shows how to run the code and use the model.
+  </li>
+  <li>
+    Pre-trained model: A pre-trained SVM model is also provided in this repository.
+  </li>
+</ul>
+<p>All of the code and resources are available on GitHub at the following link: <a href="https://github.com/rafay99-epic/Detect-FDIA-SVM">https://github.com/rafay99-epic/Detect-FDIA-SVM</a>.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p style="text-align: justify">
+The research paper "Cyber-Attack on P2P Energy Transaction Between Connected Electric Vehicles: A False Data Injection Detection Based Machine Learning Model" presents a machine learning model for detecting false data injection attacks in peer-to-peer energy transactions between connected electric vehicles.
+</p>
+<p style="text-align: justify">
+In implementing this research paper, my contribution was to reproduce the model using Python, specifically by training and testing the model using the Support Vector Machine (SVM) algorithm with a linear kernel. The code for this implementation is available on Github, along with the dataset and the research paper itself.
+</p>
+<p style="text-align: justify">
+In conclusion, this research paper provides a useful model for detecting false data injection attacks in peer-to-peer energy transactions between electric vehicles, and my implementation of the model using Python can serve as a starting point for further research in this area.
+</p>
+<h1 id="code-implementation">Code Implementation</h1>
+<p>All of the code for our smart parking system is hosted on <a href="https://github.com/rafay99-epic/Detect-FDIA-SVM">GitHub</a>. To run it locally, you can follow the instructions in the repository&rsquo;s README file. Happy coding!</p>
+<h1 id="credit">Credit:</h1>
+<p>This Project was developed by Abdul Rafay and the documentation is uploaded on <a href="https://future-insight.blog">Future Insight</a>.</p>
+<h1 id="contact-me">Contact Me:</h1>
+<p>If you have any questions or issues with our project, please do not hesitate to <a href="https://future-insight.blog/contact">contact us</a>. We are always here to help!</p>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/pages/Machine-Learning-Cyber-attack-detection/Cyber-Attact-Detection-ML.png" alt="image"></p>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

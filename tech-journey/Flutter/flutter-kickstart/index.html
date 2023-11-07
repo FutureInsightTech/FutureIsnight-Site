@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Flutter Kickstart: From Setup to Emulator in Style</title>
+    <meta name="description" content="Setup Flutter &amp; Emulator">
+    <meta name="keywords" content='blog, gokarna, hugo, new-tech, Flutter'>
+
+    <meta property="og:url" content="https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flutter Kickstart: From Setup to Emulator in Style">
+    <meta property="og:description" content="Setup Flutter &amp; Emulator">
+    <meta property="og:image" content="/images/2023/Tech-Journey/Flutter/Setup-Flutter/Flutter-Setup.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flutter Kickstart: From Setup to Emulator in Style">
+    <meta name="twitter:description" content="Setup Flutter &amp; Emulator">
+    <meta property="twitter:domain" content="https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/">
+    <meta property="twitter:url" content="https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/">
+    <meta name="twitter:image" content="/images/2023/Tech-Journey/Flutter/Setup-Flutter/Flutter-Setup.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Flutter Kickstart: From Setup to Emulator in Style</h1>
+        <small role="doc-subtitle">Setup Flutter &amp; Emulator</small>
+        <p class="post-date">
+            July 31, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/new-tech">new-tech</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/flutter">Flutter</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>I must say that setting up Flutter is not easy. There are a lot of videos out there that claim to help you set up the Flutter SDK for Windows, Linux, or macOS, but they are often incomplete and don&rsquo;t answer the most basic questions you may have. So, I&rsquo;ve decided to write this blog to help you guys out.</p>
+<p>From day one, I&rsquo;ve been a web developer, using React, HTML, CSS, and JavaScript to create websites. However, when it comes to Android applications, I&rsquo;ve developed using Android Studio, which means managing two code bases: one for Android and one for the web. That&rsquo;s why I&rsquo;ve chosen to learn Flutter for this purpose.</p>
+<p>As a beginner in Flutter development, I had a lot of questions in my mind, and I&rsquo;m sure many of you have similar questions. So, I&rsquo;ve listed all the questions I had, and I&rsquo;ll be answering them in this blog.</p>
+<h1 id="questions">Questions</h1>
+<ol>
+<li>How to create a Flutter Project?</li>
+<li>How to run a Flutter project on an emulator?</li>
+<li>How to set up an emulator on Windows?</li>
+</ol>
+<h2 id="create-a-flutter-project">Create a Flutter Project</h2>
+<p>To create a project in Flutter, there are multiple ways. The two main methods are:</p>
+<ol>
+<li>Use Visual Studio Code to create a Flutter project.</li>
+<li>Use Android Studio to create a Flutter project.</li>
+</ol>
+<p>In this blog, I&rsquo;ll be using Visual Studio Code to create a Flutter project.</p>
+<h3 id="create-a-flutter-project-using-visual-studio-code">Create a Flutter Project using Visual Studio Code</h3>
+<p>To create a Flutter project, you&rsquo;ll need to have VS Code installed on your system. If you haven&rsquo;t installed VS Code yet, make sure to do so. Once you have VS Code installed, you need to install the Flutter and Dart extensions. To install these extensions, follow these steps:</p>
+<ol>
+<li>Open Visual Studio Code.</li>
+<li>Open the Extensions sidebar by pressing <code>Ctrl+Shift+X</code> or by clicking the Extensions icon in the sidebar.</li>
+<li>Search for &ldquo;Flutter&rdquo; in the extensions search bar.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/vs-code.png" alt="flutter"></li>
+<li>Once the Flutter extension is installed, search for &ldquo;Dart&rdquo; in the extensions search bar.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/Dart-Programming.png" alt="dart"></li>
+</ol>
+<p>Now that you have everything set up, you can create a Flutter project by following these steps:</p>
+<ol>
+<li>In VS Code, press <code>Ctrl+Shift+P</code> to open the command palette.</li>
+<li>Type &ldquo;flutter&rdquo; in the command palette and select &ldquo;Flutter: New Project&rdquo;.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/flutter-project.png" alt="image"></li>
+<li>Select the location where you want to create your project.</li>
+<li>Name the project and press enter.</li>
+</ol>
+<p>With that, you have created your first Flutter project. You can now open the project in VS Code and start coding.</p>
+<h2 id="run-a-flutter-project-on-an-emulator">Run a Flutter Project on an Emulator</h2>
+<p>To run a Flutter project, you&rsquo;ll need to have an emulator or a real device. In this blog, I&rsquo;ll show you how to run a Flutter project on an emulator. To install an emulator, you&rsquo;ll need to download Android Studio on your system.</p>
+<p>Assuming you have already installed Android Studio on your system and set up an emulator, if you haven&rsquo;t, you can refer to my previous blog post on how to do that.</p>
+<h3 id="installing-emulator">Installing Emulator</h3>
+<p>If you want to install an emulator on your system, you&rsquo;ll need an extension that can help you run your Flutter project on an emulator. To install the extension, follow these steps:</p>
+<ol>
+<li>Open Visual Studio Code.</li>
+<li>Open the Extensions sidebar by pressing <code>Ctrl+Shift+X</code> or by clicking the Extensions icon in the sidebar.</li>
+<li>Search for &ldquo;Emulator&rdquo;.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/emulator.png" alt="image"></li>
+<li>Install the extension.</li>
+<li>Now you need to set your emulator path in VS Code. To do that, follow these steps:
+<ol>
+<li>Open VS Code.</li>
+<li>Press <code>Ctrl+Shift+P</code> to open the command palette.</li>
+<li>Type &ldquo;Flutter: Select Device&rdquo; and press enter.</li>
+<li>Select &ldquo;Emulator&rdquo; and press enter.</li>
+<li>Select your emulator and press enter.</li>
+<li>Now you have set your emulator path in VS Code.</li>
+<li>You need two paths:
+<ol>
+<li><code>~/Library/Android/sdk/tools/emulator</code></li>
+<li><code>C:\Users\{username}\AppData\Local\Android\Sdk\emulator</code></li>
+<li>You need to change the username in the path to your username.</li>
+</ol>
+</li>
+<li>Place these paths in the settings in VS Code.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/link-path.png" alt="image"></li>
+<li>Now you can run your Flutter project on the emulator.</li>
+</ol>
+</li>
+</ol>
+<h3 id="run-a-flutter-project-on-an-emulator-1">Run a Flutter Project on an Emulator</h3>
+<p>To run a Flutter project on an emulator, follow these steps:</p>
+<ol>
+<li>Open your Terminal in VS Code.</li>
+<li>Run this command to launch your emulator:
+<ol>
+<li><code>flutter emulators --launch {emulator name}</code></li>
+<li>Emulator name is the name of your emulator.</li>
+</ol>
+</li>
+<li>Now you can run your Flutter project on the emulator.
+<ol>
+<li><code>flutter run</code> is the command that will deploy your Flutter project on the emulator.
+<img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/Running-Project.png" alt="image"></li>
+</ol>
+</li>
+</ol>
+<h1 id="conclusion">Conclusion</h1>
+<p>Congratulations! You have now configured VS Code to run your Flutter project on an emulator. I hope this blog helps you set up your Flutter project. If you have any questions or suggestions, feel free to contact me.</p>
+<p>Happy coding! 🙂</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<!-- # Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href=" ">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/8767135.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+</div> -->
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Tech-Journey/Flutter/Setup-Flutter/Flutter-Setup.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/tech-journey/Flutter/dart-programming/">
+            &#8592;
+            Previous:
+            Flutter: Dart Programming Language
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 26, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/OS/linux/My-Linux-Journey/">
+            Next:
+            Discovering Linux: My Path to Becoming a Command Line Maestro
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            August 14, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#questions">Questions</a>
+      <ol>
+        <li><a href="#create-a-flutter-project">Create a Flutter Project</a>
+          <ol>
+            <li><a href="#create-a-flutter-project-using-visual-studio-code">Create a Flutter Project using Visual Studio Code</a></li>
+          </ol>
+        </li>
+        <li><a href="#run-a-flutter-project-on-an-emulator">Run a Flutter Project on an Emulator</a>
+          <ol>
+            <li><a href="#installing-emulator">Installing Emulator</a></li>
+            <li><a href="#run-a-flutter-project-on-an-emulator-1">Run a Flutter Project on an Emulator</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

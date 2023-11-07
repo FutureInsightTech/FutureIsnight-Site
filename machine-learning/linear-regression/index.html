@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Linear Regression</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo, Machine Learning'>
+
+    <meta property="og:url" content="https://future-insight.blog/machine-learning/linear-regression/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Linear Regression">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/2023/Machine-Learning/Linear-Regression/linear-regression.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Linear Regression">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/machine-learning/linear-regression/">
+    <meta property="twitter:url" content="https://future-insight.blog/machine-learning/linear-regression/">
+    <meta name="twitter:image" content="/images/2023/Machine-Learning/Linear-Regression/linear-regression.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/machine-learning/linear-regression/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Linear Regression</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 16, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/machine-learning">Machine Learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+----
+<p>Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable. In this blog, we will explore the concept of linear regression, its types, and how to implement it using Python.</p>
+<p>In this Blog post you will learn all the basic and advance level for Linear Regression with Examples as well. So get ready with me because it will be fun.</p>
+<h1 id="linear-regression">Linear Regression</h1>
+<p>So there are multiple ways you can define linear regression, but the simplest way to define it is that it is a supervised learning model in which this model will find the best linear line between two independent or dependent variables. This model will find the perfect relation between two or more than two variables. This entire work is known as a linear regression model.</p>
+<h2 id="type">Type:</h2>
+<p>Linear Regression is two type <strong>Simple and Multiple Linear Regression Model</strong></p>
+<p><strong>Simple Linear Regression</strong> is where only on independent variable is present and the model will find the relation between independent variables.</p>
+<p>Whereas in <strong>Multiple Linear Regression</strong> there will be more than one independent variable and the model have to find relation between them.</p>
+<h2 id="mathematical-equation">Mathematical Equation:</h2>
+<h3 id="simple-linear-regression">Simple Linear Regression</h3>
+<p>Equation of Simple Linear Regression, where bo is the intercept, b1 is coefficient or slope, x is the independent variable and y is the dependent variable.</p>
+<p><img src="/images/2023/Machine-Learning/Linear-Regression/simple.png" alt="eq1"></p>
+<h3 id="multiple-linear-regression">Multiple Linear Regression</h3>
+<p>Equation of Multiple Linear Regression, where bo is the intercept, b1,b2,b3,b4…,bn are coefficients or slopes of the independent variables x1,x2,x3,x4…,xn and y is the dependent variable.
+<img src="/images/2023/Machine-Learning/Linear-Regression/multiple.png" alt="eq2"></p>
+<p><strong>A Linear Regression model’s main aim is to find the best fit linear line and the optimal values of intercept and coefficients such that the error is minimized.
+Error is the difference between the actual value and Predicted value and the goal is to reduce this difference.</strong></p>
+<p>#Important Things to Train a Model:
+There are some important thing that are required to be done when you need to train any machine learning model and all of them are stated bellow;</p>
+<ol>
+<li>Load dataset.</li>
+<li>Clean Dataset.</li>
+<li>Visualize Dataset.</li>
+<li>Split the dataset into <strong>Training Set</strong> and <strong>Testing Set</strong>.</li>
+<li>Train the model using training Dataset.</li>
+<li>Use some king of learning rate and Fix the Mean Square Error</li>
+<li>Check the accuracy of the model.</li>
+<li>Test or Predict the model using testing Dataset.</li>
+<li>Visualize the new predication.</li>
+</ol>
+<h1 id="implementation">Implementation:</h1>
+<p>Here is a simple example of Linear regression that will help you to understand with code.</p>
+<h2 id="linear-regression-with-boston-data-set">Linear Regression with Boston Data Set:</h2>
+<ol>
+<li>Importing different libraries and the dataset called <strong>Boston</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> seaborn <span style="color:#66d9ef">as</span> sns
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> load_boston
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> metrics
+</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>matplotlib inline
+</span></span></code></pre></div><ol start="2">
+<li>Loading the Dataset &amp; Printing the dataset:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data<span style="color:#f92672">=</span> load_boston()
+</span></span></code></pre></div><p>In the above code we are using the data-frame library and CSV library using the csv library we are reading the excel sheet that will contain all of the data, using data frame we are loading the data into a Visualize form.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data
+</span></span></code></pre></div><ol start="3">
+<li>Getting the Data &amp; feature name:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># The explanatory variables.</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;data&#39;</span>]
+</span></span><span style="display:flex;"><span>header <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;feature_names&#39;</span>]
+</span></span></code></pre></div><ol start="4">
+<li>Reshaping:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Y <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;target&#39;</span>]
+</span></span><span style="display:flex;"><span>Y <span style="color:#f92672">=</span> Y<span style="color:#f92672">.</span>reshape(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><ol start="5">
+<li>Data into Data Frame:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(np<span style="color:#f92672">.</span>append(X,Y,axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> list(header)<span style="color:#f92672">+</span>[<span style="color:#e6db74">&#39;PRICE&#39;</span>]
+</span></span></code></pre></div><ol start="6">
+<li>Rounding the Data Set:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>round(df<span style="color:#f92672">.</span>corr(),<span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><ol start="7">
+<li>Apply Linear Regression Model:
+So when you want to use linear regression, there are two ways: <strong>1</strong> You can use the built-in model and library; this method is fast and does not require much logic. <strong>2.</strong> You can code linear regression from scratch; by doing this, you can control the logic of the application and push the model to its limits.</li>
+</ol>
+<p>In this Blog I will be using built in functions and libraries to compute Linear Regression.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>lm <span style="color:#f92672">=</span> LinearRegression(fit_intercept<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><ol start="8">
+<li>Fitting the Data into Model:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>lm<span style="color:#f92672">.</span>fit(df[[<span style="color:#e6db74">&#39;parent&#39;</span>]],df[[<span style="color:#e6db74">&#39;child&#39;</span>]])
+</span></span></code></pre></div><ol start="9">
+<li>Display the results in the form of Data frame:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Display the parameters as a DataFrame.</span>
+</span></span><span style="display:flex;"><span>parametersDF <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(lm<span style="color:#f92672">.</span>coef_,index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Parameter Value&#39;</span>],columns<span style="color:#f92672">=</span>header)
+</span></span><span style="display:flex;"><span>parametersDF[<span style="color:#e6db74">&#39;Intercept&#39;</span>] <span style="color:#f92672">=</span> lm<span style="color:#f92672">.</span>intercept_[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>parametersDF
+</span></span></code></pre></div><p>In the above patch of code, we are reading the training data set into a data frame, and then that data frame will be displayed.</p>
+<ol start="10">
+<li>Predicting the Values:
+Now our data is fit and model is trained, we will start with the predication.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>predicty<span style="color:#f92672">=</span>lm<span style="color:#f92672">.</span>predict(df[[<span style="color:#e6db74">&#39;parent&#39;</span>]])
+</span></span></code></pre></div><ol start="11">
+<li>Result:
+Now we will start with the displaying the result.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Display real Y vs predicted Y.</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(Y,predicty,c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;green&#39;</span>, s<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;REAL PRICE&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;PREDICTED PRICE&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>Once the code is compiled then your output should like this:
+<img src="/images/2023/Machine-Learning/Linear-Regression/result.jpg" alt="result"></p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>Linear regression is great. It has its ups and downs, but over all, it can be used for a lot of things. So learn it and use it. I am still learning and making sure that my work is good and flawless.</p>
+<h1 id="contact-me">Contact Me:</h1>
+<p>If you have any questions, please contact me</p>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="/author">My website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<p>I will see you next time❤️.</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="/author">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://www.statisticssolutions.com/free-resources/directory-of-statistical-analyses/what-is-linear-regression/">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href="https://www.analyticsvidhya.com/blog/2021/05/all-you-need-to-know-about-your-first-machine-learning-model-linear-regression/#:~:text=In%20the%20most%20simple%20words,the%20dependent%20and%20independent%20variable.">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+</div>
+<h2 id="github-repository">GitHub Repository</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/1-Power/Machine-Learning/blob/main/Linear-Regression/LinearRegession.ipynb">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository</h3>
+  </a>
+</div>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/Machine-Learning/Linear-Regression/linear-regression.png" alt="image"></p>
+<!-- ## Video References:
+- [Video Reference 1](https://www.youtube.com/watch?v=kHwlB_j7Hkc) -->
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/machine-learning/machine-learning/FDIA/">
+            &#8592;
+            Previous:
+            False Data Injection Attack
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 13, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/machine-learning/logistic-regression/">
+            Next:
+            Logistical Regression
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 18, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#linear-regression">Linear Regression</a>
+      <ol>
+        <li><a href="#type">Type:</a></li>
+        <li><a href="#mathematical-equation">Mathematical Equation:</a>
+          <ol>
+            <li><a href="#simple-linear-regression">Simple Linear Regression</a></li>
+            <li><a href="#multiple-linear-regression">Multiple Linear Regression</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#implementation">Implementation:</a>
+      <ol>
+        <li><a href="#linear-regression-with-boston-data-set">Linear Regression with Boston Data Set:</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#contact-me">Contact Me:</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Window Sub-System for Linux (WSL)</title>
+    <meta name="description" content="Linux on Windows (WSL)">
+    <meta name="keywords" content='blog, gokarna, hugo, windows, operating-system'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/windows/wsl-install/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Window Sub-System for Linux (WSL)">
+    <meta property="og:description" content="Linux on Windows (WSL)">
+    <meta property="og:image" content="/images/2023/Operating-System/windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Window Sub-System for Linux (WSL)">
+    <meta name="twitter:description" content="Linux on Windows (WSL)">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/windows/wsl-install/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/windows/wsl-install/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/windows/wsl-install/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Window Sub-System for Linux (WSL)</h1>
+        <small role="doc-subtitle">Linux on Windows (WSL)</small>
+        <p class="post-date">
+            July 7, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/windows">windows</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">operating-system</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>Linux is ubiquitous, and no matter how much we resist, there will come a point when we must embrace it. So, why not start now? In this article, we will explore the process of installing Linux on Windows.</p>
+<p>As we embark on this journey, you may find yourself pondering various questions, such as:</p>
+<ol>
+<li>What is WSL?</li>
+<li>What is WSL2?</li>
+<li>What sets WSL and WSL2 apart?</li>
+<li>Why do I need WSL?</li>
+<li>How can I install WSL?</li>
+<li>Which Linux distribution is suitable for WSL?</li>
+</ol>
+<h1 id="what-is-wsl">What is WSL?</h1>
+<p>The Windows Subsystem for Linux lets developers run a GNU/Linux environment &ndash; including most command-line tools, utilities, and applications &ndash; directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup.</p>
+<p>You can:</p>
+<ul>
+<li>Choose your favorite GNU/Linux distributions from the Microsoft Store.</li>
+<li>Run common command-line tools such as grep, sed, awk, or other ELF-64 binaries.</li>
+<li>Run Bash shell scripts and GNU/Linux command-line applications including:
+<ul>
+<li>Tools: vim, emacs, tmux</li>
+<li>Languages: NodeJS, Javascript, Python, Ruby, C/C++, C# &amp; F#, Rust, Go, etc.</li>
+<li>Services: SSHD, MySQL, Apache, lighttpd, MongoDB, PostgreSQL.</li>
+</ul>
+</li>
+<li>Install additional software using your own GNU/Linux distribution package manager.</li>
+<li>Invoke Windows applications using a Unix-like command-line shell.</li>
+<li>Invoke GNU/Linux applications on Windows.</li>
+<li>Run GNU/Linux graphical applications integrated directly to your Windows desktop</li>
+<li>Use GPU acceleration for machine learning, data science scenarios and more</li>
+</ul>
+<p>You can do everything that you do in a linux environment, but on windows, without dual booting or using a virtual machine.</p>
+<h1 id="what-is-wsl2">What is WSL2?</h1>
+<p>WSL 2 is a new version of the Windows Subsystem for Linux architecture that powers the Windows Subsystem for Linux to run ELF64 Linux binaries on Windows. Its primary goals are to increase file system performance, as well as adding full system call compatibility.</p>
+<p>This new architecture changes how these Linux binaries interact with Windows and your computer&rsquo;s hardware, but still provides the same user experience as in WSL 1 (the current widely available version).</p>
+<p>Individual Linux distributions can be run with either the WSL 1 or WSL 2 architecture. Each distribution can be upgraded or downgraded at any time and you can run WSL 1 and WSL 2 distributions side by side. WSL 2 uses an entirely new architecture that benefits from running a real Linux kernel.</p>
+<h1 id="comparing-wsl-1-and-wsl-2">Comparing WSL 1 and WSL 2</h1>
+<p>WSL 2 is a major overhaul of the underlying architecture and uses virtualization technology and a Linux kernel to enable its new features. WSL 2 is a new version of the architecture that powers the Windows Subsystem for Linux to run ELF64 Linux binaries on Windows. This new architecture changes how these Linux binaries interact with Windows and your computer&rsquo;s hardware, but still provides the same user experience as in WSL 1 (the current widely available version).</p>
+<p>The primary differences between WSL 1 and WSL 2 are the use of an actual Linux kernel inside a managed VM, support for full system call compatibility, and performance across the Linux and Windows operating systems. WSL 2 is the current default version when installing a Linux distribution and uses the latest and greatest in virtualization technology to run a Linux kernel inside of a lightweight utility virtual machine (VM). If your distribution is currently running WSL 1</p>
+<h2 id="comparing-features">Comparing features</h2>
+<p>In the bellow table you can see the difference between WSL 1 and WSL 2.</p>
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px;">Feature</th>
+      <th style="border: 1px solid black; padding: 8px;">WSL 1</th>
+      <th style="border: 1px solid black; padding: 8px;">WSL 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Integration between Windows and Linux</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Fast boot times</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Small resource foot print compared to traditional Virtual Machines</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Runs with current versions of VMware and VirtualBox</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Managed VM</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10008;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Full Linux Kernel</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10008;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Full system call compatibility</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10008;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">Performance across OS file systems</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10004;</td>
+      <td style="border: 1px solid black; padding: 8px;">&#10008;</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="why-do-you-need-wsl">Why do you need WSL?</h1>
+<p>The answer to this question is quite simple. If you are a developer who wants to utilize Linux commands on your Windows machine, WSL is the perfect solution. WSL is an incredibly powerful tool for developers as it enables them to seamlessly use Linux commands on their Windows machines. With WSL, developers can harness the full power of Linux commands without the need for dual booting or switching between operating systems. This convenience makes WSL an invaluable asset for developers seeking a unified and efficient development environment.</p>
+<p>If you dislike dual booting, then WSL is a great solution for you. It allows you to enjoy all the features of Linux while occupying less space on your system. Linux excels in its command-line interface and offers a wide range of core applications, which can now be accessed through WSL.</p>
+<h1 id="install-wsl">Install WSL</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11 to use the commands below. If you are on earlier versions please see the manual <a href="https://learn.microsoft.com/en-us/windows/wsl/install-manual">install page</a>.</p>
+<h2 id="install-wsl-command">Install WSL command</h2>
+<p>You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in <strong>administrator</strong> mode by right-clicking and selecting &ldquo;Run as administrator&rdquo;, enter the <code>wsl --install</code> command, then restart your machine.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>wsl --install
+</span></span></code></pre></div><h2 id="change-the-default-linux-distribution-installed">Change the default Linux distribution installed</h2>
+<p>By default, the installed Linux distribution will be Ubuntu. This can be changed using the -d flag.</p>
+<ul>
+<li>To change the distribution installed, enter: <code>wsl --install -d &lt;Distribution Name&gt;</code>. Replace <code>&lt;Distribution Name&gt; </code>with the name of the distribution you would like to install.</li>
+<li>To see a list of available Linux distributions available for download through the online store, enter: <code>wsl --list --online</code> or <code>wsl -l -o</code>.</li>
+<li>To install additional Linux distributions after the initial install, you may also use the command: <code>wsl --install -d &lt;Distribution Name&gt;</code>.</li>
+</ul>
+<h2 id="upgrade-version-from-wsl-1-to-wsl-2">Upgrade version from WSL 1 to WSL 2</h2>
+<p>New Linux installations, installed using the wsl &ndash;install command, will be set to WSL 2 by default.</p>
+<p>The <code>wsl --set-version</code> command can be used to downgrade from WSL 2 to WSL 1 or to update previously installed Linux distributions from WSL 1 to WSL 2.</p>
+<p>To see whether your Linux distribution is set to WSL 1 or WSL 2, use the command: <code>wsl -l -v</code>.</p>
+<p>To change versions, use the command: <code>wsl --set-version &lt;distro name&gt; 2</code> replacing <code>&lt;distro name&gt;</code> with the name of the Linux distribution that you want to update. <strong>For example</strong>, <code>wsl --set-version Ubuntu-20.04 2</code> will set your Ubuntu 20.04 distribution to use WSL 2.</p>
+<h1 id="which-linux-distribution-should-you-choose">Which Linux distribution should you choose?</h1>
+<p>When you install WSL by default, you will get Ubuntu. However, you can install any Linux distribution you want. You can install multiple Linux distributions and use them simultaneously. You can also set a default distribution that will be used when you run the <code>wsl</code> command without any arguments.</p>
+<p>At the time of this writing of this articles the offical Linux distributions available for WSL are:</p>
+<ol>
+<li><a href="https://apps.microsoft.com/store/detail/ubuntu/9PDXGNCFSCZV">Ubuntu</a></li>
+<li><a href="https://apps.microsoft.com/store/detail/debian/9MSVKQC78PK6">Debian</a></li>
+<li><a href="https://apps.microsoft.com/store/detail/kali-linux/9PKR34TNCV07">Kali Linux</a></li>
+<li><a href="https://apps.microsoft.com/store/detail/opensuse-tumbleweed/9MSSK2ZXXN11">Opensuse</a></li>
+</ol>
+<p>All of these are aviable on the Microsoft Store.</p>
+<p>By If you like Arch Linux or Fedora then there are also unofficial distributions available for WSL. You can find them on the Microsoft Store.</p>
+<ol start="5">
+<li><a href="https://apps.microsoft.com/store/detail/arch-wsl/9MZNMNKSM73X">Arch Linux</a></li>
+<li><a href="https://apps.microsoft.com/store/detail/fedora-wsl/9NPCP8DRCHSN">Fedora Linux</a></li>
+</ol>
+<h2 id="choosing-a-linux-distribution">Choosing a Linux distribution</h2>
+<p>Personally, I have found great success using Arch Linux and Fedora as my primary WSL distributions. They have proven to be reliable and efficient for my needs. Additionally, I have also experimented with Ubuntu and Debian, both of which have performed admirably. However, I have yet to try Kali Linux and Opensuse, but I plan to give them a try in the near future.</p>
+<p>I highly recommend exploring all of these distributions and determining which one resonates with you the most. You can even install multiple Linux distributions and utilize them simultaneously. Furthermore, you have the option to set a default distribution that will be used when executing the <code>wsl</code> command without any arguments.</p>
+<p>In my experience, if you prefer apt as the package manager, Debian is an excellent choice as it offers nearly the latest packages while maintaining exceptional stability. On the other hand, if you prefer pacman as the package manager, Arch Linux would be the way to go. If dnf is your preferred package manager, Fedora is a solid option. Lastly, if you favor zypper as the package manager, Opensuse is worth considering.</p>
+<p>I do not personally recommend Ubuntu due to its package versions often being slightly outdated and potential stability issues. I encourage you to try out all of these distributions and discover which one aligns best with your preferences and requirements.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Based on my personal experience, WSL has been a great addition to my workflow. Although I occasionally miss certain aspects of dual booting, I can confidently say that around 90% of my work can be accomplished using WSL. The remaining 10% is often reserved for exploring Linux and engaging in experimentation, which I thoroughly enjoy. Despite any challenges that may arise, my love for WSL remains unwavering. I sincerely hope that you, too, will find it to be a valuable tool.</p>
+<p>I trust that this article has provided you with the information you were seeking, and I genuinely hope it has been helpful. Thank you for reading, and until next time, take care! ❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/install">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">WSL Install</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Features of WSL</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/windows/wsl/about">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">About WSL</h3>
+  </a>
+</div>
+<h2 id="github-repository">GitHub Repository</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/VSWSL/Arch-WSL">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Arch WSL Development</h3>
+  </a>
+    <a class="card" href="https://github.com/VSWSL/Fedora-WSL">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">Fedora WSL Development</h3>
+  </a>
+</div>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Operating-System/Windows/Widow-Sub-system-for-Linux/Window-Sub-System-for-Linux.png" alt="Image"></p>
+<!-- ## WalkThrough Video: -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/code-report/06th-July-2023/">
+            &#8592;
+            Previous:
+            Code Report: 06th July 2023
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 6, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/web-development/ejs-nodejs-templating-guide/">
+            Next:
+            EJS: A Templating Engine for Node.js
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 8, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-wsl">What is WSL?</a></li>
+    <li><a href="#what-is-wsl2">What is WSL2?</a></li>
+    <li><a href="#comparing-wsl-1-and-wsl-2">Comparing WSL 1 and WSL 2</a>
+      <ol>
+        <li><a href="#comparing-features">Comparing features</a></li>
+      </ol>
+    </li>
+    <li><a href="#why-do-you-need-wsl">Why do you need WSL?</a></li>
+    <li><a href="#install-wsl">Install WSL</a>
+      <ol>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#install-wsl-command">Install WSL command</a></li>
+        <li><a href="#change-the-default-linux-distribution-installed">Change the default Linux distribution installed</a></li>
+        <li><a href="#upgrade-version-from-wsl-1-to-wsl-2">Upgrade version from WSL 1 to WSL 2</a></li>
+      </ol>
+    </li>
+    <li><a href="#which-linux-distribution-should-you-choose">Which Linux distribution should you choose?</a>
+      <ol>
+        <li><a href="#choosing-a-linux-distribution">Choosing a Linux distribution</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+        <li><a href="#github-repository">GitHub Repository</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

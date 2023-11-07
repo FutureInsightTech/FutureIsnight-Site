@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Support Vector Machine</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo, machine learning'>
+
+    <meta property="og:url" content="https://future-insight.blog/machine-learning/Support-Vector-Machine/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Support Vector Machine">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/2023/Machine-Learning/SVM/Machine-Learning-Algo-SVM.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Support Vector Machine">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/machine-learning/Support-Vector-Machine/">
+    <meta property="twitter:url" content="https://future-insight.blog/machine-learning/Support-Vector-Machine/">
+    <meta name="twitter:image" content="/images/2023/Machine-Learning/SVM/Machine-Learning-Algo-SVM.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/machine-learning/Support-Vector-Machine/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Support Vector Machine</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 7, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/machine-learning">machine learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.</p>
+<p>I am doing a project where I need to use SVM for detecting cyber attacks, but in order to identify them, I need to learn what makes this algorithm so good. For this project, I will be learning the basics of SVM with real-world examples, and once we are done with the examples, we will try the real project.</p>
+<h1 id="what-is-svm">What is SVM?</h1>
+<p>Before we begin, we should understand what SVM is. In my opinion, SVM is a machine learning model that can be used for classification or regression problems.</p>
+<p>What exactly is classfication and regression? In simpliest term Regression alogrothium is when there is a relatin between two variable, <strong>for example</strong> the price house and the size of the house. Classfication alogrothium are those alogo that will find a function and then using that function dvide the data set into two main parts, then alog will train on that sub data set and will identify the 0 value or 1 value.</p>
+<p>A support vector machine (SVM) is a supervised machine learning model that uses classification algorithms for two-group classification problems. After giving an SVM model sets of labeled training data for each category, they’re able to categorize new text.</p>
+<h1 id="how-does-svm-work">How does SVM Work?</h1>
+<p>SVM can work in a variety of ways and on a variety of data types; the data can be linear (in one line) or non-linear (data is spread throughout a graph).</p>
+<p>The operation is straightforward, but there are ways to use SVM to optimise and get the most out of the SVM Machine Learning Model.</p>
+<h2 id="working-with-linear-data">Working with Linear Data:</h2>
+<p>The basics of the support vector machine and how it will work can be easily explained with an example. Consider a data set that contains two features, x and y, each represented by a different colour (red or blue) and each with its own shape (circle or triangle, respectively). Now we will plot the dataset, and we will get this graph.
+<img src="/images/2023/Machine-Learning/SVM/image-01.png" alt="image"></p>
+<p>A Support Vector Machine tasks those data points and then uses a function called hyperplane to create a best sperate boundary with tags. This line is the <strong>decision boundary</strong>. Everything on the right side is considered blue, and everything on the left side is considered red.
+<img src="/images/2023/Machine-Learning/SVM/image-02.png" alt="image-02"></p>
+<p>But, what exactly is the best hyperplane? For SVM, it’s the one that maximizes the margins from both tags. In other words: the hyperplane (remember it&rsquo;s a line in this case) whose distance to the nearest element of each tag is the largest.
+<img src="/images/2023/Machine-Learning/SVM/image-03.png" alt="image-03"></p>
+<h2 id="working-with-non-linear-data">Working with Non-Linear Data:</h2>
+<p>The above example is very simple, and in the real world, data will not be much more linear; it is always going to spread in multiple directions, and there can be more than two variables. So what will you do when there are more than two interacting variables?</p>
+<p>Let&rsquo;s understand this with an example, and your use case might look like this:
+<img src="/images/2023/Machine-Learning/SVM/image-04.png" alt="image-04"></p>
+<p>It’s pretty clear that there’s not a linear decision boundary (a single straight line that separates both tags). However, the vectors are very clearly segregated and it looks as though it should be easy to separate them.</p>
+<p>So to solve it, we will be adding a third dimension. Uptill now we have only two dimension x and y but Now we will be creating <strong>Z</strong> as a third dimension, and we rule that it be calculated a certain way that is convenient for us: <em>z = x² + y²</em> (you’ll notice that’s the equation for a circle).</p>
+<p>This will give us a three-dimensional space. Taking a slice of that space, it looks like this:
+!(image-05)[/images/2023/Machine-Learning/SVM/image-05.png]</p>
+<p>Now you can see there are two groups, and Now we can use SVM and use a hyperplan.
+<img src="/images/2023/Machine-Learning/SVM/image-06.png" alt="image-06"></p>
+<p>That’s great! Note that since we are in three dimensions now, the hyperplane is a plane parallel to the <em>x</em> axis at a certain <em>z</em> (let’s say <em>z = 1</em>).</p>
+<p>What’s left is mapping it back to two dimensions:
+<img src="/images/2023/Machine-Learning/SVM/image-07.png" alt="image-07"></p>
+<p>In above plot, points to consider are:</p>
+<ul>
+<li>All values for z would be positive always because z is the squared sum of both x and y</li>
+<li>In the original plot, red circles appear close to the origin of x and y axes, leading to lower value of z and star relatively away from the origin result to higher value of z.</li>
+</ul>
+<p>In the SVM classifier, it is easy to have a linear hyper-plane between these two classes. But, another burning question which arises is, should we need to add this feature manually to have a hyper-plane. No, the SVM  algorithm has a technique called the <strong><a href="https://en.wikipedia.org/wiki/Kernel_method">kernel</a> trick</strong>. The SVM kernel is a function that takes low dimensional input space and transforms it to a higher dimensional space i.e. it converts not separable problem to separable problem. It is mostly useful in non-linear separation problem. Simply put, it does some extremely complex data transformations, then finds out the process to separate the data based on the labels or outputs you’ve defined.</p>
+<h1 id="fine-tune-svm-model">Fine Tune SVM Model:</h1>
+<h2 id="tuning-parameters">Tuning Parameters</h2>
+<p>As we saw in the previous section <strong>choosing the right kernel is crucial</strong>, because if the transformation is incorrect, then the model can have very poor results. As a rule of thumb, <strong>always check if you have linear data</strong> and in that case always <strong>use linear SVM</strong> (linear kernel). <strong>Linear SVM is a parametric model</strong>, but an <strong>RBF kernel SVM isn’t</strong>, so the complexity of the latter grows with the size of the training set. Not only is <strong>more expensive to train an RBF kernel SVM</strong>, but you also have to <strong>keep the kernel matrix around</strong>, and the <strong>projection</strong> <strong>into</strong> this “infinite” <strong>higher dimensional space</strong> where the data becomes linearly separable is <strong>more expensive</strong> as well during prediction. Furthermore, you have <strong>more hyperparameters to tune</strong>, so model selection is more expensive as well! And finally, it’s much <strong>easier to overfit</strong> a complex model!</p>
+<h2 id="regularization">Regularization</h2>
+<p>The <strong>Regularization Parameter</strong> (<strong>in python it’s called</strong> <strong>C</strong>) tells the SVM optimization <strong>how much you want to avoid miss classifying</strong> each training example.</p>
+<p>If the <strong>C is</strong> <strong>higher</strong>, the optimization will choose <strong>smaller margin</strong> hyperplane, so training data <strong>miss classification rate will be lower</strong>.</p>
+<p>On the other hand, if the <strong>C is</strong> <strong>low</strong>, then the <strong>margin will be big</strong>, even if there <strong>will be miss classified</strong> training data</p>
+<h2 id="gamma">Gamma</h2>
+<p>The next important parameter is <strong>Gamma</strong>. The gamma parameter defines <strong>how far the influence of a single training example reaches</strong>. This means that <strong>high Gamma</strong> will consider only points <strong>close</strong> to the plausible hyperplane and <strong>low</strong> <strong>Gamma</strong> will consider <strong>points at greater distance</strong>.</p>
+<p>Decreasing the Gamma will result that finding the correct hyperplane will consider points at greater distances so more and more points will be used (green lines indicates which points were considered when finding the optimal hyperplane).</p>
+<h2 id="margin">Margin</h2>
+<p>The last parameter is the <strong>margin</strong>. We’ve already talked about margin, <strong>higher margin results better model</strong>, so better classification (or prediction). The margin should be always <strong>maximized</strong>.</p>
+<h1 id="how-to-implementation-svm-model-in-python">How to implementation SVM model in Python:</h1>
+<h2 id="simple-linear-data-set">Simple Linear Data set:</h2>
+<ol>
+<li>Import Python Libraries:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> svm, datasets
+</span></span></code></pre></div><ol start="2">
+<li>Import Data Set:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>iris <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> iris<span style="color:#f92672">.</span>data[:, :<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># we only take the first two features. We could</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e"># avoid this ugly slicing by using a two-dim dataset</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> iris<span style="color:#f92672">.</span>target
+</span></span></code></pre></div><ol start="3">
+<li>Loading SVM Model</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># SVM regularization parameter</span>
+</span></span><span style="display:flex;"><span>C <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># When gama is not initialized then the value will be default value which is 0  but don&#39;t define 0 value because it will through an error </span>
+</span></span><span style="display:flex;"><span>svc <span style="color:#f92672">=</span> svm<span style="color:#f92672">.</span>SVC(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;linear&#39;</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>fit(X, y)
+</span></span></code></pre></div><ol start="4">
+<li>Create a mesh to plot</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x_min, x_max <span style="color:#f92672">=</span> X[:, <span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>min() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, X[:, <span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>max() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>y_min, y_max <span style="color:#f92672">=</span> X[:, <span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>min() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, X[:, <span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>max() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>h <span style="color:#f92672">=</span> (x_max <span style="color:#f92672">/</span> x_min)<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>xx, yy <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>meshgrid(np<span style="color:#f92672">.</span>arange(x_min, x_max, h),np<span style="color:#f92672">.</span>arange(y_min, y_max, h))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>subplot(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>Z <span style="color:#f92672">=</span> svc<span style="color:#f92672">.</span>predict(np<span style="color:#f92672">.</span>c_[xx<span style="color:#f92672">.</span>ravel(), yy<span style="color:#f92672">.</span>ravel()])
+</span></span><span style="display:flex;"><span>Z <span style="color:#f92672">=</span> Z<span style="color:#f92672">.</span>reshape(xx<span style="color:#f92672">.</span>shape)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>contourf(xx, yy, Z, cmap<span style="color:#f92672">=</span>plt<span style="color:#f92672">.</span>cm<span style="color:#f92672">.</span>Paired, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(X[:, <span style="color:#ae81ff">0</span>], X[:, <span style="color:#ae81ff">1</span>], c<span style="color:#f92672">=</span>y, cmap<span style="color:#f92672">=</span>plt<span style="color:#f92672">.</span>cm<span style="color:#f92672">.</span>Paired)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Sepal length&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Sepal width&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlim(xx<span style="color:#f92672">.</span>min(), xx<span style="color:#f92672">.</span>max())
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;SVC with linear kernel&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><h1 id="pros-and-cons-associated-with-svm">Pros and Cons associated with SVM</h1>
+<ul>
+<li><strong>Pros:</strong>
+<ul>
+<li>It works really well with a clear margin of separation</li>
+<li>It is effective in high dimensional spaces.</li>
+<li>It is effective in cases where the number of dimensions is greater than the number of samples.</li>
+<li>It uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.</li>
+</ul>
+</li>
+<li><strong>Cons:</strong>
+<ul>
+<li>It doesn’t perform well when we have large data set because the required training time is higher</li>
+<li>It also doesn’t perform very well, when the data set has more noise i.e. target classes are overlapping</li>
+<li>SVM doesn’t directly provide probability estimates, these are calculated using an expensive five-fold cross-validation. It is included in the related SVC method of Python scikit-learn library.</li>
+</ul>
+</li>
+</ul>
+<h1 id="reference">Reference</h1>
+<p>Here are some of the references and research papers that I used to understand the support vector machine model. If you are facing any problems, here are some links.</p>
+<h2 id="articles-references">Articles References:</h2>
+<ol>
+<li><a href="https://monkeylearn.com/blog/introduction-to-support-vector-machines-svm/">Monkey Learn</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/#h2_4">Analytics Vidhya</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Support_vector_machine">wikipedia</a></li>
+</ol>
+<h2 id="video-references">Video References:</h2>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=TtKF996oEl8">Simple Learn</a></li>
+</ol>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you have any questions, please contact</p>
+<h2 id="future-insight">Future Insight:</h2>
+<ul>
+<li><a href="mailto:fututeinsight@gmail.com">Email</a></li>
+</ul>
+<h2 id="author">Author:</h2>
+<h3 id="abdul-rafay">Abdul Rafay:</h3>
+<ul>
+<li><a href="mailto:99marafay@gmail.com">Email</a></li>
+<li><a href="https://rafay99.info">Personal-Website</a></li>
+<li><a href="github.com/rafay99-epic">GitHub</a></li>
+</ul>
+<p>I will see you next time❤️.</p>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/Machine-Learning/SVM/Machine-Learning-Algo-SVM.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/machine-learning/create-your-own-ml-model/">
+            &#8592;
+            Previous:
+            Design your own Machine Learning Model: Beginner Guide
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 2, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/machine-learning/machine-learning/FDIA/">
+            Next:
+            False Data Injection Attack
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 13, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-svm">What is SVM?</a></li>
+    <li><a href="#how-does-svm-work">How does SVM Work?</a>
+      <ol>
+        <li><a href="#working-with-linear-data">Working with Linear Data:</a></li>
+        <li><a href="#working-with-non-linear-data">Working with Non-Linear Data:</a></li>
+      </ol>
+    </li>
+    <li><a href="#fine-tune-svm-model">Fine Tune SVM Model:</a>
+      <ol>
+        <li><a href="#tuning-parameters">Tuning Parameters</a></li>
+        <li><a href="#regularization">Regularization</a></li>
+        <li><a href="#gamma">Gamma</a></li>
+        <li><a href="#margin">Margin</a></li>
+      </ol>
+    </li>
+    <li><a href="#how-to-implementation-svm-model-in-python">How to implementation SVM model in Python:</a>
+      <ol>
+        <li><a href="#simple-linear-data-set">Simple Linear Data set:</a></li>
+      </ol>
+    </li>
+    <li><a href="#pros-and-cons-associated-with-svm">Pros and Cons associated with SVM</a></li>
+    <li><a href="#reference">Reference</a>
+      <ol>
+        <li><a href="#articles-references">Articles References:</a></li>
+        <li><a href="#video-references">Video References:</a></li>
+      </ol>
+    </li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a>
+      <ol>
+        <li><a href="#future-insight">Future Insight:</a></li>
+        <li><a href="#author">Author:</a>
+          <ol>
+            <li><a href="#abdul-rafay">Abdul Rafay:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail:</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

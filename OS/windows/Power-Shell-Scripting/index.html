@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>PowerShell: Unleashing the Power of Automation and System Management</title>
+    <meta name="description" content="Power Shell Scripting">
+    <meta name="keywords" content='blog, gokarna, hugo, Operating System, windows, scripting'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/windows/Power-Shell-Scripting/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PowerShell: Unleashing the Power of Automation and System Management">
+    <meta property="og:description" content="Power Shell Scripting">
+    <meta property="og:image" content="/images/2023/Operating-System/Windows/PowerShell-Script/PowerShell-Unleashing-the-Power-of-Automation-and-System-Management.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PowerShell: Unleashing the Power of Automation and System Management">
+    <meta name="twitter:description" content="Power Shell Scripting">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/windows/Power-Shell-Scripting/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/windows/Power-Shell-Scripting/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/Windows/PowerShell-Script/PowerShell-Unleashing-the-Power-of-Automation-and-System-Management.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/windows/Power-Shell-Scripting/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>PowerShell: Unleashing the Power of Automation and System Management</h1>
+        <small role="doc-subtitle">Power Shell Scripting</small>
+        <p class="post-date">
+            July 21, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">Operating System</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/windows">windows</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/scripting">scripting</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>Windows, oh Windows! It may look like a friendly playground for beginners, but let me tell you, it&rsquo;s a true powerhouse under the hood, and today, we&rsquo;re diving into its secret weapons that every developer should know about!</p>
+<ol>
+<li>
+<p><strong>Introducing WSL (Windows Subsystem for Linux):</strong>
+Ever dreamed of having the best of both worlds? With WSL, you can seamlessly run a full-fledged Linux environment right inside your Windows system. It&rsquo;s like magic! Developers, this gem will revolutionize your workflow, and I&rsquo;ll guide you through the wonders it brings in my latest blog post on <a href="/OS/windows/wsl-install/">WSL</a>.</p>
+</li>
+<li>
+<p><strong>PowerShell: A Powerful Tool for Windows System Management</strong>
+Get ready to unleash the ultimate developer tool – Power Shell Scripting! If you&rsquo;ve ever felt the power of command-line tools, this will take it to a whole new level. But fear not, I&rsquo;ve got you covered! In this blog post, I&rsquo;ll walk you through what Power Shell Scripting is, how to use it like a pro, and the reasons why it&rsquo;s an absolute game-changer for developers.</p>
+</li>
+</ol>
+<p>But wait, there&rsquo;s more! I won&rsquo;t just leave you with theory; we&rsquo;ll dive into some basic commands that will elevate your scripting skills from day one. From automating repetitive tasks to streamlining your workflows, Power Shell will be your new best friend.</p>
+<p>And the cherry on top? I&rsquo;ve got some exciting project ideas that you can embark on using Power Shell Scripting. Trust me; you&rsquo;ll be amazed at what you can achieve with this incredible tool in your arsenal.</p>
+<p>So whether you&rsquo;re a seasoned developer or just starting your coding journey, join me in this adventure, and let&rsquo;s unlock the full potential of Windows together! Get ready to take your skills to new heights and make your development life a breeze with the power of WSL and Power Shell Scripting.</p>
+<h1 id="powershell-a-powerful-tool-for-windows-system-management">PowerShell: A Powerful Tool for Windows System Management</h1>
+<p>PowerShell is a versatile command-line shell and scripting language developed by Microsoft. It is designed to assist IT professionals and system administrators in automating administrative tasks and managing configurations in Windows environments. PowerShell provides access to various system administration objects and APIs, enabling users to interact with and manipulate system components such as the file system, registry, services, processes, and more.</p>
+<h2 id="key-features-of-powershell">Key Features of PowerShell</h2>
+<ol>
+<li>
+<p><strong>Object-Oriented:</strong> PowerShell treats data as objects rather than plain text, allowing easy manipulation and filtering of output using various cmdlets (commands).</p>
+</li>
+<li>
+<p><strong>Cmdlets:</strong> PowerShell cmdlets are small, single-function commands that perform specific tasks. They follow a Verb-Noun naming convention (e.g., Get-Process, Set-Item, New-Service), making it easier to understand their functions.</p>
+</li>
+<li>
+<p><strong>Pipelining:</strong> PowerShell allows you to chain commands together using pipes (|), passing the output of one cmdlet as the input to another. This enables users to perform complex operations by combining simple cmdlets.</p>
+</li>
+<li>
+<p><strong>Scripting Language:</strong> PowerShell is a full-fledged scripting language with features like variables, loops, conditional statements, functions, and error handling. This makes it ideal for writing automation scripts and managing repetitive tasks.</p>
+</li>
+<li>
+<p><strong>Integration with .NET:</strong> PowerShell leverages the .NET Framework, enabling users to access a wide range of .NET classes and assemblies for more advanced scripting capabilities.</p>
+</li>
+<li>
+<p><strong>Remoting:</strong> PowerShell supports remote administration, allowing users to execute commands on remote computers in the network.</p>
+</li>
+<li>
+<p><strong>Desired State Configuration (DSC):</strong> PowerShell DSC enables administrators to define the desired state of a system or application and ensure that the configurations remain consistent.</p>
+</li>
+</ol>
+<p>PowerShell is not limited to Windows environments. It is also available for cross-platform use, being open-source and available for macOS and various Linux distributions as PowerShell Core. With its rich set of features and capabilities, PowerShell has become an essential tool in the IT world for automation, administration, and management of Windows environments.</p>
+<h2 id="basic-powershell-commands">Basic PowerShell Commands</h2>
+<p>PowerShell offers a wide range of commands to navigate and manage your system efficiently. Here are some essential basic commands to help you get started:</p>
+<h3 id="get-command">Get-Command</h3>
+<p>The Get-Command cmdlet provides an easy-to-use reference of all available commands in your current session. Simply type this command in the PowerShell terminal to view the comprehensive list of commands at your disposal.</p>
+<p><img src="/images/2023/Operating-System/Windows/PowerShell-Script/get-commands.png" alt="get-command"></p>
+<h3 id="get-help">Get-Help</h3>
+<p>The Get-Help command is a crucial tool for anyone using PowerShell. It grants access to the information you need to run and work with all available commands. To use this command, simply type it in the PowerShell terminal.</p>
+<p><img src="/images/2023/Operating-System/Windows/PowerShell-Script/get-help-command.png" alt="get-help"></p>
+<h3 id="set-executionpolicy">Set-ExecutionPolicy</h3>
+<p>PowerShell restricts scripting by default to prevent malicious scripts from executing in the environment. To run your own scripts, you&rsquo;ll need to enable scripting. The Set-ExecutionPolicy command allows you to control the level of security surrounding PowerShell scripts. You can set four security levels:</p>
+<ul>
+<li><strong>Restricted:</strong> Default security level that blocks PowerShell scripts from running, allowing only interactive commands.</li>
+<li><strong>All Signed:</strong> Permits scripts to run only if they are signed by a trustworthy publisher.</li>
+<li><strong>Remote Signed:</strong> Allows locally-created scripts to run and remotely-created scripts if signed by a reputable publisher.</li>
+<li><strong>Unrestricted:</strong> Permits all scripts to run by removing all restrictions from the execution policy.</li>
+</ul>
+<p>To find out the current execution policy, use the Get-ExecutionPolicy command.</p>
+<p>To read more about this command, you can use the Get-Help command or visit the <a href="https://devblogs.microsoft.com/scripting/table-of-basic-powershell-commands/">Microsoft Documentation</a>.</p>
+<h3 id="get-service">Get-Service</h3>
+<p>The Get-Service command retrieves information about the services installed on your computer. It allows you to find out the status of a service, start or stop a service, and even change the properties of a service. To use this command, type it in the PowerShell terminal.</p>
+<p><img src="/images/2023/Operating-System/Windows/PowerShell-Script/get-service.png" alt="get-service"></p>
+<h3 id="get-eventlog">Get-EventLog</h3>
+<p>Use PowerShell to parse your machine’s event logs with the Get-EventLog cmdlet. For example, to view the Application log, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Get-EventLog</span> <span style="color:#a6e22e">-Log</span> <span style="color:#a6e22e">&#34;Application&#34;</span>
+</span></span></code></pre></div><p>You can also use various options with this command for verbose output, error handling, and more.</p>
+<p><img src="/images/2023/Operating-System/Windows/PowerShell-Script/Get-Event-Log.png" alt="get-eventlog"></p>
+<h3 id="get-process">Get-Process</h3>
+<p>The Get-Process command allows you to get a quick list of all the currently running processes. You can also filter processes based on specific criteria. For example, to get all processes with a working set greater than 20 MB, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Get-Process</span> <span style="color:#a6e22e">|</span> <span style="color:#a6e22e">Where-Object</span> {<span style="color:#a6e22e">$_.WorkingSet</span> <span style="color:#a6e22e">-gt</span> <span style="color:#ae81ff">20000000</span>}
+</span></span></code></pre></div><h3 id="stop-process">Stop-Process</h3>
+<p>Stop-Process is used to terminate processes that are frozen or no longer responding. You can specify the process name or use wildcard characters to stop multiple processes simultaneously. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Stop-Process</span> <span style="color:#a6e22e">-processname</span> <span style="color:#a6e22e">notepad</span>
+</span></span></code></pre></div><h3 id="get-childitem">Get-ChildItem</h3>
+<p>The Get-ChildItem cmdlet retrieves items in one or more specified locations, including files, directories, and other objects. It is a versatile tool for file and directory management. For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Get-ChildItem</span> <span style="color:#a6e22e">-Path</span> <span style="color:#a6e22e">C:\Test</span>
+</span></span></code></pre></div><h4 id="examples-get-child-items-from-a-file-system-directory">Examples: Get child items from a file system directory</h4>
+<p>This example gets the child items from a file system directory. The filenames and subdirectory names are displayed. For empty locations, the command doesn&rsquo;t return any output and returns to the PowerShell prompt.</p>
+<p>The <code>Get-ChildItem</code> cmdlet uses the Path parameter to specify the directory <code>C:\Test</code>. <code>Get-ChildItem</code> displays the files and directories in the PowerShell console.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">Get-ChildItem</span> <span style="color:#a6e22e">-Path</span> <span style="color:#a6e22e">C:\Test</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Directory:</span> <span style="color:#a6e22e">C:\Test</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Mode</span>                <span style="color:#a6e22e">LastWriteTime</span>         <span style="color:#a6e22e">Length</span> <span style="color:#a6e22e">Name</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">----</span>                <span style="color:#a6e22e">-------------</span>         <span style="color:#a6e22e">------</span> <span style="color:#a6e22e">----</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">d-----</span>        <span style="color:#ae81ff">2</span>/15/2019     <span style="color:#a6e22e">08:29</span>                <span style="color:#a6e22e">Logs</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-a----</span>        <span style="color:#ae81ff">2</span>/13/2019     <span style="color:#a6e22e">08:55</span>             <span style="color:#ae81ff">26</span> <span style="color:#a6e22e">anotherfile.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-a----</span>        <span style="color:#ae81ff">2</span>/12/2019     <span style="color:#a6e22e">15:40</span>         <span style="color:#ae81ff">118014</span> <span style="color:#a6e22e">Command.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-a----</span>         <span style="color:#ae81ff">2</span>/1/2019     <span style="color:#a6e22e">08:43</span>            <span style="color:#ae81ff">183</span> <span style="color:#a6e22e">CreateTestFile.ps1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-ar---</span>        <span style="color:#ae81ff">2</span>/12/2019     <span style="color:#a6e22e">14:31</span>             <span style="color:#ae81ff">27</span> <span style="color:#a6e22e">ReadOnlyFile.txt</span>
+</span></span></code></pre></div><p>By default Get-ChildItem lists the mode (Attributes), LastWriteTime, file size (Length), and the Name of the item. The letters in the Mode property can be interpreted as follows:</p>
+<ul>
+<li>l (link)</li>
+<li>d (directory)</li>
+<li>a (archive)</li>
+<li>r (read-only)</li>
+<li>h (hidden)</li>
+<li>s (system)</li>
+</ul>
+<h1 id="combine-commands-with-scripts">Combine Commands with Scripts</h1>
+<p>PowerShell&rsquo;s true power lies in its ability to combine the simplicity of command-line commands with the flexibility of a full-fledged programming language. It empowers users to streamline their daily tasks, automate time-consuming processes, and unleash their creativity to build sophisticated solutions.</p>
+<p>For instance, here are two custom scripts that demonstrate the power of PowerShell:</p>
+<p><strong>1. Sudo Script</strong></p>
+<p>The following script allows users to run a command or script with elevated privileges using Windows Terminal. It simplifies the process of running PowerShell commands with administrative privileges.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">function</span> <span style="color:#a6e22e">sudo</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">if</span> <span style="color:#e6db74">($args.Count -gt 0)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">$argList</span> <span style="color:#a6e22e">=</span> <span style="color:#a6e22e">&#34;&amp;</span> <span style="color:#a6e22e">&#39;&#34;</span> <span style="color:#a6e22e">+</span> <span style="color:#a6e22e">$args</span> <span style="color:#a6e22e">+</span> <span style="color:#a6e22e">&#34;&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">$wtExe</span> <span style="color:#a6e22e">=</span> <span style="color:#a6e22e">&#34;wt.exe&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Start-Process</span> <span style="color:#a6e22e">-FilePath</span> <span style="color:#a6e22e">$wtExe</span> <span style="color:#a6e22e">-ArgumentList</span> <span style="color:#a6e22e">&#34;-p&#34;,</span> <span style="color:#a6e22e">&#34;Windows</span> <span style="color:#a6e22e">PowerShell&#34;,</span> <span style="color:#a6e22e">&#34;-NoExit&#34;,</span> <span style="color:#a6e22e">&#34;-c&#34;,</span> <span style="color:#a6e22e">$argList</span> <span style="color:#a6e22e">-Verb</span> <span style="color:#a6e22e">RunAs</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">$wtExe</span> <span style="color:#a6e22e">=</span> <span style="color:#a6e22e">&#34;wt.exe&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Start-Process</span> <span style="color:#a6e22e">-FilePath</span> <span style="color:#a6e22e">$wtExe</span> <span style="color:#a6e22e">-ArgumentList</span> <span style="color:#a6e22e">&#34;-p&#34;,</span> <span style="color:#a6e22e">&#34;Windows</span> <span style="color:#a6e22e">PowerShell&#34;,</span> <span style="color:#a6e22e">&#34;pwsh.exe&#34;</span> <span style="color:#a6e22e">-Verb</span> <span style="color:#a6e22e">RunAs</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>2. Remove Item Script</strong></p>
+<p>This script is a user-defined PowerShell function that simplifies the process of removing files and folders. It enforces mandatory parameter usage, allows users to pass the path as the first argument without specifying the</p>
+<p>parameter name, and ensures that a valid non-empty path is provided.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">function</span> <span style="color:#a6e22e">rm</span> {
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">CmdletBinding</span><span style="color:#e6db74">()</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">param</span> <span style="color:#e6db74">(
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        [Parameter(Mandatory=$true, Position=0)]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        [ValidateNotNullOrEmpty()]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        [string]$Path
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    )</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Remove-Item</span> <span style="color:#a6e22e">-Path</span> <span style="color:#a6e22e">$Path</span> <span style="color:#a6e22e">-Recurse</span> <span style="color:#a6e22e">-Force</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="powershell-project-ideas">PowerShell Project Ideas</h1>
+<p>The flexibility and power of PowerShell open up a wide range of project possibilities. Here are some ideas to get you started:</p>
+<ol>
+<li>
+<p><strong>System Monitoring and Reporting:</strong> Develop a script that monitors system health and performance, generating reports on CPU usage, memory, disk space, and network connectivity.</p>
+</li>
+<li>
+<p><strong>Automated Backup and Restore:</strong> Create a script to automate the backup and restoration of important files and directories.</p>
+</li>
+<li>
+<p><strong>User Account Management:</strong> Build a script to automate user account creation, modification, and deletion tasks on Windows.</p>
+</li>
+<li>
+<p><strong>Software Deployment and Updates:</strong> Develop a script to automate the deployment and updating of software applications on multiple computers.</p>
+</li>
+<li>
+<p><strong>Log Analysis and Event Monitoring:</strong> Create a script that monitors event logs and generates alerts or reports based on specific events or patterns.</p>
+</li>
+<li>
+<p><strong>Network Configuration Management:</strong> Build a script to manage network devices and configurations, such as routers and switches.</p>
+</li>
+<li>
+<p><strong>Automated Testing:</strong> Use PowerShell to automate the testing of software applications by simulating user interactions.</p>
+</li>
+<li>
+<p><strong>Azure/AWS Cloud Automation:</strong> Automate cloud infrastructure provisioning and management on platforms like Microsoft Azure or Amazon Web Services (AWS).</p>
+</li>
+<li>
+<p><strong>Web Scraping and Data Retrieval:</strong> Create a script to scrape data from websites and APIs for analysis or integration with other systems.</p>
+</li>
+<li>
+<p><strong>Automated Email Notifications:</strong> Develop a script that monitors specific events and sends automated email notifications to specified recipients.</p>
+</li>
+<li>
+<p><strong>Scheduled Task Automation:</strong> Build a script to manage scheduled tasks on Windows, creating, modifying, and deleting tasks as needed.</p>
+</li>
+</ol>
+<p>With PowerShell, the possibilities are endless. It is a powerful tool that allows you to automate tasks, manage Windows systems efficiently, and unleash your creativity to build innovative solutions.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>PowerShell is a powerful and versatile tool that has become essential for IT professionals and system administrators. With its object-oriented approach, extensive cmdlets, and .NET integration, PowerShell offers an efficient way to manage Windows systems and automate tasks.</p>
+<p>Throughout this blog post, we explored key PowerShell features, essential commands like Get-Command, Get-Help, Set-ExecutionPolicy, Get-Service, and Get-ChildItem, and how to combine commands with custom scripts.</p>
+<p>PowerShell&rsquo;s scripting capabilities enable automation of repetitive tasks, ensuring consistent configurations and reliable processes. Exciting project ideas, from system monitoring to cloud automation, demonstrate its endless possibilities.</p>
+<p>With cross-platform compatibility, PowerShell continues to be a go-to solution for automation and administration, making it an invaluable tool in the IT world. Embrace PowerShell to streamline operations and elevate system management to new heights.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="supporting-materials">Supporting Materials</h1>
+<p>Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.</p>
+<h2 id="knowledge-nexus">Knowledge Nexus</h2>
+<div class="cards-container">
+  <a class="card" href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.3">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href="https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.3">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+  <a class="card" href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.3">
+    <img src="/images/content-icons/8767135.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+</div>
+<h2 id="github-repository">GitHub Repository:</h2>
+<div class="cards-container">
+  <a class="card" href="https://github.com/rafay99-epic/Window-DotFiles/blob/main/PowerShell/Microsoft.PowerShell_profile.ps1">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository</h3>
+  </a>
+</div>
+<!-- ## WalkThrough Video: -->
+<!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Operating-System/Windows/PowerShell-Script/PowerShell-Unleashing-the-Power-of-Automation-and-System-Management.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/linux/secure-linux/">
+            &#8592;
+            Previous:
+            Secure Linux The 3 Biggest Security Mistakes Linux Users Make
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 20, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/tech-journey/Flutter/Flutter-begining/">
+            Next:
+            Tech Journey Insights: Flutter Begining
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 24, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#powershell-a-powerful-tool-for-windows-system-management">PowerShell: A Powerful Tool for Windows System Management</a>
+      <ol>
+        <li><a href="#key-features-of-powershell">Key Features of PowerShell</a></li>
+        <li><a href="#basic-powershell-commands">Basic PowerShell Commands</a>
+          <ol>
+            <li><a href="#get-command">Get-Command</a></li>
+            <li><a href="#get-help">Get-Help</a></li>
+            <li><a href="#set-executionpolicy">Set-ExecutionPolicy</a></li>
+            <li><a href="#get-service">Get-Service</a></li>
+            <li><a href="#get-eventlog">Get-EventLog</a></li>
+            <li><a href="#get-process">Get-Process</a></li>
+            <li><a href="#stop-process">Stop-Process</a></li>
+            <li><a href="#get-childitem">Get-ChildItem</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#combine-commands-with-scripts">Combine Commands with Scripts</a></li>
+    <li><a href="#powershell-project-ideas">PowerShell Project Ideas</a></li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a></li>
+    <li><a href="#supporting-materials">Supporting Materials</a>
+      <ol>
+        <li><a href="#knowledge-nexus">Knowledge Nexus</a></li>
+        <li><a href="#github-repository">GitHub Repository:</a></li>
+      </ol>
+    </li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

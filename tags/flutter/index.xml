@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on Future Insight</title>
+    <link>https://future-insight.blog/tags/flutter/</link>
+    <description>Recent content in Flutter on Future Insight</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Jul 2023 22:00:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter Kickstart: From Setup to Emulator in Style</title>
+      <link>https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/</link>
+      <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/</guid>
+      <description>I must say that setting up Flutter is not easy. There are a lot of videos out there that claim to help you set up the Flutter SDK for Windows, Linux, or macOS, but they are often incomplete and don&amp;rsquo;t answer the most basic questions you may have. So, I&amp;rsquo;ve decided to write this blog to help you guys out.
+From day one, I&amp;rsquo;ve been a web developer, using React, HTML, CSS, and JavaScript to create websites.</description>
+    </item>
+    
+    <item>
+      <title>Flutter: Dart Programming Language</title>
+      <link>https://future-insight.blog/tech-journey/Flutter/dart-programming/</link>
+      <pubDate>Wed, 26 Jul 2023 14:07:01 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tech-journey/Flutter/dart-programming/</guid>
+      <description>I want to learn Flutter and make cool apps, but it was a while ago that I had to learn a new Programming language, and I am rusty to learn a new programming language, but I am eager to learn something new, so in this blog post, I will be learning the Dart Programming language, and I will be sharing my experience with you guys.
+Before we begin, we need dark sdk on my system.</description>
+    </item>
+    
+    <item>
+      <title>Tech Journey Insights: Flutter Begining</title>
+      <link>https://future-insight.blog/tech-journey/Flutter/Flutter-begining/</link>
+      <pubDate>Mon, 24 Jul 2023 22:49:13 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tech-journey/Flutter/Flutter-begining/</guid>
+      <description>I have been using Hugo for a while, and I have created this website to blog, but things have changed, and I want to expand it and make it more than just a blog. I want to make it a place where people can come and learn new things. So I have decided to start a new series of blogs where I will be learning new technologies and sharing my experiences with you guys.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Discovering Linux: My Path to Becoming a Command Line Maestro</title>
+    <meta name="description" content="My Linux Journey">
+    <meta name="keywords" content='blog, gokarna, hugo, linux, operating-system'>
+
+    <meta property="og:url" content="https://future-insight.blog/OS/linux/My-Linux-Journey/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Discovering Linux: My Path to Becoming a Command Line Maestro">
+    <meta property="og:description" content="My Linux Journey">
+    <meta property="og:image" content="/images/2023/Operating-System/Linux/Linux-journey/My-Linux-Journey.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discovering Linux: My Path to Becoming a Command Line Maestro">
+    <meta name="twitter:description" content="My Linux Journey">
+    <meta property="twitter:domain" content="https://future-insight.blog/OS/linux/My-Linux-Journey/">
+    <meta property="twitter:url" content="https://future-insight.blog/OS/linux/My-Linux-Journey/">
+    <meta name="twitter:image" content="/images/2023/Operating-System/Linux/Linux-journey/My-Linux-Journey.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/OS/linux/My-Linux-Journey/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Discovering Linux: My Path to Becoming a Command Line Maestro</h1>
+        <small role="doc-subtitle">My Linux Journey</small>
+        <p class="post-date">
+            August 14, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/operating-system">operating-system</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/reference-content/reference-content.css">
+<hr>
+<p>Embarking on my Linux journey during my student days as a budding software engineer, I eagerly dove into Linux distro videos and blog posts. However, despite my efforts, the seemingly elusive task of installing Linux and setting up dual boot with Windows remained an enigma.</p>
+<h1 id="my-linux-journey">My Linux Journey</h1>
+<h2 id="the-dual-boot-dilemma">The Dual Boot Dilemma</h2>
+<p>As a newcomer to the world of computers, I grappled with the concept of dual booting and sought help from a tech-savvy friend. Faced with a barrage of questions, his response was simple: &ldquo;Google it.&rdquo;</p>
+<h2 id="initiating-with-ubuntu-1804">Initiating with Ubuntu 18.04</h2>
+<p>My initial foray into the Linux realm commenced with Ubuntu 18.04. Armed with a Dell Inspiron 15, I successfully orchestrated a dual boot setup with Windows 10. The allure of customization and aesthetics within Ubuntu&rsquo;s environment captured my imagination.</p>
+<h2 id="navigating-the-terrain-of-linux-applications">Navigating the Terrain of Linux Applications</h2>
+<p>As I delved deeper, the limitations of Linux applications within my university&rsquo;s predominantly Windows ecosystem became evident. Struggling to install applications, I conquered Google Chrome but remained perplexed by the process for others.</p>
+<h2 id="the-ubuntu-1904-upgrade-fiasco">The Ubuntu 19.04 Upgrade Fiasco</h2>
+<p>Eager to keep up with the latest version, I attempted an upgrade to Ubuntu 19.04 via GUI. Disaster struck, leaving me with a broken system. My friend&rsquo;s support was limited this time, leading me to realize that self-reliance was the key.</p>
+<h2 id="conquering-the-command-line">Conquering the Command Line</h2>
+<p>A novice in terminal usage, I was apprehensive about the command line. Through diligent watching of instructional videos and practice, I conquered my fear and began to master the terminal&rsquo;s intricacies.</p>
+<h2 id="snap-packages-and-the-birth-of-the-application-installer-project">Snap Packages and the Birth of the &ldquo;Application Installer&rdquo; Project</h2>
+<p>Snap packages provided a solution for application installation, but I aspired for more. Creating the &ldquo;Application Installer&rdquo; project on GitHub allowed me to automate installations with a single click, fostering my passion for Bash shell scripting.</p>
+<h2 id="the-fascination-of-distro-hopping">The Fascination of Distro Hopping</h2>
+<p>Exploring different distros like POP OS, Debian, and Arch, I developed a nuanced understanding of each. Eventually, Debian and Arch emerged as the front-runners, embodying stability and customization respectively.</p>
+<h2 id="the-path-to-perfect-customization">The Path to Perfect Customization</h2>
+<p>Striving for a personalized desktop environment, I honed my customization skills with Gnome. Delving into titling window managers, I experimented with Awesome, Hyperland, BSPWM, and others, before settling on Awesome Window Manager.</p>
+<h2 id="the-transformative-impact">The Transformative Impact</h2>
+<p>This Linux journey has molded me into a resilient developer, imparting lessons that extend far beyond technology. It has taught me patience, problem-solving, and the beauty of community-driven learning.</p>
+<h2 id="the-love-hate-relationship-with-arch">The Love-Hate Relationship with Arch</h2>
+<p>Embracing Arch Linux, I confronted its notorious installation process. Determined to master it, I undertook the challenge, and while it tested my patience, it also provided a thorough education on Linux systems.</p>
+<h2 id="the-zen-of-the-terminal">The Zen of the Terminal</h2>
+<p>With newfound confidence, I embraced the terminal as a powerful tool. I began scripting not only for application installations but also for system configurations, automating tasks that once seemed daunting.</p>
+<h2 id="pinnacle-of-customization">Pinnacle of Customization</h2>
+<p>My fascination with window managers led me to Awesome Window Manager. I curated a workspace that married productivity with aesthetic appeal, transforming my screen into an efficient and visually captivating space.</p>
+<h1 id="conclusion-the-irreversible-shift-to-linux-magic">Conclusion: The Irreversible Shift to Linux Magic</h1>
+<p>With each challenge and triumph, my Linux journey has been an inexorable path of growth. Once you plunge into the Linux realm, the enchantment of its open-source world becomes an irresistible force that forever alters your perspective. From conquering the command line to crafting a personalized environment, the journey is as transformative as it is rewarding.</p>
+<h2 id="a-call-to-fellow-developers-embrace-the-linux-odyssey">A Call to Fellow Developers: Embrace the Linux Odyssey</h2>
+<p>To my fellow developers, I extend a challenge: embrace Linux on your own machine. The initial hurdles are a small price for the empowerment and mastery that await. As I reflect on my journey, I&rsquo;m reminded that Linux is not just an operating system; it&rsquo;s a philosophy that nurtures both technical prowess and a growth mindset.</p>
+<h2 id="epilogue-the-ongoing-expedition">Epilogue: The Ongoing Expedition</h2>
+<p>As I write these closing words, I&rsquo;m not concluding my journey but rather reflecting on its ongoing nature. Linux has become an integral part of my life, propelling me forward in my career and personal growth. So, if you&rsquo;re a developer contemplating the Linux path, take the leap, embrace the challenges, and let the Linux magic unfold before you. Your journey awaits.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Operating-System/Linux/Linux-journey/My-Linux-Journey.png" alt="image"></p>
+<!-- # Supporting Materials
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Knowledge Nexus
+<div class="cards-container">
+  <a class="card" href=" ">
+    <img src="/images/content-icons/19197011.jpg" alt="Article 1">
+    <h3 class="title">Article 1</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/20944335.jpg" alt="Article 2">
+    <h3 class="title">Article 2</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/2936024.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+  <a class="card" href=" ">
+    <img src="/images/content-icons/8767135.jpg" alt="Article 3">
+    <h3 class="title">Article 3</h3>
+  </a>
+</div>
+
+## GitHub Repository
+<div class="cards-container">
+  <a class="card" href=" ">
+    <img src="/images/content-icons/Github-Logo.png" alt="GitHub Repo 1">
+    <h3 class="title">GitHub Repository</h3>
+  </a>
+</div> -->
+<!-- ## Video WalkThrough
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/tech-journey/Flutter/flutter-kickstart/">
+            &#8592;
+            Previous:
+            Flutter Kickstart: From Setup to Emulator in Style
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 31, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/OS/linux/hyprland/">
+            Next:
+            Hyprland Window Manager Tour: A New Desktop Experience
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            August 25, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#my-linux-journey">My Linux Journey</a>
+      <ol>
+        <li><a href="#the-dual-boot-dilemma">The Dual Boot Dilemma</a></li>
+        <li><a href="#initiating-with-ubuntu-1804">Initiating with Ubuntu 18.04</a></li>
+        <li><a href="#navigating-the-terrain-of-linux-applications">Navigating the Terrain of Linux Applications</a></li>
+        <li><a href="#the-ubuntu-1904-upgrade-fiasco">The Ubuntu 19.04 Upgrade Fiasco</a></li>
+        <li><a href="#conquering-the-command-line">Conquering the Command Line</a></li>
+        <li><a href="#snap-packages-and-the-birth-of-the-application-installer-project">Snap Packages and the Birth of the &ldquo;Application Installer&rdquo; Project</a></li>
+        <li><a href="#the-fascination-of-distro-hopping">The Fascination of Distro Hopping</a></li>
+        <li><a href="#the-path-to-perfect-customization">The Path to Perfect Customization</a></li>
+        <li><a href="#the-transformative-impact">The Transformative Impact</a></li>
+        <li><a href="#the-love-hate-relationship-with-arch">The Love-Hate Relationship with Arch</a></li>
+        <li><a href="#the-zen-of-the-terminal">The Zen of the Terminal</a></li>
+        <li><a href="#pinnacle-of-customization">Pinnacle of Customization</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion-the-irreversible-shift-to-linux-magic">Conclusion: The Irreversible Shift to Linux Magic</a>
+      <ol>
+        <li><a href="#a-call-to-fellow-developers-embrace-the-linux-odyssey">A Call to Fellow Developers: Embrace the Linux Odyssey</a></li>
+        <li><a href="#epilogue-the-ongoing-expedition">Epilogue: The Ongoing Expedition</a></li>
+      </ol>
+    </li>
+    <li><a href="#credit">Credit</a></li>
+    <li><a href="#contact-us">Contact Us</a></li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

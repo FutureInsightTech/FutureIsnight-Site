@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Decision Tree Machine Learning Algorithm</title>
+    <meta name="description" content="Machine Learning Classifer">
+    <meta name="keywords" content='blog, gokarna, hugo, machine-learning'>
+
+    <meta property="og:url" content="https://future-insight.blog/machine-learning/decision-tree/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Decision Tree Machine Learning Algorithm">
+    <meta property="og:description" content="Machine Learning Classifer">
+    <meta property="og:image" content="/images/2023/Machine-Learning/Decision-Tree/Decision-Tree.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Decision Tree Machine Learning Algorithm">
+    <meta name="twitter:description" content="Machine Learning Classifer">
+    <meta property="twitter:domain" content="https://future-insight.blog/machine-learning/decision-tree/">
+    <meta property="twitter:url" content="https://future-insight.blog/machine-learning/decision-tree/">
+    <meta name="twitter:image" content="/images/2023/Machine-Learning/Decision-Tree/Decision-Tree.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/machine-learning/decision-tree/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Decision Tree Machine Learning Algorithm</h1>
+        <small role="doc-subtitle">Machine Learning Classifer</small>
+        <p class="post-date">
+            March 17, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/machine-learning">machine-learning</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>I came across a project, and in that project, I have to different machine learning classifiers or machine learning algorithms. I know how to apply them, but it&rsquo;s been a while, so today I did it., We will revisit all of the concepts of the decision tree, from major terms to code implementation.</p>
+<h1 id="decision-tree">Decision Tree</h1>
+<p>Decision Tree is a Supervised Learning technique that can be used for classification problems and regression problems, but mostly it is used for classification problems.
+It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules, and each leaf node represents the outcome.</p>
+<p>In a Decision tree, there are two nodes, which are the Decision Node and Leaf Node. Decision nodes are used to make any decision and have multiple branches, whereas Leaf nodes are the output of those decisions and do not contain any further branches. The decisions or the test are performed on the basis of features of the given dataset.</p>
+<p>It is a graphical representation for getting all the possible solutions to a problem/decision based on given conditions. It is called a decision tree because, similar to a tree, it starts with the root node, which expands on further branches and constructs a tree-like structure.</p>
+<p>In order to build a tree, we use the CART algorithm, which stands for Classification and Regression Tree algorithm. A decision tree simply asks a question, and based on the answer (Yes/No), it further split the tree into subtrees.</p>
+<h1 id="simple-explain">Simple Explain:</h1>
+<p>A decision tree is a flowchart-like structure in which each internal node represents a test on a feature (e.g. whether a coin flip comes up heads or tails) , each leaf node represents a class label (decision taken after computing all features) and branches represent conjunctions of features that lead to those class labels. The paths from root to leaf represent classification rules. Below diagram illustrate the basic flow of decision tree for decision making with labels (Rain(Yes), No Rain(No)).</p>
+<img src="https://miro.medium.com/v2/resize:fit:700/0*PB7MYQfzyaLaTp1n"/>
+<p>Decision tree is one of the predictive modelling approaches used in statistics, data mining and machine learning.</p>
+<p>Decision trees are constructed via an algorithmic approach that identifies ways to split a data set based on different conditions. It is one of the most widely used and practical methods for supervised learning. Decision Trees are a non-parametric supervised learning method used for both classification and regression tasks.</p>
+<p>Tree models where the target variable can take a discrete set of values are called classification trees. Decision trees where the target variable can take continuous values (typically real numbers) are called regression trees. Classification And Regression Tree (CART) is general term for this.</p>
+<h1 id="making-decision-in-decision-tree">Making Decision in Decision Tree</h1>
+<p>While making decision tree, at each node of tree we ask different type of questions. Based on the asked question we will calculate the information gain corresponding to it.</p>
+<h2 id="information-gain">Information Gain</h2>
+<p>Information gain is used to decide which feature to split on at each step in building the tree. Simplicity is best, so we want to keep our tree small. To do so, at each step we should choose the split that results in the purest daughter nodes. A commonly used measure of purity is called information. For each node of the tree, the information value measures how much information a feature gives us about the class. The split with the highest information gain will be taken as the first split and the process will continue until all children nodes are pure, or until the information gain is 0.</p>
+<p>Algorithm for constructing decision tree usually works top-down, by choosing a variable at each step that best splits the set of items. Different algorithms use different metrices for measuring best.</p>
+<h2 id="gini-impurity">Gini Impurity</h2>
+<p>First let’s understand the meaning of Pure and Impure.</p>
+<h2 id="pure">Pure</h2>
+<p>Pure means, in a selected sample of dataset all data belongs to same class (PURE).</p>
+<h2 id="impure">Impure</h2>
+<p>Impure means, data is mixture of different classes.</p>
+<h2 id="definition-of-gini-impurity">Definition of Gini Impurity</h2>
+<p>Gini Impurity is a measurement of the likelihood of an incorrect classification of a new instance of a random variable, if that new instance were randomly classified according to the distribution of class labels from the data set.</p>
+<p>If our dataset is Pure then likelihood of incorrect classification is 0. If our sample is mixture of different classes then likelihood of incorrect classification will be high.</p>
+<h1 id="advantage-of-decision-tree">Advantage of Decision Tree</h1>
+<ul>
+<li>Easy to use and understand.</li>
+<li>Can handle both categorical and numerical data.</li>
+<li>Resistant to outliers, hence require little data preprocessing.</li>
+</ul>
+<h1 id="disadvantage-of-decision-tree">Disadvantage of Decision Tree</h1>
+<ul>
+<li>Prone to overfitting.</li>
+<li>Require some kind of measurement as to how well they are doing.</li>
+<li>Need to be careful with parameter tuning.</li>
+<li>Can create biased learned trees if some classes dominate.</li>
+</ul>
+<h1 id="avoid--stop-overfitting-in-decision-tree">Avoid  Stop Overfitting in Decision Tree</h1>
+<p>Overfitting is one of the major problem for every model in machine learning. If model is overfitted it will poorly generalized to new samples. To avoid decision tree from overfitting we remove the branches that make use of features having low importance. This method is called as Pruning or post-pruning. This way we will reduce the complexity of tree, and hence imroves predictive accuracy by the reduction of overfitting.</p>
+<p>Pruning should reduce the size of a learning tree without reducing predictive accuracy as measured by a cross-validation set. There are 2 major Pruning techniques.</p>
+<ul>
+<li><strong>Minimum Error</strong>: The tree is pruned back to the point where the cross-validated error is a minimum.</li>
+<li><strong>Smallest Tree</strong>: The tree is pruned back slightly further than the minimum error. Technically the pruning creates a decision tree with cross-validation error within 1 standard error of the minimum error.</li>
+</ul>
+<h1 id="early-stop-or-pre-pruning">Early Stop or Pre-pruning</h1>
+<p>An alternative method to prevent overfitting is to try and stop the tree-building process early, before it produces leaves with very small samples. This heuristic is known as early stopping but is also sometimes known as pre-pruning decision trees.</p>
+<p>At each stage of splitting the tree, we check the cross-validation error. If the error does not decrease significantly enough then we stop. Early stopping may underfit by stopping too early. The current split may be of little benefit, but having made it, subsequent splits more significantly reduce the error.</p>
+<p>Early stopping and pruning can be used together, separately, or not at all. Post pruning decision trees is more mathematically rigorous, finding a tree at least as good as early stopping. Early stopping is a quick fix heuristic. If used together with pruning, early stopping may save time.</p>
+<h1 id="key-points">Key points</h1>
+<ul>
+<li>When you want to implement a decision tree on a dataset, make sure that all of the data in the dataset is numerical, because converting all of the string data into numerical data can be tricky.</li>
+<li>You can convert data using multiple methods, and one of the methods is called &ldquo;Hot One Encoding.&rdquo;</li>
+</ul>
+<h1 id="conclusion">Conclusion:</h1>
+<p>In conclusion, a decision tree is a powerful tool for making decisions based on data. It is a visual representation of a decision-making process that allows us to weigh the consequences of different choices and select the best course of action. Decision trees are widely used in fields such as business, finance, healthcare, and engineering to solve complex problems and optimize decision-making. By breaking down a problem into smaller, more manageable parts, decision trees help us identify the most important factors that influence our decisions and find the optimal solution. However, it is important to keep in mind that decision trees are only as good as the data that they are based on, and the accuracy of their predictions depends on the quality and quantity of the data used. With careful planning and analysis, decision trees can be a valuable tool for making informed decisions and achieving desired outcomes.</p>
+<p>With that, we will see you next time.❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://rafay99.info">Abdul Rafay</a> and published on <a href="https://futureinsight.blog">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/Machine-Learning/Decision-Tree/2Decision-Tree.png" alt="image"></p>
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/OS/linux/nvidia-driver-arch-linux/">
+            &#8592;
+            Previous:
+            Nivida Driver: Arch Linux
+        </a>
+    </p>
+    <p class="prev-post-date">
+        March 12, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/OS/linux/linux-app-simplified/">
+            Next:
+            Linux App Installation: Simplified
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            March 28, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#decision-tree">Decision Tree</a></li>
+    <li><a href="#simple-explain">Simple Explain:</a></li>
+    <li><a href="#making-decision-in-decision-tree">Making Decision in Decision Tree</a>
+      <ol>
+        <li><a href="#information-gain">Information Gain</a></li>
+        <li><a href="#gini-impurity">Gini Impurity</a></li>
+        <li><a href="#pure">Pure</a></li>
+        <li><a href="#impure">Impure</a></li>
+        <li><a href="#definition-of-gini-impurity">Definition of Gini Impurity</a></li>
+      </ol>
+    </li>
+    <li><a href="#advantage-of-decision-tree">Advantage of Decision Tree</a></li>
+    <li><a href="#disadvantage-of-decision-tree">Disadvantage of Decision Tree</a></li>
+    <li><a href="#avoid--stop-overfitting-in-decision-tree">Avoid  Stop Overfitting in Decision Tree</a></li>
+    <li><a href="#early-stop-or-pre-pruning">Early Stop or Pre-pruning</a></li>
+    <li><a href="#key-points">Key points</a></li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a></li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming</title>
+    <meta name="description" content="Code Report: Code Interpreter in ChatGPT">
+    <meta name="keywords" content='blog, gokarna, hugo, code-report'>
+
+    <meta property="og:url" content="https://future-insight.blog/code-report/11th-July-2023/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming">
+    <meta property="og:description" content="Code Report: Code Interpreter in ChatGPT">
+    <meta property="og:image" content="/images/2023/code-report/2023/11th-July/Code-Report11th-July-2023.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming">
+    <meta name="twitter:description" content="Code Report: Code Interpreter in ChatGPT">
+    <meta property="twitter:domain" content="https://future-insight.blog/code-report/11th-July-2023/">
+    <meta property="twitter:url" content="https://future-insight.blog/code-report/11th-July-2023/">
+    <meta name="twitter:image" content="/images/2023/code-report/2023/11th-July/Code-Report11th-July-2023.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/code-report/11th-July-2023/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming</h1>
+        <small role="doc-subtitle">Code Report: Code Interpreter in ChatGPT</small>
+        <p class="post-date">
+            July 11, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="https://future-insight.blog/tags/code-report">code-report</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <hr>
+<p>It is July 11th, 2023, and amidst the belief that the AI hype was dying down, OpenAI surprised everyone by releasing a Code Interpreter to its 20 million subscription users. In this blog post, we will explore the implications of this new feature and its potential effects on programmers. We will also delve into its current capabilities by performing various tasks to gauge its limitations.</p>
+<h1 id="the-arrival-of-the-code-interpreter">The Arrival of the Code Interpreter:</h1>
+<p>OpenAI&rsquo;s recent announcement revealed that the Code Interpreter would be made available to all ChatGPT Plus users within the next week. This groundbreaking addition allows ChatGPT to run code, access uploaded files, analyze data, create charts, edit files, perform mathematical calculations, and much more. Plus users can easily opt in to enable this feature via the settings.</p>
+<div style="display: flex; justify-content: center;">
+    <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="dark" >
+        <p lang="en" dir="ltr">Code Interpreter will be available to all ChatGPT Plus users over the next week.<br><br>It lets ChatGPT run code, optionally with access to files you&#39;ve uploaded. You can ask ChatGPT to analyze data, create charts, edit files, perform math, etc.<br><br>Plus users can opt in via settings. <a href="https://t.co/IjH5JBqe5B">pic.twitter.com/IjH5JBqe5B</a>
+        </p>&mdash; OpenAI (@OpenAI) <a href="https://twitter.com/OpenAI/status/1677015057316872192?ref_src=twsrc%5Etfw">July 6, 2023</a>
+    </blockquote> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+</div>
+<h1 id="current-capabilities">Current Capabilities:</h1>
+<p>As of now, the Code Interpreter primarily supports Python, along with a limited set of modules. However, it is expected that the technology will expand and encompass more programming languages in the future.</p>
+<h2 id="task-1-dos-attack">Task 1: DOS Attack</h2>
+<p>Initially, I attempted to create a DOS attack using ChatGPT, but the AI informed me that it is restricted from engaging in such activities. While the Code Interpreter possesses the power, there are safeguards in place to prevent malicious actions.</p>
+<h2 id="task-2-website-development">Task 2: Website Development</h2>
+<p>Next, I aimed to develop a website using Python. However, it became evident that the current support for website development is limited to Python with a restricted set of libraries within a sandbox environment. Therefore, creating a full-fledged website using the Code Interpreter proved to be challenging. Nevertheless, I discovered an unexpected advantage in using ChatGPT for dataset cleaning, which yielded impressive results. This newfound capability proves to be a valuable asset for data analysts.</p>
+<h2 id="task-3-creating-and-using-regular-expressions">Task 3: Creating and Using Regular Expressions</h2>
+<p>Regular expressions (regex) are a vital tool for filtering and manipulating data. Initially, ChatGPT faced challenges in generating accurate regex patterns, similar to human programmers. However, with a few attempts and iterations, the code gradually improved. Witnessing this significant improvement was astonishing, emphasizing the potential impact of the Code Interpreter in simplifying complex tasks.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>The introduction of OpenAI&rsquo;s Code Interpreter marks another technological leap forward, carrying both promises and concerns. While the growing capabilities of AI raise questions about the future of traditional programmers, only time will reveal the true extent of its influence. As these technologies evolve and become faster and more efficient, our world is on the cusp of transformation once again. In the face of these changes, we must adapt and embrace the opportunities that lie ahead.</p>
+<p>Thank you for reading this blog post. Stay tuned for more updates and insights in the future. ❤️❤️</p>
+<h1 id="credit">Credit:</h1>
+<p>This article was written by <a href="https://future-insight.blog/author">Abdul Rafay</a> and published on <a href="https://future-insight.blog/">Future Insight</a>.</p>
+<h1 id="contact-us">Contact Us:</h1>
+<p>If you encounter any issues or have any questions regarding any of the articles on this website, please do not hesitate to contact the website&rsquo;s support team. Your feedback is important and the team is dedicated to providing prompt and effective assistance to ensure a positive user experience.</p>
+<p>To access the contact page, simply click on the &ldquo;Contact&rdquo; tab in the navigation menu or visit the following URL: <a href="https://future-insight.blog/contact">contact page</a>. From there, you can fill out a contact form or find additional information on how to get in touch with the support team.</p>
+<p>Don&rsquo;t let any questions or concerns go unanswered - reach out to the support team for help and guidance. They are committed to providing excellent customer service and will do everything possible to ensure that you have a seamless experience on the website.</p>
+<h1 id="thumbnail">Thumbnail</h1>
+<p><img src="/images/2023/code-report/2023/11th-July/Code-Report11th-July-2023.png" alt="image"></p>
+<!-- # References:
+Here are all of the links and references that I used to write this blog, so feel free to visit them to get some more help.
+## Articles references:
+- [Article 1]()
+
+## GitHub Repository:
+- [GitHub Repository 1]()
+
+## WalkThrough Video:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YT-link" frameborder="1" allowfullscreen></iframe> -->
+
+        </p>
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/web-development/ejs-nodejs-templating-guide/">
+            &#8592;
+            Previous:
+            EJS: A Templating Engine for Node.js
+        </a>
+    </p>
+    <p class="prev-post-date">
+        July 8, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/OS/windows/winget-package-manager/">
+            Next:
+            Winget: A Powerful Tool for Effortless Software Installation on Windows
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            July 13, 2023
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+    <script src="https://utteranc.es/client.js"
+        repo="FutureInsightTech/FutureIsnight-Site"
+        issue-term="title"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+    
+    
+    <script async="async" data-cfasync="false" src="//pl21136027.toprevenuegate.com/9995e385d4f7649e154699c3ca21d924/invoke.js"></script>
+    <div id="container-9995e385d4f7649e154699c3ca21d924"></div>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#the-arrival-of-the-code-interpreter">The Arrival of the Code Interpreter:</a></li>
+    <li><a href="#current-capabilities">Current Capabilities:</a>
+      <ol>
+        <li><a href="#task-1-dos-attack">Task 1: DOS Attack</a></li>
+        <li><a href="#task-2-website-development">Task 2: Website Development</a></li>
+        <li><a href="#task-3-creating-and-using-regular-expressions">Task 3: Creating and Using Regular Expressions</a></li>
+      </ol>
+    </li>
+    <li><a href="#conclusion">Conclusion:</a></li>
+    <li><a href="#credit">Credit:</a></li>
+    <li><a href="#contact-us">Contact Us:</a></li>
+    <li><a href="#thumbnail">Thumbnail</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>DevBox</title>
+    <meta name="description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://future-insight.blog/Project/DevBox/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DevBox">
+    <meta property="og:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="og:image" content="/images/2023/pages/DevBox/DevBox.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevBox">
+    <meta name="twitter:description" content="Programming is not about typing, it&#39;s about thinking. - Rich Hickey">
+    <meta property="twitter:domain" content="https://future-insight.blog/Project/DevBox/">
+    <meta property="twitter:url" content="https://future-insight.blog/Project/DevBox/">
+    <meta name="twitter:image" content="/images/2023/pages/DevBox/DevBox.png">
+
+    
+    <link rel="canonical" href="https://future-insight.blog/Project/DevBox/" />
+
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://future-insight.blog/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://future-insight.blog/css/dark.css">
+    
+    
+
+    <script src="https://future-insight.blog/js/svg-injector.min.js"></script>
+    <script src="https://future-insight.blog/js/feather-icons.min.js"></script>
+    <script src="https://future-insight.blog/js/main.js"></script>
+
+     
+    <script async defer src="https://analytics.umami.is/script.js" data-website-id="ae5799fd-54ec-4417-8cfc-d6aa00414748"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://kit.fontawesome.com/4151751d46.js" crossorigin="anonymous"></script>
+    
+    
+     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HSKPE7HLQL"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HSKPE7HLQL');
+    </script>
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    
+    
+    
+    <link rel="stylesheet" href="/css/animation.css">
+   
+    
+    <link rel="stylesheet" href="/css/nav-bar-animation.css">
+    
+
+    
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header"> 
+  
+  <nav class="header-nav">      
+        
+        <div class="avatar">
+            <a href="https://future-insight.blog">
+                <img src="https://future-insight.blog/images/16.png" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://future-insight.blog">Future Insight</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            
+            <div class="nav-link dropdown-container">
+                <a href="#" class="dropdown-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="dropdown-menu">
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/about-us/"> About Us
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/policy/"> Privacy Policy
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown-item">
+                        <a href="https://future-insight.blog/contact/"> Contact US
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/author/"><span data-feather='user'></span> Author </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/post/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/services/"><span data-feather='settings'></span> Services </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/future-insight-wiki/"><span data-feather='book-open'></span> Wiki </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://future-insight.blog/search"><span data-feather='search'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/rafay99-epic"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>DevBox</h1>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <link rel="stylesheet" href="/css/style.css">
+<p>DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems. It does not use Snap Pack, ensuring a fast and streamlined installation process. Once the script is executed, you can forget about the installation and focus on your work. DevBox supports AUR and can also be used to theme Gnome desktops. With Git and GitHub configuration, DevBox streamlines the development process. The script is secure, and with its one-line command line execution, it is easy to use even for beginners.</p>
+<h1 id="about-application">About Application:</h1>
+<p>So the application has 5 different versions, and each version has a unique file structure, permissions, and supports different applications. This means that each version is very different from the others, and requires a different approach to work with. So it&rsquo;s important to understand which version you&rsquo;re working with and what its specific requirements are, in order to effectively use the application.</p>
+<h1 id="key-features-of-the-linux-system-configuration-script">Key Features of the Linux System Configuration Script:</h1>
+<p>Here are some of the features of DevBox:</p>
+<h2 id="support-for-debian-linux--arch-linux">Support for Debian Linux &amp; Arch Linux</h2>
+<p>DevBox supports two of the most popular Linux distributions, Debian and Arch Linux. This means that you can use DevBox to set up a development environment on either of these distributions.</p>
+<h2 id="no-use-of-snap-pack">NO Use of Snap Pack</h2>
+<p>DevBox does not rely on Snap Packs, which can sometimes cause compatibility issues or performance problems. Instead, DevBox uses the default package manager of your distribution to install the necessary packages and dependencies.</p>
+<h2 id="run-once-and-then-forget">Run Once and Then Forget</h2>
+<p>Once you have run DevBox, it will configure your system and install all the necessary tools and packages. You don&rsquo;t have to worry about running it again unless you want to update your system or add new packages.</p>
+<h2 id="support-for-aur">Support for AUR</h2>
+<p>If you&rsquo;re using Arch Linux, you can use DevBox to install packages from the Arch User Repository (AUR). This means that you can install packages that are not available in the official repositories of Arch Linux.</p>
+<h2 id="working-on-theming-gnome-desktop">Working on theming Gnome Desktop</h2>
+<p>If you&rsquo;re using the Gnome desktop environment, DevBox can also configure the theme and appearance of your desktop, giving you a more personalized and streamlined development environment.</p>
+<h2 id="installing-multiple-applications-for-developers">Installing Multiple Applications for Developers</h2>
+<p>DevBox can install multiple applications that are essential for developers, such as Git, Vim, Python, and Node.js, among others. This means that you don&rsquo;t have to install each application manually.</p>
+<h2 id="config-git--github">Config Git &amp; GitHub</h2>
+<p>DevBox can also configure Git and GitHub on your system, making it easy for you to use these tools for version control and collaboration.</p>
+<h2 id="secure">Secure</h2>
+<p>DevBox is designed to be secure and does not compromise the security of your system. It uses only the official package managers of your distribution and does not install any third-party software.</p>
+<h2 id="one-line-command-line-execute">One Line Command Line Execute.</h2>
+<p>With DevBox, you can set up your development environment with just one command, making it easy and convenient to use.</p>
+<h1 id="implementation">Implementation:</h1>
+<p>You can find the source code for DevBox on our GitHub repository at <a href="https://github.com/rafay99-epic/DevBox">https://github.com/rafay99-epic/DevBox</a>. We have made the code open-source so that anyone can use it and modify it according to their needs. You can also contribute to the development of DevBox by submitting pull requests or raising issues on the GitHub page.</p>
+<p>In addition to the source code, we have also provided detailed documentation on how to use and configure DevBox on the GitHub page. This documentation includes step-by-step instructions on how to install and run DevBox, as well as explanations of the different features and options available.</p>
+<p>We believe that open-source software is essential for the development and advancement of technology, and we are committed to contributing to the open-source community. We hope that DevBox will be useful for developers and that it will help them to save time and effort when setting up their development environments.</p>
+<p>So, head over to our GitHub repository at <a href="https://github.com/rafay99-epic/DevBox">https://github.com/rafay99-epic/DevBox</a> to download and use DevBox for free. We also welcome feedback and suggestions from the community to help us improve and enhance the functionality of DevBox.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>In conclusion, DevBox is a powerful tool that can help you automate the installation and configuration of a Linux system for development purposes. With its support for multiple distributions, easy-to-use interface, and essential applications and tools for developers, DevBox is the ultimate solution for setting up your development environment quickly and easily.</p>
+<h1 id="contact-me">Contact Me:</h1>
+<p>If you have any questions or issues with our smart parking system, please do not hesitate to <a href="https://future-insight.blog/contact">contact us</a>. We are always here to help!</p>
+<h1 id="thumbnail">Thumbnail:</h1>
+<p><img src="/images/2023/pages/DevBox/DevBox.png" alt="image"></p>
+
+        </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2023  by Future Insight</span>
+    <span>
+        Made with &#10084;&#65039; by <a target="_blank" href="/author">Abdul Rafay</a>  &nbsp;|&nbsp;
+        <a target="_blank" href="/policy/">Privacy Policy</a> &nbsp;|&nbsp;
+        <a target="_blank" href="/contact/">Contact US</a>        
+    
+    </span>
+</footer></body>
+</html>
