@@ -22,7 +22,7 @@ jobs:
         run: hugo 
 
       - name: Indexing Page # indexing the build site
-        run: npx -y pagefind --site 
+        run: npx -y pagefind --site public
       
       - name: Push     # pushes the website to build branch
         uses: s0/git-publish-subdir-action@develop
