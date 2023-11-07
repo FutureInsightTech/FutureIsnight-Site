@@ -6,7 +6,17 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Sep 2023 20:54:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Nov 2023 11:52:32 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Develops Quantum-Safe Security Keys</title>
+      <link>https://future-insight.blog/multiverse-insights/google-security-drive/</link>
+      <pubDate>Tue, 07 Nov 2023 11:52:32 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/multiverse-insights/google-security-drive/</guid>
+      <description>Cyber Security There’s a race on to update the cybersecurity infrastructure before quantum computers become capable of cracking the current standards. Now Google has developed a quantum-resilient way of implementing the FIDO2 security key standard, an increasingly popular method of authentication that’s used as an alternative to passwords.
+Security Keys Security keys, like passwords, help users prove their identity so they can authenticate to digital services. But unlike passwords, security keys are unlikely to be compromised because they are physical devices built for the sole purpose of performing authentication.</description>
+    </item>
+    
     <item>
       <title>Cooking Up a Storm: Bun vs. Node.js Performance Showdown</title>
       <link>https://future-insight.blog/web-development/bun-vs-nodejs/</link>
