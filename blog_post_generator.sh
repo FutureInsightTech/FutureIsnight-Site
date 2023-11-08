@@ -46,7 +46,9 @@ echo "4. ${rocket} OS"
 echo "5. ${rocket} linux"
 echo "6. ${rocket} windows"
 echo "7. ${rocket} Code-Report"
-echo "8. ${rocket} Write your Ownn Category"
+echo "8. ${rocket} AI-Thoughts"
+echo "9. ${rocket} MultiVerse-Insights"
+echo "10. ${rocket} Write your Ownn Category"
 
 # Function to validate user input as a number
 validate_number() {
@@ -70,7 +72,9 @@ while true; do
             5) category="linux"; break;;
             6) category="windows"; break;;
             7) category="Code-Report"; break;;
-            8) read -rp "${pencil} Enter the name of the category: " category; break;;
+            8) category="AI-Thoughts"; break;;
+            9) category="MultiVerse-Insights"; break;;
+            10) read -rp "${pencil} Enter the name of the category: " category; break;;
             *) echo "Invalid choice. Please enter a valid number.";;
         esac
     else
@@ -96,6 +100,10 @@ elif [[ "$category" = "windows" ]]; then
      echo "=== ${windows} You have seclect: ${category} Category ==="
 elif [[ "$category" = "Code-Report" ]]; then
      echo "=== ${report} You have seclect: ${category} Category ==="
+elif [[ "$category" = "AI-Thoughts" ]]; then
+     echo "=== ${code} You have seclect: ${category} Category ==="
+elif [[ "$category" = "MultiVerse-Insights" ]]; then
+     echo "=== ${book} You have seclect: ${category} Category ==="
 else 
     echo "=== ${book} You have seclect: ${category} Category ==="
 fi
