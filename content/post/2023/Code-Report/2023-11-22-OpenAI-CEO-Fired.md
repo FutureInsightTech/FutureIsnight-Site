@@ -7,7 +7,7 @@ tags: ["blog" ,"Code-Report"]
 description: "The Altman Saga: Departure, Invitations, and Tech Speculation"
 showTableOfContents: true
 url: /code-report/openai-microsoft-saga/
-# image: "/images/2023/"
+image: "/images/2023/code-report/2023/22-Nov/thumbnail.png"
 ---
 
 <link rel="stylesheet" href="/css/reference-content/reference-content.css">
@@ -114,6 +114,8 @@ Here are all of the links and references that I used to write this blog, so feel
   </a>
 </div>
 
+## Thumbnail:
+![Thumbnail](/images/2023/code-report/2023/22-Nov/thumbnail.png)
 <!-- ## Video WalkThrough
 
 <div class="video-container">
