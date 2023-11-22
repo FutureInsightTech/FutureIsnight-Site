@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2023 11:52:32 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 11:39:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Turmoil: Unraveling the Departure of Sam Altman from OpenAI and the Invitations to Microsoft</title>
+      <link>https://future-insight.blog/code-report/openai-microsoft-saga/</link>
+      <pubDate>Wed, 22 Nov 2023 11:39:08 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/code-report/openai-microsoft-saga/</guid>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   If you&amp;rsquo;ve been following Twitter or any social media, you might have heard that Sam Altman, the Co-Founder of OpenAI, was let go by the board. Altman played a crucial role in developing ChatGPT and various large language models.
+The entire story can be divided into three parts, each raising questions and making us wonder what&amp;rsquo;s happening in the tech world.</description>
+    </item>
+    
     <item>
       <title>Google Develops Quantum-Safe Security Keys</title>
       <link>https://future-insight.blog/multiverse-insights/google-security-drive/</link>

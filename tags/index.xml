@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2023 11:52:32 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Nov 2023 11:39:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
       <link>https://future-insight.blog/tags/blog/</link>
-      <pubDate>Tue, 07 Nov 2023 11:52:32 +0500</pubDate>
+      <pubDate>Wed, 22 Nov 2023 11:39:08 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code-report</title>
+      <link>https://future-insight.blog/tags/code-report/</link>
+      <pubDate>Wed, 22 Nov 2023 11:39:08 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/tags/code-report/</guid>
       <description></description>
     </item>
     
@@ -94,15 +103,6 @@
       <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
       
       <guid>https://future-insight.blog/tags/new-tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code-report</title>
-      <link>https://future-insight.blog/tags/code-report/</link>
-      <pubDate>Tue, 25 Jul 2023 15:03:44 +0500</pubDate>
-      
-      <guid>https://future-insight.blog/tags/code-report/</guid>
       <description></description>
     </item>
     
