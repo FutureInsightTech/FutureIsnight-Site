@@ -6,7 +6,16 @@
     <description>Recent content in Web Development on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Sep 2023 20:54:34 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jan 2024 23:20:30 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 JavaScript Updates: Enhancements Empowering Web Development</title>
+      <link>https://future-insight.blog/web-development/2023-javascript-updates/</link>
+      <pubDate>Tue, 02 Jan 2024 23:20:30 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/web-development/2023-javascript-updates/</guid>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   As we bid farewell to this year, JavaScript unveils its latest update, presenting innovations I haven&amp;rsquo;t explored in a while. In this blog post, I&amp;rsquo;ll delve into the advancements that have enhanced JavaScript, making it a more powerful and refined language.</description>
+    </item>
+    
     <item>
       <title>Cooking Up a Storm: Bun vs. Node.js Performance Showdown</title>
       <link>https://future-insight.blog/web-development/bun-vs-nodejs/</link>

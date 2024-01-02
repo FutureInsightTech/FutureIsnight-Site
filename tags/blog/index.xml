@@ -6,7 +6,16 @@
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Nov 2023 11:39:08 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jan 2024 23:20:30 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 JavaScript Updates: Enhancements Empowering Web Development</title>
+      <link>https://future-insight.blog/web-development/2023-javascript-updates/</link>
+      <pubDate>Tue, 02 Jan 2024 23:20:30 +0500</pubDate>
+      
+      <guid>https://future-insight.blog/web-development/2023-javascript-updates/</guid>
+      <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   As we bid farewell to this year, JavaScript unveils its latest update, presenting innovations I haven&amp;rsquo;t explored in a while. In this blog post, I&amp;rsquo;ll delve into the advancements that have enhanced JavaScript, making it a more powerful and refined language.</description>
+    </item>
+    
     <item>
       <title>Tech Turmoil: Unraveling the Departure of Sam Altman from OpenAI and the Invitations to Microsoft</title>
       <link>https://future-insight.blog/code-report/openai-microsoft-saga/</link>
