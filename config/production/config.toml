@@ -3,7 +3,8 @@
 # Config File
 #---------------------------------
 
-baseURL = 'https://future-insight.blog'
+# baseURL = 'https://future-insight.blog'
+baseURL = 'https://future-insight.netlify.app'
 languageCode = 'en-us'
 title = 'Future Insight'
 theme = 'gokarna'
