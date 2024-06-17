@@ -2,180 +2,180 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on Future Insight</title>
-    <link>https://future-insight.blog/tags/blog/</link>
+    <link>https://future-insight.netlify.app/tags/blog/</link>
     <description>Recent content in blog on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jan 2024 23:20:30 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jan 2024 23:20:30 +0500</lastBuildDate><atom:link href="https://future-insight.netlify.app/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 JavaScript Updates: Enhancements Empowering Web Development</title>
-      <link>https://future-insight.blog/web-development/2023-javascript-updates/</link>
+      <link>https://future-insight.netlify.app/web-development/2023-javascript-updates/</link>
       <pubDate>Tue, 02 Jan 2024 23:20:30 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/2023-javascript-updates/</guid>
+      <guid>https://future-insight.netlify.app/web-development/2023-javascript-updates/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   As we bid farewell to this year, JavaScript unveils its latest update, presenting innovations I haven&amp;rsquo;t explored in a while. In this blog post, I&amp;rsquo;ll delve into the advancements that have enhanced JavaScript, making it a more powerful and refined language.</description>
     </item>
     
     <item>
       <title>Tech Turmoil: Unraveling the Departure of Sam Altman from OpenAI and the Invitations to Microsoft</title>
-      <link>https://future-insight.blog/code-report/openai-microsoft-saga/</link>
+      <link>https://future-insight.netlify.app/code-report/openai-microsoft-saga/</link>
       <pubDate>Wed, 22 Nov 2023 11:39:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/code-report/openai-microsoft-saga/</guid>
+      <guid>https://future-insight.netlify.app/code-report/openai-microsoft-saga/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   If you&amp;rsquo;ve been following Twitter or any social media, you might have heard that Sam Altman, the Co-Founder of OpenAI, was let go by the board. Altman played a crucial role in developing ChatGPT and various large language models.
 The entire story can be divided into three parts, each raising questions and making us wonder what&amp;rsquo;s happening in the tech world.</description>
     </item>
     
     <item>
       <title>Google Develops Quantum-Safe Security Keys</title>
-      <link>https://future-insight.blog/multiverse-insights/google-security-drive/</link>
+      <link>https://future-insight.netlify.app/multiverse-insights/google-security-drive/</link>
       <pubDate>Tue, 07 Nov 2023 11:52:32 +0500</pubDate>
       
-      <guid>https://future-insight.blog/multiverse-insights/google-security-drive/</guid>
+      <guid>https://future-insight.netlify.app/multiverse-insights/google-security-drive/</guid>
       <description>Cyber Security There’s a race on to update the cybersecurity infrastructure before quantum computers become capable of cracking the current standards. Now Google has developed a quantum-resilient way of implementing the FIDO2 security key standard, an increasingly popular method of authentication that’s used as an alternative to passwords.
 Security Keys Security keys, like passwords, help users prove their identity so they can authenticate to digital services. But unlike passwords, security keys are unlikely to be compromised because they are physical devices built for the sole purpose of performing authentication.</description>
     </item>
     
     <item>
       <title>Cooking Up a Storm: Bun vs. Node.js Performance Showdown</title>
-      <link>https://future-insight.blog/web-development/bun-vs-nodejs/</link>
+      <link>https://future-insight.netlify.app/web-development/bun-vs-nodejs/</link>
       <pubDate>Thu, 21 Sep 2023 20:54:34 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/bun-vs-nodejs/</guid>
+      <guid>https://future-insight.netlify.app/web-development/bun-vs-nodejs/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   There&amp;rsquo;s a new sensation in town, and it goes by the name &amp;ldquo;Bun.&amp;rdquo; Recently, a new JavaScript runtime called &amp;ldquo;Bun&amp;rdquo; was released. I&amp;rsquo;ve been a long-time user of Node.js, having completed my final year project and various client projects with it.</description>
     </item>
     
     <item>
       <title>AI Tools that are Life Changing</title>
-      <link>https://future-insight.blog/ai-thoughts/ai-tools/</link>
+      <link>https://future-insight.netlify.app/ai-thoughts/ai-tools/</link>
       <pubDate>Sat, 16 Sep 2023 01:06:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/ai-thoughts/ai-tools/</guid>
+      <guid>https://future-insight.netlify.app/ai-thoughts/ai-tools/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   AI Tools: Smaller, Better, and Beyond The release of OpenAI&amp;rsquo;s ChatGPT has revolutionized the way we work and communicate. The chatbot has broken multiple records, and its impact on various industries is undeniable. With its ability to generate human-like text, ChatGPT has opened up new possibilities for automating tasks, streamlining workflows, and enhancing productivity.</description>
     </item>
     
     <item>
       <title>Claim Your Digital Home: Why EVERYONE Needs a Website!</title>
-      <link>https://future-insight.blog/web-development/claim-your-website/</link>
+      <link>https://future-insight.netlify.app/web-development/claim-your-website/</link>
       <pubDate>Fri, 08 Sep 2023 22:54:56 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/claim-your-website/</guid>
+      <guid>https://future-insight.netlify.app/web-development/claim-your-website/</guid>
       <description>Claim Your Digital Home Picture this: In a world spinning faster and faster towards the digital horizon, a personal website is not just a want; it&amp;rsquo;s an absolute must-have. But before we dive into the &amp;ldquo;why&amp;rdquo; and &amp;ldquo;how,&amp;rdquo; let&amp;rsquo;s ask a question: &amp;ldquo;Do you have a website?&amp;rdquo; If not, where are you in the vast online universe?
 We&amp;rsquo;re about to embark on a journey that will change the way you perceive your online presence.</description>
     </item>
     
     <item>
       <title>Hyprland Window Manager Tour: A New Desktop Experience</title>
-      <link>https://future-insight.blog/OS/linux/hyprland/</link>
+      <link>https://future-insight.netlify.app/OS/linux/hyprland/</link>
       <pubDate>Fri, 25 Aug 2023 23:45:20 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/hyprland/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/hyprland/</guid>
       <description>.gdoc-tabs-container { display: flex; overflow-x: auto; background-color: transparent; margin: 20px; width: 100%; } /* gdoc-tabs styles */ .gdoc-tabs { display: flex; flex-direction: column; min-width: 200px; } .gdoc-tabs__control { display: none; } .gdoc-tabs__label { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; text-align: center; color: white; transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; } .gdoc-tabs__control:checked + .gdoc-tabs__label { background-color: #000; color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } .</description>
     </item>
     
     <item>
       <title>Discovering Linux: My Path to Becoming a Command Line Maestro</title>
-      <link>https://future-insight.blog/OS/linux/My-Linux-Journey/</link>
+      <link>https://future-insight.netlify.app/OS/linux/My-Linux-Journey/</link>
       <pubDate>Mon, 14 Aug 2023 18:15:04 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/My-Linux-Journey/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/My-Linux-Journey/</guid>
       <description>Embarking on my Linux journey during my student days as a budding software engineer, I eagerly dove into Linux distro videos and blog posts. However, despite my efforts, the seemingly elusive task of installing Linux and setting up dual boot with Windows remained an enigma.
 My Linux Journey The Dual Boot Dilemma As a newcomer to the world of computers, I grappled with the concept of dual booting and sought help from a tech-savvy friend.</description>
     </item>
     
     <item>
       <title>Flutter Kickstart: From Setup to Emulator in Style</title>
-      <link>https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/</link>
+      <link>https://future-insight.netlify.app/tech-journey/Flutter/flutter-kickstart/</link>
       <pubDate>Mon, 31 Jul 2023 22:00:34 +0500</pubDate>
       
-      <guid>https://future-insight.blog/tech-journey/Flutter/flutter-kickstart/</guid>
+      <guid>https://future-insight.netlify.app/tech-journey/Flutter/flutter-kickstart/</guid>
       <description>I must say that setting up Flutter is not easy. There are a lot of videos out there that claim to help you set up the Flutter SDK for Windows, Linux, or macOS, but they are often incomplete and don&amp;rsquo;t answer the most basic questions you may have. So, I&amp;rsquo;ve decided to write this blog to help you guys out.
 From day one, I&amp;rsquo;ve been a web developer, using React, HTML, CSS, and JavaScript to create websites.</description>
     </item>
     
     <item>
       <title>Flutter: Dart Programming Language</title>
-      <link>https://future-insight.blog/tech-journey/Flutter/dart-programming/</link>
+      <link>https://future-insight.netlify.app/tech-journey/Flutter/dart-programming/</link>
       <pubDate>Wed, 26 Jul 2023 14:07:01 +0500</pubDate>
       
-      <guid>https://future-insight.blog/tech-journey/Flutter/dart-programming/</guid>
+      <guid>https://future-insight.netlify.app/tech-journey/Flutter/dart-programming/</guid>
       <description>I want to learn Flutter and make cool apps, but it was a while ago that I had to learn a new Programming language, and I am rusty to learn a new programming language, but I am eager to learn something new, so in this blog post, I will be learning the Dart Programming language, and I will be sharing my experience with you guys.
 Before we begin, we need dark sdk on my system.</description>
     </item>
     
     <item>
       <title>Code Report: From Birds to X Org Transformation</title>
-      <link>https://future-insight.blog/code-report/25th-July-2023/</link>
+      <link>https://future-insight.netlify.app/code-report/25th-July-2023/</link>
       <pubDate>Tue, 25 Jul 2023 15:03:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/code-report/25th-July-2023/</guid>
+      <guid>https://future-insight.netlify.app/code-report/25th-July-2023/</guid>
       <description>Today is July 25, and I am reading code report about Twitter&amp;rsquo;s recent logo change. Regrettably, the iconic blue bird logo was replaced this morning with a new logo called &amp;ldquo;X.&amp;rdquo;
 Elon Musk, the owner of Twitter, tweeted on Sunday that the idea behind changing the logo to &amp;ldquo;X&amp;rdquo; was to &amp;ldquo;embody the imperfections in us all that make us unique.&amp;rdquo; He also mentioned that they will gradually bid farewell to the Twitter brand and all bird-related imagery.</description>
     </item>
     
     <item>
       <title>Tech Journey Insights: Flutter Begining</title>
-      <link>https://future-insight.blog/tech-journey/Flutter/Flutter-begining/</link>
+      <link>https://future-insight.netlify.app/tech-journey/Flutter/Flutter-begining/</link>
       <pubDate>Mon, 24 Jul 2023 22:49:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/tech-journey/Flutter/Flutter-begining/</guid>
+      <guid>https://future-insight.netlify.app/tech-journey/Flutter/Flutter-begining/</guid>
       <description>I have been using Hugo for a while, and I have created this website to blog, but things have changed, and I want to expand it and make it more than just a blog. I want to make it a place where people can come and learn new things. So I have decided to start a new series of blogs where I will be learning new technologies and sharing my experiences with you guys.</description>
     </item>
     
     <item>
       <title>PowerShell: Unleashing the Power of Automation and System Management</title>
-      <link>https://future-insight.blog/OS/windows/Power-Shell-Scripting/</link>
+      <link>https://future-insight.netlify.app/OS/windows/Power-Shell-Scripting/</link>
       <pubDate>Fri, 21 Jul 2023 20:58:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/Power-Shell-Scripting/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/Power-Shell-Scripting/</guid>
       <description>Windows, oh Windows! It may look like a friendly playground for beginners, but let me tell you, it&amp;rsquo;s a true powerhouse under the hood, and today, we&amp;rsquo;re diving into its secret weapons that every developer should know about!
   Introducing WSL (Windows Subsystem for Linux): Ever dreamed of having the best of both worlds? With WSL, you can seamlessly run a full-fledged Linux environment right inside your Windows system.</description>
     </item>
     
     <item>
       <title>Secure Linux The 3 Biggest Security Mistakes Linux Users Make</title>
-      <link>https://future-insight.blog/OS/linux/secure-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/secure-linux/</link>
       <pubDate>Thu, 20 Jul 2023 16:55:10 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/secure-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/secure-linux/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   After using a Linux system for a while, I&amp;rsquo;ve noticed that there are some common mistakes people make that can compromise the security of their Linux installations. In this blog post, I will address the three most significant security mistakes that Linux users often make.</description>
     </item>
     
     <item>
       <title>Winget: A Powerful Tool for Effortless Software Installation on Windows</title>
-      <link>https://future-insight.blog/OS/windows/winget-package-manager/</link>
+      <link>https://future-insight.netlify.app/OS/windows/winget-package-manager/</link>
       <pubDate>Thu, 13 Jul 2023 12:51:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/winget-package-manager/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/winget-package-manager/</guid>
       <description>For years, when it came to installing applications on Windows, we would visit the internet, like the Google Chrome website, and download the .exe file. Once downloaded, we would click and click until the application was installed on our system.
 However, this method had its drawbacks. If you had a slow internet connection, it would take time to download all the exe files from the browser, and then you had to go through the clicking process to install each application.</description>
     </item>
     
     <item>
       <title>Code Report: The Impact of OpenAI&#39;s Code Interpreter on Programming</title>
-      <link>https://future-insight.blog/code-report/11th-July-2023/</link>
+      <link>https://future-insight.netlify.app/code-report/11th-July-2023/</link>
       <pubDate>Tue, 11 Jul 2023 14:11:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/code-report/11th-July-2023/</guid>
+      <guid>https://future-insight.netlify.app/code-report/11th-July-2023/</guid>
       <description>It is July 11th, 2023, and amidst the belief that the AI hype was dying down, OpenAI surprised everyone by releasing a Code Interpreter to its 20 million subscription users. In this blog post, we will explore the implications of this new feature and its potential effects on programmers. We will also delve into its current capabilities by performing various tasks to gauge its limitations.
 The Arrival of the Code Interpreter: OpenAI&amp;rsquo;s recent announcement revealed that the Code Interpreter would be made available to all ChatGPT Plus users within the next week.</description>
     </item>
     
     <item>
       <title>EJS: A Templating Engine for Node.js</title>
-      <link>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</link>
+      <link>https://future-insight.netlify.app/web-development/ejs-nodejs-templating-guide/</link>
       <pubDate>Sat, 08 Jul 2023 11:26:23 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/ejs-nodejs-templating-guide/</guid>
+      <guid>https://future-insight.netlify.app/web-development/ejs-nodejs-templating-guide/</guid>
       <description>HTML is great—simple and fast for rendering webpages. However, there is a problem: code repetition. Writing the same code again and again for every page can be tedious. What if there was a way to write the code once and use it everywhere? That&amp;rsquo;s where EJS comes in. EJS is a templating engine that allows us to write code once and reuse it across multiple pages. Let&amp;rsquo;s get started!</description>
     </item>
     
     <item>
       <title>Window Sub-System for Linux (WSL)</title>
-      <link>https://future-insight.blog/OS/windows/wsl-install/</link>
+      <link>https://future-insight.netlify.app/OS/windows/wsl-install/</link>
       <pubDate>Fri, 07 Jul 2023 23:04:42 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/wsl-install/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/wsl-install/</guid>
       <description>Linux is ubiquitous, and no matter how much we resist, there will come a point when we must embrace it. So, why not start now? In this article, we will explore the process of installing Linux on Windows.
 As we embark on this journey, you may find yourself pondering various questions, such as:
  What is WSL? What is WSL2? What sets WSL and WSL2 apart? Why do I need WSL?</description>
@@ -183,59 +183,59 @@ As we embark on this journey, you may find yourself pondering various questions,
     
     <item>
       <title>Code Report: 06th July 2023</title>
-      <link>https://future-insight.blog/code-report/06th-July-2023/</link>
+      <link>https://future-insight.netlify.app/code-report/06th-July-2023/</link>
       <pubDate>Thu, 06 Jul 2023 15:21:52 +0500</pubDate>
       
-      <guid>https://future-insight.blog/code-report/06th-July-2023/</guid>
+      <guid>https://future-insight.netlify.app/code-report/06th-July-2023/</guid>
       <description>The Perils of Faking User Growth: Lessons from IRL&amp;rsquo;s Rise and Fall The phrase &amp;ldquo;Fake it till you make it&amp;rdquo; is commonly used in the world of software engineering, often embraced by new entrepreneurs and startups. It suggests projecting confidence and success even before achieving it. However, the recent demise of IRL, a promising social app, serves as a stark reminder of the consequences of fabricating user growth. This article explores the rise and fall of IRL, highlighting the risks associated with creating fake user bases and emphasizing the importance of genuine user acquisition.</description>
     </item>
     
     <item>
       <title>The Fascinating World of Cryptocurrency: A New Frontier for Financial Innovation</title>
-      <link>https://future-insight.blog/crypto/world-of-crypto/</link>
+      <link>https://future-insight.netlify.app/crypto/world-of-crypto/</link>
       <pubDate>Tue, 04 Jul 2023 18:58:03 -0700</pubDate>
       
-      <guid>https://future-insight.blog/crypto/world-of-crypto/</guid>
+      <guid>https://future-insight.netlify.app/crypto/world-of-crypto/</guid>
       <description>Cryptocurrency, a digital form of currency based on cryptographic technology, has taken the world by storm. In recent years, the rise of cryptocurrencies such as Bitcoin, Ethereum, and others has captured the attention of investors, technologists, and individuals seeking financial independence. In this blog post, we will delve into the fascinating world of cryptocurrency, exploring its origins, benefits, and potential impact on the future of finance.
 Understanding Cryptocurrency: Cryptocurrency, at its core, is a decentralized form of digital currency that operates independently of any central authority, such as a government or financial institution.</description>
     </item>
     
     <item>
       <title>Optimize Your Fedora: 5 Essential Post-Installation Steps</title>
-      <link>https://future-insight.blog/OS/linux/fedora-install-tips/</link>
+      <link>https://future-insight.netlify.app/OS/linux/fedora-install-tips/</link>
       <pubDate>Sat, 01 Jul 2023 20:26:58 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/fedora-install-tips/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/fedora-install-tips/</guid>
       <description>So you&amp;rsquo;ve installed Fedora on your system, and I hope you&amp;rsquo;re enjoying it. However, out of the box, there are a few things that could be improved. In this blog post, we will go through the top five things to do after installing Fedora on your system.
 Top 5: Here are the top 5 things I would do when I install Fedora on my system, and I will be throwing in a bonus one as well.</description>
     </item>
     
     <item>
       <title>Nvidia Driver: Fedora Linux</title>
-      <link>https://future-insight.blog/OS/linux/nvidia-driver-fedora-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/nvidia-driver-fedora-linux/</link>
       <pubDate>Fri, 30 Jun 2023 16:15:07 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/nvidia-driver-fedora-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/nvidia-driver-fedora-linux/</guid>
       <description>In the world of graphics-intensive tasks and gaming, having the right drivers installed is crucial for optimal performance and compatibility. If you are a Fedora user seeking to harness the power of Nvidia graphics cards, you&amp;rsquo;ve come to the right place. This comprehensive guide will walk you through the step-by-step process of installing Nvidia drivers on your Fedora system.
 By following this guide, you&amp;rsquo;ll be able to unlock the full potential of your Nvidia graphics card, ensuring smooth visuals, improved stability, and access to advanced features.</description>
     </item>
     
     <item>
       <title>Enhancing Terminal Experience: Feedback for Password Entry</title>
-      <link>https://future-insight.blog/OS/linux/terminal-feedback-password/</link>
+      <link>https://future-insight.netlify.app/OS/linux/terminal-feedback-password/</link>
       <pubDate>Fri, 30 Jun 2023 15:37:54 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/terminal-feedback-password/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/terminal-feedback-password/</guid>
       <description>Using both Linux and Windows operating systems, I have come to appreciate the power of the terminal. Whether it&amp;rsquo;s the Bash Shell, ZSH Shell, Fish Shell on Linux, or PowerShell on Windows, the terminal provides a command-line interface that allows for efficient and effective interactions. However, one common drawback I have encountered is the lack of feedback when entering passwords or sensitive information in the terminal.
 Problem: The default behavior of most shells is to not display any feedback, such as asterisks or characters, when typing passwords.</description>
     </item>
     
     <item>
       <title>Code Report: 24th June 2023</title>
-      <link>https://future-insight.blog/code-report/24th-June-2023/</link>
+      <link>https://future-insight.netlify.app/code-report/24th-June-2023/</link>
       <pubDate>Sat, 24 Jun 2023 22:51:59 +0500</pubDate>
       
-      <guid>https://future-insight.blog/code-report/24th-June-2023/</guid>
+      <guid>https://future-insight.netlify.app/code-report/24th-June-2023/</guid>
       <description>----------- Today, on June 24th, 2023, an unexpected and deeply saddening event took place within the Linux community. Red Hat Linux, known for its open-source nature, has made the surprising decision to transition to a closed-source, proprietary model.
 This announcement raises several crucial questions:
  What is closed-source software? What is the significance of Red Hat Linux? What actions are they taking? What is the problem? Should i be worry? But what about licensing?</description>
@@ -243,105 +243,105 @@ This announcement raises several crucial questions:
     
     <item>
       <title>Exploring Different Types of Databases in Web Development</title>
-      <link>https://future-insight.blog/web-development/explore-databases/</link>
+      <link>https://future-insight.netlify.app/web-development/explore-databases/</link>
       <pubDate>Sat, 24 Jun 2023 01:53:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/explore-databases/</guid>
+      <guid>https://future-insight.netlify.app/web-development/explore-databases/</guid>
       <description>----------- Databases are an integral part of web development, serving as the backbone for storing and retrieving data efficiently. There are various types of databases available, each with its own strengths and use cases. In this blog post, we will delve into the different types of databases commonly used in web development and provide some basic configuration code snippets for each type, including Firebase.
 Databases in Web Development Relational Databases Relational databases store data in a structured manner, using tables with predefined relationships between them.</description>
     </item>
     
     <item>
       <title>Getting Started with Firebase Database: A Comprehensive Guide</title>
-      <link>https://future-insight.blog/web-development/firebase-connection/</link>
+      <link>https://future-insight.netlify.app/web-development/firebase-connection/</link>
       <pubDate>Sat, 24 Jun 2023 01:48:15 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/firebase-connection/</guid>
+      <guid>https://future-insight.netlify.app/web-development/firebase-connection/</guid>
       <description>In today&amp;rsquo;s blog post, we will delve into the world of Firebase Database and explore how to use it effectively in your web development projects. Whether you&amp;rsquo;re a beginner or an experienced developer, this guide will take you from the basics to advanced concepts, covering everything you need to know about Firebase Database. So let&amp;rsquo;s dive in!
 Understanding Firebase Database Firebase Database is a cloud-hosted NoSQL database provided by Google as part of the Firebase platform.</description>
     </item>
     
     <item>
       <title>Windows Security: Protecting Your Operating System</title>
-      <link>https://future-insight.blog/OS/windows/secure-your-windows/</link>
+      <link>https://future-insight.netlify.app/OS/windows/secure-your-windows/</link>
       <pubDate>Mon, 19 Jun 2023 02:58:06 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/secure-your-windows/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/secure-your-windows/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks.</description>
     </item>
     
     <item>
       <title>Navigating the Linux Universe: Finding Your Perfect Distribution</title>
-      <link>https://future-insight.blog/OS/linux/linux-distribution/</link>
+      <link>https://future-insight.netlify.app/OS/linux/linux-distribution/</link>
       <pubDate>Tue, 13 Jun 2023 20:11:35 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/linux-distribution/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/linux-distribution/</guid>
       <description>In every profession, there is a journey we must embark on to become proficient. It involves making mistakes, learning from them, and gaining valuable experience. I&amp;rsquo;ve been on this Linux journey for a while now, and I must say, I love it. The process of starting as a Linux novice and eventually using it as a full-time desktop is an unforgettable experience. The constant updates and exciting new developments in the Linux world make it an ever-evolving adventure.</description>
     </item>
     
     <item>
       <title>Midnight Tokyo: Awesome Window Manager</title>
-      <link>https://future-insight.blog/OS/linux/MidnightTokyoWM/</link>
+      <link>https://future-insight.netlify.app/OS/linux/MidnightTokyoWM/</link>
       <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/MidnightTokyoWM/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/MidnightTokyoWM/</guid>
       <description>Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.</description>
     </item>
     
     <item>
       <title>Pheonix AI: ChatBot</title>
-      <link>https://future-insight.blog/web-development/Pheonix-AI/</link>
+      <link>https://future-insight.netlify.app/web-development/Pheonix-AI/</link>
       <pubDate>Wed, 24 May 2023 14:05:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/Pheonix-AI/</guid>
+      <guid>https://future-insight.netlify.app/web-development/Pheonix-AI/</guid>
       <description>The world of Machine Learning and AI is rapidly evolving, with new tools and technologies being developed and released every day. However, there is one remarkable model that stands out among the rest: GPT-Model. This cutting-edge innovation has become the gold standard in the field.
 But what exactly is a GPT-Model and what makes it so exceptional? GPT, which stands for Generative Pre-trained Transformer, is a state-of-the-art language model built on the transformer architecture.</description>
     </item>
     
     <item>
       <title>Image Optimization</title>
-      <link>https://future-insight.blog/OS/linux/image-optimization/</link>
+      <link>https://future-insight.netlify.app/OS/linux/image-optimization/</link>
       <pubDate>Tue, 23 May 2023 00:26:19 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/image-optimization/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/image-optimization/</guid>
       <description>Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.
 When writing blog posts with multiple images, the size of the images becomes a crucial factor. Large image sizes can slow down website loading times, impacting user experience.</description>
     </item>
     
     <item>
       <title>Automating File Management with a Bash Script</title>
-      <link>https://future-insight.blog/OS/linux/automating-file-management-with-bash-script/</link>
+      <link>https://future-insight.netlify.app/OS/linux/automating-file-management-with-bash-script/</link>
       <pubDate>Mon, 22 May 2023 01:38:46 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/automating-file-management-with-bash-script/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/automating-file-management-with-bash-script/</guid>
       <description>In today&amp;rsquo;s fast-paced digital world, efficient file management is essential. Manually organizing files can be time-consuming and prone to errors. Fortunately, automation comes to the rescue. In this blog post, we&amp;rsquo;ll explore how to develop a Bash script that monitors Git repositories and images, automatically moving them to designated folders. We&amp;rsquo;ll cover the step-by-step process, from planning to implementation, and explain how to run the script as a system process.</description>
     </item>
     
     <item>
       <title>Fedora 38: Review</title>
-      <link>https://future-insight.blog/OS/linux/review/fedora-review/</link>
+      <link>https://future-insight.netlify.app/OS/linux/review/fedora-review/</link>
       <pubDate>Tue, 16 May 2023 00:07:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/review/fedora-review/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/review/fedora-review/</guid>
       <description>I have been using Linux for a long time, and I switch Linux distros time by time to see what is going on in the world of Linux. I used Debian for a while, then switched to Arch, and the cycle goes on and on with no stop. I have never used Fedora, so I thought, &amp;ldquo;Why not? Let&amp;rsquo;s try Fedora and see what&amp;rsquo;s the hype?&amp;rdquo; Why people love Fedora so much and what it is like to run Fedora for a while</description>
     </item>
     
     <item>
       <title>Basic of NodeJs</title>
-      <link>https://future-insight.blog/web-development/basic-nodejs/</link>
+      <link>https://future-insight.netlify.app/web-development/basic-nodejs/</link>
       <pubDate>Fri, 12 May 2023 13:35:51 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/basic-nodejs/</guid>
+      <guid>https://future-insight.netlify.app/web-development/basic-nodejs/</guid>
       <description>Introduction to NodeJs: Node.js is a powerful server-side JavaScript runtime environment that allows developers to build scalable and high-performance applications. With Node.js, developers can write server-side applications using the same language that they use for client-side development, making it a popular choice for web developers.
 In this blog post, we will cover the basics of Node.js, including what it is used for, how to install it on Debian, Arch Linux, and Windows, and how to write your first Node.</description>
     </item>
     
     <item>
       <title>Top 5 Commands Linux</title>
-      <link>https://future-insight.blog/OS/linux/Top-5-linux-command/</link>
+      <link>https://future-insight.netlify.app/OS/linux/Top-5-linux-command/</link>
       <pubDate>Thu, 13 Apr 2023 22:40:06 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/Top-5-linux-command/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/Top-5-linux-command/</guid>
       <description>For Today Linux commands, You will learn some cool commands and they can help your speed up your workflow and make you cool.
 Commands In this blog post you will learn how to use different commands in linux terminal, these commands will speed up your workflow by alot and I use them on daily basis as well.
 Command 1: tldr The tldr command is a utility for quickly understanding how to use a particular command by providing simplified and practical examples.</description>
@@ -349,214 +349,214 @@ Command 1: tldr The tldr command is a utility for quickly understanding how to u
     
     <item>
       <title>Linux App Installation: Simplified</title>
-      <link>https://future-insight.blog/OS/linux/linux-app-simplified/</link>
+      <link>https://future-insight.netlify.app/OS/linux/linux-app-simplified/</link>
       <pubDate>Tue, 28 Mar 2023 20:17:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/linux-app-simplified/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/linux-app-simplified/</guid>
       <description>Have you recently installed Linux on your system, but are now struggling to figure out how to install applications? Perhaps you&amp;rsquo;ve tried searching for installation files like you would on Windows, but to no avail. Don&amp;rsquo;t worry, because in this blog, I&amp;rsquo;ll show you how to install applications on Linux using various methods such as package managers, Flatpak, App Images, and Snap Packs.
 By the end of this article, you&amp;rsquo;ll have a better understanding of how to install applications on your Linux system and be able to easily access and use the software you need.</description>
     </item>
     
     <item>
       <title>Decision Tree Machine Learning Algorithm</title>
-      <link>https://future-insight.blog/machine-learning/decision-tree/</link>
+      <link>https://future-insight.netlify.app/machine-learning/decision-tree/</link>
       <pubDate>Fri, 17 Mar 2023 23:32:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/decision-tree/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/decision-tree/</guid>
       <description>I came across a project, and in that project, I have to different machine learning classifiers or machine learning algorithms. I know how to apply them, but it&amp;rsquo;s been a while, so today I did it., We will revisit all of the concepts of the decision tree, from major terms to code implementation.
 Decision Tree Decision Tree is a Supervised Learning technique that can be used for classification problems and regression problems, but mostly it is used for classification problems.</description>
     </item>
     
     <item>
       <title>Nivida Driver: Arch Linux</title>
-      <link>https://future-insight.blog/OS/linux/nvidia-driver-arch-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/nvidia-driver-arch-linux/</link>
       <pubDate>Sun, 12 Mar 2023 20:25:31 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/nvidia-driver-arch-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/nvidia-driver-arch-linux/</guid>
       <description>If you&amp;rsquo;re a Linux user who owns an Nvidia graphics card, you may have experienced some difficulties getting your graphics card to work properly. Arch Linux is a popular Linux distribution known for its minimalism and customizability, and installing Nvidia drivers on Arch Linux can be a bit more challenging than on other distributions. However, with the right steps and knowledge, you can successfully install Nvidia drivers on Arch Linux and enjoy a better graphics experience on your system.</description>
     </item>
     
     <item>
       <title>Install Linux</title>
-      <link>https://future-insight.blog/OS/linux/install-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/install-linux/</link>
       <pubDate>Wed, 08 Mar 2023 14:19:41 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/install-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/install-linux/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   You are already aware that I use Linux for everything, from development to my regular tasks.If you don&amp;rsquo;t have any idea what Linux is, check out my last blog.
 So today I will teach you how to install Linux and how to dual boot with another operating system.</description>
     </item>
     
     <item>
       <title>The World of Operating System</title>
-      <link>https://future-insight.blog/OS/windows/world-of-os/</link>
+      <link>https://future-insight.netlify.app/OS/windows/world-of-os/</link>
       <pubDate>Mon, 06 Mar 2023 00:29:28 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/world-of-os/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/world-of-os/</guid>
       <description>I was at work and I was doing my work, which was developing applications and making sure that the code that I was writing worked, and I was using Linux to do all my work. In Linux, I use a terminal to write my blogs and code my applications, and when my coworker saw me using a terminal and asked me what was on my screen, I told him it was my terminal that I was using to do my work.</description>
     </item>
     
     <item>
       <title>The World of Linux</title>
-      <link>https://future-insight.blog/OS/linux/world-of-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/world-of-linux/</link>
       <pubDate>Sun, 05 Mar 2023 22:42:58 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/world-of-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/world-of-linux/</guid>
       <description>I am a developer. I love what I do, which is write blogs and make awesome applications, and for my work flow, I use an operating system that is called Linux that I use every day. Like 90% of my day I am running Linux on my computer. So in my previous blog, I mentioned different operating systems. So if you want to know about operating systems, then read my previous blog by clicking here.</description>
     </item>
     
     <item>
       <title>The Benefits of Mindfulness Meditation</title>
-      <link>https://future-insight.blog/essential-skills/Benefits-of-Mindfulness-Meditation/</link>
+      <link>https://future-insight.netlify.app/essential-skills/Benefits-of-Mindfulness-Meditation/</link>
       <pubDate>Sun, 19 Feb 2023 01:29:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/essential-skills/Benefits-of-Mindfulness-Meditation/</guid>
+      <guid>https://future-insight.netlify.app/essential-skills/Benefits-of-Mindfulness-Meditation/</guid>
       <description>In today&amp;rsquo;s fast-paced world, it can be challenging to find a moment of peace and quiet. We&amp;rsquo;re constantly bombarded with notifications, emails, and messages, making it difficult to focus on the present moment. However, mindfulness meditation offers a way to cultivate inner peace and improve your overall well-being. In this article, we&amp;rsquo;ll explore the benefits of mindfulness meditation and why you should make it a daily practice.
 Body: Reduces Stress and Anxiety Mindfulness meditation has been shown to reduce stress and anxiety levels.</description>
     </item>
     
     <item>
       <title>Logistical Regression</title>
-      <link>https://future-insight.blog/machine-learning/logistic-regression/</link>
+      <link>https://future-insight.netlify.app/machine-learning/logistic-regression/</link>
       <pubDate>Sat, 18 Feb 2023 13:58:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/logistic-regression/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/logistic-regression/</guid>
       <description>Logistical regression is a type of algorithm that uses information from one set of data to predict another set. In this article, we&amp;rsquo;ll take a look at what logistical regression is and how it works as well as some popular examples where it&amp;rsquo;s been used successfully.
 What is Logistical Regression Logistic regression is a type of regression analysis that is used to predict the probability of an event occurring. It&amp;rsquo;s also known as multinomial logistic regression, and it&amp;rsquo;s used in marketing, fraud detection, and risk assessment.</description>
     </item>
     
     <item>
       <title>Linear Regression</title>
-      <link>https://future-insight.blog/machine-learning/linear-regression/</link>
+      <link>https://future-insight.netlify.app/machine-learning/linear-regression/</link>
       <pubDate>Thu, 16 Feb 2023 01:07:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/linear-regression/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/linear-regression/</guid>
       <description>---- Linear regression is a powerful and widely-used statistical technique that can be used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in various fields, including economics, social sciences, engineering, and machine learning. Linear regression aims to find the best-fit line that describes the linear relationship between the independent and dependent variables, allowing for the prediction of the dependent variable for a given value of the independent variable.</description>
     </item>
     
     <item>
       <title>False Data Injection Attack</title>
-      <link>https://future-insight.blog/machine-learning/machine-learning/FDIA/</link>
+      <link>https://future-insight.netlify.app/machine-learning/machine-learning/FDIA/</link>
       <pubDate>Mon, 13 Feb 2023 20:00:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/machine-learning/FDIA/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/machine-learning/FDIA/</guid>
       <description>----- False data injection is a type of cyber attack that occurs when an attacker alters or introduces incorrect data into a control system or its communication network. This type of attack can have serious consequences for the operation of the control system, such as loss of control, equipment damage, and even safety incidents.
 False data injection attacks can take many forms, including modifying sensor readings, injecting false control commands, or altering historical data records.</description>
     </item>
     
     <item>
       <title>Support Vector Machine</title>
-      <link>https://future-insight.blog/machine-learning/Support-Vector-Machine/</link>
+      <link>https://future-insight.netlify.app/machine-learning/Support-Vector-Machine/</link>
       <pubDate>Tue, 07 Feb 2023 20:13:50 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/Support-Vector-Machine/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/Support-Vector-Machine/</guid>
       <description>So you are working on text identification or face detection, and the question that arises is which algorithm to use and what will be the performance.
 I am doing a project where I need to use SVM for detecting cyber attacks, but in order to identify them, I need to learn what makes this algorithm so good. For this project, I will be learning the basics of SVM with real-world examples, and once we are done with the examples, we will try the real project.</description>
     </item>
     
     <item>
       <title>Design your own Machine Learning Model: Beginner Guide</title>
-      <link>https://future-insight.blog/machine-learning/create-your-own-ml-model/</link>
+      <link>https://future-insight.netlify.app/machine-learning/create-your-own-ml-model/</link>
       <pubDate>Thu, 02 Feb 2023 11:36:38 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/create-your-own-ml-model/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/create-your-own-ml-model/</guid>
       <description>Machine learning is an exciting field that has revolutionized the way we approach problem-solving. By using algorithms that can learn from data and make predictions, machine learning models have become essential tools for solving complex problems across a variety of industries. In this blog, we&amp;rsquo;ll walk through the basics of designing a machine learning model from scratch.
 Steps: Follow these steps to get a better understanding of how machine learning models are created.</description>
     </item>
     
     <item>
       <title>Web Scrapper</title>
-      <link>https://future-insight.blog/web-development/web-scrapper/</link>
+      <link>https://future-insight.netlify.app/web-development/web-scrapper/</link>
       <pubDate>Sat, 28 Jan 2023 16:09:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/web-scrapper/</guid>
+      <guid>https://future-insight.netlify.app/web-development/web-scrapper/</guid>
       <description>Web scraping is the process of extracting data from websites. With the rise of big data, web scraping has become an essential tool for many businesses and individuals. The data that can be collected through web scraping can be used for a variety of purposes, such as market research, competitor analysis, and lead generation.
 Solution: What the heck am I thinking? I am a developer, so I can build what I want and make tasks easy.</description>
     </item>
     
     <item>
       <title>Best Resources to Learn ML</title>
-      <link>https://future-insight.blog/machine-learning/best-resources-for-ML/</link>
+      <link>https://future-insight.netlify.app/machine-learning/best-resources-for-ML/</link>
       <pubDate>Fri, 27 Jan 2023 01:07:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/best-resources-for-ML/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/best-resources-for-ML/</guid>
       <description>Machine Learning and Deep Learning are rapidly growing fields that are changing the way we interact with technology. These fields have the power to create intelligent systems that can learn from data and make predictions, decisions, and even create new knowledge. If you&amp;rsquo;re interested in learning about Machine Learning and Deep Learning, there are many resources available to help you get started.
 Best Resources As I was learning Machine Learning and Deep Learning, I got to the point where I did not understand the basic knowledge of Machine Learning Models and Deep Learning Models.</description>
     </item>
     
     <item>
       <title>Tools for ML</title>
-      <link>https://future-insight.blog/machine-learning/tools-for-ml/</link>
+      <link>https://future-insight.netlify.app/machine-learning/tools-for-ml/</link>
       <pubDate>Fri, 27 Jan 2023 00:50:32 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/tools-for-ml/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/tools-for-ml/</guid>
       <description>Hi! My name is Abdul Rafay, and I work as a Web Development and Machine Learning Engineer. I recently finished my studies, and I’ve been working in the web development industry for a while, but machine learning is a new field for me. I’m learning, and my passion grows as my experience in this field grows. So as a developer, I’ll show you some of the tools that are awesome to work with when you are in the field of machine learning and web development.</description>
     </item>
     
     <item>
       <title>IS Maths Needed for ML</title>
-      <link>https://future-insight.blog/machine-learning/Is-Maths-required-for-ML/</link>
+      <link>https://future-insight.netlify.app/machine-learning/Is-Maths-required-for-ML/</link>
       <pubDate>Thu, 26 Jan 2023 03:34:34 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/Is-Maths-required-for-ML/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/Is-Maths-required-for-ML/</guid>
       <description>Hi! My name is Abdul Rafay, and I work on training different models from provided data, as well as deploying the model on any of the cloud services.
 When I started this journey, my teacher and mentor told me to learn math and probability in order to understand the major concepts needed to become an expert in machine learning. But most students hate math and probability because some of the concepts can be tricky to learn and might not be interesting to them.</description>
     </item>
     
     <item>
       <title>Time Management</title>
-      <link>https://future-insight.blog/essential-skills/time-management/</link>
+      <link>https://future-insight.netlify.app/essential-skills/time-management/</link>
       <pubDate>Thu, 26 Jan 2023 02:56:44 +0500</pubDate>
       
-      <guid>https://future-insight.blog/essential-skills/time-management/</guid>
+      <guid>https://future-insight.netlify.app/essential-skills/time-management/</guid>
       <description>Time management is a crucial skill that can help us achieve our goals, be more productive, and live a balanced life. It can be challenging to manage our time effectively, especially in a world that is constantly bombarding us with distractions and demands on our attention. However, with a few simple strategies, we can take control of our time and use it more effectively.
 Strategies:  One strategy that can be effective is to create a daily schedule.</description>
     </item>
     
     <item>
       <title>Learn Git</title>
-      <link>https://future-insight.blog/essential-skills/learn-git-&amp;-github/</link>
+      <link>https://future-insight.netlify.app/essential-skills/learn-git-&amp;-github/</link>
       <pubDate>Tue, 24 Jan 2023 17:13:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/essential-skills/learn-git-&amp;-github/</guid>
+      <guid>https://future-insight.netlify.app/essential-skills/learn-git-&amp;-github/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   As a developer, managing your code can be difficult, and you&amp;rsquo;re always changing it, adding new features, and removing bugs from your application, so you need a way to track your code and make sure you don&amp;rsquo;t miss any of the changes.</description>
     </item>
     
     <item>
       <title>Build My Blog Website</title>
-      <link>https://future-insight.blog/web-development/build-hugo-website/</link>
+      <link>https://future-insight.netlify.app/web-development/build-hugo-website/</link>
       <pubDate>Sun, 22 Jan 2023 00:35:16 +0500</pubDate>
       
-      <guid>https://future-insight.blog/web-development/build-hugo-website/</guid>
+      <guid>https://future-insight.netlify.app/web-development/build-hugo-website/</guid>
       <description>I&amp;rsquo;m a developer, and I have been developing applications for a while, but with time, I have seen that my skills are increasing, but every time I learn something new, I forget the old thing.
 I do make notes, but writing with my hands is not a great solution, so I decided to blog, but the question is, where? So I decided to try a different blogging website and a couple of note-taking applications.</description>
     </item>
     
     <item>
       <title>Road Map for ML</title>
-      <link>https://future-insight.blog/machine-learning/machine-learning/road-map-for-ml/</link>
+      <link>https://future-insight.netlify.app/machine-learning/machine-learning/road-map-for-ml/</link>
       <pubDate>Thu, 19 Jan 2023 14:11:15 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/machine-learning/road-map-for-ml/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/machine-learning/road-map-for-ml/</guid>
       <description>Learning is something that we have to do every day. As a developer, you need to learn the latest and hottest technologies because if you don&amp;rsquo;t, you might not be able to succeed in this field.
 I am a web developer and machine learning engineer. I am working on both and trying to improve my skills with time, but sometimes you need guidance to see where you are right now and where you see yourself in the future.</description>
     </item>
     
     <item>
       <title>Machine learning Requires Amazing Skills</title>
-      <link>https://future-insight.blog/machine-learning/skills-for-ml/</link>
+      <link>https://future-insight.netlify.app/machine-learning/skills-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/skills-for-ml/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/skills-for-ml/</guid>
       <description>So, I am currently working on a machine learning and deep learning project. I am new to this field and am still learning, but I will get better with time. However, as I am coding and trying to solve problems, I have realised that there are a few important things that must be understood before beginning development.
 Understanding: Those things are: 1. understanding the type of data; and 2. once you know what kind of data this is, you need to check what kind of model you are going to use.</description>
     </item>
     
     <item>
       <title>Programming Language for Machine Learning: Python vs JavaScript</title>
-      <link>https://future-insight.blog/machine-learning/JavaScript-vs-Python-for-ml/</link>
+      <link>https://future-insight.netlify.app/machine-learning/JavaScript-vs-Python-for-ml/</link>
       <pubDate>Wed, 18 Jan 2023 00:34:56 +0500</pubDate>
       
-      <guid>https://future-insight.blog/machine-learning/JavaScript-vs-Python-for-ml/</guid>
+      <guid>https://future-insight.netlify.app/machine-learning/JavaScript-vs-Python-for-ml/</guid>
       <description>Hi!, Over the years I have developed multiple websites using multiple technologies such as HTML, CSS, JavaScript, and a couple of frameworks, but now I am expanding my skill set in the world of machine learning. I used JavaScript for everything and loved it; things were very easy and simple for me. I needed to create a static website, so I just used NodeJS with an EJS template to create a simple website.</description>
     </item>
     

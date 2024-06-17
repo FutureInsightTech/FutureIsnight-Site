@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Future Insight</title>
-    <link>https://future-insight.blog/pages/</link>
+    <link>https://future-insight.netlify.app/pages/</link>
     <description>Recent content in Pages on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jun 2023 16:22:37 +0500</lastBuildDate><atom:link href="https://future-insight.blog/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jun 2023 16:22:37 +0500</lastBuildDate><atom:link href="https://future-insight.netlify.app/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vision &amp; Mission</title>
-      <link>https://future-insight.blog/future-insight-wiki/vision-mission/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/vision-mission/</link>
       <pubDate>Fri, 23 Jun 2023 16:22:37 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/vision-mission/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/vision-mission/</guid>
       <description>Vision: The vision of Future Insight is to provide users with a stable and exceptional experience while utilizing the software developed by our organization. We strive to create a seamless and reliable environment where users can fully leverage the capabilities of our software solutions.
 Mission: The mission of Future Insight is to consistently innovate and create remarkable software products that meet the diverse needs and requirements of our users. We are dedicated to developing cutting-edge solutions that are not only technologically advanced but also user-friendly and intuitive.</description>
     </item>
     
     <item>
       <title>Code Contribution</title>
-      <link>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</link>
+      <link>https://future-insight.netlify.app/Future-Insight-Wiki/Code-Contribution/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Future-Insight-Wiki/Code-Contribution/</guid>
+      <guid>https://future-insight.netlify.app/Future-Insight-Wiki/Code-Contribution/</guid>
       <description>If you want to help develop this website or contribute with me, please follow the instructions below:
 Process  No code will be committed to the main branch without the project administrator&amp;rsquo;s testing and approval. To contribute, switch to the Development-Branch and make all changes in that branch. Once you are sure the code is tested and working fine, you can create a pull request to the main branch. Switch to the Development Branch using the following command: git checkout Development-Branch  When a feature is finalized, create a new branch from the development branch.</description>
     </item>
     
     <item>
       <title>Future Insight Github Branches</title>
-      <link>https://future-insight.blog/future-insight-wiki/bracnhes/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/bracnhes/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/bracnhes/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/bracnhes/</guid>
       <description>Branches This project consists of three main branches:
  Main Branch (Production) Blog Branch Development Branch  Main Branch The main branch, also known as the production branch, represents the live version of the project. Finalized blogs or tested features are merged into this branch. It is continuously hosted on the server.
 Blog Branch The blog branch is dedicated to writing and finalizing blogs. Once a blog is completed, it is merged into the main branch.</description>
@@ -40,30 +40,30 @@ Blog Branch The blog branch is dedicated to writing and finalizing blogs. Once a
     
     <item>
       <title>Future Insight Wiki</title>
-      <link>https://future-insight.blog/future-insight-wiki/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/</guid>
       <description>Welcome to the Future Insight Wiki! This wiki serves as a gateway to explore the multifaceted world of Future Insight and delve into the mind behind it all. Here, you will find a treasure trove of knowledge, creativity, and inspiration. Join us on a journey through our work, passion, and ideas that shape our vision of the future.
 Table of Contents  Introduction Versions  Version 01 Version 02 Version 03 Version 04 Version 05 Version 06   Contribution  Writing Blog Code Contribution   Branch Explain Running Locally Script Documentation Vision &amp;amp; Mission  </description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://future-insight.blog/future-insight-wiki/Introduction/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Introduction/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Introduction/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Introduction/</guid>
       <description>Here, you will find a treasure trove of knowledge, creativity, and inspiration. This wiki serves as a gateway to explore the multifaceted world of Future Insight and delve into the mind behind it all.
 My name is Abdul Rafay, and I am thrilled to invite you on a journey through my work, my passion, and the ideas that shape my vision of the future. This wiki is a curated collection of articles, projects, and insights that reflect my dedication to pushing boundaries, fostering innovation, and making a positive impact on the world.</description>
     </item>
     
     <item>
       <title>Running Locally</title>
-      <link>https://future-insight.blog/Future-Insight-Wiki/Running-Locally/</link>
+      <link>https://future-insight.netlify.app/Future-Insight-Wiki/Running-Locally/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Future-Insight-Wiki/Running-Locally/</guid>
+      <guid>https://future-insight.netlify.app/Future-Insight-Wiki/Running-Locally/</guid>
       <description>To run the Future Insight website locally on your system, please follow the instructions below.
 Required Applications: Before you can run the application, make sure you have the following programs installed on your system:
  Git: You need Git installed to clone the project repository. Hugo: Hugo is the static site generator used for this project.  Installing Git: To install Git, follow the instructions based on your operating system:</description>
@@ -71,10 +71,10 @@ Required Applications: Before you can run the application, make sure you have th
     
     <item>
       <title>Start Blog Script: Documentation</title>
-      <link>https://future-insight.blog/future-insight-wiki/StartBlogScript/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/StartBlogScript/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/StartBlogScript/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/StartBlogScript/</guid>
       <description>This Bash script, called &amp;ldquo;Blog Post Generator,&amp;rdquo; is designed to assist you in creating a new blog post quickly and easily. The script is available on GitHub at https://github.com/rafay99-epic/Future-Insight, and it is authored by Abdul Rafay.
 To use the script, you will be prompted to answer a few important questions to generate your blog post. These questions include:
  Selecting the category Entering the Blog Post Name  Please note that both of these fields are mandatory, and without providing valid inputs, the script will not proceed with creating the blog post.</description>
@@ -82,20 +82,20 @@ To use the script, you will be prompted to answer a few important questions to g
     
     <item>
       <title>Version 01</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version01/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version01/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version01/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version01/</guid>
       <description>This is the very first commit and initial version of the website. I originally created this website under a different name and with a different purpose. However, over time, I have realized that this website has the potential to be something new and cool, so I decided to rebrand it for Version 2 of the application.
 Version 01 Look The image below represents Version 01 of the application: Initially, I wrote a couple of blog posts for Version 01, but since then, I have made numerous updates and improvements.</description>
     </item>
     
     <item>
       <title>Version 02</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version02/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version02/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version02/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version02/</guid>
       <description>Introduction: in this new version of the website. We are changing a lot of things, and all of the changes are stated below.
 📔 Changes: In this massive update, we are changing a lot of things, and all of the key points are stated below👇:
  Rebranding our website name Adding colour support to markdown New domain for this blog Adding author support. Improving Speed and Optimizing Images Enable umami analytics.</description>
@@ -103,29 +103,29 @@ Version 01 Look The image below represents Version 01 of the application: Initia
     
     <item>
       <title>Version 03</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version03/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version03/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version03/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version03/</guid>
       <description>Enhanced Collaboration, Deployment, and User Interaction Changes:  Several configuration files for various deployment branches Introduction to multiple branches Blog: Deployment Testing Branch Production Build Branch Development and New Feature Testing Branch Comment Section for every Blog Post  Work Flow:  The main branch is the production branch, and no code or blog will be added without creating a branch and going through multiple GitHub actions. All of the blogs and images for the blogs will be added to the blog branch.</description>
     </item>
     
     <item>
       <title>Version 04</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version04/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version04/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version04/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version04/</guid>
       <description>Interactive Comments, Enriched Content, and Project Showcase Changes: So in this patch I have added just one main feature and I have cleaned the code of this Project along qith some Projection section change and added some new Blog and Updating old blogs as well.
 Comment Section: The comment section on our blog website provides an interactive platform for our readers to engage with the content and with each other. With our easy-to-use comment system, readers can share their thoughts, opinions, and feedback on our articles, ask questions, and participate in discussions with other like-minded individuals.</description>
     </item>
     
     <item>
       <title>Version 05</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version05/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version05/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version05/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version05/</guid>
       <description>Visual Effects &amp;amp; Website Page Redesign Changes Here is an enhanced version of the requested changes:
 1. Adding new Pages called &amp;ldquo;About Us&amp;rdquo; Introduce a dedicated &amp;ldquo;About Us&amp;rdquo; page that showcases the organization&amp;rsquo;s background, values, mission, and team members. Use engaging visuals, concise and impactful copy, and possibly include testimonials or success stories to create a connection with visitors and build trust.
 Preview 2. Redesigning the &amp;ldquo;Contact Us&amp;rdquo; page: Enhance the user experience of the &amp;ldquo;Contact Us&amp;rdquo; page by creating an intuitive and visually appealing layout.</description>
@@ -133,10 +133,10 @@ Preview 2. Redesigning the &amp;ldquo;Contact Us&amp;rdquo; page: Enhance the us
     
     <item>
       <title>Version 06</title>
-      <link>https://future-insight.blog/future-insight-wiki/Version06/</link>
+      <link>https://future-insight.netlify.app/future-insight-wiki/Version06/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/future-insight-wiki/Version06/</guid>
+      <guid>https://future-insight.netlify.app/future-insight-wiki/Version06/</guid>
       <description>Next-level Development Solutions: Unveiling Our Latest Services Welcome to Future Insight Version 06! Discover a new level of educational support with Future Insight. We are excited to present our latest website version, packed with advanced features and enhancements to provide you with an exceptional learning experience.
 Features Here are all of the Features for this update
  Navbar Redesign Updated Author Page Services Page with Different Packages  3.1: Available Services: - Web Development - Machine Learning Development - Android Application Development - Student Assignment 3.</description>
@@ -144,10 +144,10 @@ Features Here are all of the Features for this update
     
     <item>
       <title>Writing Blogs: Join Us!</title>
-      <link>https://future-insight.blog/Future-Insight-Wiki/StartBlogging/</link>
+      <link>https://future-insight.netlify.app/Future-Insight-Wiki/StartBlogging/</link>
       <pubDate>Wed, 21 Jun 2023 17:11:24 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Future-Insight-Wiki/StartBlogging/</guid>
+      <guid>https://future-insight.netlify.app/Future-Insight-Wiki/StartBlogging/</guid>
       <description>If you love writing blogs, we invite you to join us and contribute your valuable insights. Here&amp;rsquo;s a guide on how to get started:
 Getting the File: To access the file, follow these steps:
  Clone or fork the repository. Switch to the &amp;ldquo;Blog&amp;rdquo; branch using the command: git checkout Blog. Now, you can create a new blog post by following this guide.  Creating a New Blog Post:  Open your terminal.</description>
@@ -155,125 +155,125 @@ Getting the File: To access the file, follow these steps:
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/select-package/</link>
+      <link>https://future-insight.netlify.app/select-package/</link>
       <pubDate>Thu, 08 Jun 2023 23:49:59 +0500</pubDate>
       
-      <guid>https://future-insight.blog/select-package/</guid>
+      <guid>https://future-insight.netlify.app/select-package/</guid>
       <description>Assignment/Project Details Form Enter your full name:  Enter your email:  Enter your phone number:  Select your Domain: -- Select Domain -- Web Development Mobile App Development Machine Learning Student Assignment   Select your package: -- Select Package -- Basic Advance Premium   Upload your Assignment question or requirements:  Current Date:  Deadline of the Project/Assignment:  Special Instructions:   Submit  Your project is assigned!</description>
     </item>
     
     <item>
       <title>Terms &amp; Conditions</title>
-      <link>https://future-insight.blog/terms-conditions/</link>
+      <link>https://future-insight.netlify.app/terms-conditions/</link>
       <pubDate>Wed, 07 Jun 2023 20:43:32 +0500</pubDate>
       
-      <guid>https://future-insight.blog/terms-conditions/</guid>
+      <guid>https://future-insight.netlify.app/terms-conditions/</guid>
       <description>Terms of Use- Assignment Help Services   The Terms of Use, as modified from time to time, are a kind of binding contract/agreement between Assignment Help Services (We) and the User (you), who can be anyone among the parents, guardians or students and any other individual who are willing to use the services of our website.
   It is the sole responsibility of our user (you) to check out and agree to our Terms and Conditions, including Privacy Policy, before getting involved in the utilization of our services through our website or getting engaged in any features, software, applications, software of our website.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/Web-Development/Package01/</link>
+      <link>https://future-insight.netlify.app/services/Web-Development/Package01/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Web-Development/Package01/</guid>
+      <guid>https://future-insight.netlify.app/services/Web-Development/Package01/</guid>
       <description>Future Insight: Your Web Development Partner Welcome to Future Insight, your go-to destination for top-quality web development services. With our team of skilled developers and innovative approach, we bring your web projects to life. We understand the importance of a strong online presence, and we&amp;rsquo;re here to help you establish and enhance yours.
 Normal Package: Tailored Web Development Solutions In our Normal Package, we offer comprehensive web development solutions tailored to your specific needs.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/Web-Development/Package02/</link>
+      <link>https://future-insight.netlify.app/services/Web-Development/Package02/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Web-Development/Package02/</guid>
+      <guid>https://future-insight.netlify.app/services/Web-Development/Package02/</guid>
       <description>Future Insight: Your Advanced Web Development Partner Welcome to Future Insight, your trusted partner for advanced web development services. With our expertise in both front-end and back-end development, we are well-equipped to handle your most complex web projects. Let us guide you through our comprehensive Advanced Package, designed to meet your specific requirements and take your online presence to the next level.
 Advanced Package: Customized Web Solutions In our Advanced Package, we offer a wide range of services to ensure your web development project is a success.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/Web-Development/Package03/</link>
+      <link>https://future-insight.netlify.app/services/Web-Development/Package03/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Web-Development/Package03/</guid>
+      <guid>https://future-insight.netlify.app/services/Web-Development/Package03/</guid>
       <description>Future Insight: Your Premium Full-Stack App Development Partner Welcome to Future Insight, your trusted partner for premium full-stack app development services. Our Premium Package is designed to cater to your comprehensive app development needs, providing you with a seamless end-to-end solution. Let&amp;rsquo;s explore the key components of our Premium Package:
 Full Stack App Development Our team of expert developers is skilled in both front-end and back-end development, enabling us to create exceptional and fully functional applications.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/web-development/</link>
+      <link>https://future-insight.netlify.app/services/web-development/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:49 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/web-development/</guid>
+      <guid>https://future-insight.netlify.app/services/web-development/</guid>
       <description>Welcome to Future Insight: Your Web Development Partner  Future Insight is your go-to destination for top-quality web development services. We bring your web projects to life with our skilled developers and innovative approach. From responsive design to advanced e-commerce capabilities, we create visually stunning websites that engage your audience and drive results. With a focus on exceptional customer service, we strive to build long-term partnerships. Collaborating closely with you, we deliver projects on time and within budget.</description>
     </item>
     
     <item>
       <title>Application Development: Package 03</title>
-      <link>https://future-insight.blog/services/Application-Development/Package03/</link>
+      <link>https://future-insight.netlify.app/services/Application-Development/Package03/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:26 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Application-Development/Package03/</guid>
+      <guid>https://future-insight.netlify.app/services/Application-Development/Package03/</guid>
       <description>Premium Tier: Unleashing the Full Potential Unleash the full potential of your Android app with Future Insight&amp;rsquo;s Premium Tier. Our comprehensive package offers a range of cutting-edge services to elevate your app to new heights of success.
 Full-Stack App Development with API Integration Our team of expert developers will craft a full-stack app that seamlessly integrates with powerful APIs. From front-end interfaces to back-end functionalities, we ensure a cohesive and dynamic user experience that sets your app apart.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/Application-Development/Package02/</link>
+      <link>https://future-insight.netlify.app/services/Application-Development/Package02/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:23 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Application-Development/Package02/</guid>
+      <guid>https://future-insight.netlify.app/services/Application-Development/Package02/</guid>
       <description>Welcome to Future Insight&amp;rsquo;s Advanced Tier: Comprehensive and Dynamic Android App Development. Our Advanced Tier package offers a comprehensive range of services designed to elevate your Android app development. With full-stack development expertise, we create seamless user experiences by combining intuitive front-end interfaces with efficient back-end functionalities. Choose from multiple database design options, including SQL and Firebase, to ensure robust data management. We provide two alterations to accommodate changes and refine your app&amp;rsquo;s functionalities as your project evolves.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/Application-Development/Package01/</link>
+      <link>https://future-insight.netlify.app/services/Application-Development/Package01/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:19 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/Application-Development/Package01/</guid>
+      <guid>https://future-insight.netlify.app/services/Application-Development/Package01/</guid>
       <description>Normal Tier: Simplified yet Stunning Android App Development Welcome to Future Insight&amp;rsquo;s Normal Tier for Android application development. Our goal is to provide you with a simplified yet stunning solution that brings your mobile vision to life. With our expertise and commitment to excellence, we ensure that your Android app stands out and captivates your audience. Let&amp;rsquo;s explore the key features of our Normal Tier package:
 Professional Front-End Development Our team of skilled developers focuses on creating a visually appealing and user-friendly front-end for your Android application.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/application-development/</link>
+      <link>https://future-insight.netlify.app/services/application-development/</link>
       <pubDate>Fri, 02 Jun 2023 23:41:07 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/application-development/</guid>
+      <guid>https://future-insight.netlify.app/services/application-development/</guid>
       <description>Android Application Development Tiers: Unlocking the Potential of Your Mobile Experience  At Future Insight, we offer three comprehensive tiers for Android application development, each tailored to meet your specific needs and requirements. Our aim is to deliver exceptional mobile experiences that captivate your audience and drive your business forward. Whether you&#39;re looking for a streamlined and cost-effective solution or a feature-rich and robust application, we have the right tier for you.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/MachineLearning/Package02/</link>
+      <link>https://future-insight.netlify.app/services/MachineLearning/Package02/</link>
       <pubDate>Fri, 02 Jun 2023 23:40:35 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/MachineLearning/Package02/</guid>
+      <guid>https://future-insight.netlify.app/services/MachineLearning/Package02/</guid>
       <description>Introducing the Train &amp;amp; Test Model Package: Empowering Your Machine Learning Journey The Train &amp;amp; Test Model Package is a comprehensive solution designed to revolutionize the process of training and testing machine learning models. With its cutting-edge tools and resources, it empowers users to unlock the true potential of their data and harness the power of artificial intelligence. From seamless data integration to extensive documentation and innovative features, this package offers an exceptional experience for model development.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/MachineLearning/Package03/</link>
+      <link>https://future-insight.netlify.app/services/MachineLearning/Package03/</link>
       <pubDate>Fri, 02 Jun 2023 23:40:35 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/MachineLearning/Package03/</guid>
+      <guid>https://future-insight.netlify.app/services/MachineLearning/Package03/</guid>
       <description>Train &amp;amp; Test Model with GUI &amp;amp; API Package: Empower Your Machine Learning Projects Harness the true potential of your machine learning projects with our Train &amp;amp; Test Model with GUI &amp;amp; API Package. This comprehensive solution is designed to elevate your capabilities and provide you with an unparalleled experience.
 Comprehensive Functionality with Added User Convenience Experience the best of our previous packages with additional features that enhance user convenience.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/MachineLearning/Package01/</link>
+      <link>https://future-insight.netlify.app/services/MachineLearning/Package01/</link>
       <pubDate>Fri, 02 Jun 2023 23:40:29 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/MachineLearning/Package01/</guid>
+      <guid>https://future-insight.netlify.app/services/MachineLearning/Package01/</guid>
       <description>Data Creation Package - Empowering Your Machine Learning Journey Introduction: Creating Diverse and Realistic Datasets for Effective Model Training
 The Data Creation package offers a comprehensive set of tools and utilities to support the creation of high-quality datasets for machine learning applications. It empowers users to generate diverse and representative data that closely resembles real-world scenarios, enabling them to train machine learning models effectively.
 Overview: Unlocking the Potential of Data Generation</description>
@@ -281,28 +281,28 @@ Overview: Unlocking the Potential of Data Generation</description>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/MachineLearning/</link>
+      <link>https://future-insight.netlify.app/services/MachineLearning/</link>
       <pubDate>Fri, 02 Jun 2023 23:40:17 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/MachineLearning/</guid>
+      <guid>https://future-insight.netlify.app/services/MachineLearning/</guid>
       <description>Empowering Success with Revolutionary Machine Learning Solutions  Welcome to Future Insight, your premier destination for cutting-edge machine learning solutions. Our expert team of data scientists, engineers, and designers is dedicated to delivering tailored services that harness the power of artificial intelligence. From advanced model development to algorithm optimization, we provide innovative solutions to drive your business forward. Partner with us to unlock the transformative potential of machine learning and stay ahead of the competition.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/assignment/</link>
+      <link>https://future-insight.netlify.app/services/assignment/</link>
       <pubDate>Fri, 02 Jun 2023 23:39:45 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/assignment/</guid>
+      <guid>https://future-insight.netlify.app/services/assignment/</guid>
       <description>Our Assignment Solutions: Unlocking Your Academic Success  Welcome to Future Insight, your solution for expert assignment assistance. Our experienced team provides customized and high-quality assignment solutions for all subjects and academic levels. With our commitment to originality and confidentiality, you can trust us to help you excel in your academics. Join Future Insight today and unlock your full potential! Flexible Pricing: Choose the Plan That Fits Your Budget Normal 1500 Rs/Assignment</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/services/</link>
+      <link>https://future-insight.netlify.app/services/</link>
       <pubDate>Fri, 02 Jun 2023 23:35:11 +0500</pubDate>
       
-      <guid>https://future-insight.blog/services/</guid>
+      <guid>https://future-insight.netlify.app/services/</guid>
       <description> Explore Our Expertise Welcome to Future Insight&#39;s Services!
  At Future Insight, we specialize in a diverse range of innovative services designed to propel your business forward. From web development and Android app development to machine learning development and assistance with student assignments, we have the expertise to deliver exceptional solutions that enhance your online presence and drive success.
 Choose from Our Exceptional Range of Services Student Assignments    Machine Learning Development    Web Development    Android Application Development     </description>
@@ -310,84 +310,84 @@ Choose from Our Exceptional Range of Services Student Assignments    Machine Lea
     
     <item>
       <title>Shafiq Law Chamber</title>
-      <link>https://future-insight.blog/shafiqlawchamber/</link>
+      <link>https://future-insight.netlify.app/shafiqlawchamber/</link>
       <pubDate>Tue, 02 May 2023 12:28:48 +0500</pubDate>
       
-      <guid>https://future-insight.blog/shafiqlawchamber/</guid>
+      <guid>https://future-insight.netlify.app/shafiqlawchamber/</guid>
       <description>Shafiq Law Chamber is a professional law firm that provides a wide range of legal services to clients in Pakistan and around the world. Their website features a clean, modern design and easy navigation, making it simple for users to find the information they need about the firm&amp;rsquo;s practice areas, attorneys, and contact information. Whether you need assistance with civil or criminal litigation, corporate and commercial law, or intellectual property law, the experienced attorneys at Shafiq Law Chamber are ready to help.</description>
     </item>
     
     <item>
       <title>1 Power</title>
-      <link>https://future-insight.blog/1-Power/</link>
+      <link>https://future-insight.netlify.app/1-Power/</link>
       <pubDate>Mon, 01 May 2023 16:40:03 +0500</pubDate>
       
-      <guid>https://future-insight.blog/1-Power/</guid>
+      <guid>https://future-insight.netlify.app/1-Power/</guid>
       <description>Welcome to One Power, your premier destination for cutting-edge technology solutions. Our website is designed to showcase our expertise in delivering innovative software and hardware solutions that help businesses and individuals achieve their goals. With a clean and modern design, user-friendly navigation, and a host of powerful features, our website is the perfect place to explore our services and get to know our team. Whether you&amp;rsquo;re looking to boost productivity, streamline operations, or enhance your online presence, One Power has the solutions you need to succeed in today&amp;rsquo;s fast-paced digital landscape.</description>
     </item>
     
     <item>
       <title>Future Insight Policy</title>
-      <link>https://future-insight.blog/policy/</link>
+      <link>https://future-insight.netlify.app/policy/</link>
       <pubDate>Wed, 22 Feb 2023 13:00:26 +0500</pubDate>
       
-      <guid>https://future-insight.blog/policy/</guid>
+      <guid>https://future-insight.netlify.app/policy/</guid>
       <description>Preview your GDPR Privacy Policy Privacy Policy for Future Insight At Future Insight, accessible from future-insight.blog, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Future Insight and how we use it.
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. Our Privacy Policy was generated with the help of GDPR Privacy Policy Generator</description>
     </item>
     
     <item>
       <title>DevBox</title>
-      <link>https://future-insight.blog/Project/DevBox/</link>
+      <link>https://future-insight.netlify.app/Project/DevBox/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/DevBox/</guid>
+      <guid>https://future-insight.netlify.app/Project/DevBox/</guid>
       <description>DevBox is a script that simplifies the process of setting up a Linux system for development purposes. As a developer, you may find it tedious and time-consuming to configure a new Linux system for development, but with DevBox, you can automate this process. The script is designed to install and configure all the necessary applications and tools that a developer would need to get started quickly. With support for Debian and Arch Linux, DevBox is versatile and can be used on multiple systems.</description>
     </item>
     
     <item>
       <title>Introducing URL Hunter: The Web Scraper for Your Data Need</title>
-      <link>https://future-insight.blog/Project/url-hunter/</link>
+      <link>https://future-insight.netlify.app/Project/url-hunter/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/url-hunter/</guid>
+      <guid>https://future-insight.netlify.app/Project/url-hunter/</guid>
       <description>URL Hunter is a powerful web scraping tool designed for developers and data analysts. With URL Hunter, you can easily extract data from websites and APIs by providing a URL and selecting the relevant data to scrape. This tool allows you to scrape data from any website, regardless of its structure or complexity, and supports various data formats, including JSON, XML, and CSV. Whether you need to collect data for market research, lead generation, or any other purpose, URL Hunter is the ideal tool for the job.</description>
     </item>
     
     <item>
       <title>Portifilo Website</title>
-      <link>https://future-insight.blog/Project/portifilo/</link>
+      <link>https://future-insight.netlify.app/Project/portifilo/</link>
       <pubDate>Tue, 21 Feb 2023 15:21:08 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/portifilo/</guid>
+      <guid>https://future-insight.netlify.app/Project/portifilo/</guid>
       <description>Welcome to my website! This is a personal portfolio website created using React, a popular front-end JavaScript library for building user interfaces. The website is designed to showcase my skills, experience, and projects in the field of web development.
 Feature: I have created a personal portfolio website using React, a popular front-end JavaScript library, to showcase his skills and experience to potential clients and employers. This modern and stylish website boasts a clean, dark-themed design with a user-friendly interface that is easy to navigate.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/Project/ev-cyber-detection/</link>
+      <link>https://future-insight.netlify.app/Project/ev-cyber-detection/</link>
       <pubDate>Tue, 21 Feb 2023 15:18:57 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/ev-cyber-detection/</guid>
+      <guid>https://future-insight.netlify.app/Project/ev-cyber-detection/</guid>
       <description>EV Cyber Attact Dection Using ML  Cyber attacks have become an increasingly serious and prevalent threat to organizations and individuals alike. In 2020 alone, the FBI reported a 300% increase in reported cyber crimes compared to the previous year, with losses totaling over $4.2 billion. Traditional security measures such as firewalls and intrusion detection systems are no longer sufficient to protect against the rapidly evolving tactics and techniques used by cyber attackers.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/Project/Parking-Assistant/</link>
+      <link>https://future-insight.netlify.app/Project/Parking-Assistant/</link>
       <pubDate>Tue, 21 Feb 2023 15:03:36 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/Parking-Assistant/</guid>
+      <guid>https://future-insight.netlify.app/Project/Parking-Assistant/</guid>
       <description>Parking Assistant Imagine a world where finding a parking space is no longer a frustrating experience. With the rise of smart cities and the Internet of Things, we now have the ability to solve this problem using advanced technology. Introducing our project, an innovative solution that uses IoT sensors and a web application to help drivers quickly find available parking spots. Our system is built using an Arduino board, equipped with infrared sensors that detect the presence of vehicles in parking spots.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/Project/</link>
+      <link>https://future-insight.netlify.app/Project/</link>
       <pubDate>Tue, 21 Feb 2023 15:03:15 +0500</pubDate>
       
-      <guid>https://future-insight.blog/Project/</guid>
+      <guid>https://future-insight.netlify.app/Project/</guid>
       <description>Project Gallery Welcome to My Projects Showcase!
 Discover a curated collection of my creative endeavors, showcasing my passion for innovation, problem-solving, and technology. From web development to mobile apps, automation scripts, and more, this page reflects my dedication, skills, and relentless pursuit of excellence.
 Each project represents a unique journey, where I explored new technologies and transformed ideas into reality. Through countless hours of hard work and meticulous planning, I have crafted visually stunning designs and cutting-edge functionalities.</description>
@@ -395,47 +395,47 @@ Each project represents a unique journey, where I explored new technologies and 
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/author/</link>
+      <link>https://future-insight.netlify.app/author/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://future-insight.blog/author/</guid>
+      <guid>https://future-insight.netlify.app/author/</guid>
       <description>👋Hi there, I’m Abdul Rafay 🌟 Welcome to the digital realm of excellence! I am thrilled to introduce myself as a visionary Full Stack Developer and Machine Learning Engineer, driven by an unwavering passion for crafting extraordinary experiences that leave a lasting impression.
 ✨ With my creative wizardry, I transcend the boundaries of ordinary web development. I orchestrate captivating symphonies of code and design, elevating websites into immersive masterpieces that enchant and inspire.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/about-us/</link>
+      <link>https://future-insight.netlify.app/about-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://future-insight.blog/about-us/</guid>
+      <guid>https://future-insight.netlify.app/about-us/</guid>
       <description>Welcome to Future Insight Blog  At Future Insight Blog, we embark on a captivating journey into the depths of technology and the boundless horizons it unveils. This digital sanctuary is crafted by Abdul Rafay, a visionary dreamer and technology aficionado who passionately breathes life into his thoughts, feelings, and profound insights about the world and the future.  Immerse yourself in the vibrant tapestry of our blog, where the heart and soul of technology converge.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/Author-Experience/</link>
+      <link>https://future-insight.netlify.app/Author-Experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://future-insight.blog/Author-Experience/</guid>
+      <guid>https://future-insight.netlify.app/Author-Experience/</guid>
       <description>👋Hi there, I’m Abdul Rafay Education  Bachelor in Software Engineering  2018 - 2022  Captial University of Science and Technology, PK  It is my honor to be a part of one of the best universities in the country. During my time at the university, I gained valuable knowledge and skills in software engineering. The campus provided a great learning environment with experienced professors and excellent facilities.  In my four years of study, I achieved a CGPA of 3.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/contact/</link>
+      <link>https://future-insight.netlify.app/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://future-insight.blog/contact/</guid>
+      <guid>https://future-insight.netlify.app/contact/</guid>
       <description>Contact US Name  Email  Message   Submit  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://future-insight.blog/search/</link>
+      <link>https://future-insight.netlify.app/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://future-insight.blog/search/</guid>
+      <guid>https://future-insight.netlify.app/search/</guid>
       <description>   window.addEventListener(&#39;DOMContentLoaded&#39;, (event) = { new PagefindUI({ element: &#34;#search&#34;, showSubResults: true }); }); </description>
     </item>
     

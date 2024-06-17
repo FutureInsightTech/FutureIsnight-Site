@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on Future Insight</title>
-    <link>https://future-insight.blog/tags/security/</link>
+    <link>https://future-insight.netlify.app/tags/security/</link>
     <description>Recent content in security on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jul 2023 16:55:10 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Jul 2023 16:55:10 +0500</lastBuildDate><atom:link href="https://future-insight.netlify.app/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secure Linux The 3 Biggest Security Mistakes Linux Users Make</title>
-      <link>https://future-insight.blog/OS/linux/secure-linux/</link>
+      <link>https://future-insight.netlify.app/OS/linux/secure-linux/</link>
       <pubDate>Thu, 20 Jul 2023 16:55:10 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/secure-linux/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/secure-linux/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   After using a Linux system for a while, I&amp;rsquo;ve noticed that there are some common mistakes people make that can compromise the security of their Linux installations. In this blog post, I will address the three most significant security mistakes that Linux users often make.</description>
     </item>
     
     <item>
       <title>Windows Security: Protecting Your Operating System</title>
-      <link>https://future-insight.blog/OS/windows/secure-your-windows/</link>
+      <link>https://future-insight.netlify.app/OS/windows/secure-your-windows/</link>
       <pubDate>Mon, 19 Jun 2023 02:58:06 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/secure-your-windows/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/secure-your-windows/</guid>
       <description>.video-container { position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */ padding-top: 30px; height: 0; overflow: hidden; } .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }   The world is changing rapidly. With the rise of AI and advancements in computing power, establishing a secure internet connection has become increasingly challenging. The vastness of the internet allows for access to a wide range of information, but it also poses risks.</description>
     </item>
     

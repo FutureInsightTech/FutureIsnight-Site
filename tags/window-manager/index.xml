@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>window-manager on Future Insight</title>
-    <link>https://future-insight.blog/tags/window-manager/</link>
+    <link>https://future-insight.netlify.app/tags/window-manager/</link>
     <description>Recent content in window-manager on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Aug 2023 23:45:20 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/window-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Aug 2023 23:45:20 +0500</lastBuildDate><atom:link href="https://future-insight.netlify.app/tags/window-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hyprland Window Manager Tour: A New Desktop Experience</title>
-      <link>https://future-insight.blog/OS/linux/hyprland/</link>
+      <link>https://future-insight.netlify.app/OS/linux/hyprland/</link>
       <pubDate>Fri, 25 Aug 2023 23:45:20 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/hyprland/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/hyprland/</guid>
       <description>.gdoc-tabs-container { display: flex; overflow-x: auto; background-color: transparent; margin: 20px; width: 100%; } /* gdoc-tabs styles */ .gdoc-tabs { display: flex; flex-direction: column; min-width: 200px; } .gdoc-tabs__control { display: none; } .gdoc-tabs__label { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; text-align: center; color: white; transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; } .gdoc-tabs__control:checked + .gdoc-tabs__label { background-color: #000; color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } .</description>
     </item>
     
     <item>
       <title>Midnight Tokyo: Awesome Window Manager</title>
-      <link>https://future-insight.blog/OS/linux/MidnightTokyoWM/</link>
+      <link>https://future-insight.netlify.app/OS/linux/MidnightTokyoWM/</link>
       <pubDate>Fri, 26 May 2023 16:36:17 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/MidnightTokyoWM/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/MidnightTokyoWM/</guid>
       <description>Linux has become an integral part of my daily computing routine. I find immense joy in using it, and there is no doubt that it has transformed my computing experience. I embarked on my Linux journey approximately three years ago, and since then, I have explored a multitude of distributions, seeking to understand what makes each one tick and what sets them apart. Some have proven to be less than satisfactory, while others have truly impressed me.</description>
     </item>
     

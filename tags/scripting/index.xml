@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scripting on Future Insight</title>
-    <link>https://future-insight.blog/tags/scripting/</link>
+    <link>https://future-insight.netlify.app/tags/scripting/</link>
     <description>Recent content in scripting on Future Insight</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Jul 2023 20:58:13 +0500</lastBuildDate><atom:link href="https://future-insight.blog/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 20:58:13 +0500</lastBuildDate><atom:link href="https://future-insight.netlify.app/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell: Unleashing the Power of Automation and System Management</title>
-      <link>https://future-insight.blog/OS/windows/Power-Shell-Scripting/</link>
+      <link>https://future-insight.netlify.app/OS/windows/Power-Shell-Scripting/</link>
       <pubDate>Fri, 21 Jul 2023 20:58:13 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/windows/Power-Shell-Scripting/</guid>
+      <guid>https://future-insight.netlify.app/OS/windows/Power-Shell-Scripting/</guid>
       <description>Windows, oh Windows! It may look like a friendly playground for beginners, but let me tell you, it&amp;rsquo;s a true powerhouse under the hood, and today, we&amp;rsquo;re diving into its secret weapons that every developer should know about!
   Introducing WSL (Windows Subsystem for Linux): Ever dreamed of having the best of both worlds? With WSL, you can seamlessly run a full-fledged Linux environment right inside your Windows system.</description>
     </item>
     
     <item>
       <title>Image Optimization</title>
-      <link>https://future-insight.blog/OS/linux/image-optimization/</link>
+      <link>https://future-insight.netlify.app/OS/linux/image-optimization/</link>
       <pubDate>Tue, 23 May 2023 00:26:19 +0500</pubDate>
       
-      <guid>https://future-insight.blog/OS/linux/image-optimization/</guid>
+      <guid>https://future-insight.netlify.app/OS/linux/image-optimization/</guid>
       <description>Over the years, I have witnessed significant changes in the world of images, from 5-megapixel images to 200-megapixel captures right from our smartphones. Image sizes have grown from a couple of megabytes to several gigabytes. Technology has truly transformed the way we capture and store images.
 When writing blog posts with multiple images, the size of the images becomes a crucial factor. Large image sizes can slow down website loading times, impacting user experience.</description>
     </item>
